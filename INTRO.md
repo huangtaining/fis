@@ -1,7 +1,6 @@
-# [fis3 base](https://github.com/yanhaijing/fis3-base) [![](https://img.shields.io/badge/Powered by-fis3 base-brightgreen.svg)](https://github.com/yanhaijing/fis3-base) [![license](http://img.shields.io/npm/l/express.svg)](https://github.com/yanhaijing/fis3-base/blob/master/MIT-LICENSE)
-基于fis3的纯前端解决方案。
+#前端集成开发框架
 
-## 特色
+## 框架特色
 fis3 base有如下功能特色。
 - commonjs
 - ECMASCript2015
