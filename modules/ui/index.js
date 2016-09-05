@@ -7,6 +7,7 @@ require('lib/ysbbase');
 require('app/jquery.scroll');
 require('ui/app-main');
 
+
 $(document).ready(function() {
 
     // Twitter Bootstrap 3 carousel plugin
