@@ -105,3 +105,5 @@ span.username {
 .nav>li>a {
 	padding: 10px 0px 10px 40px;
 }
+
+.special-header_bottom ul li a:hover{color:#7c7c7c;}
