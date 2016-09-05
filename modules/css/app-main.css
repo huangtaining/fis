@@ -183,7 +183,7 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 }
 
 .line-boxes .box.hongbao {
-	background-image: url(../static/imgs/index/index/wireframe-hongbao.png)
+	background-image: url(../static/imgs/index/wireframe-hongbao.png)
 }
 
 @media (-webkit-min-device-pixel-ratio:2),
