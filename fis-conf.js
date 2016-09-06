@@ -19,6 +19,12 @@ fis.match('*.{js,css}', {
 });
 
 
+fis.set('project.ignore', [
+  'node_modules/**',
+  '.git/**',
+  '.svn/**'
+]);
+
 
 // 引入模块化开发插件，设置规范为 commonJs 规范。
 fis.hook('commonjs', {
@@ -61,8 +67,9 @@ fis.match('/components/**.js', {
 
 
 // ------ 配置modules
-fis.match('/modules/(**)', {
-    release: '${project.static}/$1'
+//{!(/modules/widget/(**)), /modules/(**)}
+fis.match("/modules/(**)", {
+   release: '${project.static}/$1'
 });
 
 
@@ -94,7 +101,8 @@ fis.match(/^\/modules\/(.*\.css)$/i, {
         browsers: ['> 1% in CN', "last 2 versions", "IE >= 8"] // pc
         // browsers: ["Android >= 4", "ChromeAndroid > 1%", "iOS >= 6"] // wap
     })
-})
+});
+
 fis.match(/^\/modules\/(.*\.(?:png|jpg|gif))$/i, {
     release: '${project.static}/$1'
 });
@@ -149,7 +157,7 @@ fis.match('::package', {
         //include: ""
         allInOne: false,  //js&css打包成一个文件
         sourceMap: true, //是否生成依赖map文件
-        resourceType: 'amd',   //[auto, amd, cmd, commonJs]
+        resourceType: 'commonJs',   //[auto, amd, cmd, commonJs]
         useInlineMap: true // 资源映射表内嵌|是否将sourcemap作为内嵌脚本输出
     })
 });
@@ -232,7 +240,6 @@ fis.util.map(map, function (k, v) {
         })
 });
 
-
 // 发布产品库
 fis.media('prd')
     .match('**.{es,js}', {
@@ -240,7 +247,7 @@ fis.media('prd')
     })
     .match('**.{scss,css}', {
         optimizer: fis.plugin('clean-css', {
-            'keepBreaks': true  //保持一个规则一个换行
+            'keepBreaks': false  //保持一个规则一个换行
         })
     })
     // .match('::package', {
