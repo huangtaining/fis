@@ -1,109 +1,122 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+    <head>
+        <title>Index Page</title>
+        <link rel="import" href="layout/header.html?__inline">
+        <!--STYLE_PLACEHOLDER-->
+    </head>
 
-<head>
-    <title>Index Page</title>
-    <link rel="import" href="layout/header.html?__inline">
-    <!--STYLE_PLACEHOLDER-->
-</head>
+    <body>
+        <link rel="import" href="modules/widget/header/header.html?__inline">
 
-<body>
-    <link rel="import" href="modules/widget/header/header.html?__inline">
-    <section class="banner">
-        <div id="myCarousel" class="carousel slide">
-            <!-- 轮播（Carousel）指标 -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- 轮播（Carousel）项目 -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="static/imgs/index/banner01.jpg" alt="First slide">
+        <section class="banner">
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="static/imgs/index/banner01.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="static/imgs/index/banner02.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img src="static/imgs/index/banner03.jpg" alt="Third slide">
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="static/imgs/index/banner02.jpg" alt="Second slide">
-                </div>
-                <div class="item">
-                    <img src="static/imgs/index/banner03.jpg" alt="Third slide">
-                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
             </div>
-            <!-- 轮播（Carousel）导航 -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
-        </div>
-    </section>
+        </section>
 
-    <!--第一部分     公告-->
-    <section class="announcement centre clearfix">
-        <div>
-            <div class="border clearfix">
-                <p>银生宝服务</p>
-                <div style="float: left;margin-top: 10px;">
-                    <img src="static/imgs/index/1.png" alt="" />
-                </div>
-                <div class="announcement_right">
-                    <span>用户接入简单方便</span>
-                    <span>即时交易，即时到账，操作方便，收款快捷</span>
-                    <span>支持在线支付、手机支付、电话支付及卡支付</span>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="border clearfix">
-                <p>安全保障</p>
-                <div style="float: left;margin-top: 10px;">
-                    <img src="static/imgs/index/1.png" alt="" />
-                </div>
-                <div class="announcement_right">
-                    <span>双密码保护、提现时安全验证保证账户安全</span>
-                    <span>严格的资金监管，健全的制度保证资金安全</span>
-                    <span>平台数据安全、稳定、J2EE技术架构</span>
-                    <span>风控体系严格监控：技术、运营、交易</span>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="clearfix" style="width:75%;margin: 0 auto;">
-                <p>重要公告 <em style="color: #00A0E8;font-size: 14px;float: right;font-weight:normal;">更多</em></p>
-                <div class="announcement_right" style="border: none;width:100%;padding-right: 0;">
-                    <span><a href="javascript:;">&#8226&nbsp; 关于银生宝代扣业务的通知</a></span>
-                    <span><a href="javascript:;">&#8226&nbsp; 2015年银生宝关于反洗钱宣传活动的公告 </a></span>
-                    <div class="scrollbox">
-                        <div id="scrollDiv">
-                            <ul>
-                                <li>
-                                    <h3><a href="#" class="linktit">&#8226&nbsp; 移动娱乐业务突飞</a></h3>
-                                </li>
-                                <li>
-                                    <h3><a href="#" class="linktit">&#8226&nbsp; 不停转动向上滚动可控制向上向下滚动特效</a></h3>
-                                </li>
-                                <li>
-                                    <h3><a href="#" class="linktit">&#8226&nbsp; 全国涂料总产量呈现直线下滑态势</a></h3>
-                                </li>
-                                <li>
-                                    <h3><a href="#" class="linktit">&#8226&nbsp; 镂空渔网超吸睛</a></h3>
-                                </li>
-                                <li>
-                                    <h3><a href="#" class="linktit">&#8226&nbsp; 主题创业街亮相</a></h3>
-                                </li>
-                            </ul>
-                        </div>
-
+        <!--第一部分     公告-->
+        <section class="announcement centre clearfix">
+            <div>
+                <div class="border clearfix">
+                    <p>银生宝服务</p>
+                    <div style="float: left;margin-top: 10px;">
+                        <img src="static/imgs/index/1.png" alt=""/>
+                    </div>
+                    <div class="announcement_right">
+                        <span>用户接入简单方便</span>
+                        <span>即时交易，即时到账，操作方便，收款快捷</span>
+                        <span>支持在线支付、手机支付、电话支付及卡支付</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--第二部分   欢迎使用银生宝-->
-    <div class="welcome_left centre">
-        <h1>欢迎使用银生宝</h1>
-        <p>以发展多元化在线支付的大规模应用为基础，结合传统行业特性， 秉持"服务为先、金融配套、安全便捷、回报社会"的企业宗旨，为用户提供随需而设、灵活多样、稳健周全的金融增值产品和衍 生服务</p>
+            <div>
+                <div class="border clearfix">
+                    <p>安全保障</p>
+                    <div style="float: left;margin-top: 10px;">
+                        <img src="static/imgs/index/1.png" alt=""/>
+                    </div>
+                    <div class="announcement_right">
+                        <span>双密码保护、提现时安全验证保证账户安全</span>
+                        <span>严格的资金监管，健全的制度保证资金安全</span>
+                        <span>平台数据安全、稳定、J2EE技术架构</span>
+                        <span>风控体系严格监控：技术、运营、交易</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="clearfix" style="width:75%;margin: 0 auto;">
+                    <p>重要公告
+                        <em style="color: #00A0E8;font-size: 14px;float: right;font-weight:normal;">更多</em>
+                    </p>
+                    <div class="announcement_right" style="border: none;width:100%;padding-right: 0;">
+                        <span>
+                            <a href="javascript:;">&#8226&nbsp; 关于银生宝代扣业务的通知</a>
+                        </span>
+                        <span>
+                            <a href="javascript:;">&#8226&nbsp; 2015年银生宝关于反洗钱宣传活动的公告
+                            </a>
+                        </span>
+                        <div class="scrollbox">
+                            <div id="scrollDiv">
+                                <ul>
+                                    <li>
+                                        <h3>
+                                            <a href="#" class="linktit">&#8226&nbsp; 移动娱乐业务突飞</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#" class="linktit">&#8226&nbsp; 不停转动向上滚动可控制向上向下滚动特效</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#" class="linktit">&#8226&nbsp; 全国涂料总产量呈现直线下滑态势</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#" class="linktit">&#8226&nbsp; 镂空渔网超吸睛</a>
+                                        </h3>
+                                    </li>
+                                    <li>
+                                        <h3>
+                                            <a href="#" class="linktit">&#8226&nbsp; 主题创业街亮相</a>
+                                        </h3>
+                                    </li>
+                                </ul>
+                            </div>
 
-    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="nav block-grid new-features no-border">
+				<!--第二部分   欢迎使用银生宝-->
+				<link rel="import" href="modules/widget/indexSection/sectioniphone.html?__inline">
+
         <!--第三部分   转账付款-->
         <section class="payment">
             <div class="payment_bottom">
@@ -115,7 +128,7 @@
                         <div class="view">查看详情</div>
                     </div>
                     <div class="payment_right">
-                        <img src="static/imgs/index/2.jpg" alt="" style="width: 100%;height: 100%;" />
+                        <img src="static/imgs/index/2.jpg" alt="" style="width: 100%;height: 100%;"/>
                     </div>
                 </div>
             </div>
@@ -123,31 +136,31 @@
                 <div class="centre clearfix">
                     <div class="beautify active">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>转账到银生宝</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>转账到银行帐户</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>向多人付款</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>我要收款</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>向多人收款</p>
                         </div>
                     </div>
@@ -161,94 +174,96 @@
             </div>
 
         </section>
-        <!--第四部分   -->
+
+				<!--第四部分   -->
         <section class="lift">
-            <a href="javascript:;"><img src="static/imgs/index/banner01.jpg" alt="" /></a>
+            <a href="javascript:;"><img src="static/imgs/index/banner01.jpg" alt=""/></a>
             <div class="lift_top">
                 <div class="centre clearfix">
                     <div class="beautify active">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>公共事业缴费</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>手机充值</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>信用卡还款</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>游戏充值</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>加油卡充值</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>电影票</p>
                         </div>
                     </div>
                     <div class="beautify">
                         <div class="center_box">
-                            <img src="static/imgs/index/3.png" alt="" />
+                            <img src="static/imgs/index/3.png" alt=""/>
                             <p>医疗预约</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--第五部分   合作银行/合作机构-->
+
+				<!--第五部分   合作银行/合作机构-->
         <section class="cooperation">
             <div class="centre">
                 <p style="margin-bottom: 10px;">合作银行</p>
                 <ul class="clearfix">
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
                 </ul>
                 <ul class="clearfix">
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
                 </ul>
             </div>
             <div class="centre">
                 <p style="margin:10px 0;">合作机构</p>
                 <ul class="clearfix">
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
                 </ul>
                 <ul class="clearfix">
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
-                    <li><img src="static/imgs/index/5.png" alt="" /></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
+                    <li><img src="static/imgs/index/5.png" alt=""/></li>
                 </ul>
             </div>
             <!--联系方式-->
@@ -257,7 +272,8 @@
                 <div class="centre_time">
                     <p>服务时间：工作日9:00-18:00</p>
                     <p>
-                        <img src="static/imgs/index/Group_3.png" alt="" style="width: 280px;height: 38px;vertical-align: middle;" /> &nbsp;&nbsp;
+                        <img src="static/imgs/index/Group_3.png" alt="" style="width: 280px;height: 38px;vertical-align: middle;"/>
+                        &nbsp;&nbsp;
                         <em>(全国)</em>
                     </p>
                     <p>邮箱地址：service@unspay.com</p>
@@ -265,8 +281,18 @@
                 <div class="centre_time">
                     <p>客服电话：95139</p>
                     <p class="city">
-                        <em>北京</em><em>沈阳</em><em>上海</em><em>南京</em><em>合肥</em><em>广州</em><em>深圳</em><em>东莞</em>
-                        <em>南宁</em><em>重庆</em><em>成都</em><em>西安</em>
+                        <em>北京</em>
+                        <em>沈阳</em>
+                        <em>上海</em>
+                        <em>南京</em>
+                        <em>合肥</em>
+                        <em>广州</em>
+                        <em>深圳</em>
+                        <em>东莞</em>
+                        <em>南宁</em>
+                        <em>重庆</em>
+                        <em>成都</em>
+                        <em>西安</em>
                     </p>
                 </div>
                 <div class="centre_time">
@@ -277,14 +303,13 @@
             </div>
         </section>
 
-
-
         <link rel="import" href="modules/widget/footer/footer.html?__inline">
-        <script src="lib/mod.js"></script>
+        <script src="../lib/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="lib/mod.js" data-loader></script>
         <script>
             require('ui/index');
         </script>
         <!--SCRIPT_PLACEHOLDER-->
-</body>
+    </body>
 
 </html>
