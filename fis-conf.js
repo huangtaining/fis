@@ -72,6 +72,7 @@ fis.match("/modules/(**)", {
    release: '${project.static}/$1'
 });
 
+
 //  ------ 配置 favicon.ico
 fis.match('/favicon.ico', {
     release: '${project.static}/$1'
@@ -239,7 +240,6 @@ fis.util.map(map, function (k, v) {
         })
 });
 
-
 // 发布产品库
 fis.media('prd')
     .match('**.{es,js}', {
@@ -247,7 +247,7 @@ fis.media('prd')
     })
     .match('**.{scss,css}', {
         optimizer: fis.plugin('clean-css', {
-            'keepBreaks': true  //保持一个规则一个换行
+            'keepBreaks': false  //保持一个规则一个换行
         })
     })
     // .match('::package', {
