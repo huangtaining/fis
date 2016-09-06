@@ -1,13 +1,4 @@
 "use strict";
-//
-//require("lib/TweenMax", function(){
-//	var TweenMax = require("TweenMax");
-//	var TweenLite = require("TweenLite");	
-//	console.log(TweenMax);
-//	console.log(TweenLite);
-//});
-
-
 
 function _classCallCheck(t, e) {
 	if (!(t instanceof e))
@@ -33,9 +24,10 @@ function random(t, e) {
 
 function slideScene() {
 	var t = $(".line-boxes"),
-		e = $("#iphone6 .scene-viewes"),
-		i = $(".hero-scene-text"),
+		el_heroSceneText = $(".hero-scene-text"),
 		n = $(".scene-slider-wrap .iphone-hand-bg"),
+
+		e = $("#iphone6 .scene-viewes"),
 		r = $("#iphone6"),
 		o = $("#iphone6 .topbar"),
 		s = $("#iphone6 .camera"),
@@ -54,7 +46,7 @@ function slideScene() {
 		}), TweenLite.to(e, 1, {
 			x: "-166",
 			ease: Power3.easeInOut
-		}), TweenLite.to(i, 1, {
+		}), TweenLite.to(el_heroSceneText, 1, {
 			y: "-148",
 			ease: Power3.easeInOut
 		})], "+=2"),
@@ -64,7 +56,7 @@ function slideScene() {
 		}), TweenLite.to(e, 1, {
 			x: "-332",
 			ease: Power3.easeInOut
-		}), TweenLite.to(i, 1, {
+		}), TweenLite.to(el_heroSceneText, 1, {
 			y: "-293",
 			ease: Power3.easeInOut
 		})], "+=2"),
@@ -74,7 +66,7 @@ function slideScene() {
 		}), TweenLite.to(e, 1, {
 			x: "-499",
 			ease: Power3.easeInOut
-		}), TweenLite.to(i, 1, {
+		}), TweenLite.to(el_heroSceneText, 1, {
 			y: "-433",
 			ease: Power3.easeInOut
 		}), TweenLite.to(r, 1, {
@@ -129,7 +121,7 @@ function slideScene() {
 		}), TweenLite.to(e, 1, {
 			x: "-922",
 			ease: Power3.easeInOut
-		}), TweenLite.to(i, 1, {
+		}), TweenLite.to(el_heroSceneText, 1, {
 			y: "-573",
 			ease: Power3.easeInOut
 		}), TweenLite.to(r, 1, {

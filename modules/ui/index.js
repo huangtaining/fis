@@ -5,8 +5,6 @@
 var $ = require('jquery');
 require('lib/ysbbase');
 require('app/jquery.scroll');
-require('ui/app-main');
-
 
 $(document).ready(function() {
 
