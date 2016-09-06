@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>支付中心_1</title>
+    <link href="../modules/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../modules/css/myusp.css" rel="stylesheet">
+    <link href="../modules/css/common.css" rel="stylesheet">
+    <link href="../modules/css/appcen.css" rel="stylesheet">
+    <link href="../modules/css/transfer_com.css" rel="stylesheet">
+    <link href="../modules/lib/bootstrap-table/bootstrap-table.css" rel="stylesheet">
+    <script src="../components/jquery/jquery.js"></script>
+    <script src="../modules/lib/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../modules/lib/ysbbase.min.js"></script>
+</head>
+<body>
+
+<!--黄色抬头-->
+<div class="layout">
+    <div class="shouju">
+        <div class="shoujul">
+            <span>收款方:</span><span>提现账户</span>
+            <span>付款金额:</span><span class="yell">1020.90</span><span>元</span>
+        </div>
+        <div class="shoujur">
+            <div><span style="margin-right: 10px">订单编号:</span><span>13132131323</span></div>
+            <div><span style="margin-right: 10px">交易银行:</span><span>工商银行</span></div>
+            <div><span style="margin-right: 10px">收费单位:</span><span>大声道</span></div>
+            <div><span style="margin-right: 10px">交易编号:</span><span>13132131323</span></div>
+        </div>
+    </div>
+</div>
+
+<!--余额支付-->
+<div class="layout">
+    <!--余额支付-->
+    <div class="alltit">余额支付</div>
+
+    <div class="allbody recbo">
+
+
+
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- 银生宝账户名-->
+                <div class="control-group">
+                    <label class="control-label"><span class="yell">*</span>&nbsp;银生宝账户名&nbsp;:</label>
+                    <div class="controls">
+                        <span>883718@qq.com</span>
+                    </div>
+                </div>
+
+                <!-- 可支付余额-->
+                <div class="control-group">
+                    <label class="control-label"><span class="yell">*</span>&nbsp;可支付余额&nbsp;:</label>
+                    <div class="controls">
+                        <span class="yell">98943435.245</span>元
+                    </div>
+                </div>
+
+                <!--银生宝支付密码-->
+                <div class="control-group">
+                    <label class="control-label"><span class="yell">*</span>&nbsp;银生宝支付密码&nbsp;:</label>
+                    <div class="controls">
+                        <input type="text" placeholder="交易方名称或者账户" style="margin-right: 18px">
+                    </div>
+                </div>
+
+                <!-- 上一步-->
+                <div class="control-group">
+                    <label class="control-label">
+                        <a>
+                            <button  type="button" class="btn btn-primary qrfk"
+                                     data-loading-text="Loading...">余额支付
+                            </button>
+                        </a>
+                    </label>
+                    <div class="controls">
+                    </div>
+                </div>
+
+
+
+            </fieldset>
+
+
+        </form>
+
+
+    </div>
+
+</div>
+
+<!--其他支付-->
+<div class="layout">
+
+    <!--其他支付选择银行卡-->
+    <div class="alltit">其他支付</div>
+
+    <div class="allbody recbo">
+
+        <div class="qtfs">
+            <p>请选择您的付款方式</p>
+            <p class="hui">网上银行:你需要先开通网上银行支付服务</p>
+        </div>
+
+        <div class="card">
+            <div class="card_tit">
+                <div class="card_sp active">
+                    储蓄卡(借记卡)
+                </div>
+                <div  class="card_sp">
+                    信用卡(贷记卡)
+                </div>
+            </div>
+            <div class="card_bo row">
+                <div class="col-md-2 eccard">
+                    <input type="radio" name="eccard"><span class="eccard_img"></span>
+                </div>
+                <div class="col-md-2 eccard">
+                    <input type="radio" name="eccard"><span class="eccard_img"></span>
+                </div>
+                <div class="col-md-2 eccard">
+                    <input type="radio" name="eccard"><span class="eccard_img"></span>
+                </div>
+                <div class="col-md-2 eccard">
+                    <input type="radio" name="eccard"><span class="eccard_img"></span>
+                </div>
+                <div class="col-md-2 eccard">
+                    <input type="radio" name="eccard"><span class="eccard_img"></span>
+                </div>
+                <div class="col-md-2 eccard">
+                    <input type="radio" name="eccard"><span class="eccard_img"></span>
+                </div>
+            </div>
+        </div>
+
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- 上一步-->
+                <div class="control-group">
+                    <label class="control-label">
+                        <a>
+                            <button  type="button" class="btn btn-primary nextstep"
+                                     data-loading-text="Loading...">下一步
+                            </button>
+                        </a>
+                    </label>
+                    <div class="controls">
+                    </div>
+                </div>
+
+
+
+            </fieldset>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+    //    var _nextDa;
+    //    $(function() {
+    //        $(".nextstep").click(function(){
+    //            //console.log("ssss")
+    //            _nextDa=window.setTimeout(function(){
+    //                $(this).parent("a").attr("href","rechange_2.html")
+    //            },1000)
+    //
+    //        });
+    //    });
+</script>
