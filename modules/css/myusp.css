@@ -1,0 +1,341 @@
+/*fix*/
+.fix{
+    position: fixed;
+}
+#fixl{
+    width: 240px;
+    overflow: hidden;
+}
+
+/*banner*/
+.banner_text{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.myusptip{
+     line-height: 60px;
+}
+.myuspf{
+    flex-flow: row wrap;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid #E8E8E8;
+    background: #ffffff;
+
+}
+/*头像部分*/
+.myusptx{
+    position: absolute;
+    bottom: 10px;
+    left: 0;width: 100%;
+    color: white;
+}
+.myusptx .col-md-8{
+    line-height: 30px;
+}
+.myusptx .col-md-3{
+    line-height: 30px;
+}
+.toux{
+    background: url("../../static/logind/myusp/toux.jpg");
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+}
+
+/*我的账户*/
+.myuspzh{
+   display: flex;
+}
+.myuspf .col-md-6{
+    overflow: hidden;
+    padding: 27px;
+    border-right: 1px solid #ECECEC;
+}
+.myuspl div{
+    float: left;
+    overflow: hidden;
+    width: 50%;
+}
+.myuspr div{
+    overflow: hidden;
+    width: 100%;
+}
+.row{
+    margin: 0 auto;
+}
+
+.myuspzhr span{
+    color: #FE8800; ;
+}
+.myuspzhbo{
+    width: 100%;
+    padding: 0;
+    border-top: 1px solid #ECECEC;
+}
+.yels{
+    text-align: right;
+}
+#myuspname{
+    font-size: 18px;
+}
+.mybo{
+    border: 1px solid #E8E8E8;
+    padding: 25px;
+}
+#dealnum{
+    text-align: right;
+}
+.bignu{
+    font-size: 30px;
+    color: #FE8800;
+  }
+
+.myuspcir{
+    margin: 0 auto;
+    background: red;
+}
+/*交易*/
+.myuspjy{
+   overflow: hidden;
+}
+.cir44{
+    margin: 0 auto;
+}
+.cir4{
+    text-align: center;
+}
+.cir{
+    width: 92px ;
+    height: 92px;
+    background: url("../../static/logind/myusp/four.jpg");
+    margin: 0 auto;
+    cursor: pointer;
+}
+.fir{
+    width: 55px ;
+    height: 60px;
+    background: url("../../static/logind/myusp/fir1.jpg");
+    margin: 0 auto;
+}
+.fir2{
+    width: 65px ;
+    height: 60px;
+    background: url("../../static/logind/myusp/fir2.jpg");
+    margin: 0 auto;
+}
+.fir3{
+    width: 65px ;
+    height: 60px;
+    background: url("../../static/logind/appcen/zz1.jpg");
+    margin: 0 auto;
+}
+#cir1{
+    background-position: -2px 0 ;
+}
+#cir2{
+    background-position: -194px 0 ;
+}
+#cir3{
+    background-position: -382px 0 ;
+}
+#cir4{
+    background-position: -574px 0 ;
+}
+#fiv11{
+    background-position: -94px -34px ;
+}
+#fiv12{
+    background-position: -334px -34px ;
+}
+#fiv13{
+    background-position: -574px -34px ;
+}
+#fiv14{
+    background-position: -814px -34px ;
+}
+#fiv15{
+    background-position: -1054px -34px ;
+}
+#fiv16{
+    background-position: -1054px -34px ;
+}
+#fiv17{
+    background-position: -1054px -34px ;
+}
+#fiv21{
+    background-position: -92px 0 ;
+}
+#fiv22{
+    background-position: -340px 0 ;
+}
+#fiv23{
+    background-position: -569px 0 ;
+}
+#fiv24{
+    background-position: -814px 0 ;
+}
+#fiv25{
+    background-position: -1050px 0 ;
+}
+#fiv26{
+    background-position: -1050px 0 ;
+}
+#fiv27{
+    background-position: -1050px 0 ;
+}
+
+.tit{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 20px;
+}
+.five{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-five{
+    float: left;
+    width: 20%;
+    padding: 40px 0;
+    text-align: center;
+    border-right: 1px solid #E8E8E8;
+}
+.col-five:last-child{
+    border-right: none;
+}
+/*浅色字*/
+.whi{
+    color: #AEAEAE;
+}
+
+
+.myTab .active a{
+    background: red !important;
+}
+
+.nav-tabs>li>a {
+    border-radius: 0 0 0 0 ;
+}
+
+#chongzhi{
+    width:100%;
+    height: 100px;
+}
+#tixian{
+    width:100%;
+    height: 100px;
+}
+.f16{
+    font-size: 16px;
+    color: #6A6A6A;
+}
+.zhlone{
+    width: 50%;
+    float: left;
+}
+
+
+#myTabContent table td{
+    border-right:none;
+    border-left:none
+}
+#myTabContent table th{
+       background:#F7F7F7 ;
+       border:none;
+}
+#myTabContent tbody td{
+   line-height: 44px;
+    height: 44px;
+}
+#myTabContent tfoot span{
+color:#F19242 ;
+}
+.tti{
+    line-height: 22px !important;
+}
+.nav>li>a {
+    padding: 10px 35px;
+}
+.fixed-table-container{
+    border: none !important;
+}
+.jiaoyifoot{
+    background: #F7F7F7;
+    border-left: none;
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+}
+.fyr{
+     float: right;
+ }
+.fyl{
+     float:left;
+    text-indent: 35px;
+}
+
+#nowpa{
+    border: 1px solid #DFDFDF;
+    padding: 5px 10px;
+    background: #FFFFFF;
+}
+.paac{
+    color: #ED710D
+}
+.bigtu{
+    width: 100%;
+    overflow: hidden;
+    background: #FFFFFF
+}
+.bigtu1{
+    width: 100%;
+    background: url("../../static/logind/myusp/foot.jpg");
+    height: 296px;
+}
+
+
+.skyhzh{
+    padding: 0 25px;
+    margin-right: 18px;
+}
+.witimg1{
+    background: url("../../static/logind/withc/widstep1.jpg");
+    background-size: 1200px 149px;
+    width: 100%;
+    height: 149px;
+}
+.witimg2{
+    background: url("../../static/logind/withc/widstep2.jpg");
+    background-size: 1200px 149px;
+    width: 100%;
+    height: 149px;
+}
+.witimg3{
+    background: url("../../static/logind/withc/widstep3.jpg");
+    background-size: 1200px 149px;
+    width: 100%;
+    height: 149px;
+}
+.wittop{
+    text-align: right;
+}
+
+.cir44 .col-md-3{
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.five .col-md-3{
+    text-align: center;
+    padding: 40px 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
