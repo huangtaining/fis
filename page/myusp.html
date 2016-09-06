@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head lang="en">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>我的银生宝_1</title>
+
+    <link rel="import" href="layout/header.html?__inline">
+    <!--STYLE_PLACEHOLDER-->
+
     <link href="../modules/css/ysbbase.css" rel="stylesheet">
     <link href="../modules/lib/bootstrap-table/bootstrap-table.css" rel="stylesheet">
     <link href="../modules/css/myusp.css" rel="stylesheet">
-    <link href="../modules/css/common.css" rel="stylesheet">
+    <link href="../modules/css/common2.css" rel="stylesheet">
     <link href="../modules/css/appcen.css" rel="stylesheet">
     <link href="../modules/css/transfer_com.css" rel="stylesheet">
 
@@ -19,6 +19,10 @@
 
 </head>
 <body>
+
+<link rel="import" href="modules/widget/header/header.html?__inline">
+
+<!-- rechange cotnent -->
 
 <!--左右浮动-->
 <div class="fix">
@@ -340,10 +344,13 @@
     </div>
 </div>
 
-
-</body>
-</html>
+<link rel="import" href="modules/widget/footer/footer.html?__inline">
+<script src="lib/mod.js" data-loader></script>
 <script type="text/javascript">
+
+    var $ = require('jquery');
+    require('lib/ysbbase');
+
     $(function(){
         $("thead tr").find("th:first").css("textIndent","30px");
         $("tbody tr").find("td:first").css("textIndent","30px");
@@ -352,3 +359,6 @@
     })
 
 </script>
+<!--SCRIPT_PLACEHOLDER-->
+</body>
+</html>
