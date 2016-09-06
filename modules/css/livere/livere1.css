@@ -1,0 +1,69 @@
+
+
+
+#livere_l{
+    width: 235px;;
+    margin-right: 20px;
+    float: left;
+}
+#livere_l ul{
+    clear: both;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #E8E8E8;
+    border-bottom: none;
+}
+#livere_l li{
+    display: flex;
+    text-align: center;
+    width: 100%;;
+    padding: 10px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+#livere_l li:hover{
+      border-left: 2px solid #00A0E8;
+    font-weight:bold ;
+    color:#2BA5DA ;
+    text-decoration: none
+}
+#livere_l a{
+    color: #8C8C8C ;
+}
+
+
+#livere_r {
+     width: 945px;
+    border: 1px solid #f1f1f1;
+    float:right;
+}
+#livere_r_one{
+     width: 100%;
+    padding: 0 5%;
+     background-color: #FFFFFF;
+}
+h5{
+    border-bottom: 1px solid #E8E8E8;
+}
+.livere_r_two{
+    width: 100%;
+    padding: 0 5%;
+    background-color: #FFFFFF;
+}
+
+#mobpay_ul{
+    width: 40%;
+    float: left;
+    overflow: hidden;
+}
+#mobpay_ul li{
+    margin-bottom: 10px;
+}
+#mobpay_bod_tu{
+    float: right;
+    width: 400px;
+    height: 400px;
+    background: red;
+}
+.cpjs img{
+    width: 100%;
+}

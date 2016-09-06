@@ -1,14 +1,3 @@
-
-*{margin: 0; padding: 0}
-li {list-style: none}
-a {color: #333333;text-decoration: none}
-a:hover{text-decoration: none }
-/*body和layout*/
-body{
-    background-color:#F7F7F7;
-    font-family:"Microsoft YaHei";
-}
-
 .layout{
     width: 1200px;
     margin: 0 auto;
@@ -16,17 +5,24 @@ body{
     position: relative;
     height: 100%;
 }
+.layout2{
+    width: 100%;
+    padding: 10px 20px ;
+}
 /*各种颜色字体*/
 .yell{
     color:#EE881A;
     font-weight: bold;
-    margin: 0 13px 0 0
+    margin: 0 10px 0 0
 }
 .s40{
     font-size: 40px;
  }
 .s20{
     font-size: 20px;
+}
+.s16{
+    font-size: 16px;
 }
 .bull{
     color:#47BDEF;
@@ -52,7 +48,7 @@ body{
 .gan{
     width: 20px;
     height: 20px;
-    background:url("../../static/logind/rechange/gan.jpg");
+    background:url("../../static/imgs/logind/rechange/gan.jpg");
     float: left;
     margin-right: 20px;
 }
@@ -96,28 +92,28 @@ body{
 .banner{
     width: 100%;
     height: 360px;
-    background:url("../../static/livere/livere_banner1.fw.png") repeat-x;
+    background:url("../../static/imgs/livere/livere_banner1.fw.png") repeat-x;
     background-size: 100%;
     margin-bottom: 30px;
 }
 .tsbanner{
     width: 100%;
     height: 360px;
-    background:url("../../static/tspay/banner1.jpg") repeat-x;
+    background:url("../../static/imgs/tspay/banner1.jpg") repeat-x;
     background-size: 100%;
     margin-bottom: 30px;
 }
 .appcenbanner{
     width: 100%;
     height: 361px;
-    background:url("../../static/logind/appcen/ban.jpg") repeat-x;
+    background:url("../../static/imgs/logind/appcen/ban.jpg") repeat-x;
     background-size: 100% 361px;
     margin-bottom: 30px;
 }
 .myuspban{
     width: 100%;
     height: 175px;
-    background:url("../../static/logind/myusp/ban.jpg") repeat-x;
+    background:url("../../static/imgs/logind/myusp/ban.jpg") repeat-x;
     background-size: 100%;
 }
 
@@ -164,7 +160,7 @@ body{
     padding-top: 0 !important;
     margin-right: 30px;
     font-weight: normal !important;
-    width: 15%;
+    width: 20%;
 }
 .control-label span{
     line-height: 19px !important;
