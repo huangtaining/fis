@@ -13,6 +13,11 @@
 header.header {
     a {
         color: #333;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 
     .header_top {
@@ -31,14 +36,14 @@ header.header {
         width: 1200px;
         height: 100px;
         margin: 0 auto;
-        /*	line-height: 100px;*/
+        /*  line-height: 100px;*/
     }
 
     .alipay-logo {
         float: left;
         height: 90px;
         width: 180px;
-        background: url("static/imgs/public/logo03.png") 0 0 no-repeat;
+        background: url("modules/css/img/logo-ysb.png") 0 0 no-repeat;
         margin-top: 10px;
     }
 
@@ -57,7 +62,7 @@ header.header {
         margin-left: 10px;
     }
 
-    ul.menu-list li~li {
+    .special-header_bottom ul.menu-list li~li {
         margin-left: 35px;
     }
 
@@ -79,12 +84,58 @@ header.header {
         margin-left: 0;
     }
 
-    .nav > li > a {
+    .nav > li {
         margin-top: 30px;
-        padding: 10px 0 10px 15px;
+        padding: 10px 0 10px 30px;
     }
 
-    .dropdown-menu {
-        text-align: center;
+    .nav > li > a {
+        font-size: 18px;
+        display: inline;
+        padding: 0;
+    }
+
+    .top ul.menu-list li~li {
+        margin-left: 0;
+    }
+
+    .navbar-inverse .navbar-nav > li > a:focus,
+    .navbar-nav > li > a:hover {
+        color: #31B0D5;
+        background-color: transparent;
+    }
+
+    .nav .open > a,
+    .nav .open > a:focus,
+    .nav .open > a:hover {
+        background-color: #fff;
+        border-color: #337ab7;
+    }
+
+    .navbar-nav > li > .dropdown-menu {
+        margin-left: 28px;
+        padding: 10px 0;
+    }
+
+    .nav > li > a:focus,
+    .nav > li > a:hover {
+        text-decoration: none;
+        background-color: #fff;
+        color: #5ABEEF;
+    }
+
+    .dropdown-menu > li > a:hover {
+        color: #262626;
+        text-decoration: none;
+        color: #5ABEEF;
+        background-color: #fff;
+    }
+
+    .dropdown-menu > li > a {
+        padding: 4px 20px;
+    }
+
+    .special-header_bottom ul li a:hover {
+        color: #7c7c7c;
     }
 }
