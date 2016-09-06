@@ -1,0 +1,41 @@
+.tsbo{
+    border-bottom: 1px solid #EDEDED;
+    width: 100%;
+    overflow: hidden;
+}
+.tscop{
+    width:100% ;
+    height: 300px;
+    margin-bottom: 40px;
+}
+.tstu{
+    width:33% ;
+    float: left;
+    height: 300px;
+ }
+.tstext{
+    width:50%;
+    float: right;
+    height: 300px;
+    background: red;
+}
+#tstu1{
+   background: url("../img/tspay/one1.jpg");
+    background-size: 100% 200%;
+}
+#tstu2{
+     background: url("../img/tspay/one1.jpg");
+     background-size: 100% 200%;
+ }
+#tstu3{
+    background: url("../img/tspay/two1.jpg");
+    background-size: 100% 100%;
+}
+#tstu4{
+    background: url("../img/tspay/two2.jpg");
+    background-size: 100% 100%;
+}
+#tstu5{
+    background: url("../img/tspay/three1.jpg");
+    background-size: 100% 100%;
+}
