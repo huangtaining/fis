@@ -1,0 +1,397 @@
+body {
+	color: #555;
+	font-size: 14px;
+}
+
+.carousel-inner {
+	width: 100%;
+	height: 400px;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*第一部分*/
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.centre {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.announcement {
+	margin-top: 30px;
+	border-bottom: 1px solid #ECECEC;
+}
+
+.announcement> div {
+	float: left;
+	width: 33.2%;
+	padding: 20px 0 36px 20px;
+}
+
+.announcement> div .border {
+	border-right: 1px solid #ECECEC;
+}
+
+.announcement> div .border p {
+	font-size: 18px;
+	color: #3B3B3B;
+}
+
+.announcement_right {
+	float: right;
+	margin-left: 0;
+	width: 76%;
+	padding-right: 15px;
+}
+
+.announcement_right span {
+	display: inline-block;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.announcement_right span a {
+	color: #585858;
+	text-decoration: none;
+}
+
+
+/*文字滚动*/
+
+.scrollbox {
+	width: 340px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#scrollDiv {
+	width: 340px;
+	height: 65px;
+	overflow: hidden;
+}
+
+
+/*这里的高度和超出隐藏是必须的*/
+
+#scrollDiv li {
+	width: 300px;
+	overflow: hidden;
+	vertical-align: bottom;
+	zoom: 1;
+}
+
+#scrollDiv li h3 {
+	font-size: 14px;
+	color: #353535;
+	width: 300px;
+	margin: 0;
+	line-height: 30px;
+}
+
+#scrollDiv li h3 a {
+	color: #585858;
+	text-decoration: none;
+}
+
+#scrollDiv li h3 a:hover {
+	color: #F00;
+}
+
+.scroltit {
+	height: 26px;
+	line-height: 26px;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+
+.scroltit h3 {
+	width: 100px;
+	float: left;
+}
+
+.scroltit .updown {
+	float: right;
+	width: 32px;
+	height: 22px;
+	margin-left: 4px;
+}
+
+#but_up {
+	background: url("images/up.gif") no-repeat 0 0;
+	text-indent: -9999px;
+}
+
+#but_down {
+	background: url("images/down.gif") no-repeat 0 0;
+	text-indent: -9999px;
+}
+
+
+/*第二部分*/
+
+.welcome> div {
+	float: left;
+}
+
+.welcome_left {
+	padding: 50px 0 100px 0;
+	text-align: left;
+}
+
+.welcome_left p {
+	width: 490px;
+	line-height: 30px;
+	color: #585858;
+}
+
+.welcome_left h1 {
+	padding: 20px 0;
+	font-size: 40px;
+	color: #585858;
+}
+
+
+/*第三部分    转账付款*/
+
+.payment {
+	background-color: #fff;
+}
+
+.payment .payment_bottom {
+	width: 100%;
+	height: 550px;
+	background-color: #F7F7F7;
+}
+
+.payment .payment_bottom .payment_box {
+	width: 83%;
+	float: right;
+}
+
+.payment .payment_left {
+	width: 32%;
+	padding: 114px 0;
+	text-align: left;
+}
+
+.payment .payment_left h1 {
+	padding: 0 0 50px;
+	font-size: 50px;
+	color: #585858;
+	padding-bottom: 50px;
+}
+
+.payment .payment_left p {
+	padding-bottom: 50px;
+	display: block;
+	width: 410px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #585858;
+}
+
+.payment .payment_left .view {
+	width: 189px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	background-color: #19A8E8;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.payment .payment_box> div {
+	float: left;
+}
+
+.payment_right {
+	height: 550px;
+	width: 68%;
+	float: right;
+}
+
+.payment_right img {
+	width: 100%;
+	height: 100%;
+}
+
+.payment .payment_top {
+	width: 100%;
+	border-bottom: 1px solid #ECECEC;
+}
+
+.payment .payment_top .centre {
+	width: 880px;
+	margin: 0 auto;
+}
+
+.payment .payment_top .centre> div {
+	float: left;
+	width: 175px;
+	height: 227px;
+	text-align: center;
+}
+
+.payment .payment_top .centre> div img {
+	padding: 16px 0;
+}
+
+.payment .center_box {
+	height: 140px;
+	width: 175px;
+	margin-top: 50px;
+	border-right: 1px solid #ECECEC;
+	margin-left: 0;
+}
+
+.payment .centre {
+	text-align: center;
+}
+
+.payment_top_top h1 {
+	font-size: 50px;
+	color: #585858;
+	padding: 50px 0 20px;
+}
+
+.payment_top_top p {
+	width: 660px;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+	line-height: 30px;
+	color: #585858;
+}
+
+.active {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
+	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888');
+	box-shadow: 2px 6px 20px #888888;
+}
+
+
+/*第四部分*/
+
+.lift {
+	margin-top: 80px;
+}
+
+.lift a img {
+	width: 100%;
+}
+
+.lift .lift_top {
+	width: 100%;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.lift .lift_top .centre {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.lift .lift_top .centre> div {
+	float: left;
+	width: 157px;
+	height: 227px;
+	text-align: center;
+}
+
+.lift .lift_top .centre> div img {
+	padding: 16px 0;
+}
+
+.lift .center_box {
+	height: 140px;
+	width: 157px;
+	margin-top: 45px;
+	border-right: 1px solid #ECECEC;
+	margin-left: 0;
+}
+
+.center_box p {
+	font-size: 16px;
+	color: #7A7979;
+}
+
+.beautify {
+	cursor: pointer;
+}
+
+
+/*第五部分*/
+
+.cooperation {
+	padding: 80px 0;
+}
+
+.cooperation p {
+	padding: 10px 0;
+}
+
+.cooperation ul {
+	margin-bottom: 0;
+}
+
+.cooperation ul li {
+	float: left;
+	width: 190px;
+	height: 70px;
+}
+
+.cooperation ul li img {
+	width: 100%;
+	height: 100%;
+}
+
+.cooperation ul li {
+	padding: 5px;
+}
+
+.cooperation .centre> div {
+	width: 33.3%;
+	float: left;
+}
+
+.cooperation .centre .centre_time p em {
+	padding: 5px 20px 5px 0;
+	display: inline-block;
+	font-size: 14px;
+	color: #4A4A4A;
+}
+
+.cooperation .centre> div .city {
+	display: block;
+	width: 280px;
+	padding-top: 0;
+}
+
+.cooperation .centre> div p {
+	padding: 5px 0;
+}
+
+.cooperation .centre p {
+	font-size: 18px;
+	color: #585858;
+}
+
+.cooperation .centre .centre_time p {
+	font-size: 14px;
+	color: #333;
+}
+
+.cooperation em {
+	font-weight: normal;
+}
+
+

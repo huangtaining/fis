@@ -1,0 +1,112 @@
+
+/***********************************************************************************************/
+/*个人登录   页面*/
+.login{width: 100%;background-color: #F7F7F7;}
+.login_box{padding: 30px 0 130px 0;}
+.login_box>div{float: left;}
+.login_box .login_left{width:69% ;}
+.login_box .login_left img{width: 100%;height: 100%;}
+.login_box .login_right{width: 30%;border: 1px solid #e4e4e4;text-align: center;}
+.login_box .login_right h1{padding:15px 0;border-bottom: 1px solid #e4e4e4;text-align: left;padding-left: 40px;font-size: 20px;color: #333;}
+.login_box .login_right ul li{padding:30px 0 8px 0;}
+.login_box .login_right ul li~li{padding:8px 0 8px 0;}
+.login_box .login_right ul li input{width: 290px;height:45px;line-height:45px;border: 1px solid #e4e4e4;text-indent: 1.5em;border-radius:5px;letter-spacing:1px;}
+.login_box .login_right ul li em{width: 25%;display: inline-block;height:45px;line-height:45px;background-color: pink;float: right;margin-right: 36px;}
+.login_box .login_right ul li button{width: 290px;height:45px;line-height:45px;border:1px solid #009FE8;border-radius:4px;color: #fff;background-color: #fff;}
+.login_box .login_right .login_text{padding: 20px 0;}
+.login_box .login_right .login_text .login_one{float: left;margin-left: 40px;}
+.login_box .login_right .login_text .login_one input{vertical-align: middle;padding-right: 5px;margin-top: 2px;width: 15px;height: 15px;}
+.login_box .login_right .login_text .login_one em{vertical-align: middle;margin-left: 5px;}
+.login_box .login_right .login_text .login_two{margin-left: 40px;}
+.login_box .login_right .login_text .login_three{float: right;margin-right: 40px;}
+.login_box .login_right .login_text a{color:#009FE8 ;}
+
+/***********************************************************************************************/
+/*个人注册   页面*/
+.personal-box{width: 100%;background-color:#F7F7F7;padding: 50px 0;}
+/*进度条  部分*/
+.bar_article{width: 1000px;margin: 0 auto;}
+.bar_article ul{float:left;width:90%;padding:50px 50px 20px 50px;}
+.bar_article ul li{float: left;width:33% ;text-align:right;padding-top: 10px;}
+.bar_article ul li p{margin: 10px;color:#585858 ;text-align: center;font-size: 15px;}
+.bar_article .zhong>div{display: block;float: left;}
+.bar_article .zhong{width:300px;height: 45px;position: relative;}
+.bar_article .yuan{width:30px;height: 30px;border-radius:50%;background-color:#D5D5D5;margin:5px 0;z-index: 2222;position: absolute;left: 45%;}
+.bar_article .yuan em{float:left;margin-left:11px;margin-top: 5px;color: white;}
+.bar_article .tiao{width:50%;height: 11px;background-color:#dcdcdc;margin-top: 14px;}
+.bar_article .zhong .one{background-color: #019FE8;}
+/*注册  部分*/
+.registered{width: 1000px;border: 1px solid #E8E8E8;margin:0 auto;background-color: #fff;}
+.registered h1{display: block;padding:20px 0;text-indent: 2em;font-size: 22px;border-bottom: 1px solid #E8E8E8;color:#585858 ;}
+.registered .registered_box{text-align: center;padding: 50px 0;}
+.registered .registered_box ul li input{margin:20px 0;width:330px;height:45px;line-height:45px;border: 1px solid #e4e4e4;text-indent: 1.5em;border-radius:5px;letter-spacing:1px;}
+.registered .registered_box ul li.code input{width:15%;}
+.registered .registered_box ul li.code span{width:10%;display: inline-block;height: 50px;background-color: pink;float: rigth;margin-left: 20px;vertical-align: middle;}
+.registered .registered_box ul li.login_text input{vertical-align: middle;padding-right: 5px;width: 15px;height: 15px;margin-top: 17px;} 
+.registered .registered_box ul li.login_text{margin-left: -70px;}
+.registered .registered_box ul li button{width: 290px;height:45px;line-height:45px;border-radius:4px;color: #fff;background-color: #D5D5D5;border:none;margin-top: 50px;}
+/************************************************************************************************/
+/*注册下一步*/
+.registered_next{background-color: #fff;}
+.personal-next ul{padding:50px;border-bottom: 1px solid #E8E8E8;}
+.personal_top>div{height: 45px;line-height: 45px;padding:20px;}
+.personal_top em{width:165px;display: inline-block;text-align: right;padding-right: 15px;}
+.personal_top em.left{font-size: 18px;color: #00A0E8;text-align: center;}
+.personal_top span.right{font-size: 14px;color: #585858;}
+.personal_top>div input{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
+.personal_top>div i{font-size: 14px;color: #FF8700;font-style: normal;}
+.personal_top .border_bottom{border-bottom: 1px solid #E8E8E8;padding-bottom: 50px;margin-bottom: 20px;}
+.personal_top>div select{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;/*color: pink;*/}
+/*.personal_top>div select option{color: #333;}*/
+.personal_top>div .button{width: 329px;height: 44px;line-height: 44px;background-color: #D5D5D5;color: #fff;font-size: 14px;text-align: center;display: inline-block;
+border-radius:5px;cursor: pointer ;}
+/***************************************************************************************************/
+/*注册完成*/
+.registered .complete{width: 100%;text-align: center;}
+.registered .complete>div{padding: 80px 0;} 
+.registered .complete>div em img{vertical-align: middle;margin-right: 20px;}
+.registered .complete>div em.test{font-size: 20px;color: #4A4A4A;}
+.registered .complete>div em.test span{color:#EC8312 ;}
+.registered .complete>div p{padding: 50px 0;font-size: 14px;color: #595959;font-family: "微软雅黑";}
+.registered .complete>div p a{margin-left: 10px;color: #24ADEB;}
+/***********************************************************************************************/
+/*忘记密码   页面*/
+.forgot_password_box{width: 100%;background-color:#F7F7F7;padding: 50px 0;}
+.forgot_password_box .password{width: 1000px;margin: 0 auto;border: 1px solid #e4e4e4;background-color: #fff;}
+.password h1{font-size:22px;color:#585858;padding:20px;border-bottom: 1px solid #e4e4e4;text-indent:0.5em;}
+.forgot_password .password_content{padding: 20px 0 50px 0;}
+.forgot_password .password_content>div{padding: 20px 0;}
+.forgot_password .password_content span{color:#585858;font-size: 14px;margin-left: 30px;}
+.forgot_password .password_content .yanzhen{margin-left: 100px;}
+.forgot_password .password_content>div em{width:197px;display: inline-block;text-align: right;padding-right: 15px;}
+.password_content .yanzhen input{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
+.password_content .yanzhen i{font-size: 14px;color: #FF8700;font-style: normal;}
+.password_content .yanzheng input{width:154px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
+.password_content .yanzheng span{width: 10%;display: inline-block;height: 44px;background-color: pink;float: rigth;margin-left: 20px;vertical-align: middle;}
+.password_content .button{width: 329px;height: 44px;line-height: 44px;border: 1px solid #D5D5D5;border-radius:3px;background-color: #19A8E8;color: #fff;text-align: center;display: inline-block;}
+/*忘记密码 2*/
+.forgot_password h2{font-size: 14px;color: #585858;padding:20px 20px 0 20px;text-indent:2em;}
+.forgot_password .bar_article ul{border-bottom: 1px solid #e4e4e4;}
+.forgot_password .content .yanzhen span{color: #EC8312;margin: 0;} 
+.forgot_password .content .test{padding: 0 0px 20px 0px ;}
+.forgot_password .content .yanzhen{font-size: 14px;}
+.forgot_password .content .tishi{width: 947px;background-color: #F7F7F7;margin: 10px auto 30px auto;padding: 30px 0;}
+.content .tishi .yanzheng{margin-left: 75px;}
+.content .tishi p{padding:0px 0 30px 30px;}
+.forgot_password .password_content .yanzhen3 {margin-left: 43px;}
+.forgot_password .password_content .yanzhen3 em{width: 269px;}
+.forgot_password .password_content .yanzhen3 span{color: #00A0E8;}
+.forgot_password .content .tishi3 p{padding:0px 0 15px 30px;}
+/*忘记密码 5*/
+.forgot_password .complete{width: 100%;text-align: center;}
+.forgot_password .complete>div{padding: 80px 0;} 
+.forgot_password .complete>div em img{vertical-align: middle;margin-right: 20px;}
+.forgot_password .complete>div em.test{font-size: 20px;color: #4A4A4A;}
+.forgot_password .complete>div p{padding: 50px 0;font-size: 14px;color: #595959;font-family: "微软雅黑";}
+.forgot_password .complete>div p a{margin-left: 10px;color: #24ADEB;}
+
+/*帐号激活*/
+.jihuo{background-color:#F7F7F7;}
+.jihuoma{width: 89px;height: 30px;line-height: 30px;border:1px solid #e4e4e4;margin-left: 0;display: inline-block;text-align: center;border-radius:5px;background-color: #F7F7F7 ;cursor: pointer;}
+
+
