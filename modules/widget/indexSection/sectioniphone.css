@@ -53,6 +53,10 @@
 	margin-left: 0
 }
 
+.hero-scene-text h1{
+	margin-top: 9px;
+}
+
 @media screen and (max-width:0em),
 screen and (min-width:40em) {
 	.show-for-small-only {
