@@ -10,79 +10,81 @@
 //     }
 // }
 
-a {
-    color: #333;
-}
+header.header {
+    a {
+        color: #333;
+    }
 
-.header_top {
-    width: 100%;
-    border-bottom: 1px solid #e4e4e4;
-}
+    .header_top {
+        width: 100%;
+        border-bottom: 1px solid #e4e4e4;
+    }
 
-.special-header_bottom {
-    width: 1200px;
-    margin: 0 auto;
-    height: 35px;
-    line-height: 35px;
-}
+    .special-header_bottom {
+        width: 1200px;
+        margin: 0 auto;
+        height: 35px;
+        line-height: 35px;
+    }
 
-.special-header {
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    /*	line-height: 100px;*/
-}
+    .special-header {
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        /*	line-height: 100px;*/
+    }
 
-.alipay-logo {
-    float: left;
-    height: 90px;
-    width: 180px;
-    background: url("static/imgs/public/logo03.png") 0 0 no-repeat;
-    margin-top: 10px;
-}
+    .alipay-logo {
+        float: left;
+        height: 90px;
+        width: 180px;
+        background: url("static/imgs/public/logo03.png") 0 0 no-repeat;
+        margin-top: 10px;
+    }
 
-.alipay-logo:hover {
-    border: none;
-}
+    .alipay-logo:hover {
+        border: none;
+    }
 
-ul.menu-list {
-    float: right;
-}
+    ul.menu-list {
+        float: right;
+    }
 
-ul.menu-list li {
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    margin-left: 10px;
-}
+    ul.menu-list li {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        margin-left: 10px;
+    }
 
-ul.menu-list li~li {
-    margin-left: 35px;
-}
+    ul.menu-list li~li {
+        margin-left: 35px;
+    }
 
-span.username {
-    padding-left: 10px;
-}
+    span.username {
+        padding-left: 10px;
+    }
 
-.dropdown ul {
-    width: 102px;
-    min-width: 102px;
-}
+    .dropdown ul {
+        width: 102px;
+        min-width: 102px;
+    }
 
-.dropdown ul li {
-    margin-left: 0;
-    display: block;
-}
+    .dropdown ul li {
+        margin-left: 0;
+        display: block;
+    }
 
-.dropdown ul li~li {
-    margin-left: 0;
-}
+    .dropdown ul li~li {
+        margin-left: 0;
+    }
 
-.nav > li > a {
-    margin-top: 30px;
-    padding: 10px 0 10px 15px;
-}
+    .nav > li > a {
+        margin-top: 30px;
+        padding: 10px 0 10px 15px;
+    }
 
-.dropdown-menu {
-    text-align: center;
+    .dropdown-menu {
+        text-align: center;
+    }
 }
