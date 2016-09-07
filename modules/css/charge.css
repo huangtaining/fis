@@ -1,0 +1,371 @@
+.collection h4{
+    color:#333333;
+    font-size:18px;
+    margin-top:25px;
+}
+.collection .shouk{
+    margin-top:56px;
+    color:#585858;
+}
+.position{
+    margin-left:31px;
+}
+/*progress开始*/
+.progress{
+    width:100%;
+    height:10.8%;
+    float:left;
+    margin-top:20px;
+    margin-bottom: 9%;
+}
+.progress li{
+    float:left;
+    position:relative;
+}
+.firstli{
+    width:37%;
+    height:69%;
+    float:left;
+    padding-top:1.75%;
+
+}
+.progress .form-one{
+    width:100%;
+    height:10px;
+    background-color:#00A0E8;
+}
+.progress .quan-one{
+    width:33px;
+    height:33px;
+    text-align: center;
+    line-height:33px;
+    border-radius: 100%;
+    background-color:#00A0E8;
+    position: absolute;
+    top:10%;
+    left:61%;
+    color:white;
+    z-index: 10;
+}
+.firstli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:29%;
+    margin-top:30px;
+}
+.secli{
+    width:23%;
+    height:6.8%;
+    float:left;
+    padding-top:20px;
+}
+.progress .change{
+    background-color:#D5D5D5;
+}
+.progress .quanc{
+    position: absolute;
+    top:10%;
+    left:45%;
+    background-color:#D5D5D5;
+}
+.progress .threeli .quanc{
+    position: absolute;
+    top:10%;
+    left:32%;
+}
+.secli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:4%;
+    margin-top:30px;
+}
+.progress .threeli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:-100px;
+    margin-top:30px;
+}
+/*form开始*/
+.form{
+    width:100%;
+    height:auto;
+    margin-top:120px;
+    margin-bottom:243px;
+}
+.form label{
+    display:inline-block;
+    height:0.5%;
+    width:12%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right:24px;
+}
+.form input{
+    height:25px;
+    width:16.5%;
+}
+
+.form p{
+    margin-bottom:18px;
+}
+.form p em{
+    color:#EE8719;
+}
+.totalmoney{
+    border:none;
+}
+.form .severmoney{
+    width:37px;
+    border:none;
+
+}
+.lsevermoney{
+    color:#00A0E8;
+}
+.nextbtn{
+    height:30px;
+    width:6.4%!important;
+    /*margin-left:191px;*/
+}
+.nextbtn{
+    margin-left:191px;
+}
+#txt{
+    height:75px;
+    width:16.5%;
+    margin-left:17.8%;
+
+}
+.stail{
+    position:relative;
+}
+.stail label{
+    display: inline-block;
+    position:absolute;
+}
+
+/*选择联系人*/
+.modal-content{
+    width:350px;
+    position:absolute;
+    left:-160px;
+    top:305px;
+}
+.modal-body li{
+    /*margin-top:7px;*/
+
+}
+.modal-body ul{
+    margin-top:10px;
+}
+.modal-body input{
+    width:138px;
+}
+.modal-body .find{
+    width:53px;
+    margin-left:12px;
+    color:white;
+
+}
+.modal-body button{
+    width:60px;
+    height:25px;
+    padding:0;
+    margin-left:10px;
+}
+.modal-header{
+    border-bottom:1px dashed rgb(59,156,225);
+}
+#xuan{
+    width:15px;
+    display: inline-block;
+    vertical-align:bottom;
+    margin-left:15px;
+}
+.modal-body .seclabel{
+    display: inline-block;
+    width:200px;
+    margin-left:10px;
+}
+/*多人收款*/
+.manyla {
+    display: inline-block;
+    height: 19px!important;
+    width: 125px!important;
+    /*text-align: left!important;*/
+    font-size: 14px!important;
+    font-weight: normal!important;
+    margin-left:-10px!important;
+}
+.user{
+    height:25px;
+    width:16.5%;
+    margin-left:-5px;
+}
+.form p{
+    margin-bottom:15px;
+}
+.form p em{
+    color:#EE8719;
+}
+.totalmoney{
+    border:none;
+}
+.severmoney{
+    width:37px;
+    border:none;
+}
+.lsevermoney{
+    color:#00A0E8;
+}
+.nextbtntwo{
+    height:30px;
+    width:135px;
+    margin-left:57px;
+    width:135px;
+    color:rgb(73,145,218);
+}
+#txto{
+    height:75px;
+    width:16.5%;
+    margin-left:11.3%;
+
+}
+.stail{
+    position:relative;
+}
+.stail label{
+    display: inline-block;
+    position:absolute;
+}
+
+.manype{
+    padding-left:59px;
+}
+.manype .manyla{
+    text-align: left;
+}
+.manype>input{
+    width:125px;
+    margin-right:3px;
+}
+.manype span{
+    display: inline-block;
+    margin-left:30px;
+    text-align: center;
+}
+.lookbz{
+    color:#00A0E8;
+}
+.lookbz:hover{
+    color:#00A0E8;
+}
+/*确认收款信息*/
+.seclitwo .change{
+    background-color:#00A0E8;
+}
+.seclitwo .quanc{
+    background-color:#00A0E8;
+}
+.form .warning{
+    font-size: 12px;
+    margin-bottom:74px;
+}
+.form .warning span{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 100%;
+    background-color:#EE8719;
+    text-align: center;
+    line-height:20px;
+    color:#FFFFFF;
+    margin:0 15px;
+}
+.form p span em{
+    color:rgb(255,102,0);
+}
+.form p label{
+    display: inline-block;
+    width:126px;
+    height:19px;
+    text-align: right;
+    margin:0 18px 0 60px;
+    font-weight: normal;
+    color:#4A4A4A;
+    /*margin-right:18px;*/
+}
+.lastbtn{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.lastbtn input{
+    width:75.3px;
+    height:25px;
+    color:white;
+    border:none;
+    border-radius: 3px;
+}
+#btn1{
+    margin-left:105px;
+    margin-right:26.7px;
+    background-color:#00A0E8;
+}
+#btn2{
+    background-color:#EE8719;
+}
+.warning p{
+    display: inline-block;
+    height:50px;
+    width:1058px;
+    line-height:2em;
+}
+.gant{
+    vertical-align: top;
+}
+
+/*//多人确认收款信息*/
+.formbody {
+    width:1082px;
+    height:158px;
+    margin:0 auto;
+    padding:30px;
+}
+.formbody p span em{
+    color:rgb(255,102,0);
+}
+.formfooter{
+    width:1200px;
+    padding:28px;
+    height:260px;
+    background-color:white;
+    border:1px solid #E8E8E8;
+    margin-top:22px;
+}
+.formfooter a{
+    margin:0 10px;
+}
+.formfooter .lianjie{
+    color:rgb(154,189,219);
+    margin-left:-10px;
+}
+.lianjie a{
+    color:#00A0E8;
+}
+.lianjie a:hover{
+    color:#00A0E8;
+}
+.lianjie{
+    margin-top:30px;
+}
+.threelitwo .change{
+    background-color:#00A0E8;
+}
+.threelitwo .quanc{
+    background-color:#00A0E8;
+}
+.btndown{
+    margin-top:10px;
+    margin-left:210px;
+}
