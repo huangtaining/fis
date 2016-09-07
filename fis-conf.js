@@ -177,6 +177,7 @@ var map = {
 
 fis.config.merge({
     pack: {
+        '/static/pkg/base.js': ['lib/mod.js', '/components/jquery/*.js', '/modules/lib/ysbbase.js']
     }
 });
 
@@ -200,6 +201,7 @@ fis.util.map(map, function(k, v) {
             domain: domain
         })
         .match('**/(*_{x,y,z}.png)', {
+            release: '/static/pkg/$1'
         })
         // 启用打包插件，必须匹配 ::package
         .match('::package', {
@@ -214,21 +216,28 @@ fis.util.map(map, function(k, v) {
             })
         })
         .match('/lib/es5-{shim,sham}.js', {
+            packTo: '/static/pkg/es5-shim.js'
         })
         .match('/components/**.css', {
+            packTo: '/static/pkg/components.css'
         })
         .match('/components/**.js', {
+            packTo: '/static/pkg/components.js'
         })
         .match('/modules/**.{scss,css}', {
+            packTo: '/static/pkg/modules.css'
         })
         .match('/modules/css/**.{scss,css}', {
             packTo: ''
         })
         .match('/modules/css/common.scss', {
+            packTo: '/static/pkg/common.css'
         })
         .match('/modules/**.{es,js}', {
+            packTo: '/static/pkg/modules.js'
         })
         .match('/modules/app/**.{es,js}', {
+            packTo: '/static/pkg/aio.js'
         })
 });
 
@@ -244,10 +253,12 @@ fis.media('prd')
     });
 // .match('::package', {
 //   packager: fis.plugin('deps-pack', {
+//      'static/pkg/frame.css':[
 //        '/static/scss/**.css',
 //        '/static/scss/**.scss',
 //        '/widget/**.scss'
 //      ],
+//      'static/pkg/boot.js': [
 //         'static/js/require.js',
 //         'components/jquery/jquery.js',
 //         'modules/lib/ysbbase.js'
