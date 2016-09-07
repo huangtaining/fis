@@ -31,6 +31,7 @@ fis.set('project.ignore', [
 fis.hook('commonjs', {
     baseUrl: './modules',
     extList: ['.js', '.es']
+    //,mod: 'amd'
 });
 
 // fis.unhook('commonjs');
@@ -158,7 +159,7 @@ fis.match('::package', {
         //include: ""
         allInOne: false, //js&css打包成一个文件
         sourceMap: true, //是否生成依赖map文件
-        resourceType: 'amd', //[auto, amd, cmd, commonJs]
+        resourceType: 'commonJs', //[auto, amd, cmd, commonJs]
         useInlineMap: true // 资源映射表内嵌|是否将sourcemap作为内嵌脚本输出
     })
 });
