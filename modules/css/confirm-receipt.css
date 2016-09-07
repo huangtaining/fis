@@ -1,0 +1,165 @@
+.collection h4{
+    color:#333333;
+}
+.collection .shouk{
+    margin-top:56px;
+    color:#585858;
+}
+
+/*progress开始*/
+.progress{
+    width:100%;
+    height:10.8%;
+    float:left;
+    margin-top:20px;
+    /*margin-bottom: 5%;*/
+}
+.progress li{
+    float:left;
+    /*height:;*/
+    position:relative;
+}
+.firstli{
+    width:37%;
+    height:69%;
+    float:left;
+    padding-top:1.75%;
+
+}
+.progress .form-one{
+    width:100%;
+    height:10px;
+    background-color:#00A0E8;
+}
+.progress .quan-one{
+    width:33px;
+    height:33px;
+    text-align: center;
+    line-height:33px;
+    border-radius: 100%;
+    background-color:#00A0E8;
+    position: absolute;
+    top:10%;
+    left:61%;
+    z-index: 10;
+    color:#FFFFFF;
+}
+.firstli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:29%;
+    margin-top:30px;
+}
+.secli{
+    width:23%;
+    height:6.8%;
+    float:left;
+    padding-top:20px;
+}
+.progress .secli .quanc{
+    background-color: #00A0E8;
+}
+.progress .change{
+    background-color: #00A0E8;
+
+}
+.progress .quanc{
+    position: absolute;
+    top:10%;
+    left:45%;
+    background-color:#D5D5D5;
+}
+.progress .threeli .change{
+    background-color:#D5D5D5;
+}
+.progress .threeli .quanc{
+
+    position: absolute;
+    top:10%;
+    left:32%;
+}
+.secli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:4%;
+    margin-top:30px;
+}
+.progress .threeli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:-100px;
+    margin-top:30px;
+}
+
+/*form开始*/
+.form{
+    width:100%;
+    /*height:auto;*/
+    margin-top:0px;
+}
+.form .warning{
+    font-size: 12px;
+    margin-bottom:74px;
+}
+.form .warning span{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 100%;
+    background-color:#EE8719;
+    text-align: center;
+    line-height:20px;
+    color:#FFFFFF;
+    margin:0 15px;
+}
+.form p span em{
+    color:rgb(255,102,0);
+}
+.form p label{
+    display: inline-block;
+    width:126px;
+    height:19px;
+    text-align: right;
+    margin:0 18px 0 60px;
+    font-weight: normal;
+    color:#4A4A4A;
+    /*margin-right:18px;*/
+}
+.lastbtn{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.lastbtn input{
+    width:75.3px;
+    height:25px;
+    color:white;
+    border:none;
+    border-radius: 3px;
+}
+#btn1{
+    margin-left:105px;
+    margin-right:26.7px;
+    background-color:#00A0E8;
+
+
+}
+#btn2{
+
+    background-color:#EE8719;
+
+
+}
+.warning{
+    margin-top:50px;
+}
+.warning p{
+    display: inline-block;
+    height:50px;
+    width:1058px;
+
+    line-height:2em;
+
+}
+.gant{
+  vertical-align: top;
+}
