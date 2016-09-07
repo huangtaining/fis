@@ -125,6 +125,15 @@
                 padding: 25px 25px;
                 height: 100%;
             }
+            .crecard{
+                display: inline-block;
+                border: 1px solid red;
+                width: 40%;
+                float: left;
+                padding: 16px 20px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
             .myuspzhbo{
                     width: 100%;
                     padding: 0;
@@ -195,7 +204,7 @@
     background: url("../../static/imgs/myunspay/B1.png");
 }
 #cir2{
-    background: url("../../static/imgs/myunspay/B2-s.png");
+    background: url("../../static/imgs/myunspay/B2s.png");
 }
 #cir3{
     background: url("../../static/imgs/myunspay/B3.png");
