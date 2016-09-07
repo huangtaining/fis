@@ -5,6 +5,7 @@ body {
 
 .carousel-inner{position: relative;}
 .carousel-inner img{width: 100%;height: 100%;}
+.fixe a{color: #fff;width: 189px;height: 35px;display: inline-block;}
 .fixe{top:35%;right:20%;position: absolute;}
 .fixe>div{width: 189px;height: 35px;line-height: 35px;text-align: center;color: #fff;border-radius:5px;margin:30px 0;font-size: 14px;}
 .fixe .fixe_top{background-color: #019FE8;}
@@ -163,7 +164,6 @@ body {
 
 .payment .payment_bottom {
 	width: 100%;
-	height: 550px;
 	background-color: #F7F7F7;
 }
 
@@ -185,13 +185,22 @@ body {
 	padding-bottom: 50px;
 }
 
+   @media only screen and (min-width: 1000px) and (max-width:1600px) {
+	.payment .payment_left h1 {
+	font-size:35px;
+	padding-bottom: 50px;
+}
+.payment .payment_left {padding:50px 0 20px 0;}
+.payment .payment_left p {padding-right: 50px;}
+
+   }
 .payment .payment_left p {
 	padding-bottom: 50px;
 	display: block;
-	width: 410px;
 	line-height: 30px;
 	font-size: 14px;
 	color: #585858;
+	padding-right: 80px;
 }
 
 .payment .payment_left .view {
@@ -210,7 +219,6 @@ body {
 }
 
 .payment_right {
-	height: 550px;
 	width: 68%;
 	float: right;
 }

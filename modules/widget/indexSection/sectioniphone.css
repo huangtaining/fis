@@ -403,7 +403,6 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 .fullheight-column-align{
 	position: absolute;
     margin-top:60px;
-    margin-left: -350px;
 }
 
 * {
