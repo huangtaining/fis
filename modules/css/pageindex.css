@@ -275,7 +275,7 @@ body {
 
 .active {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
-	filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888');
+	filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
 	box-shadow: 2px 6px 20px #888888;
 }
 

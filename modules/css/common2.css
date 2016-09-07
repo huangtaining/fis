@@ -13,7 +13,7 @@
 .yell{
     color:#EE881A;
     font-weight: bold;
-    margin: 0 10px 0 0
+    margin: 0 15px
 }
 .s40{
     font-size: 40px;
@@ -53,13 +53,14 @@
     margin-right: 20px;
 }
 .gan_text{
-    height: 20px;
     line-height: 20px;
+    float: left;
 }
 .witwar{
     width: 100%;
     padding: 10px 20px;
     margin: 10px 0;
+    overflow: hidden;
 }
 /*问题*/
 .que{
@@ -82,6 +83,9 @@
 }
 .right{
     float: right;
+}
+.txright{
+    text-align: right;
 }
 .more:hover{
     text-decoration: none;
@@ -126,7 +130,6 @@
 
 .allbody{
     border: 1px solid #E8E8E8;
-    border-top:none;
     background: white;
     overflow: hidden;
     padding: 28px;

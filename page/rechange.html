@@ -89,9 +89,10 @@
 
         </form>
 
-        <div class="stop">
+        <!--警告2-->
+        <div class="witwar stop">
             <div class="gan"></div>
-            为配合国家实施反洗钱法,经济发垃圾分类数据连接拉链扣积分的离开家
+            <div class="gan_text" >为配合国家实施反洗钱法,经济发垃圾分类数据连接拉链扣积分的离开家</div>
         </div>
     </div>
 
@@ -108,29 +109,7 @@
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
 <script src="lib/mod.js" data-loader></script>
-<!--SCRIPT_PLACEHOLDER-->
-<script type="text/javascript">
-    var _nextDa;
-    $(function() {
-        $(".nextstep").click(function(){
-            veri()
-        })
-    });
-    //    $(this).parent("a").attr("href","rechange_2.html")
-    //验证格式的函数
-    function veri(){
-//
-        var _phone=$("#phone").val();
-        var _youx=$("#youx").val()
-        if(_phone && _youx){
-            if(   (/^1[3|4|5|7|8]\d{9}$/.test(_phone))   &&   (/^1[3|4|5|7|8]\d{9}$/.test(_youx))    ){
-                $(".nextstep").css("background","red")
-            }else{
-                alert("格式不正确")
-            }
-        }
 
-    }
-</script>
+<!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>
