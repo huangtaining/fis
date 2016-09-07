@@ -157,7 +157,7 @@ fis.match('::package', {
         //include: ""
         allInOne: false,  //js&css打包成一个文件
         sourceMap: true, //是否生成依赖map文件
-        resourceType: 'commonJs',   //[auto, amd, cmd, commonJs]
+        resourceType: 'amd',   //[auto, amd, cmd, commonJs]
         useInlineMap: true // 资源映射表内嵌|是否将sourcemap作为内嵌脚本输出
     })
 });
