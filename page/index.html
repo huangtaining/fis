@@ -305,7 +305,13 @@
                 </div>
             </div>
         </section>
-
+<script>
+    	$('.beautify').hover(function(){
+		    $(this).addClass('active').siblings().removeClass('active');
+            }, function(){
+		        $(this).siblings().removeClass('active');
+	        });
+</script>	
         <link rel="import" href="modules/widget/footer/footer.html?__inline">
 
         <script src="../lib/TweenMax.min.js" type="text/javascript" charset="utf-8" data-framework></script>

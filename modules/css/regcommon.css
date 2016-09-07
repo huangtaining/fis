@@ -111,13 +111,23 @@ border-radius:5px;cursor: pointer ;}
 .jihuoma{width: 89px;height: 30px;line-height: 30px;border:1px solid #e4e4e4;margin-left: 0;display: inline-block;text-align: center;border-radius:5px;background-color: #F7F7F7 ;cursor: pointer;}
 
 /********************************************************************************************************/
-/*反洗钱公告   页面*/
+/*反洗钱   页面*/
 .money-laundering{width: 100%;background-color: #F7F7F7;padding: 30px 0 70px 0;}
 .money-laundering .money{border: 1px solid #e4e4e4;background-color: #fff;}
 .money-laundering .money .money_box{margin: 10px;padding: 30px 0 80px 0;background-color:#EEEEEE;}
 .money-laundering .money .money_box h1{text-align: center;display: block;padding: 50px 0 20px 0;font-size: 40px;}
 .money-laundering .money .money_box ul{margin-left: 80px;}
 .money-laundering .money .money_box ul li{float: left;padding: 20px;width:15%;text-align: center;}
+
+/*反洗钱公告页*/
+.moneylaundering-affiche{width: 1200px;margin: 0 auto;padding-bottom: 60px;}
+.moneylaundering-affiche img{width: 100%;}
+.moneylaundering-affiche .affiche{padding: 50px 100px;border: 1px solid #e4e4e4;}
+.moneylaundering-affiche .affiche h1{text-align: center;font-size: 25px;padding: 20px 0;}
+.moneylaundering-affiche .affiche p{font-size: 18px;padding: 10px;line-height: 30px;}
+.moneylaundering-affiche .affiche p.right{text-align: right;}
+.moneylaundering-affiche .affiche p.text_index{text-indent: 2em;}
+.moneylaundering-affiche .affiche p em{font-weight: bold;}
 
 /***********************************************************************************************/
 /*交易记录   页面*/
