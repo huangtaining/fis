@@ -144,11 +144,11 @@ screen and (min-width:40em) {
 
 .line-boxes .box {
 	float: left;
-	width: 166px;
+	width: 180px;
 	height: 294px;
-	margin-right: 17px;
+	margin-right:6px;
 	background-repeat: no-repeat;
-	background-size: cover
+	background-size: cover;
 }
 .noselect,
 .scene-viewes .scene,
@@ -161,54 +161,71 @@ ul.device-wall li .device {
 	user-select: none
 }
 
+
+/*灰色背景图*/
 .line-boxes .box.web {
-	width: 424px;
-	background-image: url(../static/imgs/index/wireframe-web.png)
+    width: 424px;
+    background-image: url(/static/imgs/index/A1-4.png);
 }
 
 @media (-webkit-min-device-pixel-ratio:2),
 (min-resolution:192dpi),
 screen and (-webkit-min-device-pixel-ratio:2) {
 	.line-boxes .box.web {
-		background-image: url(../static/imgs/index/img/wireframe-web@2x.png)
+		background-image: url(/static/imgs/index/A1-4.png)
 	}
 }
 
 .line-boxes .box.apple-pay {
-	background-image: url(../static/imgs/index/wireframe-app.png)
+	background-image: url(/static/imgs/index/A1-1.png)
 }
 
 @media (-webkit-min-device-pixel-ratio:2),
 (min-resolution:192dpi),
 screen and (-webkit-min-device-pixel-ratio:2) {
 	.line-boxes .box.apple-pay {
-		background-image: url(../static/imgs/index/wireframe-app@2x.png)
+		background-image: url(../static/imgs/index/A1-1.png)
 	}
 }
 
 .line-boxes .box.hongbao {
-	background-image: url(../static/imgs/index/wireframe-hongbao.png)
+	background-image: url(/static/imgs/index/A1-3.png)
 }
 
 @media (-webkit-min-device-pixel-ratio:2),
 (min-resolution:192dpi),
 screen and (-webkit-min-device-pixel-ratio:2) {
 	.line-boxes .box.hongbao {
-		background-image: url(../static/imgs/index/wireframe-hongbao@2x.png)
+		background-image: url(../static/imgs/index/A1-3.png)
 	}
 }
 
 .line-boxes .box.qr {
-	background-image: url(../static/imgs/index/wireframe-qr.png)
+	background-image: url(/static/imgs/index/A1-2.png)
 }
 
 @media (-webkit-min-device-pixel-ratio:2),
 (min-resolution:192dpi),
 screen and (-webkit-min-device-pixel-ratio:2) {
 	.line-boxes .box.qr {
-		background-image: url( ../static/imgs/index/wireframe-qr@2x.png)
+		background-image: url(/static/imgs/index/A1-2.png)
 	}
 }
+
+.line-boxes .box.fuwu {
+	background-image: url(/static/imgs/index/A1-5.png)
+}
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi),
+screen and (-webkit-min-device-pixel-ratio:2) {
+	.line-boxes .box.fuwu {
+		background-image: url(/static/imgs/index/A1-5.png)
+	}
+}
+
+
+
 
 .scene-slider-wrap {
 	box-sizing: border-box;
@@ -226,7 +243,7 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 	top: 80px;
 	width: 378px;
 	height: 573px;
-	background-image: url( ../static/imgs/index/home-phone-hand.png);
+	background-image: url(/static/imgs/index/A1-4.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: none
@@ -236,7 +253,7 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 (min-resolution:192dpi),
 screen and (-webkit-min-device-pixel-ratio:2) {
 	.scene-slider-wrap .iphone-hand-bg {
-		background-image: url( ../static/imgs/index/home-phone-hand@2x.png)
+		background-image: url(/static/imgs/index/A1-4.png)
 	}
 }
 .device-iphone6 {
@@ -250,6 +267,37 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 	z-index: 2;
 	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 5px 10px 0 rgba(0, 0, 0, .05), 0 15px 15px 0 rgba(0, 0, 0, .03), inset 0 0 1px 0 rgba(0, 0, 0, .14)
 }
+
+/*手机里面彩色图*/
+.scene-viewes .scene.apple-pay {
+	border: 1px solid rgba(0, 0, 0, .3);
+	background-image: url(/static/imgs/index/licai2.png)
+}
+
+.scene-viewes .scene.hongbao {
+	background-image: url( ../static/imgs/index/gouwu2.png)
+}
+
+.scene-viewes .scene.qr {
+	border: 1px solid rgba(0, 0, 0, .3);
+	background-image: url(/static/imgs/index/zhuanzhang2.png)
+}
+
+.scene-viewes .scene.web {
+	width: 425px;
+	height: 293px;
+	background-image: url(/static/imgs/index/anquanbaozhang2.png);
+	background-size: cover
+}
+
+.scene-viewes .scene.fuwu {
+	border: 1px solid rgba(0, 0, 0, .3);
+	background-image: url(/static/imgs/index/shenghuofuwu2.png)
+}
+
+
+
+
 
 .device-iphone6,
 .device-iphone6 .topbar {
@@ -351,30 +399,10 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 	background-size: cover
 }
 
-.scene-viewes .scene.apple-pay {
-	border: 1px solid rgba(0, 0, 0, .3);
-	background-image: url( ../static/imgs/index/screen-app-pay.jpg)
-}
 
-.scene-viewes .scene.hongbao {
-	background-image: url( ../static/imgs/index/screen-android.jpg)
-}
-
-.scene-viewes .scene.qr {
-	border: 1px solid rgba(0, 0, 0, .3);
-	background-image: url( ../static/imgs/index/screen-qr.jpg)
-}
-
-.scene-viewes .scene.web {
-	width: 425px;
-	height: 293px;
-	background-image: url( ../static/imgs/index/screen-web.jpg);
-	background-size: cover
-}
 .fullheight-column-align{
 	position: absolute;
     margin-top:60px;
-    margin-left: 8px;
 }
 
 * {
