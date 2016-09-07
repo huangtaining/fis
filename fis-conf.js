@@ -20,9 +20,10 @@ fis.match('*.{js,css}', {
 
 
 fis.set('project.ignore', [
-  'node_modules/**',
-  '.git/**',
-  '.svn/**'
+    'node_modules/**',
+    '_dist/',
+    '.git/**',
+    '.svn/**'
 ]);
 
 
@@ -69,7 +70,7 @@ fis.match('/components/**.js', {
 // ------ 配置modules
 //{!(/modules/widget/(**)), /modules/(**)}
 fis.match("/modules/(**)", {
-   release: '${project.static}/$1'
+    release: '${project.static}/$1'
 });
 
 
@@ -91,7 +92,7 @@ fis.match(/^\/modules\/(.*\.scss)$/i, {
     }),
     postprocessor: fis.plugin('autoprefixer', {
         browsers: ['> 1% in CN', 'last 2 versions', 'IE >= 8'] // pc
-        // browsers: ['Android >= 4', 'iOS >= 6', 'and_uc > 9'] // wap
+            // browsers: ['Android >= 4', 'iOS >= 6', 'and_uc > 9'] // wap
     })
 });
 fis.match(/^\/modules\/(.*\.css)$/i, {
@@ -99,7 +100,7 @@ fis.match(/^\/modules\/(.*\.css)$/i, {
     release: '${project.static}/$1',
     postprocessor: fis.plugin('autoprefixer', {
         browsers: ['> 1% in CN', "last 2 versions", "IE >= 8"] // pc
-        // browsers: ["Android >= 4", "ChromeAndroid > 1%", "iOS >= 6"] // wap
+            // browsers: ["Android >= 4", "ChromeAndroid > 1%", "iOS >= 6"] // wap
     })
 });
 
@@ -128,21 +129,21 @@ fis.match('**.tmpl', {
         global: 'template'
     }),
     isJsLike: true,
-    release : false
+    release: false
 });
 
 
 // ------ 配置模拟数据
 fis.match('/test/**', {
-  release: '$0'
+    release: '$0'
 });
 fis.match('/test/server.conf', {
-  release: '/config/server.conf'
+    release: '/config/server.conf'
 });
 
 fis.match('*.jsx', {
-  rExt: '.js',
-  parser: fis.plugin('react', {})
+    rExt: '.js',
+    parser: fis.plugin('react', {})
 });
 
 
@@ -155,9 +156,9 @@ fis.match('::package', {
     // 分析 __RESOURCE_MAP__ 结构，来解决资源加载问题
     postpackager: fis.plugin('loader', {
         //include: ""
-        allInOne: false,  //js&css打包成一个文件
+        allInOne: false, //js&css打包成一个文件
         sourceMap: true, //是否生成依赖map文件
-        resourceType: 'amd',   //[auto, amd, cmd, commonJs]
+        resourceType: 'amd', //[auto, amd, cmd, commonJs]
         useInlineMap: true // 资源映射表内嵌|是否将sourcemap作为内嵌脚本输出
     })
 });
@@ -181,22 +182,22 @@ fis.config.merge({
 });
 
 
-fis.util.map(map, function (k, v) {
+fis.util.map(map, function(k, v) {
 
     var domain = v.host + v.path;
 
     fis.media(k)
         .match('**.{es,js}', {
-            useHash: true,
+            useHash: false,
             domain: domain
         })
         .match('**.{scss,css}', {
             useSprite: true,
-            useHash: true,
+            useHash: false,
             domain: domain
         })
         .match('::image', {
-            useHash: true,
+            useHash: false,
             domain: domain
         })
         .match('**/(*_{x,y,z}.png)', {
@@ -211,7 +212,7 @@ fis.util.map(map, function (k, v) {
 
             }),
             postpackager: fis.plugin('loader', {
-                allInOne: true,
+                allInOne: false,
             })
         })
         .match('/lib/es5-{shim,sham}.js', {
@@ -247,21 +248,20 @@ fis.media('prd')
     })
     .match('**.{scss,css}', {
         optimizer: fis.plugin('clean-css', {
-            'keepBreaks': false  //保持一个规则一个换行
+            'keepBreaks': false //保持一个规则一个换行
         })
-    })
-    // .match('::package', {
-    //   packager: fis.plugin('deps-pack', {
-    //      'pkg/frame.css':[
-    //        '/static/scss/**.css',
-    //        '/static/scss/**.scss',
-    //        '/widget/**.scss'
-    //      ],
-    //      'pkg/boot.js': [
-    //         'static/js/require.js',
-    //         'components/jquery/jquery.js',
-    //         'modules/lib/ysbbase.js'
-    //      ]
-    //   })
-    // })
-    ;
+    });
+// .match('::package', {
+//   packager: fis.plugin('deps-pack', {
+//      'pkg/frame.css':[
+//        '/static/scss/**.css',
+//        '/static/scss/**.scss',
+//        '/widget/**.scss'
+//      ],
+//      'pkg/boot.js': [
+//         'static/js/require.js',
+//         'components/jquery/jquery.js',
+//         'modules/lib/ysbbase.js'
+//      ]
+//   })
+// })
