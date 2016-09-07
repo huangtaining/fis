@@ -5,7 +5,6 @@
         <link rel="import" href="layout/header.html?__inline">
         <!--STYLE_PLACEHOLDER-->
     </head>
-
     <body>
         <link rel="import" href="modules/widget/header/header.html?__inline">
 
@@ -20,7 +19,7 @@
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="static/imgs/index/banner01.jpg" alt="First slide">
+                        <img src="../static/index/jichengzhifuzhuangjia.png" alt="First slide">
                     </div>
                     <div class="item">
                         <img src="static/imgs/index/banner02.jpg" alt="Second slide">
@@ -32,6 +31,10 @@
                 <!-- 轮播（Carousel）导航 -->
                 <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
                 <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+<div class="fixe">
+	<div class="fixe_top">登 &nbsp;录</div>
+	<div class="fixe_bottom">注&nbsp; 册</div>
+</div>
             </div>
         </section>
 
@@ -302,7 +305,13 @@
                 </div>
             </div>
         </section>
-
+<script>
+    	$('.beautify').hover(function(){
+		    $(this).addClass('active').siblings().removeClass('active');
+            }, function(){
+		        $(this).siblings().removeClass('active');
+	        });
+</script>	
         <link rel="import" href="modules/widget/footer/footer.html?__inline">
 
         <script src="../lib/TweenMax.min.js" type="text/javascript" charset="utf-8" data-framework></script>

@@ -19,14 +19,7 @@
 .myusptip{
      line-height: 60px;
 }
-.myuspf{
-    flex-flow: row wrap;
-    width: 100%;
-    margin-bottom: 25px;
-    border: 1px solid #E8E8E8;
-    background: #ffffff;
 
-}
 /*头像部分*/
 .myusptx{
     position: absolute;
@@ -41,45 +34,61 @@
     line-height: 30px;
 }
 .toux{
-    background: url("../../static/logind/myusp/toux.jpg");
+    background: url("../../static/imgs/logind/myusp/toux.jpg");
     background-size: 60px 60px;
     width: 60px;
     height: 60px;
 }
 
 /*我的账户*/
-.myuspzh{
-   display: flex;
-}
-.myuspf .col-md-6{
-    overflow: hidden;
-    padding: 27px;
+
+.myuspf {
     border-right: 1px solid #ECECEC;
+    height: 100%;
+    margin-bottom: 25px;
 }
-.myuspl div{
-    float: left;
+.myuspzh,.myusppay,.myusplive,.myuspjy{
+    border: 1px solid #ECECEC;
     overflow: hidden;
-    width: 50%;
+    margin-bottom: 40px;
 }
+
+.myuspzh{
+    overflow: hidden;
+}
+            .myuspl{
+                 float: left;
+                 overflow: hidden;
+                 width: 50%;
+                  padding: 25px 25px;
+                border-right: 1px solid #ECECEC;
+             }
+            .myuspl>div{
+                width: 50%;
+                float: left;
+                height: 60px;
+            }
+            .myuspr{
+                float: left;
+                overflow: hidden;
+                width: 50%;
+                padding: 25px 25px;
+            }
+            .myuspzhbo{
+                    width: 100%;
+                    padding: 0;
+                    border-top: 1px solid #ECECEC;
+                    float: left;
+                }
+
 .myuspr div{
     overflow: hidden;
     width: 100%;
 }
-.row{
-    margin: 0 auto;
-}
-
 .myuspzhr span{
     color: #FE8800; ;
 }
-.myuspzhbo{
-    width: 100%;
-    padding: 0;
-    border-top: 1px solid #ECECEC;
-}
-.yels{
-    text-align: right;
-}
+
 #myuspname{
     font-size: 18px;
 }
@@ -87,6 +96,10 @@
     border: 1px solid #E8E8E8;
     padding: 25px;
 }
+.yels{
+    text-align: right;
+}
+
 #dealnum{
     text-align: right;
 }

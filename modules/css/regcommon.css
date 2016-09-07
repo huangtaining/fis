@@ -23,10 +23,10 @@
 
 /***********************************************************************************************/
 /*个人注册   页面*/
-.personal-box{width: 100%;background-color:#F7F7F7;padding: 50px 0;}
+.personal-box{width: 100%;background-color:#F7F7F7;padding: 50px 0 100px 0;}
 /*进度条  部分*/
 .bar_article{width: 1000px;margin: 0 auto;}
-.bar_article ul{float:left;width:90%;padding:50px 50px 20px 50px;}
+.bar_article ul{float:left;width:100%;padding:50px 50px 20px 50px;}
 .bar_article ul li{float: left;width:33% ;text-align:right;padding-top: 10px;}
 .bar_article ul li p{margin: 10px;color:#585858 ;text-align: center;font-size: 15px;}
 .bar_article .zhong>div{display: block;float: left;}
@@ -49,8 +49,9 @@
 /*注册下一步*/
 .registered_next{background-color: #fff;}
 .personal-next ul{padding:50px;border-bottom: 1px solid #E8E8E8;}
-.personal_top>div{height: 45px;line-height: 45px;padding:20px;}
-.personal_top em{width:165px;display: inline-block;text-align: right;padding-right: 15px;}
+.personal_top{padding-top: 20px;}
+.personal_top>div{padding:20px;}
+.personal_top em{width:180px;display: inline-block;text-align: right;padding-right: 15px;}
 .personal_top em.left{font-size: 18px;color: #00A0E8;text-align: center;}
 .personal_top span.right{font-size: 14px;color: #585858;}
 .personal_top>div input{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
@@ -71,14 +72,14 @@ border-radius:5px;cursor: pointer ;}
 .registered .complete>div p a{margin-left: 10px;color: #24ADEB;}
 /***********************************************************************************************/
 /*忘记密码   页面*/
-.forgot_password_box{width: 100%;background-color:#F7F7F7;padding: 50px 0;}
+.forgot_password_box{width: 100%;background-color:#F7F7F7;padding: 50px 0 100px 0;}
 .forgot_password_box .password{width: 1000px;margin: 0 auto;border: 1px solid #e4e4e4;background-color: #fff;}
 .password h1{font-size:22px;color:#585858;padding:20px;border-bottom: 1px solid #e4e4e4;text-indent:0.5em;}
 .forgot_password .password_content{padding: 20px 0 50px 0;}
 .forgot_password .password_content>div{padding: 20px 0;}
 .forgot_password .password_content span{color:#585858;font-size: 14px;margin-left: 30px;}
 .forgot_password .password_content .yanzhen{margin-left: 100px;}
-.forgot_password .password_content>div em{width:197px;display: inline-block;text-align: right;padding-right: 15px;}
+.forgot_password .password_content>div em{width:200px;display: inline-block;text-align: right;padding-right: 15px;}
 .password_content .yanzhen input{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
 .password_content .yanzhen i{font-size: 14px;color: #FF8700;font-style: normal;}
 .password_content .yanzheng input{width:154px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
@@ -94,7 +95,7 @@ border-radius:5px;cursor: pointer ;}
 .content .tishi .yanzheng{margin-left: 75px;}
 .content .tishi p{padding:0px 0 30px 30px;}
 .forgot_password .password_content .yanzhen3 {margin-left: 43px;}
-.forgot_password .password_content .yanzhen3 em{width: 269px;}
+.forgot_password .password_content .yanzhen3 em{width: 290px;}
 .forgot_password .password_content .yanzhen3 span{color: #00A0E8;}
 .forgot_password .content .tishi3 p{padding:0px 0 15px 30px;}
 /*忘记密码 5*/
@@ -109,4 +110,60 @@ border-radius:5px;cursor: pointer ;}
 .jihuo{background-color:#F7F7F7;}
 .jihuoma{width: 89px;height: 30px;line-height: 30px;border:1px solid #e4e4e4;margin-left: 0;display: inline-block;text-align: center;border-radius:5px;background-color: #F7F7F7 ;cursor: pointer;}
 
+/********************************************************************************************************/
+/*反洗钱   页面*/
+.money-laundering{width: 100%;background-color: #F7F7F7;padding: 30px 0 70px 0;}
+.money-laundering .money{border: 1px solid #e4e4e4;background-color: #fff;}
+.money-laundering .money .money_box{margin: 10px;padding: 30px 0 80px 0;background-color:#EEEEEE;}
+.money-laundering .money .money_box h1{text-align: center;display: block;padding: 50px 0 20px 0;font-size: 40px;}
+.money-laundering .money .money_box ul{margin-left: 80px;}
+.money-laundering .money .money_box ul li{float: left;padding: 20px;width:15%;text-align: center;}
+
+/*反洗钱公告页*/
+.moneylaundering-affiche{width: 1200px;margin: 0 auto;padding-bottom: 60px;}
+.moneylaundering-affiche img{width: 100%;}
+.moneylaundering-affiche .affiche{padding: 50px 100px;border: 1px solid #e4e4e4;}
+.moneylaundering-affiche .affiche h1{text-align: center;font-size: 25px;padding: 20px 0;}
+.moneylaundering-affiche .affiche p{font-size: 18px;padding: 10px;line-height: 30px;}
+.moneylaundering-affiche .affiche p.right{text-align: right;}
+.moneylaundering-affiche .affiche p.text_index{text-indent: 2em;}
+.moneylaundering-affiche .affiche p em{font-weight: bold;}
+
+/***********************************************************************************************/
+/*交易记录   页面*/
+.trading_box{width: 100%;background-color:#F7F7F7;padding: 30px 0 80px 0; }
+.trading-record{background-color:#F7F7F7 ;border: 1px solid #e4e4e4;}
+.trading-record h1{padding: 10px;background-color: #fff;text-indent:1em;}
+.trading-record .nav-tabs li{border-right:1px solid #DDDDDD ;border-bottom: 1px solid #ddd;background-color: #fff;width: 153px;text-align: center;height: 42px;line-height: 42px;}
+.nav-tabs{border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #ddd;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {color: #555;width: 152px;cursor: default;background-color:#F7F7F7;border: 1px solid #fff; border-bottom-color: transparent;}
+.nav-tabs>li a:hover{border: none;border-radius:0px}
+.nav-tabs>li>a {margin-right: 2px;line-height: 1.42857143;/* border: 1px solid transparent;*//* border-radius: 4px 4px 0 0; */}
+.nav-tabs {background-color: #fff;}
+.tad-pane_box{padding: 30px;}
+.tab-content .tab-pane{}
+.tab-content .tab-pane ul li{float: left;width: 33%;padding: 10px 0;}
+.tab-content .tab-pane ul li input{width: 188px;text-indent: 1em;height: 25px;border: 1px solid #DDDDDD;}
+.tab-content .tab-pane ul li select{width: 120px;text-indent: 1em;background-color: #F4F4F4;}
+.tab-content .tab-pane ul li button{width: 77px;height: 27px;line-height: 27px;color: #fff;background-color: #009FE8;border: none;border-radius:5px ;}
+.tab-content .tab-pane ul li .time{width: 188px;text-indent: 1em;display: inline-block;height: 25px;line-height: 25px;border: 1px solid #DDDDDD;}
+.tab-content .tab-pane ul li.ation input{width: 87px;height: 25px;line-height: 25px;}
+.table-striped>tbody>tr:nth-of-type(odd) {background-color: #FFF;}
+.table{margin-bottom: 0;}
+.table-striped thead tr th{vertical-align: bottom;border-bottom:none; }
+.table-striped tbody tr td{height: 40px;line-height: 40px;}
+.table-striped tbody tr td{border-bottom: 1px solid #ddd;}
+.table-striped tbody tr td select{border: none;}
+.table-striped tbody tr td:first-child{padding-left: 30px;}
+#allpay .jilu{width: 100%;height: 60px;line-height: 60px;background-color: #fff;border-bottom: 1px solid #e4e4e4;}
+#allpay .jilu>div{float: left;width: 49%;}
+#allpay .jilu .jilu_left{padding-left: 30px;}
+#allpay .paging{width: 101%;height: 50px;line-height: 50px;background-color: #F7F7F7;margin-left: -4px;border-left-color: pink;}
+#allpay .paging>div{float: left;width: 49%;}
+#allpay .paging .paging_left{padding-left: 30px;}
+.paging .paging_rigth{text-align:right;padding-right: 20px;}
+.paging_left .shuzi{width: 50px;height:30px;line-height: 30px;border: 1px solid #e4e4e4;display:inline-block;text-align: center;}
+#nowpa{width: 50px;text-align: center;}
+.button{width: 50px;height:30px;line-height: 27px;text-align: center;}
 

@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>反洗钱</title>
-		<link rel="stylesheet" href="../css/reset.css" />
-		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="import" href="layout/header.html?__inline">
+		<!--STYLE_PLACEHOLDER-->
 	</head>
 	<body>
+		<link rel="import" href="modules/widget/header/header.html?__inline">
 		<!--反洗钱公告-->
 		<section class="money-laundering">
 			<div class="money centre">
@@ -37,6 +38,11 @@
 				</div>
 			</div>			
 		</section>
-		
+	    <link rel="import" href="modules/widget/footer/footer.html?__inline">
+		<script src="lib/mod.js"></script>
+		<script>
+			require('ui/index');
+		</script>
+		<!--SCRIPT_PLACEHOLDER-->	
 	</body>
 </html>
