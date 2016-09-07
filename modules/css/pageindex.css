@@ -256,7 +256,7 @@ body {
 .payment_top_top h1 {
 	font-size: 50px;
 	color: #585858;
-	padding: 50px 0 20px;
+	padding:100px 0 20px;
 }
 
 .payment_top_top p {
@@ -280,6 +280,11 @@ body {
 .lift {
 	margin-top: 80px;
 }
+
+.lift .lijishiyong{position: relative;}
+.lift .lijishiyong_a{position: absolute;bottom:14%;right:44%;width: 189px;height: 35px;line-height: 35px;display: inline-block;color: #fff;text-align: center;background-color: #fff;
+border: 1px solid #fff;border-radius:5px;font-size: 20px;opacity: .3;}
+.lift .lijishiyong_a a{color: #fff;}
 
 .lift a img {
 	width: 100%;
