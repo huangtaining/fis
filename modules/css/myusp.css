@@ -220,7 +220,7 @@
     background: red !important;
 }
 
-.myTab.nav-tabs>li>a {
+.nav-tabs>li>a {
     border-radius: 0 0 0 0 ;
 }
 
@@ -259,6 +259,9 @@ color:#F19242 ;
 }
 .tti{
     line-height: 22px !important;
+}
+.nav>li>a {
+    padding: 10px 35px;
 }
 .fixed-table-container{
     border: none !important;
