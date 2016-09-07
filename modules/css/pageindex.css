@@ -282,10 +282,11 @@ body {
 }
 
 .lift .lijishiyong{position: relative;}
-.lift .lijishiyong_a{position: absolute;bottom:14%;right:44%;width: 189px;height: 35px;line-height: 35px;display: inline-block;color: #fff;text-align: center;background-color: #fff;
-border: 1px solid #fff;border-radius:5px;font-size: 20px;opacity: .3;}
+.lift .lijishiyong_a{position: absolute;bottom:14%;right:44%;width: 189px;height: 35px;line-height: 35px;display: inline-block;color: #fff;text-align: center;background-color:#999999;
+border: 1px solid #fff;border-radius:5px;font-size: 20px;opacity: .5;}
 .lift .lijishiyong_a a{color: #fff;}
-
+.lift .lijishiyong_a:hover{background-color:#19A8E8;}
+.lift .lijishiyong_a a:hover{text-decoration: none;}
 .lift a img {
 	width: 100%;
 }
