@@ -1,0 +1,163 @@
+.collection h4{
+    color:#333333;
+}
+.collection .shouk{
+    margin-top:56px;
+    color:#585858;
+}
+
+/*progress开始*/
+.progress{
+    width:100%;
+    height:10.8%;
+    float:left;
+    margin-top:20px;
+    margin-bottom: 9%;
+}
+.progress li{
+    float:left;
+    /*height:;*/
+    position:relative;
+}
+.firstli{
+    width:37%;
+    height:69%;
+    float:left;
+    padding-top:1.75%;
+
+}
+.progress .form-one{
+    width:100%;
+    height:10px;
+    background-color:#00A0E8;
+}
+.progress .quan-one{
+    width:33px;
+    height:33px;
+    text-align: center;
+    line-height:33px;
+    border-radius: 100%;
+    background-color:#00A0E8;
+    position: absolute;
+    top:10%;
+    left:61%;
+    z-index: 10;
+}
+.firstli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:29%;
+    margin-top:30px;
+}
+.secli{
+    width:23%;
+    height:6.8%;
+    float:left;
+    padding-top:20px;
+}
+
+.progress .change{
+    background-color:#D5D5D5;
+
+}
+.progress .quanc{
+    position: absolute;
+    top:10%;
+    left:45%;
+    background-color:#D5D5D5;
+}
+
+.progress .threeli .quanc{
+
+    position: absolute;
+    top:10%;
+    left:32%;
+}
+.secli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:4%;
+    margin-top:30px;
+}
+.progress .threeli p{
+    text-align: center;
+    font-size:15px;
+    margin-left:-100px;
+    margin-top:30px;
+}
+/*form开始*/
+.form{
+    width:100%;
+    height:auto;
+    margin-top:120px;
+}
+.form label{
+    display:inline-block;
+    height:19px;
+    width:125px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: normal;
+    /*margin-right:24px;*/
+}
+.form .user{
+    height:25px;
+    width:16.5%;
+    margin-left:20px;
+}
+.form p{
+    margin-bottom:15px;
+}
+.form p em{
+    color:#EE8719;
+}
+.totalmoney{
+    border:none;
+}
+.form .severmoney{
+    width:37px;
+    border:none;
+
+}
+.form .lsevermoney{
+    color:#00A0E8;
+}
+.form button{
+    height:30px;
+    width:135px;
+    /*margin-left:191px;*/
+}
+.nextbtn{
+    margin-left:57px;
+    width:135px;
+    color:rgb(73,145,218);
+}
+#txt{
+    height:75px;
+    width:16.5%;
+    margin-left:13.1%;
+
+}
+.stail{
+    position:relative;
+}
+.stail label{
+    display: inline-block;
+    position:absolute;
+}
+
+.manype{
+    padding-left:59px;
+}
+.manype label{
+    text-align: left;
+}
+.manype input{
+    width:125px;
+    margin-right:3px;
+}
+.manype span{
+    display: inline-block;
+    margin-left:30px;
+    text-align: center;
+}

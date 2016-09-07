@@ -1,0 +1,19 @@
+.safebo li{
+        border-bottom: 1px solid #E8E8E8;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 30px 0 90px;
+ }
+.safebo{
+    border: 1px solid  #E8E8E8;;
+}
+.safebol{
+    width: 20%;
+    display: inline-block;
+    font-size: 18px;
+}
+.safebor{
+     width: 60%;
+    display: inline-block;
+    color: #9C9C9C;
+}

@@ -16,6 +16,7 @@
     <script src="../components/jquery/jquery.js"></script>
     <script src="../modules/lib/ysbbase.min.js"></script>
     <script src="../modules/lib/bootstrap-table/bootstrap-table.js"></script>
+    <script src="../modules/js/myusp/myusp.js"></script>
 
 </head>
 <body>
@@ -35,17 +36,9 @@
 </div>
 <!--头像部分-->
 <div class="myuspban">
+
+
     <div class="layout">
-       <!--<div class="banner_text">-->
-             <!--<ul id="banul">-->
-                 <!--<li id="banfr"><img src="../static/logind/myusp/toux.jpg"></li>-->
-                 <!--<li id="banse"><span>张三</span><b>(8888@qq.com)</b><br/>根据《非银行机构支付业务管理办法规定》，当前为I类用户，yue余额支付额度为100,000/年，剩余额度为100,000/年。<a class="ljgd" href="#">了解更多</a></li>-->
-                 <!--<li id="banth">-->
-                          <!--<div>安全等级:<span class="jdt"></span></div>-->
-                          <!--<div class="yels">adasda</div>-->
-                 <!--</li>-->
-             <!--</ul>-->
-       <!--</div>-->
         <div class="row myusptx">
                          <!--头像-->
                         <div class="col-md-1">
@@ -54,10 +47,12 @@
 
                         <!--用户名-->
                         <div class="col-md-3">
-                            <div><span class="myname">张三</span><span class="myem">(8888@qq.com)</span>
+                            <div>
+                                <span class="myname">张三</span><span class="myem">(8888@qq.com)</span>
                                 <a href="#"  class="smicon">1</a>
                                 <a href="#"  class="smicon">2</a>
-                                <a href="#"  class="smicon">3</a></div>
+                                <a href="#"  class="smicon">3</a>
+                            </div>
                             <div>根据非银行啊沙发沙发沙发</div>
                          </div>
 
@@ -67,6 +62,7 @@
                         </div>
         </div>
     </div>
+
 </div>
 <!--银行预留信息-->
 <div class="myusptip">
@@ -77,47 +73,55 @@
 </div>
 
 <!--主体部分-->
-<div class="layout">
-    <div class="myuspf">
-           <div class="row">
-               <div class="col-md-6 myuspl">
-                       <div><span>银生宝账户</span></div>
-                       <div><span>交易编码20032131</span></div>
+<div class="layout myusp">
+
+    <!--我的银生宝-->
+    <div class="myuspzh">
+
+               <div class="myuspzhbo">
+                   <div class="myuspl">
+                       <div><span class="s20">银生宝账户:</span></div>
+                       <div><span>交易编码:20032131</span></div>
                        <div><span>可用金额:<span class="yell s40">80.00</span>元</span></div>
                        <div><span>冻结金额:<span class="yell s40">80.00</span>元</span></div>
+                   </div>
+
+                   <div class="myuspr">
+                       <p><span class="s20">银行卡:</span></p>
+                       <p>
+                           <span>我的银行卡<span class="yell">5</span>张</span>
+                           <span class="right">我的快捷支付卡<span class="yell">3</span>张</span>
+                       </p>
+                   </div>
                </div>
-               <div class="col-md-6 myuspr">
-                   <p><span class="s20">银行卡</span></p>
-                   <p>我的银行卡<span class="yell">3</span>张</p>
-                   <p>我的快捷支付卡<span class="yell">3</span>张</p>
-               </div>
-           </div>
+
+               <!--缴费-->
+               <div class="myuspzhbo">
+                       <div class="row cir44">
+                           <a class="col-md-3 cir4">
+                               <div class="cir" id="cir1"></div>
+                               <span>充值</span>
+                           </a>
+                           <a class="col-md-3 cir4">
+                               <div class="cir" id="cir2"></div>
+                               <span>提现</span>
+                           </a>
+                           <a class="col-md-3 cir4">
+                               <div class="cir" id="cir3"></div>
+                               <span>转账</span>
+                            </a>
+                           <a class="col-md-3 cir4">
+                               <div class="cir" id="cir4"></div>
+                               <span>交易流水</span>
+                            </a>
+                       </div>
+                 </div>
 
 
-            <div class="myuspzhbo">
-               <div class="row cir44">
-                   <a class="col-md-3 cir4">
-                       <div class="cir" id="cir1"></div>
-                       <span>充值</span>
-                   </a>
-                   <a class="col-md-3 cir4">
-                       <div class="cir" id="cir2"></div>
-                       <span>提现</span>
-                   </a>
-                   <a class="col-md-3 cir4">
-                       <div class="cir" id="cir3"></div>
-                       <span>转账</span>
-                    </a>
-                   <a class="col-md-3 cir4">
-                       <div class="cir" id="cir4"></div>
-                       <span>交易流水</span>
-                    </a>
-               </div>
-    </div>
     </div>
 
     <!--转账付款-->
-    <div class="myuspf myusppay">
+    <div class="myusppay">
         <div class="tit">转账付款<a href="#" class="more">更多</a></div>
         <div class="five">
             <a class="col-five"  href="#">
@@ -147,39 +151,41 @@
             </a>
         </div>
     </div>
+
     <!--生活服务-->
-    <div class="myuspf myusplive ">
+    <div class="myusplive">
         <div class="tit">生活服务<a href="#" class="more">更多</a></div>
         <div class="five">
-            <a class="col-five">
-                <div class="fir2" id="fiv21"></div>
+            <a class="col-five"  href="#">
+                <div class="fir" id="fiv21"></div>
                 <p><b>转账到银生宝账户</b></p>
                 <span class="whi">资金立即到达银生宝账户</span>
             </a>
-            <a class="col-five">
-                <div class="fir2" id="fiv22"></div>
+            <a class="col-five" href="#">
+                <div class="fir" id="fiv22"></div>
                 <p><b>转账到银生宝账户</b></p>
                 <span class="whi">资金立即到达银生宝账户</span>
             </a>
-            <a class="col-five">
-                <div class="fir2" id="fiv23"></div>
+            <a class="col-five"  href="#">
+                <div class="fir" id="fiv23"></div>
                 <p><b>转账到银生宝账户</b></p>
                 <span class="whi">资金立即到达银生宝账户</span>
             </a>
-            <a class="col-five">
-                <div class="fir2" id="fiv24"></div>
+            <a class="col-five"  href="#">
+                <div class="fir" id="fiv24"></div>
                 <p><b>转账到银生宝账户</b></p>
                 <span class="whi">资金立即到达银生宝账户</span>
             </a>
-            <a class="col-five">
-                <div class="fir2" id="fiv25"></div>
+            <a class="col-five"  href="#">
+                <div class="fir" id="fiv25"></div>
                 <p><b>转账到银生宝账户</b></p>
                 <span class="whi">资金立即到达银生宝账户</span>
             </a>
         </div>
     </div>
+
     <!--交费记录-->
-    <div class="myuspf myuspjy ">
+    <div class="myuspjy">
         <!--title-->
         <div class="tit">交易记录<a href="#" class="more">更多</a></div>
         <!--分页-->
@@ -355,7 +361,12 @@
         $("thead tr").find("th:first").css("textIndent","30px");
         $("tbody tr").find("td:first").css("textIndent","30px");
         $("tfoot tr").find("td:first").css("textIndent","30px");
-        $(".active a").css("borderRight","1px solid #ccc")
+        $(".active a").css("borderRight","1px solid #ccc");
+        $(".col-five").hover(function(){
+            $(this).css("background","#EBEBEB").children(".whi").addClass("cc").html("立即使用");
+        },function(){
+            $(this).css("background","white").children(".whi").removeClass("cc").html()
+        })
     })
 
 </script>

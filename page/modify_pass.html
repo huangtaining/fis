@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>密码</title>
+    <link rel="import" href="layout/header.html?__inline">
+    <!--STYLE_PLACEHOLDER-->
+    <link href="../modules/css/myusp.css" rel="stylesheet">
+    <link href="../modules/css/common2.css" rel="stylesheet">
+    <link href="../modules/css/transfer_com.css" rel="stylesheet">
+</head>
+
+<body>
+<link rel="import" href="modules/widget/header/header.html?__inline">
+
+<!-- rechange cotnent -->
+
+<div class="layout">
+    <!--GPS-->
+    <div class="gps">
+        您的当前位置&nbsp;:&nbsp;<span>我的安全管理</span>&nbsp;>&nbsp;<span>修改密码</span>
+    </div>
+    <!--主体-->
+    <div class="alltit">
+        修改登录密码
+    </div>
+
+    <div class="allbody recbo" style="border-top: none">
+
+        <!--警告2-->
+        <div class="witwar stop">
+            <div class="gan"></div>
+            <div class="gan_text" >请确保登录密码和支付密码不同<br/>请输入8-20个字符</div>
+        </div>
+
+        <!--表单-->
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- 当前密码-->
+                <div class="control-group">
+                    <label class="control-label"><span class="yell">*</span>&nbsp;当前密码&nbsp;:</label>
+                    <div class="controls">
+                        <input type="text" placeholder="请输入当前密码">
+                    </div>
+                </div>
+
+                <!--新密码-->
+                <div class="control-group">
+                    <label class="control-label"><span class="yell">*</span>&nbsp;新密码&nbsp;:</label>
+                    <div class="controls">
+                        <input type="text" placeholder="请输入新密码">
+                    </div>
+                </div>
+
+                <!--确认新密码-->
+                <div class="control-group">
+                    <label class="control-label"><span class="yell">*</span>&nbsp;确认新密码&nbsp;:</label>
+                    <div class="controls">
+                        <input type="text" placeholder="请输入新密码">
+                    </div>
+                </div>
+
+                <!-- 校正码-->
+                <div class="control-group">
+                    <label class="control-label"><span class="yell">*</span>&nbsp;校正码&nbsp;:</label>
+                    <div class="controls">
+                        <input type="text" placeholder="请输入验证码">
+                    </div>
+                </div>
+
+                <!-- 上一步-->
+                <div class="control-group">
+                    <label class="control-label">
+                                  &nbsp;
+                    </label>
+                    <div class="controls">
+                        <a>
+                            <button  type="button" class="btn btn-primary qrfk"
+                                     data-loading-text="Loading...">确定
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!--foot-->
+<link rel="import" href="modules/widget/footer/footer.html?__inline">
+<script src="lib/mod.js" data-loader></script>
+<!--SCRIPT_PLACEHOLDER-->
+
+    <script type="text/javascript">
+
+        var $ = require('jquery');
+        require('lib/ysbbase');
+
+
+        var _nextDa;
+        $(function() {
+            $(".nextstep").click(function(){
+                veri()
+            })
+            });
+        //    $(this).parent("a").attr("href","rechange_2.html")
+        //验证格式的函数
+        function veri(){
+//
+            var _phone=$("#phone").val();
+            var _youx=$("#youx").val()
+            if(_phone && _youx){
+            if(   (/^1[3|4|5|7|8]\d{9}$/.test(_phone))   &&   (/^1[3|4|5|7|8]\d{9}$/.test(_youx))    ){
+            $(".nextstep").css("background","red")
+            }else{
+            alert("格式不正确")
+            }
+            }
+
+            }
+</script>
+<!--SCRIPT_PLACEHOLDER-->
+</body>
+</html>

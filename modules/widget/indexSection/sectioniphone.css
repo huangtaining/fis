@@ -212,6 +212,17 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 	}
 }
 
+.line-boxes .box.fuwu {
+	background-image: url(/static/imgs/index/A1-5.png)
+}
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi),
+screen and (-webkit-min-device-pixel-ratio:2) {
+	.line-boxes .box.fuwu {
+		background-image: url(/static/imgs/index/A1-5.png)
+	}
+}
 
 
 
@@ -232,7 +243,7 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 	top: 80px;
 	width: 378px;
 	height: 573px;
-	background-image: url(/static/imgs/index/A1-4);
+	background-image: url(/static/imgs/index/A1-4.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: none
@@ -242,7 +253,7 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 (min-resolution:192dpi),
 screen and (-webkit-min-device-pixel-ratio:2) {
 	.scene-slider-wrap .iphone-hand-bg {
-		background-image: url(/static/imgs/index/A1-4)
+		background-image: url(/static/imgs/index/A1-4.png)
 	}
 }
 .device-iphone6 {
@@ -269,7 +280,7 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 
 .scene-viewes .scene.qr {
 	border: 1px solid rgba(0, 0, 0, .3);
-	background-image: url(/static/imgs/index/shenghuofuwu2.png)
+	background-image: url(/static/imgs/index/zhuanzhang2.png)
 }
 
 .scene-viewes .scene.web {
@@ -279,7 +290,10 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 	background-size: cover
 }
 
-
+.scene-viewes .scene.fuwu {
+	border: 1px solid rgba(0, 0, 0, .3);
+	background-image: url(/static/imgs/index/shenghuofuwu2.png)
+}
 
 
 
@@ -389,7 +403,7 @@ screen and (-webkit-min-device-pixel-ratio:2) {
 .fullheight-column-align{
 	position: absolute;
     margin-top:60px;
-    margin-left: 8px;
+    margin-left: -350px;
 }
 
 * {
