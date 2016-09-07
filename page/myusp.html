@@ -361,16 +361,33 @@
     require('lib/ysbbase');
 
 $(function(){
+
+    var _bodytext={
+        zzfk:[
+            ["转账到银生宝账户","资金立即到达银生宝账户"],
+            ["转账到银行账户","支持异地、跨行转账、费率低"],
+            ["向多人付款","付款到多个银生宝或账户银行"],
+            ["我要收款","自动提醒付款方付款"],
+            ["向多人收款","适合团体收款"]
+        ],
+        shjf:[
+
+        ]
+    };
+    console.log(_bodytext.zzfk[0][1])
         $("thead tr").find("th:first").css("textIndent","30px");
         $("tbody tr").find("td:first").css("textIndent","30px");
         $("tfoot tr").find("td:first").css("textIndent","30px");
         $(".active a").css("borderRight","1px solid #ccc");
 //         鼠标移入BODY  a标签
         $(".col-five").hover(function(){
+            var aaaa=$(this).children(".whi").html();
             $(this).css("background","#EBEBEB").children(".whi").addClass("cc").html("立即使用");
         },function(){
-            $(this).css("background","white").children(".whi").removeClass("cc").html()
+            $(this).css("background","white").children(".whi").removeClass("cc").html(aaaa)
         })
+
+
 //         鼠标移入缴费  a标签
 
     for(var i=0;i<4;i++){
