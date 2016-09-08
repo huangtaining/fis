@@ -1,7 +1,7 @@
+/*content*/
 .collection{
     background-color:rgb(246,246,246);
-    padding-top:31px;
-    padding-bottom: 190px;
+    padding:31px 0 190px 0;
 }
 .collection h4{
     color:#333333;
@@ -23,7 +23,6 @@
 .linedowntwo{
     width:1198px;
     margin-left:-16px!important;
-    /*border-top:1px solid #E8E8E8;*/
 }
 .collection .shouk{
     margin-top:46px;
@@ -32,12 +31,10 @@
 }
 .position{
     margin-left:31px;
-    /*margin-top:33px;*/
 }
 .container{
     margin-top:15px;
     border:1px solid #E8E8E8;
-    /*margin-bottom:221px;*/
     width:1200px;
     background-color:white;
 }
@@ -48,10 +45,8 @@
 .progress{
     width:1140px;
     height:10.8%;
-    margin-left:14px;
+    margin:30px 0 6% 14px;
     float:left;
-    margin-top:30px;
-    margin-bottom: 6%;
 }
 .progress li{
     float:left;
@@ -85,8 +80,7 @@
 .firstli p{
     text-align: center;
     font-size:15px;
-    margin-left:29%;
-    margin-top:30px;
+    margin:30px 0 0 29%;
 }
 .secli{
     width:26%;
@@ -111,21 +105,18 @@
 .secli p{
     text-align: center;
     font-size:15px;
-    margin-left:4%;
-    margin-top:30px;
+    margin:30px 0 0 4%;
 }
 .progress .threeli p{
     text-align: center;
     font-size:15px;
-    margin-left:-100px;
-    margin-top:30px;
+    margin:30px 0 0 -100px;
 }
 /*form开始*/
 .form{
     width:1200px;
     height:auto;
     margin:120px 0 20px 0;
-    /*margin-bottom:243px;*/
     padding-top:54px;
 }
 .form label{
@@ -168,7 +159,6 @@
 .nextbtn{
     height:30px;
     width:6.4%!important;
-    /*margin-left:191px;*/
 }
 .nextbtn{
     margin-left:191px;
