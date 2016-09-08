@@ -10,6 +10,9 @@
     padding: 10px 20px ;
 }
 /*各种颜色字体*/
+.bo{
+    background: #F7F7F7;
+}
 .yell{
     color:#EE881A;
     font-weight: bold;
@@ -48,7 +51,7 @@
 .gan{
     width: 20px;
     height: 20px;
-    background:url("../../static/imgs/logind/rechange/gan.jpg");
+    background:url("../../static/imgs/icons/B3-2.png");
     float: left;
     margin-right: 20px;
 }
@@ -132,6 +135,7 @@
 }
 .alltit{
        border: 1px solid #E8E8E8;
+       border-bottom:none;
        height: 38px; line-height: 38px;
        background: white;
        padding:0 20px ;
@@ -266,10 +270,12 @@ p{
 
 #jytit .active{
     box-shadow: none !important;
+
 }
 #jytit .active a{
    width: 180px;
     border-right: none;
+
 }
 #jytit .active li{
     border-right: none;

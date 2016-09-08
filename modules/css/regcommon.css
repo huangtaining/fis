@@ -47,7 +47,7 @@
 .registered .registered_box ul li.login_text input{vertical-align: middle;padding-right: 5px;width: 15px;height: 15px;margin-top: 17px;} 
 .registered .registered_box ul li.login_text{margin-left: -345px;}
 .registered .registered_box ul li button{width: 290px;height:45px;line-height:45px;border-radius:4px;color: #fff;background-color: #D5D5D5;border:none;margin-top: 50px;margin-left: -258px;}
-b{background:url(../../static/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
+.registered .registered_box b{background:url(../../static/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
 
 /************************************************************************************************/
 /*注册下一步*/
