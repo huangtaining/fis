@@ -175,7 +175,7 @@
 
 /*选择联系人*/
 .modal-content{
-    width:350px;
+    width:380px;
     position:absolute;
     left:-160px;
     top:305px;
@@ -183,9 +183,9 @@
 .modal-body ul{
     margin-top:10px;
 }
-.modal-body input{
-    width:138px;
-}
+/*.modal-body input{*/
+    /*width:138px;*/
+/*}*/
 .modal-body .find{
     width:53px;
     margin-left:12px;
@@ -193,7 +193,7 @@
 
 }
 .modal-body button{
-    width:60px;
+    width:45px;
     height:25px;
     padding:0;
     margin-left:10px;
@@ -209,8 +209,21 @@
 }
 .modal-body .seclabel{
     display: inline-block;
-    width:200px;
+    width:250px;
     margin-left:10px;
+    text-align: left;
+    color:#919191;
+}
+.modal-footer button{
+    width:75px;
+    height:25px;
+    line-height:10px;
+    float:left;
+    margin-right:20px;
+}
+.modal-footer span{
+    float:left;
+    margin-right:20px;
 }
 .alertdown{
     margin:100px 0 0 23px;
@@ -225,6 +238,10 @@
     position:absolute;
     left:20px;
     top:20px;
+}
+.modal-body .serchinp{
+    width:257px;
+    float:left;
 }
 /*多人收款*/
 .manyla {
