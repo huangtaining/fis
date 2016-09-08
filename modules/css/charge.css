@@ -15,6 +15,11 @@
     margin-left:-16px!important;
     border-top:1px solid #E8E8E8;
 }
+.linedowntwo{
+    width:1198px;
+    margin-left:-16px!important;
+    /*border-top:1px solid #E8E8E8;*/
+}
 .collection .shouk{
     margin-top:46px;
     color:#585858;
@@ -28,7 +33,9 @@
     border:1px solid #E8E8E8;
     margin-bottom:221px;
     width:1200px;
-
+}
+.conmargin{
+    margin-bottom:82px;
 }
 /*progress开始*/
 .progress{
@@ -244,6 +251,9 @@
     float:left;
 }
 /*多人收款*/
+.formpad{
+    padding-left:40px;
+}
 .manyla {
     display: inline-block;
     height: 19px!important;
@@ -284,7 +294,6 @@
     height:75px;
     width:16.5%;
     margin-left:11.3%;
-
 }
 .stail{
     position:relative;
@@ -315,6 +324,9 @@
 .lookbz:hover{
     color:#00A0E8;
 }
+.alertpad{
+    margin-left:-20px;
+}
 /*确认收款信息*/
 .quepro{
     margin-bottom:0;
@@ -329,15 +341,15 @@
     width:1140px;
     font-size: 12px;
     margin-bottom:74px;
-    margin-left:15px;
+    margin-left:30px;
     height:39px;
+    padding-top:10px;
 }
 .warning p{
     display: inline-block;
     height:30px;
     width:1058px;
-
-
+    margin-left:10px;
 }
 .form p span em{
     color:rgb(255,102,0);

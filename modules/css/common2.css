@@ -12,6 +12,7 @@
 /*各种颜色字体*/
 .bo{
     background: #F7F7F7;
+    font-family: "Microsoft YaHei";
 }
 .yell{
     color:#EE881A;
@@ -112,9 +113,9 @@
 }
 .appcenbanner{
     width: 100%;
-    height: 361px;
-    background:url("../../static/imgs/logind/appcen/ban.jpg") repeat-x;
-    background-size: 100% 361px;
+    height: 360px;
+    background:url("../../static/imgs/logind/appcen/ying1.png") repeat-x;
+    background-size: 100% 360px;
     margin-bottom: 30px;
 }
 
@@ -143,10 +144,15 @@
 }
 .allstep{
     border: 1px solid #E8E8E8;
+    border-bottom: none;
     background: white;
-    padding:0 20px ;
-    font-size: 18px;
+    padding:20px 20px ;
 }
+.witstep_text{
+           margin: 10px 0;
+}
+
+/**/
 .gps{
     margin: 16px 0;
 }
@@ -185,6 +191,11 @@
     overflow: hidden;
     margin-bottom: 20px;
  }
+.card_bo{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .card_bo input{
     width: 20%;
     margin-right: 10%;
@@ -213,10 +224,11 @@
 .eccard_img{
     height: 100%;
     display: inline-block;
-    border: 1px solid #F4F4F4;
     width: 70%;
-    background: url("../../static/logind/transfer/yh_gs.jpg");
     background-size: 100% 100%;
+}
+.eccard_img:nth-child(1){
+             background: red;
 }
 /*收据*/
 .shouju{
@@ -261,6 +273,9 @@ p{
     margin-bottom: 20px;
     padding-left: 20px
 }
+.qtfs p{
+    margin: 10px 0;
+}
 .card_tit{
     padding-left: 20px;
 }
@@ -283,4 +298,11 @@ p{
 }
 #jytit li{
    border-right: 1px solid #E8E8E8;
+}
+
+.icon-phone{
+    width: 15px;
+    height: 20px;
+    background: url("../../static/imgs/icons/B3-1.png");
+    display: inline-block;
 }
