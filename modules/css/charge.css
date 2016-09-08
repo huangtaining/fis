@@ -190,9 +190,6 @@
 .modal-body ul{
     margin-top:10px;
 }
-/*.modal-body input{*/
-    /*width:138px;*/
-/*}*/
 .modal-body .find{
     width:53px;
     margin-left:12px;
@@ -388,7 +385,7 @@
     vertical-align: top;
 }
 
-/*//多人确认收款信息*/
+/*//收款成功*/
 .prohei{
     height:90px;
 }
@@ -452,4 +449,7 @@
 .btndown{
     margin-top:10px;
     margin-left:210px;
+}
+.plook{
+    margin-left:65px;
 }
