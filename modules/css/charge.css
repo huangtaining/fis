@@ -33,7 +33,9 @@
     border:1px solid #E8E8E8;
     margin-bottom:221px;
     width:1200px;
-
+}
+.conmargin{
+    margin-bottom:82px;
 }
 /*progress开始*/
 .progress{
@@ -341,11 +343,13 @@
     margin-bottom:74px;
     margin-left:30px;
     height:39px;
+    padding-top:10px;
 }
 .warning p{
     display: inline-block;
     height:30px;
     width:1058px;
+    margin-left:10px;
 }
 .form p span em{
     color:rgb(255,102,0);
