@@ -12,7 +12,7 @@
 <div class="collection">
     <p class="position">您的当前位置 : 我的银生宝 > 我要收款</p>
     <div class="container">
-        <h4>向多人收款</h4>
+        <h4 class="line">向多人收款</h4>
         <h5 class="shouk">你正在使用即时收款，你还可以使用担保收款</h5>
         <ul class="progress clearfix">
             <li class="firstli">
@@ -34,7 +34,7 @@
 
 
         <!--form开始-->
-        <div class="form clearfix">
+        <div class="form clearfix linedown formpad">
             <form action="">
                 <p>
                     <label for="" class="manyla"><em>*</em>资金用途:</label>
@@ -43,8 +43,7 @@
                 </p>
                 <p class="stail">
                     <label for="" class="manyla">详细说明:</label>
-                    <textarea id="txto"></textarea>
-                    <span>(最长85个字符)</span>
+                    <textarea id="txto" placeholder="(最长85个字符)"></textarea>
                 </p>
                <p class="manype">
                    <label for="" class="manyla "><em>*</em>被收款方账户:</label>
@@ -88,6 +87,10 @@
                     <span> 0.00 元 &nbsp;<a href="" class="lookbz"> 查看收费标准</a></span>
                 </p>
             </form>
+            <!--警告-->
+            <div class="alert alert-warning alertdown alertpad" role="alert">
+                <img src="../static/imgs/icons/B3-2.png" alt=""> <p>为配合国家实施《中华人民共和国反洗钱法》、《银行卡业务管理办法》等法律法规，打击洗钱、非法套现等犯罪行为，银生宝严禁信用卡套现、洗钱、虚假交易行为，一经发现将予以处罚，包括但不限于：限制提现、冻结账户、永久停止服务，并会影响相关信用记录。</p>
+            </div>
         </div>
 
     </div>
