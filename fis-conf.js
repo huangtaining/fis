@@ -147,6 +147,11 @@ fis.match('*.jsx', {
     parser: fis.plugin('react', {})
 });
 
+//test html map route
+fis.match("/page/maproute.html", {
+  release: 'index.html'
+});
+
 
 /*************************打包规范*****************************/
 
