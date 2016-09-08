@@ -29,6 +29,6 @@ $(document).ready(function() {
     console.log('from index.js');
 
 });
-
-var modal = module.exports = function(url, opt) {
-};
+//
+// var modal = module.exports = function(url, opt) {
+// };

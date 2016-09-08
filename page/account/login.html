@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 	<head>
 		<meta charset="UTF-8">
 		<title>个人登录</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
 	</head>
+
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
-		
+
 		<section class="login">
 			<div class="login_box centre clearfix">
 				<div class="login_left">
@@ -16,81 +18,82 @@
 				</div>
 				<div class="login_right">
 					<h1>登录银生宝</h1>
-			    <ul>
-					<li><input type="text" placeholder="请输入账户名" id="username"/></li>
-					<li><input type="text" placeholder="请输入登录密码" id="password"/></li>
-					<li class="yanzhengma clearfix"><input type="text" placeholder="请输入右侧验证码" id="checkCode"/><em></em></li>
-					<li style="margin-top: 20px;">
-						<div class="button" style="background-color: #d5d5d5;border: none;" id="btn">登录</div>
-					</li>
-					<li style="padding-bottom:35px;border-bottom: 1px solid #e4e4e4;">
-						<div class="button" style="color: #009FE8;">注册</div>
-					</li>
-				</ul>
-				<div class="login_text">
-					<em class="login_one"><input type="checkbox"/><em>记住我</em></em>
-				    <em class="login_two"><a href="###">帐号激活</a></em>
-				    <em class="login_three"><a href="###">忘记密码？</a></em>
+					<ul>
+						<li><input type="text" placeholder="请输入账户名" id="username" /></li>
+						<li><input type="text" placeholder="请输入登录密码" id="password" /></li>
+						<li class="yanzhengma clearfix"><input type="text" placeholder="请输入右侧验证码" id="checkCode" /><em></em></li>
+						<li style="margin-top: 20px;">
+							<div class="button" style="background-color: #d5d5d5;border: none;" id="btn">登录</div>
+						</li>
+						<li style="padding-bottom:35px;border-bottom: 1px solid #e4e4e4;">
+							<div class="button" style="color: #009FE8;">注册</div>
+						</li>
+					</ul>
+					<div class="login_text">
+						<em class="login_one"><input type="checkbox"/><em>记住我</em></em>
+						<em class="login_two"><a href="###">帐号激活</a></em>
+						<em class="login_three"><a href="###">忘记密码？</a></em>
+					</div>
 				</div>
-			</div>				
-			</div>			
+			</div>
 		</section>
-<script type="text/javascript">
-  var username= document.getElementById('username');
-  var password= document.getElementById('password');
-  var btn=document.getElementById('btn');
-  var checkCode=document.getElementById('checkCode');
-  var u;
-  var p;
-  var c;
-    btn.onclick=function() {
-     if(username.value==""){
-           alert("用户名不能为空");
-     }else if(password.value==""){
-          alert("密码不能为空");
-     }else if(checkCode.value==""){
-          alert("验证码不能为空");
-     }
-         
-    };
-  username.oninput=function() {
-   if(username.value==""){
-          u=false;
-          alert("用户名不能为空");
-         btn.style.backgroundColor="#d5d5d5" ;
-   }else{
-   	   u=true;
-       if( u && p && c){
-       btn.style.backgroundColor="#009FE8";  
-       }
-   };
- };
- password.oninput=function() {
-   if(password.value=="" ){
-          p=false;
-          alert("密码不能为空");
-          btn.style.backgroundColor="#d5d5d5";
-   }else{
-   	   p=true;
-   	   password.style.backgroundColor="";
-       if( u && p && c ){
-          btn.style.backgroundColor="#009FE8";  
-       }
-   };
- };
- checkCode.oninput=function() {
-   if(checkCode.value=="" ){
-          c=false;
-          btn.style.backgroundColor="#d5d5d5";
-   }else{
-   	   c=true;
-   	   password.style.backgroundColor="";
-       if( u && p && c){
-          btn.style.backgroundColor="#009FE8";  
-       }
-   };
- };
-</script>
+
+		<script type="text/javascript">
+			var username = document.getElementById('username');
+			var password = document.getElementById('password');
+			var btn = document.getElementById('btn');
+			var checkCode = document.getElementById('checkCode');
+			var u;
+			var p;
+			var c;
+			btn.onclick = function() {
+				if(username.value == "") {
+					alert("用户名不能为空");
+				} else if(password.value == "") {
+					alert("密码不能为空");
+				} else if(checkCode.value == "") {
+					alert("验证码不能为空");
+				}
+
+			};
+			username.oninput = function() {
+				if(username.value == "") {
+					u = false;
+					alert("用户名不能为空");
+					btn.style.backgroundColor = "#d5d5d5";
+				} else {
+					u = true;
+					if(u && p && c) {
+						btn.style.backgroundColor = "#009FE8";
+					}
+				};
+			};
+			password.oninput = function() {
+				if(password.value == "") {
+					p = false;
+					alert("密码不能为空");
+					btn.style.backgroundColor = "#d5d5d5";
+				} else {
+					p = true;
+					password.style.backgroundColor = "";
+					if(u && p && c) {
+						btn.style.backgroundColor = "#009FE8";
+					}
+				};
+			};
+			checkCode.oninput = function() {
+				if(checkCode.value == "") {
+					c = false;
+					btn.style.backgroundColor = "#d5d5d5";
+				} else {
+					c = true;
+					password.style.backgroundColor = "";
+					if(u && p && c) {
+						btn.style.backgroundColor = "#009FE8";
+					}
+				};
+			};
+		</script>
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
 		<script src="lib/mod.js"></script>
 		<script>
@@ -98,4 +101,5 @@
 		</script>
 		<!--SCRIPT_PLACEHOLDER-->
 	</body>
+
 </html>
