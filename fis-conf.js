@@ -43,6 +43,12 @@ fis.hook('commonjs', {
 
 /*************************目录规范*****************************/
 
+
+fis.match('/static/imgs/**', {
+    release: '${project.static}/$&'
+});
+
+
 // 开启同名依赖
 fis.match('/modules/**', {
     useSameNameRequire: true
