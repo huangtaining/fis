@@ -95,7 +95,7 @@
                                </p>
                                <p>
                                    <span class="crecard">1</span>
-                                   <span class="crecard">2</span>
+                                   <span class="crecard crecardr">+添加银行卡</span>
                                </p>
                            </div>
                        </div>
@@ -194,7 +194,7 @@
                 <!--title-->
                 <div class="tit">交易记录<a href="#" class="more">更多</a></div>
                 <!--分页-->
-                <ul id="myTab" class="nav nav-tabs">
+                <ul id="jytit" class="nav nav-tabs">
                     <li class="active">
                         <a href="#allpay" data-toggle="tab">
                             所有交易记录
@@ -222,7 +222,7 @@
                 <!--分页主体-->
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="allpay">
-                        <table data-toggle="table">
+                        <table class="table-striped table"style="margin-bottom: 0">
                             <thead>
                             <tr>
                                 <th>交易编号</th>
@@ -378,6 +378,7 @@ $(function(){
 
         ]
     };
+    var _tempsp;
     console.log(_bodytext.zzfk[0][1])
         $("thead tr").find("th:first").css("textIndent","30px");
         $("tbody tr").find("td:first").css("textIndent","30px");
@@ -385,10 +386,11 @@ $(function(){
         $(".active a").css("borderRight","1px solid #ccc");
 //         鼠标移入BODY  a标签
         $(".col-five").hover(function(){
-            var aaaa=$(this).children(".whi").html();
+            _tempsp=$(this).children(".whi").html();
+            console.log(_tempsp)
             $(this).css("background","#EBEBEB").children(".whi").addClass("cc").html("立即使用");
         },function(){
-            $(this).css("background","white").children(".whi").removeClass("cc").html(aaaa)
+            $(this).css("background","white").children(".whi").removeClass("cc").html(_tempsp)
         })
 
 

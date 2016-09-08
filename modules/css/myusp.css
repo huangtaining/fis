@@ -127,12 +127,19 @@
             }
             .crecard{
                 display: inline-block;
-                border: 1px solid red;
+                border: 1px solid #E8E8E8;
                 width: 40%;
                 float: left;
                 padding: 16px 20px;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
+                text-align: center;
+            }
+            .crecardr{
+                float: right;
+                border: 1px dashed #E8E8E8 ;
+                cursor: pointer;
+                background: #F7F7F7;
             }
             .myuspzhbo{
                     width: 100%;
@@ -141,9 +148,8 @@
                     float: left;
                 }
 
-.myuspr div{
-    overflow: hidden;
-    width: 100%;
+.myuspr p{
+      margin-bottom: 5px;
 }
 .myuspzhr span{
     color: #FE8800; ;

@@ -260,3 +260,21 @@ p{
 .card_tit{
     padding-left: 20px;
 }
+#jytit{
+    border-top: none;
+}
+
+#jytit .active{
+    box-shadow: none !important;
+}
+#jytit .active a{
+   width: 180px;
+    border-right: none;
+}
+#jytit .active li{
+    border-right: none;
+    width: 180px;
+}
+#jytit li{
+   border-right: 1px solid #E8E8E8;
+}
