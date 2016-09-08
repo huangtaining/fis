@@ -29,18 +29,13 @@ fis依赖node，了解node请看这里[nodejs.org](http://nodejs.org/)。
 
     npm install -g fis3-hook-commonjs
 
-
+    npm install -g node-sass
     npm install -g fis-parser-node-sass
-
-    npm install -g fis-parser-sass
-		npm install -g fis-parser-sass-bin
-
 
     npm install -g fis-parser-template
     npm install -g fis-parser-babel-5.x
 
     npm install -g fis-postprocessor-autoprefixer
-
     npm install -g fis3-postpackager-loader
 
 更多插件可以看[这里](http://fis.baidu.com/fis3/docs/api/dev-plugin.html)。

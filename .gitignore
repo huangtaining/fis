@@ -2,3 +2,5 @@ components/*
 node_modules/*
 _dist
 .idea
+.DS_Store
+npm-debug.log
