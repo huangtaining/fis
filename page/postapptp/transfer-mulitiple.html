@@ -8,6 +8,7 @@
     <link href="../../modules/css/myusp.css" rel="stylesheet">
     <link href="../../modules/css/common2.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
+   <script type="text/javascript" src="../../modules/lib/ysbbase.min.js"></script>
 </head>
 <body>
 <!--head-->
@@ -49,6 +50,7 @@
                         <label class="control-label"><span class="yell">*</span>&nbsp;收款方账户汇总&nbsp;:</label>
                         <div class="controls">
                                   共<span class="yell">5</span>笔,总计<span class="yell">46454</span>元
+                                   <a  href="#lxr" data-toggle="modal">从联系人中选取</a>
                         </div>
                     </div>
 
@@ -116,7 +118,33 @@
         </div>
     </div>
 
+
+    <div id="lxr" class="modal hide fade in" style="display: none; ">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>这是一个模态框标题</h3>
+        </div>
+        <div class="modal-body">
+            <h4>模态框中的文本</h4>
+            <p>你可以在这添加一些文本。</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-success">唤醒活动</a>
+            <a href="#" class="btn" data-dismiss="modal">关闭</a>
+        </div>
+    </div>
+
+    <!--foot-->
+    <link rel="import" href="modules/widget/footer/footer.html?__inline">
+    <script src="lib/mod.js" data-loader></script>
+    <!--SCRIPT_PLACEHOLDER-->
+
 </div>
+
+<!--foot-->
+<link rel="import" href="modules/widget/footer/footer.html?__inline">
+<script src="lib/mod.js" data-loader></script>
+<!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>
 <script type="text/javascript">
