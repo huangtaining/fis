@@ -1,3 +1,8 @@
+.collection{
+    background-color:rgb(246,246,246);
+    padding-top:31px;
+    padding-bottom: 190px;
+}
 .collection h4{
     color:#333333;
     font-size:18px;
@@ -27,12 +32,14 @@
 }
 .position{
     margin-left:31px;
+    /*margin-top:33px;*/
 }
 .container{
     margin-top:15px;
     border:1px solid #E8E8E8;
-    margin-bottom:221px;
+    /*margin-bottom:221px;*/
     width:1200px;
+    background-color:white;
 }
 .conmargin{
     margin-bottom:82px;
@@ -251,6 +258,9 @@
 .formpad{
     padding-left:40px;
 }
+.formpad p{
+    margin-bottom:20px!important;
+}
 .manyla {
     display: inline-block;
     height: 19px!important;
@@ -290,7 +300,7 @@
 #txto{
     height:75px;
     width:16.5%;
-    margin-left:11.3%;
+    margin-left:11.4%;
 }
 .stail{
     position:relative;
@@ -305,14 +315,15 @@
 }
 .manype .manyla{
     text-align: left;
+    width:150px!important;
 }
 .manype>input{
-    width:125px;
-    margin-right:3px;
+    width:150px;
+    margin-right:5px;
 }
 .manype span{
     display: inline-block;
-    margin-left:30px;
+    margin-left:45px;
     text-align: center;
 }
 .lookbz{
@@ -325,6 +336,9 @@
     margin-left:-20px;
 }
 /*确认收款信息*/
+.confirmco{
+    padding-bottom:82px;
+}
 .quepro{
     margin-bottom:0;
 }
