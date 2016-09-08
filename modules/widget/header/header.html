@@ -16,8 +16,22 @@
 				<li><a href="javascript:;" title="注册">注册</a><span>|</span></li>
 				<li><a href="javascript:;" title="帮助中心">帮助中心</a><span>|</span></li>
 				<li><a href="javascript:;" title="联系我们">联系我们</a><span>|</span></li>
-				<li><a href="javascript:;" title="关于我们">关于我们</a></li>
+				<li class="my" style="position: relative;"><a href="javascript:;" title="关注我们">关注我们</a>
+					<div class="rvm">
+						<img src="/static/imgs/header/erweima.png" alt="" /><p style="text-align: center;color: #4A4A4A;">企业公众号</p>
+					</div>
+				</li>
 			</ul>
+			<script>
+$(document).ready(function(){
+  $("li.my").mouseover(function(){
+    $(".rvm").show();
+  });
+   $("li.my").mouseout(function(){
+    $(".rvm").hide();
+  });
+});
+</script>
         </div>
     </div>
     <div class="special-header clearfix">
