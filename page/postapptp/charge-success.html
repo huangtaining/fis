@@ -10,9 +10,9 @@
 <body>
 <link rel="import" href="modules/widget/header/header.html?__inline">
 <div class="collection">
-    <div class="container">
+    <div class="container conbo">
         <div class="subcon">
-        <h4>我要收款</h4>
+            <h4 class="line">我要收款</h4>
         <h5 class="shouk">你正在使用即时收款，你可以使用担保收款，您还可以向多人收款</h5>
         <ul class="progress clearfix">
             <li class="firstli">
@@ -36,18 +36,23 @@
         <!--form开始-->
         <div class="form clearfix">
             <div class="formbody">
-               <p>您向 <span><b>彭敏（pengmin1977@163.com）</b>发起<em>&nbsp;11.00&nbsp;</em>元的收款请求已经发送成功！</span></p>
-                <p>请通知对方及时登录银生宝进行付款</p>
+                <p><img src="../static/imgs/icons/B3-18.png" alt=""> 您向 <span><b>彭敏（pengmin1977@163.com）</b>发起<em>&nbsp;11.00&nbsp;</em>元的收款请求已经发送成功！</span></p>
+                <p class="plook">请通知对方及时登录银生宝进行付款。</p>
             </div>
 
         </div>
         </div>
 
-        <div class="formfooter">
-            <p>您可进行下一步操作：</p>
-            <p class="lianjie"><a href="">查看转账记录</a>|<a href="">体现</a>|<a href="">转账支付</a>|<a href="">返回我的银生宝</a></p>
+
+    </div>
+    <div class="formfooter">
+        <p>您可进行下一步操作：</p>
+        <p class="lianjie"><a href="">查看转账记录</a>|<a href="">体现</a>|<a href="">转账支付</a>|<a href="">返回我的银生宝</a></p>
+        <!--警告-->
+        <div class="alert alert-warning alertdown alertchange" role="alert">
+            <img src="../static/imgs/icons/B3-2.png" alt=""> <p>为配合国家实施《中华人民共和国反洗钱法》、《银行卡业务管理办法》等法律法规，打击洗钱、非法套现等犯罪行为，银生宝严禁信用卡套现、洗钱、虚假交易行为，一经发现将予以处罚，包括但不限于：限制提现、冻结账户、永久停止服务，并会影响相关信用记录。</p>
         </div>
-</div>
+    </div>
     <link rel="import" href="modules/widget/footer/footer.html?__inline">
 
 </body>

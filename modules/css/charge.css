@@ -190,9 +190,6 @@
 .modal-body ul{
     margin-top:10px;
 }
-/*.modal-body input{*/
-    /*width:138px;*/
-/*}*/
 .modal-body .find{
     width:53px;
     margin-left:12px;
@@ -388,15 +385,31 @@
     vertical-align: top;
 }
 
-/*//多人确认收款信息*/
+/*//收款成功*/
+.prohei{
+    height:90px;
+}
+.seclimar .quanc{
+    margin-top:5px;
+}
 .formbody {
     width:1082px;
-    height:158px;
+    height:auto;
     margin:0 auto;
     padding:30px;
+    margin-bottom: 150px;
+    border:1px solid #D5D5D5;
 }
 .formbody p span em{
     color:rgb(255,102,0);
+}
+.formbody p img{
+    height:30px;
+    margin:0 15px;
+}
+/*formfooter开始*/
+.conbo{
+    margin-bottom:0;
 }
 .formfooter{
     width:1200px;
@@ -404,7 +417,7 @@
     height:260px;
     background-color:white;
     border:1px solid #E8E8E8;
-    margin-top:22px;
+    margin:22px 0 158px 30px;
 }
 .formfooter a{
     margin:0 10px;
@@ -412,6 +425,11 @@
 .formfooter .lianjie{
     color:rgb(154,189,219);
     margin-left:-10px;
+}
+.alertchange{
+    width:1140px;
+    margin-left:0px;
+    margin-top:46px;
 }
 .lianjie a{
     color:#00A0E8;
@@ -431,4 +449,7 @@
 .btndown{
     margin-top:10px;
     margin-left:210px;
+}
+.plook{
+    margin-left:65px;
 }
