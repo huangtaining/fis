@@ -12,7 +12,7 @@
 <div class="collection">
     <p class="position">您的当前位置 : 我的银生宝 > 我要收款</p>
     <div class="container">
-        <h4>我要收款</h4>
+        <h4 class="line">我要收款</h4>
         <h5 class="shouk">你正在使用即时收款，你可以使用担保收款，您还可以向多人收款</h5>
         <ul class="progress clearfix">
             <li class="firstli">
@@ -34,7 +34,7 @@
 
 
         <!--form开始-->
-        <div class="form clearfix">
+        <div class="form clearfix linedown">
             <form action="">
                 <p>
                     <label for=""><em>*</em>被收款方账户:</label>
@@ -53,9 +53,11 @@
                                     </h5>
                                 </div>
                                 <div class="modal-body">
-                                    <input type="text">
-                                    <button type="button" class="btn btn-primary">查找</button>
-                                    <button type="button" class="btn btn-primary">确认</button>
+
+                                    <input type="text" class="form-control serchinp" placeholder="Username">
+
+                                    <button type="button" class="btn btn-primary ">查找</button>
+
                                     <ul>
                                         <li>
                                             <input type="radio" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
@@ -75,7 +77,8 @@
                                     </ul>
                                 </div>
                                 <div class="modal-footer">
-
+                                    <button type="button" class="btn btn-default active ">确定</button>
+                                    <span>取消</span>
                                 </div>
                             </div><!-- /.modal-content -->
                         </div><!-- /.modal-dialog -->
@@ -121,6 +124,10 @@
                     <button type="button" class="btn btn-primary nextbtn btndown">下一步</button>
                 </p>
             </form>
+            <!--警告-->
+            <div class="alert alert-warning alertdown" role="alert">
+                <img src="../static/imgs/icons/B3-2.png" alt=""> <p>为配合国家实施《中华人民共和国反洗钱法》、《银行卡业务管理办法》等法律法规，打击洗钱、非法套现等犯罪行为，银生宝严禁信用卡套现、洗钱、虚假交易行为，一经发现将予以处罚，包括但不限于：限制提现、冻结账户、永久停止服务，并会影响相关信用记录。</p>
+            </div>
         </div>
     </div>
 </div>
