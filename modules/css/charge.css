@@ -1,22 +1,43 @@
 .collection h4{
     color:#333333;
     font-size:18px;
-    margin-top:25px;
+    padding-left:28px;
+    height:44px;
+    line-height:44px;
+}
+.line{
+    width:1198px;
+    margin-left:-14px;
+    border-bottom:1px solid #E8E8E8;
+}
+.linedown{
+    width:1198px;
+    margin-left:-16px!important;
+    border-top:1px solid #E8E8E8;
 }
 .collection .shouk{
-    margin-top:56px;
+    margin-top:46px;
     color:#585858;
+    padding-left:14px;
 }
 .position{
     margin-left:31px;
 }
+.container{
+    margin-top:15px;
+    border:1px solid #E8E8E8;
+    margin-bottom:221px;
+    width:1200px;
+
+}
 /*progress开始*/
 .progress{
-    width:100%;
+    width:1140px;
     height:10.8%;
+    margin-left:14px;
     float:left;
-    margin-top:20px;
-    margin-bottom: 9%;
+    margin-top:30px;
+    margin-bottom: 6%;
 }
 .progress li{
     float:left;
@@ -54,7 +75,7 @@
     margin-top:30px;
 }
 .secli{
-    width:23%;
+    width:26%;
     height:6.8%;
     float:left;
     padding-top:20px;
@@ -87,10 +108,11 @@
 }
 /*form开始*/
 .form{
-    width:100%;
+    width:1200px;
     height:auto;
-    margin-top:120px;
-    margin-bottom:243px;
+    margin:120px 0 20px 0;
+    /*margin-bottom:243px;*/
+    padding-top:54px;
 }
 .form label{
     display:inline-block;
@@ -101,9 +123,14 @@
     font-weight: normal;
     margin-right:24px;
 }
+.changeb{
+    color:#00A0E8;
+
+}
 .form input{
     height:25px;
     width:16.5%;
+    margin-right:16px;
 }
 
 .form p{
@@ -114,6 +141,7 @@
 }
 .totalmoney{
     border:none;
+    background-color:#E8E8E8;
 }
 .form .severmoney{
     width:37px;
@@ -132,9 +160,9 @@
     margin-left:191px;
 }
 #txt{
-    height:75px;
-    width:16.5%;
-    margin-left:17.8%;
+    height:151px;
+    width:329px;
+    margin-left:17.4%;
 
 }
 .stail{
@@ -183,6 +211,20 @@
     display: inline-block;
     width:200px;
     margin-left:10px;
+}
+.alertdown{
+    margin:100px 0 0 23px;
+    width:1155px;
+    position:relative;
+
+}
+.alertdown p{
+    margin-left:53px;
+}
+.alertdown img{
+    position:absolute;
+    left:20px;
+    top:20px;
 }
 /*多人收款*/
 .manyla {
