@@ -198,6 +198,7 @@
     height:25px;
     padding:0;
     margin-left:10px;
+    background:url("../")
 }
 .modal-header{
     border-bottom:1px dashed rgb(59,156,225);
