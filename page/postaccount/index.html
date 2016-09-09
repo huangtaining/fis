@@ -25,7 +25,7 @@
 
 <!-- rechange cotnent -->
 
-<div class="my">
+<div class="bo">
         <!--左右浮动-->
         <div class="fix">
              <div id="fixl">
@@ -209,12 +209,10 @@
             <div class="myuspjy">
                 <!--title-->
                 <div class="tit">交易记录<a href="#" class="more">更多</a></div>
-                <!--分页-->
-                <ul id="jytit" class="nav nav-tabs">
+
+                <ul id="myTab" class="nav nav-tabs">
                     <li class="active">
-                        <a href="#allpay" data-toggle="tab" style="background: #F7F7F7">
-                            所有交易记录
-                        </a>
+                        <a href="#allpay" data-toggle="tab">所有交易记录</a>
                     </li>
                     <li>
                         <a href="#chongzhi" data-toggle="tab">充值记录</a>
@@ -223,25 +221,69 @@
                         <a href="#tixian" data-toggle="tab">提现记录</a>
                     </li>
                     <li>
-                        <a href="#chongzhijf" data-toggle="tab">充值缴费记录</a>
+                        <a href="#chongzhijl" data-toggle="tab">充值缴费记录</a>
                     </li>
                     <li>
                         <a href="#dzdzd" data-toggle="tab">电子对账单</a>
                     </li>
                     <li>
-                        <a href="#yelx" data-toggle="tab">余额流水查询</a>
+                        <a href="#yels" data-toggle="tab">余额流水查询</a>
                     </li>
                     <li>
-                        <a href="#djyjl" data-toggle="tab">待处理交易</a>
+                        <a href="#daichuli" data-toggle="tab">待处理交易</a>
                     </li>
                 </ul>
                 <!--分页主体-->
                 <div id="myTabContent" class="tab-content">
+                    <!--所有交易记录-->
                     <div class="tab-pane fade in active" id="allpay">
-                        <table class="table-striped table"style="margin-bottom: 0">
+                        <!--<div class="tad-pane_box">-->
+                            <!--<ul class="clearfix">-->
+                                <!--<li><em>交易信息：</em><input type="text" placeholder="交易编号或交易信息"/></li>-->
+                                <!--<li><em>收/付款：</em>-->
+                                    <!--<select name="" id="">-->
+                                        <!--<option value="">收/付款</option>-->
+                                        <!--<option value="">收款</option>-->
+                                        <!--<option value="">付款</option>-->
+                                    <!--</select>-->
+                                <!--</li>-->
+                                <!--<li><em>交易对方：</em><input type="text" placeholder="交易方名称或者账户"/></li>-->
+                            <!--</ul>-->
+                            <!--<ul class="clearfix">-->
+                                <!--<li><em>交易日期：</em><em class="time" style="">2016-7-23至2016-7-29</em></li>-->
+                                <!--<li><em>收/付款：</em>-->
+                                    <!--<select name="" id="">-->
+                                        <!--<option value="">收/付款</option>-->
+                                        <!--<option value="">收款</option>-->
+                                        <!--<option value="">付款</option>-->
+                                    <!--</select>-->
+                                <!--</li>-->
+                                <!--<li><em>交易类型：</em>-->
+                                    <!--<select name="" id="">-->
+                                        <!--<option value="">收/付款</option>-->
+                                        <!--<option value="">收款</option>-->
+                                        <!--<option value="">付款</option>-->
+                                    <!--</select>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                            <!--<ul class="clearfix">-->
+                                <!--<li class="ation"><em>交易信息：</em><input type="text" placeholder="交易金额"/> - <input type="text" placeholder="交易金额"/></li>-->
+                                <!--<li><em>收/付款：</em>-->
+                                    <!--<select name="" id="">-->
+                                        <!--<option value="">收/付款</option>-->
+                                        <!--<option value="">收款</option>-->
+                                        <!--<option value="">付款</option>-->
+                                    <!--</select>-->
+                                <!--</li>-->
+                                <!--<li><button>查询</button></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                        <!--表格-->
+
+                        <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th>交易编号</th>
+                                <th style="padding-left: 30px;">交易编号</th>
                                 <th>交易对方</th>
                                 <th>交易类型</th>
                                 <th>交易状态</th>
@@ -254,88 +296,191 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td style="text-indent: 35px">12213431414</td>
-                                <td>上海近啊好姑娘公司</td>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td class="tti">2016-01-01-<br/>05:00</td>
+                                <td style="line-height: 22px;">
+                                    <p>2016-01-01</p>
+                                    <p>05:00</p>
+                                </td>
                                 <td>收</td>
-                                <td>9670.00</td>
-                                <td>-7.00</td>
-                                <td>详情</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">详情</option>
+                                        <option value="">删除</option>
+                                        <option value="">删除</option>
+                                    </select>
+                                </td>
                             </tr>
+
                             <tr>
-                                <td>12213431414</td>
-                                <td>上海近啊好姑娘公司</td>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td class="tti">2016-01-01-<br/>05:00</td>
+                                <td style="line-height: 22px;">
+                                    <p>2016-01-01</p>
+                                    <p>05:00</p>
+                                </td>
                                 <td>收</td>
-                                <td>9670.00</td>
-                                <td>-7.00</td>
-                                <td>详情</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">详情</option>
+                                        <option value="">删除</option>
+                                        <option value="">删除</option>
+                                    </select>
+                                </td>
                             </tr>
+
                             <tr>
-                                <td>12213431414</td>
-                                <td>上海近啊好姑娘公司</td>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td class="tti">2016-01-01-<br/>05:00</td>
+                                <td style="line-height: 22px;">
+                                    <p>2016-01-01</p>
+                                    <p>05:00</p>
+                                </td>
                                 <td>收</td>
-                                <td>9670.00</td>
-                                <td>-7.00</td>
-                                <td>详情</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">详情</option>
+                                        <option value="">删除</option>
+                                        <option value="">删除</option>
+                                    </select>
+                                </td>
                             </tr>
+
                             <tr>
-                                <td>12213431414</td>
-                                <td>上海近啊好姑娘公司</td>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td class="tti">2016-01-01-<br/>05:00</td>
+                                <td style="line-height: 22px;">
+                                    <p>2016-01-01</p>
+                                    <p>05:00</p>
+                                </td>
                                 <td>收</td>
-                                <td>9670.00</td>
-                                <td>-7.00</td>
-                                <td>详情</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">详情</option>
+                                        <option value="">删除</option>
+                                        <option value="">删除</option>
+                                    </select>
+                                </td>
                             </tr>
+
                             <tr>
-                                <td>12213431414</td>
-                                <td>上海近啊好姑娘公司</td>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td class="tti">2016-01-01-<br/>05:00</td>
+                                <td style="line-height: 22px;">
+                                    <p>2016-01-01</p>
+                                    <p>05:00</p>
+                                </td>
                                 <td>收</td>
-                                <td>9670.00</td>
-                                <td>-7.00</td>
-                                <td>详情</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">详情</option>
+                                        <option value="">删除</option>
+                                        <option value="">删除</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 22px;">
+                                    <p>2016-01-01</p>
+                                    <p>05:00</p>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">详情</option>
+                                        <option value="">删除</option>
+                                        <option value="">删除</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 22px;">
+                                    <p>2016-01-01</p>
+                                    <p>05:00</p>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                                <td>
+                                    <select name="" id="">
+                                        <option value="">详情</option>
+                                        <option value="">删除</option>
+                                        <option value="">删除</option>
+                                    </select>
+                                </td>
                             </tr>
                             </tbody>
-                            <tfoot>
-                            <tr>
-                                <td colspan="3">
-                                    收入&nbsp;:&nbsp;<span>20</span>笔&nbsp;(&nbsp;已完成<span>7</span>笔,&nbsp;共<span>20.1</span>元。处理中<span>5</span>笔,&nbsp;共<span>48.11</span>元&nbsp;)
-                                </td>
-                                <td colspan="6">
-                                    支出&nbsp;:&nbsp;<span>20</span>笔&nbsp;(&nbsp;已完成<span>7</span>笔,&nbsp;共<span>20.1</span>元。处理中<span>5</span>笔,&nbsp;共<span>48.11</span>元&nbsp;)
-                                </td>
-                            </tr>
-                            </tfoot>
                         </table>
+                        <div class="jilu clearfix">
+                            <div class="jilu_left">支出：20笔（已完成7笔，共2.17元。处理中:20笔，共12.00元）</div>
+                            <div class="jilu_rigth">收入：20笔（已完成7笔，共2.17元。处理中:20笔，共12.00元）</div>
+                        </div>
+
+                        <!--分栏-->
                     </div>
-                    <!---->
+
+
+                    <!--充值记录-->
                     <div class="tab-pane fade" id="chongzhi">
-                        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
-                        </p>
+                        <p>充值记录Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
                     </div>
+
+                    <!--提现记录-->
                     <div class="tab-pane fade" id="tixian">
-                        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+                        <p>提现记录iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
                             TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
                     </div>
-                    <div class="tab-pane fade" id="chongzhijf">
-                        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+
+                    <!--充值缴费记录-->
+                    <div class="tab-pane fade" id="chongzhijl">
+                        <p>充值缴费记录jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
                     </div>
+
+                    <!--电子对账单-->
                     <div class="tab-pane fade" id="dzdzd">
-                        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
-                        </p>
+                        <p>电子对账单Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
+                    </div>
+
+                    <!--余额流水查询-->
+                    <div class="tab-pane fade" id="yels">
+                        <p>余额流水查询Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
+                    </div>
+
+                    <!--待处理交易-->
+                    <div class="tab-pane fade" id="daichuli">
+                        <p>待处理Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
                     </div>
 
                 </div>
@@ -343,7 +488,7 @@
                 <!--分栏-->
                 <div class="jiaoyifoot">
                     <div class="fyl">
-                            当前0-0,共7条,每页展现<span>20</span>条
+                            当前0-<span>1</span>,共7条,每页展现<span>20</span>条
                     </div>
                     <div class="fyr">
                             <a href="#">上一页</a>
@@ -361,6 +506,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="bigtu">
@@ -414,17 +560,6 @@ $(function(){
 
 
 //         鼠标移入缴费  a标签
-
-    for(var i=0;i<4;i++){
-        fir44(i)
-    }
-    function fir44(i){
-        $(".cir4").children(".cir").eq(i).hover(function(){
-           $(this).css("background-image","url(../../static/imgs/myunspay/B"+(i+1)+"s.png)")
-        },function(){
-//            $(this).css("background","white").children(".whi").removeClass("cc").html()
-        })
-    }
 
 })
 

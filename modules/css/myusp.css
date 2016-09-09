@@ -237,15 +237,29 @@
 #cir1{
     background: url("../../static/imgs/myunspay/B1.png");
 }
+#cir1:hover{
+    background: url("../../static/imgs/myunspay/B1s.png");
+}
 #cir2{
+    background: url("../../static/imgs/myunspay/B2s.png");
+}
+#cir2:hover{
     background: url("../../static/imgs/myunspay/B2s.png");
 }
 #cir3{
     background: url("../../static/imgs/myunspay/B3.png");
 }
+#cir3:hover{
+    background: url("../../static/imgs/myunspay/B3s.png");
+}
 #cir4{
     background: url("../../static/imgs/myunspay/B4.png");
 }
+#cir4:hover{
+    background: url("../../static/imgs/myunspay/B4s.png");
+}
+
+
 #fiv11{
        background: url("../../static/imgs/myunspay/B9.png");
 }
@@ -331,13 +345,7 @@
 }
 
 
-.myTab .active a{
-    background: red !important;
-}
 
-.nav-tabs>li>a {
-    border-radius: 0 0 0 0 ;
-}
 
 #chongzhi{
     width:100%;
@@ -357,27 +365,46 @@
 }
 
 
-#myTabContent table td{
-    border-right:none;
-    border-left:none
+/*#myTabContent table td{*/
+    /*border-right:none;*/
+    /*border-left:none*/
+/*}*/
+/*#myTabContent table th{*/
+       /*background:#F7F7F7 ;*/
+       /*border:none;*/
+/*}*/
+
+/*#myTabContent tfoot span{*/
+/*color:#F19242 ;*/
+/*}*/
+/*#myTabContent .nav>li>a {*/
+    /*padding: 10px 35px;*/
+/*}*/
+/*.myTab .active a{*/
+    /*background: red !important;*/
+/*}*/
+
+.bo .nav-tabs li {
+   width: 153px;
+    text-align: center;
+    margin-bottom: -1px;
 }
-#myTabContent table th{
-       background:#F7F7F7 ;
-       border:none;
+.bo .nav-tabs .active a {
+      background: #F7F7F7;
+      border-top: none !important;
+      border-radius: 0 0 0 0 !important;
 }
-#myTabContent tbody td{
-   line-height: 44px;
+.bo #myTabContent thead {
+    background: #F7F7F7;
+}
+.bo #myTabContent tbody td{
+    line-height: 44px;
     height: 44px;
-}
-#myTabContent tfoot span{
-color:#F19242 ;
 }
 .tti{
     line-height: 22px !important;
 }
-#myTabContent .nav>li>a {
-    padding: 10px 35px;
-}
+
 .fixed-table-container{
     border: none !important;
 }

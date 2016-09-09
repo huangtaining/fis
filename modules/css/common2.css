@@ -41,7 +41,6 @@
 /*警告*/
 .stop{
     background: #F7F7F7;
-    font-size: 12px;
 }
 /*备注*/
 .note{
@@ -75,7 +74,8 @@
 /*更多*/
 .more{
     float: right;
-    color: #00A0E8
+    color: #00A0E8;
+    font-size: 16px;
 }
 .harf{
     width: 50%;
@@ -133,6 +133,7 @@
     overflow: hidden;
     padding: 28px;
     margin-bottom: 20px;
+    position: relative;
 }
 .alltit{
        border: 1px solid #E8E8E8;
@@ -287,26 +288,7 @@ p{
 .card_tit{
     padding-left: 20px;
 }
-#jytit{
-    border-top: none;
-}
 
-#jytit .active{
-    box-shadow: none !important;
-
-}
-#jytit .active a{
-   width: 180px;
-    border-right: none;
-
-}
-#jytit .active li{
-    border-right: none;
-    width: 180px;
-}
-#jytit li{
-   border-right: 1px solid #E8E8E8;
-}
 
 .icon-phone{
     width: 15px;
@@ -333,8 +315,45 @@ p{
     border: none;
     padding: 3px 20px;
 }
+.step_button:hover{
+    background: #00A0E8;
+    border: none;
+    padding: 3px 20px;
+}
 .step_button_s{
     background: #ED8719;
     border: none;
     padding: 3px 20px;
 }
+.step_button_s:hover{
+    background: #ED8719;
+    border: none;
+    padding: 3px 20px;
+}
+.lookjilu{
+    float: right;
+    border-radius: 5px;
+    background: #F7F7F7;
+    position: absolute;
+    right: 35px;
+    top:35px;
+    padding: 10px 20px;
+}
+.norque{
+    margin-bottom: 90px;
+}
+.norque p{
+    font-size: 14px;
+}
+.norque h3{
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.bo .china{
+    width: 185px;
+    padding: 2px 8px;
+    margin-right: 16px;
+    display: inline-block;
+    height: 28px;
+}
+
