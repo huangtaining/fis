@@ -1,4 +1,5 @@
-/*content*/
+
+/*我要收款*/
 .collection{
     background-color:rgb(246,246,246);
     padding:31px 0 190px 0;
@@ -203,7 +204,6 @@
     height:25px;
     padding:0;
     margin-left:10px;
-
 }
 .modal-header{
     border-bottom:1px dashed rgb(59,156,225);
