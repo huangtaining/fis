@@ -52,25 +52,38 @@
 .myusptx a{
     color: white !important;
 }
-.myusptx .col-md-5{
-    line-height: 30px;
+.myusptx .col-md-3{
+     line-height: 30px;
+     float: right;
+     width: 400px !important;
+    margin-left: -200px;
+ }
+.myusptx .col-md-1{
+      margin-right: -30px;
 }
-.myusptx .col-md-5>div{
+.myusptx .col-md-8{
+    line-height: 30px;
+    width: 760px !important;
+    margin-right: -200px;
+}
+.myusptx .col-md-3>div{
     height: 30px;
 }
-.myusptx .col-md-5 .progress{
+.myusptx .col-md-3 .progress{
     margin-bottom: 0;
+    width: 100%;
+    margin-top: 0 !important;
+    height: 10px !important;
 }
 .jjd{
-    width: 200px;
-    padding-top: 5px
+    width: 60%;
+    padding-top: 10px
 }
-.myusptx .col-md-5 .progress .progress-bar{
-}
-.myusptx .col-md-6{
+
+.myusptx .col-md-8{
     line-height: 30px;
  }
-.myusptx .col-md-6 div{
+.myusptx .col-md-8 div{
     line-height: 30px;
 
 }
