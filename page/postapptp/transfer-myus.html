@@ -4,10 +4,9 @@
     <title>转账到银生宝_1</title>
     <link rel="import" href="../layout/header.html?__inline">
     <!--STYLE_PLACEHOLDER-->
-    <link href="../../modules/css/ysbbase.css" rel="stylesheet">
     <link href="../../modules/css/myusp.css" rel="stylesheet">
     <link href="../../modules/css/common2.css" rel="stylesheet">
-    <link href="../../modules/css/transfer_com.css" rel="stylesheet">
+    <link href="../../modules/css/transfer_com.css">
 </head>
 <body>
 
@@ -39,7 +38,7 @@
 
                         <!-- 收款方账户-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell">*</span>&nbsp;收款方账户&nbsp;:</label>
+                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;收款方账户&nbsp;:</label>
                             <div class="controls">
                                 <input type="text" placeholder="请输入金额" style="margin-right: 18px">
                                 <span class="bull">从联系人中收取</span>
@@ -49,7 +48,7 @@
 
                         <!-- 收款方名称-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell">*</span>&nbsp;收款方名称&nbsp;:</label>
+                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;收款方名称&nbsp;:</label>
                             <div class="controls">
                                 <input type="text"style="margin-right: 18px">
                                 <span class="icon-phone"></span>
@@ -58,9 +57,9 @@
 
                         <!-- 付款金额-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell">*</span>&nbsp;付款金额&nbsp;:</label>
+                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;付款金额&nbsp;:</label>
                             <div class="controls">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px">元
+                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" class="money" onchange="china()">元
                             </div>
                         </div>
 
@@ -84,7 +83,7 @@
 
                         <!-- 商品信息-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell">*</span>&nbsp;付款金额&nbsp;:</label>
+                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;付款金额&nbsp;:</label>
                             <div class="controls">
                                 <input type="text" placeholder="请输入金额" style="margin-right: 18px">元
                             </div>
@@ -92,7 +91,7 @@
 
                         <!-- 资金用途-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell">*</span>&nbsp;资金用途&nbsp;:</label>
+                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;资金用途&nbsp;:</label>
                             <div class="controls">
                                 <input type="text" placeholder="请输入金额" style="margin-right: 18px">元
                                 <span style="margin-left: 18px">最长85个字符</span>
@@ -100,7 +99,7 @@
                         </div>
 
                         <!-- 备注-->
-                        <div class="control-group">
+                        <div class="control-group beizhu">
                             <label class="control-label">备注&nbsp;:</label>
                             <div class="controls">
                                 <textarea placeholder="最长85个字符" class="note"></textarea>
@@ -111,11 +110,7 @@
                         <div class="control-group">
                             <label class="control-label">&nbsp;</label>
                             <div class="controls">
-                                <a>
-                                    <button  type="button" class="btn btn-primary nextstep"
-                                             data-loading-text="Loading...">上一步
-                                    </button>
-                                </a>
+                                <a class="btn btn-primary step_button">下一步</a>
                             </div>
                         </div>
 
@@ -152,14 +147,54 @@
 </body>
 </html>
 <script type="text/javascript">
-    //    var _nextDa;
-    //    $(function() {
-    //        $(".nextstep").click(function(){
-    //            //console.log("ssss")
-    //            _nextDa=window.setTimeout(function(){
-    //                $(this).parent("a").attr("href","rechange_2.html")
-    //            },1000)
-    //
-    //        });
-    //    });
+    var $ = require('jquery');
+
+    //    验证必填字段
+    $(".step_button").click(function(){
+        var _mul=$(".muuu").length;
+        var a=0;
+        for(var i=0;i<_mul;i++){
+            if($(".muuu").eq(i).parent().siblings().children("input").val()){
+                a++
+            }
+        }
+        if(a==_mul){
+            alert("验证通过")
+        }else{
+            alert("失败失败失败失败")
+        }
+
+    });
+
+    //    阿拉伯数字转化为中文
+    function china(){
+//        哪里需要转换大小写
+        $(".money").val() || $(".money").html()
+        function daxiaoxie(n) {
+            var fraction = ['角','分'];
+            var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
+            var unit = [['元','万','亿'],['','拾','佰','仟']];
+            var head = n < 0?'欠':'';
+            n = Math.abs(n);
+            var s = '';
+            for (var i = 0; i < fraction.length; i++) {
+                s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
+            }
+            s = s || '整';
+            n = Math.floor(n);
+            for (var i = 0; i < unit[0].length && n > 0; i++) {
+                var p = '';
+                for (var j = 0; j < unit[1].length && n > 0; j++) {
+                    p = digit[n % 10] + unit[1][j] + p;
+                    n = Math.floor(n / 10);
+                }
+                s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
+            }
+            var _bigmoney=head + s.replace(/(零.)*零元/,'元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
+
+//              输出到哪里
+            $(".china").val(_bigmoney);
+        }
+        daxiaoxie(_money)
+    }
 </script>

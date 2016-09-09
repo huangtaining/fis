@@ -8,6 +8,7 @@
     <link href="../../modules/css/common2.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
     <script src="../../modules/lib/ysbbase.min.js"></script>
+    <script src="../../modules/js/yanz.js"></script>
 </head>
 <body>
 <!--head-->
@@ -119,14 +120,13 @@
 <!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>
-
 <script type="text/javascript">
     var $ = require('jquery');
 
-//    验证必填字段
+    //    验证必填字段
     $(".step_button").click(function(){
         var _mul=$(".muuu").length;
-        var a=0
+        var a=0;
         for(var i=0;i<_mul;i++){
             if($(".muuu").eq(i).parent().siblings().children("input").val()){
                 a++
@@ -138,11 +138,12 @@
             alert("失败失败失败失败")
         }
 
-    })
+    });
 
-//    阿拉伯数字转化为中文
+    //    阿拉伯数字转化为中文
     function china(){
-        var _money=$(".money").val();
+//        哪里需要转换大小写
+        $(".money").val() || $(".money").html()
         function daxiaoxie(n) {
             var fraction = ['角','分'];
             var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
@@ -163,9 +164,12 @@
                 }
                 s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
             }
-           $(".china").val(( head + s.replace(/(零.)*零元/,'元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整')));
+            var _bigmoney=head + s.replace(/(零.)*零元/,'元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
+
+//              输出到哪里
+            $(".china").val(_bigmoney);
         }
         daxiaoxie(_money)
     }
-
 </script>
+

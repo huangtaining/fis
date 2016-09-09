@@ -311,7 +311,7 @@ p{
     background:url("../../static/imgs/icons/icon-cbbs.png") ;
 }
 
-
+/*步骤按钮*/
 .step_button{
     background: #00A0E8;
     border: none;
@@ -362,3 +362,13 @@ p{
     height: 170px;
 }
 
+.lxr{
+    color:#00A0E8 ;
+}
+.form_succ .control-group{
+         height: 38px;
+    line-height: 38px;
+}
+.bo form{
+    margin-bottom: 50px;
+}
