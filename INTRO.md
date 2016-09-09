@@ -47,6 +47,14 @@ fis依赖node，了解node请看这里[nodejs.org](http://nodejs.org/)。
 更多信息请看[fis用户文档](http://fis.baidu.com/fis3/docs/beginning/install.html)。
 
 
+如何发布代码？
+前端代码发布库：
+http://gitlab.uns1066.com/shengfeng.zhu/ysb-fe-personal.git  
+目前会定期更新分支：  ysb-personal-branch
+
+
+
+
 ## 如何运行
 开启fis服务器
 

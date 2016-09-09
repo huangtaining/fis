@@ -31,7 +31,7 @@ fis.set('project.ignore', [
 fis.hook('commonjs', {
     baseUrl: './modules',
     extList: ['.js', '.es']
-    //,mod: 'amd'
+        //,mod: 'amd'
 });
 
 // fis.unhook('commonjs');
@@ -155,7 +155,7 @@ fis.match('*.jsx', {
 
 //test html map route
 fis.match("/page/maproute.html", {
-  release: 'index.html'
+    release: 'index.html'
 });
 
 
@@ -261,6 +261,14 @@ fis.media('prd')
     .match('**.{scss,css}', {
         optimizer: fis.plugin('clean-css', {
             'keepBreaks': false //保持一个规则一个换行
+        })
+    });
+
+//fis3 release prd -d E:\git_ysb\ysb-fe-personal
+fis.media('pub')
+    .match('*', {
+        deploy: fis.plugin('local-deliver', {
+            to: 'E:/git_ysb/ysb-fe-personal'
         })
     });
 // .match('::package', {
