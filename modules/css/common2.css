@@ -17,6 +17,8 @@
 .yell{
     color:#EE881A;
     font-weight: bold;
+}
+.lr{
     margin: 0 15px
 }
 .s40{
@@ -355,5 +357,8 @@ p{
     margin-right: 16px;
     display: inline-block;
     height: 28px;
+}
+.bo .beizhu{
+    height: 170px;
 }
 

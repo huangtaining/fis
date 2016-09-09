@@ -156,12 +156,13 @@
             .crecard{
                 display: inline-block;
                 border: 1px solid #E8E8E8;
-                width: 40%;
+                width: 49%;
                 float: left;
                 padding: 16px 20px;
                 border-top-left-radius: 15px;
                 border-top-right-radius: 15px;
                 text-align: center;
+                line-height: 24px;
             }
             .crecardr{
                 float: right;
@@ -231,6 +232,7 @@
     height: 50px;
     margin: 0 auto;
     margin-top: 45px;
+    margin-bottom: 20px;
     background-size: 50px 50px !important;
 }
 
@@ -307,7 +309,7 @@
     width: 100%;
     border-bottom: 1px solid #E8E8E8;
     padding: 12px 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .five{
     width: 100%;
@@ -316,7 +318,9 @@
     flex-wrap: wrap;
 }
 .five p b {
-      color: #333;
+      color: #000;
+    font-size: 18px;
+    font-weight: normal;
 }
 .col-five{
     float: left;
@@ -334,7 +338,7 @@
     border-bottom: 1px solid #E8E8E8;
 }
 .col-five p{
-    margin: 10px 0;
+    margin: 16px 0;
 }
 .col-five:last-child{
     border-right: none;
@@ -342,6 +346,7 @@
 /*浅色字*/
 .whi{
     color: #AEAEAE;
+    padding: 5px;
 }
 
 
