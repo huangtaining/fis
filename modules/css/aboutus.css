@@ -1,14 +1,14 @@
 /*公司简介部分*/
-.company-instro{
+.company-intro{
     width:100%;
     background-color:#F7F7F7;
     padding-top:11px;
 }
-.instro{
+.intro{
     height:710px;
-    padding:12px;
+    padding:12px 0;
 }
-.company-instro .jianjie{
+.company-intro .jianjie{
     width:1200px;
     font-size:18px;
     height:40px;
@@ -17,19 +17,84 @@
     margin-left:-15px;
     border-bottom:1px solid #E8E8E8;
 }
-.company-instro .instroup{
+.company-intro .introup{
     height:296px;
-    width:100%;
+    width:1170px;
+    margin-bottom:27px;
+
 
 }
-.company-instro .instrocenter{
+.company-intro .introcenter{
     width:1150px;
     height:281.6px;
     margin:0 auto;
 
 }
-.company-instro .instrocenter p{
+.company-intro .introcenter p{
     text-indent: 2em;
     margin-bottom: 5px;
     line-height:1.8em;
 }
+.company-intro .cltime{
+    float:left;
+    margin-left:45px;
+    margin-right:18px;
+}
+.company-intro .instrobo{
+    margin-top:10px;
+}
+
+.company-intro .intro-event{
+    height:2354px;
+    width:100%;
+}
+
+
+
+/*联系我们*/
+.contactus{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:11px;
+}
+.contactus .contactmap{
+    padding-top:15px;
+    width:873px;
+    float:left;
+    height:647px;
+    border-right:1px solid #E8E8E8;
+}
+.contactus .contactustel{
+    width:294px;
+    height:647px;
+    float:right;
+}
+.contactus .contactmap .ysbz{
+    font-size: 18px;
+    color:#4A4A4A;
+    margin:28px 0 18px 10px;
+}
+.contactus .contactmap p{
+    margin-bottom:5px;
+    color:#4A4A4A;
+    margin-left:10px;
+}
+.contactus .contactmap p .tel{
+    margin-right:30px;
+    color:#4A4A4A;
+}
+.contactustel .contact{
+    height:70px;
+    width:100%;
+    margin-top:29px;
+}
+.contactustel .contact .cltime{
+    float:left;
+    margin-left:25px;
+}
+.contactustel .contact span em{
+    font-size:22px;
+}
+/*.contactustel .contact .contactright{*/
+    /*margin-top:30px;*/
+/*}*/
