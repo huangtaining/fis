@@ -16,7 +16,7 @@
 display: inline-block;cursor: pointer;}
 .login_box .login_right .login_text{padding: 20px 0;}
 
-.login_box .login_right ul li p{display: inline-block;width: 290px;height:20px;text-align: left;font-size: 12px;}
+.login_box .login_right ul li p{display: inline-block;width: 290px;height:20px;text-align: left;font-size: 12px;color: red;text-indent: 2em;}
 
 .login_box .login_right .login_text .login_one{float: left;margin-left: 40px;}
 .login_box .login_right .login_text .login_one input{vertical-align: middle;padding-right: 5px;margin-top: 2px;width: 15px;height: 15px;}
