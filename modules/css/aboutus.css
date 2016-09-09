@@ -1,1 +1,35 @@
 /*公司简介部分*/
+.company-instro{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:11px;
+}
+.instro{
+    height:710px;
+    padding:12px;
+}
+.company-instro .jianjie{
+    width:1200px;
+    font-size:18px;
+    height:40px;
+    line-height:40px;
+    padding-left:28px;
+    margin-left:-15px;
+    border-bottom:1px solid #E8E8E8;
+}
+.company-instro .instroup{
+    height:296px;
+    width:100%;
+
+}
+.company-instro .instrocenter{
+    width:1150px;
+    height:281.6px;
+    margin:0 auto;
+
+}
+.company-instro .instrocenter p{
+    text-indent: 2em;
+    margin-bottom: 5px;
+    line-height:1.8em;
+}
