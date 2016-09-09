@@ -1,10 +1,10 @@
 /*第三部分    转账付款*/
 
 .sectiontransfer {
-  width: 100%; overflow: hidden;
+  width: 100%; overflow: hidden;border-bottom: 1px solid #e4e4e4;
 }
 
-.payment {
+/*.payment {
     position: relative;
     background-color: #fff;
 }
@@ -17,22 +17,22 @@
 .payment .payment_bottom .payment_box {
     width: 83%;
     float: right;
-}
+}*/
 
-.payment .payment_left {
+.payment .bglight {
     width: 430px;
     padding: 114px 0;
     text-align: left;
 }
 
-.payment .payment_left h1 {
+.payment .bglight h1 {
     padding: 0 0 50px;
     font-size: 50px;
     color: #585858;
     padding-bottom: 50px;
 }
 
-.payment .payment_left p {
+.payment .bglight p {
     padding-bottom: 50px;
     display: block;
     line-height: 30px;
@@ -51,12 +51,12 @@
     text-align: center;
     cursor: pointer;
 }
-
+/*
 .payment .payment_box>div {
     float: left;
-}
+}*/
 
-.payment_right {
+/*.payment_right {
     position: absolute;
     top: 0;
     right: 0;
@@ -66,19 +66,19 @@
 .payment_right img {
     width: 100%;
     height: 100%;
-}
+}*/
 
-@media only screen and (min-width: 1000px) and (max-width:1600px) {
+/*@media only screen and (min-width: 1000px) and (max-width:1600px) {
     .payment_right img {
         width: 73%;
         height: 538px;
         float: right;
     }
-}
+}*/
 
 .payment .payment_top {
     width: 100%;
-    border-bottom: 1px solid #ECECEC;
+    /*border-bottom: 1px solid #ECECEC;*/
 }
 
 .payment .payment_top .centre {
@@ -129,3 +129,56 @@
     filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
     box-shadow: 2px 6px 20px #888888;
 }
+
+			
+			.sectionA {
+				width: 100%;
+				overflow: hidden;
+			/*	background-color: #F7F7F7*/;
+			}
+			.container {
+				width: 1200px;
+				background-color: #F7F7F7;
+				border: none;
+			}
+			
+			.sectionA .container{
+/*				height: 450px;*/
+			}
+			.sectionA .container .row,
+			.sectionA .container .row .col-md-4,
+			.sectionA .container .row .col-md-8 {
+				height: 100%;
+			}
+			
+			
+			/*.bglight {
+				height: 100%;
+				width: 100%;
+				background: #eeeeee;
+			}
+			*/
+			.bgpics {
+				background-image: url(static/imgs/index/banner2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1118px;
+    height: 550px;
+    margin-left: 20px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
