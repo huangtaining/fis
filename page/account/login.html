@@ -55,12 +55,13 @@
   var p;
   var c;
   var u;
-  var user_zeng= /^1[3|4|5|7|8]\d{9}$/;
+  var reg=/^[1-9]\d*$|^0$/ ;   //纯数字
+  var user_zeng= /^1[3|4|5|7|8]\d{9}$/;    //手机号
+  var emali_zeng= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;  //邮箱
 
     btn.onclick=function() {
-
      if(username.value==""){
-       txt[1].innerHTML='请输入手机号或Email';
+       txt[1].innerHTML='用户名不能为空';
      }else if(password.value==""){
       txt[2].innerHTML='密码不能为空';
      }else if(checkCode.value==""){
@@ -71,21 +72,43 @@
          
     };
   username.oninput=function() {
-   if(!user_zeng.test(username.value)){
-          u=false;
-          txt[1].innerHTML='格式不正确';
+    var user_value=username.value;
+    if(reg.test(user_value)){
+        if(!user_zeng.test(username.value)){
+            u=false;
+           txt[1].innerHTML='用户名不正确';
+           btn.style.backgroundColor="#d5d5d5" ;
+           btn.type="button";
+       }else{
+          u=true;
+          txt[1].innerHTML='';
+          if( u && p && c){
+          btn.style.backgroundColor="#009FE8";
+          btn.type="submit"; 
+        }
+       }
+     }else if(user_value.indexOf("@") >-1){
+
+       if(!emali_zeng.test(username.value)){
+         u=false;
+         txt[1].innerHTML='用户名不正确';
          btn.style.backgroundColor="#d5d5d5" ;
          btn.type="button";
-   }else{
-   	   u=true;
-        txt[1].innerHTML='';
-       if( u && p && c){
-       btn.style.backgroundColor="#009FE8";
-       btn.type="submit"; 
-        }
-
-   };
-
+       }else{
+          u=true;
+          txt[1].innerHTML='';
+          if( u && p && c){
+          btn.style.backgroundColor="#009FE8";
+          btn.type="submit"; 
+         }
+       }
+       
+     }else{
+       u=false;
+         txt[1].innerHTML='用户名不正确';
+         btn.style.backgroundColor="#d5d5d5" ;
+         btn.type="button";
+     }
  };
 
  password.oninput=function() {
