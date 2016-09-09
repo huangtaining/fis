@@ -10,11 +10,11 @@
 	</head>
 
 	<body>
-		<link rel="import" href="modules/widget/header/header.html?__inline"> 
+		<link rel="import" href="modules/widget/header/header.html?__inline">
 		<section class="login">
 			<div class="login_box centre clearfix">
 				<div class="login_left">
-					<img src="/static/imgs/icons/A1tu.png" alt="" />
+					<img src="static/imgs/icons/A1tu.png" alt="" />
 				</div>
 				<div class="login_right">
 					<h1>登录银生宝</h1>
@@ -68,7 +68,7 @@
      }else{
         txt.innerHTML='';
      }
-         
+
     };
   username.oninput=function() {
    if(!user_zeng.test(username.value)){
@@ -81,7 +81,7 @@
         txt[1].innerHTML='';
        if( u && p && c){
        btn.style.backgroundColor="#009FE8";
-       btn.type="submit"; 
+       btn.type="submit";
         }
 
    };
@@ -94,22 +94,22 @@
            txt[2].innerHTML='密码不能为空';
 
           btn.style.backgroundColor="#d5d5d5";
-          btn.type="button"; 
+          btn.type="button";
 
    }else{
    	   p=true;
         txt[2].innerHTML='';
    	   password.style.backgroundColor="";
        if( u && p && c ){
-          btn.style.backgroundColor="#009FE8";  
-          btn.type="submit"; 
+          btn.style.backgroundColor="#009FE8";
+          btn.type="submit";
         }
 
    };
 
  };
 
- checkCode.oninput=function() {  
+ checkCode.oninput=function() {
    if(checkCode.value=="" ){
           c=false;
            txt[3].innerHTML='验证码不能为空';
@@ -121,7 +121,7 @@
    	   password.style.backgroundColor="";
        if( u && p && c){
           btn.style.backgroundColor="#009FE8";
-           btn.type="submit";  
+           btn.type="submit";
         }
 
    };
