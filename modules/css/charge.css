@@ -29,8 +29,9 @@
     color:#585858;
     padding-left:14px;
 }
-.position{
-    margin-left:31px;
+.sub_coll{
+    width:1200px;
+    margin:0 auto;
 }
 .container{
     margin-top:15px;
@@ -198,7 +199,7 @@
     height:25px;
     padding:0;
     margin-left:10px;
-    background:url("../")
+
 }
 .modal-header{
     border-bottom:1px dashed rgb(59,156,225);
@@ -244,6 +245,8 @@
 .modal-body .serchinp{
     width:257px;
     float:left;
+    padding-left:25px;
+    background:url("../static/imgs/icons/sousuo.png") no-repeat 5px center;
 }
 /*多人收款*/
 .formpad{
@@ -418,11 +421,12 @@
 }
 .formfooter{
     width:1200px;
+
     padding:28px;
     height:260px;
     background-color:white;
     border:1px solid #E8E8E8;
-    margin:22px 0 158px 30px;
+    margin:22px 0 158px 0;
 }
 .formfooter a{
     margin:0 10px;
