@@ -9,6 +9,7 @@
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
     <script src="../../modules/lib/ysbbase.min.js"></script>
     <script src="../../modules/js/yanz.js"></script>
+
 </head>
 <body>
 <!--head-->
@@ -55,6 +56,22 @@
                                 </div>
                             </div>
 
+                            <!-- 充值金额-->
+                            <div class="control-group">
+                                <label class="control-label"><span class="yell muuu">*</span>&nbsp;充值金额&nbsp;:</label>
+                                <div class="controls">
+                                    <input type="text" placeholder="请输入金额" onchange="china()" class="money">元
+                                    <a class="icon-phone" style="margin-left: 20px"></a>
+                                </div>
+                            </div>
+                            <!-- 充值金额-->
+                            <div class="control-group">
+                                <label class="control-label"><span class="yell muuu">*</span>&nbsp;充值金额&nbsp;:</label>
+                                <div class="controls">
+                                    <input type="text" placeholder="请输入金额" onchange="china()" class="money">元
+                                    <a class="icon-phone" style="margin-left: 20px"></a>
+                                </div>
+                            </div>
                             <!-- 充值金额-->
                             <div class="control-group">
                                 <label class="control-label"><span class="yell muuu">*</span>&nbsp;充值金额&nbsp;:</label>
@@ -113,12 +130,55 @@
                 </div>
             </div>
 </div>
+
+<table id="btn-list" class="jsq">
+    <tr>
+        <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly" /></td>
+        <td onclick="operator('clear')" class="yell">C</td>
+        <td onclick="operator('backspace')" class="yell">CE</td>
+
+    </tr>
+    <tr>
+        <td onclick="typetoinput('7')" >7</td>
+        <td onclick="typetoinput('8')">8</td>
+        <td onclick="typetoinput('9')">9</td>
+        <td onclick="operator('opposite')">+/-</td>
+        <td onclick="operator('percent')">%</td>
+    </tr>
+    <tr>
+        <td onclick="typetoinput('4')">4</td>
+        <td onclick="typetoinput('5')">5</td>
+        <td onclick="typetoinput('6')">6</td>
+        <td onclick="operator('plus')">+</td>
+        <td onclick="operator('minus')">-</td>
+    </tr>
+    <tr>
+        <td onclick="typetoinput('1')">1</td>
+        <td onclick="typetoinput('2')">2</td>
+        <td onclick="typetoinput('3')">3</td>
+        <td onclick="operator('multiply')">*</td>
+        <td onclick="operator('divide')">/</td>
+    </tr>
+    <tr>
+        <td onclick="typetoinput('0')">40</td>
+        <td onclick="typetoinput('.')">.</td>
+        <td onclick="operator('result')">=</td>
+        <td>确定</td>
+        <td>取消</td>
+    </tr>
+</table>
+
+
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
 <script src="lib/mod.js" data-loader></script>
 
 <!--SCRIPT_PLACEHOLDER-->
+
+
 </body>
+
+
 </html>
 <script type="text/javascript">
     var $ = require('jquery');

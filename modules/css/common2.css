@@ -15,7 +15,7 @@
     font-family: "Microsoft YaHei";
 }
 .yell{
-    color:#EE881A;
+    color:#EE881A !important;
     font-weight: bold;
 }
 .lr{
@@ -296,19 +296,17 @@ p{
     width: 15px;
     height: 20px;
     background: url("../../static/imgs/icons/B3-1.png");
-    display: inline-block;
 }
 .icon-tennis{
-    display: inline-block;
     width: 24px ;
     height: 24px;
     background:url("../../static/imgs/icons/icon-tennis.png") ;
 }
 .icon-ccbs{
-    display: inline-block;
     width: 22px ;
     height: 24px;
     background:url("../../static/imgs/icons/icon-cbbs.png") ;
+    float: left;
 }
 
 /*步骤按钮*/
@@ -361,7 +359,9 @@ p{
 .bo .beizhu{
     height: 170px;
 }
-
+.bo .fir img{
+    height: 46px;
+}
 .lxr{
     color:#00A0E8 ;
 }
@@ -371,4 +371,22 @@ p{
 }
 .bo form{
     margin-bottom: 50px;
+}
+
+
+.jsq td{
+    border: 1px solid red;
+    width: 70px;
+    height: 38px;
+    vertical-align: middle;
+}
+.jsq{
+    border-collapse: collapse;
+}
+
+.no-bottom{
+    border-bottom: none !important;
+}
+.no-right{
+    border-right: none !important;
 }
