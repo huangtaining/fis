@@ -5,28 +5,108 @@
 		<title>账号激活</title>
 	    <link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<link rel="stylesheet" href="../modules/css/bootstrapValidator.css" media="screen" title="no title">
+        <link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
 	</head>
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
 		<div class="forgot_password_box">
 			<div class="forgot_password password">
 				<h1>帐号激活</h1>
-			<div class="password_content">
-				<div class="jihuo" style="padding-left: 30px;"><b></b>E-mail注册用户，请到您的邮箱中激活账号。 您可以直接点击激活信中的链接来激活账号。</div>
+			<div class="password_content personal_top">
+			  <div class="jihuo" style="padding-left: 30px;"><b></b>E-mail注册用户，请到您的邮箱中激活账号。 您可以直接点击激活信中的链接来激活账号。</div>
 				<div><span class="test">如果您已经获得了绑定该E-mail的激活码，请进行下面的操作：</span></div>
-				<div class="yanzhen"><em><i>&#10038 </i> 您的E-mail地址：</em><input type="text" placeholder="设置登录密码"/></div>
-		        <div class="yanzhen"><em><i>&#10038 </i> 收到的激活码：</em><input type="text" placeholder="请再次输入登录密码"/></div>
+			<form id="defaultForm" method="post" class="form-horizontal ysbformvalidate bv-form">
+				
+				<div class="biaodan" style="padding-bottom: 20px;">
+                        <div class="form-group has-feedback">
+                            <label class="col-md-3 control-label" style="margin-left:110px;"><b>&#10038 </b>  您的E-mail地址：</label>
+                            <div class="col-md-8">
+                                <input type="email" class="form-control" name="email"  placeholder="请输入您的E-mail地址"/>
+                                <div class="errorholder">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback">
+                            <label class=" col-md-3 control-label" style="margin-left:110px;"><b>&#10038 </b> 收到的激活码：</label>
+                            <div class=" col-md-8">
+                                <input type="text" class="form-control" name="ddlQuestion" placeholder="请输入验证码"/>
+                                <div class="errorholder">
+                                </div>
+                            </div>
+                        </div>              
 		        <div class="yanzhen"><em style="width:212px;margin-left: -9px;">如果您没有收到激活信，请点击</em><span class="jihuoma" style="margin-left: 0px;">重发激活码</span></div>
-		        <div class="yanzhen"><em></em><div class="button">确定</div></div>
+		         <div class="form-group">
+                        <div class="button_btn">
+                            <button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin-left: 110px;">
+                            	确定
+                            </button>
+                        </div>
+                    </div>
 			</div>
+			</form>
+ </div>
+
 
 			</div>
 		</div>
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
-		<script src="lib/mod.js"></script>
-		<script>
-			require('ui/index');
-		</script>
-		<!--SCRIPT_PLACEHOLDER-->
+
+    <script src="../lib/TweenMax.min.js" type="text/javascript" charset="utf-8" data-framework></script>
+
+    <script src="lib/mod.js" data-loader></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            require('modules/app/jquery.bootstrapValidator');
+
+
+            // Generate a simple captcha
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            };
+
+            $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+            $("#btnSubmit").bind("click", function() {
+                alert("Submit");
+            });
+
+            $('#defaultForm').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon', //glyphion-remove
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                   
+                    ddlQuestion: {
+                        validators: {
+                            notEmpty: {
+                                message: '不能为空'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Validate the form manually
+            $('#validateBtn').click(function() {
+                $('#defaultForm').bootstrapValidator('validate');
+            });
+
+            $('#resetBtn').click(function() {
+                $('#defaultForm').data('bootstrapValidator').resetForm(true);
+            });
+        });
+    </script>
+    <script>
+        require('ui/index');
+    </script>
+    <!--SCRIPT_PLACEHOLDER-->
 	</body>
 </html>

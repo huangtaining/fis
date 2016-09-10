@@ -221,13 +221,17 @@ select.form-control {
 .registered .complete>div p a{margin-left: 10px;color: #24ADEB;}
 /***********************************************************************************************/
 /*忘记密码   页面*/
+
+.password_content .ysbformvalidate .has-feedback.has-error .errorholder{float: right;width: 220px;margin-right: 70px;}
+
+
 .forgot_password_box{width: 100%;background-color:#F7F7F7;padding: 50px 0 100px 0;}
 .forgot_password_box .password{width: 1000px;margin: 0 auto;border: 1px solid #e4e4e4;background-color: #fff;}
 .password h1{font-size:22px;color:#585858;padding:20px;border-bottom: 1px solid #e4e4e4;text-indent:0.5em;}
 .forgot_password .password_content{padding: 20px 0 50px 0;}
 .forgot_password .password_content>div{padding: 20px 0;}
 .forgot_password .password_content span{color:#585858;font-size: 14px;margin-left: 30px;}
-.forgot_password .password_content .yanzhen{margin-left: 100px;}
+.forgot_password .password_content .yanzhen{margin-left:120px;margin-top:20px}
 .forgot_password .password_content>div em{width:200px;display: inline-block;text-align: right;padding-right: 15px;}
 .password_content .yanzhen input{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
 .password_content .yanzhen i{font-size: 14px;color: #FF8700;font-style: normal;}
@@ -241,7 +245,7 @@ select.form-control {
 .forgot_password .content .test{padding: 0 0px 20px 0px ;}
 .forgot_password .content .yanzhen{font-size: 14px;}
 .forgot_password .content .tishi{width: 947px;background-color: #F7F7F7;margin: 10px auto 30px auto;padding: 30px 0;}
-.forgot_password .content .tishi b{background: url(/static/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;margin-top: -2px;}
+.forgot_password .content .tishi bb{background: url(/static/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;margin-top: -2px;}
 .content .tishi .yanzheng{margin-left: 75px;}
 .content .tishi p{padding:0px 0 30px 30px;}
 .forgot_password .password_content .yanzhen3 {margin-left: 43px;}

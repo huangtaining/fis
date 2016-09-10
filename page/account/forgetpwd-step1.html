@@ -5,28 +5,112 @@
 		<title>忘记密码</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<!--<style type="text/css">
+			.yanzhen b{width: 137px;height: 43px;line-height: 43px;background: url(../../static/imgs/icons/A2.png) 10px no-repeat #F7F7F7;display: inline-block;vertical-align: middle;margin-left: 30px;}
+		</style>-->
 	</head>
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
+		<form action="" method="post">		
 		<div class="forgot_password_box">
 			<div class="forgot_password password">
 				<h1>找回登录密码</h1>
 			<div class="password_content">
 				<div><span class="test">您可以使用您绑定的邮箱或者手机找回登陆密码</span></div>
-				<div class="yanzhen"><em><i>&#10038 </i> 请输入您的银生宝账户名：</em><input type="text" placeholder="设置登录密码"/></div>
-		        <div class="yanzhen yanzheng"><em><i>&#10038 </i> 在输入一次：</em><input type="text" placeholder="请再次输入登录密码"/>
-		            <span></span><em style="color: #019FE8;margin-left:15px;width:65px;">换一张</em>
+				<div class="yanzhen">
+					<em><i>&#10038 </i> 请输入您的银生宝账户名：</em>
+					<input type="text" placeholder="请输入邮箱或手机" id="username"/><b></b>
+				</div>
+		        <div class="yanzhen yanzheng">
+		        	<em><i>&#10038 </i> 在输入一次：</em><input type="text" placeholder="请再次输入登录密码" id="password"/>
+		        	<em style="width: 100px;height: 43px;line-height: 43px;background-color: pink;vertical-align: middle;margin-left: 10px;"></em>
+		            <em style="color: #019FE8;margin-left:10px;width:50px;padding-right: 0;">换一张</em><b></b>
 		        </div>
-		        <div class="yanzhen"><em></em><div class="button">下一步</div></div>
+		        <div class="yanzhen"><em></em><button class="button" id="btn" type="button">下一步</button></div>
 			</div>
-
 			</div>
 		</div>
+	</form>
+<!--<script type="text/javascript">
+var username= document.getElementById('username');
+var password= document.getElementById('password');
+var btn=document.getElementById('btn');
+var txt=document.getElementsByTagName("b");
+var c;
+var u;
+var reg=/^[1-9]\d*$|^0$/ ;   //纯数字
+var user_zeng= /^1[3|4|5|7|8]\d{9}$/;    //手机号
+var emali_zeng= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;  //邮箱
+
+
+btn.onclick=function() {
+     if(username.value==""){
+       txt[1].innerHTML='用户名不能为空';
+     }else if(password.value==""){
+      txt[2].innerHTML='密码不能为空';
+     }else{
+        txt.innerHTML='';
+     }
+         
+    };
+
+username.oninput=function() {
+    var user_value=username.value;
+    if(reg.test(user_value)){
+        if(!user_zeng.test(username.value)){
+         u=false;
+       }else{
+          u=true;
+       }
+     }else if(user_value.indexOf("@") >-1){
+       if(!emali_zeng.test(username.value)){
+         u=false; 
+       }else{
+          u=true;
+       }
+     }else{
+        u=false;
+     }
+     
+     if(!u){
+           txt[1].innerHTML='用户名不正确';
+           btn.style.backgroundColor="#d5d5d5" ;
+           btn.type="button";
+         }else{
+            txt[1].innerHTML='';
+            if( u && c){
+              btn.style.backgroundColor="#19A8E8";
+              btn.type="submit"; 
+          }
+      }
+ };
+
+
+password.oninput=function() {
+   if(password.value=="" ){
+          c=false;
+          txt[2].innerHTML='密码不能为空';
+          btn.style.backgroundColor="#d5d5d5";
+          btn.type="button"; 
+
+   }else{
+   	   c=true;
+       txt[2].innerHTML='';
+       if( u && c ){
+          btn.style.backgroundColor="#19A8E8";  
+          btn.type="submit"; 
+        }
+
+   };
+
+ };
+</script>-->
+
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
-		<script src="lib/mod.js"></script>
+		<!--<script src="lib/mod.js"></script>
 		<script>
 			require('ui/index');
-		</script>
+		</script>-->
 		<!--SCRIPT_PLACEHOLDER-->
 	</body>
 </html>
