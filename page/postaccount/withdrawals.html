@@ -73,20 +73,23 @@
                             </div>
                         </div>
 
-                        <!-- 提现金额-->
+                        <!-- 充值金额-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell">*</span>&nbsp;提现金额&nbsp;:</label>
+                            <label class="control-label"><span class="yell must">*</span>&nbsp;充值金额&nbsp;:</label>
                             <div class="controls">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" onchange="china()" class="money">元
-                                <span style="margin-left: 18px"><img src="../../static/imgs/icons/B3-1.png" STYLE="display: inline-block"></span>
+                                <input type="text" placeholder="请输入金额" class="money yz" data-yz="num">元
+                                <a class="icon-phone" style="margin-left: 20px"></a>
+                                <span class="yzwww"></span>
                             </div>
                         </div>
 
+
+
                         <!--充值金额大写-->
                         <div class="control-group">
-                            <label class="control-label">提现金额大写&nbsp;:</label>
+                            <label class="control-label">充值金额大写&nbsp;:</label>
                             <div class="controls">
-                                <input type="text" class="china">
+                                <input class="china" >
                             </div>
                         </div>
 
@@ -148,19 +151,18 @@
 <!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>
+
 <script type="text/javascript">
     var $ = require('jquery');
 
     //    验证必填字段
+    //    要验证的
     $(".step_button").click(function(){
-        var _mul=$(".muuu").length;
-        var a=0;
-        for(var i=0;i<_mul;i++){
-            if($(".muuu").eq(i).parent().siblings().children("input").val()){
-                a++
-            }
-        }
-        if(a==_mul){
+//        获取必填字段长度
+        var _mul=$(".must").length;
+//        获取已经验证通过字段长度
+        var _sul=$(".okk").length;
+        if(_mul==_sul){
             alert("验证通过")
         }else{
             alert("失败失败失败失败")
@@ -168,10 +170,43 @@
 
     });
 
+    //       列出当前页面需要验证的input的长度
+    for(var i=0;i<$(".yz").length;i++){
+        yanztype(i)
+    }
+    //       检验需要验证的input的内容的格式，
+    function yanztype(i){
+        $(".yz").eq(i).change(function(){
+            var _yztype=$(".yz").eq(i).attr("data-yz");
+            var _yzval=$(".yz").eq(i).val();
+            switch (_yztype){
+                case "num":{
+                    num(_yzval,i)
+                }break;
+            }
+        })
+    }
+    //    检验input格式
+    function num(v,i){
+        var _yznum=new RegExp("^[0-9]*$");
+        if(!_yznum.test(v)){
+            $(".yz").eq(i).siblings("span").html("格式错了乐乐乐乐");
+            $(".yz").eq(i).parent().siblings("label").children("span").removeClass("okk");
+        }else{
+            $(".yz").eq(i).parent().siblings("label").children("span").addClass("okk");
+            $(".yz").eq(i).siblings(".yzwww").html("");
+            china()
+        }
+    }
+
+
+
+
+
     //    阿拉伯数字转化为中文
     function china(){
 //        哪里需要转换大小写
-        var _money=$(".money").val() || $(".money").html()
+        var _money=$(".money").val() || $(".money").html();
         function daxiaoxie(n) {
             var fraction = ['角','分'];
             var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
