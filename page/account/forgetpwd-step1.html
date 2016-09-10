@@ -5,37 +5,40 @@
 		<title>忘记密码</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
-		<!--<style type="text/css">
-			.yanzhen b{width: 137px;height: 43px;line-height: 43px;background: url(../../static/imgs/icons/A2.png) 10px no-repeat #F7F7F7;display: inline-block;vertical-align: middle;margin-left: 30px;}
-		</style>-->
 	</head>
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
-		<form action="" method="post">		
+		
 		<div class="forgot_password_box">
 			<div class="forgot_password password">
+				
+   <form action="" method="post">
 				<h1>找回登录密码</h1>
 			<div class="password_content">
 				<div><span class="test">您可以使用您绑定的邮箱或者手机找回登陆密码</span></div>
 				<div class="yanzhen">
 					<em><i>&#10038 </i> 请输入您的银生宝账户名：</em>
-					<input type="text" placeholder="请输入邮箱或手机" id="username"/><b></b>
+					<input type="text" placeholder="请输入邮箱或手机" id="username"/>
+					<div id="setting" style="display:none"><b></b></div>
 				</div>
 		        <div class="yanzhen yanzheng">
 		        	<em><i>&#10038 </i> 在输入一次：</em><input type="text" placeholder="请再次输入登录密码" id="password"/>
 		        	<em style="width: 100px;height: 43px;line-height: 43px;background-color: pink;vertical-align: middle;margin-left: 10px;"></em>
 		            <em style="color: #019FE8;margin-left:10px;width:50px;padding-right: 0;">换一张</em><b></b>
+		            <div id="setting1" style="display:none"><b></b></div>
 		        </div>
-		        <div class="yanzhen"><em></em><button class="button" id="btn" type="button">下一步</button></div>
+		        <div class="yanzhen"><em></em><button class="button" id="btn" type="button" style="background-color:#d5d5d5";>下一步</button></div>
 			</div>
+	</form>
 			</div>
 		</div>
-	</form>
-<!--<script type="text/javascript">
+
+<script type="text/javascript">
 var username= document.getElementById('username');
 var password= document.getElementById('password');
 var btn=document.getElementById('btn');
-var txt=document.getElementsByTagName("b");
+var b=document.getElementById("setting");
+var b1=document.getElementById("setting1");
 var c;
 var u;
 var reg=/^[1-9]\d*$|^0$/ ;   //纯数字
@@ -45,11 +48,15 @@ var emali_zeng= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;  //邮箱
 
 btn.onclick=function() {
      if(username.value==""){
-       txt[1].innerHTML='用户名不能为空';
+       b.innerHTML='<b></b>身份证号码格式错误不能为空';
+       b.style.display="block";  //显示
      }else if(password.value==""){
-      txt[2].innerHTML='密码不能为空';
+      b1.innerHTML='<b></b>验证码不能为空';
+      b1.style.display="block";  //显示
      }else{
-        txt.innerHTML='';
+         b.innerHTML='';
+         b.style.display="none";    //隐藏
+        
      }
          
     };
@@ -73,15 +80,18 @@ username.oninput=function() {
      }
      
      if(!u){
-           txt[1].innerHTML='用户名不正确';
-           btn.style.backgroundColor="#d5d5d5" ;
-           btn.type="button";
-         }else{
-            txt[1].innerHTML='';
-            if( u && c){
-              btn.style.backgroundColor="#19A8E8";
-              btn.type="submit"; 
-          }
+        b.innerHTML='<b></b>用户名不正确';
+        btn.style.backgroundColor="#d5d5d5" ;
+        btn.type="button";
+          b.style.display="block";  
+        }else{
+          b.innerHTML='';
+           b.style.display="none"; 
+          if( u && c){
+            btn.style.backgroundColor="#19A8E8";
+            btn.type="submit"; 
+            
+        }
       }
  };
 
@@ -89,28 +99,33 @@ username.oninput=function() {
 password.oninput=function() {
    if(password.value=="" ){
           c=false;
-          txt[2].innerHTML='密码不能为空';
+          b1.innerHTML='<b></b>验证码不能为空';
           btn.style.backgroundColor="#d5d5d5";
-          btn.type="button"; 
+          btn.type="button";
+            b1.style.display="block";   
 
    }else{
    	   c=true;
-       txt[2].innerHTML='';
+       b1.innerHTML='';
+        b1.style.display="none";
        if( u && c ){
           btn.style.backgroundColor="#19A8E8";  
-          btn.type="submit"; 
+          btn.type="submit";
+            
         }
 
    };
 
  };
-</script>-->
+
+ </script>
+
 
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
-		<!--<script src="lib/mod.js"></script>
+		<script src="lib/mod.js"></script>
 		<script>
 			require('ui/index');
-		</script>-->
+		</script>
 		<!--SCRIPT_PLACEHOLDER-->
 	</body>
 </html>

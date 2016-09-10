@@ -83,7 +83,13 @@
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                   
+                   email: {
+                validators: {
+                    emailAddress: {
+                        message: '您输入的E-mail格式不正确'
+                    }
+                }
+            },
                     ddlQuestion: {
                         validators: {
                             notEmpty: {

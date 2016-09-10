@@ -5,6 +5,13 @@
 		<title>找回密码3</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<style type="text/css">
+			.forgot_password .password_content span {
+    color: #585858;
+    font-size: 14px;
+    margin-left: 30px;
+}
+		</style>
 	</head>
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
@@ -41,22 +48,54 @@
 	</ul>
 </div>
 
-
-        <div class="password_content content font_tishi">
-				<div class="yanzhen yanzhen3">
-					<em><i>&#10038 </i> 请输入您实名认证时使用的身份证号码：</em><input type="text" placeholder="请输入身份证号码"/>
-					<i class="i"><b></b>身份证号码格式错误</i>
+ <form>
+        <div class="password_content content">
+				<div class="yanzhen yanzhen3 prompt"><em><i>&#10038 </i> 请输入您实名认证时使用的身份证号码：</em>
+					<input type="text" placeholder="请输入身份证号码"  id="IDcard"/><div id="setting" style="display:none"><b></b></div>
 				</div>
-		        <div class="yanzhen yanzhen3">
-		        	<em> 输入你绑定的邮箱：</em><input type="text" placeholder="若未绑定则不输"/>
-		        	<i class="i"><b></b>邮箱格式错误</i>
-		        </div>
-		        <div class="yanzhen yanzhen3"><em></em><div class="button">下一步</div></div>
+		        <div class="yanzhen yanzhen3"><em> 输入你绑定的邮箱：</em><input type="text" placeholder="若未绑定则不输"/></div>
+		        <div class="yanzhen yanzhen3"><em></em><button class="button" id="btn" type="button" style="background-color:#d5d5d5 ;">下一步</button></div>
         </div>
 
+	</form>					
+			</div>	
+		</div>	
 
-			</div>
-		</div>
+	<script type="text/javascript">
+             var IDcard=document.getElementById('IDcard');
+             var b=document.getElementById("setting");
+             var btn=document.getElementById('btn');
+             var num= /(^\d{15}$)|(^\d{17}(\d|X)$)/	;
+
+			btn.onclick=function() {
+			     if(IDcard.value==""){
+			       b.innerHTML='<b></b>身份证号码格式错误不能为空';
+			       btn.style.backgroundColor="#d5d5d5" ;
+			       b.style.display="block";  //显示
+	
+			     }else{
+			        b.innerHTML='';
+			        b.style.display="none";    //隐藏
+		 
+			     }
+			         
+			    };
+          IDcard.oninput=function (){
+             if(! num.test(IDcard.value)){
+             	 b.style.display="block";
+                  b.innerHTML="<b></b>身份证号码格式错误";
+                  btn.style.backgroundColor="#d5d5d5" ;
+                  btn.type="button";
+             }else{
+               b.innerHTML="";
+               b.style.display="none";
+               btn.style.backgroundColor="#19A8E8";
+               btn.type="sumbit";
+             }
+           
+          }   
+
+	</script>	
 
 	    <link rel="import" href="modules/widget/footer/footer.html?__inline">
 		<script src="lib/mod.js"></script>
@@ -64,6 +103,5 @@
 			require('ui/index');
 		</script>
 		<!--SCRIPT_PLACEHOLDER-->
-
 	</body>
 </html>
