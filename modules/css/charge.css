@@ -142,10 +142,11 @@
     height:25px;
     width:16.5%;
     margin-right:16px;
+    padding-left:10px;
 }
 
 .form p{
-    margin-bottom:18px;
+    margin-bottom:24px;
 }
 .form p em{
     color:#EE8719;
@@ -173,7 +174,8 @@
     height:151px;
     width:329px;
     margin-left:17.4%;
-
+    padding-left:10px;
+    padding-top:5px;
 }
 .stail{
     position:relative;
@@ -182,7 +184,20 @@
     display: inline-block;
     position:absolute;
 }
-
+/*#inners{*/
+    /*margin-left:10px;*/
+/*}*/
+.errstyle{
+    color:#FF8700;
+    font-size:12px;
+    display: inline-block;
+    height:24px;
+    padding:0 13px 0 40px;
+    line-height:24px;
+    background-color:#F7F7F7;
+    background:url("static/imgs/icons/A2.png") no-repeat 10px center;
+    margin-left:10px;
+}
 /*选择联系人*/
 .modal-content{
     width:380px;
@@ -250,7 +265,7 @@
     width:257px;
     float:left;
     padding-left:25px;
-    background:url("../static/imgs/icons/sousuo.png") no-repeat 5px center;
+    background:url("/static/imgs/icons/sousuo.png") no-repeat 5px center;
 }
 /*多人收款*/
 .formpad{
@@ -272,14 +287,17 @@
     width:16.5%;
     margin-left:-5px;
 }
-.form p{
-    margin-bottom:15px;
-}
+/*.form p{*/
+    /*margin-bottom:15px;*/
+/*}*/
 .form p em{
     color:#EE8719;
 }
 .totalmoney{
     border:none;
+}
+.form .formtis{
+    color:#919191;
 }
 .severmoney{
     width:37px;
@@ -299,6 +317,8 @@
     height:75px;
     width:16.5%;
     margin-left:11.4%;
+    padding-left:10px;
+    padding-top:5px;
 }
 .stail{
     position:relative;
@@ -310,10 +330,12 @@
 
 .manype{
     padding-left:59px;
+
 }
+
 .manype .manyla{
     text-align: left;
-    width:150px!important;
+    width:155px!important;
 }
 .manype>input{
     width:150px;
@@ -373,6 +395,9 @@
     color:#4A4A4A;
     /*margin-right:18px;*/
 }
+/*.formp p label{*/
+    /*margin-left:100px;*/
+/*}*/
 .lastbtn{
     margin-top:50px;
     margin-bottom: 50px;
