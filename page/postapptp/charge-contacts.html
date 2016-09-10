@@ -41,44 +41,47 @@
                     <label for=""><em>*</em>被收款方账户:</label>
                     <input type="text"  placeholder="请输入用户名" class="inpnull">
                     <span class="changeb" data-toggle="modal" data-target="#myModal">从联系人中选取</span>
+                    <span class="changeb" style="margin-left:13px;">批量收款</span>
                     <span id="inners"></span>
                     <!-- 模态框（Modal） -->
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
+                            <div class="modal-content modalcontent">
+                                <div class="modal-header modalheader">
                                     <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">×
                                     </button>
-                                    <h5 class="modal-title" id="myModalLabel">
+                                    <h5 class="modal-title modaltitle" id="myModalLabel">
                                         选择收款人
                                     </h5>
                                 </div>
-                                <div class="modal-body">
 
-                                    <input type="text" class="form-control serchinp" placeholder="">
+                                <div class="modal-body modalbody">
 
-                                    <button type="button" class="btn btn-primary ">查找</button>
+                                    <input type="text" class="form-control serchinp" placeholder="请输入账号">
+
+                                    <button type="button" class="btn ">查询</button>
 
                                     <ul>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secone" class ="xuan" name="check" onclick="checkCanel(this)"><label for="secone" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="sectwo" class="xuan"   name="check" onclick="checkCanel(this)"><label for="sectwo" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secthr" class="xuan"   name="check" onclick="checkCanel(this)"><label for="secthr" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secfour" class="xuan"  name="check" onclick="checkCanel(this)"><label for="secfour" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secfive" class="xuan"   name="check" onclick="checkCanel(this)"><label for="secfive" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                     </ul>
+
                                 </div>
-                                <div class="modal-footer">
+                                <div class="modal-footer modalfooter">
                                     <button type="button" class="btn btn-default active ">确定</button>
                                     <span>取消</span>
                                 </div>
@@ -139,6 +142,25 @@
 
 <script>
     var $ = require('jquery');
+    function checkCanel(Obj){
+        $("input[name='check']").each(function(){
+            $(this).attr("checked",false);
+        });
+        Obj.checked=true;
+    }
+//    var oli=$('.modalbody ul li ');
+//    $('.modalbody ul li ').click(function(){
+//
+//        for(var i=0;i<oli.length;i++){
+//            oli[i].style.backgroundColor = "red";
+//        }
+//
+//
+//    })
+
+
+
+//    验证模块
     $('#nextbtn').click(function(){
 //        被收款方账户不能为空
         var val1=$('.inpnull').val();
