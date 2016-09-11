@@ -250,7 +250,7 @@
     width:257px;
     float:left;
     padding-left:25px;
-    background:url("../static/imgs/icons/sousuo.png") no-repeat 5px center;
+    background:url("/imgs/icons/sousuo.png") no-repeat 5px center;
 }
 /*多人收款*/
 .formpad{

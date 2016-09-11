@@ -168,7 +168,7 @@ border: 1px solid #fff;border-radius:5px;font-size: 20px;opacity: .5;}
 .lift .lijishiyong_a:hover{background-color:#19A8E8;}
 .lift .lijishiyong_a a:hover{text-decoration: none;}
 
-.lift .lift_tu{position: absolute;bottom:40%;right:42%;line-height: 35px;background:url(/static/imgs/index/LIFT.png)no-repeat 50% 50% ;}
+.lift .lift_tu{position: absolute;bottom:40%;right:42%;line-height: 35px;background:url(/imgs/index/LIFT.png)no-repeat 50% 50% ;}
 /*.lift .lift_lift{position: absolute;bottom:39%;right:42%;line-height: 35px;}*/
 
 .lift .lift_tu .round{animation: rond 3s infinite;

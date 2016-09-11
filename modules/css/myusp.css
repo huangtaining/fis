@@ -6,7 +6,7 @@
 .myuspban{
     width: 100%;
     height: 175px;
-    background:url("../../static/imgs/myunspay/wodeyinshengbao1.png") repeat-x;
+    background:url("/imgs/myunspay/wodeyinshengbao1.png") repeat-x;
     background-size: 100% 100%;
     letter-spacing: 1px;
 }
@@ -88,27 +88,27 @@
 
 }
 .toux{
-    background: url("../../static/imgs/myunspay/toux.png");
+    background: url("/imgs/myunspay/toux.png");
     background-size: 60px 60px;
     width: 60px;
     height: 60px;
 }
 .smicon1{
-    background: url("../../static/imgs/myunspay/toux1.png");
+    background: url("/imgs/myunspay/toux1.png");
     display: inline-block;
     width: 24px;
     height: 24px;
     margin: 0 5px;
 }
 .smicon2{
-    background: url("../../static/imgs/myunspay/toux2.png");
+    background: url("/imgs/myunspay/toux2.png");
     display: inline-block;
     width: 24px;
     height: 24px;
     margin: 0 5px;
 }
 .smicon3{
-    background: url("../../static/imgs/myunspay/toux3.png");
+    background: url("/imgs/myunspay/toux3.png");
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -237,45 +237,45 @@
 }
 
 #cir1{
-    background: url("../../static/imgs/myunspay/B1.png");
+    background: url("/imgs/myunspay/B1.png");
 }
 #cir1:hover{
-    background: url("../../static/imgs/myunspay/B1s.png");
+    background: url("/imgs/myunspay/B1s.png");
 }
 #cir2{
-    background: url("../../static/imgs/myunspay/B2s.png");
+    background: url("/imgs/myunspay/B2s.png");
 }
 #cir2:hover{
-    background: url("../../static/imgs/myunspay/B2s.png");
+    background: url("/imgs/myunspay/B2s.png");
 }
 #cir3{
-    background: url("../../static/imgs/myunspay/B3.png");
+    background: url("/imgs/myunspay/B3.png");
 }
 #cir3:hover{
-    background: url("../../static/imgs/myunspay/B3s.png");
+    background: url("/imgs/myunspay/B3s.png");
 }
 #cir4{
-    background: url("../../static/imgs/myunspay/B4.png");
+    background: url("/imgs/myunspay/B4.png");
 }
 #cir4:hover{
-    background: url("../../static/imgs/myunspay/B4s.png");
+    background: url("/imgs/myunspay/B4s.png");
 }
 
 
 #fiv11{
-       background: url("../../static/imgs/myunspay/B9.png");
+       background: url("/imgs/myunspay/B9.png");
 }
 #fiv12{
-    background: url("../../static/imgs/myunspay/B10.png");
+    background: url("/imgs/myunspay/B10.png");
 }
 #fiv13{
-     background: url("../../static/imgs/myunspay/B11.png");
+     background: url("/imgs/myunspay/B11.png");
 }
 #fiv14{
-   background: url("../../static/imgs/myunspay/B12.png");
+   background: url("/imgs/myunspay/B12.png");
 }
 #fiv15{
-    background: url("../../static/imgs/myunspay/B13.png");
+    background: url("/imgs/myunspay/B13.png");
 }
 #fiv16{
     background-position: -1054px -34px ;
@@ -284,19 +284,19 @@
     background-position: -1054px -34px ;
 }
 #fiv21{
-    background: url("../../static/imgs/myunspay/B14.png");
+    background: url("/imgs/myunspay/B14.png");
 }
 #fiv22{
-    background: url("../../static/imgs/myunspay/B15.png");
+    background: url("/imgs/myunspay/B15.png");
 }
 #fiv23{
-    background: url("../../static/imgs/myunspay/B16.png");
+    background: url("/imgs/myunspay/B16.png");
 }
 #fiv24{
-    background: url("../../static/imgs/myunspay/B17.png");
+    background: url("/imgs/myunspay/B17.png");
 }
 #fiv25{
-    background: url("../../static/imgs/myunspay/B18.png");
+    background: url("/imgs/myunspay/B18.png");
 }
 #fiv26{
     background-position: -1050px 0 ;
@@ -455,19 +455,19 @@
     width: 185px;
 }
 .witimg1{
-    background: url("../../static/imgs/logind/common/step1.jpg");
+    background: url("/imgs/logind/common/step1.jpg");
     background-size: 1200px 111px;
     width: 100%;
     height: 111px;
 }
 .witimg2{
-    background: url("../../static/imgs/logind/common/step2.jpg");
+    background: url("/imgs/logind/common/step2.jpg");
     background-size: 1200px 111px;
     width: 100%;
     height: 111px;
 }
 .witimg3{
-    background: url("../../static/imgs/logind/common/step3.jpg");
+    background: url("/imgs/logind/common/step3.jpg");
     background-size: 1200px 111px;
     width: 100%;
     height: 111px;

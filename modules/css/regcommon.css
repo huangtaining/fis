@@ -52,7 +52,7 @@ padding-left: 5px;background-color: #F7F7F7;}
 .registered .registered_box ul li.login_text input{vertical-align: middle;padding-right: 5px;width: 15px;height: 15px;margin-top: 17px;} 
 .registered .registered_box ul li.login_text{margin-left: -345px;}
 .registered .registered_box ul li button{width: 290px;height:45px;line-height:45px;border-radius:4px;color: #fff;background-color: #D5D5D5;border:none;margin-top: 50px;margin-left: -258px;}
-.registered .registered_box i b{background:url(/static/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
+.registered .registered_box i b{background:url(/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
 
 /************************************************************************************************/
 /*注册下一步*/
@@ -62,7 +62,7 @@ padding-left: 5px;background-color: #F7F7F7;}
 .personal_top>div{padding:20px;}
 .personal_top>div .i{width: 284px;display: inline-block;font-style: normal;text-align: left;margin-left: 10px;color: #FF8700;height: 43px;line-height: 43px;
 padding-left:15px;background-color: #F7F7F7;}
-.personal_top>div .i b{background:url(/static/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
+.personal_top>div .i b{background:url(/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
 .personal_top em{width:180px;display: inline-block;text-align: right;padding-right: 15px;}
 .personal_top em.left{font-size: 18px;color: #00A0E8;text-align: center;}
 .personal_top span.right{font-size: 14px;color: #585858;}
@@ -76,7 +76,7 @@ border-radius:5px;cursor: pointer ;}
 /*公用  注册尾部的提示*/
 .font_tishi>div .i{width: 284px;display: inline-block;font-style: normal;text-align: left;margin-left: 10px;color: #FF8700;height: 43px;line-height: 43px;
 padding-left:15px;background-color: #F7F7F7;}
-.font_tishi>div .i b{background:url(/static/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
+.font_tishi>div .i b{background:url(/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
 
 /***************************************************************************************************/
 /*注册完成*/
@@ -109,14 +109,14 @@ padding-left:15px;background-color: #F7F7F7;}
 .forgot_password .content .test{padding: 0 0px 20px 0px ;}
 .forgot_password .content .yanzhen{font-size: 14px;}
 .forgot_password .content .tishi{width: 947px;background-color: #F7F7F7;margin: 10px auto 30px auto;padding: 30px 0;}
-.forgot_password .content .tishi b{background: url(/static/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;margin-top: -2px;}
+.forgot_password .content .tishi b{background: url(/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;margin-top: -2px;}
 .content .tishi .yanzheng{margin-left: 75px;}
 .content .tishi p{padding:0px 0 30px 30px;}
 .forgot_password .password_content .yanzhen3 {margin-left: 43px;}
 .forgot_password .password_content .yanzhen3 em{width: 290px;}
 .forgot_password .password_content .yanzhen3 span{color: #00A0E8;}
 .forgot_password .content .tishi3 p{padding:0px 0 15px 30px;}
-.forgot_password .content .tishi3 b{background: url(/static/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;}
+.forgot_password .content .tishi3 b{background: url(/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;}
 /*忘记密码 5*/
 .forgot_password .complete{width: 100%;text-align: center;}
 .forgot_password .complete>div{padding: 80px 0;} 
@@ -128,7 +128,7 @@ padding-left:15px;background-color: #F7F7F7;}
 /*帐号激活*/
 .jihuo{background-color:#F7F7F7;}
 .jihuoma{width: 89px;height: 30px;line-height: 30px;border:1px solid #e4e4e4;margin-left: 0;display: inline-block;text-align: center;border-radius:5px;background-color: #F7F7F7 ;cursor: pointer;}
-.password_content .jihuo b{background: url(/static/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;margin-top: -2px;}
+.password_content .jihuo b{background: url(/imgs/icons/B3-2.png)no-repeat;display: inline-block;width: 20px;height: 20px;vertical-align: middle;margin-right: 20px;margin-top: -2px;}
 /********************************************************************************************************/
 /*反洗钱   页面*/
 .money-laundering{width: 100%;background-color: #F7F7F7;padding: 30px 0 70px 0;}

@@ -44,7 +44,7 @@ fis.hook('commonjs', {
 /*************************目录规范*****************************/
 
 
-fis.match('/static/imgs/**', {
+fis.match('/imgs/**', {
     release: '${project.static}/$&'
 });
 
