@@ -158,6 +158,8 @@ select.form-control {
 }
 
 .biaodan .form-group .col-md-3 b {
+	font-size: 19px;
+	vertical-align: middle;
 	color: #FF8700;
 	font-style: normal;
 	font-weight: normal;
@@ -312,7 +314,7 @@ width: 25px;height: 20px;vertical-align: middle;display: inline-block;margin-rig
 .forgot_password .password_content .yanzhen{margin-left:120px;margin-top:20px}
 .forgot_password .password_content>div em{width:200px;display: inline-block;text-align: right;padding-right: 15px;}
 .password_content .yanzhen input{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
-.password_content .yanzhen i{font-size: 14px;color: #FF8700;font-style: normal;}
+.password_content .yanzhen i{font-size: 19px;color: #FF8700;font-style: normal;vertical-align: middle;}
 .password_content .yanzheng input{width:154px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
 .password_content .yanzheng span{width: 10%;display: inline-block;height: 44px;background-color: pink;float: rigth;margin-left: 20px;vertical-align: middle;}
 .password_content .button{width: 329px;height: 44px;line-height: 44px;border: 1px solid #D5D5D5;border-radius:3px;background-color: #19A8E8;color: #fff;text-align: center;display: inline-block;}
