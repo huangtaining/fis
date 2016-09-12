@@ -1,8 +1,12 @@
 /**
  * Created by Administrator on 2016/9/9.
+ *
+
  */
+
+     var $ = require('jquery');
 $(function(){
-    var $ = require('jquery');
+        console.log("sssssssss");
 
 //    验证必填字段
     $(".step_button").click(function(){
