@@ -17,12 +17,22 @@
             <!--<div class="legel-left">-->
                 <!---->
             <!--</div>-->
+            <div class="con-tab">
+
+
+
             <ul class="con-left clearfix" id="con-left">
                 <li class="legel-bo">法律声明</li>
                 <li>免责声明</li>
-                <li class="kongb"></li>
+                <!--<li class="kongb"></li>-->
             </ul>
 
+
+                <div class="kongb">
+
+
+                </div>
+            </div>
             <div id="wrap" class="wrap">
                 <div class="active">
                     <h2 class="shengm">法律声明</h2>
@@ -67,9 +77,9 @@
                     var index=$(pa+"#con-left li").index($(this));
 //		alert(ind);
                     //以前显示的隐藏
-                    $(pa+".wrap div:visible").hide();
+                    $(pa+".wrap>div:visible").hide();
                     //第几个显示
-                    $(pa+".wrap div:eq("+index+")").show();
+                    $(pa+".wrap>div:eq("+index+")").show();
 
                     $(pa+".con-left li.legel-bo").removeClass("legel-bo");
 
