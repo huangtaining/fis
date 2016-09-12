@@ -44,3 +44,35 @@
 .find_two p{
     line-height: 40px;
 }
+
+.masage{
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    padding: 0 20px;
+}
+.masage thead {
+    background: #F7F7F7;
+}
+.masage th,.masage td {
+     border-bottom: 1px solid #E8E8E8;
+    height: 50px;
+    line-height: 50px;
+ }
+
+.masage th:nth-child(1) {
+    padding: 0 10px 0 20px;
+}
+.masage th:nth-child(2) {
+}
+.masage th:nth-child(3) {
+}
+.masage td:nth-child(1) {
+    padding: 0 10px 0 20px;
+}
+.masage td:nth-child(2) {
+}
+.masage td:nth-child(3) {
+}
+.masage tbody{
+     background: #ffffff;
+}

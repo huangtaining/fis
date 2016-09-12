@@ -115,47 +115,85 @@
                             信用卡(贷记卡)
                         </div>
                     </div>
-                    <div class="card_bo row">
+                    <div class="card_bo row" id="card2">
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
                         </div>
                         <div class="col-md-2 eccard">
-                            <input type="radio" name="eccard"><span class="eccard_img"></span>
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
+                        </div>
+                    </div>
+                    <div class="card_bo row" id="card1">
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-7.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-9.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-10.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-11.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-12.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-7.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-7.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-7.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-7.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-7.png"></span>
+                        </div>
+                        <div class="col-md-2 eccard">
+                            <input type="radio" name="eccard"><span class="eccard_img"><img src="/imgs/payment/B3-7.png"></span>
                         </div>
                     </div>
                 </div>
 
-                <form class="form-horizontal">
+                <form class="form-horizontal" style="margin-top: 150px">
                     <fieldset>
 
                         <!--下一步-->
@@ -198,9 +236,6 @@
     $(function(){
 
 
-        for(var i=0;i<12;i++){
-            $(".eccard_img").eq(i).css("background-image","url(/imgs/payment/B3-"+(i+5)+".png)")
-        }
 
         $(".card_sp").click(function(){
             $(".card_sp").removeClass("active");
@@ -208,14 +243,10 @@
             var _cardlei=$(".card_tit").children(".active").index();
             switch (_cardlei){
                 case 0:
-                    for(var i=0;i<12;i++){
-                    $(".eccard_img").eq(i).css("background-image","url(/imgs/payment/B3-"+(i+5)+".png)")
-                }
+                        $("#card1").css("zIndex",5).siblings().css("zIndex",0);
                     break;
                 case 1:
-                    for(var i=0;i<12;i++){
-                        $(".eccard_img").eq(i).css("background-image","url(/imgs/payment/B3-"+(5)+".png)")
-                    }
+                        $("#card2").css("zIndex",5).siblings().css("zIndex",0);
                     break;
             }
 
