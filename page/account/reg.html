@@ -65,13 +65,67 @@
 							<input type="checkbox" checked="checked" /><em style="margin-left: 15px;"><em>我同意</em> <em style="color: #019FE8;">《银生宝服务协议》</em></em>
 						</li>
 						<div class="yanzhen" style="margin-left: 0;">
-							<em></em><button class="button" id="btn" type="button" style="background-color:#d5d5d5" ;>下一步</button>
+							<em></em>
+			<button class="button btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="btn" type="button" style="background-color:#d5d5d5;padding:0 ;">
+								下一步</button>
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+	
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index: 9999;">
+	<div class="modal-dialog">
+		<div class="modal-content" style="margin-top:20%">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					账户名验证
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body_top">
+					<p style="font-weight: bold;"><img src="imgs/icons/rs_d04.png" alt="" />&nbsp;&nbsp;请在24小时内点击邮件中的链接继续完成注册</p>
+					<p>邮件已发送到邮箱 <em>160*****@qq.com</em></p>
+					<p><button>立即查收邮箱</button></p>
+					<p></p>					
+				</div>
+	<div class="panel panel-default" style="width:370px;margin: 0 auto;border: none;box-shadow:none ;">
+		<div class="panel-heading" style="background-color: #fff;border-color: #fff;">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" 
+				   href="#collapseThree">
+					没有收到邮件?
+				</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse">
+			<div class="panel-body">
+				<div class="modal-body_bottom">
+					<p>请检查是否在垃圾邮箱中</p>
+					<p>如果没收到 <button style="margin-left: 10px;">重新发送邮件</button></p>
+					<p>重新发送邮件，还没收到，请试试更换邮箱注册</p>
+					<p>一直没收到？你可以改用手机注册</p>
+				</div>
+			</div>
+		</div>
+	</div>
+				
+				
+			</div>
+			
+	
+			
+			<div class="modal-footer" style="border: none;">
+				
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
 </section>
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
 		<script src="lib/mod.js"></script>
