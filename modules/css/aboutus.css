@@ -159,21 +159,22 @@
     border:1px solid #E8E8E8;
     background-color:white;
 }
-/*.legel .con-left li:nth-child(1){*/
-    /*border:1px solid #E8E8E8;*/
-/*}*/
+.legel .con-left li:nth-child(1){
+    border:1px solid #E8E8E8;
+}
 .legel .con-left li:nth-child(2){
     border-top:0;
 }
 .legel .wrap{
     width:990px;
-    height:355px;
-    padding-left:60px;
+    height:755px;
+    padding:0 60px;
     background-color:white;
     float:right;
     border-top:1px solid #E8E8E8;
     border-right:1px solid #E8E8E8;
     border-bottom:1px solid #E8E8E8;
+    margin-bottom:127px;
 }
 .legel .wrap>div{
     display:none;
@@ -187,5 +188,18 @@
     border-right:0!important;
 }
 .legel .wrap .shengm{
-    wi
+
+    padding:17px 800px 17px 0;
+    font-size:16px;
+    border-bottom:1px solid #E8E8E8;
+
+}
+.wrap-content{
+    margin-top:28px;
+}
+
+.wrap-content p{
+    line-height:2em;
+    margin-bottom:10px;
+    text-indent:2em;
 }
