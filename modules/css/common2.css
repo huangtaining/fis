@@ -292,10 +292,12 @@ p{
 }
 
 
-.icon-phone{
+.icon-jsq{
     width: 15px;
     height: 20px;
     background: url("/imgs/icons/B3-1.png");
+    display: inline-block;
+    cursor: pointer;
 }
 .icon-tennis{
     width: 24px ;
@@ -374,12 +376,7 @@ p{
 }
 
 
-.jsq td{
-    border: 1px solid red;
-    width: 70px;
-    height: 38px;
-    vertical-align: middle;
-}
+
 .jsq{
     border-collapse: collapse;
 }
@@ -395,4 +392,20 @@ p{
 }
 .okk{
     color: red;
+}
+
+/*计算器*/
+
+.jsq{
+    position: absolute;
+    background: white;
+    border: none;
+    box-shadow: 0 0 1px 1px #000;
+}
+.jsq td{
+    border: 1px solid #F0F0F0;
+    width: 70px;
+    height: 38px;
+    vertical-align: middle;
+    text-align: center;
 }

@@ -5,10 +5,15 @@
     <title>充值_1</title>
     <link rel="import" href="../layout/header.html?__inline">
     <!--STYLE_PLACEHOLDER-->
-    <link href="../../modules/css/common2.css" rel="stylesheet">
-    <link href="../../modules/css/transfer_com.css" rel="stylesheet">
-    <script src="../../modules/lib/ysbbase.min.js"></script>
-    <script src="../../modules/js/yanz.js"></script>
+    <link href="/modules/css/common2.css" rel="stylesheet">
+    <link href="/modules/css/transfer_com.css" rel="stylesheet">
+    <script src="/modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/js/yanz.js"></script>
+    <script src="/modules/js/jsq.js"></script>
+    <script>
+        require('modules/js/yanz');
+        require('modules/js/jsq');
+    </script>
 
 </head>
 <body>
@@ -17,116 +22,123 @@
 
 <!--body-->
 <div class="bo">
-            <div class="layout">
-                <!--GPS-->
-                 <div class="gps">
-                     您的当前位置&nbsp;:&nbsp;<span>我的银生宝</span>&nbsp;>&nbsp;<span>充值</span>
-                 </div>
-                <!--主体-->
-                <div class="alltit">
-                    充值
-                </div>
+    <div class="layout">
+        <!--GPS-->
+        <div class="gps">
+            您的当前位置&nbsp;:&nbsp;<span>我的银生宝</span>&nbsp;>&nbsp;<span>充值</span>
+        </div>
+        <!--主体-->
+        <div class="alltit">
+            充值
+        </div>
 
 
-                <div id="recbo" class="allbody">
+        <div id="recbo" class="allbody">
 
-                    <!--查看记录-->
-                    <a class="lookjilu" href="###">查看充值记录</a>
+            <!--查看记录-->
+            <a class="lookjilu" href="###">查看充值记录</a>
 
-                    <!--表单-->
-                    <form class="form-horizontal">
-                        <fieldset>
+            <!--表单-->
+            <form class="form-horizontal">
+                <fieldset>
 
-                            <!--充值账户-->
-                            <div class="control-group">
-                                <label class="control-label">充值账户&nbsp;:</label>
-                                <div class="controls">
-                                    <span style="margin-right: 40px">13781837183</span>
-                                    <span>余额&nbsp;:&nbsp;<span class="yell">0.00</span>&nbsp;元</span>
+                    <!--充值账户-->
+                    <div class="control-group">
+                        <label class="control-label">充值账户&nbsp;:</label>
 
-                                </div>
-                            </div>
+                        <div class="controls">
+                            <span style="margin-right: 40px">13781837183</span>
+                            <span>余额&nbsp;:&nbsp;<span class="yell">0.00</span>&nbsp;元</span>
 
-                            <!-- my账户-->
-                            <div class="control-group">
-
-                                <label class="control-label">银生宝账户名&nbsp;:</label>
-                                <div class="controls">
-                                    <span>周斌</span>
-                                </div>
-                            </div>
-
-                            <!-- 充值金额-->
-                            <div class="control-group">
-                                <label class="control-label"><span class="yell must">*</span>&nbsp;充值金额&nbsp;:</label>
-                                <div class="controls">
-                                    <input type="text" placeholder="请输入金额" class="money yz" data-yz="num">元
-                                    <a class="icon-phone" style="margin-left: 20px"></a>
-                                    <span class="yzwww"></span>
-                                </div>
-                            </div>
-
-
-
-                            <!--充值金额大写-->
-                            <div class="control-group">
-                                <label class="control-label">充值金额大写&nbsp;:</label>
-                                <div class="controls">
-                                    <input class="china" >
-                                </div>
-                            </div>
-
-                            <!-- 服务费-->
-                            <div class="control-group">
-                                <label class="control-label">服务费&nbsp;:</label>
-                                <div class="controls">
-                                    <span class="yell" style="margin-right: 20px">10.00</span>元
-                                    <a href="#" class="bull" style="margin-left: 20px">查看收费标准</a>
-
-                                </div>
-                            </div>
-
-                            <!-- 下一步-->
-                            <div class="control-group">
-                                <label class="control-label">&nbsp;</label>
-                                <div class="controls">
-                                    <a class="btn btn-primary step_button">下一步
-                                    </a>
-                                </div>
-                            </div>
-
-                        </fieldset>
-
-
-                    </form>
-
-                    <!--警告2-->
-                    <div class="witwar stop">
-                        <div class="gan"></div>
-                        <div class="gan_text">为配合国家实施反洗钱法,经济发垃圾分类数据连接拉链扣积分的离开家</div>
+                        </div>
                     </div>
-                </div>
 
-            </div>
+                    <!-- my账户-->
+                    <div class="control-group">
 
-            <div class="layout">
-                <div class="norque">
-                    <h3>常见问题</h3>
-                    <p class="que">如何给银生宝充值?</p>
-                    <p class="que">给银生宝充值成功，为何银生宝账户里没钱?</p>
-                </div>
+                        <label class="control-label">银生宝账户名&nbsp;:</label>
+
+                        <div class="controls">
+                            <span>周斌</span>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="control-group">
+                        <label class="control-label"><span class="yell must">*</span>&nbsp;充值金额&nbsp;:</label>
+
+                        <div class="controls">
+                            <input type="text" placeholder="请输入金额" class="money yz" data-yz="num">元
+                            <a class="icon-jsq jisuan" style="margin-left: 20px"></a>
+                            <span class="yzwww"></span>
+                        </div>
+                    </div>
+
+
+                    <!--充值金额大写-->
+                    <div class="control-group">
+                        <label class="control-label">充值金额大写&nbsp;:</label>
+
+                        <div class="controls">
+                            <input class="china">
+                        </div>
+                    </div>
+
+                    <!-- 服务费-->
+                    <div class="control-group">
+                        <label class="control-label">服务费&nbsp;:</label>
+
+                        <div class="controls">
+                            <span class="yell" style="margin-right: 20px">10.00</span>元
+                            <a href="#" class="bull" style="margin-left: 20px">查看收费标准</a>
+
+                        </div>
+                    </div>
+
+                    <!-- 下一步-->
+                    <div class="control-group">
+                        <label class="control-label">&nbsp;</label>
+
+                        <div class="controls">
+                            <a class="btn btn-primary step_button">下一步
+                            </a>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+            </form>
+
+            <!--警告2-->
+            <div class="witwar stop">
+                <div class="gan"></div>
+                <div class="gan_text">为配合国家实施反洗钱法,经济发垃圾分类数据连接拉链扣积分的离开家</div>
             </div>
+        </div>
+
+    </div>
+
+    <div class="layout">
+        <div class="norque">
+            <h3>常见问题</h3>
+
+            <p class="que">如何给银生宝充值?</p>
+
+            <p class="que">给银生宝充值成功，为何银生宝账户里没钱?</p>
+        </div>
+    </div>
 </div>
 
 <table id="btn-list" class="jsq">
     <tr>
-        <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly" /></td>
+        <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly"/></td>
         <td onclick="operator('clear')" class="yell">C</td>
         <td onclick="operator('backspace')" class="yell">CE</td>
 
     </tr>
     <tr>
-        <td onclick="typetoinput('7')" >7</td>
+        <td onclick="test()">7</td>
         <td onclick="typetoinput('8')">8</td>
         <td onclick="typetoinput('9')">9</td>
         <td onclick="operator('opposite')">+/-</td>
@@ -165,90 +177,7 @@
 
 </body>
 
-<script type="text/javascript" src="../../modules/js/yanz.js"></script>
 
 </html>
-<script type="text/javascript">
-    var $ = require('jquery');
 
-    //    验证必填字段
-//    要验证的
-    $(".step_button").click(function(){
-//        获取必填字段长度
-        var _mul=$(".must").length;
-//        获取已经验证通过字段长度
-        var _sul=$(".okk").length;
-        if(_mul==_sul){
-            alert("验证通过")
-        }else{
-            alert("失败失败失败失败")
-        }
-
-    });
-
-//       列出当前页面需要验证的input的长度
-    for(var i=0;i<$(".yz").length;i++){
-        yanztype(i)
-    }
-//       检验需要验证的input的内容的格式，
-     function yanztype(i){
-         $(".yz").eq(i).change(function(){
-             var _yztype=$(".yz").eq(i).attr("data-yz");
-             var _yzval=$(".yz").eq(i).val();
-             switch (_yztype){
-                 case "num":{
-                     num(_yzval,i)
-                 }break;
-             }
-         })
-     }
-//    检验input格式
-    function num(v,i){
-        var _yznum=new RegExp("^[0-9]*$");
-        if(!_yznum.test(v)){
-            $(".yz").eq(i).siblings("span").html("格式错了乐乐乐乐");
-            $(".yz").eq(i).parent().siblings("label").children("span").removeClass("okk");
-        }else{
-            $(".yz").eq(i).parent().siblings("label").children("span").addClass("okk");
-            $(".yz").eq(i).siblings(".yzwww").html("");
-            china()
-        }
-    }
-
-
-
-
-
-    //    阿拉伯数字转化为中文
-    function china(){
-//        哪里需要转换大小写
-        var _money=$(".money").val() || $(".money").html();
-        function daxiaoxie(n) {
-            var fraction = ['角','分'];
-            var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
-            var unit = [['元','万','亿'],['','拾','佰','仟']];
-            var head = n < 0?'欠':'';
-            n = Math.abs(n);
-            var s = '';
-            for (var i = 0; i < fraction.length; i++) {
-                s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
-            }
-            s = s || '整';
-            n = Math.floor(n);
-            for (var i = 0; i < unit[0].length && n > 0; i++) {
-                var p = '';
-                for (var j = 0; j < unit[1].length && n > 0; j++) {
-                    p = digit[n % 10] + unit[1][j] + p;
-                    n = Math.floor(n / 10);
-                }
-                s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
-            }
-            var _bigmoney=head + s.replace(/(零.)*零元/,'元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
-
-//              输出到哪里
-            $(".china").val(_bigmoney);
-        }
-        daxiaoxie(_money)
-    }
-</script>
 

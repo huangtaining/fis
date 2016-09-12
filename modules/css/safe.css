@@ -1,3 +1,6 @@
+.safebo{
+    background: white;
+}
 .safebo li{
         border-bottom: 1px solid #E8E8E8;
         height: 60px;
@@ -16,4 +19,8 @@
      width: 60%;
     display: inline-block;
     color: #9C9C9C;
+}
+.safe_tit{
+       font-size: 20px;
+      color: #000000;
 }

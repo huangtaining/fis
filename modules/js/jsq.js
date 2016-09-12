@@ -2,10 +2,30 @@
  * Created by Administrator on 2016/9/10.
  */
 // JavaScript Document
+
+var $ = require('jquery');
+
+
+
+$(function(){
+
+    console.log("sssssss")
+    $(".icon-jsq").click(function(e){
+        var _ox=e.clientX;
+        var _oy=e.clientY;
+        var _oo=window.scrollY;
+        console.log(_ox+"ssss"+_oy);
+        $(".jsq").css({left:_ox+100,top:_oy+_oo});
+    });
+
 document.oncontextmenu=new Function("event.returnValue=false;");
 document.onselectstart=new Function("event.returnValue=false;");
 var _string=new Array();
 var _type;
+
+    function test(){
+        console.log("ffffff")
+    }
 function typetoinput(num)
 {
     input=document.getElementById("input-box");
@@ -212,4 +232,6 @@ function disableRefresh(evt){
         else if(evt.keyCode == 111){operator('divide')}
         else if(evt.keyCode == 109){operator('minus')}
     }
-}
+};
+
+})
