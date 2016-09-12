@@ -42,6 +42,7 @@
                     <label for="" class="manyla"><em>*</em>资金用途:</label>
                     <input type="text" class="user">
                     <span class="formtis">(最长85个字符)</span>
+                    <span id="inners"></span>
                 </p>
                 <p class="stail">
                     <label for="" class="manyla">详细说明:</label>
@@ -54,22 +55,25 @@
                    <label for="" class="manyla"><em></em>从联系人中选取</label>
                </p>
                 <p class="manype">
+                    <input type="text" class="bzh">
                     <input type="text">
-                    <input type="text">
-                    <input type="text">
+                    <input type="text" class="skje">
                     <span>删除</span>
+                    <span id="innerst"></span>
                 </p>
                 <p class="manype">
-                    <input type="text">
+                    <input type="text" class="bzh">
                     <input type="text">
                     <input type="text">
                     <span>删除</span>
+
                 </p>
                 <p class="manype">
-                    <input type="text">
+                    <input type="text" class="bzh">
                     <input type="text">
                     <input type="text">
                     <span>删除</span>
+
                 </p>
                 <p><button type="button" class="btn btn-block nextbtntwo" >+增加收款成员</button></p>
                 <p>
@@ -88,6 +92,10 @@
                     <label for="" class="manyla">服务费：</label>
                     <span> 0.00 元 &nbsp;<a href="" class="lookbz"> 查看收费标准</a></span>
                 </p>
+
+                <p>
+                    <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn mulbtn" style="margin-left:209px;margin-top:20px;">下一步</button>
+                </p>
             </form>
             <!--警告-->
             <div class="alert alert-warning alertdown alertpad" role="alert">
@@ -98,5 +106,32 @@
     </div>
 </div>
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
+
+<script>
+    $('#nextbtn').click(function() {
+//
+        var val1 = $('.user').val();
+        if (val1 == '') {
+            inners.innerHTML = '<span class="errstyle">不能为空</span>';
+        } else {
+            inners.innerHTML = '<span></span>';
+        }
+
+
+        var val1 = $('.bzh').val();
+        if (val1 == '') {
+            innerst.innerHTML = '<span class="errstyle">不能为空</span>';
+        } else {
+            innerst.innerHTML = '<span></span>';
+        }
+
+        var val1 = $('.skje').val();
+        if (val1 == '') {
+            innerst.innerHTML = '<span class="errstyle">不能为空</span>';
+        } else {
+            innerst.innerHTML = '<span></span>';
+        }
+    })
+</script>
 </body>
 </html>

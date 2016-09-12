@@ -195,10 +195,27 @@
     background:url("/imgs/icons/A2.png") no-repeat 10px center;
     margin-left:10px;
 }
+
+.form .jsq{
+    position:absolute;
+    top:90%;
+    left:45%;
+    display:none;
+}
+
+
+.form .jsq td{
+    border: 1px solid #E8E8E8;
+    width: 70px;
+    height: 38px;
+    vertical-align: middle;
+    text-align: center;
+}
+.form .jsq{
+    border-collapse: collapse;
+}
+
 /*选择联系人*/
-/*.modal{*/
-    /*background-color:transparent!important;*/
-/*}*/
 .modalcontent{
     width:380px;
     position:fixed;
@@ -366,6 +383,10 @@
 }
 .alertpad{
     margin-left:-20px;
+}
+.formpad p .mulbtn{
+    margin-left:60px!important;
+
 }
 /*确认收款信息*/
 .confirmco{
