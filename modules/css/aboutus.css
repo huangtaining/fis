@@ -141,15 +141,21 @@
     margin:0 auto;
     margin-top:17px;
 }
-.legel .con-left{
+.con-tab{
     height:755px;
+    width:210px;
+    float:left;
+}
+.legel .con-left{
+    height:120px;
     width:210px;
     float:left;
 
 }
-.legel .con-left .kongb{
+.legel  .kongb{
     background-color:#F7F7F7;
     height:633px;
+    margin-top:120px;
     border:0;
     border-right:1px solid #E8E8E8;
 }
@@ -194,11 +200,11 @@
     border-bottom:1px solid #E8E8E8;
 
 }
-.wrap-content{
+.legel .wrap-content{
     margin-top:28px;
 }
 
-.wrap-content p{
+.legel .wrap-content p{
     line-height:2em;
     margin-bottom:10px;
     text-indent:2em;
@@ -223,9 +229,10 @@
     float:left;
 
 }
-.corperate .con-left .kongb{
+.corperate .kongb{
     background-color:#F7F7F7;
     height:633px;
+    margin-top:120px;
     border:0;
     border-right:1px solid #E8E8E8;
 }
@@ -239,6 +246,9 @@
     border:1px solid #E8E8E8;
 }
 .corperate .con-left li:nth-child(2){
+    border-top:0;
+}
+.corperate .con-left li:nth-child(3){
     border-top:0;
 }
 .corperate .wrap{
@@ -264,9 +274,70 @@
     border-right:0!important;
 }
 .corperate .wrap .shengm{
-
-    padding:17px 800px 17px 0;
+    padding:17px 400px 17px 0;
     font-size:16px;
     border-bottom:1px solid #E8E8E8;
+}
+.corperate .wrap-content{
+    margin-top:17px;
+}
+.corperate .worldbanks li img{
+    margin-right:38px;
+    width:140px;
+    height:50.6px;
+    margin-top:20.3px;
+}
+.corperate .banks{
+    /*margin-top:22px;*/
+}
 
+
+
+/*文章详情*/
+.news-detail{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:13px;
+    border:1px solid #E8E8E8;
+
+}
+.news-detail .sub_coll{
+    margin-bottom:18px;
+}
+.news-detail .content{
+    width:1200px;
+    height:1653px;
+    margin:0 auto;
+    background-color:white;
+    margin-bottom:158px;
+}
+.news-detail .con-header{
+    width:1060px;
+    margin-left:67px;
+    padding-bottom:22px;
+    border-bottom:1px solid #E8E8E8;
+}
+.news-detail .con-header h2{
+    font-size:22px;
+    /*margin-top:30px;*/
+    padding-top:30px;
+    font-weight: bold;
+}
+.news-detail .con-header p{
+    margin-top:14px;
+
+}
+.news-detail .con-content{
+    width:1024px;
+    height:auto;
+    margin:0 auto;
+    padding-top:26px;
+}
+.news-detail .con-wenz{
+    margin-top:33px;
+}
+.news-detail .con-wenz p{
+    line-height:2.2em;
+    margin-bottom:15px;
+    text-indent: 2em;
 }
