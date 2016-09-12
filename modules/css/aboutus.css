@@ -342,3 +342,93 @@
     margin-bottom:15px;
     text-indent: 2em;
 }
+
+/*公司公告*/
+.company-news{
+    width:100%;
+    height:auto;
+    background-color:#F7F7F7;
+    padding-top:14px;
+    border:1px solid #E8E8E8;
+
+
+}
+
+.company-news .sub_coll{
+    margin-bottom:17px;
+}
+.company-news .content{
+    width:1200px;
+    height:959px;
+    margin:0 auto;
+    /*background-color:white;*/
+    margin-bottom:158px;
+}
+
+.con-tab{
+    height:755px;
+    width:210px;
+    float:left;
+}
+.company-news .con-left{
+    height:120px;
+    width:210px;
+    float:left;
+
+}
+.company-news  .kongb{
+    background-color:#F7F7F7;
+    height:633px;
+    margin-top:120px;
+    border:0;
+    border-right:1px solid #E8E8E8;
+}
+.company-news .con-left li{
+    padding:18px 38px 22px 76px;
+    border-left:4px solid transparent;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+.company-news .con-left li:nth-child(1){
+    border:1px solid #E8E8E8;
+}
+.company-news .con-left li:nth-child(2){
+    border-top:0;
+}
+
+.company-news .wrap{
+    width:990px;
+    height:755px;
+    padding:0 60px;
+    background-color:white;
+    float:right;
+    border-top:1px solid #E8E8E8;
+    border-right:1px solid #E8E8E8;
+    border-bottom:1px solid #E8E8E8;
+    margin-bottom:127px;
+}
+.company-news .wrap>div{
+    display:none;
+}
+.company-news .wrap .active{
+    display:block;
+}
+.company-news .legel-bo{
+    color:#00A0E8;
+    border-left:4px solid #00A0E8!important;
+    border-right:0!important;
+}
+.company-news .wrap .shengm{
+
+    padding:17px 800px 17px 0;
+    font-size:16px;
+    border-bottom:1px solid #E8E8E8;
+
+}
+.company-news .wrap-content{
+    margin-top:28px;
+}
+
+
+
+
