@@ -47,39 +47,39 @@
             	<div class="tad-pane_box">
                 <ul class="clearfix">
                 	<li><em>交易信息：</em><input type="text" placeholder="交易编号或交易信息"/></li>
-                	<li><em>收/付款：</em>
+                	<li><em>收 / 付款：</em>
                 		<select name="" id="">
                 		<option value="">收/付款</option>
-                		<option value="">收款</option>
-                		<option value="">付款</option>
+                		<option value="">只显示收款</option>
+                		<option value="">只显示付款</option>
                 		</select>
                 	</li>
                 	<li><em>交易对方：</em><input type="text" placeholder="交易方名称或者账户"/></li>
                  </ul>
                 <ul class="clearfix"> 
-                	<li><em>交易日期：</em><em class="time" style="">2016-7-23至2016-7-29</em></li>
-                	<li><em>收/付款：</em>
+                	<li><em>交易日期：</em><button class="time btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">2016-7-23至2016-7-29</button></li>
+                	<li><em>交易状态：</em>
                 		<select name="" id="">
-                		<option value="">收/付款</option>
+                		<option value="">所有交易状态</option>
                 		<option value="">收款</option>
                 		<option value="">付款</option>
                 		</select>
                 	</li>
                 	<li><em>交易类型：</em>
                 		<select name="" id="">
-                		<option value="">收/付款</option>
+                		<option value="">所有交易类型</option>
                 		<option value="">收款</option>
                 		<option value="">付款</option>
                 		</select>
                 	</li>
                 	</ul>
                 	<ul class="clearfix">
-                	<li class="ation"><em>交易信息：</em><input type="text" placeholder="交易金额"/> - <input type="text" placeholder="交易金额"/></li>
-                	<li><em>收/付款：</em>
+                	<li class="ation"><em>交易金额：</em><input type="text" placeholder="交易金额"/> - <input type="text" placeholder="交易金额"/></li>
+                	<li><em>账户名称：</em>
                 		<select name="" id="">
-                		<option value="">收/付款</option>
-                		<option value="">收款</option>
-                		<option value="">付款</option>
+                		<option value="">所有账户</option>
+                		<option value="">所有账户</option>
+                		<option value="">基本账户</option>
                 		</select>
                 	</li>
                 	<li><button>查询</button></li>
@@ -109,7 +109,7 @@
 			<td>交易成功</td>
 			<td style="line-height: 20px;">
 				<p>2016-01-01</p>
-				<p>05:00</p>
+				<em>05:00</em>
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
@@ -130,7 +130,7 @@
 			<td>交易成功</td>
 			<td style="line-height: 20px;">
 				<p>2016-01-01</p>
-				<p>05:00</p>
+				<em>05:00</em>
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
@@ -151,7 +151,7 @@
 			<td>交易成功</td>
 			<td style="line-height: 20px;">
 				<p>2016-01-01</p>
-				<p>05:00</p>
+				<em>05:00</em>
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
@@ -172,7 +172,7 @@
 			<td>交易成功</td>
 			<td style="line-height: 20px;">
 				<p>2016-01-01</p>
-				<p>05:00</p>
+				<em>05:00</em>
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
@@ -193,7 +193,7 @@
 			<td>交易成功</td>
 			<td style="line-height: 20px;">
 				<p>2016-01-01</p>
-				<p>05:00</p>
+				<em>05:00</em>
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
@@ -214,7 +214,7 @@
 			<td>交易成功</td>
 			<td style="line-height: 20px;">
 				<p>2016-01-01</p>
-				<p>05:00</p>
+				<em>05:00</em>
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
@@ -235,7 +235,7 @@
 			<td>交易成功</td>
 			<td style="line-height: 20px;">
 				<p>2016-01-01</p>
-				<p>05:00</p>
+				<em>05:00</em>
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
@@ -251,8 +251,8 @@
 	</tbody>
 </table>
     <div class="jilu clearfix">
-			<div class="jilu_left">支出：20笔（已完成7笔，共2.17元。处理中:20笔，共12.00元）</div>
-			<div class="jilu_rigth">收入：20笔（已完成7笔，共2.17元。处理中:20笔，共12.00元）</div>
+			<div class="jilu_left">支出：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:12</em>元）</div>
+			<div class="jilu_rigth">收入：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:88</em>元）</div>
 		</div>
 		
 		 <!--分栏-->
@@ -272,7 +272,41 @@
             </div>
         </div>
 </div>
-            
+  <!--弹出框-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" style="margin-top: 10%;">
+		<div class="modal-content" style="width:280px;margin: 0 auto;">
+			<div class="modal-header">
+			
+				<input type="text" /> — <input type="text" />
+			</div>
+			<div class="modal-body">
+				<p>快捷日期</p>
+				<span>昨天</span>
+				<span>过去7天</span>
+				<span>过去30天</span>
+				<span>过去3个月</span>
+			</div>
+			<div class="modal-footer">			
+				<button type="button" class="btn btn-primary">确定</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #fff;border: none;">取消</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
             
  <!--充值记录-->
 <div class="tab-pane fade" id="chongzhi">

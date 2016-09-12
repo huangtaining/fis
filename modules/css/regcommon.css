@@ -54,32 +54,7 @@ padding-left: 5px;background-color: #F7F7F7;}
 .registered .registered_box i b{background:url(/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
 
 /************************************************************************************************/
-/*注册下一步*/
-/*.registered_next{background-color: #fff;}
-.personal-next ul{padding:50px;border-bottom: 1px solid #E8E8E8;}
-.personal_top{padding-top: 20px;}
-.personal_top>div{padding:20px;}
-.personal_top>div .i{width: 284px;display: inline-block;font-style: normal;text-align: left;margin-left: 10px;color: #FF8700;height: 43px;line-height: 43px;
-padding-left:15px;background-color: #F7F7F7;}
-.personal_top>div .i b{background:url(/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}
-.personal_top em{width:180px;display: inline-block;text-align: right;padding-right: 15px;}
-.personal_top em.left{font-size: 18px;color: #00A0E8;text-align: center;}
-.personal_top span.right{font-size: 14px;color: #585858;}
-.personal_top>div input{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
-.personal_top>div i{font-size: 14px;color: #FF8700;font-style: normal;}
-.personal_top .border_bottom{border-bottom: 1px solid #E8E8E8;padding-bottom: 50px;margin-bottom: 20px;}
-.personal_top>div select{width: 329px;height: 44px;line-height: 44px;text-indent: 1em;border: 1px solid #D5D5D5;border-radius:3px ;}
-.personal_top>div .button{width: 329px;height: 44px;line-height: 44px;background-color: #D5D5D5;color: #fff;font-size: 14px;text-align: center;display: inline-block;
-border-radius:5px;cursor: pointer ;}*/
 
-
-/*公用  注册尾部的提示*/
-/*.font_tishi>div .i{width: 284px;display: inline-block;font-style: normal;text-align: left;margin-left: 10px;color: #FF8700;height: 43px;line-height: 43px;
-padding-left:15px;background-color: #F7F7F7;}
-.font_tishi>div .i b{background:url(/imgs/icons/A2.png);width:15px;height: 15px;display: inline-block;vertical-align: middle;margin-right: 10px;margin-top: -2px;}*/
-
-
-/***********************************************************************/
 /*注册下一步*/
 
 .form-group input {
@@ -230,25 +205,6 @@ select.form-control {
 	display: inline-block;
 	margin-right: 10px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /***************************************************************************************************/
 /*注册完成*/
 .registered .complete{width: 100%;text-align: center;}
@@ -366,38 +322,229 @@ width: 25px;height: 20px;vertical-align: middle;display: inline-block;margin-rig
 
 /***********************************************************************************************/
 /*交易记录   页面*/
-.trading_box{width: 100%;background-color:#F7F7F7;padding: 30px 0 80px 0; }
-.trading-record{background-color:#F7F7F7 ;border: 1px solid #e4e4e4;}
-.trading-record h1{padding: 10px;background-color: #fff;text-indent:1em;}
-.trading-record .nav-tabs li{border-right:1px solid #DDDDDD ;border-bottom: 1px solid #ddd;background-color: #fff;width: 153px;text-align: center;height: 42px;line-height: 42px;}
-.nav-tabs{border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #ddd;}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {color: #555;width: 152px;cursor: default;background-color:#F7F7F7;border: 1px solid #fff; border-bottom-color: transparent;}
-.nav-tabs>li a:hover{border: none;border-radius:0px}
-.nav-tabs>li>a {margin-right: 2px;line-height: 1.42857143;/* border: 1px solid transparent;*//* border-radius: 4px 4px 0 0; */}
-.nav-tabs {background-color: #fff;}
-.tad-pane_box{padding: 30px;}
-.tab-content .tab-pane{}
-.tab-content .tab-pane ul li{float: left;width: 33%;padding: 10px 0;}
-.tab-content .tab-pane ul li input{width: 188px;text-indent: 1em;height: 25px;border: 1px solid #DDDDDD;}
-.tab-content .tab-pane ul li select{width: 120px;text-indent: 1em;background-color: #F4F4F4;}
-.tab-content .tab-pane ul li button{width: 77px;height: 27px;line-height: 27px;color: #fff;background-color: #009FE8;border: none;border-radius:5px ;}
-.tab-content .tab-pane ul li .time{width: 188px;text-indent: 1em;display: inline-block;height: 25px;line-height: 25px;border: 1px solid #DDDDDD;}
-.tab-content .tab-pane ul li.ation input{width: 87px;height: 25px;line-height: 25px;}
-.table-striped>tbody>tr:nth-of-type(odd) {background-color: #FFF;}
-.table{margin-bottom: 0;}
-.table-striped thead tr th{vertical-align: bottom;border-bottom:none; }
-.table-striped tbody tr td{height: 40px;line-height: 40px;}
-.table-striped tbody tr td{border-bottom: 1px solid #ddd;}
-.table-striped tbody tr td select{border: none;}
-.table-striped tbody tr td:first-child{padding-left: 30px;}
-#allpay .jilu{width: 100%;height: 60px;line-height: 60px;background-color: #fff;border-bottom: 1px solid #e4e4e4;}
-#allpay .jilu>div{float: left;width: 49%;}
-#allpay .jilu .jilu_left{padding-left: 30px;}
-#allpay .paging{width: 101%;height: 50px;line-height: 50px;background-color: #F7F7F7;margin-left: -4px;border-left-color: pink;}
-#allpay .paging>div{float: left;width: 49%;}
-#allpay .paging .paging_left{padding-left: 30px;}
-.paging .paging_rigth{text-align:right;padding-right: 20px;}
-.paging_left .shuzi{width: 50px;height:30px;line-height: 30px;border: 1px solid #e4e4e4;display:inline-block;text-align: center;}
-#nowpa{width: 50px;text-align: center;}
-.button{width: 50px;height:30px;line-height: 27px;text-align: center;}
+.trading_box {
+	width: 100%;
+	background-color: #F7F7F7;
+	padding: 30px 0 80px 0;
+}
+
+.trading-record {
+	background-color: #F7F7F7;
+	border: 1px solid #e4e4e4;
+}
+
+.trading-record h1 {
+	padding: 10px;
+	background-color: #fff;
+	text-indent: 1em;
+}
+
+.trading-record .nav-tabs li {
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+	width: 153px;
+	text-align: center;
+	height: 42px;
+	line-height: 42px;
+}
+
+.nav-tabs {
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	color: #555;
+	width: 152px;
+	cursor: default;
+	background-color: #F7F7F7;
+	border: 1px solid #fff;
+	border-bottom-color: transparent;
+}
+
+.nav-tabs>li a:hover {
+	border: none;
+	border-radius: 0px
+}
+
+.nav-tabs>li>a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	/* border: 1px solid transparent;*/
+	/* border-radius: 4px 4px 0 0; */
+}
+
+.nav-tabs {
+	background-color: #fff;
+}
+
+.tad-pane_box {
+	padding: 30px;
+}
+
+.tab-content .tab-pane {}
+
+.tab-content .tab-pane ul li {
+	float: left;
+	width: 33%;
+	padding: 15px 0;
+}
+
+.tab-content .tab-pane ul li em{
+	width: 70px;display: inline-block;
+}
+
+.tab-content .tab-pane ul li input {
+	width: 188px;
+	text-indent: 1em;
+	height: 25px;
+	border: 1px solid #DDDDDD;
+}
+
+.tab-content .tab-pane ul li select {
+	width: 130px;
+	text-indent: 1em;
+	background-color: #F4F4F4;
+}
+
+.tab-content .tab-pane ul li button {
+	width: 77px;
+	height: 27px;
+	line-height: 27px;
+	color: #fff;
+	background-color: #009FE8;
+	border: none;
+	border-radius: 5px;
+}
+
+.tab-content .tab-pane ul li .time {
+	font-size: 14px;
+	width: 188px;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #DDDDDD;
+	background-color: #F7F7F7;
+	color: #333;
+	border-radius: inherit;
+	text-align: center;
+	padding: 0;margin: 0;
+}
+
+.tab-content .tab-pane ul li.ation input {
+	width: 87px;
+	height: 25px;
+	line-height: 25px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #FFF;
+}
+
+.table {
+	margin-bottom: 0;
+}
+
+.table-striped thead tr th {
+	vertical-align: bottom;
+	border-bottom: none;
+}
+
+.table-striped tbody tr td {
+	height: 40px;
+	line-height: 40px;
+}
+
+.table-striped tbody tr td {
+	border-bottom: 1px solid #ddd;
+}
+
+.table-striped tbody tr td select {
+	border: none;
+}
+
+.table-striped tbody tr td:first-child {
+	padding-left: 30px;
+}
+.table-striped tr td em{color:#B2B2B2}
+.table-striped tr td select{
+	color:#57C0F0;background-color:transparent;
+}
+#allpay .jilu {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #fff;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+#allpay .jilu>div {
+	float: left;
+	width: 49%;
+}
+#allpay .jilu>div em{
+	color:#ED7514
+}
+#allpay .jilu .jilu_left {
+	padding-left: 30px;
+}
+
+#allpay .paging {
+	width: 101%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #F7F7F7;
+	margin-left: -4px;
+	border-left-color: pink;
+}
+
+#allpay .paging>div {
+	float: left;
+	width: 49%;
+}
+
+#allpay .paging .paging_left {
+	padding-left: 30px;
+}
+
+.paging .paging_rigth {
+	text-align: right;
+	padding-right: 20px;
+}
+
+.paging_left .shuzi {
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #e4e4e4;
+	display: inline-block;
+	text-align: center;
+}
+
+#nowpa {
+	width: 50px;
+	text-align: center;
+}
+
+.button {
+	width: 50px;
+	height: 30px;
+	line-height: 27px;
+	text-align: center;
+}
+.modal .modal-header{padding: 20px 20px;border:none}
+.modal .modal-header input{width:107px;height: 30px;line-height:30px;text-align: center;}
+
+.modal .modal-body{padding:0px 30px;}
+.modal .modal-body span{width:49%;display: inline-block;padding: 5px 0;}
+.modal .modal-footer{border: none;text-align: left;padding: 20px 30px;}
+.modal .modal-footer .btn{padding: 3px 12px;border-radius:0 ;background-color: #F5F5F5;color: #333;border: 1px solid #C1C1C1;}
+
+
+
+
+
+
