@@ -50,6 +50,9 @@
     width: 100%;
     padding: 0 20px;
 }
+.masage input{
+        margin:0 10px;
+}
 .masage thead {
     background: #F7F7F7;
 }
@@ -63,15 +66,19 @@
     padding: 0 10px 0 20px;
 }
 .masage th:nth-child(2) {
+    width: 200px;
 }
 .masage th:nth-child(3) {
+    width: 100px;
 }
 .masage td:nth-child(1) {
     padding: 0 10px 0 20px;
 }
 .masage td:nth-child(2) {
+    width: 200px;
 }
 .masage td:nth-child(3) {
+    width: 100px;
 }
 .masage tbody{
      background: #ffffff;
