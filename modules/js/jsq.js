@@ -5,27 +5,53 @@
 
 var $ = require('jquery');
 
+//点击出现
+$(".icon-jsq").click(function(e){
+    var _ox=e.clientX;
+    var _oy=e.clientY;
+    var _oo=window.scrollY;
+    console.log(_ox+"ssss"+_oy);
+    $(".jsq").show();
+    $(".jsq").css({left:_ox+100,top:_oy+_oo});
+});
 
 
-$(function(){
+for(var i=0;i<$(".jsqn").length;i++){
 
-    console.log("sssssss")
-    $(".icon-jsq").click(function(e){
-        var _ox=e.clientX;
-        var _oy=e.clientY;
-        var _oo=window.scrollY;
-        console.log(_ox+"ssss"+_oy);
-        $(".jsq").css({left:_ox+100,top:_oy+_oo});
-    });
+    $(".jsqn").eq(i).click(function(){
+        var _num=$(this).html();
+        typetoinput(_num)
+    })
+}
+
+for(var i=0;i<$(".jsqy").length;i++){
+
+    $(".jsqy").eq(i).click(function(){
+        var _yun=$(this).attr("data-jsq");
+        operator(_yun)
+    })
+}
+$(".int").click(function(){
+    var _result=$("#input-box").val();
+    console.log(typeof _result);
+    //结果输出在哪里
+    $(".jisuan").siblings("input").val(_result)
+});
+
+
+$(".clea").click(function(){
+    $("#input-box").val(0)
+    $(".jsq").hide();
+})
+
 
 document.oncontextmenu=new Function("event.returnValue=false;");
 document.onselectstart=new Function("event.returnValue=false;");
 var _string=new Array();
 var _type;
 
-    function test(){
-        console.log("ffffff")
-    }
+
+
 function typetoinput(num)
 {
     input=document.getElementById("input-box");
@@ -234,4 +260,3 @@ function disableRefresh(evt){
     }
 };
 
-})
