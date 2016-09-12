@@ -203,3 +203,70 @@
     margin-bottom:10px;
     text-indent:2em;
 }
+
+
+/*合作银行*/
+
+.corperate{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:11px;
+}
+.corperate .content{
+    width:1200px;
+    margin:0 auto;
+    margin-top:17px;
+}
+.corperate .con-left{
+    height:755px;
+    width:210px;
+    float:left;
+
+}
+.corperate .con-left .kongb{
+    background-color:#F7F7F7;
+    height:633px;
+    border:0;
+    border-right:1px solid #E8E8E8;
+}
+.corperate .con-left li{
+    padding:18px 38px 22px 76px;
+    border-left:4px solid transparent;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+.corperate .con-left li:nth-child(1){
+    border:1px solid #E8E8E8;
+}
+.corperate .con-left li:nth-child(2){
+    border-top:0;
+}
+.corperate .wrap{
+    width:990px;
+    height:755px;
+    padding:0 60px;
+    background-color:white;
+    float:right;
+    border-top:1px solid #E8E8E8;
+    border-right:1px solid #E8E8E8;
+    border-bottom:1px solid #E8E8E8;
+    margin-bottom:127px;
+}
+.corperate .wrap>div{
+    display:none;
+}
+.corperate .wrap .active{
+    display:block;
+}
+.corperate .legel-bo{
+    color:#00A0E8;
+    border-left:4px solid #00A0E8!important;
+    border-right:0!important;
+}
+.corperate .wrap .shengm{
+
+    padding:17px 800px 17px 0;
+    font-size:16px;
+    border-bottom:1px solid #E8E8E8;
+
+}
