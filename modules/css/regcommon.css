@@ -23,7 +23,8 @@ display: inline-block;cursor: pointer;}
 .login_box .login_right .login_text .login_two{margin-left: 40px;}
 .login_box .login_right .login_text .login_three{float: right;margin-right: 40px;}
 .login_box .login_right .login_text a{color:#009FE8 ;}
-
+.login_text .panel-title a{text-decoration: none;}
+.login_text .panel-title a:hover{color: #009FE8;text-decoration: none;}
 /***********************************************************************************************/
 /*个人注册   页面*/
 .personal-box{width: 100%;background-color:#F7F7F7;padding: 50px 0 100px 0;}
@@ -215,6 +216,12 @@ select.form-control {
 	vertical-align: middle;
 	display: inline-block;
 	margin-right: 10px;}
+
+
+.password_content #collapseOne{width:724px;margin-left: -70px;}
+.password_content #collapseOne textarea{width:700px;height: 80px;line-height: 23px;border: 1px solid #009FE8;}
+.password_content #collapseOne p{font-weight: bold;padding:20px 0;font-size:15px;}
+
 
 /***************************************************************************************************/
 /*注册完成*/
