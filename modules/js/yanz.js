@@ -13,6 +13,7 @@ $(function(){
         var _mul = $(".must").length;
 //        获取已经验证通过字段长度
         var _sul = $(".okk").length;
+        console.log(_mul+"---"+_sul)
         if (_mul == _sul) {
             alert("验证通过")
         } else {
@@ -21,29 +22,36 @@ $(function(){
 
     });
 
-//       列出当前页面需要验证的input的长度
-    for (var i = 0; i < $(".yz").length; i++) {
-        yanztype(i)
-    }
-//       检验需要验证的input的内容的格式，
-    function yanztype(i) {
-        $(".yz").eq(i).change(function () {
-            var _yztype = $(".yz").eq(i).attr("data-yz");
-            var _yzval = $(".yz").eq(i).val();
-            switch (_yztype) {
-                case "num":
-                {
-                    num(_yzval, i)
+    function bigyz(){
+        for (var i = 0; i < $(".yz").length; i++) {
+            yanztype(i)
+        }
+        function yanztype(i) {
+            $(".yz").eq(i).change(function () {
+                console.log("change");
+                var _yztype = $(".yz").eq(i).attr("data-yz");
+                var _yzval = $(".yz").eq(i).val();
+                switch (_yztype) {
+                    case "num":
+                    {
+                        num(_yzval, i);
+
+                    }
+                        break;
                 }
-                    break;
-            }
-        })
+            })
+        }
     }
+    bigyz();
+//       列出当前页面需要验证的input的长度
+
+//       检验需要验证的input的内容的格式，
+
 //    检验input格式
     function num(v, i) {
         var _yznum = new RegExp("^[0-9]*$");
         if (!_yznum.test(v)) {
-            $(".yz").eq(i).siblings("span").html("格式错了乐乐乐乐");
+            $(".yz").eq(i).siblings(".yzwww").html("格式错了乐乐乐乐");
             $(".yz").eq(i).parent().siblings("label").children("span").removeClass("okk");
         } else {
             $(".yz").eq(i).parent().siblings("label").children("span").addClass("okk");

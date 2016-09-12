@@ -63,8 +63,8 @@
 }
 .witwar{
     width: 100%;
-    padding: 10px 20px;
-    margin: 10px 0;
+    padding: 20px 20px;
+    margin: 10px 0 ;
     overflow: hidden;
 }
 /*问题*/
@@ -144,6 +144,7 @@
        background: white;
        padding:0 20px ;
        font-size: 18px;
+       color: #333333;
 }
 .allstep{
     border: 1px solid #E8E8E8;
@@ -325,12 +326,12 @@ p{
 .step_button_s{
     background: #ED8719;
     border: none;
-    padding: 3px 20px;
+    padding: 3px 30px;
 }
 .step_button_s:hover{
     background: #ED8719;
     border: none;
-    padding: 3px 20px;
+    padding: 3px 30px;
 }
 .lookjilu{
     float: right;
@@ -408,4 +409,39 @@ p{
     height: 38px;
     vertical-align: middle;
     text-align: center;
+}
+.yzmtu{
+    border: 1px solid red;
+    padding: 3px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+}
+
+.form-item{
+    width: 100%;
+    overflow: hidden;
+}
+.form-item input{
+    width: 185px;
+    padding: 2px 8px;
+    margin-right: 10px;
+}
+.form-item label{
+     margin-bottom: 0 !important;
+    line-height: 28px;
+    font-weight: normal;
+}
+.form-left,.form-right{
+    padding: 14px 0;
+}
+.form-left{
+     float: left;
+     text-align: right;
+     width: 170px;
+     margin-right: 20px;
+ }
+.form-right{
+    float: left;
+    text-align:left;
 }
