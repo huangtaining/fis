@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="import" href="../layout/header.html?__inline">
+
+
+</head>
+<body>
+    <link rel="import" href="modules/widget/header/header.html?__inline">
+    <section class="legel">
+        <div class="sub_coll">
+            <p class="position">首页>联系我们</p>
+        </div>
+        <div class="content clearfix">
+            <!--<div class="legel-left">-->
+                <!---->
+            <!--</div>-->
+            <ul class="con-left clearfix" id="con-left">
+                <li class="legel-bo">法律声明</li>
+                <li>免责声明</li>
+                <li class="kongb"></li>
+            </ul>
+
+            <div id="wrap" class="wrap">
+                <div class="active">
+                    <h2 class="shengm">法律声明</h2>
+
+
+
+                </div>
+
+                <div >免责声明1</div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <link rel="import" href="modules/widget/footer/footer.html?__inline">
+
+
+    <script>
+        $(function(){
+            function tab(pa){
+
+                $(pa+".con-left li").click(function(){
+                    //找到是点击第几个
+                    var index=$(pa+"#con-left li").index($(this));
+//		alert(ind);
+                    //以前显示的隐藏
+                    $(pa+".wrap div:visible").hide();
+                    //第几个显示
+                    $(pa+".wrap div:eq("+index+")").show();
+                    //有高亮ho 去掉高亮ho
+                    $(pa+".con-left li.legel-bo").removeClass("legel-bo");
+                    //被点击的元素添加ho
+                    $(this).addClass("legel-bo");
+
+                })//clicked
+            }//tab ed
+            tab(".content ");
+        })
+
+
+
+    </script>
+</body>
+</html>

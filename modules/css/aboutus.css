@@ -95,5 +95,97 @@
 }
 .contactustel .contact .contactright{
     display:inline-block;
-    /*margin-top:30px;*/
+    margin-top:7px;
+    margin-left:22px;
+}
+.contactustel .usphone{
+    font-size:30px;
+    color:#4A4A4A;
+    margin-top:48px;
+    margin-left:25px;
+}
+.contactustel .usphone span{
+    font-size:14px;
+    color:#4A4A4A;
+}
+.contactustel .contactadd{
+    margin:16px 0 0 25px;
+    line-height:25px;
+    color:#868686;
+}
+.contactustel .contactadd h3{
+    margin-bottom:5px;
+}
+.contactustel .contactadd ul li span{
+    margin-right:20px;
+    color:#868686;
+}
+.contactustel .email{
+    color:#868686;
+    margin:27px 0 0 25px;
+}
+.contactustel .mkt{
+    margin:36px 0 0 25px;
+    color:#868686;
+    line-height:25px;
+}
+
+/*法律声明*/
+.legel{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:11px;
+}
+.legel .content{
+    width:1200px;
+    margin:0 auto;
+    margin-top:17px;
+}
+.legel .con-left{
+    height:755px;
+    width:210px;
+    float:left;
+
+}
+.legel .con-left .kongb{
+    background-color:#F7F7F7;
+    height:633px;
+    border:0;
+    border-right:1px solid #E8E8E8;
+}
+.legel .con-left li{
+    padding:18px 38px 22px 76px;
+    border-left:4px solid transparent;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+/*.legel .con-left li:nth-child(1){*/
+    /*border:1px solid #E8E8E8;*/
+/*}*/
+.legel .con-left li:nth-child(2){
+    border-top:0;
+}
+.legel .wrap{
+    width:990px;
+    height:355px;
+    padding-left:60px;
+    background-color:white;
+    float:right;
+    border-top:1px solid #E8E8E8;
+    border-right:1px solid #E8E8E8;
+    border-bottom:1px solid #E8E8E8;
+}
+.legel .wrap>div{
+    display:none;
+}
+.legel .wrap .active{
+    display:block;
+}
+.legel .legel-bo{
+    color:#00A0E8;
+    border-left:4px solid #00A0E8!important;
+    border-right:0!important;
+}
+.legel .wrap .shengm{
+    wi
 }
