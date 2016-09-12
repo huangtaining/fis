@@ -1,0 +1,10 @@
+
+.all_detail h1{padding: 20px 0 10px 0;font-size: 18px;font-weight: bold;}
+.all_detail .all_detail_color{width: 100%;padding:10px;background-color: #FFFDC0;border: 2px solid #EDC677;color:#FA6A11;font-weight: bold ;text-indent: 7em;}
+.all_detail p{padding: 20px 0 10px 0;font-size: 15px;font-weight: bold}
+.all_detail .all_detail_box{width: 100%;padding: 10px 0;border:2px solid #BCD3FC;color:#E3F1FA ;background-color: #E3F1FA;}
+.all_detail .all_detail_box ul li{padding:5px 0;}
+.all_detail .all_detail_box ul li em{display: inline-block;width:300px;text-align: right;color: #555;}
+.all_detail .all_detail_box ul li span{color: #333;font-weight: bold;margin-left: 10px;}
+.all_detail .all_detail_box ul li span b{color: #FA6A11;}
+.all_detail button{background: url(imgs/icons/gr_bt.png)no-repeat;width:92px;height:27px;line-height: 26px;border: none;color: #fff;margin: 20px 0 50px 250px;}
