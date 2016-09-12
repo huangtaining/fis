@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合作银行</title>
+    <link rel="import" href="../layout/header.html?__inline">
+</head>
+<body>
+<link rel="import" href="modules/widget/header/header.html?__inline">
+    <section class="corperate">
+        <div class="sub_coll">
+            <p class="position">首页>联系我们</p>
+        </div>
+
+
+        <div class="content clearfix">
+            <div class="con-tab">
+
+
+
+                <ul class="con-left clearfix" id="con-left">
+                    <li class="legel-bo">法律声明</li>
+                    <li>合作商户</li>
+                    <li >合作经销商</li>
+                </ul>
+
+                <div class="kongb">
+                </div>
+            </div>
+
+            <div class="wrap">
+                <div class="active">
+                    <h2 class="shengm">银生宝已与60家银行和金融机构深入合作</h2>
+                    <div class="wrap-content">
+                        <h4>国有银行和全国股份制银行</h4>
+                        <div class="banks">
+                            <ul class="worldbanks clearfix">
+                                <li>
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="" style="margin-right:0;">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="" style="margin-right:0;">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="" style="margin-right:0;">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <h4>国有银行和全国股份制银行</h4>
+                        <div class="banks">
+                            <ul class="worldbanks clearfix">
+                                <li>
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="" style="margin-right:0;">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="" style="margin-right:0;">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="" style="margin-right:0;">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                    <img src="/imgs/partners/F10.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>免责声明1</div>
+                <div>免责声明1</div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+<link rel="import" href="modules/widget/footer/footer.html?__inline">
+<script>
+    var $ = require('jquery');
+    $(function(){
+        function tab(pa){
+
+            $(pa+".con-left>li").click(function(){
+                //找到是点击第几个
+                var index=$(pa+".con-left>li").index($(this));
+//                alert(index);
+                //以前显示的隐藏
+                $(pa+".wrap>div:visible").hide();
+                //第几个显示
+                $(pa+".wrap>div:eq("+index+")").show();
+
+                $(pa+".con-left>li.legel-bo").removeClass("legel-bo");
+
+                $(this).addClass("legel-bo");
+
+            })//clicked
+        }//tab ed
+        tab(".content ");
+    })
+
+
+
+</script>
+</body>
+</html>
