@@ -447,6 +447,7 @@ p{
 }
 .form-left,.form-right{
     padding: 14px 0;
+    line-height: 28px;
 }
 .form-left{
      float: left;
