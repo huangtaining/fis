@@ -18,6 +18,9 @@
     color:#EE881A !important;
     font-weight: bold;
 }
+.yells{
+    color:#EE881A !important;
+}
 .lr{
     margin: 0 15px
 }
@@ -332,6 +335,16 @@ p{
     background: #ED8719;
     border: none;
     padding: 3px 30px;
+}
+.step_button_l{
+    background: #00A0E8;
+    border: none;
+    padding: 6px 20px;
+}
+.step_button_l:hover{
+    background: #00A0E8;
+    border: none;
+    padding: 6px 20px;
 }
 .lookjilu{
     float: right;
