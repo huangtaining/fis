@@ -11,8 +11,14 @@
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
 		<!--进度条-->
-		<section class="reg" style="padding-bottom: 100px;background-color: #f7f7f7;">
-			<section class="bar_article centre clearfix">
+		<section class="reg forgot_password_box" style="padding-bottom: 100px;background-color: #f7f7f7;">
+
+	<div class="registered centre forgot_password">
+
+		<div class="reg_box">
+			<h1>注册</h1>
+
+			<section class="bar_article clearfix">
 				<ul class="clearfix">
 					<li>
 						<div class="zhong">
@@ -40,32 +46,33 @@
 					</li>
 				</ul>
 			</section>
+			<div class="password_content" style="text-align: left;background-color: #fff;">
+				<form action="" method="post">
 
-			<section class="registered centre">
-				<div class="reg_box">
-					<h1>注册</h1>
-					<div class="registered_box">
-						<ul>
-							<li><em style="margin-left: 30px;">账户名：</em>
-								<input type="text" placeholder="请输入邮箱或手机"  id="username"/>
-								<i><b></b>手机号码或者邮箱填写错误或者已经被注册</i>
-							</li>
-							<li class="code"><em style="margin-left: 30px;">验证码：</em>
-								<input type="text" placeholder="请输入验证码"  id="checkCode"/><span></span><em style="color: #019FE8;margin-left:10px;width: 63px;">换一张</em>
-								<i><b></b>验证码填写错误</i>
-							</li>
-							<li class="login_text">
-								<input type="checkbox" /><em style="margin-left: 15px;"><em>我同意</em> <em style="color: #019FE8;">《银生宝服务协议》</em></em>
-							</li>
-							<li>
-								<button id="btn1" style="margin-left: -220px;">下一步</button>
-							</li>
-
-						</ul>
+					<div class="password_content">
+						<div class="yanzhen" style="margin-left: 0;">
+							<em><i>&#10038 </i> 账户名：</em>
+							<input type="text" placeholder="请输入邮箱或手机" id="username" />
+							<div id="setting" style="display:none" style="width: 284px;"><b></b></div>
+						</div>
+						<div class="yanzhen yanzheng" style="margin-left: 0;">
+							<em><i>&#10038 </i> 验证码：</em><input type="text" placeholder="请再次输入登录密码" id="validation" />
+							<em style="width: 100px;height: 43px;line-height: 43px;background-color: pink;vertical-align: middle;margin-left: 10px;"></em>
+							<em style="color: #019FE8;margin-left:10px;width:50px;padding-right: 0;">换一张</em><b></b>
+							<div id="setting1" style="display:none" style="width: 284px;"><b></b></div>
+						</div>
+						<li class="login_text" style="margin-left: 200px;padding: 10px 0 20px 0;">
+							<input type="checkbox" checked="checked" /><em style="margin-left: 15px;"><em>我同意</em> <em style="color: #019FE8;">《银生宝服务协议》</em></em>
+						</li>
+						<div class="yanzhen" style="margin-left: 0;">
+							<em></em><button class="button" id="btn" type="button" style="background-color:#d5d5d5" ;>下一步</button>
+						</div>
 					</div>
-				</div>
-			</section>
-		</section>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
 		<script src="lib/mod.js"></script>
 		<script>
@@ -73,45 +80,92 @@
 		</script>
 		<!--SCRIPT_PLACEHOLDER-->
 <script type="text/javascript">
-			var username = document.getElementById('username');
-			var btn = document.getElementById('btn');
-			var checkCode = document.getElementById('checkCode');
-			var u;
-			var c;
-			btn.onclick = function() {
-				if(username.value == "") {
-					alert("用户名不能为空");
-				} else if(checkCode.value == "") {
-					alert("验证码不能为空");
-				}
+var username= document.getElementById('username');
+var validation= document.getElementById('validation');
+var btn=document.getElementById('btn');
+var b=document.getElementById("setting");
+var b1=document.getElementById("setting1");
+var c;
+var u;
+var reg=/^[1-9]\d*$|^0$/ ;   //纯数字
+var user_zeng= /^1[3|4|5|7|8]\d{9}$/;    //手机号
+var emali_zeng= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;  //邮箱
 
-			};
-			username.oninput = function() {
-				if(username.value == "") {
-					u = false;
-					alert("用户名不能为空");
-					btn.style.backgroundColor = "#d5d5d5";
-				} else {
-					u = true;
-					if(u && c) {
-						btn.style.backgroundColor = "#009FE8";
-					}
-				};
-			};
-			
-			checkCode.oninput = function() {
-				if(checkCode.value == "") {
-					c = false;
-					btn.style.backgroundColor = "#d5d5d5";
-				} else {
-					c = true;
-					password.style.backgroundColor = "";
-					if(u && c) {
-						btn.style.backgroundColor = "#009FE8";
-					}
-				};
-			};
-		</script>
+
+btn.onclick=function() {
+     if(username.value==""){
+       b.innerHTML='<b></b>手机号码或者邮箱填写错误或者已经被注册';
+       b.style.display="block";  //显示
+     }else if(validation.value==""){
+      b1.innerHTML='<b></b>验证码不能为空';
+      b1.style.display="block";  //显示
+     }else{
+         b.innerHTML='';
+         b.style.display="none";    //隐藏
+        
+     }
+         
+    };
+
+username.oninput=function() {
+    var user_value=username.value;
+    if(reg.test(user_value)){
+        if(!user_zeng.test(username.value)){
+         u=false;
+       }else{
+          u=true;
+       }
+     }else if(user_value.indexOf("@") >-1){
+       if(!emali_zeng.test(username.value)){
+         u=false; 
+       }else{
+          u=true;
+       }
+     }else{
+        u=false;
+     }
+     
+     if(!u){
+        b.innerHTML='<b></b>账户名不正确';
+        btn.style.backgroundColor="#d5d5d5" ;
+        btn.type="button";
+          b.style.display="block";  
+        }else{
+          b.innerHTML='';
+           b.style.display="none"; 
+          if( u && c){
+            btn.style.backgroundColor="#19A8E8";
+            btn.type="submit"; 
+            
+        }
+      }
+ };
+
+
+validation.oninput=function() {
+   if(validation.value=="" ){
+          c=false;
+          b1.innerHTML='<b></b>验证码不能为空';
+          btn.style.backgroundColor="#d5d5d5";
+          btn.type="button";
+            b1.style.display="block";   
+
+   }else{
+   	   c=true;
+       b1.innerHTML='';
+        b1.style.display="none";
+       if( u && c ){
+          btn.style.backgroundColor="#19A8E8";  
+          btn.type="submit";
+            
+        }
+
+   };
+
+ };
+
+ </script>
+
 	</body>
 
 </html>

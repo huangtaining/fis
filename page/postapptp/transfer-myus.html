@@ -38,28 +38,31 @@
 
                         <!-- 收款方账户-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;收款方账户&nbsp;:</label>
+                            <label class="control-label"><span class="yell must">*</span>&nbsp;收款方账户&nbsp;:</label>
                             <div class="controls">
                                 <input type="text" placeholder="请输入金额" style="margin-right: 18px">
                                 <span class="bull">从联系人中收取</span>
                                 <span style="margin-left: 18px" class="bull">批量付款</span>
+                                <span class="yzwww"></span>
                             </div>
                         </div>
 
                         <!-- 收款方名称-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;收款方名称&nbsp;:</label>
+                            <label class="control-label">&nbsp;收款方名称&nbsp;:</label>
                             <div class="controls">
-                                <input type="text"style="margin-right: 18px">
+                                <input type="text"style="margin-right: 18px" class="yz">
                                 <span class="icon-phone"></span>
                             </div>
                         </div>
 
-                        <!-- 付款金额-->
+                        <!-- 充值金额-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;付款金额&nbsp;:</label>
+                            <label class="control-label"><span class="yell must">*</span>&nbsp;充值金额&nbsp;:</label>
                             <div class="controls">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" class="money" onchange="china()">元
+                                <input type="text" placeholder="请输入金额" class="money yz" data-yz="num">元
+                                <a class="icon-phone" style="margin-left: 20px"></a>
+                                <span class="yzwww"></span>
                             </div>
                         </div>
 
@@ -83,7 +86,7 @@
 
                         <!-- 商品信息-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;付款金额&nbsp;:</label>
+                            <label class="control-label"><span class="yell"></span>&nbsp;商品信息&nbsp;:</label>
                             <div class="controls">
                                 <input type="text" placeholder="请输入金额" style="margin-right: 18px">元
                             </div>
@@ -91,10 +94,11 @@
 
                         <!-- 资金用途-->
                         <div class="control-group">
-                            <label class="control-label"><span class="yell muuu">*</span>&nbsp;资金用途&nbsp;:</label>
+                            <label class="control-label"><span class="yell must">*</span>&nbsp;资金用途&nbsp;:</label>
                             <div class="controls">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px">元
+                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" data-yz="long">元
                                 <span style="margin-left: 18px">最长85个字符</span>
+                                <span class="yzwww"></span>
                             </div>
                         </div>
 
@@ -150,15 +154,13 @@
     var $ = require('jquery');
 
     //    验证必填字段
+    //    要验证的
     $(".step_button").click(function(){
-        var _mul=$(".muuu").length;
-        var a=0;
-        for(var i=0;i<_mul;i++){
-            if($(".muuu").eq(i).parent().siblings().children("input").val()){
-                a++
-            }
-        }
-        if(a==_mul){
+//        获取必填字段长度
+        var _mul=$(".must").length;
+//        获取已经验证通过字段长度
+        var _sul=$(".okk").length;
+        if(_mul==_sul){
             alert("验证通过")
         }else{
             alert("失败失败失败失败")
@@ -166,10 +168,46 @@
 
     });
 
+    //       列出当前页面需要验证的input的长度
+    for(var i=0;i<$(".yz").length;i++){
+        yanztype(i)
+    }
+    //       检验需要验证的input的内容的格式，
+    function yanztype(i){
+        $(".yz").eq(i).change(function(){
+            var _yztype=$(".yz").eq(i).attr("data-yz");
+            var _yzval=$(".yz").eq(i).val();
+            switch (_yztype){
+                case "num":{
+                    num(_yzval,i)
+                }break;
+                case "long":{
+
+                }
+            }
+        })
+    }
+    //    检验input格式
+    function num(v,i){
+        var _yznum=new RegExp("^[0-9]*$");
+        if(!_yznum.test(v)){
+            $(".yz").eq(i).siblings("span").html("格式错了乐乐乐乐");
+            $(".yz").eq(i).parent().siblings("label").children("span").removeClass("okk");
+        }else{
+            $(".yz").eq(i).parent().siblings("label").children("span").addClass("okk");
+            $(".yz").eq(i).siblings(".fwww").html("");
+            china()
+        }
+    }
+
+
+
+
+
     //    阿拉伯数字转化为中文
     function china(){
 //        哪里需要转换大小写
-        $(".money").val() || $(".money").html()
+        var _money=$(".money").val() || $(".money").html();
         function daxiaoxie(n) {
             var fraction = ['角','分'];
             var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];

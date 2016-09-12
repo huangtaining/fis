@@ -39,45 +39,49 @@
             <form action="">
                 <p>
                     <label for=""><em>*</em>被收款方账户:</label>
-                    <input type="text" class=""  placeholder="请输入用户名">
+                    <input type="text"  placeholder="请输入用户名" class="inpnull">
                     <span class="changeb" data-toggle="modal" data-target="#myModal">从联系人中选取</span>
+                    <span class="changeb" style="margin-left:13px;">批量收款</span>
+                    <span id="inners"></span>
                     <!-- 模态框（Modal） -->
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
+                            <div class="modal-content modalcontent">
+                                <div class="modal-header modalheader">
                                     <button type="button" class="close" data-dismiss="modal"
                                             aria-hidden="true">×
                                     </button>
-                                    <h5 class="modal-title" id="myModalLabel">
+                                    <h5 class="modal-title modaltitle" id="myModalLabel">
                                         选择收款人
                                     </h5>
                                 </div>
-                                <div class="modal-body">
 
-                                    <input type="text" class="form-control serchinp" placeholder="">
+                                <div class="modal-body modalbody">
 
-                                    <button type="button" class="btn btn-primary ">查找</button>
+                                    <input type="text" class="form-control serchinp" placeholder="请输入账号">
+
+                                    <button type="button" class="btn ">查询</button>
 
                                     <ul>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secone" class ="xuan" name="check" onclick="checkCanel(this)"><label for="secone" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="sectwo" class="xuan"   name="check" onclick="checkCanel(this)"><label for="sectwo" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secthr" class="xuan"   name="check" onclick="checkCanel(this)"><label for="secthr" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secfour" class="xuan"  name="check" onclick="checkCanel(this)"><label for="secfour" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="xuan"><label for="" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="checkbox" id="secfive" class="xuan"   name="check" onclick="checkCanel(this)"><label for="secfive" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                     </ul>
+
                                 </div>
-                                <div class="modal-footer">
+                                <div class="modal-footer modalfooter">
                                     <button type="button" class="btn btn-default active ">确定</button>
                                     <span>取消</span>
                                 </div>
@@ -93,8 +97,9 @@
                 </p>
                 <p>
                     <label for=""><em>*</em>收款金额:</label>
-                    <input type="text" placeholder="请输入金额">
+                    <input type="text" placeholder="请输入金额" onchange="china()" class="money">
                     <span>元 &nbsp;<img src="/imgs/icons/B3-1.png" alt=""> </span>
+                    <span id="innerst"></span>
                 </p>
                 <p>
                     <label for="">总金额大写:</label>
@@ -108,21 +113,22 @@
                 </p>
                 <p>
                     <label for="">商品用途:</label>
-                    <input type="text">
+                    <input type="text" placeholder="请输入商品用途">
                     <span></span>
                 </p>
                 <p>
                     <label for=""><em>*</em>资金用途:</label>
-                    <input type="text">
-                    <span>(最长85个字符)</span>
+                    <input type="text" placeholder="请输入资金用途" class="moneyu">
+                    <span class="formtis">(最长85个字符)</span>
+                    <span id="innerss"></span>
                 </p>
                 <p class="stail">
                     <label for="">详细说明:</label>
-                    <textarea id="txt"></textarea>
+                    <textarea id="txt"  placeholder="(最长85个字符)"></textarea>
 
                 </p>
                 <p>
-                    <button type="button" class="btn btn-primary nextbtn btndown">下一步</button>
+                    <button type="button" id="nextbtn" class="btn btn-primary nextbtn btndown">下一步</button>
                 </p>
             </form>
             <!--警告-->
@@ -133,5 +139,79 @@
     </div>
 </div>
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
+
+<script>
+    var $ = require('jquery');
+    function checkCanel(Obj){
+        $("input[name='check']").each(function(){
+            $(this).attr("checked",false);
+        });
+        Obj.checked=true;
+    }
+
+
+
+
+//    验证模块
+    $('#nextbtn').click(function(){
+//        被收款方账户不能为空
+        var val1=$('.inpnull').val();
+        if(val1==''){
+            inners.innerHTML='<span class="errstyle">不能为空</span>';
+        }else{
+            inners.innerHTML='<span></span>';
+        }
+//        收款金额不能为空
+        var val1=$('.money').val();
+        if(val1==''){
+            innerst.innerHTML='<span class="errstyle">不能为空</span>';
+        }else{
+            innerst.innerHTML='<span></span>';
+        }
+//        资金用途不能为空
+        var val1=$('.moneyu').val();
+        if(val1==''){
+            innerss.innerHTML='<span class="errstyle">不能为空</span>';
+        }else{
+            innerss.innerHTML='<span></span>';
+        }
+
+
+    })
+
+    //    阿拉伯数字转化为中文
+    function china() {
+//        哪里需要转换大小写
+        var _money = $(".money").val() || $(".money").html()
+
+        function daxiaoxie(n) {
+            var fraction = ['角', '分'];
+            var digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
+            var unit = [['元', '万', '亿'], ['', '拾', '佰', '仟']];
+            var head = n < 0 ? '欠' : '';
+            n = Math.abs(n);
+            var s = '';
+            for (var i = 0; i < fraction.length; i++) {
+                s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
+            }
+            s = s || '整';
+            n = Math.floor(n);
+            for (var i = 0; i < unit[0].length && n > 0; i++) {
+                var p = '';
+                for (var j = 0; j < unit[1].length && n > 0; j++) {
+                    p = digit[n % 10] + unit[1][j] + p;
+                    n = Math.floor(n / 10);
+                }
+                s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
+            }
+            var _bigmoney = head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
+
+//              输出到哪里
+            $(".totalmoney").val(_bigmoney);
+        }
+
+        daxiaoxie(_money)
+    }
+</script>
 </body>
 </html>

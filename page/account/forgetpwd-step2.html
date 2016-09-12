@@ -1,71 +1,158 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>找回密码2</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<link rel="stylesheet" href="../modules/css/bootstrapValidator.css" media="screen" title="no title">
+		<link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
 	</head>
+
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
 		<div class="forgot_password_box">
 			<div class="forgot_password password">
 				<h1>找回登录密码</h1>
-			<h2>用手机号码找回登陆密码</h2>
+				<h2>用手机号码找回登陆密码</h2>
 				<div class="bar_article clearfix">
-	<ul class="clearfix">
-		<li>
-			<div class="zhong">
-				<div class="tiao one"></div>
-				<div class="yuan one"><em>1</em></div>
-				<div class="tiao one"></div>
-			</div>
-			<p>收取短信，填写确认码</p>
-		</li>
-		<li>
-			<div class="zhong">
-				<div class="tiao"></div>
-				<div class="yuan"><em>2</em></div>
-				<div class="tiao"></div>
-			</div>
-			<p>重置登陆密码</p>
-		</li>
-		<li>
-			<div class="zhong">
-				<div class="tiao"></div>
-				<div class="yuan"><em>3</em></div>
-				<div class="tiao"></div>
-			</div>
-			<p>成功</p>
-		</li>
-	</ul>
-</div>
-
-
-        <div class="password_content content font_tishi">
-				<div class="yanzhen">
-					<em><i>&#10038 </i> 请输入您收到的确认码：</em><input type="text" placeholder="请输入邮箱确认"/>
-					<i class="i"><b></b>确认码格式错误</i>
+					<ul class="clearfix">
+						<li>
+							<div class="zhong">
+								<div class="tiao one"></div>
+								<div class="yuan one"><em>1</em></div>
+								<div class="tiao one"></div>
+							</div>
+							<p>收取短信，填写确认码</p>
+						</li>
+						<li>
+							<div class="zhong">
+								<div class="tiao"></div>
+								<div class="yuan"><em>2</em></div>
+								<div class="tiao"></div>
+							</div>
+							<p>重置登陆密码</p>
+						</li>
+						<li>
+							<div class="zhong">
+								<div class="tiao"></div>
+								<div class="yuan"><em>3</em></div>
+								<div class="tiao"></div>
+							</div>
+							<p>成功</p>
+						</li>
+					</ul>
 				</div>
-				<div class="yanzhen test"><em></em>银生宝已成功的向您绑定的手机<span>17384949928</span>发送一条<span>确认码</span>短信</div>
-			<div class="tishi">
-				<p><b></b>若1分钟内未收到确认码短信，您可以重新免费获取确认码</p>
-		        <div class="yanzhen yanzheng"><em><i>&#10038 </i> 在输入一次：</em><input type="text" placeholder="请再次输入登录密码"/>
-		            <span style="margin-left: 16px;"></span><em style="color: #019FE8;margin-left:20px;width:62px;">换一张</em>
-		        </div>
-		    </div>
-		        <div class="yanzhen"><em></em><div class="button">下一步</div></div>
-        </div>
 
+				<div class="personal_top">
+
+					<form id="defaultForm" method="post" class="form-horizontal ysbformvalidate" action="#">
+
+						<div class="password_content content font_tishi" style="padding:0">
+
+							<div class="biaodan">
+								<div class="form-group">
+									<label class="col-md-3 control-label" style="margin-left: 60px;width:265px;"><b>&#10038 </b> 请输入您收到的确认码：</label>
+									<div class="col-md-8">
+										<input type="text" name="ddlQuestion" id="" class="form-control"  placeholder="请输入确认码"/>
+										<div class="errorholder" style="width: 260px;">
+										</div>
+									</div>
+								</div>
+								<div class="yanzhen test" style="margin-left: 70px;"><em></em>银生宝已成功的向您绑定的手机<span>17384949928</span>发送一条<span>确认码</span>短信</div>
+
+								<div class="form-group tishi" style="margin: 10px auto 0px auto;">
+									<p><bb></bb>若1分钟内未收到确认码短信，您可以重新免费获取确认码</p>
+									<label class="col-md-3 control-label" style="margin-left: 60px;width:240px;"><b>&#10038 </b> 请输入图片里的验证码：</label>
+									<div class="col-md-8">
+										<input type="text" name="ddlQuestion" id="" class="form-control" style="width: 154px;height: 44px;" placeholder="请输入验证码"/>
+										 <span style="margin-left: 16px;width: 100px;height: 43px;vertical-align: middle;display: inline-block;background-color: pink;"></span>
+										 <em style="color: #019FE8;margin-left:0px;width:62px;padding-right: 0;">换一张</em>
+										<div class="errorholder" style="float: right;width: 260px;">
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							<div class="form-group">
+								<div class="button_btn" style="padding-bottom: 40px;padding-top: 0px;">
+									<button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin-left: 115px;">
+										确定
+									</button>
+								</div>
+							</div>
+
+						</div>
+
+					</form>
+				</div>
 
 			</div>
 		</div>
-
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
-		<script src="lib/mod.js"></script>
+
+		<script src="../lib/TweenMax.min.js" type="text/javascript" charset="utf-8" data-framework></script>
+
+		<script src="lib/mod.js" data-loader></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				require('modules/app/jquery.bootstrapValidator');
+
+				// Generate a simple captcha
+				function randomNumber(min, max) {
+					return Math.floor(Math.random() * (max - min + 1) + min);
+				};
+
+				$('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+				$("#btnSubmit").bind("click", function() {
+					alert("Submit");
+				});
+
+				$('#defaultForm').bootstrapValidator({
+					//live: 'disabled',
+					message: 'This value is not valid',
+					feedbackIcons: {
+						valid: 'glyphicon glyphicon-ok',
+						invalid: 'glyphicon', //glyphion-remove
+						validating: 'glyphicon glyphicon-refresh'
+					},
+					fields: {
+						ddlQuestion: {
+							validators: {
+								notEmpty: {
+									message: '不能为空'
+								}
+							}
+						}
+//						ddlQuestion1: {
+//							validators: {
+//								notEmpty: {
+//									message: '不能为空'
+//								}
+//							}
+//						}
+					}
+				});
+
+				// Validate the form manually
+				$('#validateBtn').click(function() {
+					$('#defaultForm').bootstrapValidator('validate');
+				});
+
+				$('#resetBtn').click(function() {
+					$('#defaultForm').data('bootstrapValidator').resetForm(true);
+				});
+			});
+		</script>
+
 		<script>
 			require('ui/index');
 		</script>
 		<!--SCRIPT_PLACEHOLDER-->
 	</body>
+
 </html>

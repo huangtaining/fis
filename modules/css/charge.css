@@ -142,10 +142,11 @@
     height:25px;
     width:16.5%;
     margin-right:16px;
+    padding-left:10px;
 }
 
 .form p{
-    margin-bottom:18px;
+    margin-bottom:24px;
 }
 .form p em{
     color:#EE8719;
@@ -173,7 +174,8 @@
     height:151px;
     width:329px;
     margin-left:17.4%;
-
+    padding-left:10px;
+    padding-top:5px;
 }
 .stail{
     position:relative;
@@ -182,53 +184,73 @@
     display: inline-block;
     position:absolute;
 }
-
+.errstyle{
+    color:#FF8700;
+    font-size:12px;
+    display: inline-block;
+    height:22px;
+    padding:0 13px 0 40px;
+    line-height:22px;
+    background-color:#F7F7F7;
+    background:url("/imgs/icons/A2.png") no-repeat 10px center;
+    margin-left:10px;
+}
 /*选择联系人*/
-.modal-content{
+/*.modal{*/
+    /*background-color:transparent!important;*/
+/*}*/
+.modalcontent{
     width:380px;
-    position:absolute;
+    position:fixed;
     left:-160px;
-    top:305px;
+    top:555px;
 }
-.modal-body ul{
+.modalbody ul{
     margin-top:10px;
+    margin-left:5px;
+    width:337px;
 }
-.modal-body .find{
+.modalbody ul li{
+    padding:0;
+    border-bottom:1px solid #F0F0F0;
+}
+.modalbody .find{
     width:53px;
     margin-left:12px;
     color:white;
 
 }
-.modal-body button{
+.modalbody button{
     width:45px;
     height:25px;
     padding:0;
     margin-left:10px;
 }
-.modal-header{
-    border-bottom:1px dashed rgb(59,156,225);
+.modalheader{
+    border:none;
 }
-#xuan{
-    width:15px;
+.xuan{
+    width:15px!important;
     display: inline-block;
     vertical-align:bottom;
-    margin-left:15px;
+    margin-left:10px !important;
 }
-.modal-body .seclabel{
+.modalbody .seclabel{
     display: inline-block;
     width:250px;
-    margin-left:10px;
+    margin-left:5px;
     text-align: left;
     color:#919191;
 }
-.modal-footer button{
+.modalfooter button{
     width:75px;
     height:25px;
     line-height:10px;
     float:left;
+    margin-left:10px;
     margin-right:20px;
 }
-.modal-footer span{
+.modalfooter span{
     float:left;
     margin-right:20px;
 }
@@ -236,7 +258,6 @@
     margin:100px 0 0 23px;
     width:1155px;
     position:relative;
-
 }
 .alertdown p{
     margin-left:53px;
@@ -246,11 +267,20 @@
     left:20px;
     top:20px;
 }
-.modal-body .serchinp{
+.modalbody .serchinp{
     width:257px;
     float:left;
+    margin-left:10px;
     padding-left:25px;
     background:url("/imgs/icons/sousuo.png") no-repeat 5px center;
+}
+.modaltitle{
+    margin-left:10px;
+    font-size:20px;
+    color:#333333;
+}
+.modalfooter{
+    border:none;
 }
 /*多人收款*/
 .formpad{
@@ -272,14 +302,14 @@
     width:16.5%;
     margin-left:-5px;
 }
-.form p{
-    margin-bottom:15px;
-}
 .form p em{
     color:#EE8719;
 }
 .totalmoney{
     border:none;
+}
+.form .formtis{
+    color:#919191;
 }
 .severmoney{
     width:37px;
@@ -299,6 +329,8 @@
     height:75px;
     width:16.5%;
     margin-left:11.4%;
+    padding-left:10px;
+    padding-top:5px;
 }
 .stail{
     position:relative;
@@ -310,10 +342,12 @@
 
 .manype{
     padding-left:59px;
+
 }
+
 .manype .manyla{
     text-align: left;
-    width:150px!important;
+    width:155px!important;
 }
 .manype>input{
     width:150px;
@@ -371,7 +405,6 @@
     margin:0 18px 0 60px;
     font-weight: normal;
     color:#4A4A4A;
-    /*margin-right:18px;*/
 }
 .lastbtn{
     margin-top:50px;
@@ -379,6 +412,7 @@
 }
 .lastbtn input{
     width:75.3px;
+    padding-right:10px;
     height:25px;
     color:white;
     border:none;

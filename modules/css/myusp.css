@@ -50,8 +50,8 @@
     color: white !important;
 }
 .myusptx a{
-    color: white !important;
-}
+     color: white
+ }
 .myusptx .col-md-3{
      line-height: 30px;
      float: right;
@@ -85,13 +85,40 @@
  }
 .myusptx .col-md-8 div{
     line-height: 30px;
-
+    height: 30px;
+}
+.c8top{
+    font-size: 18px;
 }
 .toux{
     background: url("/imgs/myunspay/toux.png");
     background-size: 60px 60px;
     width: 60px;
     height: 60px;
+}
+.rz{
+    margin: 0 15px;
+    position: relative;
+}
+.rz span{
+    font-size: 14px;
+}
+.rz:hover span{
+    display: block;
+
+}
+.rz span{
+    display: none;
+    width: 120px;
+    background: white;
+    position: absolute;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    top:-55px;
+    left: -5px;
+    color: #000000;
+    box-shadow: 0 1px 5px #000;
 }
 .smicon1{
     background: url("/imgs/myunspay/toux1.png");
@@ -163,6 +190,7 @@
                 border-top-right-radius: 15px;
                 text-align: center;
                 line-height: 24px;
+                vertical-align:middle;
             }
             .crecardr{
                 float: right;
@@ -228,7 +256,6 @@
     margin-bottom: 10px;
 }
 .fir{
-    width: 50px ;
     height: 50px;
     margin: 0 auto;
     margin-top: 45px;
@@ -339,9 +366,6 @@
 }
 .col-five p{
     margin: 16px 0;
-}
-.col-five:last-child{
-    border-right: none;
 }
 /*浅色字*/
 .whi{

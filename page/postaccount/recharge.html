@@ -9,6 +9,7 @@
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
     <script src="../../modules/lib/ysbbase.min.js"></script>
     <script src="../../modules/js/yanz.js"></script>
+
 </head>
 <body>
 <!--head-->
@@ -57,12 +58,15 @@
 
                             <!-- 充值金额-->
                             <div class="control-group">
-                                <label class="control-label"><span class="yell muuu">*</span>&nbsp;充值金额&nbsp;:</label>
+                                <label class="control-label"><span class="yell must">*</span>&nbsp;充值金额&nbsp;:</label>
                                 <div class="controls">
-                                    <input type="text" placeholder="请输入金额" onchange="china()" class="money">元
+                                    <input type="text" placeholder="请输入金额" class="money yz" data-yz="num">元
                                     <a class="icon-phone" style="margin-left: 20px"></a>
+                                    <span class="yzwww"></span>
                                 </div>
                             </div>
+
+
 
                             <!--充值金额大写-->
                             <div class="control-group">
@@ -113,26 +117,67 @@
                 </div>
             </div>
 </div>
+
+<table id="btn-list" class="jsq">
+    <tr>
+        <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly" /></td>
+        <td onclick="operator('clear')" class="yell">C</td>
+        <td onclick="operator('backspace')" class="yell">CE</td>
+
+    </tr>
+    <tr>
+        <td onclick="typetoinput('7')" >7</td>
+        <td onclick="typetoinput('8')">8</td>
+        <td onclick="typetoinput('9')">9</td>
+        <td onclick="operator('opposite')">+/-</td>
+        <td onclick="operator('percent')">%</td>
+    </tr>
+    <tr>
+        <td onclick="typetoinput('4')">4</td>
+        <td onclick="typetoinput('5')">5</td>
+        <td onclick="typetoinput('6')">6</td>
+        <td onclick="operator('plus')">+</td>
+        <td onclick="operator('minus')">-</td>
+    </tr>
+    <tr>
+        <td onclick="typetoinput('1')">1</td>
+        <td onclick="typetoinput('2')">2</td>
+        <td onclick="typetoinput('3')">3</td>
+        <td onclick="operator('multiply')">*</td>
+        <td onclick="operator('divide')">/</td>
+    </tr>
+    <tr>
+        <td onclick="typetoinput('0')">40</td>
+        <td onclick="typetoinput('.')">.</td>
+        <td onclick="operator('result')">=</td>
+        <td>确定</td>
+        <td>取消</td>
+    </tr>
+</table>
+
+
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
 <script src="lib/mod.js" data-loader></script>
 
 <!--SCRIPT_PLACEHOLDER-->
+
+
 </body>
+
+
 </html>
 <script type="text/javascript">
     var $ = require('jquery');
 
     //    验证必填字段
+//    要验证的
     $(".step_button").click(function(){
-        var _mul=$(".muuu").length;
-        var a=0;
-        for(var i=0;i<_mul;i++){
-            if($(".muuu").eq(i).parent().siblings().children("input").val()){
-                a++
-            }
-        }
-        if(a==_mul){
+//        获取必填字段长度
+        var _mul=$(".must").length;
+//        获取已经验证通过字段长度
+        var _sul=$(".okk").length;
+        if(_mul==_sul){
             alert("验证通过")
         }else{
             alert("失败失败失败失败")
@@ -140,10 +185,43 @@
 
     });
 
+//       列出当前页面需要验证的input的长度
+    for(var i=0;i<$(".yz").length;i++){
+        yanztype(i)
+    }
+//       检验需要验证的input的内容的格式，
+     function yanztype(i){
+         $(".yz").eq(i).change(function(){
+             var _yztype=$(".yz").eq(i).attr("data-yz");
+             var _yzval=$(".yz").eq(i).val();
+             switch (_yztype){
+                 case "num":{
+                     num(_yzval,i)
+                 }break;
+             }
+         })
+     }
+//    检验input格式
+    function num(v,i){
+        var _yznum=new RegExp("^[0-9]*$");
+        if(!_yznum.test(v)){
+            $(".yz").eq(i).siblings("span").html("格式错了乐乐乐乐");
+            $(".yz").eq(i).parent().siblings("label").children("span").removeClass("okk");
+        }else{
+            $(".yz").eq(i).parent().siblings("label").children("span").addClass("okk");
+            $(".yz").eq(i).siblings(".yzwww").html("");
+            china()
+        }
+    }
+
+
+
+
+
     //    阿拉伯数字转化为中文
     function china(){
 //        哪里需要转换大小写
-        var _money=$(".money").val() || $(".money").html()
+        var _money=$(".money").val() || $(".money").html();
         function daxiaoxie(n) {
             var fraction = ['角','分'];
             var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];

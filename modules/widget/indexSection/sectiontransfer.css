@@ -1,38 +1,21 @@
 /*第三部分    转账付款*/
 
-.sectiontransfer {
-  width: 100%; overflow: hidden;
-}
 
-.payment {
-    position: relative;
-    background-color: #fff;
-}
 
-.payment .payment_bottom {
-    width: 100%;
-    background-color: #F7F7F7;
-}
-
-.payment .payment_bottom .payment_box {
-    width: 83%;
-    float: right;
-}
-
-.payment .payment_left {
+.payment .bglight {
     width: 430px;
-    padding: 114px 0;
+    padding: 114px 0 75px 0;
     text-align: left;
 }
 
-.payment .payment_left h1 {
+.payment .bglight h1 {
     padding: 0 0 50px;
     font-size: 50px;
     color: #585858;
     padding-bottom: 50px;
 }
 
-.payment .payment_left p {
+.payment .bglight p {
     padding-bottom: 50px;
     display: block;
     line-height: 30px;
@@ -50,31 +33,9 @@
     border-radius: 3px;
     text-align: center;
     cursor: pointer;
+    margin-top: 40px;
 }
 
-.payment .payment_box>div {
-    float: left;
-}
-
-.payment_right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    float: right;
-}
-
-.payment_right img {
-    width: 100%;
-    height: 100%;
-}
-
-@media only screen and (min-width: 1000px) and (max-width:1600px) {
-    .payment_right img {
-        width: 73%;
-        height: 538px;
-        float: right;
-    }
-}
 
 .payment .payment_top {
     width: 100%;
@@ -124,8 +85,50 @@
     color: #585858;
 }
 
-.sectiontransfer .active {
+.payment_top .active {
     -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
     filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
-    box-shadow: 2px 6px 20px #888888;
+    box-shadow: 2px 6px 8px #ccc;
 }
+
+			
+			.sectionA {
+				width: 100%;
+			}
+			
+			.container {
+				width: 1200px;
+				background-color: #F7F7F7;
+				border: none;
+			}
+			
+			.sectionA .container {}
+			
+			.sectionA .container .row,
+			.sectionA .container .row .col-md-4,
+			.sectionA .container .row .col-md-8 {
+				height: 100%;
+			}
+			
+			.bgpics {
+				background-image: url(/imgs/index/banner2.png);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				width: 1068px;
+				height: 550px;
+				margin-left: 68px;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
