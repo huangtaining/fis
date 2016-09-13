@@ -416,7 +416,7 @@ width: 25px;height: 20px;vertical-align: middle;display: inline-block;margin-rig
 }
 
 .tab-content .tab-pane ul li em{
-	width: 70px;display: inline-block;
+	padding: 0px 10px 0px 0px;display: inline-block;
 }
 
 .tab-content .tab-pane ul li input {

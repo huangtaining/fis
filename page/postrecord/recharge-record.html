@@ -10,7 +10,7 @@
 		<!--STYLE_PLACEHOLDER-->
 	</head>
 	<body>
-		<link rel="import" href="modules/widget/header/header.html?__inline">
+		<link rel="import" href="modules/widget/header/header-login.html?__inline">
   	 <!--交费记录-->
   <section class="trading_box">
     <div class="trading-record centre">
@@ -19,10 +19,10 @@
         <!--分页-->
         <ul id="myTab" class="nav nav-tabs">
             <li>
-                <a href="###" data-toggle="tab">所有交易记录</a>
+                <a href="#allpay" data-toggle="tab">所有交易记录</a>
             </li>
             <li>
-                <a href="#chongzhi" data-toggle="tab">充值记录</a>
+                <a href="###" data-toggle="tab">充值记录</a>
             </li>
             <li>
                 <a href="#tixian" data-toggle="tab">提现记录</a>
@@ -44,38 +44,239 @@
         <div id="myTabContent" class="tab-content">
         <!--所有交易记录-->       
             <div class="tab-pane fade in active" id="allpay">
-            	<div class="tad-pane_box">              
-                	<div class="recharge">
-                		<em>交易日期：</em>
-                		<input type="text" placeholder=''> - <input type="text" />
-                		<button>查询</button>
-                		<span>今天</span>
-                		<span>最近一周</span>
-                		<span>1个月</span>
-                		<span>3个月</span><span>1年</span>
-                	</div>               	                	 
+            	<div class="tad-pane_box recharge-record">
+                <ul class="clearfix">
+                	<li><em>缴费类型：</em><input type="radio" class="radio"/>公共事业费</li>
+                	<li><em style="margin-left: 16px;">充值缴费状态：</em>
+                		<select name="" id="">
+                		<option value="">所有状态</option>
+                		<option value="">已缴费</option>
+                		<option value="">未缴费</option>
+                		</select>
+                	</li>
+                	<li class="recharge_input"><em>充值缴纳金额：</em><input type="text"/> 至 <input type="text" /> 元</li>
+                 </ul>
+                <ul class="clearfix"> 
+                	<li class="recharge_input"><em>充值缴纳日期：</em><input type="text"/> 至 <input type="text" /></li>
+                	<li><em>条形码/手机号码：</em><input type="text"/></li>
+                	<li><button>查询</button></li>
+                </ul>               	                             	
               </div>
-    <div class="recharge_box">您已成功提现： <em>0.00</em>元  账户余额： <em>0.00</em>元</div>        
-              
-<!--表格-->           
-<table class="table table-striped">
+            <!--表格-->
+            
+            <table class="table table-striped">
 	<thead>
 		<tr>
-			<th style="padding-left: 30px;">交易编号</th>
-			<th>交易对方</th>
-			<th>交易类型</th>
-			<th>交易状态</th>
-			<th>交易时间</th>
-			<th>收/付</th>
-			<th>金额</th>
-			<th>服务费</th>
-			<th>操作</th>
+			<th style="padding-left: 30px;">缴费类型</th>
+			<th>公司</th>
+			<th>账单月份</th>
+			<th>条形码</th>
+			<th>缴费金额</th>
+			<th>手续费</th>
+			<th>状态</th>
+			<th>缴费时间</th>
+<!--			<th>操作</th>-->
 		</tr>
 	</thead>
+	<tbody>
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td>-7：00</td>
+			<!--<td>
+				<select name="" id="">
+					<option value="">详情</option>
+					<option value="">查看</option>
+					<option value="">删除</option>
+				</select>
+			</td>-->
+		</tr>
+		
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td>-7：00</td>
+			<!--<td>
+				<select name="" id="">
+					<option value="">详情</option>
+					<option value="">查看</option>
+					<option value="">删除</option>
+				</select>
+			</td>-->
+		</tr>
+		
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td>-7：00</td>
+			<!--<td>
+				<select name="" id="">
+					<option value="">详情</option>
+					<option value="">查看</option>
+					<option value="">删除</option>
+				</select>
+			</td>-->
+		</tr>
+		
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td>-7：00</td>
+			<!--<td>
+				<select name="" id="">
+					<option value="">详情</option>
+					<option value="">查看</option>
+					<option value="">删除</option>
+				</select>
+			</td>-->
+		</tr>
+		
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td>-7：00</td>
+			<!--<td>
+				<select name="" id="">
+					<option value="">详情</option>
+					<option value="">查看</option>
+					<option value="">删除</option>
+				</select>
+			</td>-->
+		</tr>
+		
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td>-7：00</td>
+			<!--<td>
+				<select name="" id="">
+					<option value="">详情</option>
+					<option value="">查看</option>
+					<option value="">删除</option>
+				</select>
+			</td>-->
+		</tr>
+		
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td>-7：00</td>
+			<!--<td>
+				<select name="" id="">
+					<option value="">详情</option>
+					<option value="">查看</option>
+					<option value="">删除</option>
+				</select>
+			</td>-->
+		</tr>
+	</tbody>
 </table>
-	
-	<div style="text-align:center;background-color: #fff;padding:100px 0;">暂无数据</div>
-</div>   
+    <div class="jilu clearfix">
+			<div class="jilu_left">支出：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:12</em>元）</div>
+			<div class="jilu_rigth">收入：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:88</em>元）</div>
+		</div>
+		
+		 <!--分栏-->
+        <div class="paging clearfix">
+            <div class="paging_left">当前 0-0 共7条 每页展现 <span class="shuzi">20</span> 条</div>
+            <div class="paging_rigth number">
+                    <a href="#">上一页&nbsp;</a>
+                    <a href="#" class="paac">1&nbsp;</a>
+                    <a href="#">2&nbsp;</a>
+                    <a href="#">3&nbsp;</a>
+                    <a href="#">4&nbsp;</a>
+                    <a href="#">5&nbsp;</a>
+                    <a href="#">6&nbsp;</a>
+                    <a href="#">下一页</a>&nbsp;&nbsp;
+                    <span style="margin-left:20px;">向&nbsp; <input id="nowpa" type="text" value="1"/> &nbsp;页&nbsp;</span>
+                    <button class="button" value="跳转">跳转</button>
+            </div>
+        </div>
+</div>
+  <!--弹出框-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" style="margin-top: 10%;">
+		<div class="modal-content" style="width:280px;margin: 0 auto;">
+			<div class="modal-header">
+			
+				<input type="text" /> — <input type="text" />
+			</div>
+			<div class="modal-body">
+				<p>快捷日期</p>
+				<span>昨天</span>
+				<span>过去7天</span>
+				<span>过去30天</span>
+				<span>过去3个月</span>
+			</div>
+			<div class="modal-footer">			
+				<button type="button" class="btn btn-primary">确定</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #fff;border: none;">取消</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+  
+  
+
+</div>
+
+       
     </div>
     
 </section>   

@@ -31,6 +31,40 @@
 .paging .paging_rigth a{text-align: center;}
 .paging .paging_rigth a:hover{color:#737373 ;}
 .paging .paging_rigth .paac{color:#ff7011}
+.tab-pane .tad-pane_box .radio{display: inline-block;width: 15px;height: 15px;margin-right:10px;vertical-align: middle;    margin-top: -2px;}
+
+.tab-pane .recharge-record ul li em{padding: 0px 10px 0px 0px ;}
+.tab-pane .recharge-record ul li.recharge_input input{width: 100px;}
+
+.tab-pane .tad-pane_box .recharge .download{width:91px;height:27px;background: url(../../imgs/icons/a_btn_05.png) no-repeat;margin-top: 3px;color: #0066cc;
+vertical-align: middle;margin-top: -3px;}
+.etcbill_information{padding:0 30px;font-weight: bold;}
+.tab-content .tab-pane .etcbill_information ul li{float: left;width: 20%;}
+.etcbill_information ul{background-color: #fcfcf3;border: 1px solid #f0f0f0;}
+.etcbill_information ul li em{width: 100px;text-align: right;}
+.etcbill_information ul li span b{color: #ff7011;font-weight: normal;}
+.etcbill_information ul li span{font-weight:normal;}
+.tab-content .tab-pane p{font-weight:bold;padding: 25px 25px 10px 25px;font-size: 16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
