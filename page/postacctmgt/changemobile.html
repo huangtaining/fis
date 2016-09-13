@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="import" href="../layout/header.html?__inline">
+
+</head>
+<body>
+<link rel="import" href="modules/widget/header/header.html?__inline">
+<section class="changemobile">
+    <div class="sub_coll">
+        <p class="position">您的当前位置：账户管理 > 账户信息 > 修改邮箱</p>
+    </div>
+    <div class="content">
+        <h2>修改手机号</h2>
+        <div class="email-content">
+            <div class="email-header">
+                <h3>修改手机号码</h3>
+                <p>您绑定的原手机号码是 <span>138****7378</span></p>
+            </div>
+
+            <div class="check-mobile">
+                <input type="checkbox" id="telone" name="check" onclick="checkCanel(this)">
+                <label for="telone">
+                    原手机号码不可用<br>
+                    <span>通过您绑定的邮箱修改手机号码</span>
+                </label>
+                
+            </div>
+
+            <div class="check-mobile">
+                <input type="checkbox" id="teltwo" name="check" onclick="checkCanel(this)">
+                <label for="teltwo">
+                    原手机号码可用<br>
+                    <span>用原手机接收短信验证码来绑定新手机</span>
+                </label>
+
+            </div>
+
+            <p class="nextbtn">
+                <button class="next">下一步</button>
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</section>
+
+
+<link rel="import" href="modules/widget/footer/footer.html?__inline">
+<script>
+
+    var $ = require('jquery');
+    function checkCanel(Obj){
+        $("input[name='check']").each(function(){
+            $(this).attr("checked",false);
+        });
+        Obj.checked=true;
+    }
+</script>
+
+</body>
+</html>

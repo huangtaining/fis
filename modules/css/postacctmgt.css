@@ -168,3 +168,81 @@
     width:75px;
     height:25px;
 }
+/*修改手机号*/
+.changemobile{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:33px;
+    padding-bottom:142px;
+}
+.changemobile .content{
+    width:1200px;
+    margin:0 auto;
+    margin-top:15px;
+}
+.changemobile .content h2{
+    padding:10px 0 10px 20px;
+    font-size:15px;
+    color:#333333;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+.changemobile .email-content{
+    height:632px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+
+}
+.changemobile .email-content .email-header{
+    padding:31px 0 26px 47px;
+
+}
+.changemobile .email-content .email-header h3{
+    font-size:15px;
+    color:#333333;
+}
+.changemobile .email-content .email-header p{
+    font-size:12px;
+    color:#585858;
+    margin-top:5px;
+}
+.changemobile .email-header p span{
+    color:#EE8719;
+}
+.changemobile .check-mobile{
+    margin-left:47px;
+    width:1103px;
+    padding:21px 0 29px 17px;
+    border:1px solid #F0F0F0;
+    margin-bottom:20px;
+}
+.changemobile .check-mobile input{
+    height:14px;
+    width:14px;
+    vertical-align: top;
+}
+.changemobile .check-mobile label{
+    font-weight:normal;
+    color:#333333;
+    margin-left:5px;
+}
+.changemobile .check-mobile label span{
+    font-size:12px;
+    color:#585858;
+}
+.changemobile .nextbtn{
+    margin:40px 0 0 47px;
+
+}
+.changemobile .nextbtn .next{
+    width:90px;
+    height:25px;
+    background-color:#EE8719;
+    color:white;
+    border-radius: 3px;
+    border:none;
+
+}
+.changemobile .mobilebgc{
+    background-color:#F0F0F0;
+}
