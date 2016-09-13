@@ -94,43 +94,42 @@
                     <!--计算器-->
 
 
-                    <table id="btn-list" class="jsq ">
+                    <table id="btn-list" class="jsq">
                         <tr>
-                            <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly" /></td>
-                            <td onclick="operator('clear')" class="yell">C</td>
-                            <td onclick="operator('backspace')" class="yell">CE</td>
+                            <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly"/></td>
+                            <td class="jsqy yell"data-jsq="clear">C</td>
+                            <td class="jsqy yell"data-jsq="backspace">CE</td>
 
                         </tr>
                         <tr>
-                            <td onclick="typetoinput('7')" >7</td>
-                            <td onclick="typetoinput('8')">8</td>
-                            <td onclick="typetoinput('9')">9</td>
-                            <td onclick="operator('opposite')">+/-</td>
-                            <td onclick="operator('percent')">%</td>
+                            <td class="jsqn">7</td>
+                            <td class="jsqn">8</td>
+                            <td class="jsqn">9</td>
+                            <td class="jsqy" data-jsq="opposite">+/-</td>
+                            <td class="jsqy" data-jsq="percent">%</td>
                         </tr>
                         <tr>
-                            <td onclick="typetoinput('4')">4</td>
-                            <td onclick="typetoinput('5')">5</td>
-                            <td onclick="typetoinput('6')">6</td>
-                            <td onclick="operator('plus')">+</td>
-                            <td onclick="operator('minus')">-</td>
+                            <td class="jsqn">4</td>
+                            <td class="jsqn">5</td>
+                            <td class="jsqn">6</td>
+                            <td class="jsqy" data-jsq="plus">+</td>
+                            <td class="jsqy" data-jsq="minus">-</td>
                         </tr>
                         <tr>
-                            <td onclick="typetoinput('1')">1</td>
-                            <td onclick="typetoinput('2')">2</td>
-                            <td onclick="typetoinput('3')">3</td>
-                            <td onclick="operator('multiply')">*</td>
-                            <td onclick="operator('divide')">/</td>
+                            <td class="jsqn">1</td>
+                            <td class="jsqn">2</td>
+                            <td class="jsqn">3</td>
+                            <td class="jsqy" data-jsq="multiply">*</td>
+                            <td class="jsqy" data-jsq="divide">/</td>
                         </tr>
                         <tr>
-                            <td onclick="typetoinput('0')">40</td>
-                            <td onclick="typetoinput('.')">.</td>
-                            <td onclick="operator('result')">=</td>
-                            <td>确定</td>
-                            <td>取消</td>
+                            <td class="jsqn">40</td>
+                            <td class="jsqn">.</td>
+                            <td class="jsqy" data-jsq="result">=</td>
+                            <td class="int">确定</td>
+                            <td class="clea">取消</td>
                         </tr>
                     </table>
-
 
 
                 </form>
@@ -159,6 +158,8 @@
         }else{
             inners.innerHTML='<span></span>';
         }
+
+
 //        收款金额不能为空
         var val1=$('.money').val();
         if(val1==''){
@@ -182,6 +183,16 @@
     $('.formjsq').click(function(){
         $('.jsq').css('display','block');
     })
+
+
+
+    $(".int").click(function(){
+        var _result=$("#input-box").val();
+        console.log(typeof _result);
+        //结果输出在哪里
+        $(".money").val(_result);
+        china()
+    });
     //    阿拉伯数字转化为中文
     function china(){
     //        哪里需要转换大小写

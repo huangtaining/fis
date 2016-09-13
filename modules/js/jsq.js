@@ -11,8 +11,7 @@ $(".icon-jsq").click(function(e){
     var _oy=e.clientY;
     var _oo=window.scrollY;
     console.log(_ox+"ssss"+_oy);
-    $(".jsq").show();
-    $(".jsq").css({left:_ox+100,top:_oy+_oo});
+    $(".jsq").show().css({left:_ox+100,top:_oy+_oo});
 });
 
 

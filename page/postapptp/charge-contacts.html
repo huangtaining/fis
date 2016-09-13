@@ -5,6 +5,10 @@
     <title>选择联系人</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="import" href="../layout/header.html?__inline">
+    <script src="/modules/js/jsq.js"></script>
+    <script>
+        require('modules/js/jsq');
+    </script>
 </head>
 <body>
 <link rel="import" href="modules/widget/header/header.html?__inline">
@@ -98,7 +102,7 @@
                 <p>
                     <label for=""><em>*</em>收款金额:</label>
                     <input type="text" placeholder="请输入金额" onchange="china()" class="money">
-                    <span>元 &nbsp;<img src="/imgs/icons/B3-1.png" alt=""> </span>
+                    <span>元 &nbsp;<em class="formjsq"><img src="/imgs/icons/B3-1.png" alt=""></em> </span>
                     <span id="innerst"></span>
                 </p>
                 <p>
@@ -130,6 +134,48 @@
                 <p>
                     <button type="button" id="nextbtn" class="btn btn-primary nextbtn btndown">下一步</button>
                 </p>
+
+
+                <!--计算器-->
+
+
+                <table id="btn-list" class="jsq jsqtwo">
+                    <tr>
+                        <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly"/></td>
+                        <td class="jsqy yell"data-jsq="clear">C</td>
+                        <td class="jsqy yell"data-jsq="backspace">CE</td>
+
+                    </tr>
+                    <tr>
+                        <td class="jsqn">7</td>
+                        <td class="jsqn">8</td>
+                        <td class="jsqn">9</td>
+                        <td class="jsqy" data-jsq="opposite">+/-</td>
+                        <td class="jsqy" data-jsq="percent">%</td>
+                    </tr>
+                    <tr>
+                        <td class="jsqn">4</td>
+                        <td class="jsqn">5</td>
+                        <td class="jsqn">6</td>
+                        <td class="jsqy" data-jsq="plus">+</td>
+                        <td class="jsqy" data-jsq="minus">-</td>
+                    </tr>
+                    <tr>
+                        <td class="jsqn">1</td>
+                        <td class="jsqn">2</td>
+                        <td class="jsqn">3</td>
+                        <td class="jsqy" data-jsq="multiply">*</td>
+                        <td class="jsqy" data-jsq="divide">/</td>
+                    </tr>
+                    <tr>
+                        <td class="jsqn">40</td>
+                        <td class="jsqn">.</td>
+                        <td class="jsqy" data-jsq="result">=</td>
+                        <td class="int">确定</td>
+                        <td class="clea">取消</td>
+                    </tr>
+                </table>
+
             </form>
             <!--警告-->
             <div class="alert alert-warning alertdown" role="alert">
@@ -149,7 +195,20 @@
         Obj.checked=true;
     }
 
+    //    计算器
+    $('.formjsq').click(function(){
+        $('.jsq').css('display','block');
+    })
 
+
+
+    $(".int").click(function(){
+        var _result=$("#input-box").val();
+        console.log(typeof _result);
+        //结果输出在哪里
+        $(".money").val(_result);
+        china()
+    });
 
 
 //    验证模块

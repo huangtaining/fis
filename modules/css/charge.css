@@ -197,14 +197,28 @@
     background:url("/imgs/icons/A2.png") no-repeat 10px center;
     margin-left:10px;
 }
-
+/*计算器*/
 .form .jsq{
     position:absolute;
-    top:90%;
+    top:61%;
     left:45%;
     display:none;
+    background-color:white;
 }
-
+.form .jsqtwo{
+    position:absolute;
+    top:68%;
+    left:45%;
+}
+.form .jsq input{
+    width:100%;
+    border:0;
+    text-align: right;
+    padding:0 10px;
+}
+.form .jsq .yell{
+    color:#EE8719;
+}
 
 .form .jsq td{
     border: 1px solid #E8E8E8;
@@ -222,10 +236,10 @@
     /*position:relative;*/
 /*}*/
 .modalcontent{
-    width:380px;
+    width:400px;
     position:fixed;
-    left:-160px;
-    top:555px;
+    left:25%;
+    top:550px;
 }
 .modalbody ul{
     margin-top:10px;
