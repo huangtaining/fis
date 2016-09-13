@@ -86,3 +86,85 @@
 .acctinfo .account-right .acc-content .con-center em{
     color:#EE8719;
 }
+
+
+/*修改邮箱*/
+.changeemail{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:33px;
+    padding-bottom:142px;
+}
+.changeemail .content{
+    width:1200px;
+    margin:0 auto;
+    margin-top:15px;
+}
+.changeemail .content h2{
+    padding:10px 0 10px 20px;
+    font-size:15px;
+    color:#333333;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+.changeemail .email-content{
+    height:632px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+
+}
+.changeemail .email-content .email-header{
+    padding:26px 0 27px 47px;
+    border-bottom:1px solid #E8E8E8;
+}
+.changeemail .email-content .email-header h3{
+    font-size:15px;
+    color:#333333;
+}
+.changeemail .email-content .email-header p{
+    font-size:12px;
+    color:#585858;
+    margin-top:5px;
+}
+.changeemail .email-content label{
+    width:175px;
+    text-align: right;
+    margin-left:40px;
+    font-weight: normal;
+    margin-right:10px;
+}
+.changeemail .email-content label em{
+  color:#EE8719;
+}
+.changeemail .email-content .con-form{
+    padding-top:21px;
+}
+.changeemail .email-content .con-form span{
+    color:#EE8719;
+}
+.changeemail .email-content input{
+    width:186px;
+    height:25px;
+    margin-top:25px;
+}
+.changeemail .email-content .jhm{
+    margin:49px 0 0 67px;
+    padding-left:26px;
+    background:url("/imgs/icons/B3-2.png") no-repeat 0 1px;
+    line-height:25px;
+    font-size:12px;
+}
+.changeemail .email-content .jhm span{
+    font-size:14px;
+    color:#00A0E8;
+}
+.changeemail .lastbtn{
+    margin:0;
+}
+.changeemail .lastbtn #btn1{
+    margin-left:90px;
+}
+.changeemail .lastbtn input {
+    width:75px;
+    height:25px;
+}
