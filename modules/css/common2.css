@@ -21,6 +21,12 @@
 .yells{
     color:#EE881A !important;
 }
+.bull{
+    color:#47BDEF;
+}
+.bullq{
+     color: #00A0E8;
+}
 .lr{
     margin: 0 15px
 }
@@ -33,9 +39,7 @@
 .s16{
     font-size: 16px;
 }
-.bull{
-    color:#47BDEF;
-}
+
 .china{
     background: #F0F0F0;
     border: 2px solid #F0F0F0;
@@ -450,7 +454,7 @@ p{
     width: 100%;
     overflow: hidden;
 }
-.form-item input{
+.form-item input[type=text]{
     width: 185px;
     padding: 2px 8px;
     margin-right: 10px;
