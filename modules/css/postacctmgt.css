@@ -1,0 +1,88 @@
+/*账户信息*/
+.acctinfo{
+    width:100%;
+    height:878px;
+    background-color:#F7F7F7;
+    padding-top:37px;
+}
+.acctinfo .content{
+    width:1200px;
+    margin:0 auto;
+}
+.acctinfo .account-left{
+    width:235px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+    float:left;
+}
+.acctinfo .account-left ul li{
+    width:100%;
+    padding:20px 0;
+    border-bottom:1px solid #E8E8E8;
+    border-left:4px solid transparent;
+}
+.acctinfo .account-left ul li a{
+    margin-left:76px;
+    font-size:15px;
+    color:#585858;
+}
+.acctinfo .account-left ul .zhxx{
+    background:url("/imgs/icons/B4-1.png") no-repeat 41px center;
+}
+.acctinfo .account-left ul .yhkgl{
+    background:url("/imgs/icons/B4-2.png") no-repeat 41px center;
+}
+.acctinfo .account-left ul .lczh{
+    background:url("/imgs/icons/B4-3.png") no-repeat 41px center;
+}
+.acctinfo .account-left ul .wlzhgl{
+    background:url("/imgs/icons/B4-4.png") no-repeat 41px center;
+}
+.acctinfo .account-left ul .smrz{
+    background:url("/imgs/icons/B4-5.png") no-repeat 41px center;
+}
+.acctinfo .active{
+    border-left:4px solid #00A0E8!important;
+}
+.acctinfo .account-right{
+    width:947px;
+    padding-bottom:162px;
+    background-color:white;
+    float:right;
+    border:1px solid #E8E8E8;
+}
+.acctinfo .account-right h2{
+    padding:10px 0 10px 20px;
+    font-size:15px;
+    color:#333333;
+    border-bottom:1px solid #E8E8E8;
+}
+.acctinfo .account-right .acc-content{
+    width:909px;
+    height:70px;
+    margin:0 auto;
+    line-height:70px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.acctinfo .account-right .acc-content .con-left{
+    display:inline-block;
+    width:90px;
+    color:#4A4A4A;
+    margin-right:261px;
+}
+.acctinfo .account-right .acc-content .con-center{
+    display:inline-block;
+    width:274px;
+    height:100%;
+    color:#919191;
+}
+.acctinfo .account-right .acc-content .con-right{
+    display:inline-block;
+    width:140px;
+    float:right;
+    text-align: right;
+    color:#31B2EC;
+}
+.acctinfo .account-right .acc-content .con-center em{
+    color:#EE8719;
+}
