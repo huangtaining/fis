@@ -13,7 +13,7 @@ $(function(){
         var _mul = $(".must").length;
 //        获取已经验证通过字段长度
         var _sul = $(".okk").length;
-        console.log(_mul+"---"+_sul)
+        console.log(_mul+"---"+_sul);
         if (_mul == _sul) {
             alert("验证通过")
         } else {
@@ -65,6 +65,11 @@ $(function(){
     function china() {
 //        哪里需要转换大小写
         var _money = $(".money").val() || $(".money").html();
+        if(_money!=0){
+            daxiaoxie(_money)
+        }else{
+            $(".china").val("");
+        }
 
         function daxiaoxie(n) {
             var fraction = ['角', '分'];
@@ -87,11 +92,10 @@ $(function(){
                 s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
             }
             var _bigmoney = head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
-
 //              输出到哪里
             $(".china").val(_bigmoney);
         }
 
-        daxiaoxie(_money)
+
     }
 })

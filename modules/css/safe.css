@@ -83,3 +83,60 @@
 .masage tbody{
      background: #ffffff;
 }
+.yhkrz{
+    overflow: hidden;
+    width: 98%;
+    margin: 0 auto;
+    color: white;
+}
+.yhkrz .yhk{
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+    margin-bottom: 40px;
+    height: 150px;
+    border-radius: 10px;
+    background-position: -5px -5px;
+    background-size: 110% 110%;
+    box-shadow: 0 0 1px 1px #ccc;
+}
+.yhks{
+    height: 80%;
+    padding: 10px;
+    line-height: 50px;
+}
+.yhks p:nth-child(1){
+}
+.yhks p:nth-child(2){
+    text-align: right;
+    font-size: 20px;
+}
+.yhkx{
+    height: 20%;
+    background: white;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+}
+
+.zsyh{
+    background: url("/imgs/icons/B4-17.png");
+}
+.nyyh{
+    background: url("/imgs/icons/B4-19.png");
+}
+.jsyh{
+    background: url("/imgs/icons/B4-20.png");
+}
+.yhky{
+    border-radius: 50% 50%;
+    background: white;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    float: left;
+}
+
+
+

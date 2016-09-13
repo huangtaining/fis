@@ -32,7 +32,6 @@ for(var i=0;i<$(".jsqy").length;i++){
 }
 $(".int").click(function(){
     var _result=$("#input-box").val();
-    console.log(typeof _result);
     //结果输出在哪里
     $(".jisuan").siblings("input").val(_result);
     china()
@@ -84,7 +83,6 @@ function operator(type)
     switch (type)
     {
         case "clear":
-            console.log("ssss")
             input.value="0";
             _string.length=0;
             /*document.getElementById("ccc").innerHTML="";

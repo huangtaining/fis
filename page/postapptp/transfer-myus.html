@@ -7,6 +7,12 @@
     <link href="../../modules/css/myusp.css" rel="stylesheet">
     <link href="../../modules/css/common2.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css">
+    <script src="/modules/js/yanz.js"></script>
+    <script src="/modules/js/jsq.js"></script>
+    <script>
+        require('modules/js/yanz');
+        require('modules/js/jsq');
+    </script>
 </head>
 <body>
 
@@ -37,47 +43,47 @@
                     <fieldset>
 
                         <!-- 收款方账户-->
-                        <div class="control-group">
-                            <label class="control-label"><span class="yell must">*</span>&nbsp;收款方账户&nbsp;:</label>
-                            <div class="controls">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px">
-                                <span class="bull">从联系人中收取</span>
-                                <span style="margin-left: 18px" class="bull">批量付款</span>
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;收款方账户&nbsp;:</label>
+                            <div class="form-right">
+                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" class="fmpeople">
+                                <a class="bullq" data-toggle="modal" data-target="#myModal" href="###">从联系人中收取</a>
+                                <span style="margin-left: 18px" class="bullq">批量付款</span>
                                 <span class="yzwww"></span>
                             </div>
                         </div>
 
                         <!-- 收款方名称-->
-                        <div class="control-group">
-                            <label class="control-label">&nbsp;收款方名称&nbsp;:</label>
-                            <div class="controls">
+                        <div class="form-item">
+                            <label class="form-left">&nbsp;收款方名称&nbsp;:</label>
+                            <div class="form-right">
                                 <input type="text"style="margin-right: 18px" class="yz">
                                 <span class="icon-phone"></span>
                             </div>
                         </div>
 
                         <!-- 充值金额-->
-                        <div class="control-group">
-                            <label class="control-label"><span class="yell must">*</span>&nbsp;充值金额&nbsp;:</label>
-                            <div class="controls">
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;付款金额&nbsp;:</label>
+                            <div class="form-right">
                                 <input type="text" placeholder="请输入金额" class="money yz" data-yz="num">元
-                                <a class="icon-phone" style="margin-left: 20px"></a>
+                                <a class="icon-jsq jisuan" style="margin-left: 20px"></a>
                                 <span class="yzwww"></span>
                             </div>
                         </div>
 
                         <!--付款金额大写-->
-                        <div class="control-group">
-                            <label class="control-label">付款金额大写&nbsp;:</label>
-                            <div class="controls">
+                        <div class="form-item">
+                            <label class="form-left">付款金额大写&nbsp;:</label>
+                            <div class="form-right">
                                 <input type="text" class="china">
                             </div>
                         </div>
 
                         <!-- 服务费-->
-                        <div class="control-group">
-                            <label class="control-label">服务费&nbsp;:</label>
-                            <div class="controls">
+                        <div class="form-item">
+                            <label class="form-left">服务费&nbsp;:</label>
+                            <div class="form-right">
                                 <span class="yell" style="margin-right: 20px">10.00</span>元
                                 <a href="#" class="bull" style="margin-left: 20px">查看收费标准</a>
                             </div>
@@ -85,35 +91,35 @@
 
 
                         <!-- 商品信息-->
-                        <div class="control-group">
-                            <label class="control-label"><span class="yell"></span>&nbsp;商品信息&nbsp;:</label>
-                            <div class="controls">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px">元
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell"></span>&nbsp;商品信息&nbsp;:</label>
+                            <div class="form-right">
+                                <input type="text" placeholder="请输入金额" style="margin-right: 18px">
                             </div>
                         </div>
 
                         <!-- 资金用途-->
-                        <div class="control-group">
-                            <label class="control-label"><span class="yell must">*</span>&nbsp;资金用途&nbsp;:</label>
-                            <div class="controls">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" data-yz="long">元
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;资金用途&nbsp;:</label>
+                            <div class="form-right">
+                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" data-yz="long">
                                 <span style="margin-left: 18px">最长85个字符</span>
                                 <span class="yzwww"></span>
                             </div>
                         </div>
 
                         <!-- 备注-->
-                        <div class="control-group beizhu">
-                            <label class="control-label">备注&nbsp;:</label>
-                            <div class="controls">
+                        <div class="form-item beizhu">
+                            <label class="form-left">备注&nbsp;:</label>
+                            <div class="form-right">
                                 <textarea placeholder="最长85个字符" class="note"></textarea>
                             </div>
                         </div>
 
                         <!-- 上一步-->
-                        <div class="control-group">
-                            <label class="control-label">&nbsp;</label>
-                            <div class="controls">
+                        <div class="form-item">
+                            <label class="form-left">&nbsp;</label>
+                            <div class="form-right">
                                 <a class="btn btn-primary step_button">下一步</a>
                             </div>
                         </div>
@@ -126,7 +132,10 @@
                 <!--警告2-->
                 <div class="witwar stop">
                     <div class="gan"></div>
-                    <div class="gan_text">为配合国家实施反洗钱法,经济发垃圾分类数据连接拉链扣积分的离开家</div>
+                    <div class="gan_text">
+                        <p class="bot10">为配合国家实施《中华人民共和国反洗钱法》、《银行卡业务管理办法》等法律法规，打击洗钱、非法套现等犯罪行为，银生宝严禁信用卡套现、洗钱、虚假交易行为，</p>
+                        <p>一经发现将予以处罚，包括但不限于：限制提现、冻结账户、永久停止服务，并会影响相关信用记录。</p>
+                    </div>
                 </div>
 
             </div>
@@ -142,7 +151,89 @@
             </div>
         </div>
 
+
+
+<!--计算器-->
+<table id="btn-list" class="jsq">
+    <tr>
+        <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly"/></td>
+        <td class="jsqy yell"data-jsq="clear">C</td>
+        <td class="jsqy yell"data-jsq="backspace">CE</td>
+
+    </tr>
+    <tr>
+        <td class="jsqn">7</td>
+        <td class="jsqn">8</td>
+        <td class="jsqn">9</td>
+        <td class="jsqy" data-jsq="opposite">+/-</td>
+        <td class="jsqy" data-jsq="percent">%</td>
+    </tr>
+    <tr>
+        <td class="jsqn">4</td>
+        <td class="jsqn">5</td>
+        <td class="jsqn">6</td>
+        <td class="jsqy" data-jsq="plus">+</td>
+        <td class="jsqy" data-jsq="minus">-</td>
+    </tr>
+    <tr>
+        <td class="jsqn">1</td>
+        <td class="jsqn">2</td>
+        <td class="jsqn">3</td>
+        <td class="jsqy" data-jsq="multiply">*</td>
+        <td class="jsqy" data-jsq="divide">/</td>
+    </tr>
+    <tr>
+        <td class="jsqn">0</td>
+        <td class="jsqn">.</td>
+        <td class="jsqy" data-jsq="result">=</td>
+        <td class="int">确定</td>
+        <td class="clea">取消</td>
+    </tr>
+</table>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+                     <!--头部-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <p class="modal-title s20" id="myModalLabel">选择收款人</p>
+                    </div>
+                     <!--身体-->
+                    <div class="modal-body chpeople">
+                                          <input type="text"><button class="right">查询</button>
+                                          <ul>
+                                              <li><input type="radio" name="dxlxr">彭敏3(<a>pengmin8na@163.com</a>)</li>
+                                              <li><input type="radio" name="dxlxr">彭敏4(<a>pengmin8na@164.com</a>)</li>
+                                              <li><input type="radio" name="dxlxr">彭敏5(<a>pengmin8na@165.com</a>)</li>
+                                              <li><input type="radio" name="dxlxr">彭敏6(<a>pengmin8na@166.com</a>)</li>
+                                              <li><input type="radio" name="dxlxr">彭敏7(<a>pengmin8na@167.com</a>)</li>
+                                          </ul>
+                    </div>
+                      <!--jo-->
+                    <div class="modal-footer">
+
+                    <!--&lt;!&ndash;保存&ndash;&gt;-->
+                    <!--<button type="button" class="btn btn-primary">确定</button>-->
+                        <!--关闭-->
+                    <button type="button" class="btn btn-default modalqd" data-dismiss="modal">确定</button>
+                        <!--关闭-->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+
+
+                    </div>
+        </div>
+    </div>
 </div>
+
+</div>
+
 
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
@@ -151,88 +242,8 @@
 </body>
 </html>
 <script type="text/javascript">
-    var $ = require('jquery');
-
-    //    验证必填字段
-    //    要验证的
-    $(".step_button").click(function(){
-//        获取必填字段长度
-        var _mul=$(".must").length;
-//        获取已经验证通过字段长度
-        var _sul=$(".okk").length;
-        if(_mul==_sul){
-            alert("验证通过")
-        }else{
-            alert("失败失败失败失败")
-        }
-
-    });
-
-    //       列出当前页面需要验证的input的长度
-    for(var i=0;i<$(".yz").length;i++){
-        yanztype(i)
-    }
-    //       检验需要验证的input的内容的格式，
-    function yanztype(i){
-        $(".yz").eq(i).change(function(){
-            var _yztype=$(".yz").eq(i).attr("data-yz");
-            var _yzval=$(".yz").eq(i).val();
-            switch (_yztype){
-                case "num":{
-                    num(_yzval,i)
-                }break;
-                case "long":{
-
-                }
-            }
-        })
-    }
-    //    检验input格式
-    function num(v,i){
-        var _yznum=new RegExp("^[0-9]*$");
-        if(!_yznum.test(v)){
-            $(".yz").eq(i).siblings("span").html("格式错了乐乐乐乐");
-            $(".yz").eq(i).parent().siblings("label").children("span").removeClass("okk");
-        }else{
-            $(".yz").eq(i).parent().siblings("label").children("span").addClass("okk");
-            $(".yz").eq(i).siblings(".fwww").html("");
-            china()
-        }
-    }
-
-
-
-
-
-    //    阿拉伯数字转化为中文
-    function china(){
-//        哪里需要转换大小写
-        var _money=$(".money").val() || $(".money").html();
-        function daxiaoxie(n) {
-            var fraction = ['角','分'];
-            var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
-            var unit = [['元','万','亿'],['','拾','佰','仟']];
-            var head = n < 0?'欠':'';
-            n = Math.abs(n);
-            var s = '';
-            for (var i = 0; i < fraction.length; i++) {
-                s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
-            }
-            s = s || '整';
-            n = Math.floor(n);
-            for (var i = 0; i < unit[0].length && n > 0; i++) {
-                var p = '';
-                for (var j = 0; j < unit[1].length && n > 0; j++) {
-                    p = digit[n % 10] + unit[1][j] + p;
-                    n = Math.floor(n / 10);
-                }
-                s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
-            }
-            var _bigmoney=head + s.replace(/(零.)*零元/,'元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
-
-//              输出到哪里
-            $(".china").val(_bigmoney);
-        }
-        daxiaoxie(_money)
-    }
+    $(".modalqd").click(function(){
+            var _chpeople=$(".chpeople").find("input:checked").siblings("a").html();
+             $(".fmpeople").val(_chpeople)
+    })
 </script>
