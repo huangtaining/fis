@@ -37,27 +37,27 @@
                 <fieldset>
 
                     <!-- 当前账户余额-->
-                    <div class="control-group">
-                        <label class="control-label"><span class="yell ">*</span>&nbsp;当前账户余额&nbsp;:</label>
-                        <div class="controls">
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell ">*</span>&nbsp;当前账户余额&nbsp;:</label>
+                        <div class="form-right">
                             <span>987.446.213</span>元
                         </div>
                     </div>
 
                     <!-- 收款方账户汇总-->
-                    <div class="control-group">
-                        <label class="control-label"><span class="yell">*</span>&nbsp;收款方账户汇总&nbsp;:</label>
-                        <div class="controls">
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell">*</span>&nbsp;收款方账户汇总&nbsp;:</label>
+                        <div class="form-right">
                                   共<span class="yell lr">5</span>笔,总计<span class="yell lr money">46454</span>元
-                                   <a  href="#lxr" data-toggle="modal" class="lxr">从联系人中选取</a>
+                                   <a class="bullq" data-toggle="modal" data-target="#myModal" href="###">从联系人中选取</a>
                         </div>
                     </div>
 
 
                     <!--总金额大写-->
-                    <div class="control-group">
-                        <label class="control-label">总金额大写&nbsp;:</label>
-                        <div class="controls">
+                    <div class="form-item">
+                        <label class="form-left">总金额大写&nbsp;:</label>
+                        <div class="form-right">
                             <input type="text" class="china">
                         </div>
                     </div>
@@ -65,26 +65,26 @@
 
 
                     <!-- 资金用途-->
-                    <div class="control-group">
-                        <label class="control-label"><span class="yell muuu">*</span>&nbsp;资金用途&nbsp;:</label>
-                        <div class="controls">
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell muuu">*</span>&nbsp;资金用途&nbsp;:</label>
+                        <div class="form-right">
                             <input type="text" placeholder="请输入金额" style="margin-right: 18px">元
                             <span style="margin-left: 18px">最长85个字符</span>
                         </div>
                     </div>
 
                     <!-- 备注-->
-                    <div class="control-group beizhu">
-                        <label class="control-label">备注&nbsp;:</label>
-                        <div class="controls">
+                    <div class="form-item beizhu">
+                        <label class="form-left">备注&nbsp;:</label>
+                        <div class="form-right">
                             <textarea placeholder="最长85个字符" class="note"></textarea>
                         </div>
                     </div>
 
                     <!--下一步-->
-                    <div class="control-group">
-                        <label class="control-label">&nbsp;</label>
-                        <div class="controls">
+                    <div class="form-item">
+                        <label class="form-left">&nbsp;</label>
+                        <div class="form-right">
                             <a class="btn btn-primary step_button">下一步</a>
                         </div>
                     </div>
@@ -97,7 +97,10 @@
             <!--警告2-->
             <div class="witwar stop">
                 <div class="gan"></div>
-                <div class="gan_text" >为配合国家实施反洗钱法,经济发垃圾分类数据连接拉链扣积分的离开家</div>
+                <div class="gan_text">
+                    <p class="bot10">为配合国家实施《中华人民共和国反洗钱法》、《银行卡业务管理办法》等法律法规，打击洗钱、非法套现等犯罪行为，银生宝严禁信用卡套现、洗钱、虚假交易行为，</p>
+                    <p>一经发现将予以处罚，包括但不限于：限制提现、冻结账户、永久停止服务，并会影响相关信用记录。</p>
+                </div>
             </div>
 
         </div>
@@ -113,19 +116,39 @@
         </div>
     </div>
 
-      <!--模态框-->
-    <div id="lxr" class="modal hide fade in" style="display: none; ">
-        <div class="modal-header">
-            <a class="close" data-dismiss="modal">×</a>
-            <h3>这是一个模态框标题</h3>
-        </div>
-        <div class="modal-body">
-            <h4>模态框中的文本</h4>
-            <p>你可以在这添加一些文本。</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#" class="btn btn-success">唤醒活动</a>
-            <a href="#" class="btn" data-dismiss="modal">关闭</a>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--头部-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <p class="modal-title s20" id="myModalLabel">选择收款人</p>
+                </div>
+                <!--身体-->
+                <div class="modal-body chpeople">
+                    <input type="text"><button class="right">查询</button>
+                    <ul>
+                        <li><input type="checkbox" name="dxlxr">彭敏3(<a>pengmin8na@163.com</a>)</li>
+                        <li><input type="checkbox" name="dxlxr">彭敏4(<a>pengmin8na@164.com</a>)</li>
+                        <li><input type="checkbox" name="dxlxr">彭敏5(<a>pengmin8na@165.com</a>)</li>
+                        <li><input type="checkbox" name="dxlxr">彭敏6(<a>pengmin8na@166.com</a>)</li>
+                        <li><input type="checkbox" name="dxlxr">彭敏7(<a>pengmin8na@167.com</a>)</li>
+                    </ul>
+                </div>
+                <!--jo-->
+                <div class="modal-footer">
+
+                    <!--&lt;!&ndash;保存&ndash;&gt;-->
+                    <!--<button type="button" class="btn btn-primary">确定</button>-->
+                    <!--关闭-->
+                    <button type="button" class="btn btn-default modalqd" data-dismiss="modal">确定</button>
+                    <!--关闭-->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -139,54 +162,8 @@
 </body>
 </html>
 <script type="text/javascript">
-    var $ = require('jquery');
-
-    //    验证必填字段
-    $(".step_button").click(function(){
-        var _mul=$(".muuu").length;
-        var a=0;
-        for(var i=0;i<_mul;i++){
-            if($(".muuu").eq(i).parent().siblings().children("input").val()){
-                a++
-            }
-        }
-        if(a==_mul){
-            alert("验证通过")
-        }else{
-            alert("失败失败失败失败")
-        }
-
-    });
-
-    //    阿拉伯数字转化为中文
-    function china(){
-//        哪里需要转换大小写
-        var _money=$(".money").val() || $(".money").html();
-        function daxiaoxie(n) {
-            var fraction = ['角','分'];
-            var digit = ['零','壹','贰','叁','肆','伍','陆','柒','捌','玖'];
-            var unit = [['元','万','亿'],['','拾','佰','仟']];
-            var head = n < 0?'欠':'';
-            n = Math.abs(n);
-            var s = '';
-            for (var i = 0; i < fraction.length; i++) {
-                s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');
-            }
-            s = s || '整';
-            n = Math.floor(n);
-            for (var i = 0; i < unit[0].length && n > 0; i++) {
-                var p = '';
-                for (var j = 0; j < unit[1].length && n > 0; j++) {
-                    p = digit[n % 10] + unit[1][j] + p;
-                    n = Math.floor(n / 10);
-                }
-                s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
-            }
-            var _bigmoney=head + s.replace(/(零.)*零元/,'元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
-
-//              输出到哪里
-            $(".china").val(_bigmoney);
-        }
-        daxiaoxie(_money)
-    }
+    $(".modalqd").click(function(){
+        var _chpeople=$(".chpeople").find("input:checked").siblings("a").html();
+        $(".fmpeople").val(_chpeople)
+    })
 </script>

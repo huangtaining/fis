@@ -23,6 +23,7 @@ for(var i=0;i<$(".jsqn").length;i++){
     })
 }
 
+
 for(var i=0;i<$(".jsqy").length;i++){
 
     $(".jsqy").eq(i).click(function(){
@@ -30,6 +31,8 @@ for(var i=0;i<$(".jsqy").length;i++){
         operator(_yun)
     })
 }
+
+
 $(".int").click(function(){
     var _result=$("#input-box").val();
     //结果输出在哪里
@@ -223,6 +226,7 @@ function checknum(inputvalue)
 
 
 window.document.onkeydown = disableRefresh;
+
 function disableRefresh(evt){
     evt = (evt) ? evt : window.event
     if (evt.keyCode)
