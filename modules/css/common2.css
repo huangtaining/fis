@@ -517,3 +517,6 @@ p{
     line-height: 30px;
     border-bottom: 1px solid #ccc;
 }
+.form_succ .form-left,.form_succ .form-right{
+    padding: 5px 0;
+}
