@@ -7,4 +7,37 @@
 .all_detail .all_detail_box ul li em{display: inline-block;width:300px;text-align: right;color: #555;}
 .all_detail .all_detail_box ul li span{color: #333;font-weight: bold;margin-left: 10px;}
 .all_detail .all_detail_box ul li span b{color: #FA6A11;}
-.all_detail button{background: url(imgs/icons/gr_bt.png)no-repeat;width:92px;height:27px;line-height: 26px;border: none;color: #fff;margin: 20px 0 50px 250px;}
+.all_detail button{background-color: #009FE8;width:89px;height:27px;line-height: 26px;border: none;color: #fff;margin: 20px 0 50px 250px;border-radius:5px ;}
+/*充值记录*/
+.tab-pane .tad-pane_box .recharge input {
+	width: 120px;
+	border: 1px solid #009FE8;
+}
+
+.tab-pane .tad-pane_box .recharge button {
+	width: 77px;
+	height: 27px;
+	line-height: 27px;
+	color: #fff;
+	background-color: #009FE8;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.tab-pane .tad-pane_box .recharge span{margin-left: 15px;}
+
+.tab-pane .recharge_box{padding:20px 30px;background-color: #fdfbe2;margin-bottom: 30px;font-weight: bold;font-size: 15px;}
+.tab-pane .recharge_box em{color: #ff7011;}
+.paging .paging_rigth a{text-align: center;}
+.paging .paging_rigth a:hover{color:#737373 ;}
+.paging .paging_rigth .paac{color:#ff7011}
+
+
+
+
+
+
+
+
+
+

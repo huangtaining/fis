@@ -1,3 +1,5 @@
+
+header.header {
 a {
 	color: #333;
 	text-decoration: none;
@@ -27,12 +29,19 @@ a:hover {
 }
 
 .alipay-logo {
-	float: left;
-	height: 90px;
-	width: 180px;
-	background: url(logo03.png) 0 0 no-repeat;
-	margin-top: 10px;
-}
+        float: left;
+        height: 55px;
+        width: 150px;
+        background: url("/imgs/header/logo.png") 0 0 no-repeat;
+        margin-top: 25px;
+    }
+    .alipay-logo2 {
+        float: left;
+        height: 55px;
+        width: 150px;
+        background: url("/imgs/header/jicheng.png") 0 0 no-repeat;
+        margin-top: 25px;
+    }
 
 .alipay-logo:hover {
 	border: none;
@@ -106,4 +115,7 @@ span.username {
 	padding: 10px 0px 10px 40px;
 }
 
-.special-header_bottom ul li a:hover{color:#7c7c7c;}
+.special-header_bottom ul li a:hover{
+	color:#7c7c7c;
+	}
+}
