@@ -246,3 +246,151 @@
 .changemobile .mobilebgc{
     background-color:#F0F0F0;
 }
+
+/*解绑手机号*/
+.unbindmobile{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:33px;
+    padding-bottom:142px;
+}
+.unbindmobile .content{
+    width:1200px;
+    margin:0 auto;
+    margin-top:15px;
+}
+.unbindmobile .content h2{
+    padding:10px 0 10px 20px;
+    font-size:15px;
+    color:#333333;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+.unbindmobile .email-content{
+    height:auto;
+    border:1px solid #E8E8E8;
+    background-color:white;
+    padding-bottom:130px;
+}
+.unbindmobile .email-content .con-top{
+    height:194px;
+    width:100%;
+    border-bottom:1px solid #E8E8E8;
+}
+.unbindmobile .con-top ul{
+    width:1102px;
+    margin:0 auto;
+    /*margin-top:78px;*/
+    padding-top:78px;
+}
+.unbindmobile .con-top ul li{
+    height:10px;
+}
+.unbindmobile .con-top ul li:nth-child(1){
+    float:left;
+    width:570px;
+    background-color:#00A0E8;
+    position:relative;
+}
+.unbindmobile .con-top ul li:nth-child(2){
+    float:right;
+    width:532px;
+    background-color:#D5D5D5;
+    position:relative;
+}
+.unbindmobile .con-top ul li .one{
+    display:inline-block;
+    height:33px;
+    width:33px;
+    border-radius: 100%;
+    background-color:#00A0E8;
+    color:white;
+    line-height:33px;
+    text-align: center;
+    position:absolute;
+    left:50%;
+    top:-100%;
+}
+.unbindmobile .con-top ul li .two{
+    background-color:#D5D5D5;
+}
+.unbindmobile .con-top .one-content{
+    position:absolute;
+    left:47%;
+    top:38px;
+}
+.unbindmobile .con-top .two-content{
+    position:absolute;
+    left:43%;
+    top:38px;
+}
+.unbindmobile .con-bo{
+    width:100%;
+    padding:30px 47px 0 47px;
+
+}
+.unbindmobile .con-bo h3{
+    font-size:15px;
+    color:#333333;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+.unbindmobile .con-bo .dxyz{
+    font-size:12px;
+    margin-bottom:26px;
+}
+.unbindmobile .con-bo p em{
+    color:#EE8719;
+}
+.unbindmobile .con-bo p label{
+    width:132px;
+    text-align: right;
+    font-weight:normal;
+    margin-left:25px;
+    color:#585858;
+    margin-right:10px;
+}
+.unbindmobile .con-bo .con-test{
+    margin-top:25px;
+    margin-bottom:29px;
+}
+.unbindmobile .con-bo .con-test input{
+    width:186px;
+    height:25px;
+}
+.unbindmobile .con-bo .getyzm{
+    width:100%;
+    height:110px;
+    background-color:#F7F7F7;
+    padding:18px 0 0 85px;
+    margin-bottom:9px;
+}
+.unbindmobile .con-bo .getyzm .getyzm-waring{
+    background:url("/imgs/icons/B3-2.png") no-repeat;
+    padding-left:26px;
+    display:inline-block;
+    width:100%;
+}
+.unbindmobile .con-bo .getyzm .getyzm-time{
+    padding:4px 27px 5px 27px;
+    border:1px solid #DDDDDD;
+    display:inline-block;
+    margin-top:16px;
+    margin-left:110px;
+    background-color:#EEEEEE;
+}
+.unbindmobile .con-bo .tips{
+    color:#585858;
+    font-size:12px;
+    line-height:25px;
+    margin-left:40px;
+}
+.unbindmobile .con-bo p .sure{
+    width:90px;
+    height:25px;
+    background-color:#EE8719;
+    color:white;
+    border:none;
+    border-radius: 3px;
+    margin-left:170px;
+}
