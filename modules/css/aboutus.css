@@ -99,7 +99,7 @@
     margin-left:22px;
 }
 .contactustel .usphone{
-    font-size:30px;
+    font-size:28px;
     color:#4A4A4A;
     margin-top:48px;
     margin-left:25px;
@@ -399,13 +399,13 @@
 .company-news .wrap{
     width:990px;
     height:755px;
-    padding:0 60px;
+    padding:0 14px;
     background-color:white;
     float:right;
     border-top:1px solid #E8E8E8;
     border-right:1px solid #E8E8E8;
     border-bottom:1px solid #E8E8E8;
-    margin-bottom:127px;
+    margin-bottom:30px;
 }
 .company-news .wrap>div{
     display:none;
@@ -426,9 +426,31 @@
 
 }
 .company-news .wrap-content{
-    margin-top:28px;
+    margin-top:59px;
 }
-
+.company-news .wrap-content p{
+    /*width:960px;*/
+    /*height:60px;*/
+    padding:21px 22px 20px 26px;
+    /*line-height:60px;*/
+}
+.company-news .wrap-content p img{
+    /*vertical-align: top;*/
+    margin-top:-4px;
+    margin-right:12px;
+}
+.company-news .wrap-content p span{
+    float:right;
+}
+.company-news nav{
+    float:right;
+}
+.company-news nav .pagination li a{
+    margin-right:5px;
+}
+.addbgc{
+    background-color:#F7F7F7;
+}
 
 
 
