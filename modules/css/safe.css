@@ -13,19 +13,26 @@
 .safebo{
     border: 1px solid  #E8E8E8;;
 }
-.safebol{
-    width: 15%;
+.safebof{
+    width: 5%;
     display: inline-block;
     font-size: 18px;
+
+}
+.safebol{
+    width: 10%;
+    display: inline-block;
+    font-size: 18px;
+    color: #585858;
 }
 .safebor{
-     width: 80%;
+     width: 72%;
     display: inline-block;
     color: #9C9C9C;
 }
 .safe_tit{
        font-size: 20px;
-      color: #000000;
+      color: #4A4A4A;
 }
 
 .find .allbody{
@@ -139,6 +146,10 @@
     height: 30px;
     display: inline-block;
     float: left;
+}
+.safejdt{
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 

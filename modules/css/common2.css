@@ -208,6 +208,7 @@ a:hover{
 .card{
     overflow: hidden;
     margin-bottom: 20px;
+    width: 100%;
 }
 .card .row{
     width: 1152px;
@@ -217,6 +218,7 @@ a:hover{
      border-bottom: 1px solid #00A0E8;
     overflow: hidden;
     margin-bottom: 20px;
+    width: 100%;
  }
 .card_bo{
     width: 100%;
@@ -229,7 +231,12 @@ a:hover{
 #card2{
     z-index: 0;
 }
-
+.card_bo{
+    background: white;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
 .card_bo input{
     width: 20%;
     margin-right: 10%;
@@ -255,6 +262,8 @@ a:hover{
     height: 50px;
     line-height: 50px;
     margin-bottom: 20px;
+    width: 16%;
+    float: left;
 }
 .eccard_img{
     height: 100%;
