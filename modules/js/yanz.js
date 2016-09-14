@@ -11,7 +11,7 @@ var $ = require('jquery');
 $(function(){
     //    验证必填字段
 //    要验证的
-    $(".step_button"&&".step_button_s").click(function () {
+    $(".step_button").click(function () {
 //        获取必填字段长度
         var _mul = $(".must").length;
 //        获取已经验证通过字段长度
@@ -31,16 +31,14 @@ $(function(){
         }
         function yanztype(i) {
             $(".yz").eq(i).change(function () {
-
-                //验证重复的内容
-                chongfu(i);
-
+                console.log("change");
                 var _yztype = $(".yz").eq(i).attr("data-yz");
                 var _yzval = $(".yz").eq(i).val();
                 switch (_yztype) {
                     case "num":
                     {
                         num(_yzval, i);
+
                     }
                         break;
                 }
@@ -48,18 +46,6 @@ $(function(){
         }
     }
     bigyz();
-
-    function chongfu(a){
-        console.log(a+"ssss")
-        var _cf=new Array;
-        for(var i=0;i<$(".re").length;i++){
-            _cf[i]=$(".re").eq(i).val()
-        }
-        console.log(_cf)
-        if(_cf[0]!=_cf[1]){
-           $(".yz").eq(a).siblings(".yzwww").html("两次输入不一致")
-        }
-    }
 //       列出当前页面需要验证的input的长度
 
 //       检验需要验证的input的内容的格式，
