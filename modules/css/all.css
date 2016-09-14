@@ -12,6 +12,7 @@
 .tab-pane .tad-pane_box .recharge input {
 	width: 120px;
 	border: 1px solid #009FE8;
+	height: 25px;line-height: 25px;
 }
 
 .tab-pane .tad-pane_box .recharge button {
