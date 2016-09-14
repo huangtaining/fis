@@ -52,8 +52,6 @@ document.onselectstart=new Function("event.returnValue=false;");
 var _string=new Array();
 var _type;
 
-
-
 function typetoinput(num)
 {
     input=document.getElementById("input-box");

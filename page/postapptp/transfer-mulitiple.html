@@ -8,6 +8,12 @@
     <link href="../../modules/css/common2.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
     <script type="text/javascript" src="../../modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/js/yanz.js"></script>
+    <script src="/modules/js/jsq.js"></script>
+    <script>
+        require('modules/js/yanz');
+        require('modules/js/jsq');
+    </script>
 </head>
 <body>
 <!--head-->
@@ -48,7 +54,7 @@
                     <div class="form-item">
                         <label class="form-left"><span class="yell">*</span>&nbsp;收款方账户汇总&nbsp;:</label>
                         <div class="form-right">
-                                  共<span class="yell lr">5</span>笔,总计<span class="yell lr money">46454</span>元
+                                  共<span class="yell lr multipeo">0</span>笔,总计<span class="yell lr money multimoney">0</span>元
                                    <a class="bullq" data-toggle="modal" data-target="#myModal" href="###">从联系人中选取</a>
                         </div>
                     </div>
@@ -119,7 +125,7 @@
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content xdrfk">
                 <!--头部-->
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -127,14 +133,47 @@
                 </div>
                 <!--身体-->
                 <div class="modal-body chpeople">
-                    <input type="text"><button class="right">查询</button>
-                    <ul>
-                        <li><input type="checkbox" name="dxlxr">彭敏3(<a>pengmin8na@163.com</a>)</li>
-                        <li><input type="checkbox" name="dxlxr">彭敏4(<a>pengmin8na@164.com</a>)</li>
-                        <li><input type="checkbox" name="dxlxr">彭敏5(<a>pengmin8na@165.com</a>)</li>
-                        <li><input type="checkbox" name="dxlxr">彭敏6(<a>pengmin8na@166.com</a>)</li>
-                        <li><input type="checkbox" name="dxlxr">彭敏7(<a>pengmin8na@167.com</a>)</li>
-                    </ul>
+                    <table>
+                        <thead>
+                                  <tr>
+                                      <th><input type="checkbox"></th>
+                                      <th>账户名称</th>
+                                      <th>Email</th>
+                                      <th>手机号码</th>
+                                      <th>金额(元)</th>
+                                  </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td class="ck"><input type="checkbox"></td>
+                                    <td>彭敏</td>
+                                    <td>pengmmin1977@163.com</td>
+                                    <td>13758022117</td>
+                                    <td><input type="text" value="0.00"></td>
+                                </tr>
+                                <tr>
+                                    <td class="ck"><input type="checkbox"></td>
+                                    <td>彭敏</td>
+                                    <td>pengmmin1977@163.com</td>
+                                    <td>13758022117</td>
+                                    <td><input type="text" value="0.00"></td>
+                                </tr>
+                                <tr>
+                                    <td class="ck"><input type="checkbox"></td>
+                                    <td>彭敏</td>
+                                    <td>pengmmin1977@163.com</td>
+                                    <td>13758022117</td>
+                                    <td><input type="text" value="0.00"></td>
+                                </tr>
+                                <tr>
+                                    <td class="ck"><input type="checkbox"></td>
+                                    <td>彭敏</td>
+                                    <td>pengmmin1977@163.com</td>
+                                    <td>13758022117</td>
+                                    <td><input type="text" value="0.00"></td>
+                                </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <!--jo-->
                 <div class="modal-footer">
@@ -162,8 +201,24 @@
 </body>
 </html>
 <script type="text/javascript">
+      var _ct=-1;
     $(".modalqd").click(function(){
-        var _chpeople=$(".chpeople").find("input:checked").siblings("a").html();
-        $(".fmpeople").val(_chpeople)
+        var _zl=0;
+        var _dl="";
+        var _zp=$(".ck").find("input:checked").length;
+        for(var i=0;i<_zp;i++){
+            _zl+=parseInt($(".ck").find("input:checked").parents().siblings("td:last").children("input").val())
+        }
+        $(".multipeo").html(_zp);
+        $(".multimoney").html(_zl);
+        china()
     })
+    $(".xdrfk thead input:checkbox").click(function(){
+        _ct*=-1
+        if(_ct==-1){
+            $(".xdrfk tbody input:checkbox").prop("checked",false);
+        }else if(_ct==1){
+            $(".xdrfk tbody input:checkbox").prop("checked",true);
+        }
+    });
 </script>

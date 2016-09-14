@@ -523,3 +523,51 @@ p{
 .form_succ .form-left,.form_succ .form-right{
     padding: 5px 0;
 }
+/*向多人付款*/
+.bo .xdrfk{
+    width: 600px;
+    margin: 0 auto;
+}
+.bo .xdrfk table{
+     width: 100%;
+}
+.bo .xdrfk th{
+    background: #E8E8F5;
+}
+.bo .xdrfk th:nth-child(1){
+    width: 30px;
+    padding-left: 5px;
+}
+.bo .xdrfk tr td:nth-child(1){
+    width: 30px;
+    padding-left: 5px;
+}
+.bo .xdrfk th:nth-child(5){
+    width: 60px;
+    padding-right: 5px;
+}
+.bo .xdrfk tr td:nth-child(5){
+    width: 60px;
+    padding-right: 5px;
+}
+.bo .xdrfk tr td:nth-child(5) input{
+    width: 60px;
+}
+.bo .xdrfk th:nth-child(2){
+   text-align: center;
+}
+.bo .xdrfk tr td:nth-child(2){
+    text-align: center;
+}
+.bo .xdrfk th:nth-child(3){
+    text-align: center;
+}
+.bo .xdrfk tr td:nth-child(3){
+    text-align: center;
+}
+.bo .xdrfk th:nth-child(4){
+    text-align: center;
+}
+.bo .xdrfk tr td:nth-child(4){
+    text-align: center;
+}
