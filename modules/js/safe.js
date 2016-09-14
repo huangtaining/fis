@@ -21,9 +21,22 @@ $(".masage thead input").eq(1).click(function(){
     }
 });
 
+$(".openlxr").click(function(){
+})
+
+//改变勾选框颜色
+$(".ck").find(":checkbox").click(function(){
+    if($(this).prop("checked")){
+        $(this).parents().siblings("td:last").children("input").css("background","white")
+    }else{
+        $(this).parents().siblings("td:last").children("input").css("background","#E3E3E3")
+    }
+});
+//选择多个联系人并结算
 $(".modalqd").click(function(){
     var _zl=0;
     var _dl="";
+
     var _zp=$(".ck").find("input:checked").length;
     for(var i=0;i<_zp;i++){
         _zl+=parseInt($(".ck").find("input:checked").parents().siblings("td:last").children("input").val())
@@ -32,13 +45,20 @@ $(".modalqd").click(function(){
     $(".multimoney").html(_zl);
     china(_zl,$(".china"))
 });
+
+//选择联系人全选
 var _ct=-1;
 $(".xdrfk thead input:checkbox").click(function(){
-    _ct*=-1
+    _ct*=-1;
     if(_ct==-1){
         $(".xdrfk tbody input:checkbox").prop("checked",false);
     }else if(_ct==1){
         $(".xdrfk tbody input:checkbox").prop("checked",true);
+    }
+    if($(this).prop("checked")){
+        $(".lxrje").css("background","white")
+    }else{
+        $(".lxrje").css("background","#E3E3E3")
     }
 });
 

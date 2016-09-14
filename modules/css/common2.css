@@ -552,6 +552,7 @@ p{
 }
 .bo .xdrfk tr td:nth-child(5) input{
     width: 60px;
+    background: #E3E3E3;
 }
 .bo .xdrfk th:nth-child(2){
    text-align: center;
