@@ -1038,3 +1038,212 @@
 .financial .account-right .account-con table tr:nth-of-type(2n){
     background-color:#FFFDF9;
 }
+
+/*来往账户管理*/
+
+.tradeaccount{
+    width:100%;
+    height:878px;
+    background-color:#F7F7F7;
+    padding-top:37px;
+}
+.tradeaccount .content{
+    width:1200px;
+    margin:0 auto;
+}
+.tradeaccount .account-left{
+    width:235px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+    float:left;
+}
+.tradeaccount .account-left>ul>li{
+    width:100%;
+    padding:20px 0;
+    border-bottom:1px solid #E8E8E8;
+    border-left:4px solid transparent;
+}
+.tradeaccount .account-left>ul>li>a{
+    margin-left:76px;
+    font-size:15px;
+    color:#585858;
+}
+.tradeaccount .account-left>ul>.zhxx{
+    background:url("/imgs/icons/B4-1.png") no-repeat 41px center;
+}
+.tradeaccount .account-left ul .yhkgl{
+    background:url("/imgs/icons/B4-2.png") no-repeat 41px center;
+}
+.tradeaccount .account-left ul .lczh{
+    background:url("/imgs/icons/B4-3.png") no-repeat 41px center;
+}
+.tradeaccount .account-left ul .wlzhgl{
+    background:url("/imgs/icons/B4-4.png") no-repeat 41px center;
+}
+.tradeaccount .account-left ul .smrz{
+    background:url("/imgs/icons/B4-5.png") no-repeat 41px center;
+}
+.tradeaccount  .account-left>ul .active{
+    border-left:4px solid #00A0E8!important;
+}
+.tradeaccount .account-right{
+    width:947px;
+    padding-bottom:162px;
+    background-color:white;
+    float:right;
+    border:1px solid #E8E8E8;
+}
+.tradeaccount .account-right h2{
+    padding:10px 0 10px 20px;
+    font-size:15px;
+    color:#333333;
+    border-bottom:1px solid #E8E8E8;
+}
+.tradeaccount .account-right .account-con{
+    width:850px;
+    margin:0 auto;
+    padding-top:23px;
+}
+.tradeaccount .account-right .account-con .nav-tabs{
+    border:none;
+}
+.tradeaccount .account-right .account-con .nav-tabs li{
+
+    width:130px;
+}
+/*.tradeaccount .account-right .account-con .nav-tabs li:nth-child(1){*/
+    /*border-left:1px solid #E8E8E8!important;*/
+    /*border-top:1px solid #E8E8E8!important;*/
+/*}*/
+/*.tradeaccount .account-right .account-con .nav-tabs li:nth-child(2){*/
+    /**/
+/*}*/
+.tradeaccount .account-right .account-con ul{
+    width:275px;
+}
+.tradeaccount .account-right .tab-content{
+    height:290px;
+}
+.nav-tabs.nav-justified > li > a{
+    border-top:1px solid #ddd;
+}
+.tradeaccount .account-right .nav-tabs > li > a{
+    border-radius: 0;
+}
+.tradeaccount .account-right .account-con .tab-pane{
+    border:1px solid #E8E8E8;
+    height:198px;
+    margin-top:-2px;
+    /*padding-left:24px;*/
+    padding:23px 0 0 0;
+    /*padding-right:30px;*/
+    background-color:#F7F7F7;
+
+}
+.tradeaccount .account-right .nav-tabs > li.active > a{
+    border-bottom-color: transparent;
+}
+.tradeaccount .account-con .tab-pane p{
+    font-size:12px;
+    margin-bottom:28px;
+    margin-left:24px;
+}
+.tradeaccount .account-con .tab-pane .letter{
+    display:inline-block;
+    width:172px;
+    float:left;
+}
+.tradeaccount .account-con .tab-pane .letter-all em{
+    color:#00A0E8;
+    margin-left:10px;
+}
+.tradeaccount .account-con .tab-pane .chaxun input{
+    width:186px;
+    height:25px;
+    float:left;
+}
+.tradeaccount .account-con .tab-pane .chaxun .chazhao{
+    width:75px;
+    height:25px;
+    background-color:#00A0E8;
+    color:white;
+    border:0;
+    margin-left:20px;
+    border-radius: 3px;
+}
+.tradeaccount .account-con .tab-pane .chaxun .team{
+    float:right;
+    color:#00A0E8;
+}
+.tradeaccount .account-con .tab-pane .chaxun .sub-team{
+    margin-right:30px;
+}
+.tradeaccount .account-con .tab-pane table{
+    margin-top:-20px;
+    text-align: center;
+}
+.tradeaccount .account-con .tab-pane table tr{
+    height:50px;
+    font-size:12px;
+}
+.tradeaccount .account-con .tab-pane table th{
+    border:0;
+    text-align: center;
+}
+.tradeaccount .account-con .tab-pane table tr td:nth-child(1){
+    width:161px;
+}
+.tradeaccount .account-con .tab-pane table tr td:nth-child(2){
+    width:242px;
+}
+.tradeaccount .account-con .tab-pane table tr td:nth-child(3){
+    width:143px;
+}
+.tradeaccount .account-con .tab-pane table tr td:nth-child(4){
+    width:119px;
+}
+.tradeaccount .account-con .moreaction{
+    margin-top:39px;
+    color:#585858;
+
+}
+.tradeaccount .account-con .moreaction button{
+    width:86px;
+    height:25px;
+    color:#333333;
+    background-color:#EEEEEE;
+    border:1px solid #DDDDDD;
+}
+.tradeaccount .account-con .moreaction .xgfz{
+    margin-left:12px;
+    margin-right:20px;
+}
+.tradeaccount .account-con .nextpage{
+    width:848.8px;
+    height:40px;line-height:40px;
+    padding-left:32px;
+    color:#333333;
+    font-size:12px;
+    background-color:#F7F7F7;
+    margin-top:41px;
+    border-top:1px solid #E1E1E1;
+    border-bottom:1px solid #E1E1E1;
+}
+.tradeaccount .account-con .nextpage span{
+    float:left;
+}
+.tradeaccount .account-con .nextpage .pagenum{
+    /*padding:5px 15px;*/
+    font-size:12px;
+    width:45px;
+    height:25px;
+    margin:0 13px;
+    float:left;
+    margin-top:5px;
+}
+.tradeaccount .account-con .nextpage nav{
+    float:right;
+}
+.tradeaccount .account-right .account-con .pagination{
+    margin-top:0!important;
+}
