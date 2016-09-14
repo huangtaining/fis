@@ -5,6 +5,9 @@
  */
 
 var $ = require('jquery');
+
+
+
 $(function(){
     //    验证必填字段
 //    要验证的
@@ -56,22 +59,23 @@ $(function(){
         } else {
             $(".yz").eq(i).parent().siblings("label").children("span").addClass("okk");
             $(".yz").eq(i).siblings(".yzwww").html("");
-            china()
+            var _money = $(".money").val() || $(".money").html();
+            var _chiout=$(".china")
+            china(_money,_chiout)
         }
     }
 
-
 //    阿拉伯数字转化为中文
-    function china() {
+    function china(chin,chout) {
+        console.log("大小写")
 //        哪里需要转换大小写
-        var _money = $(".money").val() || $(".money").html();
-        if(_money!=0){
-            daxiaoxie(_money)
+        if(chin!=0){
+            daxiaoxie(chin,chout)
         }else{
-            $(".china").val("");
+            chout.val("");
         }
 
-        function daxiaoxie(n) {
+        function daxiaoxie(n,chout) {
             var fraction = ['角', '分'];
             var digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
             var unit = [['元', '万', '亿'], ['', '拾', '佰', '仟']];
@@ -93,9 +97,10 @@ $(function(){
             }
             var _bigmoney = head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
 //              输出到哪里
-            $(".china").val(_bigmoney);
+            (chout.val(_bigmoney))&&(chout.html(_bigmoney));
         }
 
 
     }
+
 })

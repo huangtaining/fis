@@ -10,9 +10,11 @@
     <script type="text/javascript" src="../../modules/lib/ysbbase.min.js"></script>
     <script src="/modules/js/yanz.js"></script>
     <script src="/modules/js/jsq.js"></script>
+    <script src="/modules/js/safe.js"></script>
     <script>
         require('modules/js/yanz');
         require('modules/js/jsq');
+        require('modules/js/safe');
     </script>
 </head>
 <body>
@@ -200,25 +202,3 @@
 <!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>
-<script type="text/javascript">
-      var _ct=-1;
-    $(".modalqd").click(function(){
-        var _zl=0;
-        var _dl="";
-        var _zp=$(".ck").find("input:checked").length;
-        for(var i=0;i<_zp;i++){
-            _zl+=parseInt($(".ck").find("input:checked").parents().siblings("td:last").children("input").val())
-        }
-        $(".multipeo").html(_zp);
-        $(".multimoney").html(_zl);
-        china()
-    })
-    $(".xdrfk thead input:checkbox").click(function(){
-        _ct*=-1
-        if(_ct==-1){
-            $(".xdrfk tbody input:checkbox").prop("checked",false);
-        }else if(_ct==1){
-            $(".xdrfk tbody input:checkbox").prop("checked",true);
-        }
-    });
-</script>

@@ -37,7 +37,7 @@ $(".int").click(function(){
     var _result=$("#input-box").val();
     //结果输出在哪里
     $(".jisuan").siblings("input").val(_result);
-    china()
+    china(_result,$(".china"))
 });
 
 
@@ -261,11 +261,17 @@ function disableRefresh(evt){
 };
 
 //    阿拉伯数字转化为中文
-function china() {
+function china(chin,chout) {
 //        哪里需要转换大小写
-    var _money = $(".money").val() || $(".money").html();
 
-    function daxiaoxie(n) {
+
+    if(chin!=0){
+        daxiaoxie(chin,chout)
+    }else{
+        chout.val("");
+    }
+
+    function daxiaoxie(n,chout) {
         var fraction = ['角', '分'];
         var digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
         var unit = [['元', '万', '亿'], ['', '拾', '佰', '仟']];
@@ -286,12 +292,11 @@ function china() {
             s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
         }
         var _bigmoney = head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
-
 //              输出到哪里
-        $(".china").val(_bigmoney);
+        (chout.val(_bigmoney))&&(chout.html(_bigmoney));
     }
 
-    daxiaoxie(_money)
+
 }
 
 
