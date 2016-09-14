@@ -621,7 +621,6 @@
 
 .bankmgt{
     width:100%;
-    /*height:878px;*/
     padding-bottom:220px;
     background-color:#F7F7F7;
     padding-top:37px;
@@ -832,4 +831,210 @@
 .bankmgt .yhkrz ul .addcard p{
     font-size:12px;
     margin-left:20px;
+}
+
+
+/*修改银行卡*/
+
+.changebankmgt{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:33px;
+    padding-bottom:142px;
+}
+.changebankmgt .content{
+    width:1200px;
+    margin:0 auto;
+    margin-top:15px;
+}
+.changebankmgt .content h2{
+    padding:10px 0 10px 20px;
+    font-size:15px;
+    color:#333333;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+.changebankmgt .card-content{
+    height:742px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+    padding-top:24px;
+
+}
+.changebankmgt .card-content ul li{
+    margin-bottom:31px;
+}
+.changebankmgt .card-content ul li label{
+    display: inline-block;
+    width:150px;
+    margin-left:36px;
+    font-weight: normal;
+    text-align: right;
+    margin-right:15px;
+    color:#585858;
+}
+.changebankmgt .card-content ul li label em{
+    color:#EE8719;
+}
+.changebankmgt .card-content ul li input{
+    width:186px;
+    height:25px;
+}
+.changebankmgt .card-content ul li .tips{
+    margin-left:204px;
+    font-size:12px;
+    color:#919191;
+    margin-top:3px;
+}
+.changebankmgt .card-content ul li .zjlx .sub-zjlx{
+    display: inline-block;
+    width:100px;
+    margin:0;
+    margin-left:6px;
+    margin-right:25px;
+}
+.changebankmgt .card-content ul li .zjlx input{
+    width:14px;
+    height:14px;
+    vertical-align: text-top;
+}
+.changebankmgt .card-content ul .bankadd p select{
+    width:100px;
+    height:25px;
+    background-color:#EEEEEE;
+    margin-right:20px;
+    padding-left:17px;
+}
+.changebankmgt .card-content ul .ssyh select{
+    width:186px;
+    height:25px;
+    background-color:#EEEEEE;
+    margin-right:20px;
+    padding-left:17px;
+}
+.changebankmgt .card-content ul li .bankname{
+    width:946px;
+    height:110px;
+    padding:18px 0 17px 43px;
+    margin-left:204px;
+    margin-top:10px;
+    color:#585858;
+    line-height:25px;
+    background:url("/imgs/icons/B3-2.png") no-repeat 17px 20px;
+    background-color:#F7F7F7;
+}
+.changebankmgt .card-content ul .bankbtn p{
+    margin-left:204px;
+}
+.changebankmgt .card-content ul .bankbtn button{
+    width:75px;
+    height:25px;
+    color:white;
+    border:none;
+    border-radius: 3px;
+}
+.changebankmgt .card-content ul .bankbtn .sure{
+    background-color:#EE8719;
+    margin-right:20px;
+}
+.changebankmgt .card-content ul .bankbtn .back{
+    background-color:#00A0E8;
+}
+
+
+/*理财账户*/
+
+.financial{
+    width:100%;
+    height:878px;
+    background-color:#F7F7F7;
+    padding-top:37px;
+}
+.financial .content{
+    width:1200px;
+    margin:0 auto;
+}
+.financial .account-left{
+    width:235px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+    float:left;
+}
+.financial .account-left ul li{
+    width:100%;
+    padding:20px 0;
+    border-bottom:1px solid #E8E8E8;
+    border-left:4px solid transparent;
+}
+.financial .account-left ul li a{
+    margin-left:76px;
+    font-size:15px;
+    color:#585858;
+}
+.financial .account-left ul .zhxx{
+    background:url("/imgs/icons/B4-1.png") no-repeat 41px center;
+}
+.financial .account-left ul .yhkgl{
+    background:url("/imgs/icons/B4-2.png") no-repeat 41px center;
+}
+.financial .account-left ul .lczh{
+    background:url("/imgs/icons/B4-3.png") no-repeat 41px center;
+}
+.financial .account-left ul .wlzhgl{
+    background:url("/imgs/icons/B4-4.png") no-repeat 41px center;
+}
+.financial .account-left ul .smrz{
+    background:url("/imgs/icons/B4-5.png") no-repeat 41px center;
+}
+.financial .active{
+    border-left:4px solid #00A0E8!important;
+}
+.financial .account-right{
+    width:947px;
+    padding-bottom:162px;
+    background-color:white;
+    float:right;
+    border:1px solid #E8E8E8;
+}
+.financial .account-right h2{
+    padding:10px 0 10px 20px;
+    font-size:15px;
+    color:#333333;
+    border-bottom:1px solid #E8E8E8;
+}
+.financial .account-right .account-con{
+    width:850px;
+    margin:0 auto;
+    padding-top:23px;
+}
+.financial .account-right .account-con th{
+    width:283px;
+    text-align: center;
+    color:#585858;
+    background-color:#F7F7F7;
+}
+.financial .account-right .account-con th:nth-child(1){
+    text-align: left;
+    padding-left:34px;
+}
+.financial .account-right .account-con table{
+    border-color:#E8E8E8;
+}
+.financial .account-right .account-con table tr{
+    height:50px;
+    text-align: center;
+
+}
+.financial .account-right .account-con table tr td{
+    font-size:12px;
+}
+.financial .account-right .account-con table tr td:nth-child(1){
+    padding-left:34px;
+    text-align: left;
+}
+.financial .account-right .account-con table tr td:nth-child(2){
+    color:#EE8719;
+}
+.financial .account-right .account-con table tr:nth-of-type(2n){
+    background-color:#FFFDF9;
 }
