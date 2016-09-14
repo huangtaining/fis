@@ -446,7 +446,6 @@
     padding-bottom:162px;
     /*background-color:white;*/
     float:right;
-
 }
 .authentication .account-right .sfrz{
     height:240px;
@@ -495,15 +494,11 @@
 
 }
 .authentication .yhkrz ul li{
-    /*height:143px;*/
-    /*width:250px;*/
     float:left;
     margin-bottom: 45px;
-    /*border:1px solid #E8E8E8;*/
-    border-radius: 6px;
+    border-radius:6px;
 }
 .authentication .yhkrz ul .zsyh{
-    /*height:143px;*/
     margin-right:35px;
 }
 .authentication .yhkrz ul .zsyh .sub-zsyh{
@@ -511,6 +506,8 @@
     height:109px;
     padding:13px 13px 0 19px;
     color:white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .authentication .yhkrz ul .zsyh .zsyh-con{
     font-size:17px;
@@ -530,13 +527,13 @@
 }
 .authentication .yhkrz ul .zsyh .kjzf{
     height:34px;
-    width:248px;
+    width:250px;
     background-color:#F9F9F9;
     line-height:34px;
     padding-left:19px;
-    margin-top:-5px;
-    /*margin-left:2px;*/
-    /*border-radius: 6px;*/
+    margin-top:-2px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .authentication .yhkrz ul .jsyh{
@@ -544,12 +541,12 @@
 }
 .authentication .yhkrz ul .jsyh .sub-jsyh{
     background:url("/imgs/icons/B4-20.png") no-repeat -4px -5px;
-    /*background-size:254px 109px;*/
     height:109px;
     width:250px;
     padding:13px 13px 0 19px;
-    /*font-size:17px;*/
     color:white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .authentication .yhkrz ul .jsyh .jsyh-con{
     font-size:17px;
@@ -573,7 +570,9 @@
     background-color:#F9F9F9;
     line-height:34px;
     padding-left:19px;
-    margin-top:-5px;
+    margin-top:-2px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .authentication .yhkrz ul .nyyh{
@@ -583,9 +582,11 @@
 .authentication .yhkrz ul .nyyh .sub-nyyh{
     background:url("/imgs/icons/B4-19.png") no-repeat -4px -5px;
     height:109px;
-    width:250px;
+    width:246px;
     padding:13px 13px 0 19px;
     color:white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .authentication .yhkrz ul .nyyh .nyyh-con{
     font-size:17px;
@@ -601,7 +602,7 @@
     margin-top:22px;
     font-size:20px;
     color:#FFFFFF;
-    margin-left:43px;
+    margin-left:40px;
 }
 .authentication .yhkrz ul .nyyh .kjzf{
     height:34px;
@@ -609,7 +610,224 @@
     background-color:#F9F9F9;
     line-height:34px;
     padding-left:19px;
-    margin-top:-5px;
+    margin-top:-2px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 
+/*银行卡管理*/
+
+
+.bankmgt{
+    width:100%;
+    height:878px;
+    background-color:#F7F7F7;
+    padding-top:37px;
+}
+.bankmgt .content{
+    width:1200px;
+    margin:0 auto;
+}
+.bankmgt .account-left{
+    width:235px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+    float:left;
+}
+.bankmgt .account-left ul li{
+    width:100%;
+    padding:20px 0;
+    border-bottom:1px solid #E8E8E8;
+    border-left:4px solid transparent;
+}
+.bankmgt .account-left ul li a{
+    margin-left:76px;
+    font-size:15px;
+    color:#585858;
+}
+.bankmgt .account-left ul .zhxx{
+    background:url("/imgs/icons/B4-1.png") no-repeat 41px center;
+}
+.bankmgt .account-left ul .yhkgl{
+    background:url("/imgs/icons/B4-2.png") no-repeat 41px center;
+}
+.bankmgt .account-left ul .lczh{
+    background:url("/imgs/icons/B4-3.png") no-repeat 41px center;
+}
+.bankmgt .account-left ul .wlzhgl{
+    background:url("/imgs/icons/B4-4.png") no-repeat 41px center;
+}
+.bankmgt .account-left ul .smrz{
+    background:url("/imgs/icons/B4-5.png") no-repeat 41px center;
+}
+.bankmgt .active{
+    border-left:4px solid #00A0E8!important;
+}
+.bankmgt .account-right{
+    width:947px;
+    padding-bottom:162px;
+    /*background-color:white;*/
+    float:right;
+}
+.bankmgt .account-right .yhkrz{
+    height:480px;
+    background-color:white;
+    border:1px solid #E8E8E8;
+}
+.bankmgt .yhkrz h2{
+    padding:10px 20px 10px 20px;
+    border-bottom:1px solid #E8E8E8;
+    font-size:15px;
+    color:#585858;
+}
+.bankmgt .yhkrz h2 span{
+    float:right;
+    font-size:12px;
+    color:#00A0E8;
+}
+.bankmgt .yhkrz ul{
+    margin:32px 0 0 50px;
+
+}
+.bankmgt .yhkrz ul li{
+    float:left;
+    margin-bottom: 32px;
+    border-radius:6px;
+}
+.bankmgt .yhkrz ul .zsyh{
+    margin-right:35px;
+}
+.bankmgt .yhkrz ul .zsyh .sub-zsyh{
+    background:url("/imgs/icons/B4-17.png") no-repeat -4px -5px;
+    height:109px;
+    padding:13px 13px 0 19px;
+    color:white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.bankmgt .yhkrz ul .zsyh .zsyh-con{
+    font-size:17px;
+    color:white;
+    margin-left:10px;
+}
+.bankmgt .yhkrz ul .zsyh .zsyh-cont{
+    float:right;
+    font-size:12px;
+    margin-top:6px;
+}
+.bankmgt .yhkrz ul .zsyh .num{
+    margin-top:22px;
+    font-size:20px;
+    color:#FFFFFF;
+    margin-left:43px;
+}
+.bankmgt .yhkrz ul .zsyh .kjzf{
+    height:34px;
+    width:248px;
+    background-color:#F9F9F9;
+    line-height:34px;
+    padding-left:19px;
+    margin-top:-2px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.bankmgt .yhkrz ul .jsyh{
+    height:143px;
+}
+.bankmgt .yhkrz ul .jsyh .sub-jsyh{
+    background:url("/imgs/icons/B4-20.png") no-repeat -4px -5px;
+    height:109px;
+    width:250px;
+    padding:13px 13px 0 19px;
+    color:white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.bankmgt .yhkrz ul .jsyh .jsyh-con{
+    font-size:17px;
+    color:white;
+    margin-left:10px;
+}
+.bankmgt .yhkrz ul .jsyh .jsyh-cont{
+    float:right;
+    font-size:12px;
+    margin-top:6px;
+}
+.bankmgt .yhkrz ul .jsyh .num{
+    margin-top:22px;
+    font-size:20px;
+    color:#FFFFFF;
+    margin-left:43px;
+}
+.bankmgt .yhkrz ul .jsyh .kjzf{
+    height:34px;
+    width:250px;
+    background-color:#F9F9F9;
+    line-height:34px;
+    padding-left:19px;
+    margin-top:-2px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.bankmgt .yhkrz ul .nyyh{
+    height:143px;
+    margin-left:34px;
+}
+.bankmgt .yhkrz ul .nyyh .sub-nyyh{
+    background:url("/imgs/icons/B4-19.png") no-repeat -4px -5px;
+    height:109px;
+    width:246px;
+    padding:13px 13px 0 19px;
+    color:white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.bankmgt .yhkrz ul .nyyh .nyyh-con{
+    font-size:17px;
+    color:white;
+    margin-left:10px;
+}
+.bankmgt .yhkrz ul .nyyh .nyyh-cont{
+    float:right;
+    font-size:12px;
+    margin-top:6px;
+}
+.bankmgt .yhkrz ul .nyyh .num{
+    margin-top:22px;
+    font-size:20px;
+    color:#FFFFFF;
+    margin-left:40px;
+}
+.bankmgt .yhkrz ul .nyyh .kjzf{
+    height:34px;
+    width:246px;
+    background-color:#F9F9F9;
+    line-height:34px;
+    padding-left:19px;
+    margin-top:-2px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.bankmgt .yhkrz ul .addcard{
+    background-color:#F7F7F7;
+    width:250px;
+    height:149px;
+    text-align: center;
+    color:#919191;
+}
+.bankmgt .yhkrz ul .addcard .jia{
+    display: inline-block;
+    font-size:100px;
+    width:58px;
+    height:58px;
+
+    margin-top:-15px;
+    text-align: center;
+}
+.bankmgt .yhkrz ul .addcard p{
+    font-size:12px;
+    margin-left:20px;
+}
