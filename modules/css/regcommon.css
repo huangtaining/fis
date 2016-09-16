@@ -925,50 +925,73 @@ select.form-control {
 }
 .money-laundering .money .money_box ul li p{padding: 25px 0;}
 
-/*反洗钱公告页*/
-
-.moneylaundering-affiche {
-	width: 1200px;
-	margin: 0 auto;
-	padding: 30px 0 100px 0;
-}
-
-.moneylaundering-affiche img {
-	width: 100%;
-}
-
-.moneylaundering-affiche .affiche {
-	padding: 50px 100px;
-	border: 1px solid #e4e4e4;
-}
-
-.moneylaundering-affiche .affiche h1 {
-	text-align: center;
-	font-size: 25px;
-	padding: 20px 0;
-}
-
-.moneylaundering-affiche .affiche p {
-	font-size: 18px;
-	padding: 10px;
-	line-height: 30px;
-}
-
-.moneylaundering-affiche .affiche p.right {
-	text-align: right;
-}
-
-.moneylaundering-affiche .affiche p.text_index {
-	text-indent: 2em;
-}
-
-.moneylaundering-affiche .affiche p em {
-	font-weight: bold;
-}
 
 
 /***********************************************************************************************/
+/*反欺诈 页面*/
+.fqz .img {
+	width: 100%;
+}
 
+.fqz .img img {
+	width: 100%;
+}
+
+.fqz_box h1 {
+	padding: 50px 0 30px 0;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.fqz_box h2 {
+	border-bottom: 2px solid #e4e4e4;
+	left: 25%;
+	position: absolute;
+	bottom: 13%;
+	width: 56%;
+	height: 2px;
+}
+
+.fqz_box p {
+	text-indent: 2em;
+	font-size: 17px;
+	line-height: 38px;
+	position: relative;
+}
+
+.fqz_box ul li {
+	float: left;
+	text-align: center;
+}
+
+.fqz_box ul li~li {
+	margin-left: 40px;
+}
+
+.fqz_box ul {
+	padding: 0px 0 100px 0;
+}
+
+.fqz_box h3 {
+	border-bottom: 2px solid #e4e4e4;
+	left: 25%;
+	position: absolute;
+	bottom: -38%;
+	width: 56%;
+	height: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************************/
 
 /*交易记录   页面*/
 

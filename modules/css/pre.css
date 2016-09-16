@@ -1,0 +1,129 @@
+
+.transfer-pay{padding-bottom: 100px;}
+.transfer-pay .img{width: 100%;}
+.transfer-pay .img img{width: 100%;}
+/*转账*/
+.transfer-pay .same .img1{padding: 50px 0;}
+.transfer-pay .same .img1 em{padding-right: 30px;}
+.transfer-pay .same .img1 em~em{padding-bottom: 10px;}
+.transfer-pay_one .pay_one_box>div{float: left;}
+.transfer-pay_one .pay_one_box .pay_one_box1{width:540px;height:310px;background: url(imgs/pre/A3.png) 40px 95px no-repeat;position: relative;z-index:44 ;}
+.pay_one_box1 .em1 {
+	position: absolute;
+	top: 60px;
+	left: 5px;
+}
+
+.pay_one_box1 .em2 {
+	position: absolute;
+	top: 50px;
+	left: 35px;
+}
+
+.pay_one_box1 .em3 {
+	position: absolute;
+	top: 25px;
+	left: 0px;
+}
+
+.pay_one_box1 .em4 {
+	position: absolute;
+	top: 105px;
+	left: 23px;
+}
+
+.pay_one_box1 .em5 {
+	position: absolute;
+	top: 119px;
+	left: 32px;
+}
+
+.pay_one_box1 .em6 {
+	position: absolute;
+	top: 47px;
+	left: 130px;
+}
+
+.pay_one_box1 .em7 {
+	position: absolute;
+	top: -3px;
+	left: 215px;
+	z-index: 10;
+}
+
+.pay_one_box1 .em8 {
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background:url(../../imgs/pre/A5.jpg)no-repeat 12px #fff;
+	top:117px;
+	left:105px;
+}
+.pay_one_box1 .em9 {
+	position: absolute;
+	top:184px;
+	left:174px;
+}
+
+
+
+.transfer-pay_one .pay_one_box .pay_one_box2 h1{font-size:40px;color: #009EE7;padding:90px 0 30px 0;}
+.transfer-pay_one .pay_one_box .pay_one_box2 span{float:left;padding: 30px 0;}
+.pay_one_box .pay_one_box2 span p{padding:7px 0;font-size: 18px;color: #333;}
+
+.transfer-pay_one .pay_one_box .pay_one_box3{width:540px;height:310px;background: url(imgs/pre/A19.png) 40px 90px no-repeat;position: relative;}
+.pay_one_box3 .em1{
+	position: absolute;
+	top: 107px;
+	left: 167px;
+}
+.pay_one_box3 .em2{
+	position: absolute;
+	top: 118px;
+	left: 177px;
+}
+
+.transfer-pay_one .pay_one_box .pay_one_box4 h1{font-size:40px;color: #009EE7;padding:90px 0 30px 0;}
+.transfer-pay_one .pay_one_box .pay_one_box4 span{float:left;padding:0px 0 30px 0;}
+.pay_one_box .pay_one_box4 span p{padding:7px 0;font-size: 18px;color: #333;}
+.pay_one_box .pay_one_box4 .text{padding: 20px 0 120px 0;font-size: 15px;}
+.pay_one_box .pay_one_box4 .text em{float: left;}
+
+
+/*付款*/
+.transfer-pay_two .pay_two_box>div{float: left;}
+.transfer-pay_two .pay_two_box .pay_two_box1{width:540px;height:440px;background: url(imgs/pre/A23.png) 100px 80px no-repeat;position: relative;}
+.pay_two_box1 .em1{
+	position: absolute;
+	top: 163px;
+	left:206px;
+}
+.pay_two_box1 .em2{
+	position: absolute;
+	top:260px;
+	left:240px;
+}
+
+
+.transfer-pay_two .pay_two_box .pay_two_box2 h1{font-size:40px;color: #009EE7;padding:0px 0 10px 0;}
+.pay_two_box .pay_two_box2 span p{padding:7px 0;font-size: 18px;color: #333;}
+.pay_two_box .pay_two_box2 .text{padding: 30px 0 0 0;font-size: 15px;color:#555 ;}
+
+
+/*收款*/
+.transfer-pay_three .pay_three_box>div{float: left;}
+.transfer-pay_three .pay_three_box .pay_three_box1{width:540px;height:440px;background: url(imgs/pre/A27.png) 70px 80px no-repeat;position: relative;}
+.pay_three_box1 .em1{
+	position: absolute;
+	top:73px;
+	left:180px;
+}
+
+
+
+.transfer-pay_three .pay_three_box .pay_three_box2 h1{font-size:40px;color: #009EE7;padding:13px 0 30px 0;}
+.pay_three_box .pay_three_box2 span p{padding:10px 0;font-size: 18px;color: #333;}
+.pay_three_box .pay_three_box2 .text{padding: 20px 0 0 0;font-size: 15px;color:#555 ;}
+
