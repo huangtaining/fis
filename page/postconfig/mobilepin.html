@@ -8,9 +8,14 @@
     <link href="/modules/css/common2.css" rel="stylesheet">
     <link href="/modules/css/safe.css" rel="stylesheet">
     <script src="/modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
     <script src="/modules/js/common2.js"></script>
+    <script src="/modules/js/safe.js"></script>
     <script>
-        require('modules/js/yanz');
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/common2');
+        require('modules/js/safe');
     </script>
 
 </head>
@@ -45,13 +50,13 @@
 
 
             <!--表单-->
-            <form class="form-horizontal">
+            <form class="form-horizontal ysbbd">
                 <fieldset>
 
 
                     <!-- 绑定手机号码-->
                     <div class="form-item">
-                        <label class="form-left"><span class="yell must">*</span>&nbsp;新密码&nbsp;:</label>
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;绑定新密码&nbsp;:</label>
                         <div class="form-right">
                             <span>136****1354</span>
                             <a href="###" class="bullq" style="margin-left: 30px">更换号码</a>
@@ -69,24 +74,21 @@
                         </div>
                     </div>
 
-                    <!-- 支付密码-->
+                    <!-- 充值金额-->
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;支付密码&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" placeholder="请输入支付密码" class="money yz" data-yz="num">
-                            <a href="###" class="bullq" style="margin-left: 30px">忘记密码</a>
-                            <span class="yzwww"></span>
+                            <input type="text" placeholder="请输入支付密码" name="paypwd" id="paypwd">
+                            <span class="bullq">忘记密码</span>
                         </div>
                     </div>
 
-                    <!-- 校验码-->
+                    <!-- 充值金额-->
                     <div class="form-item">
-                        <label class="form-left"><span class="yell must">*</span>&nbsp;请输入图片里的校验码&nbsp;:</label>
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;请输入图片里的校正码&nbsp;:</label>
 
                         <div class="form-right">
-                            <input type="text" placeholder="请输入校验码" class="money yz" data-yz="num" style="width: 104px">
-                            <span class="yzmtu">CFSB</span>
-                            <span class="yzwww"></span>
+                            <input type="text" placeholder="请输入验证码" id="jzm" name="jzm" style="width: 104px"><span class="yzmtu">CFSB</span>
                             <p style="margin-top: 10px"><input type="checkbox" checked="checked" style="margin-right: 10px">已阅读并同意《手机动态口令服务协议》</p>
                         </div>
                     </div>

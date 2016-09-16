@@ -151,6 +151,14 @@ $(function(){
                 required: true,
                 ggg:true
             },
+            //身份证有效期
+            sfzyxq: {
+                required: true,
+                dateISO:true
+            },
+            yxjhm:{
+                required: true
+            },
             email: {
                 required: true,
                 email: true
@@ -231,6 +239,14 @@ $(function(){
             },
             //资金用途
             email: "请输入一个正确的邮箱",
+            //身份证有效期
+            sfzyxq: {
+                required: "请输入身份证有效期",
+                dateISO:"输入正确日期格式"
+            },
+            yxjhm:{
+                required: "请输入邮箱激活码"
+            },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"
         }

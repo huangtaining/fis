@@ -8,8 +8,13 @@
     <link href="/modules/css/common2.css" rel="stylesheet">
     <link href="/modules/css/safe.css" rel="stylesheet">
     <script src="/modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/common2.js"></script>
     <script src="/modules/js/safe.js"></script>
     <script>
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/common2');
         require('modules/js/safe');
     </script>
 
@@ -35,15 +40,17 @@
 
         <div class="allbody" style="margin-bottom: 0; border-bottom: 0">
 
+
+              <div></div>
             <!--表单-->
-            <form class="form-horizontal">
+            <form class="form-horizontal ysbbd">
                 <fieldset>
 
                     <!-- 身份证-->
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;您的Email地址&nbsp;:</label>
                         <div class="form-right">
-                            <span>33009********13213</span>
+                            <span class="bullq">465464@163.com</span>
                         </div>
                     </div>
 
@@ -51,8 +58,7 @@
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;取消Email绑定的激活码&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" placeholder="2016-10-10" class="money yz" data-yz="num">
-                            <span class="yzwww"></span>
+                            <input type="text" placeholder="请输入激活码" name="yxjhm" id="yxjhm">
                         </div>
                     </div>
 

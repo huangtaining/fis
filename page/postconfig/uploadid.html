@@ -8,8 +8,13 @@
     <link href="/modules/css/common2.css" rel="stylesheet">
     <link href="/modules/css/safe.css" rel="stylesheet">
     <script src="/modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/common2.js"></script>
     <script src="/modules/js/safe.js"></script>
     <script>
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/common2');
         require('modules/js/safe');
     </script>
 
@@ -36,7 +41,7 @@
         <div class="allbody" style="margin-bottom: 0; border-bottom: 0">
 
             <!--表单-->
-            <form class="form-horizontal">
+            <form class="form-horizontal ysbbd">
                 <fieldset>
 
 
@@ -44,7 +49,7 @@
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;真实姓名&nbsp;:</label>
                         <div class="form-right">
-                            <span>张三</span>
+                            <span class="bullq">张三</span>
                         </div>
                     </div>
 
@@ -60,9 +65,8 @@
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;身份证有效期&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" placeholder="2016-10-10" class="money yz" data-yz="num">
+                            <input type="text" placeholder="2016-10-10" name="sfzyxq" id="sfzyqxq">
                             <input type="checkbox" checked="checked" style="width: 20px">长期
-                            <span class="yzwww"></span>
                         </div>
                     </div>
 
@@ -73,7 +77,11 @@
                             <!--警告2-->
                             <div class="witwar stop">
                                 <div class="gan"></div>
-                                <div class="gan_text"><p style="margin-bottom: 10px">1222222</p><p style="margin-bottom: 10px">1222222</p><p style="margin-bottom: 10px">122222222</p></div>
+                                <div class="gan_text">
+                                    <p style="margin-bottom: 10px">1、真实姓名必须与身份证上的姓名一致。</p>
+                                    <p style="margin-bottom: 10px">2、请将身份证上面扫描成一张“jpg”或者”png”格式，大小不超过512KB的图片上传给我们。</p>
+                                    <p style="margin-bottom: 10px">3、我们将对您提交的身份证号码与您提交的身份证图片进行核对，1~2个工作日内审核完成。</p>
+                                </div>
                             </div>
                         </div>
                     </div>
