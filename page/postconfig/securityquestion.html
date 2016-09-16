@@ -9,16 +9,20 @@
     <link href="/modules/css/safe.css" rel="stylesheet">
     <link href="/modules/css/transfer_com.css" rel="stylesheet">
     <script src="/modules/lib/ysbbase.min.js"></script>
-
-    <script src="/modules/js/yanz.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/common2.js"></script>
+    <script src="/modules/js/safe.js"></script>
     <script>
-        require('modules/js/yanz');
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/common2');
+        require('modules/js/safe');
     </script>
 
 </head>
 <body>
 <!--head-->
-<link rel="import" href="modules/widget/header/header.html?__inline">
+<link rel="import" href="modules/widget/header/header-login.html?__inline">
 
 <!--body-->
 <div class="bo find">
@@ -41,7 +45,7 @@
         <div class="allbody" style="margin-bottom: 0; border-top: 0; border-bottom: 0">
 
 
-            <form class="form-horizontal" style="margin-top: 20px">
+            <form class="form-horizontal ysbbd" style="margin-top: 20px">
                 <fieldset>
 
 
@@ -58,18 +62,17 @@
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;输入你的答案&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" placeholder="请输入验证码" class="money yz" data-yz="num">
+                            <input type="text" placeholder="请输入验证码" name="safe_qus" id="safe_qus">
                         </div>
                     </div>
 
-                    <!-- 校正码-->
+                    <!-- 充值金额-->
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;校正码&nbsp;:</label>
 
                         <div class="form-right">
-                            <input type="text" placeholder="请输入验证码" class="money yz" data-yz="num" style="width: 104px">
+                            <input type="text" placeholder="请输入验证码" style="width: 104px" id="jzm" name="jzm">
                             <span class="yzmtu">CFSB</span>
-                            <span class="yzwww"></span>
                         </div>
                     </div>
 
