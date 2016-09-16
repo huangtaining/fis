@@ -73,9 +73,14 @@ $(function(){
 //表单验证
 //    自定义预留信息
     jQuery.validator.addMethod("ggg", function(value, element) {
-        return this.optional(element) || /[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]/.test(value);
+        return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
     }, "匹配english");
 
+
+    ////    自定义预留信息
+    //jQuery.validator.addMethod("ccc", function(value, element) {
+    //    return this.optional(element) || /^[A-Za-z]{0,45}$/.test(value)||/^[\u4e00-\u9fa5]{0,15}$/.test(value);
+    //}, "匹配english");
 
     $(".ysbbd").validate({
         errorPlacement:function(error,element){
@@ -144,7 +149,6 @@ $(function(){
             //预留信息
             ylxx:{
                 required: true,
-                maxlength: 16,
                 ggg:true
             },
             email: {
