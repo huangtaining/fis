@@ -10,6 +10,10 @@ body {
 .fixe>div{width: 189px;height: 35px;line-height: 35px;text-align: center;color: #fff;border-radius:5px;margin:30px 0;font-size: 14px;}
 .fixe .fixe_top{background-color: #019FE8;}
 .fixe .fixe_bottom{border: 1px solid #FFFFFF;opacity:1;}
+.carousel-indicators li{background-color: #fff;margin: 0 3px;}
+.carousel-indicators .active{width: 35px;height: 10px;}
+
+
 /*第一部分*/
 
 .container {
@@ -165,11 +169,12 @@ body {
 .lift .lijishiyong_a{position: absolute;bottom:14%;right:44%;width: 189px;height: 35px;line-height: 35px;display: inline-block;color: #fff;text-align: center;background-color:#999999;
 border: 1px solid #fff;border-radius:5px;font-size: 20px;opacity: .5;}
 .lift .lijishiyong_a a{color: #fff;}
-.lift .lijishiyong_a:hover{background-color:#19A8E8;}
+/*.lift .lijishiyong_a:hover{background-color:#19A8E8;}*/
 .lift .lijishiyong_a a:hover{text-decoration: none;}
 
-.lift .lift_tu{position: absolute;bottom:40%;right:42%;line-height: 35px;background:url(/imgs/index/LIFT.png)no-repeat 50% 50% ;}
-/*.lift .lift_lift{position: absolute;bottom:39%;right:42%;line-height: 35px;}*/
+.lift .lift_tu1{position: absolute;bottom:58%;right:47%;}
+.lift .lift_tu{position: absolute;bottom:40%;right:42%;}
+
 
 .lift .lift_tu .round{animation: rond 3s infinite;
     -webkit-animation: rond 3s infinite;}
@@ -319,5 +324,5 @@ border: 1px solid #fff;border-radius:5px;font-size: 20px;opacity: .5;}
 .lift_top .active {
     -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
     filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
-    box-shadow: 2px 6px 6px #ccc;
+    box-shadow: 0px 0px 10px 4px #ccc;
 }

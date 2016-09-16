@@ -174,7 +174,7 @@
 
 /*灰色背景图*/
 
-.line-boxes .box.web {
+/*.line-boxes .box.web {
     width: 424px;
     background-image: url(/imgs/index/A1-4.png);
 }
@@ -183,7 +183,7 @@
     .line-boxes .box.web {
         background-image: url(/imgs/index/A1-4.png)
     }
-}
+}*/
 
 .line-boxes .box.apple-pay {
     background-image: url(/imgs/index/A1-1.png)
@@ -196,32 +196,32 @@
 }
 
 .line-boxes .box.hongbao {
-    background-image: url(/imgs/index/A1-3.png)
-}
-
-@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
-    .line-boxes .box.hongbao {
-        background-image: url(/imgs/index/A1-3.png)
-    }
-}
-
-.line-boxes .box.qr {
     background-image: url(/imgs/index/A1-2.png)
 }
 
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
-    .line-boxes .box.qr {
+    .line-boxes .box.hongbao {
         background-image: url(/imgs/index/A1-2.png)
     }
 }
 
+.line-boxes .box.qr {
+    background-image: url(/imgs/index/A1-3.png)
+}
+
+@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
+    .line-boxes .box.qr {
+        background-image: url(/imgs/index/A1-3.png)
+    }
+}
+
 .line-boxes .box.fuwu {
-    background-image: url(/imgs/index/A1-5.png)
+    background-image: url(/imgs/index/A1-4.png)
 }
 
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
     .line-boxes .box.fuwu {
-        background-image: url(/imgs/index/A1-5.png)
+        background-image: url(/imgs/index/A1-4.png)
     }
 }
 
@@ -229,14 +229,14 @@
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    left: 50%;
+    left:40%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 303px;
     height: 426px
 }
 
-.scene-slider-wrap .iphone-hand-bg {
+/*.scene-slider-wrap .iphone-hand-bg {
     position: absolute;
     top: 80px;
     width: 378px;
@@ -245,7 +245,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: none
-}
+}*/
 
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
     .scene-slider-wrap .iphone-hand-bg {
@@ -282,12 +282,12 @@
     background-image: url(/imgs/index/zhuanzhang2.png)
 }
 
-.scene-viewes .scene.web {
+/*.scene-viewes .scene.web {
     width: 425px;
     height: 293px;
     background-image: url(/imgs/index/anquanbaozhang2.png);
     background-size: cover
-}
+}*/
 
 .scene-viewes .scene.fuwu {
     border: 1px solid rgba(0, 0, 0, .3);
