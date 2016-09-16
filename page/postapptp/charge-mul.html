@@ -5,10 +5,16 @@
     <title>向多人收款</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="import" href="../layout/header.html?__inline">
-
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/verification.js"></script>
+    <script>
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/verification');
+    </script>
 </head>
 <body>
-<link rel="import" href="modules/widget/header/header.html?__inline">
+<link rel="import" href="modules/widget/header/header-login.html?__inline">
 <div class="collection">
     <div class="sub_coll">
         <p class="position">您的当前位置 : 我的银生宝 > 我要收款</p>
@@ -37,10 +43,10 @@
 
         <!--form开始-->
         <div class="form clearfix linedown formpad">
-            <form action="">
+            <form action="" class="formsubmit">
                 <p>
                     <label for="" class="manyla"><em>*</em>资金用途:</label>
-                    <input type="text" class="user">
+                    <input type="text" class="user"  name="moneyuse">
                     <span class="formtis">(最长85个字符)</span>
                     <span id="inners"></span>
                 </p>
@@ -55,9 +61,9 @@
                    <label for="" class="manyla"><em></em>从联系人中选取</label>
                </p>
                 <p class="manype">
-                    <input type="text" class="bzh">
+                    <input type="text" class="bzh" name="ddlQuestion">
                     <input type="text">
-                    <input type="text" class="skje">
+                    <input type="text" class="skje" name="moneycheck">
                     <span>删除</span>
                     <span id="innerst"></span>
                 </p>
@@ -94,7 +100,7 @@
                 </p>
 
                 <p>
-                    <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn mulbtn" style="margin-left:209px;margin-top:20px;">下一步</button>
+                    <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn mulbtn submit" style="margin-left:209px;margin-top:20px;">下一步</button>
                 </p>
             </form>
             <!--警告-->
@@ -107,32 +113,6 @@
 </div>
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
 
-<script>
-    $('#nextbtn').click(function() {
-//
-        var val1 = $('.user').val();
-        if (val1 == '') {
-            inners.innerHTML = '<span class="errstyle">不能为空</span>';
-        } else {
-            inners.innerHTML = '<span></span>';
-        }
-
-
-        var val1 = $('.bzh').val();
-        if (val1 == '') {
-            innerst.innerHTML = '<span class="errstyle">不能为空</span>';
-        } else {
-            innerst.innerHTML = '<span></span>';
-        }
-
-        var val1 = $('.skje').val();
-        if (val1 == '') {
-            innerst.innerHTML = '<span class="errstyle">不能为空</span>';
-        } else {
-            innerst.innerHTML = '<span></span>';
-        }
-    })
-</script>
 
 <script src="lib/mod.js"></script>
 <script>

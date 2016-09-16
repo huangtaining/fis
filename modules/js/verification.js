@@ -54,6 +54,24 @@ $(".formsubmit").validate({
             required: true,
             maxlength:45
         },
+
+
+        // 我要收款模块
+
+        ddlQuestion:{
+            required: true,
+            minlength: 2
+        },
+       moneycheck:{
+            required: true,
+           digits:true
+        },
+        moneyuse:{
+            required: true,
+            maxlength:85
+        },
+
+
     },
 
 messages: {
@@ -96,6 +114,23 @@ messages: {
         required: "请填写开户行名称",
         maxlength:"请输入正确的格式"
     },
+    // 我要收款模块
+    ddlQuestion:{
+        required: "请填写开户行名称",
+        minlength:"请输入正确的格式"
+    },
+    moneycheck:{
+        required: "请输入收款金额",
+        digits:"请输入正确的格式"
+    },
+    moneyuse:{
+        required: "请填写资金用途",
+        maxlength:"已超过85个字符"
+    },
+
+
+
+
     },
 
 

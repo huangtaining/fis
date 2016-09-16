@@ -197,6 +197,13 @@
     background:url("/imgs/icons/A2.png") no-repeat 10px center;
     margin-left:10px;
 }
+.form label.error{
+    width:200px;
+    color:#FF8700;
+    text-align:left;
+    padding-left:25px;
+    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
+}
 /*计算器*/
 .form .jsq{
     position:absolute;
@@ -406,6 +413,9 @@
 .formpad p .mulbtn{
     margin-left:60px!important;
 
+}
+.form .manype label#moneycheck-error{
+    margin-left:0;
 }
 /*确认收款信息*/
 .confirmco{

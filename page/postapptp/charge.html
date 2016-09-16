@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="import" href="../layout/header.html?__inline">
     <script src="/modules/js/jsq.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/verification.js"></script>
     <script>
         require('modules/js/jsq');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/verification');
     </script>
 </head>
 <body>
@@ -42,7 +46,7 @@
 
             <!--form开始-->
             <div class="form clearfix linedown">
-                <form action="">
+                <form action="" class="formsubmit">
                     <p>
                         <label for=""><em>*</em>被收款方账户:</label>
                         <input type="text" placeholder="请输入用户名" name="ddlQuestion" class="inpnull">
@@ -57,7 +61,7 @@
                     </p>
                     <p>
                         <label for=""><em>*</em>收款金额:</label>
-                        <input type="text" placeholder="请输入金额" onchange="china()" class="money">
+                        <input type="text" placeholder="请输入金额" onchange="china()" class="money" name="moneycheck">
                         <span>元 &nbsp;<em class="formjsq"><img src="/imgs/icons/B3-1.png" alt=""></em> </span>
                         <span id="innerst"></span>
                     </p>
@@ -78,17 +82,17 @@
                     </p>
                     <p>
                         <label for=""><em>*</em>资金用途:</label>
-                        <input type="text" placeholder="请输入资金用途" class="moneyu">
+                        <input type="text" placeholder="请输入资金用途" class="moneyu" name="moneyuse">
                         <span class="formtis">(最长85个字符)</span>
                         <span id="innerss"></span>
                     </p>
                     <p class="stail">
                         <label for="">详细说明:</label>
-                        <textarea id="txt" placeholder="(最长85个字符)"></textarea>
+                        <textarea id="txt" placeholder="(最长85个字符)" ></textarea>
 
                     </p>
                     <p>
-                        <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn" style="margin-left:209px;margin-top:20px;">下一步</button>
+                        <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn submit" style="margin-left:209px;margin-top:20px;">下一步</button>
                     </p>
 
                     <!--计算器-->
@@ -150,33 +154,33 @@
     <script>
 
     var $ = require('jquery');
-    $('#nextbtn').click(function(){
-//        被收款方账户不能为空
-        var val1=$('.inpnull').val();
-        if(val1==''){
-            inners.innerHTML='<span class="errstyle">不能为空</span>';
-        }else{
-            inners.innerHTML='<span></span>';
-        }
-
-
-//        收款金额不能为空
-        var val1=$('.money').val();
-        if(val1==''){
-            innerst.innerHTML='<span class="errstyle">不能为空</span>';
-        }else{
-            innerst.innerHTML='<span></span>';
-        }
-//        资金用途不能为空
-        var val1=$('.moneyu').val();
-        if(val1==''){
-            innerss.innerHTML='<span class="errstyle">不能为空</span>';
-        }else{
-            innerss.innerHTML='<span></span>';
-        }
-
-
-    })
+//    $('#nextbtn').click(function(){
+////        被收款方账户不能为空
+//        var val1=$('.inpnull').val();
+//        if(val1==''){
+//            inners.innerHTML='<span class="errstyle">不能为空</span>';
+//        }else{
+//            inners.innerHTML='<span></span>';
+//        }
+//
+//
+////        收款金额不能为空
+//        var val1=$('.money').val();
+//        if(val1==''){
+//            innerst.innerHTML='<span class="errstyle">不能为空</span>';
+//        }else{
+//            innerst.innerHTML='<span></span>';
+//        }
+////        资金用途不能为空
+//        var val1=$('.moneyu').val();
+//        if(val1==''){
+//            innerss.innerHTML='<span class="errstyle">不能为空</span>';
+//        }else{
+//            innerss.innerHTML='<span></span>';
+//        }
+//
+//
+//    })
 
 
 //    计算器
