@@ -11,6 +11,12 @@ $(".submit").click(function(){
     }
 });
 
+//    自定义预留信息
+jQuery.validator.addMethod("hanzm", function(value, element) {
+    return this.optional(element) || /^[A-Za-z]{0,45}$/.test(value)||/^[\u4e00-\u9fa5]{0,15}$/.test(value);
+}, "匹配english");
+
+
 $(".formsubmit").validate({
     errorPlacement:function(error,element){
         error.appendTo(element.parent())
@@ -52,7 +58,7 @@ $(".formsubmit").validate({
         },
         zhname:{
             required: true,
-            maxlength:45
+            hanzm:true
         },
 
 
@@ -112,7 +118,7 @@ messages: {
     },
     zhname:{
         required: "请填写开户行名称",
-        maxlength:"请输入正确的格式"
+        hanzm:"请输入正确的格式"
     },
     // 我要收款模块
     ddlQuestion:{

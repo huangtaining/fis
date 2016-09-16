@@ -414,6 +414,9 @@
     margin-left:60px!important;
 
 }
+.form .manype label.error{
+    margin-left:36px;
+}
 .form .manype label#moneycheck-error{
     margin-left:0;
 }

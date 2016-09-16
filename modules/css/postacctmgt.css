@@ -173,8 +173,8 @@
 .changeemail label.error{
     text-align: left!important;
     color:#FF8700!important;
-    /*padding-left:25px;*/
-    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
+    padding-left:25px;
+    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
 }
 /*修改手机号*/
 .changemobile{
@@ -404,10 +404,12 @@
 }
 
 .unbindmobile  label.error{
+    width:200px!important;
     text-align: left!important;
     color:#FF8700!important;
-    /*padding-left:25px;*/
-    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
+    padding-left:25px;
+    margin-left:40px!important;
+    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
 }
 
 /*实名认证*/
@@ -965,8 +967,8 @@
 .changebankmgt label.error{
    text-align: left!important;
     color:#FF8700!important;
-    /*padding-left:25px;*/
-    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
+    padding-left:25px;
+    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
 }
 
 /*理财账户*/
