@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>解绑手机号</title>
     <link rel="import" href="../layout/header.html?__inline">
-
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/verification.js"></script>
+    <script>
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/verification');
+    </script>
 </head>
 <body>
 <link rel="import" href="modules/widget/header/header-login.html?__inline">
@@ -32,14 +38,14 @@
                 <h3>确定要取消绑定您的手机，请进行下列操作：</h3>
                 <p class="dxyz">银生宝已成功向您绑定的手机 <span>138****7378</span> 发送了一条验证码短信。</p>
 
-                <form action="">
+                <form action="" class="formsubmit">
                     <p class="con-tel">
                         <label for=""><em>*</em>手机号码：</label>
                         <span>83773897@qq.com</span>
                     </p>
                     <p class="con-test">
                         <label for=""><em>*</em>手机验证码：</label>
-                        <input type="text">
+                        <input type="text" name="telcheck" id="telcheck">
                     </p>
                     <div class="getyzm">
                         <span class="getyzm-waring">若1分钟内未收到验证码短信，您可以免费获取验证码。</span>
@@ -49,10 +55,10 @@
 
                     <p class="con-test">
                         <label for=""><em>*</em>支付密码：</label>
-                        <input type="text">
+                        <input type="text" name="paynum" id="paynum">
                     </p>
                     <p>
-                        <button class="sure">确定</button>
+                        <button class="sure submit">确定</button>
                     </p>
 
                 </form>

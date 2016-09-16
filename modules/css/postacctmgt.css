@@ -168,6 +168,14 @@
     width:75px;
     height:25px;
 }
+
+
+.changeemail label.error{
+    text-align: left!important;
+    color:#FF8700!important;
+    /*padding-left:25px;*/
+    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
+}
 /*修改手机号*/
 .changemobile{
     width:100%;
@@ -393,6 +401,13 @@
     border:none;
     border-radius: 3px;
     margin-left:170px;
+}
+
+.unbindmobile  label.error{
+    text-align: left!important;
+    color:#FF8700!important;
+    /*padding-left:25px;*/
+    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
 }
 
 /*实名认证*/
@@ -940,7 +955,19 @@
 .changebankmgt .card-content ul .bankbtn .back{
     background-color:#00A0E8;
 }
-
+/*验证的label长度设置*/
+.changebankmgt #usename-error{
+    display:inline-block;
+    width:250px!important;
+    text-align: left!important;
+    color:#FF8700;
+}
+.changebankmgt label.error{
+   text-align: left!important;
+    color:#FF8700!important;
+    /*padding-left:25px;*/
+    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
+}
 
 /*理财账户*/
 
@@ -1288,3 +1315,5 @@
 .tradeaccount .account-right .caoz{
     color:#00A0E8;
 }
+
+

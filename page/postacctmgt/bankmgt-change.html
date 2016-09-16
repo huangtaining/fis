@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>修改银行卡</title>
     <link rel="import" href="../layout/header.html?__inline">
-
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/verification.js"></script>
+    <script>
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/verification');
+    </script>
 </head>
 <body>
 <link rel="import" href="modules/widget/header/header-login.html?__inline">
@@ -15,30 +21,32 @@
     <div class="content">
         <h2>修改银行卡</h2>
         <div class="card-content">
+            <form action="" class="formsubmit">
             <ul>
                 <li>
                     <p>
                         <label for=""><em>*</em>用户名：</label>
-                        <input type="text">
+                        <input type="text" name="usename" id="usename">
                     </p>
                     <p class="tips">银行账户（银行卡）持有人的真实姓名</p>
                 </li>
                 <li>
                     <p class="zjlx">
                         <label for=""><em>*</em>证件类型：</label>
-                        <input type="checkbox"> <label for="" name="card" class="sub-zjlx">储蓄卡(借记卡)</label>
-                        <input type="checkbox"> <label for="" name="card" class="sub-zjlx">信用卡(贷记卡)</label>
-                        <input type="checkbox"> <label for="" name="card" class="sub-zjlx">结算账户/存折</label>
+                        <input type="checkbox" name="zjlxtest"> <label for="" name="card" class="sub-zjlx">储蓄卡(借记卡)</label>
+                        <input type="checkbox" name="zjlxtest"> <label for="" name="card" class="sub-zjlx">信用卡(贷记卡)</label>
+                        <input type="checkbox" name="zjlxtest"> <label for="" name="card" class="sub-zjlx">结算账户/存折</label>
 
                     </p>
                 </li>
                 <li class="bankadd">
                     <p>
                         <label for=""><em>*</em>开户银行所在地：</label>
-                        <select name="" id="">
-                            <option value="">上海</option>
+                        <select  id="jungle" name="jungle" title="Please select something!" class="{required:true}">
+                            <option value="" name="addcheck">请选择</option>
+                            <option value="1" name="addcheck">上海</option>
                         </select>
-                        <select name="" id="">
+                        <select name="" id="" name="addcheck">
                             <option value="">上海</option>
                         </select>
                     </p>
@@ -47,15 +55,15 @@
                 <li class="ssyh">
                     <p>
                         <label for=""><em>*</em>所属银行：</label>
-                        <select name="" id="">
-                            <option value="">华夏银行</option>
+                        <select name="junglebank" id="">
+                            <option value="1">华夏银行</option>2
                         </select>
                     </p>
                 </li>
                 <li>
                     <p>
                         <label for=""><em>*</em>银行账户/银行卡号：</label>
-                        <input type="text">
+                        <input type="text" name="cardcheck">
                     </p>
                     <p class="tips">• 银行账号/银行卡号为数字，且长度应该在6位于是32位之间！</p>
                     <p class="tips">• 存折账号的“＊”和企业账户的“＊”在此均无需输入</p>
@@ -63,7 +71,7 @@
                 <li >
                     <p>
                         <label for=""><em>*</em>开户行名称：</label>
-                        <input type="text">
+                        <input type="text" name="bankname">
                     </p>
 
                         <p class="bankname">
@@ -75,7 +83,7 @@
                 <li>
                     <p>
                         <label for=""><em>*</em>账户别名：</label>
-                        <input type="text">
+                        <input type="text" name="zhname">
                     </p>
                     <p class="tips">自定义，方便您管理。（最长为15个汉字或45个字母）</p>
                 </li>
@@ -86,7 +94,7 @@
                     </p>
                 </li>
             </ul>
-
+            </form>
 
         </div>
 

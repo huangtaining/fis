@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>修改邮箱</title>
     <link rel="import" href="../layout/header.html?__inline">
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/verification.js"></script>
+    <script>
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/verification');
+    </script>
 
 </head>
 <body>
@@ -20,14 +27,14 @@
                     <p>我们已发送一条取消Email绑定的激活信到您的注册邮箱，请注意查收。</p>
                 </div>
                 <div class="con-form">
-                    <form action="">
+                    <form action="" class="formsubmit">
                         <p>
                             <label for=""><em>*</em>您的Email地址：</label>
                             <span>83773897@qq.com</span>
                         </p>
                         <p>
                             <label for=""><em>*</em>取消Email绑定的激活码：</label>
-                            <input type="text" class="inp">
+                            <input type="text" class="inp" name="emailnum" id="emailnum">
                         </p>
 
                         <p class="jhm">
@@ -36,7 +43,7 @@
                             如果您的邮箱密码遗忘，可使用手机取消Email绑定
                         </p>
 
-                        <p class="lastbtn"><input type="button" value="返回" id="btn1"> <input type="button" value="确定" id="btn2"></p>
+                        <p class="lastbtn"><input type="button" value="返回" id="btn1"> <input type="button" class="submit" value="确定" id="btn2"></p>
 
                     </form>
                 </div>
