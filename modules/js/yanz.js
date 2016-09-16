@@ -10,12 +10,17 @@
 $(function(){
     //    验证必填字段
 //    要验证的
+    $(".qtyh").click(function(){
+        console.log("ssss")
+        $(".qtyha").slideToggle()
+    })
 
 
-
-   //$(".chinain").change(function(){
-   //    $(this)。
-   //});
+   $(".chinain").change(function(){
+       if(!isNaN($(this).val())){
+           china($(this).val(), $(".chinaout"))
+       }
+   });
 
 //    阿拉伯数字转化为中文
     function china(chin,chout) {

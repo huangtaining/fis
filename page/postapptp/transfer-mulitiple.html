@@ -7,19 +7,24 @@
     <link href="../../modules/css/myusp.css" rel="stylesheet">
     <link href="../../modules/css/common2.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
-    <script type="text/javascript" src="../../modules/lib/ysbbase.min.js"></script>
+    <script type="text/javascript" src="/modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
     <script src="/modules/js/yanz.js"></script>
     <script src="/modules/js/jsq.js"></script>
+    <script src="/modules/js/yanzheng.js"></script>
     <script src="/modules/js/safe.js"></script>
     <script>
+        var $ = require('jquery');
         require('modules/js/yanz');
+        require('modules/app/jquery.validate.min');
         require('modules/js/jsq');
+        require('modules/js/yanzheng');
         require('modules/js/safe');
     </script>
 </head>
 <body>
 <!--head-->
-<link rel="import" href="modules/widget/header/header.html?__inline">
+<link rel="import" href="/modules/widget/header/header-login.html?__inline">
 
 <div class="bo">
 
@@ -41,12 +46,12 @@
 
 
 
-            <form class="form-horizontal">
+            <form class="form-horizontal ysbbd">
                 <fieldset>
 
                     <!-- 当前账户余额-->
                     <div class="form-item">
-                        <label class="form-left"><span class="yell ">*</span>&nbsp;当前账户余额&nbsp;:</label>
+                        <label class="form-left"><span class="yell "></span>&nbsp;当前账户余额&nbsp;:</label>
                         <div class="form-right">
                             <span>987.446.213</span>元
                         </div>
@@ -66,7 +71,7 @@
                     <div class="form-item">
                         <label class="form-left">总金额大写&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" class="china">
+                            <input type="text" class="chinaout">
                         </div>
                     </div>
 
@@ -74,9 +79,9 @@
 
                     <!-- 资金用途-->
                     <div class="form-item">
-                        <label class="form-left"><span class="yell muuu">*</span>&nbsp;资金用途&nbsp;:</label>
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;资金用途&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" placeholder="请输入金额" style="margin-right: 18px">
+                            <input type="text" placeholder="请输入资金用途" style="margin-right: 18px" name="zjyt" id="zjyt">
                             <span style="margin-left: 18px">最长85个字符</span>
                         </div>
                     </div>
@@ -93,7 +98,7 @@
                     <div class="form-item">
                         <label class="form-left">&nbsp;</label>
                         <div class="form-right">
-                            <a class="btn btn-primary step_button">下一步</a>
+                            <a class="btn btn-primary step_button_s">下一步</a>
                         </div>
                     </div>
 

@@ -46,10 +46,6 @@ a:hover{
     margin-bottom: 10px;
 }
 
-.china{
-    background: #F0F0F0;
-    border: 2px solid #F0F0F0;
-}
 .hui{
    color: #B2B2B2;
 }
@@ -79,6 +75,7 @@ a:hover{
     padding: 20px 20px;
     margin: 10px 0 ;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 /*问题*/
 .que{
@@ -324,12 +321,14 @@ p{
     font-size: 18px;
     margin-bottom: 18px;
 }
-.bo .china{
+.bo .chinaout{
     width: 185px;
     padding: 2px 8px;
     margin-right: 16px;
     display: inline-block;
     height: 28px;
+    background: #F0F0F0;
+    border: 2px solid #F0F0F0;
 }
 .bo .beizhu{
     height: 170px;
@@ -368,7 +367,10 @@ p{
 }
 
 /*计算器*/
-
+.bo .jisuan{
+    margin-top: -5px;
+    margin-left: 10px;
+}
 .jsq{
     position: absolute;
     background: white;
@@ -507,4 +509,8 @@ p{
 }
 .bo .xdrfk tr td:nth-child(4){
     text-align: center;
+}
+
+.ysbbd .error{
+    color:red;
 }

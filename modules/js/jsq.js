@@ -6,7 +6,7 @@
 var $ = require('jquery');
 
 //点击出现
-$(".icon-jsq").click(function(e){
+$(".jisuan").click(function(e){
     var _ox=e.clientX;
     var _oy=e.clientY;
     var _oo=window.scrollY;
@@ -37,7 +37,7 @@ $(".int").click(function(){
     var _result=$("#input-box").val();
     //结果输出在哪里
     $(".jisuan").siblings("input").val(_result);
-    china(_result,$(".china"))
+    china(_result,$(".chinaout"))
 });
 
 

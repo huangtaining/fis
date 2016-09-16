@@ -7,16 +7,24 @@
     <link href="../../modules/css/myusp.css" rel="stylesheet">
     <link href="../../modules/css/common2.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css">
+    <script type="text/javascript" src="/modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
     <script src="/modules/js/yanz.js"></script>
     <script src="/modules/js/jsq.js"></script>
+    <script src="/modules/js/yanzheng.js"></script>
+    <script src="/modules/js/safe.js"></script>
     <script>
+        var $ = require('jquery');
         require('modules/js/yanz');
+        require('modules/app/jquery.validate.min');
         require('modules/js/jsq');
+        require('modules/js/yanzheng');
+        require('modules/js/safe');
     </script>
 </head>
 <body>
 
-<link rel="import" href="modules/widget/header/header.html?__inline">
+<link rel="import" href="/modules/widget/header/header-login.html?__inline">
 
 <div class="bo">
 
@@ -39,17 +47,16 @@
 
 
 
-                <form class="form-horizontal">
+                <form class="form-horizontal ysbbd">
                     <fieldset>
 
                         <!-- 收款方账户-->
                         <div class="form-item">
                             <label class="form-left"><span class="yell must">*</span>&nbsp;收款方账户&nbsp;:</label>
                             <div class="form-right">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" class="fmpeople">
-                                <a class="bullq" data-toggle="modal" data-target="#myModal" href="###">从联系人中收取</a>
+                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" class="fmpeople" name="skfzh" id="skfzh">
+                                <a class="bullq openlxr" data-toggle="modal" data-target="#myModal" href="###">从联系人中选取</a>
                                 <span style="margin-left: 18px" class="bullq">批量付款</span>
-                                <span class="yzwww"></span>
                             </div>
                         </div>
 
@@ -57,8 +64,7 @@
                         <div class="form-item">
                             <label class="form-left">&nbsp;收款方名称&nbsp;:</label>
                             <div class="form-right">
-                                <input type="text"style="margin-right: 18px" class="yz">
-                                <span class="icon-phone"></span>
+                                <input type="text"style="margin-right: 18px" placeholder="请输入姓名或单位">
                             </div>
                         </div>
 
@@ -66,9 +72,8 @@
                         <div class="form-item">
                             <label class="form-left"><span class="yell must">*</span>&nbsp;付款金额&nbsp;:</label>
                             <div class="form-right">
-                                <input type="text" placeholder="请输入金额" class="money yz" data-yz="num">元
-                                <a class="icon-jsq jisuan" style="margin-left: 20px"></a>
-                                <span class="yzwww"></span>
+                                <input type="text" placeholder="请输入金额" name="fkje" id="fkje" class="chinain">元
+                                <img src="/imgs/icons/B3-1.png" class="jisuan">
                             </div>
                         </div>
 
@@ -76,7 +81,7 @@
                         <div class="form-item">
                             <label class="form-left">付款金额大写&nbsp;:</label>
                             <div class="form-right">
-                                <input type="text" class="china">
+                                <input type="text" class="chinaout">
                             </div>
                         </div>
 
@@ -102,9 +107,8 @@
                         <div class="form-item">
                             <label class="form-left"><span class="yell must">*</span>&nbsp;资金用途&nbsp;:</label>
                             <div class="form-right">
-                                <input type="text" placeholder="请输入金额" style="margin-right: 18px" data-yz="long">
+                                <input type="text" placeholder="请输入资金用途" style="margin-right: 18px" name="zjyt" id="zjyt">
                                 <span style="margin-left: 18px">最长85个字符</span>
-                                <span class="yzwww"></span>
                             </div>
                         </div>
 
@@ -153,80 +157,113 @@
 
 
 
-<!--计算器-->
-<table id="btn-list" class="jsq">
-    <tr>
-        <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly"/></td>
-        <td class="jsqy yell"data-jsq="clear">C</td>
-        <td class="jsqy yell"data-jsq="backspace">CE</td>
+        <!--计算器-->
+        <table id="btn-list" class="jsq">
+            <tr>
+                <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly"/></td>
+                <td class="jsqy yell"data-jsq="clear">C</td>
+                <td class="jsqy yell"data-jsq="backspace">CE</td>
 
-    </tr>
-    <tr>
-        <td class="jsqn">7</td>
-        <td class="jsqn">8</td>
-        <td class="jsqn">9</td>
-        <td class="jsqy" data-jsq="opposite">+/-</td>
-        <td class="jsqy" data-jsq="percent">%</td>
-    </tr>
-    <tr>
-        <td class="jsqn">4</td>
-        <td class="jsqn">5</td>
-        <td class="jsqn">6</td>
-        <td class="jsqy" data-jsq="plus">+</td>
-        <td class="jsqy" data-jsq="minus">-</td>
-    </tr>
-    <tr>
-        <td class="jsqn">1</td>
-        <td class="jsqn">2</td>
-        <td class="jsqn">3</td>
-        <td class="jsqy" data-jsq="multiply">*</td>
-        <td class="jsqy" data-jsq="divide">/</td>
-    </tr>
-    <tr>
-        <td class="jsqn">0</td>
-        <td class="jsqn">.</td>
-        <td class="jsqy" data-jsq="result">=</td>
-        <td class="int">确定</td>
-        <td class="clea">取消</td>
-    </tr>
-</table>
+            </tr>
+            <tr>
+                <td class="jsqn">7</td>
+                <td class="jsqn">8</td>
+                <td class="jsqn">9</td>
+                <td class="jsqy" data-jsq="opposite">+/-</td>
+                <td class="jsqy" data-jsq="percent">%</td>
+            </tr>
+            <tr>
+                <td class="jsqn">4</td>
+                <td class="jsqn">5</td>
+                <td class="jsqn">6</td>
+                <td class="jsqy" data-jsq="plus">+</td>
+                <td class="jsqy" data-jsq="minus">-</td>
+            </tr>
+            <tr>
+                <td class="jsqn">1</td>
+                <td class="jsqn">2</td>
+                <td class="jsqn">3</td>
+                <td class="jsqy" data-jsq="multiply">*</td>
+                <td class="jsqy" data-jsq="divide">/</td>
+            </tr>
+            <tr>
+                <td class="jsqn">0</td>
+                <td class="jsqn">.</td>
+                <td class="jsqy" data-jsq="result">=</td>
+                <td class="int">确定</td>
+                <td class="clea">取消</td>
+            </tr>
+        </table>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-                     <!--头部-->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <p class="modal-title s20" id="myModalLabel">选择收款人</p>
-                    </div>
-                     <!--身体-->
-                    <div class="modal-body chpeople">
-                                          <input type="text"><button class="right">查询</button>
-                                          <ul>
-                                              <li><input type="radio" name="dxlxr">彭敏3(<a>pengmin8na@163.com</a>)</li>
-                                              <li><input type="radio" name="dxlxr">彭敏4(<a>pengmin8na@164.com</a>)</li>
-                                              <li><input type="radio" name="dxlxr">彭敏5(<a>pengmin8na@165.com</a>)</li>
-                                              <li><input type="radio" name="dxlxr">彭敏6(<a>pengmin8na@166.com</a>)</li>
-                                              <li><input type="radio" name="dxlxr">彭敏7(<a>pengmin8na@167.com</a>)</li>
-                                          </ul>
-                    </div>
-                      <!--jo-->
-                    <div class="modal-footer">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content xdrfk">
+                <!--头部-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <p class="modal-title s20" id="myModalLabel">选择收款人</p>
+                </div>
+                <!--身体-->
+                <div class="modal-body chpeople">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>账户名称</th>
+                            <th>Email</th>
+                            <th>手机号码</th>
+                            <th>金额(元)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="ck"><input type="checkbox"></td>
+                            <td>彭敏</td>
+                            <td>pengmmin1977@163.com</td>
+                            <td>13758022117</td>
+                            <td><input type="text" class="lxrje" value="0.00"></td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="checkbox"></td>
+                            <td>彭敏</td>
+                            <td>pengmmin1977@163.com</td>
+                            <td>13758022117</td>
+                            <td><input type="text" class="lxrje" value="0.00"></td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="checkbox"></td>
+                            <td>彭敏</td>
+                            <td>pengmmin1977@163.com</td>
+                            <td>13758022117</td>
+                            <td><input type="text" class="lxrje" value="0.00"></td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="checkbox"></td>
+                            <td>彭敏</td>
+                            <td>pengmmin1977@163.com</td>
+                            <td>13758022117</td>
+                            <td><input type="text" class="lxrje" value="0.00"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--jo-->
+                <div class="modal-footer">
 
                     <!--&lt;!&ndash;保存&ndash;&gt;-->
                     <!--<button type="button" class="btn btn-primary">确定</button>-->
-                        <!--关闭-->
+                    <!--关闭-->
                     <button type="button" class="btn btn-default modalqd" data-dismiss="modal">确定</button>
-                        <!--关闭-->
+                    <!--关闭-->
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
 
 
-                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 </div>
 

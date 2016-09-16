@@ -17,26 +17,44 @@ $(".ysbbd").validate({
     },
     rules: {
         firstname: "required",
-        lastname: "required",
-        //修改密码
+        //密码
         pwd:{
             required: true
         },
+        //新密码
         newpwd:{
             required: true
         },
+        //重复密码
         cu_newpwd: {
             required: true,
             equalTo: "#newpwd"
         },
+        //校正码
         jzm:{
             required: true
         },
-        ss:{
-
-        },
         //充值金额
         czje:{
+            required: true,
+            number:true
+        },
+        //提现金额
+        txje:{
+            required: true,
+            number:true
+        },
+        //收款方账户
+        skfzh:{
+            required: true
+        },
+        //付款金额
+        fkje:{
+            required: true,
+            number:true
+        },
+        //资金用途
+        zjyt:{
             required: true,
             number:true
         },
@@ -64,10 +82,12 @@ $(".ysbbd").validate({
         newpwd:{
             required: "请输入新密码"
         },
+        //重复新密码
         cu_newpwd: {
             required: "请输入新密码",
             equalTo: "两次密码输入不一致"
         },
+        //校正码
         jzm:{
             required: "请输入校正码"
         },
@@ -76,10 +96,25 @@ $(".ysbbd").validate({
             required: "请输入充值金额",
             number:"请输入正确格式"
         },
-        password: {
-            required: "请输入密码",
-            minlength: "密码长度不能小于 5 个字母"
+        //提现金额
+        txje:{
+            required: "请输入充值金额",
+            number:"请输入正确格式"
         },
+        //付款金额
+        fkje:{
+            required: "请输入充值金额",
+            number:"请输入正确格式"
+        },
+        //收款方账户
+        skfzh:{
+            required: "请输入收款方账户"
+        },
+        //资金用途
+        zjyt:{
+            required: "请输入资金用途"
+        },
+        //资金用途
         email: "请输入一个正确的邮箱",
         agree: "请接受我们的声明",
         topic: "请选择两个主题"

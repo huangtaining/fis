@@ -21,8 +21,6 @@ $(".masage thead input").eq(1).click(function(){
     }
 });
 
-$(".openlxr").click(function(){
-})
 
 //改变勾选框颜色
 $(".ck").find(":checkbox").click(function(){
@@ -43,7 +41,7 @@ $(".modalqd").click(function(){
     }
     $(".multipeo").html(_zp);
     $(".multimoney").html(_zl);
-    china(_zl,$(".china"))
+    china(_zl,$(".chinaout"))
 });
 
 //选择联系人全选
