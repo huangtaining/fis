@@ -1174,6 +1174,7 @@
 .tradeaccount .account-con .tab-pane .chaxun .team{
     float:right;
     color:#00A0E8;
+    margin-right:30px;
 }
 .tradeaccount .account-con .tab-pane .chaxun .sub-team{
     margin-right:30px;
@@ -1189,6 +1190,16 @@
 .tradeaccount .account-con .tab-pane table th{
     border:0;
     text-align: center;
+}
+.tradeaccount .account-con .tab-pane table th input{
+    margin-right:20px;
+    width:14px;
+    height:14px;
+}
+.tradeaccount .account-con .tab-pane table tr td input{
+    margin-right:20px;
+    width:14px;
+    height:14px;
 }
 .tradeaccount .account-con .tab-pane table tr td:nth-child(1){
     width:161px;
@@ -1241,9 +1252,39 @@
     float:left;
     margin-top:5px;
 }
-.tradeaccount .account-con .nextpage nav{
-    float:right;
+.tradeaccount .account-con .nextpage nav ul{
+    margin-left:211px;
 }
 .tradeaccount .account-right .account-con .pagination{
-    margin-top:0!important;
+    margin-bottom:20px;
+    width:230px!important;
+}
+.tradeaccount .pagination > li > a, .pagination > li > span{
+    border:0;
+    background-color:#F7F7F7;
+    margin-top:-15px;
+    padding:6px 8px;
+    /*margin-left:-20px;*/
+
+}
+.tradeaccount .account-right  .tiaoz{
+    float:right !important;
+    display:inline-block;
+    margin-right:18.8px;
+
+
+}
+.tradeaccount .account-right  .tiaoz button{
+    font-size:12px;
+    width:45px;
+    height:25px;
+}
+.tradeaccount .account-right  .tiaoz input{
+    width:31px;
+    height:25px;
+    text-align: center;
+    font-size:12px;
+}
+.tradeaccount .account-right .caoz{
+    color:#00A0E8;
 }

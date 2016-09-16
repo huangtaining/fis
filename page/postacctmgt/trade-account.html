@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>理财账户</title>
+    <title>往来账户管理</title>
     <link rel="import" href="../layout/header.html?__inline">
 </head>
 <body>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="account-right">
-            <h2>理财账户</h2>
+            <h2>往来账户管理</h2>
             <div class="account-con">
 
                 <ul id="myTab" class="nav nav-tabs nav-justified" role="tablist">
@@ -51,25 +51,27 @@
                             <button class="chazhao">查找</button>
                             <span class="team"><em class="sub-team">分组管理</em> <em>添加联系人</em></span>
                         </p>
-                        <table border="1" width="100%" align="center" cellspacing="0" cellpadding="0" style="border:1px solid #e4e4e4">
-                            <thead>
-                                <th>账户名</th> <th>账号</th> <th>手机号码</th> <th>分组</th> <th>操作</th>
+                        <table border="1" width="100%" align="center" cellspacing="0" cellpadding="0" style="border-bottom: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;">
+                            <thead style="border-top: 1px solid #F7F7F7;border-bottom: 1px solid #e4e4e4;border-left: 1px solid transparent;border-right: 1px solid #fff;">
+                                <th><input type="checkbox">账户名</th> <th>账号</th> <th>手机号码</th> <th>分组</th> <th>操作</th>
                             </thead>
 
                             <tbody>
                                 <tr>
-                                    <td>马玉新</td>
+                                    <td><input type="checkbox">马玉新</td>
                                     <td>9558 8855 8888 8888 8888</td>
                                     <td>188 8888 8888</td>
                                     <td></td>
-                                    <td>修改 详情 删除</td>
+                                    <td class="caoz"><span>修改</span> <span>详情</span> <span>删除</span></td>
                                 </tr>
                                 <tr>
-                                    <td>马玉新</td>
+                                    <td><input type="checkbox">马玉新</td>
                                     <td>9558 8855 8888 8888 8888</td>
                                     <td>188 8888 8888</td>
                                     <td></td>
-                                    <td>修改 详情 删除</td>
+                                    <td class="caoz"><span>修改</span> <span>详情</span> <span>删除</span></td>
                                 </tr>
 
 
@@ -102,25 +104,27 @@
                         <button class="chazhao">查找</button>
                         <span class="team"><em class="sub-team">分组管理</em> <em>添加联系人</em></span>
                     </p>
-                    <table border="1" width="100%" align="center" cellspacing="0" cellpadding="0" style="border:1px solid #e4e4e4">
-                        <thead>
-                        <th>账户名</th> <th>账号</th> <th>手机号码</th> <th>分组</th> <th>操作</th>
+                    <table border="1" width="100%" align="center" cellspacing="0" cellpadding="0" style="border-bottom: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;">
+                        <thead style="border-top: 1px solid #F7F7F7;border-bottom: 1px solid #e4e4e4;border-left: 1px solid transparent;border-right: 1px solid #fff;">
+                         <th> <input type="checkbox">账户名</th> <th>账号</th> <th>手机号码</th> <th>分组</th> <th>操作</th>
                         </thead>
 
                         <tbody>
                         <tr>
-                            <td>马玉新</td>
+                            <td><input type="checkbox" style="width:20px">马玉新</td>
                             <td>9558 8855 8888 8888 8888</td>
                             <td>188 8888 8888</td>
                             <td></td>
-                            <td>修改 详情 删除</td>
+                            <td class="caoz"><span>修改</span> <span>详情</span> <span>删除</span></td>
                         </tr>
                         <tr>
-                            <td>马玉新</td>
+                            <td><input type="checkbox">马玉新</td>
                             <td>9558 8855 8888 8888 8888</td>
                             <td>188 8888 8888</td>
                             <td></td>
-                            <td>修改 详情 删除</td>
+                            <td class="caoz"><span>修改</span> <span>详情</span> <span>删除</span></td>
                         </tr>
 
 
@@ -141,18 +145,23 @@
 
                 <div class="nextpage">
                     <span>当前 0-0 共7条 每页展现 </span>
-                    <button class="pagenum">20</button> <span>条</span>
+                    <button class="pagenum">20</button> <span class="tiao">条</span>
                     <nav>
                         <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">上一页</a></li>
                             <li><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
                             <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
+                            <li><a href="#">下一页</a></li>
                         </ul>
+                        <span class="tiaoz">向&nbsp;&nbsp;
+                            <input type="text">&nbsp;&nbsp;页&nbsp;&nbsp;
+                            <button>跳转</button>
+                        </span>
                     </nav>
+
                 </div>
             </div>
         </div>
