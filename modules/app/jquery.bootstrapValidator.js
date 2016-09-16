@@ -7,6 +7,7 @@
  * @copyright   (c) 2013 - 2014 Nguyen Huu Phuoc
  * @license     MIT
  */
+
 (function($) {
 	var BootstrapValidator = function(form, options) {
 		this.$form = $(form);
