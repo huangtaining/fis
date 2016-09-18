@@ -118,4 +118,4 @@ $(".formsubmit").validate({
             maxlength: "已超过85个字符"
         },
     },
-})；
+});
