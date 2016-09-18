@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>注册下一步</title>
-		 <link rel="stylesheet" href="../modules/css/bootstrapValidator.css" media="screen" title="no title">
-         <link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
+		<title>注册下一步</title>		 
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<link rel="stylesheet" href="../modules/css/bootstrapValidator.css" media="screen" title="no title">
+        <link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
 	</head>
 	<link rel="import" href="modules/widget/header/header.html?__inline">
 
@@ -29,7 +29,7 @@
                             <div class="yuan one"><em>2</em></div>
                             <div class="tiao one"></div>
                         </div>
-                        <p>验证用户名</p>
+                        <p>填写信息</p>
                     </li>
                     <li>
                         <div class="zhong">
@@ -117,9 +117,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label class=" col-md-3 control-label">安全保护答案：</label>
+                            <label class=" col-md-3 control-label"><b>*</b> 安全保护答案：</label>
                             <div class=" col-md-8">
-                                <input type="" class="form-control" />
+                                <input name="ddlQuestion1" id="" class="form-control"/>
+                                <div class="errorholder">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,6 +217,13 @@
                         validators: {
                             notEmpty: {
                                 message: '必选'
+                            }
+                        }
+                    },
+                    ddlQuestion1: {
+                        validators: {
+                            notEmpty: {
+                                message: '必填'
                             }
                         }
                     }

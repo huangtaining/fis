@@ -6,151 +6,128 @@
 		<title>个人登录</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
-		<script src=""></script>
+		<link rel="stylesheet" href="../modules/css/bootstrapValidator.css" media="screen" title="no title">
+    <link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
 	</head>
 
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
 		<section class="login">
-			<div class="login_box centre clearfix">
-				<div class="login_left">
-					<img src="/imgs/icons/A1tu.png" alt="" />
-				</div>
-				<div class="login_right">
-					<h1>登录银生宝</h1>
-					<form action="">
-					<ul>
-						<li style="padding-top: 25px;"><input type="text" placeholder="请输入账户名" id="username" />
-						    <p></p>
-						</li>
-						<li><input type="text" placeholder="请输入登录密码" id="password" />
-						    <p></p>
-						</li>
-						<li class="yanzhengma clearfix"><input type="text" placeholder="请输入右侧验证码" id="checkCode" /><em></em>
-							<p></p>
-						</li>
-						<li style="padding-bottom:23px;">
-							<button class="button" style="background-color: #d5d5d5;" id="btn" type="button">登录</button>
-						</li>
-						<li style="padding-bottom:29px;border-bottom: 1px solid #e4e4e4;">
-							<button class="button"  style="color: #009FE8;">注册</button>
-						</li>
-					</ul>
-					<div class="login_text">
-						<em class="login_one"><input type="checkbox"/><em>记住我</em></em>
-						<em class="login_two"><a href="###">帐号激活</a></em>
-						<em class="login_three"><a href="###">忘记密码？</a></em>
-					</div>
-		</form>
-				</div>
+	<div class="login_box centre clearfix">
+		<div class="login_left">
+			<img src="/imgs/icons/A1tu.png" alt="" />
+		</div>
+		<div class="login_right">
+			<h1>登录银生宝</h1>
 
+			<form id="defaultForm" method="post" class="form-horizontal ysbformvalidate" action="#" style="padding:25px 37px">
+
+	<div class="form-group has-feedback">
+
+		<div class="">
+			<input type="email" class="form-control" name="email" placeholder="请输入账户名" />
+			<div class="errorholder">
 			</div>
-		</section>
-<script type="text/javascript">
-  var username= document.getElementById('username');
-  var password= document.getElementById('password');
-  var btn=document.getElementById('btn');
-  var checkCode=document.getElementById('checkCode');
-  var txt=document.getElementsByTagName("p");
-  var p;
-  var c;
-  var u;
-  var reg=/^[1-9]\d*$|^0$/ ;   //纯数字
-  var user_zeng= /^1[3|4|5|7|8]\d{9}$/;    //手机号
-  var emali_zeng= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;  //邮箱
+		</div>
+	</div>
 
-    btn.onclick=function() {
-     if(username.value==""){
-       txt[1].innerHTML='用户名不能为空';
-     }else if(password.value==""){
-      txt[2].innerHTML='密码不能为空';
-     }else if(checkCode.value==""){
-      txt[3].innerHTML='验证码不能为空';
-     }else{
-        txt.innerHTML='';
-     }
+	<div class="form-group has-feedback">
 
-    };
-  username.oninput=function() {
-    var user_value=username.value;
-    if(reg.test(user_value)){
-        if(!user_zeng.test(username.value)){
-            u=false;
-           txt[1].innerHTML='用户名不正确';
-           btn.style.backgroundColor="#d5d5d5" ;
-           btn.type="button";
-       }else{
-          u=true;
-          txt[1].innerHTML='';
-          if( u && p && c){
-          btn.style.backgroundColor="#009FE8";
-          btn.type="submit";
-        }
-       }
-     }else if(user_value.indexOf("@") >-1){
+		<div class="">
+			<input type="password" class="form-control" name="password" placeholder="请输入登录密码" />
+			<div class="errorholder">
+			</div>
+		</div>
+	</div>
 
-       if(!emali_zeng.test(username.value)){
-         u=false;
-         txt[1].innerHTML='用户名不正确';
-         btn.style.backgroundColor="#d5d5d5" ;
-         btn.type="button";
-       }else{
-          u=true;
-          txt[1].innerHTML='';
-          if( u && p && c){
-          btn.style.backgroundColor="#009FE8";
-          btn.type="submit";
-         }
-       }
+	<div class="form-group">
+		<div class="">
+			<input type="text" name="ddlQuestion" id="" class="form-control" style="width: 154px;height: 44px;float: left;" placeholder="请输入验证码" />
+			<span style="margin-left:10px;width: 100px;height: 43px;vertical-align: middle;display: inline-block;background-color: pink;"></span>
+			<em style="color: #019FE8;float: right;width:62px;padding-right: 0;margin-top: 12px;">换一张</em>
+			<div class="errorholder">
+			</div>
+		</div>
+	</div>
 
-     }else{
-       u=false;
-         txt[1].innerHTML='用户名不正确';
-         btn.style.backgroundColor="#d5d5d5" ;
-         btn.type="button";
-     }
- };
+	<div class="form-group">
+		<div class="button_btn">
+			<button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin:10px 0 20px 0;">登录</button>
+			<em id="" type="" class="btn btn-primary2" name="" value="Sign up 2">注册</em>
+		</div>
+	</div>
+</form>
+			<div class="login_text" style="height: 60px;line-height: 25px;border-top:1px solid #e4e4e4 ;">
+					<em class="login_one"><a href="###">帐号激活</a></em>
+					<em class="login_three"><a href="###">忘记密码？</a></em>
+				</div>
 
- password.oninput=function() {
-   if(password.value=="" ){
-          p=false;
-           txt[2].innerHTML='密码不能为空';
+		</div>
 
-          btn.style.backgroundColor="#d5d5d5";
-          btn.type="button";
+	</div>
 
-   }else{
-   	   p=true;
-        txt[2].innerHTML='';
-   	   password.style.backgroundColor="";
-       if( u && p && c ){
-          btn.style.backgroundColor="#009FE8";
-          btn.type="submit";
-        }
+ <script type="text/javascript">
+        $(document).ready(function() {
 
-   };
+            require('modules/app/jquery.bootstrapValidator');
 
- };
 
- checkCode.oninput=function() {
-   if(checkCode.value=="" ){
-          c=false;
-           txt[3].innerHTML='验证码不能为空';
-          btn.style.backgroundColor="#d5d5d5";
-           btn.type="button";
-   }else{
-   	   c=true;
-        txt[3].innerHTML='';
-   	   password.style.backgroundColor="";
-       if( u && p && c){
-          btn.style.backgroundColor="#009FE8";
-           btn.type="submit";
-        }
+            // Generate a simple captcha
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            };
 
-   };
+            $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
 
- };
-</script>
+            $("#btnSubmit").bind("click", function() {
+                alert("Submit");
+            });
+
+            $('#defaultForm').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon', //glyphion-remove
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                	 email: {
+                validators: {
+                    emailAddress: {
+                        message: '您输入的E-mail格式不正确'
+                    }
+                }
+            },
+                    password: {
+                        validators: {
+                            notEmpty: {
+                                message: '长度不低与8个字符'
+                            },                           
+                        }
+                    },
+                    ddlQuestion: {
+                        validators: {
+                            notEmpty: {
+                                message: '必填'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Validate the form manually
+            $('#validateBtn').click(function() {
+                $('#defaultForm').bootstrapValidator('validate');
+            });
+
+            $('#resetBtn').click(function() {
+                $('#defaultForm').data('bootstrapValidator').resetForm(true);
+            });
+        });
+    </script>
+
+
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">
 		<script src="lib/mod.js"></script>
 		<script>

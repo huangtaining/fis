@@ -381,7 +381,7 @@
 	padding-left: 0px;
 }
 
-.personal_top .form-horizontal .form-group {
+.form-horizontal .form-group {
 	margin-left: 0px;
 	margin-right: 0px;
 	width: 100%;
@@ -408,6 +408,29 @@ select.form-control {
 	border: 1px solid #D5D5D5;
 	border-radius: 3px;
 }
+
+.login_box #defaultForm .form-group{margin-left: 0px;margin-bottom: 0px;
+padding-top: 0px;
+	margin-right: 0px;
+	width: 100%;}
+
+#defaultForm .form-group .button_btn button{width: 329px;height: 44px;margin-left: 0;margin: 10px 0;}
+.login_box #defaultForm .form-group .button_btn{margin-left: 0;padding:0;}
+
+.login_box #defaultForm .form-group .button_btn .btn-primary2{width: 329px;height: 44px;line-height:30px;background-color: #fff;color: #009FE8;border: 2px solid #009FE8;}
+#defaultForm .form-group .button_btn .btn-primary{border: none;background-color: #00A0E8;}
+.login_box #defaultForm .form-group .errorholder{width:200px;height: 25px;float: left;margin-left: 0;text-align: left;}
+.login_box #defaultForm .form-group .errorholder small{color: #FF8700;}
+.login_box .ysbformvalidate .has-feedback .form-control-feedback {
+    background: url(/static/css/img/form-error.png) no-repeat 10px 7px;
+}
+/*
+.login_box .ysbformvalidate .has-feedback .form-control-feedback {
+    position: relative;
+    float: left;
+}*/
+.login_box .ysbformvalidate .has-feedback.has-error .errorholder{line-height: 28px;}
+.login_box .ysbformvalidate .has-feedback.has-error .errorholder{background-color: transparent;}
 
 .personal_top .button_btn #btnSubmit {
 	width: 329px;
@@ -438,7 +461,7 @@ select.form-control {
 	padding: 40px 20px 20px 0;
 }
 
-.biaodan .form-group .col-md-3 b {
+.form-group .col-md-3 b {
 	font-size: 19px;
 	vertical-align: middle;
 	color: #FF8700;
@@ -516,12 +539,12 @@ select.form-control {
 }
 
 .password_content #collapseOne {
-	width: 724px;
+	width: 780px;
 	margin-left: -70px;
 }
 
 .password_content #collapseOne textarea {
-	width: 700px;
+	width: 755px;
 	height: 80px;
 	line-height: 23px;
 	border: 1px solid #009FE8;
@@ -532,7 +555,6 @@ select.form-control {
 	padding: 20px 0;
 	font-size: 15px;
 }
-
 
 /***************************************************************************************************/
 
@@ -559,7 +581,7 @@ select.form-control {
 }
 
 .registered .complete>div em.test span {
-	color: #EC8312;
+	color: #EE8719;
 }
 
 .registered .complete>div p {
@@ -580,13 +602,38 @@ select.form-control {
 
 /*忘记密码   页面*/
 
-.password_content .ysbformvalidate .has-feedback.has-error .errorholder {
-	float: right;
-	width: 220px;
-	margin-right: 70px;
+.ysbformvalidate .has-feedback.has-error .errorholder {
+	    display: block;
+    float: left;
+    width: 284px;
+    margin-left: 20px;
+    background-color: #F5F5F5;
+    height: 44px;
+    line-height: 44px;
+}
+.ysbformvalidate .has-feedback.has-error input{display: inline-block;}
+
+.ysbformvalidate .has-error .help-block{color: #FF8700;}
+
+/*.ysbformvalidate .has-feedback .form-control-feedback{
+	position: relative;
+    float: left;
+    background-color: pink;
 }
 
-.forgot_password_box form #setting {
+.ysbformvalidate .has-feedback .form-control-feedback{
+	background: url(/static/css/img/form-error.png) no-repeat 10px 15px;
+}*/
+
+
+
+
+
+
+
+
+
+/*.forgot_password_box form #setting {
 	display: inline-block;
 	float: right;
 	width: 240px;
@@ -623,7 +670,7 @@ select.form-control {
 	line-height: 43px;
 	padding-left: 5px;
 	background-color: #F7F7F7;
-}
+}*/
 
 .forgot_password_box form #setting1 b {
 	background: url(/imgs/icons/A2.png)no-repeat 10px 0.5px;
@@ -656,7 +703,7 @@ select.form-control {
 }
 
 .forgot_password .password_content {
-	padding: 20px 0 50px 0;
+	padding:30px 0 50px 0;
 }
 
 .forgot_password .password_content>div {
@@ -743,7 +790,7 @@ select.form-control {
 }
 
 .forgot_password .content .yanzhen span {
-	color: #EC8312;
+	color: #EE8719;
 	margin: 0;
 }
 

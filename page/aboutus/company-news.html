@@ -154,10 +154,11 @@
 //    鼠标在p上时添加背景色
         $('.wrap-content p').mouseover(function(){
             $(this).addClass('addbgc');
-
+            $('.wrap-content p img').attr('src','/imgs/icons/F7.png')
         })
     $('.wrap-content p').mouseout(function(){
         $(this).removeClass('addbgc');
+        $('.wrap-content p img').attr('src','/imgs/icons/F8.png')
     })
 
 
