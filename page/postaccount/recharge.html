@@ -51,7 +51,7 @@
 
                         <div class="form-right">
                             <span style="margin-right: 40px">13781837183</span>
-                            <span>余额&nbsp;:&nbsp;<span class="yell" id="topa">10</span>&nbsp;元</span>
+                            <span>余额&nbsp;:&nbsp;<span class="yell topa">10</span>&nbsp;元</span>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
                         <label class="form-left"><span class="yell must">*</span>&nbsp;充值金额&nbsp;:</label>
 
                         <div class="form-right">
-                            <input type="text" placeholder="请输入金额" name="czje topb" id="czje topb" class="chinain" value="30">元
+                            <input type="text" placeholder="请输入金额" name="czje" id="czje" class="chinain topb">元
                             <img src="/imgs/icons/B3-1.png" class="jisuan">
                         </div>
                     </div>
@@ -182,8 +182,10 @@
 
 
 </html>
-<script type="">
-    console.log(parseInt($("#topa").html())>=$("#topb").val())
+<script>
+    window.onclick=function(){
+        console.log($(".topb").val())
+    }
 </script>
 
 

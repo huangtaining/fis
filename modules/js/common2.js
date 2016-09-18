@@ -77,8 +77,8 @@ $(function(){
     }, "匹配english");
 
     //    自定义预留信息
-    jQuery.validator.addMethod("top", function(value, element) {
-        return this.optional(element) || parseInt($("#topa").html())>=$("#topb").val();
+    jQuery.validator.addMethod("xiane", function(value, element) {
+        return this.optional(element) || parseInt($(".topa").html()||$(".topa").val())>=$(".topb").val();
     }, "超出上限");
 
 
@@ -129,12 +129,14 @@ $(function(){
             //充值金额
             czje:{
                 required: true,
-                number:true
+                number:true,
+                xiane:true
             },
             //提现金额
             txje:{
                 required: true,
-                number:true
+                number:true,
+                xiane:true
             },
             //收款方账户
             skfzh:{
@@ -165,9 +167,6 @@ $(function(){
             },
             yxjhm:{
                 required: true
-            },
-            topb:{
-                top:true
             },
             email: {
                 required: true,
@@ -219,12 +218,14 @@ $(function(){
             //充值金额
             czje:{
                 required: "请输入充值金额",
-                number:"请输入正确格式"
+                number:"请输入正确格式",
+                xiane:"超出额度"
             },
             //提现金额
             txje:{
                 required: "请输入充值金额",
-                number:"请输入正确格式"
+                number:"请输入正确格式",
+                xiane:"超出额度"
             },
             //付款金额
             fkje:{
@@ -256,9 +257,6 @@ $(function(){
             },
             yxjhm:{
                 required: "请输入邮箱激活码"
-            },
-            topb:{
-                top:"sssssss"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"

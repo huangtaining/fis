@@ -56,7 +56,7 @@
                         <div class="form-item">
                             <label class="form-left">账户余额&nbsp;:</label>
                             <div class="form-right">
-                                <span style="margin-right: 40px" class="sxa">989,767,100元</span>
+                                <span class="topa">1100</span>元
                             </div>
                         </div>
 
@@ -86,7 +86,7 @@
                         <div class="form-item">
                             <label class="form-left"><span class="yell must">*</span>&nbsp;提现金额&nbsp;:</label>
                             <div class="form-right">
-                                <input type="text" placeholder="请输入金额" name="txje" id="txje" class="chinain sxb">元
+                                <input type="text" placeholder="请输入金额" name="txje" id="txje" class="chinain topb">元
                                 <img src="/imgs/icons/B3-1.png" class="jisuan">
                             </div>
                         </div>
@@ -200,4 +200,8 @@
 <!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>
-
+<script>
+    window.onclick=function(){
+        console.log(parseInt($(".topa").html()))
+    }
+</script>
