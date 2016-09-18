@@ -989,17 +989,33 @@
     background-color:#00A0E8;
 }
 /*验证的label长度设置*/
-.changebankmgt #usename-error{
-    display:inline-block;
-    width:250px!important;
-    text-align: left!important;
-    color:#FF8700;
-}
+/*.changebankmgt #usename-error{*/
+    /*display:inline-block;*/
+    /*width:250px!important;*/
+    /*text-align: left!important;*/
+    /*color:#FF8700;*/
+/*}*/
+/*.changebankmgt label.error{*/
+   /*text-align: left!important;*/
+    /*color:#FF8700!important;*/
+    /*padding-left:25px;*/
+    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
+/*}*/
+
 .changebankmgt label.error{
-   text-align: left!important;
-    color:#FF8700!important;
-    padding-left:25px;
-    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
+    width:200px !important;
+    color:#FF8700;
+    text-align:left!important;
+    padding-left:32px;
+    margin-left:15px;
+    height:25px;
+    width:200px;
+    line-height:25px;
+    background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
+    background-color:#F5F5F5;
+}
+.changebankmgt input.error{
+    border:1px solid #a94442;
 }
 
 /*理财账户*/
