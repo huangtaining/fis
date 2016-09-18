@@ -30,17 +30,18 @@
                         <div class="yanzhen test" style="padding: 0;margin-top: 0;"><em></em>银生宝已成功的向您的Email发送一条<b style="font-weight: normal;color: #FF8700;">激活码</b>短信</div>
                         <div class="form-group has-feedback">
                             <label class=" col-md-3 control-label" style="margin-left:110px;"><b>*</b> 收到的激活码：</label>
-                            <input type="button" id="btn" value="重新获取验证码"  style="width:175px;margin-left:15px;text-indent: 0;background-color: #F7F7F7;border:1px solid #D5D5D5;"/>
+                            
                             <div class=" col-md-8">
                                 <input type="text" class="form-control" name="ddlQuestion" placeholder="请输入验证码"/>
-                                <div class="errorholder">
+                                <input type="button" id="btn" value="重新获取激活码"  style="width:175px;margin-left:15px;text-indent: 0;background-color: #F7F7F7;border:1px solid #D5D5D5;"/>
+                                <div class="errorholder" style=" width: 110px;float: right;margin-right: 0;">
                                 </div>
                             </div>
                         </div>              
-		        <div class="yanzhen"><em style="width:212px;margin-left: -9px;">如果您没有收到激活信，请点击</em><span class="jihuoma" style="margin-left: 0px;">重发激活码</span></div>
+		               <em style="width:310px;margin-left:325px;">如果您没有收到激活信，请点击重新获取激活码</em>
 		         <div class="form-group">
                         <div class="button_btn">
-                            <button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin-left: 110px;">
+                            <button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin-left:110px;">
                             	确定
                             </button>
                         </div>
@@ -111,6 +112,27 @@
             });
         });
     </script>
+    <!--倒计时-->
+<script type="text/javascript">
+var wait=60;
+function time(o) {
+  if (wait == 0) {
+   o.removeAttribute("disabled");   
+   o.value="免费获取验证码";
+   wait = 60;
+  } else { 
+ 
+   o.setAttribute("disabled", true);
+   o.value="(" + wait + ")秒后，重新获取验证码";
+   wait--;
+   setTimeout(function() {
+    time(o)
+   },
+   1000)
+  }
+ }
+document.getElementById("btn").onclick=function(){time(this);}
+</script>
     <script>
         require('ui/index');
     </script>

@@ -76,6 +76,13 @@ $(function(){
         return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
     }, "匹配english");
 
+    //    自定义预留信息
+    jQuery.validator.addMethod("top", function(value, element) {
+        return this.optional(element) || parseInt($("#topa").html())>=$("#topb").val();
+    }, "超出上限");
+
+
+
 
     ////    自定义预留信息
     //jQuery.validator.addMethod("ccc", function(value, element) {
@@ -113,7 +120,7 @@ $(function(){
             //重复密码
             cu_newpaypwd: {
                 required: true,
-                equalTo: "#newpwd"
+                equalTo: "#newpaypwd"
             },
             //校正码
             jzm:{
@@ -158,6 +165,9 @@ $(function(){
             },
             yxjhm:{
                 required: true
+            },
+            topb:{
+                top:true
             },
             email: {
                 required: true,
@@ -246,6 +256,9 @@ $(function(){
             },
             yxjhm:{
                 required: "请输入邮箱激活码"
+            },
+            topb:{
+                top:"sssssss"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"

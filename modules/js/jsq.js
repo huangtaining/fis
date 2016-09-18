@@ -12,6 +12,7 @@ $(".jisuan").click(function(e){
     var _oo=window.scrollY;
     console.log(_ox+"ssss"+_oy);
     $(".jsq").show().css({left:_ox+100,top:_oy+_oo});
+    $("#input-box").val($(".chinain").val())
 });
 
 
@@ -37,7 +38,8 @@ $(".int").click(function(){
     var _result=$("#input-box").val();
     //结果输出在哪里
     $(".jisuan").siblings("input").val(_result);
-    china(_result,$(".chinaout"))
+    china(_result,$(".chinaout"));
+        $(".jsq").hide();
 });
 
 
@@ -54,7 +56,7 @@ var _type;
 
 function typetoinput(num)
 {
-    input=document.getElementById("input-box");
+     input=document.getElementById("input-box");
     if(input.name=="type")
     {
         input.value=" ";
@@ -222,11 +224,10 @@ function checknum(inputvalue)
     }
 }
 
-
-window.document.onkeydown = disableRefresh;
-
+window.document.getElementsByClassName("chinain")[0].onkeydown=disableRefresh;
 function disableRefresh(evt){
-    evt = (evt) ? evt : window.event
+    evt = (evt) ? evt : window.event;
+    $("#input-box").val($(".chinain").val());
     if (evt.keyCode)
     {
         if(evt.keyCode == 13){operator('result')}

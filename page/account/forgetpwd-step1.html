@@ -49,6 +49,8 @@ var emali_zeng= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;  //邮箱
 btn.onclick=function() {
      if(username.value==""){
        b.innerHTML='<b></b>身份证号码格式错误不能为空';
+       usernamr.style.border="1px solid #f00"
+
        b.style.display="block";  //显示
      }else if(password.value==""){
       b1.innerHTML='<b></b>验证码不能为空';
