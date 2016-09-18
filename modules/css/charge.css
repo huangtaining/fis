@@ -225,9 +225,6 @@
 }
 
 /*计算器*/
-/*.form form p{*/
-    /*position:relative;*/
-/*}*/
 .form .jsq{
     position:absolute;
     top:70%;
@@ -267,7 +264,7 @@
     width:400px;
     position:fixed;
     left:25%;
-    top:550px;
+    top:300px;
 }
 .modalbody ul{
     margin-top:10px;
@@ -345,6 +342,9 @@
 }
 .modalfooter{
     border:none;
+}
+.form .changebgc{
+    background-color:#F0F0F0;
 }
 /*多人收款*/
 .formpad{

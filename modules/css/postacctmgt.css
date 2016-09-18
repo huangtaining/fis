@@ -522,7 +522,7 @@
 }
 .authentication .account-right{
     width:947px;
-    padding-bottom:162px;
+    /*padding-bottom:162px;*/
     /*background-color:white;*/
     float:right;
 }

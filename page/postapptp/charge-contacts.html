@@ -7,7 +7,10 @@
     <link rel="import" href="../layout/header.html?__inline">
     <script src="/modules/js/jsq.js"></script>
     <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/lib/ysbbase.js"></script>
     <script>
+        require('jquery');
+        require('modules/lib/ysbbase');
         require('modules/js/jsq');
         require('modules/app/jquery.validate.min');
     </script>
@@ -69,19 +72,19 @@
 
                                     <ul>
                                         <li>
-                                            <input type="checkbox" id="secone" class ="xuan" name="check" onclick="checkCanel(this)"><label for="secone" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="radio" id="secone" class ="xuan" name="check" ><label for="secone" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="sectwo" class="xuan"   name="check" onclick="checkCanel(this)"><label for="sectwo" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="radio" id="sectwo" class="xuan"   name="check"><label for="sectwo" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="secthr" class="xuan"   name="check" onclick="checkCanel(this)"><label for="secthr" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="radio" id="secthr" class="xuan"   name="check" ><label for="secthr" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="secfour" class="xuan"  name="check" onclick="checkCanel(this)"><label for="secfour" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="radio" id="secfour" class="xuan"  name="check"><label for="secfour" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" id="secfive" class="xuan"   name="check" onclick="checkCanel(this)"><label for="secfive" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="radio" id="secfive" class="xuan"   name="check" ><label for="secfive" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                     </ul>
 
@@ -187,6 +190,7 @@
 </div>
 <link rel="import" href="modules/widget/footer/footer.html?__inline">
 
+<script src="lib/mod.js" data-loader></script>
 <script>
     var $ = require('jquery');
     //    form验证
@@ -234,12 +238,6 @@
         }
     });
 
-    function checkCanel(Obj){
-        $("input[name='check']").each(function(){
-            $(this).attr("checked",false);
-        });
-        Obj.checked=true;
-    }
 
     //    计算器
     $('.formjsq').click(function(){
@@ -256,6 +254,14 @@
         china()
     });
 
+//    鼠标dianjia添加背景色
+    $('.modal-body ul li').mouseover(function(){
+        $(this).addClass('changebgc');
+
+    });
+    $('.modal-body ul li').mouseout(function(){
+        $(this).removeClass('changebgc');
+    })
 
 
     //    阿拉伯数字转化为中文
