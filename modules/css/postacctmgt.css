@@ -59,7 +59,6 @@
 }
 .acctinfo .account-right .acc-content{
     width:909px;
-    height:70px;
     margin:0 auto;
     line-height:70px;
     border-bottom: 1px solid #E8E8E8;
@@ -67,6 +66,7 @@
 .acctinfo .account-right .acc-content .con-left{
     display:inline-block;
     width:90px;
+    height:70px;
     color:#4A4A4A;
     margin-right:261px;
 }
@@ -146,6 +146,7 @@
     width:186px;
     height:25px;
     margin-top:25px;
+    padding-left:10px;
 }
 .changeemail .email-content .jhm{
     margin:49px 0 0 67px;
@@ -177,12 +178,32 @@
     text-align:left;
     padding-left:32px;
     margin:0 0 0 15px;
-
     height:25px;
     width:200px;
     line-height:25px;
     background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
     background-color:#F5F5F5;
+}
+.changeemail input.error:focus{
+    border:1px solid  #843534;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.changeemail input.error{
+    border:1px solid #843534;
+    outline: 0;
+    margin-bottom:0;
+}
+.changeemail input.valid{
+    border:1px solid  #3c763d;
+    outline: 0;
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.changeemail input.valid:focus{
+    border: 1px solid #2b542c !important;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 /*修改手机号*/
 .changemobile{
@@ -431,6 +452,27 @@
     line-height:25px;
     background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
     background-color:#F5F5F5!important;
+}
+.unbindmobile input.error:focus{
+    border:1px solid  #843534;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.unbindmobile input.error{
+    border:1px solid #843534;
+    outline: 0;
+    margin-bottom:0;
+}
+.unbindmobile input.valid{
+    border:1px solid  #3c763d;
+    outline: 0;
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.unbindmobile input.valid:focus{
+    border: 1px solid #2b542c !important;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 /*实名认证*/
 .authentication{
@@ -934,6 +976,10 @@
     color:#919191;
     margin-top:3px;
 }
+.changebankmgt .card-content ul li .zjlx{
+    height:25px;
+    /*margin-bottom: 0;*/
+}
 .changebankmgt .card-content ul li .zjlx .sub-zjlx{
     display: inline-block;
     width:100px;
@@ -989,33 +1035,40 @@
     background-color:#00A0E8;
 }
 /*验证的label长度设置*/
-/*.changebankmgt #usename-error{*/
-    /*display:inline-block;*/
-    /*width:250px!important;*/
-    /*text-align: left!important;*/
-    /*color:#FF8700;*/
-/*}*/
-/*.changebankmgt label.error{*/
-   /*text-align: left!important;*/
-    /*color:#FF8700!important;*/
-    /*padding-left:25px;*/
-    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
-/*}*/
 
 .changebankmgt label.error{
     width:200px !important;
-    color:#FF8700;
+    color:#FF8700!important;
     text-align:left!important;
     padding-left:32px;
-    margin-left:15px;
+    margin-left:15px!important;
     height:25px;
     width:200px;
     line-height:25px;
+    margin-bottom:0;
     background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
     background-color:#F5F5F5;
 }
+.changebankmgt input.error:focus{
+    border:1px solid  #843534;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
 .changebankmgt input.error{
-    border:1px solid #a94442;
+    border:1px solid #843534;
+    outline: 0;
+    margin-bottom:0;
+}
+.changebankmgt input.valid{
+    border:1px solid  #3c763d;
+    outline: 0;
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.changebankmgt input.valid:focus{
+    border: 1px solid #2b542c !important;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 
 /*理财账户*/
