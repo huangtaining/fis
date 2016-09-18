@@ -5,11 +5,9 @@
     <title>修改银行卡</title>
     <link rel="import" href="../layout/header.html?__inline">
     <script src="/modules/app/jquery.validate.min.js"></script>
-    <!--<script src="/modules/js/verification.js"></script>-->
     <script>
         var $ = require('jquery');
         require('modules/app/jquery.validate.min');
-//        require('modules/js/verification');
     </script>
 </head>
 <body>
@@ -33,9 +31,9 @@
                 <li>
                     <p class="zjlx">
                         <label for=""><em>*</em>证件类型：</label>
-                        <input type="checkbox" name="zjlxtest"> <label for="" name="card" class="sub-zjlx">储蓄卡(借记卡)</label>
-                        <input type="checkbox" name="zjlxtest"> <label for="" name="card" class="sub-zjlx">信用卡(贷记卡)</label>
-                        <input type="checkbox" name="zjlxtest"> <label for="" name="card" class="sub-zjlx">结算账户/存折</label>
+                        <input type="checkbox" name="zjlxtest" onclick="checkCanel(this)"  id="cxcard"> <label for="cxcard" name="card" class="sub-zjlx">储蓄卡(借记卡)</label>
+                        <input type="checkbox" name="zjlxtest" onclick="checkCanel(this)" id="xycard"> <label for="xycard" name="card" class="sub-zjlx">信用卡(贷记卡)</label>
+                        <input type="checkbox" name="zjlxtest" onclick="checkCanel(this)" id="czcard"> <label for="czcard" name="card" class="sub-zjlx">结算账户/存折</label>
 
                     </p>
                 </li>
@@ -101,12 +99,6 @@
 
 
 </section>
-
-
-
-
-
-
 
 
 
@@ -188,6 +180,16 @@
             }
         }
     });
+
+
+//证件类型设置单选
+    var $ = require('jquery');
+    function checkCanel(Obj){
+        $("input[name='zjlxtest']").each(function(){
+            $(this).attr("checked",false);
+        });
+        Obj.checked=true;
+    }
 </script>
 </body>
 </html>

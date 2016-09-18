@@ -969,6 +969,8 @@
 .changebankmgt .card-content ul li input{
     width:186px;
     height:25px;
+    line-height:25px;
+    padding-left:10px;
 }
 .changebankmgt .card-content ul li .tips{
     margin-left:204px;
@@ -1042,9 +1044,8 @@
     text-align:left!important;
     padding-left:32px;
     margin-left:15px!important;
-    height:25px;
+    height:23px;
     width:200px;
-    line-height:25px;
     margin-bottom:0;
     background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
     background-color:#F5F5F5;
