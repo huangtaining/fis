@@ -512,4 +512,21 @@
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
 }
-
+.bo .nav-tabs > li.active > a,
+.bo .nav-tabs > li.active > a:focus,
+.bo .nav-tabs > li.active > a:hover{
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-right: none;
+    border-left:none;
+}
+.bo .nav-tabs > li.active{
+    border-left:none;
+}
+.bo .nav-tabs > li{
+    border-bottom: none;
+    border-right: 1px solid #ccc;
+}
+.bo #myTabContent tbody tr:nth-child(odd){
+       background: #F7F7F7
+}

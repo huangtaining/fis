@@ -217,7 +217,7 @@
                 <div class="tit">交易记录<a href="#" class="more">更多</a></div>
 
                 <ul id="myTab" class="nav nav-tabs">
-                    <li class="active">
+                    <li class="active" style="border-left: none">
                         <a href="#allpay" data-toggle="tab">所有交易记录</a>
                     </li>
                     <li>
@@ -566,11 +566,9 @@ $(function(){
     var _tempsp;
 
 
-    console.log(_bodytext.zzfk[0][1])
         $("thead tr").find("th:first").css("textIndent","30px");
         $("tbody tr").find("td:first").css("textIndent","30px");
         $("tfoot tr").find("td:first").css("textIndent","30px");
-        $(".active a").css("borderRight","1px solid #ccc");
 
 //         鼠标移入BODY  a标签
         $(".col-five").hover(function(){
