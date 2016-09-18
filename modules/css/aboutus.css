@@ -129,6 +129,17 @@
     list-style: none;
     background: #F7F7F7;
     border-radius: 5px 5px 5px 5px ;
+    position:relative;
+}
+.company-intro .thirteen .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
 }
 .company-intro .thirteen .txt p {
     width:598px;
@@ -204,6 +215,17 @@
     list-style: none;
     background: #F7F7F7;
     border-radius: 5px 5px 5px 5px ;
+    position:relative;
+}
+.company-intro .twelve_twelve .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
 }
 .company-intro .twelve_twelve .txt p {
     width:598px;
@@ -260,6 +282,17 @@
     list-style: none;
     background:#F7F7F7;
     border-radius: 5px 5px 5px 5px ;
+    position:relative;
+}
+.company-intro .eleven .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
 }
 .company-intro .eleven .txt p {
     width:598px;
@@ -328,6 +361,17 @@
     list-style: none;
     background: #F7F7F7;
     border-radius: 5px 5px 5px 5px ;
+    position:relative;
+}
+.company-intro .eigth .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
 }
 .company-intro .eigth .txt p {
     width:598px;
@@ -418,6 +462,17 @@
     list-style: none;
     background: #F7F7F7;
     border-radius: 5px 5px 5px 5px ;
+    position:relative;
+}
+.company-intro .seven .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
 }
 .company-intro .seven .txt p {
     width:598px;
@@ -541,6 +596,17 @@
     list-style: none;
     background: #F7F7F7;
     border-radius: 5px 5px 5px 5px ;
+    position: relative;
+}
+.company-intro .six .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
 }
 .company-intro .six .txt p {
     width:598px;
@@ -816,13 +882,12 @@
     margin-top:17px;
 }
 .corperate .worldbanks li img{
-    margin-right:38px;
+    margin-right:37px;
     width:140px;
     height:50.6px;
     margin-top:20.3px;
 }
 .corperate .banks{
-    /*margin-top:22px;*/
     margin-bottom:63.3px;
 }
 

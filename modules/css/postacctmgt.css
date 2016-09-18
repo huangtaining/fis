@@ -169,12 +169,20 @@
     height:25px;
 }
 
-
+.changeemail input.error{
+    border:1px solid #a94442;
+}
 .changeemail label.error{
-    text-align: left!important;
-    color:#FF8700!important;
-    padding-left:25px;
-    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
+    color:#FF8700;
+    text-align:left;
+    padding-left:32px;
+    margin:0 0 0 15px;
+
+    height:25px;
+    width:200px;
+    line-height:25px;
+    background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
+    background-color:#F5F5F5;
 }
 /*修改手机号*/
 .changemobile{
@@ -288,7 +296,6 @@
 .unbindmobile .con-top ul{
     width:1102px;
     margin:0 auto;
-    /*margin-top:78px;*/
     padding-top:78px;
 }
 .unbindmobile .con-top ul li{
@@ -403,15 +410,28 @@
     margin-left:170px;
 }
 
-.unbindmobile  label.error{
-    width:200px!important;
-    text-align: left!important;
-    color:#FF8700!important;
-    padding-left:25px;
-    margin-left:40px!important;
-    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
+/*.unbindmobile  label.error{*/
+    /*width:200px!important;*/
+    /*text-align: left!important;*/
+    /*color:#FF8700!important;*/
+    /*padding-left:25px;*/
+    /*margin-left:40px!important;*/
+    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
+/*}*/
+.unbindmobile input.error{
+    border:1px solid #a94442;
 }
-
+.unbindmobile label.error{
+    color:#FF8700!important;
+    text-align:left!important;
+    padding-left:32px;
+    margin:0 0 0 15px;
+    height:25px;
+    width:200px!important;
+    line-height:25px;
+    background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
+    background-color:#F5F5F5!important;
+}
 /*实名认证*/
 .authentication{
     width:100%;
@@ -1140,13 +1160,6 @@
 
     width:130px;
 }
-/*.tradeaccount .account-right .account-con .nav-tabs li:nth-child(1){*/
-    /*border-left:1px solid #E8E8E8!important;*/
-    /*border-top:1px solid #E8E8E8!important;*/
-/*}*/
-/*.tradeaccount .account-right .account-con .nav-tabs li:nth-child(2){*/
-    /**/
-/*}*/
 .tradeaccount .account-right .account-con ul{
     width:275px;
 }
@@ -1282,7 +1295,7 @@
     margin-top:5px;
 }
 .tradeaccount .account-con .nextpage nav ul{
-    margin-left:211px;
+    margin-left:190px;
 }
 .tradeaccount .account-right .account-con .pagination{
     margin-bottom:20px;
@@ -1317,5 +1330,6 @@
 .tradeaccount .account-right .caoz{
     color:#00A0E8;
 }
+
 
 

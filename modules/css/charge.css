@@ -186,23 +186,20 @@
     display: inline-block;
     position:absolute;
 }
-.errstyle{
-    color:#FF8700;
-    font-size:12px;
-    display: inline-block;
-    height:22px;
-    padding:0 13px 0 40px;
-    line-height:22px;
-    background-color:#F7F7F7;
-    background:url("/imgs/icons/A2.png") no-repeat 10px center;
-    margin-left:10px;
-}
 .form label.error{
     width:200px;
     color:#FF8700;
     text-align:left;
-    padding-left:25px;
-    background:url("/imgs/icons/A2.png")no-repeat 0 3px;
+    padding-left:32px;
+    margin-left:15px;
+    height:25px;
+    width:200px;
+    line-height:25px;
+    background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
+    background-color:#F5F5F5;
+}
+.form input.error{
+    border:1px solid #a94442;
 }
 /*计算器*/
 .form .jsq{
@@ -239,9 +236,7 @@
 }
 
 /*选择联系人*/
-/*.linedown{*/
-    /*position:relative;*/
-/*}*/
+
 .modalcontent{
     width:400px;
     position:fixed;
