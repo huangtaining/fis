@@ -450,6 +450,37 @@ p{
 .form_succ .form-left,.form_succ .form-right{
     padding: 5px 0;
 }
+.bo .xzlxr {
+    width: 378px;
+    margin: 0 auto;
+    border-radius: 0;
+}
+.bo .xzlxr button{
+      padding: 0 10px;
+}
+.bo .xzlxr p{
+    border-bottom: none !important;
+}
+.bo .xzlxr .sslxr{
+    border: 1px solid #DDDDDD;
+    padding: 2px 4px;
+    width: 70%;
+    background: url("/imgs/icons/sousuo.png") no-repeat;
+    background-position: 5px 6px;
+    text-indent: 35px;
+}
+.bo .xzlxr table{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 20px;
+}
+.bo .xzlxr td:nth-child(1){
+    width: 40px;
+    padding-left: 5px;
+}
+.bo .xzlxr tr{
+    border-bottom: 1px solid #ccc;
+}
 /*向多人付款*/
 .bo .xdrfk{
     width: 600px;
@@ -462,11 +493,11 @@ p{
     background: #E8E8F5;
 }
 .bo .xdrfk th:nth-child(1){
-    width: 30px;
+    width: 40px;
     padding-left: 5px;
 }
 .bo .xdrfk tr td:nth-child(1){
-    width: 30px;
+    width: 40px;
     padding-left: 5px;
 }
 .bo .xdrfk th:nth-child(5){

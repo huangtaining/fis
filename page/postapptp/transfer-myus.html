@@ -52,8 +52,8 @@
                             <label class="form-left"><span class="yell must">*</span>&nbsp;收款方账户&nbsp;:</label>
                             <div class="form-right">
                                 <input type="text" placeholder="请输入金额" style="margin-right: 18px" class="fmpeople" name="skfzh" id="skfzh">
-                                <a class="bullq openlxr" data-toggle="modal" data-target="#myModal" href="###">从联系人中选取</a>
-                                <a class="bullq openlxr" data-toggle="modal" data-target="#myModal" href="###">批量付款</a>
+                                <a class="bullq openlxr2" data-toggle="modal" data-target="#mone" href="###">从联系人中选取</a>
+                                <a class="bullq openlxr" data-toggle="modal" data-target="#mtwo" href="###">批量付款</a>
                             </div>
                         </div>
 
@@ -61,7 +61,7 @@
                         <div class="form-item">
                             <label class="form-left">&nbsp;收款方名称&nbsp;:</label>
                             <div class="form-right">
-                                <input type="text"style="margin-right: 18px" placeholder="请输入姓名或单位">
+                                <input type="text" style="margin-right: 18px" placeholder="请输入姓名或单位" class="fmname">
                             </div>
                         </div>
 
@@ -194,7 +194,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="mtwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content xdrfk">
                 <!--头部-->
@@ -242,6 +242,60 @@
                             <td>pengmmin1977@163.com</td>
                             <td>13758022117</td>
                             <td><input type="text" class="lxrje" value="0.00"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--jo-->
+                <div class="modal-footer">
+
+                    <!--&lt;!&ndash;保存&ndash;&gt;-->
+                    <!--<button type="button" class="btn btn-primary">确定</button>-->
+                    <!--关闭-->
+                    <button type="button" class="btn btn-default modalqd" data-dismiss="modal">确定</button>
+                    <!--关闭-->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content xzlxr">
+                <!--头部-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <p class="modal-title s20" id="myModalLabel">选择收款人</p>
+
+                </div>
+                <!--身体-->
+                <div class="modal-body chpeople">
+                    <input type="search" placeholder="请输入账号" class="sslxr"><button class="right">查询</button>
+                    <table>
+                        <tbody>
+                        <tr style="background: #DDD">
+                            <td class="ck"><input type="radio" name="dxlxr" checked></td>
+                            <td>彭敏</td>
+                            <td>peng1977@163.com</td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="radio"  name="dxlxr"></td>
+                            <td>十大</td>
+                            <td>pmmin19667@163.com</td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="radio"  name="dxlxr"></td>
+                            <td>彭试试</td>
+                            <td>mmin17777@163.com</td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="radio"  name="dxlxr"></td>
+                            <td>啊啊</td>
+                            <td>pen14477@163.com</td>
                         </tr>
                         </tbody>
                     </table>

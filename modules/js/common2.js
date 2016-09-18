@@ -268,9 +268,22 @@ $(function(){
 
     });
 
+    //选择单个个联系人并结算
+    $("#mone .modalqd").click(function(){
+        var _dr=$("#mone").find("input:checked").parents().siblings("td:last").html();
+        var _dr1=$("#mone").find("input:checked").parents().siblings("td:nth-child(2)").html();
+        $(".fmpeople").val(_dr);
+        $(".fmname").val(_dr1)
+    });
+    //单选变色
+    $(".xzlxr tbody input:radio").click(function(){
+        $(".xzlxr tbody tr").css("background","white");
+        $(this).parents("tr").css("background","#F0F0F0");
+        //console.log($(this).parents().siblings("td:last").html())
+    });
 
     //选择多个联系人并结算
-    $(".modalqd").click(function(){
+    $("#mtwo .modalqd").click(function(){
         var _zl=0;
         var _dl="";
 
