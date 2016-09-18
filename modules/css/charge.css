@@ -166,12 +166,12 @@
 .lsevermoney{
     color:#00A0E8;
 }
-.nextbtn{
-    height:30px;
-    width:6.4%!important;
-}
-.nextbtn{
-    margin-left:191px;
+
+.form .nextbtn{
+    height:25px;
+    width:75.3px;
+    margin-left:210px;
+    line-height:12px;
 }
 #txt{
     height:151px;

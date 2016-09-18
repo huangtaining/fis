@@ -283,7 +283,9 @@
 .changemobile .mobilebgc{
     background-color:#F0F0F0;
 }
-
+.changemobile .cgbgc{
+    background-color:#F0F0F0;
+}
 /*解绑手机号*/
 .unbindmobile{
     width:100%;
@@ -548,6 +550,7 @@
 .authentication .sfrz p select{
     width:186px;
     background-color:#EEEEEE;
+    padding-left:17px;
 }
 
 .authentication .account-right .yhkrz{
@@ -1169,7 +1172,7 @@
     background-color:#FFFDF9;
 }
 
-/*来往账户管理*/
+/*往来账户管理*/
 
 .tradeaccount{
     width:100%;
@@ -1284,10 +1287,12 @@
     width:186px;
     height:25px;
     float:left;
+    padding-left:10px;
 }
 .tradeaccount .account-con .tab-pane .chaxun .chazhao{
     width:75px;
     height:25px;
+    line-height:25px;
     background-color:#00A0E8;
     color:white;
     border:0;
@@ -1344,6 +1349,7 @@
 .tradeaccount .account-con .moreaction button{
     width:86px;
     height:25px;
+    line-height:25px;
     color:#333333;
     background-color:#EEEEEE;
     border:1px solid #DDDDDD;
