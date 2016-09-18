@@ -388,11 +388,11 @@ p{
     font-size: 18px;
 }
 .yzmtu{
-    border: 1px solid red;
     padding: 3px;
-    width: 70px;
+    width: 80px;
     display: inline-block;
     text-align: center;
+    margin-top: -3px;
 }
 
 .form-item{
@@ -571,3 +571,7 @@ p{
     /*margin-right: 18px;*/
     /*border: 1px solid #66af39;*/
 /*}*/
+
+.form-right .icheckbox_flat-blue{
+    margin-right: 10px;
+}

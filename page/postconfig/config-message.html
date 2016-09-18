@@ -7,15 +7,18 @@
     <!--STYLE_PLACEHOLDER-->
     <link href="/modules/css/common2.css" rel="stylesheet">
     <link href="/modules/css/safe.css" rel="stylesheet">
+    <link href="/modules/css/blue.css" rel="stylesheet">
     <script src="/modules/lib/ysbbase.min.js"></script>
     <script src="/modules/app/jquery.validate.min.js"></script>
     <script src="/modules/js/common2.js"></script>
     <script src="/modules/js/safe.js"></script>
+    <script src="/modules/js/icheck.min.js"></script>
     <script>
         var $ = require('jquery');
         require('modules/app/jquery.validate.min');
         require('modules/js/common2');
         require('modules/js/safe');
+        require('modules/js/icheck.min');
     </script>
 
 </head>
@@ -132,10 +135,15 @@
 
 <!--SCRIPT_PLACEHOLDER-->
 
-
+<script>
+    $('input').iCheck({
+        checkboxClass: 'icheckbox_flat-blue'
+    });
+</script>
 </body>
 
 
 </html>
+
 
 
