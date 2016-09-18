@@ -103,19 +103,6 @@ $(".formsubmit").validate({
         zhname: {
             required: "请填写开户行名称",
             hanzm: "请输入正确的格式"
-        },
-        // 我要收款模块
-        ddlQuestion: {
-            required: "请填写开户行名称",
-            minlength: "请输入正确的格式"
-        },
-        moneycheck: {
-            required: "请输入收款金额",
-            digits: "请输入正确的格式"
-        },
-        moneyuse: {
-            required: "请填写资金用途",
-            maxlength: "已超过85个字符"
-        },
-    },
-})；
+        }
+    }
+});

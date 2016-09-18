@@ -5,7 +5,7 @@
     <title>解绑手机号</title>
     <link rel="import" href="../layout/header.html?__inline">
     <script src="/modules/app/jquery.validate.min.js"></script>
-    <script src="/modules/js/verification.js"></script>
+    <!--<script src="/modules/js/verification.js"></script>-->
     <script>
         var $ = require('jquery');
         require('modules/app/jquery.validate.min');
@@ -78,6 +78,39 @@
 <script src="lib/mod.js"></script>
 <script>
     require('ui/index');
+</script>
+<script>
+    //    form验证
+    $(".submit").click(function(){
+        if($(".formsubmit").valid()){
+            // alert("提交成功")
+        }else{
+            // alert("提交失败")
+        }
+    });
+
+    $(".formsubmit").validate({
+        errorPlacement:function(error,element){
+            error.appendTo(element.parent())
+        },
+        rules:{
+//           解绑手机号
+            telcheck: {
+                required: true
+            },
+            paynum: {
+                required: true
+            },
+        },
+        messages:{
+            telcheck: {
+                required: "请输入手机验证码"
+            },
+            paynum: {
+                required: "请输入支付密码"
+            },
+        }
+    });
 </script>
 </body>
 </html>

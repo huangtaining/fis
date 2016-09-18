@@ -11,7 +11,7 @@
     <script>
         require('modules/js/jsq');
         require('modules/app/jquery.validate.min');
-        require('modules/js/verification');
+//        require('modules/js/verification');
     </script>
 </head>
 <body>
@@ -191,6 +191,50 @@
 
 <script>
     var $ = require('jquery');
+    //    form验证
+    $(".submit").click(function(){
+        if($(".formsubmit").valid()){
+            // alert("提交成功")
+        }else{
+            // alert("提交失败")
+        }
+    });
+
+    $(".formsubmit").validate({
+        errorPlacement:function(error,element){
+            error.appendTo(element.parent())
+        },
+        rules:{
+            // 我要收款模块
+            ddlQuestion: {
+                required: true,
+                minlength: 2
+            },
+            moneycheck: {
+                required: true,
+                digits: true
+            },
+            moneyuse: {
+                required: true,
+                maxlength: 85
+            },
+        },
+        messages:{
+            // 我要收款模块
+            ddlQuestion: {
+                required: "请填写开户行名称",
+                minlength: "请输入正确的格式"
+            },
+            moneycheck: {
+                required: "请输入收款金额",
+                digits: "请输入正确的格式"
+            },
+            moneyuse: {
+                required: "请填写资金用途",
+                maxlength: "已超过85个字符"
+            },
+        }
+    });
     function checkCanel(Obj){
         $("input[name='check']").each(function(){
             $(this).attr("checked",false);
