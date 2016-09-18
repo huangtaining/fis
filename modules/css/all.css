@@ -1,8 +1,9 @@
 
-.all_detail h1{padding: 20px 0 10px 0;font-size: 18px;font-weight: bold;}
-.all_detail .all_detail_color{width: 100%;padding:10px;background-color: #FFFDC0;border: 2px solid #EDC677;color:#FA6A11;font-weight: bold ;text-indent: 7em;}
-.all_detail p{padding: 20px 0 10px 0;font-size: 15px;font-weight: bold}
-.all_detail .all_detail_box{width: 100%;padding: 10px 0;border:2px solid #BCD3FC;color:#E3F1FA ;background-color: #E3F1FA;}
+.detail{width: 100%;background-color: #F7F7F7;}
+.all_detail h1{padding: 40px 0 15px 0;font-size: 14px;color: #333;}
+.all_detail .all_detail_color{width: 100%;padding:30px 0px;background-color:#FFF9ED;border: 2px solid #EDC677;color:#585858;font-weight: bold ;text-indent: 7em;}
+.all_detail p{padding: 20px 0 10px 0;font-size: 15px;font-weight: bold;color: #333;}
+.all_detail .all_detail_box{width: 100%;padding: 10px 0;border:2px solid #BCD3FC;color:#E3F1FA ;background-color: #fff;margin: 20px 0;}
 .all_detail .all_detail_box ul li{padding:5px 0;}
 .all_detail .all_detail_box ul li em{display: inline-block;width:300px;text-align: right;color: #555;}
 .all_detail .all_detail_box ul li span{color: #333;font-weight: bold;margin-left: 10px;}

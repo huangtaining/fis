@@ -57,8 +57,8 @@
 								<div class="form-group has-feedback">
 			<label class="col-md-3 control-label" style="width:178px;font-weight: normal;color: #585858;"><b>*</b> 账户名：</label>
 			<div class="">
-				<input type="email" class="form-control" name="email" placeholder="请输入邮箱或手机" style="display: inline-block;" />
-				<div class="errorholder" style="float: right;width: 260px;margin-right:200px;margin-left: 0;">
+				<input type="username" class="form-control" name="username" placeholder="请输入邮箱或手机" style="display: inline-block;" />
+				<div class="errorholder" style="float: right;width: 280px;margin-right:180px;margin-left: 0;">
 				</div>
 			</div>
 		</div>
@@ -67,11 +67,11 @@
 			<label class="col-md-3 control-label" style="width:178px;font-weight: normal;color: #585858;"><b>*</b> 验证码：</label>
 			<div class="">
 				<input type="text" name="ddlQuestion" id="" class="form-control" style="width: 154px;height: 44px;float: left;" placeholder="请输入验证码" />
-				<span style="margin-left:10px;width: 100px;height: 43px;vertical-align: middle;display: inline-block;background-color: pink;">
-				<!--<img name="logon_sys_vericode_image0" src="/page/util/verifyImage.jsp?now=1474183845480" class="login_verify_img" align="absmiddle" title="看不清校验码请点击此图标刷新！">-->
-			</span>
+				<span style="margin-left:20px;width: 100px;height: 43px;line-height: 43px;vertical-align: middle;">
+				     <img src="https://www.unspay.com/page/util/verifyImage.jsp?now=1474183874433" class="yzmtu">
+			    </span>
 				<em style="color: #019FE8;width:62px;margin-left: 10px;margin-top: 12px;">换一张</em>
-				<div class="errorholder" style="float: right;width: 260px;margin-right:200px;margin-left: 0;">
+				<div class="errorholder" style="float: right;width: 280px;margin-right:180px;margin-left: 0;">
 				</div>
 			</div>
 		</div>
@@ -436,13 +436,29 @@ G、您使用银生宝账户成功登录过的其他网站。
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                	 email: {
-                validators: {
-                    emailAddress: {
-                        message: '您输入的E-mail格式不正确'
-                    }
-                }
-            },
+                	 username: {
+                            validators: {
+                                callback: {
+                                    message: '请填写手机号码或者邮箱',
+                                    callback: function(value, validator) {
+                                        var isvalid = true;
+                                        var re = /^(13[0-9]{9})|(15[89][0-9]{8})$/;
+                                        var re_email = /\w@\w*\.\w/;
+                                        if (re.test(value) || re_email.test(value)) {
+                                            isvalid = true;
+                                        } else {
+                                            isvalid = false;
+                                        }
+                                        if (isvalid) {
+                                            validator.updateStatus('username', 'VALID');
+                                            return true;
+                                        } else {
+                                            return false;
+                                        }
+                                    }
+                                }
+                            }
+                        },
                    
                     ddlQuestion: {
                         validators: {
