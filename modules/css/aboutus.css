@@ -950,8 +950,6 @@
     background-color:#F7F7F7;
     padding-top:14px;
     border:1px solid #E8E8E8;
-
-
 }
 
 .company-news .sub_coll{
@@ -1031,8 +1029,13 @@
 .company-news .wrap-content p{
     /*width:960px;*/
     /*height:60px;*/
-    padding:21px 22px 20px 26px;
+    padding:21px 22px 20px 55px;
+    background:url("/imgs/icons/F8.png") no-repeat 25px center;
     /*line-height:60px;*/
+}
+.changeimg{
+    background:url("/imgs/icons/F7.png") no-repeat 25px center!important;
+    background-color:#F7F7F7!important;
 }
 .company-news .wrap-content p img{
     /*vertical-align: top;*/
@@ -1048,9 +1051,5 @@
 .company-news nav .pagination li a{
     margin-right:5px;
 }
-.addbgc{
-    background-color:#F7F7F7;
-}
-
 
 

@@ -2,11 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>公司公告</title>
     <link rel="import" href="../layout/header.html?__inline">
-
-
-
 </head>
 <body>
 <link rel="import" href="modules/widget/header/header.html?__inline">
@@ -38,57 +35,46 @@
 
                     <div class="wrap-content">
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
                         <p>
-                            <img src="/imgs/icons/F8.png" alt="">
                             2015年银生宝关于反洗钱宣传活动的公告
                             <span>2015-01-01</span>
                         </p>
@@ -153,13 +139,12 @@
 
 //    鼠标在p上时添加背景色
         $('.wrap-content p').mouseover(function(){
-            $(this).addClass('addbgc');
-            $('.wrap-content p img').attr('src','/imgs/icons/F7.png')
+            $(this).addClass('changeimg');
+
+        });
+        $('.wrap-content p').mouseout(function(){
+            $(this).removeClass('changeimg');
         })
-    $('.wrap-content p').mouseout(function(){
-        $(this).removeClass('addbgc');
-        $('.wrap-content p img').attr('src','/imgs/icons/F8.png')
-    })
 
 
 </script>
