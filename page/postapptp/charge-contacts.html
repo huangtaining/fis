@@ -7,11 +7,9 @@
     <link rel="import" href="../layout/header.html?__inline">
     <script src="/modules/js/jsq.js"></script>
     <script src="/modules/app/jquery.validate.min.js"></script>
-    <script src="/modules/js/verification.js"></script>
     <script>
         require('modules/js/jsq');
         require('modules/app/jquery.validate.min');
-//        require('modules/js/verification');
     </script>
 </head>
 <body>
@@ -104,8 +102,8 @@
                 </p>
                 <p>
                     <label for=""><em>*</em>收款金额:</label>
-                    <input type="text" placeholder="请输入金额" onchange="china()" class="money" name="moneycheck">
-                    <span>元 &nbsp;<em class="formjsq"><img src="/imgs/icons/B3-1.png" alt=""></em> </span>
+                    <input type="text" placeholder="请输入金额" onchange="china()" class="money chinain" name="moneycheck">
+                    <span>元 &nbsp;<em class="formjsq jisuan"><img src="/imgs/icons/B3-1.png" alt=""></em> </span>
                     <span id="innerst"></span>
                 </p>
                 <p>
@@ -235,6 +233,7 @@
             },
         }
     });
+
     function checkCanel(Obj){
         $("input[name='check']").each(function(){
             $(this).attr("checked",false);

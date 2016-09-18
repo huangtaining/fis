@@ -7,7 +7,7 @@
     <link rel="import" href="../layout/header.html?__inline">
     <script src="/modules/js/jsq.js"></script>
     <script src="/modules/app/jquery.validate.min.js"></script>
-    <script src="/modules/js/verification.js"></script>
+
     <script>
         require('modules/js/jsq');
         require('modules/app/jquery.validate.min');
@@ -61,41 +61,9 @@
                     </p>
                     <p>
                         <label for=""><em>*</em>收款金额:</label>
-                        <input type="text" placeholder="请输入金额" onchange="china()" class="money" name="moneycheck">
-                        <span>元 &nbsp;<em class="formjsq"><img src="/imgs/icons/B3-1.png" alt=""></em> </span>
-                        <span id="innerst"></span>
-                    </p>
-                    <p>
-                        <label for="">总金额大写:</label>
-                        <input type="text" class="totalmoney">
-                        <span></span>
-                    </p>
-                    <p>
-                        <label for="">服务费:</label>
-                        <input type="text" class="severmoney">
-                        <span class="lsevermoney">查看收费标准</span>
-                    </p>
-                    <p>
-                        <label for="">商品用途:</label>
-                        <input type="text" placeholder="请输入商品用途">
-                        <span></span>
-                    </p>
-                    <p>
-                        <label for=""><em>*</em>资金用途:</label>
-                        <input type="text" placeholder="请输入资金用途" class="moneyu" name="moneyuse">
-                        <span class="formtis">(最长85个字符)</span>
-                        <span id="innerss"></span>
-                    </p>
-                    <p class="stail">
-                        <label for="">详细说明:</label>
-                        <textarea id="txt" placeholder="(最长85个字符)" ></textarea>
-
-                    </p>
-                    <p>
-                        <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn submit" style="margin-left:209px;margin-top:20px;">下一步</button>
-                    </p>
-
-                    <!--计算器-->
+                        <input type="text" placeholder="请输入金额" onchange="china()" class="money chinain" name="moneycheck">
+                        <span>元 &nbsp;<em class="formjsq jisuan"><img src="/imgs/icons/B3-1.png" alt=""></em></span>
+                        <!--计算器-->
 
 
                     <table id="btn-list" class="jsq">
@@ -127,13 +95,46 @@
                             <td class="jsqy" data-jsq="divide">/</td>
                         </tr>
                         <tr>
-                            <td class="jsqn">40</td>
+                            <td class="jsqn">0</td>
                             <td class="jsqn">.</td>
                             <td class="jsqy" data-jsq="result">=</td>
                             <td class="int">确定</td>
                             <td class="clea">取消</td>
                         </tr>
                     </table>
+
+
+
+                    </p>
+                    <p>
+                        <label for="">总金额大写:</label>
+                        <input type="text" class="totalmoney">
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="">服务费:</label>
+                        <input type="text" class="severmoney">
+                        <span class="lsevermoney">查看收费标准</span>
+                    </p>
+                    <p>
+                        <label for="">商品用途:</label>
+                        <input type="text" placeholder="请输入商品用途">
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for=""><em>*</em>资金用途:</label>
+                        <input type="text" placeholder="请输入资金用途" class="moneyu" name="moneyuse">
+                        <span class="formtis">(最长85个字符)</span>
+                        <span id="innerss"></span>
+                    </p>
+                    <p class="stail">
+                        <label for="">详细说明:</label>
+                        <textarea id="txt" placeholder="(最长85个字符)" ></textarea>
+
+                    </p>
+                    <p>
+                        <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn submit" style="margin-left:209px;margin-top:20px;">下一步</button>
+                    </p>
 
 
                 </form>

@@ -9,7 +9,7 @@
     <script>
         var $ = require('jquery');
         require('modules/app/jquery.validate.min');
-        require('modules/js/verification');
+//        require('modules/js/verification');
     </script>
 </head>
 <body>
@@ -124,6 +124,11 @@
             // alert("提交失败")
         }
     });
+    //    自定义预留信息
+    jQuery.validator.addMethod("hanzm", function(value, element) {
+        return this.optional(element) || /^[A-Za-z]{0,45}$/.test(value)||/^[\u4e00-\u9fa5]{0,15}$/.test(value);
+    }, "匹配english");
+
 
     $(".formsubmit").validate({
         errorPlacement:function(error,element){
@@ -131,29 +136,29 @@
         },
         rules:{
             usename: {
-                required: "请输入用户名",
-                minlength: "用户名必需由两个字母组成"
+                required: true,
+                minlength: 2
             },
             zjlxtest: {
-                required: "请选择证件类型",
+                required: true
             },
             jungle: {
-                required: "请选择城市",
+                required: true
             },
             junglebank: {
-                required: "请选择城市",
+                required: true
             },
             cardcheck: {
-                required: "请输入银行卡号",
-                digits: "请正确的银行卡号",
-                rangelength: "请正确的银行卡号"
+                required: true,
+                digits: true,
+                rangelength: [6,32]
             },
             bankname: {
-                required: "请填写开户行名称",
+                required: true,
             },
             zhname: {
-                required: "请填写开户行名称",
-                hanzm: "请输入正确的格式"
+                required: true,
+                hanzm: true
             },        },
         messages:{
             usename: {

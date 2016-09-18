@@ -39,7 +39,7 @@ $(".int").click(function(){
     //结果输出在哪里
     $(".jisuan").siblings("input").val(_result);
     china(_result,$(".chinaout"));
-        $(".jsq").hide();
+    $(".jsq").hide();
 });
 
 
