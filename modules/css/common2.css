@@ -431,6 +431,7 @@ p{
 .form-right{
     float: left;
     text-align:left;
+    position: relative;
 }
 .kjbtn{
     width: 185px;
@@ -507,6 +508,9 @@ p{
     background-position:10px 6.5px;
     padding-left: 35px;
     width: 185px;
+    position: absolute;
+    left: 350px;
+    top: 14px;
 }
 
 .form-item input[type=text]{
