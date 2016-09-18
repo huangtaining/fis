@@ -762,7 +762,7 @@
 }
 .bankmgt .yhkrz ul .zsyh .kjzf{
     height:34px;
-    width:248px;
+    width:249px;
     background-color:#F9F9F9;
     line-height:34px;
     padding-left:19px;
@@ -842,12 +842,23 @@
 .bankmgt .yhkrz ul .nyyh .kjzf{
     height:34px;
     width:246px;
+    font-size:12px;
     background-color:#F9F9F9;
     line-height:34px;
     padding-left:19px;
     margin-top:-2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+}
+.bankmgt .kjzfxg{
+    font-size:12px;
+    margin-left:85px;
+    color:#EE8719;
+    margin-right:15px;
+}
+.bankmgt .kjzfsc{
+    font-size:12px;
+    color:#585858;
 }
 .bankmgt .yhkrz ul .addcard{
     background-color:#F7F7F7;
