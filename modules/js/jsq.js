@@ -223,8 +223,10 @@ function checknum(inputvalue)
         return 0;
     }
 }
+if($(".jsq")){
+    $(".chinain").keydown(disableRefresh)
+}
 
-window.document.getElementsByClassName("chinain")[0].onkeydown=disableRefresh;
 function disableRefresh(evt){
     evt = (evt) ? evt : window.event;
     $("#input-box").val($(".chinain").val());

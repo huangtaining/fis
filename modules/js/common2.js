@@ -10,12 +10,14 @@
 $(function(){
     //    验证必填字段
 //    要验证的
+//    其他银行
     $(".qtyh").click(function(){
         console.log("ssss")
         $(".qtyha").slideToggle()
     })
 
 
+   // 大小写转化
    $(".chinain").change(function(){
        if(!isNaN($(this).val())){
            china($(this).val(), $(".chinaout"))
@@ -153,7 +155,8 @@ $(function(){
             //资金用途
             zjyt:{
                 required: true,
-                number:true
+                number:true,
+                maxlength:85
             },
             //预留信息
             ylxx:{
@@ -238,7 +241,8 @@ $(function(){
             },
             //资金用途
             zjyt:{
-                required: "请输入资金用途"
+                required: "请输入资金用途",
+                maxlength:"长度太长"
             },
             safe_qus:{
                 required:"请输入答案"
@@ -262,7 +266,7 @@ $(function(){
             topic: "请选择两个主题"
         }
 
-    })
+    });
 
 
     //选择多个联系人并结算
@@ -272,10 +276,14 @@ $(function(){
 
         var _zp=$(".ck").find("input:checked").length;
         for(var i=0;i<_zp;i++){
-            _zl+=parseInt($(".ck").find("input:checked").parents().siblings("td:last").children("input").val())
+            _zl+=parseInt($(".ck").eq(i).find("input:checked").parents().siblings("td:last").children("input").val());
+            console.log(_zl)
         }
         $(".multipeo").html(_zp);
+        $(".multipeo").val(_zp);
         $(".multimoney").html(_zl);
+        $(".multimoney").val(_zl);
+
         china(_zl,$(".chinaout"))
     });
 
