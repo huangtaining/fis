@@ -5,6 +5,8 @@
 		<title>忘记密码</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<link rel="stylesheet" href="../modules/css/bootstrapValidator.css" media="screen" title="no title">
+        <link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
 	</head>
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
@@ -12,115 +14,104 @@
 		<div class="forgot_password_box">
 			<div class="forgot_password password">
 				
-   <form action="" method="post">
-				<h1>找回登录密码</h1>
-			<div class="password_content">
-				<div><span class="test">您可以使用您绑定的邮箱或者手机找回登陆密码</span></div>
-				<div class="yanzhen">
-					<em><i>*</i> 请输入您的银生宝账户名：</em>
-					<input type="text" placeholder="请输入邮箱或手机" id="username"/>
-					<div id="setting" style="display:none"><b></b></div>
+  <form id="defaultForm" method="post" class="form-horizontal ysbformvalidate" action="#">
+	<h1>找回登录密码</h1>
+	<div class="password_content">
+		<div><span class="test">您可以使用您绑定的邮箱或者手机找回登陆密码</span></div>
+
+		<div class="form-group has-feedback">
+			<label class="col-md-3 control-label" style="width: 350px;font-weight: normal;color: #585858;"><b>*</b> 请输入您的银生宝账户名：</label>
+			<div class="">
+				<input type="email" class="form-control" name="email" placeholder="请输入邮箱或手机" style="display: inline-block;" />
+				<div class="errorholder" style="float: right;width: 260px;margin-right: 30px;margin-left: 0;">
 				</div>
-		        <div class="yanzhen yanzheng">
-		        	<em><i>*</i> 请输入图片里的验证码：</em><input type="text" placeholder="请输入验证码" id="password"/>
-		        	<em style="width: 100px;height: 43px;line-height: 43px;background-color: pink;vertical-align: middle;margin-left: 10px;"></em>
-		            <em style="color: #019FE8;margin-left:10px;width:50px;padding-right: 0;">换一张</em><b></b>
-		            <div id="setting1" style="display:none"><b></b></div>
-		        </div>
-		        <div class="yanzhen"><em></em><button class="button" id="btn" type="button" style="background-color:#d5d5d5";>下一步</button></div>
 			</div>
-	</form>
+		</div>
+
+		<div class="form-group has-feedback">
+			<label class="col-md-3 control-label" style="width: 350px;font-weight: normal;color: #585858;"><b>*</b> 请输入图片里的验证码：</label>
+			<div class="">
+				<input type="text" name="ddlQuestion" id="" class="form-control" style="width: 154px;height: 44px;float: left;" placeholder="请输入验证码" />
+				<span style="margin-left:10px;width: 100px;height: 43px;vertical-align: middle;display: inline-block;background-color: pink;">
+				<!--<img name="logon_sys_vericode_image0" src="/page/util/verifyImage.jsp?now=1474183845480" class="login_verify_img" align="absmiddle" title="看不清校验码请点击此图标刷新！">-->
+			</span>
+				<em style="color: #019FE8;width:62px;margin-left: 10px;margin-top: 12px;">换一张</em>
+				<div class="errorholder" style="float: right;width: 260px;margin-right: 30px;margin-left: 0;">
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group" style="padding-top:10px;">
+			<div class="button_btn" style="padding: 0px;">
+				<button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin-left: 140px;">下一步</button>
+			</div>
+		</div>
+
+		
+	</div>
+
+</form>
+	
+	
+	
 			</div>
 		</div>
 
 <script type="text/javascript">
-var username= document.getElementById('username');
-var password= document.getElementById('password');
-var btn=document.getElementById('btn');
-var b=document.getElementById("setting");
-var b1=document.getElementById("setting1");
-var c;
-var u;
-var reg=/^[1-9]\d*$|^0$/ ;   //纯数字
-var user_zeng= /^1[3|4|5|7|8]\d{9}$/;    //手机号
-var emali_zeng= /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;  //邮箱
+        $(document).ready(function() {
+
+            require('modules/app/jquery.bootstrapValidator');
 
 
-btn.onclick=function() {
-     if(username.value==""){
-       b.innerHTML='<b></b>身份证号码格式错误不能为空';
-       usernamr.style.border="1px solid #f00"
+            // Generate a simple captcha
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            };
 
-       b.style.display="block";  //显示
-     }else if(password.value==""){
-      b1.innerHTML='<b></b>验证码不能为空';
-      b1.style.display="block";  //显示
-     }else{
-         b.innerHTML='';
-         b.style.display="none";    //隐藏
-        
-     }
-         
-    };
+            $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
 
-username.oninput=function() {
-    var user_value=username.value;
-    if(reg.test(user_value)){
-        if(!user_zeng.test(username.value)){
-         u=false;
-       }else{
-          u=true;
-       }
-     }else if(user_value.indexOf("@") >-1){
-       if(!emali_zeng.test(username.value)){
-         u=false; 
-       }else{
-          u=true;
-       }
-     }else{
-        u=false;
-     }
-     
-     if(!u){
-        b.innerHTML='<b></b>用户名不正确';
-        btn.style.backgroundColor="#d5d5d5" ;
-        btn.type="button";
-          b.style.display="block";  
-        }else{
-          b.innerHTML='';
-           b.style.display="none"; 
-          if( u && c){
-            btn.style.backgroundColor="#19A8E8";
-            btn.type="submit"; 
-            
-        }
-      }
- };
+            $("#btnSubmit").bind("click", function() {
+                alert("Submit");
+            });
 
+            $('#defaultForm').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon', //glyphion-remove
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                	 email: {
+                validators: {
+                    emailAddress: {
+                        message: '您输入的E-mail格式不正确'
+                    }
+                }
+            },
+                   
+                    ddlQuestion: {
+                        validators: {
+                            notEmpty: {
+                                message: '必填'
+                            }
+                        }
+                    }
+                }
+            });
 
-password.oninput=function() {
-   if(password.value=="" ){
-          c=false;
-          b1.innerHTML='<b></b>验证码不能为空';
-          btn.style.backgroundColor="#d5d5d5";
-          btn.type="button";
-            b1.style.display="block";   
+            // Validate the form manually
+            $('#validateBtn').click(function() {
+                $('#defaultForm').bootstrapValidator('validate');
+            });
 
-   }else{
-   	   c=true;
-       b1.innerHTML='';
-        b1.style.display="none";
-       if( u && c ){
-          btn.style.backgroundColor="#19A8E8";  
-          btn.type="submit";
-            
-        }
+            $('#resetBtn').click(function() {
+                $('#defaultForm').data('bootstrapValidator').resetForm(true);
+            });
+        });
+    </script>
 
-   };
-
- };
-
- </script>
 
 
 		<link rel="import" href="modules/widget/footer/footer.html?__inline">

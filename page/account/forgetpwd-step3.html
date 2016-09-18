@@ -5,20 +5,15 @@
 		<title>找回密码3</title>
 		<link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
-		<style type="text/css">
-			.forgot_password .password_content span {
-    color: #585858;
-    font-size: 14px;
-    margin-left: 30px;
-}
-		</style>
+		<link rel="stylesheet" href="../modules/css/bootstrapValidator.css" media="screen" title="no title">
+        <link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
 	</head>
 	<body>
 		<link rel="import" href="modules/widget/header/header.html?__inline">
 		<div class="forgot_password_box">
 			<div class="forgot_password password">
 				<h1>找回登录密码</h1>
-			<h2>用手机号码找回登陆密码</h2>
+			<h2>用手机号码找回登录密码</h2>
 				<div class="bar_article clearfix">
 	<ul class="clearfix">
 		<li>
@@ -35,7 +30,7 @@
 				<div class="yuan one"><em>2</em></div>
 				<div class="tiao one"></div>
 			</div>
-			<p>重置登陆密码</p>
+			<p>重置登录密码</p>
 		</li>
 		<li>
 			<div class="zhong">
@@ -48,13 +43,34 @@
 	</ul>
 </div>
 
- <form>
+ <form id="defaultForm" method="post" class="form-horizontal ysbformvalidate" action="#">
         <div class="password_content content">
-				<div class="yanzhen yanzhen3 prompt"><em><i>*</i> 请输入您实名认证时使用的身份证号码：</em>
-					<input type="text" placeholder="请输入身份证号码"  id="IDcard"/><div id="setting" style="display:none"><b></b></div>
+        	
+        	<div class="form-group has-feedback">
+			<label class="col-md-3 control-label" style="width: 350px;font-weight: normal;color: #585858;"><b>*</b> 请输入您实名认证时使用的身份证号码：</label>
+			<div class="">
+				<input type="text" name="ddlQuestion" class="form-control" placeholder="请输入身份证号码" style="display: inline-block;" />
+				<div class="errorholder" style="float: right;width: 260px;margin-right: 30px;margin-left: 0;">
 				</div>
-		        <div class="yanzhen yanzhen3"><em> 输入你绑定的邮箱：</em><input type="text" placeholder="若未绑定则不输"/></div>
-		        <div class="yanzhen yanzhen3"><em></em><button class="button" id="btn" type="button" style="background-color:#d5d5d5 ;">下一步</button></div>
+			</div>
+		</div>
+          
+          <div class="form-group has-feedback">
+			<label class="col-md-3 control-label" style="width: 350px;font-weight: normal;color: #585858;"> 输入你绑定的邮箱：</label>
+			<div class="">
+				<input type="text" name="" class="form-control" placeholder="若未绑定则不输" style="display: inline-block;" />
+				<div class="errorholder" style="float: right;width: 260px;margin-right: 30px;margin-left: 0;">
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="form-group" style="padding-top:10px;">
+			<div class="button_btn" style="padding: 0px;">
+				<button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin-left: 140px;">下一步</button>
+			</div>
+		</div>
+        
         </div>
 
 	</form>					
@@ -62,40 +78,59 @@
 		</div>	
 
 	<script type="text/javascript">
-             var IDcard=document.getElementById('IDcard');
-             var b=document.getElementById("setting");
-             var btn=document.getElementById('btn');
-             var num= /(^\d{15}$)|(^\d{17}(\d|X)$)/	;
+        $(document).ready(function() {
 
-			btn.onclick=function() {
-			     if(IDcard.value==""){
-			       b.innerHTML='<b></b>身份证号码格式错误不能为空';
-			       btn.style.backgroundColor="#d5d5d5" ;
-			       b.style.display="block";  //显示
-	
-			     }else{
-			        b.innerHTML='';
-			        b.style.display="none";    //隐藏
-		 
-			     }
-			         
-			    };
-          IDcard.oninput=function (){
-             if(! num.test(IDcard.value)){
-             	 b.style.display="block";
-                  b.innerHTML="<b></b>身份证号码格式错误";
-                  btn.style.backgroundColor="#d5d5d5" ;
-                  btn.type="button";
-             }else{
-               b.innerHTML="";
-               b.style.display="none";
-               btn.style.backgroundColor="#19A8E8";
-               btn.type="sumbit";
-             }
-           
-          }   
+            require('modules/app/jquery.bootstrapValidator');
 
-	</script>	
+
+            // Generate a simple captcha
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            };
+
+            $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+            $("#btnSubmit").bind("click", function() {
+                alert("Submit");
+            });
+
+            $('#defaultForm').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon', //glyphion-remove
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+//              	 email: {
+//              validators: {
+//                  emailAddress: {
+//                      message: '您输入的E-mail格式不正确'
+//                  }
+//              }
+//          },
+                   
+                    ddlQuestion: {
+                        validators: {
+                            notEmpty: {
+                                message: '必填'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Validate the form manually
+            $('#validateBtn').click(function() {
+                $('#defaultForm').bootstrapValidator('validate');
+            });
+
+            $('#resetBtn').click(function() {
+                $('#defaultForm').data('bootstrapValidator').resetForm(true);
+            });
+        });
+    </script>
 
 	    <link rel="import" href="modules/widget/footer/footer.html?__inline">
 		<script src="lib/mod.js"></script>
