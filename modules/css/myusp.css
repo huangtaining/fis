@@ -515,13 +515,17 @@
 .bo .nav-tabs > li.active > a,
 .bo .nav-tabs > li.active > a:focus,
 .bo .nav-tabs > li.active > a:hover{
-    border: 1px solid #ccc;
+    border: 1px solid #F7F7F7;
     border-bottom: none;
     border-right: none;
     border-left:none;
 }
+.bo .nav-tabs{
+    border-bottom: none;
+}
 .bo .nav-tabs > li.active{
     border-left:none;
+    border-bottom: 1px solid #F7F7F7;
 }
 .bo .nav-tabs > li{
     border-bottom: none;
@@ -529,4 +533,14 @@
 }
 .bo #myTabContent tbody tr:nth-child(odd){
        background: #F7F7F7
+}
+.myuspbottom{
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.d4{
+    width: 23%;
+    display: inline-block;
+    text-align: center;
 }
