@@ -1,0 +1,225 @@
+/*平台安全*/
+.platsafe{
+    width:100%;
+    height:auto;
+    padding-bottom:130px;
+}
+.platsafe .zhsafe{
+    height:480px;
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:66.2px;
+    /*padding-left:471px;*/
+}
+.platsafe .center{
+    width:1200px;
+    height:auto;
+    margin:0 auto;
+}
+.platsafe .zhsafe-left{
+    height:342px;
+    width:369px;
+    /*background:url("/imgs/safe/C1.png") no-repeat;*/
+    /*background-size:100%;*/
+    float:left;
+    margin-left:110px;
+    position:relative;
+
+}
+.platsafe .zhsafe-left .zhuanimg{
+    position:absolute;
+    left:-9%;
+    top:0;
+}
+.platsafe .zhsafe-left img{
+    margin-left:32px;
+    margin-top:3px;
+}
+@keyframes rotating{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+.platsafe .zhsafe-left .zhuanimg img{
+    transform-origin:center center;
+    animation-name:rotating;
+    animation-duration:1.2s;
+    animation-timing-function: linear;
+    /*rotating:1.2s linear infinite;*/
+}
+
+
+.platsafe .zhsafe-right{
+    width:520px;
+    float:right;
+
+}
+.platsafe .zhsafe-right h1{
+    font-size:40px;
+    color:#000000;
+    margin-bottom:39px;
+    padding-left:75px;
+}
+.platsafe .sub-zhsafe h2{
+    font-size:18px!important;
+    color:#000000;
+    margin-bottom: 5px;
+
+}
+.platsafe .sub-zhsafe p{
+    width:390px;
+}
+.platsafe .sub-zhsafe{
+    background:url("/imgs/safe/C3.png") no-repeat;
+    padding-left:75px;
+    margin-bottom:34px;
+    height:70px;
+}
+
+.platsafe .safetwo{
+    background:url("/imgs/safe/C4.png") no-repeat;
+    padding-left:75px;
+}
+.platsafe .safethree{
+    background:url("/imgs/safe/C5.png") no-repeat;
+}
+.platsafe .xtsaft{
+    height:600px;
+    width:100%;
+    background-color:#ffffff;
+}
+.platsafe .xtsaft-left{
+    width:504px;
+    height:auto;
+    padding-top:40px;
+    margin-left:70px;
+    float:left;
+}
+.platsafe .xtsaft-left h1{
+    font-size:40px;
+    color:#000000;
+    margin-bottom:26px;
+}
+.platsafe .sub-xtsaft{
+    width:480px;
+    /*height:57px;*/
+    margin-bottom:18px;
+}
+.sub-xtsaft h2{
+    font-size:18px;
+    color:#000000;
+    margin-bottom:11px;
+}
+.sub-xtsaft p{
+    color:#636363;
+    height:57px;
+    width:504px;
+}
+/*系统安全右侧*/
+.xtsaft .xtsaft-right{
+    height:399px;
+    width:475px;
+    float:right;
+    margin-top:140px;
+    margin-right:50px;
+}
+
+
+.platsafe .zjsafe{
+    height:498px;
+    width:100%;
+    background-color:#F7F7F7;
+    clear:both;
+}
+.platsafe .zjsafe-left{
+    width:346px;
+    height:340px;
+    float:left;
+    position:relative;
+}
+.platsafe .zjsafe-left img{
+    margin-top:70.9px;
+    margin-left:100px;
+}
+.platsafe .money-imgo{
+    height:130px;
+    width:142px;
+    position:absolute;
+    left:0;
+    top:60%;
+}
+.platsafe .money-imgt{
+    width:108px;
+    height:140px;
+    position:absolute;
+    left:58%;
+    top:55%;
+}
+.platsafe .zjsafe-right{
+    width:550px;
+    height:370px;
+    float:right;
+    margin-top:77px;
+
+}
+.platsafe .zjsafe-right h1{
+    font-size:40px;
+    color:#000000;
+    padding-left:75px;
+    margin-bottom:25px;
+}
+.platsafe .zjsafe-right .zjjg{
+    height:50px;
+    /*width:100%;*/
+    background:url("/imgs/safe/C7.png") no-repeat;
+    padding-left:75px;
+    margin-bottom:59px;
+}
+.platsafe .zjsafe-right .zjjg h2{
+    font-size:18px;
+    color:#000000;
+    margin-bottom:5px;
+
+}
+.platsafe .zjsafe-right .zjjg span{
+    color:#585858;
+}
+.platsafe .zjjgbgco{
+    background:url("/imgs/safe/C8.png") no-repeat!important;
+}
+.platsafe .zjjgbgct{
+    background:url("/imgs/safe/C9.png") no-repeat!important;
+}
+
+.platsafe .fxsafe{
+    height:613px!important;
+
+}
+
+.platsafe .fxsafe .xtsaft-left h1{
+    margin-top:56px;
+    padding-left:70px;
+}
+.platsafe .fxsafe .xtsaft-left .sub-xtsaft{
+    width:510px;
+    padding-left:70px;
+    margin-bottom: 50px;
+}
+.platsafe .fxsafe .xtsaft-left .jsfk{
+    background:url("/imgs/safe/C13.png") no-repeat 0 center !important;
+}
+.platsafe .fxsafe .xtsaft-left .ptwdx{
+    background:url("/imgs/safe/C14.png") no-repeat 0 30px;
+}
+.platsafe .fxsafe .xtsaft-left .datasafe{
+    background:url("/imgs/safe/C15.png") no-repeat 0 30px;
+}
+.platsafe .fxsafe .xtsaft-left{
+    width:578px;
+    margin-left:50px;
+}
+.platsafe .fxsafe .xtsaft-right{
+    width:570px;
+    margin:0;
+    height:100%;
+    padding-top:60px;
+}
