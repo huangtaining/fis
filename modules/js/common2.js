@@ -64,7 +64,7 @@ $(function(){
 
 
     //点击表单验证
-    $(".step_button,.step_button_s").click(function(){
+    $(".step_button,.step_button_s,.life_step").click(function(){
         if($(".ysbbd").valid()){
             alert("提交成功")
         }else{
@@ -72,7 +72,6 @@ $(function(){
         }
     });
 
-//表单验证
 //    自定义预留信息
     jQuery.validator.addMethod("ggg", function(value, element) {
         return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
@@ -82,6 +81,11 @@ $(function(){
     jQuery.validator.addMethod("xiane", function(value, element) {
         return this.optional(element) || parseInt($(".topa").html()||$(".topa").val())>=$(".topb").val();
     }, "超出上限");
+    // 手机号码验证
+    jQuery.validator.addMethod("isMobile", function(value, element) {
+        var length = value.length;
+        return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));
+    }, "请正确填写您的手机号码");
 
 
 
@@ -170,6 +174,17 @@ $(function(){
             },
             yxjhm:{
                 required: true
+            },
+            yourname:{
+                required: true
+            },
+            yourphone:{
+                required: true,
+                isMobile:true
+            },
+            youremail:{
+                required: true,
+                email:true
             },
             email: {
                 required: true,
@@ -261,6 +276,17 @@ $(function(){
             },
             yxjhm:{
                 required: "请输入邮箱激活码"
+            },
+            yourname:{
+                required: "请输入你的名字"
+            },
+            yourphone:{
+                required: "请输入你的手机",
+                isMobile:"手机号码格式错了"
+            },
+            youremail:{
+                required: "请输入你的email",
+                email:"邮箱格式错了"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"
