@@ -524,8 +524,6 @@
 }
 .authentication .account-right{
     width:947px;
-    /*padding-bottom:162px;*/
-    /*background-color:white;*/
     float:right;
 }
 .authentication .account-right .sfrz{
@@ -555,7 +553,8 @@
 
 .authentication .account-right .yhkrz{
     height:480px;
-    /*padding:32px 0 0 50px;*/
+    width:100%;
+
     background-color:white;
     border:1px solid #E8E8E8;
     margin-top:47px;
@@ -572,16 +571,22 @@
     color:#00A0E8;
 }
 .authentication .yhkrz ul{
-    margin:32px 0 0 50px;
+    width:855px;
+    height:100%;
+    margin:0 auto;
+    margin-top:37px;
 
 }
 .authentication .yhkrz ul li{
     float:left;
     margin-bottom: 45px;
     border-radius:6px;
+    margin-left:17px;
+    margin-right:17px;
+
 }
 .authentication .yhkrz ul .zsyh{
-    margin-right:35px;
+    /*margin-right:35px;*/
 }
 .authentication .yhkrz ul .zsyh .sub-zsyh{
     background:url("/imgs/icons/B4-17.png") no-repeat -4px -5px;
@@ -659,7 +664,7 @@
 
 .authentication .yhkrz ul .nyyh{
     height:143px;
-    margin-left:34px;
+    /*margin-left:34px;*/
 }
 .authentication .yhkrz ul .nyyh .sub-nyyh{
     background:url("/imgs/icons/B4-19.png") no-repeat -4px -5px;
