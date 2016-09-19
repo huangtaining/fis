@@ -95,7 +95,7 @@ $(function(){
     //    return this.optional(element) || /^[A-Za-z]{0,45}$/.test(value)||/^[\u4e00-\u9fa5]{0,15}$/.test(value);
     //}, "匹配english");
 
-    $(".ysbbd").validate({
+    $("#ddd").validate({
         errorPlacement:function(error,element){
             error.appendTo(element.parent())
         },
@@ -185,6 +185,10 @@ $(function(){
             youremail:{
                 required: true,
                 email:true
+            },
+            txm:{
+                required: true,
+                number:true
             },
             email: {
                 required: true,
@@ -287,6 +291,10 @@ $(function(){
             youremail:{
                 required: "请输入你的email",
                 email:"邮箱格式错了"
+            },
+            txm:{
+                required: "请输入你的email",
+                number:"格式错了"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"
