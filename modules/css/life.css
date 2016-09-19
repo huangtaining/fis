@@ -25,17 +25,23 @@
     height: 360px;
 }
 .lifel li{
-     background: white;
-     cursor: pointer;
-     border-bottom: 2px solid #e8e8e8;
-     line-height: 58px;
-     font-size: 15px;
-     text-indent: 39px;
-     border-left: 4px solid white;
-     margin-bottom: -1px;
- }
-.lifel li.act{
-    border-left: 4px solid #00A0E8;
+      background: white;
+      cursor: pointer;
+      border-bottom: 1px solid #e8e8e8;
+      line-height: 58px;
+      font-size: 15px;
+      text-indent: 39px;
+      position: relative;
+  }
+.lifel li .life1{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+}
+
+.lifel li.act .life1{
+         display: block;
 }
 .lifel img{
       margin-right: 20px;

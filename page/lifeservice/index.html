@@ -33,13 +33,13 @@
         <div class="lifebo">
             <div class="lifel">
                 <ul>
-                    <li class="act"><img src="/imgs/icons/life.jpg">公共事业缴费</li>
-                    <li><img src="/imgs/icons/life.jpg">手机充值</li>
-                    <li><img src="/imgs/icons/life.jpg">游戏充值</li>
-                    <li><img src="/imgs/icons/life.jpg">加油卡充值</li>
-                    <li><img src="/imgs/icons/life.jpg">信用卡还款</li>
-                    <li><img src="/imgs/icons/life.jpg">电影票</li>
-                    <li><img src="/imgs/icons/life.jpg">医疗预约</li>
+                    <li class="act" style="border-top: none"><img src="/imgs/icons/life.jpg">公共事业缴费<img src="/imgs/postappls/1.jpg" class="life1"></li>
+                    <li><img src="/imgs/icons/life.jpg">手机充值<img src="/imgs/postappls/1.jpg" class="life1"></li>
+                    <li><img src="/imgs/icons/life.jpg">游戏充值<img src="/imgs/postappls/1.jpg" class="life1"></li>
+                    <li><img src="/imgs/icons/life.jpg">加油卡充值<img src="/imgs/postappls/1.jpg" class="life1"></li>
+                    <li><img src="/imgs/icons/life.jpg">信用卡还款<img src="/imgs/postappls/1.jpg" class="life1"></li>
+                    <li><img src="/imgs/icons/life.jpg">电影票<img src="/imgs/postappls/1.jpg" class="life1"></li>
+                    <li style="border-bottom: none"><img src="/imgs/icons/life.jpg">医疗预约<img src="/imgs/postappls/1.jpg" class="life1"></li>
                 </ul>
             </div>
 
@@ -69,6 +69,37 @@
                     <div class="onebo">
                         <h2 class="s15">填写账单信息</h2>
                         <img src="/imgs/postappls/line.jpg" class="life_line">
+                        <div style="overflow: hidden;width: 100%">
+                            <img src="/imgs/postappls/B7.png" style="float: left;height: ">
+                            <!--表单-->
+                            <form class="form-horizontal ysbbd" style="float:left">
+                                <fieldset>
+
+                                    <!-- 充值金额-->
+                                    <div class="form-item">
+                                        <label class="form-left"><span class="yell must">*</span>&nbsp;公司名称&nbsp;</label>
+                                        <div class="form-right">
+                                            <select  style="width:245px">
+                                                <option>上海某某自来水公司</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- 充值金额-->
+                                    <div class="form-item">
+                                        <label class="form-left"><span class="yell must">*</span>&nbsp;条形码&nbsp;</label>
+                                        <div class="form-right">
+                                            <input type="text" placeholder="请输入真实有效地缴费条形码以避免损失" name="txm" id="txm"  style="width:245px">
+                                        </div>
+                                    </div>
+
+
+
+                                </fieldset>
+
+
+                            </form>
+                        </div>
                         <h2 class="s15">填写个人信息</h2>
                         <img src="/imgs/postappls/line.jpg" class="life_line">
                         <!--表单-->
@@ -79,7 +110,7 @@
                                 <div class="form-item">
                                     <label class="form-left"><span class="yell must">*</span>&nbsp;请填写您的名字&nbsp;</label>
                                     <div class="form-right">
-                                        <input type="text" placeholder="请输入金额" name="yourname" id="yourname">
+                                        <input type="text" name="yourname" id="yourname">
                                     </div>
                                 </div>
 
@@ -87,7 +118,7 @@
                                 <div class="form-item">
                                     <label class="form-left"><span class="yell must">*</span>&nbsp;请填写您的手机号码&nbsp;</label>
                                     <div class="form-right">
-                                        <input type="text" placeholder="请输入金额" name="yourphone" id="yourphone">
+                                        <input type="text" name="yourphone" id="yourphone">
                                     </div>
                                 </div>
 
@@ -95,7 +126,7 @@
                                 <div class="form-item">
                                     <label class="form-left"><span class="yell must">*</span>&nbsp;请填写您的Email地址&nbsp;</label>
                                     <div class="form-right">
-                                        <input type="text" placeholder="请输入金额" name="youremail" id="youremail">
+                                        <input type="text" name="youremail" id="youremail">
                                     </div>
                                 </div>
 
@@ -135,7 +166,8 @@
         $("li").click(function(){
             $("li").removeClass("act");
             $(this).addClass("act")
-        })
+        });
+
     })
 </script>
 
