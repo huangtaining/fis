@@ -1,0 +1,80 @@
+.life_line{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.lifebo{
+    width: 100%;
+    overflow: hidden;
+}
+.lifel{
+    width: 234px;
+    float: left;
+    border: 1px solid #E8E8E8;
+}
+.lifer{
+    width: 944px;
+    float: right;
+
+}
+.lifer h2{
+       margin-bottom: 13px;
+}
+.lifeban{
+    width: 100%;
+    background: url("/imgs/postappls/B1.png");
+    height: 360px;
+}
+.lifel li{
+     background: white;
+     cursor: pointer;
+     border-bottom: 2px solid #e8e8e8;
+     line-height: 58px;
+     font-size: 15px;
+     text-indent: 39px;
+     border-left: 4px solid white;
+     margin-bottom: -1px;
+ }
+.lifel li.act{
+    border-left: 4px solid #00A0E8;
+}
+.lifel img{
+      margin-right: 20px;
+}
+.liferone{
+    background: white;
+    margin-bottom: 20px;
+    border: 1px solid #E8E8E8;
+}
+.onetop{
+    text-indent: 19px;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.onebo{
+    padding: 28px 19px;
+}
+.xzjfxm{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px
+}
+.xzjfxm>div{
+    width: 80px;
+    text-align: center
+}
+.xzjfxm img{
+   margin-bottom: 20px;
+}
+.life_step{
+    width: 212px;
+    border-radius: 3px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    margin-top: 35px;
+    background: #31B2EC;
+}

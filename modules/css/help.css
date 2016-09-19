@@ -1,0 +1,18 @@
+
+/*帮助中心*/
+.help_aboutus{width: 100%;background-color: #F7F7F7;padding-bottom: 230px;}
+.help_aboutus_box h1{font-size:25px;padding: 30px 0;}
+.help_aboutus_left{width: 235px;border: 1px solid #e4e4e4;}
+.help_aboutus_left .panel-heading{border: none;}
+.help_aboutus_left .panel-heading h4{margin-left: 66px;}
+.help_aboutus_left .panel-heading a:hover,.panel-heading a:link{text-decoration: none;}
+.help_aboutus_left .panel{border: none;}
+.help_aboutus_left .panel-body span{margin-left: 66px;cursor: pointer;}
+
+
+
+
+
+
+
+
