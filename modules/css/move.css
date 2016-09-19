@@ -1,12 +1,62 @@
-/*.pay_one_box1 em:nth-child(1){*/
-      /*animation: mymove 3s infinite;*/
-/*}*/
-/*@keyframes mymove {*/
-    /*to{*/
-        /*left: 100px*/
-        /*transform:scale(.1)*/
-    /*}*/
-/*}*/
+.pay_one_box1 em:nth-child(1){
+      animation: mymove 3s infinite;
+    z-index: 6;
+}
+.pay_one_box1 em:nth-child(2){
+    animation: mymove 3s infinite;
+    z-index: 6;
+}
+.pay_one_box1 em:nth-child(3){
+    animation: mymove 3s infinite;
+    z-index: 6;
+}
+.pay_one_box1 em:nth-child(4){
+    animation: mymove 3s infinite;
+    z-index: 6;
+}
+.pay_one_box1 em:nth-child(5){
+    animation: mymove3 3s infinite;
+    z-index: 6;
+}
+.pay_one_box1 em:nth-child(6){
+    animation: mymove3 3s infinite;
+    z-index: 6;
+}
+.pay_one_box1 em:nth-child(7){
+    animation: mymove2 3s infinite;
+    z-index: 6;
+}
+.pay_one_box1 em:nth-child(8){
+    z-index: 0;
+}
+.pay_one_box1 em:nth-child(9){
+    z-index: 0;
+}
+@keyframes mymove {
+    to{
+        transform: scale(0);
+        left:153px;
+        top:158px;
+    }
+
+}
+@keyframes mymove2 {
+    to{
+        transform: scale(0);
+        left:113px;
+        top:88px;
+    }
+
+}
+@keyframes mymove3 {
+    to{
+        transform: scale(0);
+        left:83px;
+        top:158px;
+    }
+
+}
+
 /*.pay_one_box1 em{*/
     /*left:163px !important;*/
     /*top:176px !important;*/

@@ -51,8 +51,8 @@
 				
 				<div class="pay_one_box clearfix" style="border-bottom: 1px solid #e4e4e4;">
 					<div class="pay_one_box3">
-						<em class="em1"><img src="imgs/pre/A18.png" alt="" /></em>
-						<em class="em2"><img src="imgs/pre/A17.png" alt="" style="width: 102px;height: 102px;"/></em>						
+						<em class="em1 animated slideInRight"><img src="imgs/pre/A18.png" alt="" /></em>
+						<em class="em2 animated slideInRight"><img src="imgs/pre/A17.png" alt="" style="width: 102px;height: 102px;"/></em>
 					</div>	
 					
 					<div class="pay_one_box4">
@@ -146,19 +146,49 @@
 			require('ui/index');
             var _endx=160;
             var _endy=176;
-//            for(var i=0;i<$(".pay_one_box1 em").length;i++){
-//                move(i)
-//            }
-//            function move(i){
-//                console.log(_endx-parseInt ($(".pay_one_box1 em").eq(i).css("left"))+"------"+_endy-parseInt ($(".pay_one_box1 em").eq(i).css("top")))
-//            }
-              function move(){
-                  $(".pay_one_box1 em").eq(0).addClass("animated zoomOutRight");
-                  window.setTimeout(function(){
-                      $(".pay_one_box1 em").eq(0).removeClass("animated zoomOutRight");
-                  },3000);
-              }
-            move();
+//                          for(var i=0;i<$(".pay_one_box3 em").length;i++){
+//                              move1(i)
+//                          }
+
+                          window.setInterval(
+                                  function ss(){
+                                      $(".pay_one_box3 em").eq(0).removeClass("animated slideInRight");
+                                      $(".pay_one_box3 em").eq(1).removeClass("animated slideInRight");
+                                      window.setTimeout(function(){
+                                          $(".pay_one_box3 em").eq(0).addClass("animated slideInRight");
+                                          $(".pay_one_box3 em").eq(1).addClass("animated slideInRight");
+                                      },1000)
+                          },3000);
+//
+////            window.setInterval(function(){
+//                for(var i=0;i<$(".pay_one_box1 em").length;i++){
+//                    move(i)
+//                }
+////                function move(i){
+//////                $(".pay_one_box1 em").eq(i).animate({lefe:})
+////                    var _x=$(".pay_one_box1 em").eq(i).css("left");
+////                    var _y=$(".pay_one_box1 em").eq(i).css("top");
+////                    $(".pay_one_box1 em").eq(i).animate({left:160+"px",top:176+"px"},function(){
+////                        $(".pay_one_box1 em").eq(i).css({left:_x,top:_y})
+////                    })
+////                }
+////            },2000);
+//
+//              function move(i){
+//                  if((i!=8)&&(i<=6)){
+//                      $(".pay_one_box1 em").eq(i).addClass("animated zoomOutRight");
+//                      window.setTimeout(function(){
+//                          $(".pay_one_box1 em").eq(i).removeClass("animated zoomOutRight");
+//                      },3000);
+//                  }
+//                  if((i!=8)&&(i>=6)){
+//                      $(".pay_one_box1 em").eq(i).addClass("animated zoomOutLeft");
+//                      window.setTimeout(function(){
+//                          $(".pay_one_box1 em").eq(i).removeClass("animated zoomOutLeft");
+//                      },3000);
+//                  }
+//
+//              }
 
 
 
