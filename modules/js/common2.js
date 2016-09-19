@@ -95,7 +95,7 @@ $(function(){
     //    return this.optional(element) || /^[A-Za-z]{0,45}$/.test(value)||/^[\u4e00-\u9fa5]{0,15}$/.test(value);
     //}, "匹配english");
 
-    $("#ddd").validate({
+    $(".ysbbd").validate({
         errorPlacement:function(error,element){
             error.appendTo(element.parent())
         },
