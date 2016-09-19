@@ -23,13 +23,13 @@
 				</div>
 				<div class="pay_one_box clearfix">
 					<div class="pay_one_box1">
-						<em class="em1"><img src="imgs/pre/A10.png" alt="" /></em>
-						<em class="em2"><img src="imgs/pre/A11.png" alt="" /></em>
-						<em class="em3"><img src="imgs/pre/A13.png" alt="" /></em>
-						<em class="em4"><img src="imgs/pre/A14.png" alt="" /></em>
-						<em class="em5"><img src="imgs/pre/A8.png" alt="" /></em>
-						<em class="em6"><img src="imgs/pre/A9.png" alt="" /></em>
-						<em class="em7"><img src="imgs/pre/A7.png" alt="" /></em>
+						<em class="em1 animated zoomOutRight infinite"><img src="imgs/pre/A10.png" alt="" /></em>
+						<em class="em2 animated zoomOutRight infinite" ><img src="imgs/pre/A11.png" alt="" /></em>
+						<em class="em3 animated zoomOutRight infinite"><img src="imgs/pre/A13.png" alt="" /></em>
+						<em class="em4 animated zoomOutRight infinite"><img src="imgs/pre/A14.png" alt="" /></em>
+						<em class="em5 animated zoomOutRight infinite"><img src="imgs/pre/A8.png" alt="" /></em>
+						<em class="em6 animated zoomOutRight infinite"><img src="imgs/pre/A9.png" alt="" /></em>
+						<em class="em7 animated zoomOutLeft infinite"><img src="imgs/pre/A7.png" alt="" /></em>
 						<em class="em8"></em>
 						<em class="em9"><img src="imgs/pre/A6.png" alt="" /></em>
 					</div>		
@@ -150,19 +150,11 @@
 //                              move1(i)
 //                          }
 
-                          window.setInterval(
-                                  function ss(){
-                                      $(".pay_one_box3 em").eq(0).removeClass("animated slideInRight");
-                                      $(".pay_one_box3 em").eq(1).removeClass("animated slideInRight");
-                                      window.setTimeout(function(){
-                                          $(".pay_one_box3 em").eq(0).addClass("animated slideInRight");
-                                          $(".pay_one_box3 em").eq(1).addClass("animated slideInRight");
-                                      },1000)
-                          },3000);
-
-
-            $(".pay_one_box1 em").eq(0).css("transform","translate(20px)");
-//
+//            $(".pay_one_box1 em").eq(0).css("transform","translate(20px)");
+//            $(".pay_one_box").eq(0).mouseover(function(){
+//                 $(this).find("em:not(.em8)").css("animation","mymove 3s infinite")
+//            });
+////
 ////            window.setInterval(function(){
 //                for(var i=0;i<$(".pay_one_box1 em").length;i++){
 //                    move(i)
