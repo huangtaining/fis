@@ -14,6 +14,7 @@
 .help_aboutus_left .panel-body{border-bottom: 1px solid #E8E8E8;padding: 0;height: 60px;line-height: 60px;}
 .help_aboutus_left .panel-body span{margin-left:17px;cursor: pointer;font-size:15px;}
 .help_aboutus_left .panel-body em{margin-left:40px;display: inline-block;width: 20px;height: 20px;vertical-align: middle;}
+.help_aboutus_left .panel-body span a:hover,.panel-heading a:link{text-decoration: none;color:#4A4A4A ;} 
 .help_aboutus_left .panel-body em.account-off{background: url(imgs/help/G13.png)no-repeat;}
 .help_aboutus_left .panel-body em.mobileservice{background: url(imgs/help/G12.png)no-repeat;}
 .help_aboutus_left .panel-body em.account-trade{background: url(imgs/help/G11.png)no-repeat;}
@@ -25,7 +26,7 @@
 .help_aboutus_left .panel-body em.integral{background: url(imgs/help/G5.png)no-repeat;}
 .help_aboutus_left .panel-body em.withdrawals{background: url(imgs/help/G4.png)no-repeat;}
 .help_aboutus_left .panel-body em.recharge{background: url(imgs/help/G3.png)no-repeat;}
-.help_aboutus_left .panel-body em.reg{background: url(imgs/help/G2.png)no-repeat;}
+.help_aboutus_left .panel-body em.pagereg{background: url(imgs/help/G2.png)no-repeat;}
 .help_aboutus_left .panel-body em.aboutus{background: url(imgs/help/G1.png)no-repeat;}
 
 /*安全管理*/
@@ -46,50 +47,94 @@ body.pageappcenter .help_aboutus_left a.appcenter {
 }
 
 /*账户注销*/
-body.pageaccount-off .help_aboutus_left span.account-off {
+body.pageaccount-off .help_aboutus_left span.account-off a{
    color: #00A0E8;
 }
 body.pageaccount-off .help_aboutus_left em.account-off {
    background: url(imgs/help/G26.png)no-repeat;
 }
 /*手机服务*/
-body.pagemobileservice .help_aboutus_left span.mobileservice {
+body.pagemobileservice .help_aboutus_left span.mobileservice a{
    color: #00A0E8;
 }
 body.pagemobileservice .help_aboutus_left em.mobileservice {
    background: url(imgs/help/G25.png)no-repeat;
 }
 /*往来账户*/
-body.pageaccount-trade .help_aboutus_left span.account-trade {
+body.pageaccount-trade .help_aboutus_left span.account-trade a{
    color: #00A0E8;
 }
 body.pageaccount-trade .help_aboutus_left em.account-trade {
    background: url(imgs/help/G24.png)no-repeat;
 }
 /*会员信息管理*/
-body.pagemembershipinfo-mgt .help_aboutus_left span.membershipinfo-mgt {
+body.pagemembershipinfo-mgt .help_aboutus_left span.membershipinfo-mgt a{
    color: #00A0E8;
 }
 body.pagemembershipinfo-mgt .help_aboutus_left em.membershipinfo-mgt {
    background: url(imgs/help/G23.png)no-repeat;
 }
 /*账户信息管理*/
-body.pageaccountinfo-mgt .help_aboutus_left span.accountinfo-mgt {
+body.pageaccountinfo-mgt .help_aboutus_left span.accountinfo-mgt a{
    color: #00A0E8;
 }
 body.pageaccountinfo-mgt .help_aboutus_left em.accountinfo-mgt {
    background: url(imgs/help/G22.png)no-repeat;
 }
 /*会员等级*/
-body.pageaccountinfo-mgt .help_aboutus_left span.membership-grade {
+body.pagemembership-grade .help_aboutus_left span.membership-grade a{
    color: #00A0E8;
 }
-body.pageaccountinfo-mgt .help_aboutus_left em.membership-grade {
+body.pagemembership-grade .help_aboutus_left em.membership-grade {
    background: url(imgs/help/G21.png)no-repeat;
 }
-
-
-
-
-
+/*账户密码*/
+body.pageaccount .help_aboutus_left span.account a{
+   color: #00A0E8;
+}
+body.pageaccount .help_aboutus_left em.account {
+   background: url(imgs/help/G20.png)no-repeat;
+}
+/*银生宝实名认证*/
+body.pageauthenticat .help_aboutus_left span.authenticat a{
+   color: #00A0E8;
+}
+body.pageauthenticat .help_aboutus_left em.authenticat {
+   background: url(imgs/help/G19.png)no-repeat;
+}
+/*积分*/
+body.pageintegral .help_aboutus_left span.integral a{
+   color: #00A0E8;
+}
+body.pageintegral .help_aboutus_left em.integral {
+   background: url(imgs/help/G18.png)no-repeat;
+}
+/*提现*/
+body.pagewithdrawals .help_aboutus_left span.withdrawals a{
+   color: #00A0E8;
+}
+body.pagewithdrawals .help_aboutus_left em.withdrawals {
+   background: url(imgs/help/G17.png)no-repeat;
+}
+/*充值*/
+body.pagerecharge .help_aboutus_left span.recharge a{
+   color: #00A0E8;
+}
+body.pagerecharge .help_aboutus_left em.recharge {
+   background: url(imgs/help/G16.png)no-repeat;
+}
+/*网站注册*/
+body.pagepagereg .help_aboutus_left span.pagereg a{
+   color: #00A0E8;
+}
+body.pagepagereg .help_aboutus_left em.pagereg {
+   background: url(imgs/help/G15.png)no-repeat;
+}
+/*关于银生宝*/
+body.pageaboutus .help_aboutus_left span.aboutus a{
+   color: #00A0E8;
+}
+body.pageaboutus .help_aboutus_left em.aboutus {
+   background: url(imgs/help/G14.png)no-repeat;
+}
 
