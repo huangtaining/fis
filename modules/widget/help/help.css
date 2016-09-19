@@ -59,6 +59,36 @@ body.pagemobileservice .help_aboutus_left span.mobileservice {
 body.pagemobileservice .help_aboutus_left em.mobileservice {
    background: url(imgs/help/G25.png)no-repeat;
 }
+/*往来账户*/
+body.pageaccount-trade .help_aboutus_left span.account-trade {
+   color: #00A0E8;
+}
+body.pageaccount-trade .help_aboutus_left em.account-trade {
+   background: url(imgs/help/G24.png)no-repeat;
+}
+/*会员信息管理*/
+body.pagemembershipinfo-mgt .help_aboutus_left span.membershipinfo-mgt {
+   color: #00A0E8;
+}
+body.pagemembershipinfo-mgt .help_aboutus_left em.membershipinfo-mgt {
+   background: url(imgs/help/G23.png)no-repeat;
+}
+/*账户信息管理*/
+body.pageaccountinfo-mgt .help_aboutus_left span.accountinfo-mgt {
+   color: #00A0E8;
+}
+body.pageaccountinfo-mgt .help_aboutus_left em.accountinfo-mgt {
+   background: url(imgs/help/G22.png)no-repeat;
+}
+/*会员等级*/
+body.pageaccountinfo-mgt .help_aboutus_left span.membership-grade {
+   color: #00A0E8;
+}
+body.pageaccountinfo-mgt .help_aboutus_left em.membership-grade {
+   background: url(imgs/help/G21.png)no-repeat;
+}
+
+
 
 
 
