@@ -305,7 +305,7 @@
                                     callback: function(value, validator) {
                                         var isvalid = true;
                                         var re = /^(13[0-9]{9})|(15[89][0-9]{8})$/;
-                                        var re_email = /\w@\w*\.\w/;
+                                        var re_email =/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
                                         if (re.test(value) || re_email.test(value)) {
                                             isvalid = true;
                                         } else {

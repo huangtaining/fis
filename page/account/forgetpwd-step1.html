@@ -32,8 +32,8 @@
 			<label class="col-md-3 control-label" style="width: 350px;font-weight: normal;color: #585858;"><b>*</b> 请输入图片里的验证码：</label>
 			<div class="">
 				<input type="text" name="ddlQuestion" id="" class="form-control" style="width: 154px;height: 44px;float: left;" placeholder="请输入验证码" />
-				<span style="margin-left:10px;width: 100px;height: 43px;vertical-align: middle;display: inline-block;background-color: pink;">
-				<!--<img name="logon_sys_vericode_image0" src="/page/util/verifyImage.jsp?now=1474183845480" class="login_verify_img" align="absmiddle" title="看不清校验码请点击此图标刷新！">-->
+				<span style="margin-left:20px;width: 100px;height: 43px;line-height: 43px;vertical-align: middle;">
+				<img src="https://www.unspay.com/page/util/verifyImage.jsp?now=1474183874433" class="yzmtu">
 			</span>
 				<em style="color: #019FE8;width:62px;margin-left: 10px;margin-top: 12px;">换一张</em>
 				<div class="errorholder" style="float: right;width: 260px;margin-right: 30px;margin-left: 0;">
@@ -83,14 +83,24 @@
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
-                	 email: {
-                validators: {
-                    emailAddress: {
-                        message: '您输入的E-mail格式不正确'
-                    }
-                }
-            },
-                   
+                	email: {
+								validators: {
+									notEmpty: {
+										message: '请填写账户名'
+									},
+//									regexp: {
+//				                        regexp: /^1[34578]\d{9}$/,
+//				                        message: '请填写账户名(E-mail/手机号)'
+//				                    },
+				                    regexp: {
+				                        regexp: /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/,
+				                        message: '请填写账户名(E-mail)'
+				                    },
+									emailAddress: {
+										message: '您输入的E-mail格式不正确'
+									}
+								}
+							},
                     ddlQuestion: {
                         validators: {
                             notEmpty: {

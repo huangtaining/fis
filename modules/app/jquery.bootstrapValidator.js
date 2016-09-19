@@ -434,7 +434,7 @@
 			cssClasses = cssClasses.split(' ');
 			var n = cssClasses.length;
 			for(var i = 0; i < n; i++) {
-				if(/^col-(xs|sm|md|lg)-\d+$/.test(cssClasses[i]) || /^col-(xs|sm|md|lg)-offset-\d+$/.test(cssClasses[i])) {
+				if(/^col-(xs|sm|md|lg)-\d+$/.test(cssClasses[i]) || /^col-(xes|sm|md|lg)-offset-\d+$/.test(cssClasses[i])) {
 					return $parent;
 				}
 			}
@@ -2561,6 +2561,10 @@
 		}
 	};
 }(window.jQuery));;
+
+
+
+
 (function($) {
 	$.fn.bootstrapValidator.i18n.file = $.extend($.fn.bootstrapValidator.i18n.file || {}, {
 		'default': 'Please choose a valid file'

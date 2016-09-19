@@ -1,13 +1,15 @@
 
-.all_detail h1{padding: 20px 0 10px 0;font-size: 18px;font-weight: bold;}
-.all_detail .all_detail_color{width: 100%;padding:10px;background-color: #FFFDC0;border: 2px solid #EDC677;color:#FA6A11;font-weight: bold ;text-indent: 7em;}
-.all_detail p{padding: 20px 0 10px 0;font-size: 15px;font-weight: bold}
-.all_detail .all_detail_box{width: 100%;padding: 10px 0;border:2px solid #BCD3FC;color:#E3F1FA ;background-color: #E3F1FA;}
-.all_detail .all_detail_box ul li{padding:5px 0;}
-.all_detail .all_detail_box ul li em{display: inline-block;width:300px;text-align: right;color: #555;}
-.all_detail .all_detail_box ul li span{color: #333;font-weight: bold;margin-left: 10px;}
-.all_detail .all_detail_box ul li span b{color: #FA6A11;}
-.all_detail button{background-color: #009FE8;width:89px;height:30px;line-height:30px;border: none;color: #fff;margin: 20px 0 50px 250px;border-radius:5px ;}
+.detail{width: 100%;background-color: #F7F7F7;padding-bottom:100px ;}
+.all_detail h1{padding: 40px 0 15px 0;font-size: 14px;color: #585858;}
+.all_detail .all_detail_color{font-size: 18px;width: 100%;padding:40px 0px;background-color:#FFF9ED;border:1px solid #ED8719;color:#494C4B;text-indent: 7em;font-weight: 500;}
+.all_detail p{padding:0px 0 10px 30px;font-size: 16px;color:#494C4B;border-bottom:1px solid #e4e4e4;}
+.all_detail .all_detail_box{width: 100%;padding-top: 10px;border:1px solid #e4e4e4;color:#E3F1FA ;background-color: #fff;margin: 20px 0;}
+.all_detail .all_detail_box ul{padding: 20px 0;}
+.all_detail .all_detail_box ul li{padding:15px 0;}
+.all_detail .all_detail_box ul li em{display: inline-block;width:205px;text-align: right;color: #555;font-size: 15px;}
+.all_detail .all_detail_box ul li span{color: #333;margin-left: 10px;}
+.all_detail .all_detail_box ul li span b{color: #F4B067;}
+.all_detail button{background-color: #ED8719;width:89px;height:30px;line-height:30px;border: none;color: #fff;margin: 20px 0 10px 215px;border-radius:5px ;}
 /*充值记录*/
 .tab-pane .tad-pane_box .recharge input {
 	width: 120px;
