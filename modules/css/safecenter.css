@@ -244,13 +244,154 @@
 /*安全设置*/
 .settingsafe{
     width:100%;
-    height:1318px;
-
+    height:auto;
+    background-color:#F7F7F7;
+    padding-top:40px;
+    padding-bottom:100px;
 }
 .settingsafe .content{
     width:1200px;
-    height:auto;
+    height:1318px;
     margin:0 auto;
-    backgroumd-color:#ffffff;
-    /*padding:55px 0 150px 0;*/
+    background-color:#ffffff;
+    padding:55px 0 150px 0;
+}
+.settingsafe .con-left{
+    width:110.7px;
+    height:1112.2px;
+    float:left;
+    margin-left:140px;
+    position:relative;
+}
+.settingsafe .con-left .low{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border-radius: 100%;
+    background-color:#FF0000;
+    font-size:22px;
+    color:#ffffff;
+    position:absolute;
+    left:64%;
+    top:19%;
+}
+.settingsafe .con-left .middle{
+    position:absolute;
+    left:64%;
+    top:48.5%;
+    background-color:#FFA000;
+}
+.settingsafe .con-left .top{
+    position:absolute;
+    left:64%;
+    top:79.5%;
+    background-color:#52BE3B;
+}
+.settingsafe .con-right{
+    width:890px;
+    height:100%;
+    float:right;
+    margin-right:55px;
+}
+.settingsafe .con-right h1{
+    height:50px;
+    font-size:25px;
+    line-height:50px;
+    color:#4A4A4A;
+    padding-left:69px;
+    background:url("/imgs/safe/D2.png") no-repeat;
+    margin-bottom:83px;
+}
+.settingsafe .con-top{
+    height:auto;
+    width:100%;
+    padding-left:36px;
+}
+.settingsafe .con-top h2{
+    font-size:15px;
+    color:#4A4A4A;
+}
+.settingsafe .smrz{
+    height:153px;
+    width:853px;
+    background-color:#F7F7F7;
+    margin-top:28px;
+    padding:23px 0 28px 42px;
+    position:relative;
+}
+.settingsafe .smrz:before{
+    content:'';
+    width:0;
+    height:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    top:25%;
+    left:-2%;
+}
+.settingsafe .sub-smrz{
+    background:url("/imgs/safe/D3.png") no-repeat;
+    height:70px;
+    padding-left:91px;
+    color:#585858;
+    padding-top:10px;
+}
+.settingsafe .sub-smrz .smrztwo{
+    color:#333333;
+    font-size:15px;
+    margin-bottom:7px;
+
+}
+.settingsafe .lisq{
+    margin-left:90px;
+    color:#585858;
+    margin-top:5px;
+}
+.settingsafe .lisq button{
+    height:25px;
+    width:90px;
+    background-color:#B0B0B0;
+    border:none;
+    border-radius: 3px;
+    color:#ffffff;
+    margin-right:15px;
+}
+.settingsafe .con-right .fuwu{
+    margin-top:125px;
+
+}
+.settingsafe .con-right .fuwu .smrz{
+    height:186px;
+}
+.settingsafe .fuwu .sub-smrz{
+    background:url("/imgs/safe/D4.png") no-repeat;
+    width:331px;
+}
+.settingsafe .fuwu .fuwu-btn{
+    width:241px;
+}
+.settingsafe .fuwu .fuwu-btn button{
+    background-color:#00A0E8;
+    margin-top:28px;
+
+}
+.settingsafe .smrz-left{
+    width:331px;
+    float:left;
+}
+.settingsafe .smrz-right{
+    width:331px;
+    float:right;
+    margin-right:34px;
+}
+.settingsafe .smrz-right .sub-smrz{
+    background:url("/imgs/safe/D5.png") no-repeat;
+}
+.settingsafe .aqbh .smrz-left .sub-smrz{
+    background:url("/imgs/safe/D6.png") no-repeat;
+}
+.settingsafe .aqbh .smrz-right .sub-smrz{
+    background:url("/imgs/safe/D7.png") no-repeat;
 }
