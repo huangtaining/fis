@@ -56,7 +56,6 @@ ul.menu-list li {
 	display: inline-block;
 	zoom: 1;
 	*display: inline;
-	margin-left: 10px;
 }
 
 .special-header_bottom ul.menu-list li~li {
@@ -111,7 +110,7 @@ span.username {
 .navbar-nav li {
 	font-size: 20px;
 	    margin-top: 30px;
-    padding: 10px 0 10px 30px;
+    padding: 10px 0 10px 50px;
 }
 .special-header .navbar-nav li a:hover{background-color: #fff;}
 
@@ -126,4 +125,27 @@ span.username {
         background-color: transparent;
     }
 .navbar-nav > li > a:visited{background-color: #fff;}
+}
+
+
+
+//我的银生宝
+body.pagemyunspay ul.navbar-nav li a.myunspay {
+   color: #00A0E8;
+}
+//应用中心
+body.pageappcenter ul.navbar-nav li a.appcenter {
+   color: #00A0E8;
+}
+//交易记录
+body.pageall ul.navbar-nav li a.all {
+   color: #00A0E8;
+}
+//账户管理
+//body.pagesafe ul.navbar-nav li a.safe {
+// color: #00A0E8;
+//}
+//安全管理
+body.pagesafe-mgt ul.navbar-nav li a.safe-mgt {
+   color: #00A0E8;
 }
