@@ -17,6 +17,36 @@
 .help_right_box .text h3{padding:10px 0;font-weight: bold;}
 .help_right_box .text em{padding: 10px 0;text-indent:2em;font-size: 14px;display:block;}
 
-
-
-
+/*账户密码*/
+#title li {
+	float:left;
+	margin-right:10px;
+	background:#FFF;
+	width: 134px;height: 35px;line-height: 35px;text-align: center;
+	position: relative;
+	z-index:1000;
+	margin: 20px 10px;
+	border: 1px solid #e4e4e4;
+}
+#title li a{font-weight: bold;}
+#title, #wrap {
+	clear:both;
+	background-color:#FFF;
+	width:100%;
+}
+#wrap {
+	height:300px;
+	position:relative;
+	top:-1px;
+	padding:10px;
+}
+#wrap>div {
+	display:none;
+}
+#wrap .active {
+	display:block;
+}
+#title .ho {
+	width: 134px;height: 35px;line-height: 35px;text-align: center;border: 1px solid #e4e4e4;
+}
+#title .ho a:hover,ul li em a:link{text-decoration: none;}
