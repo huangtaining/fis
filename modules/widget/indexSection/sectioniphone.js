@@ -42,9 +42,11 @@ function slideScene() {
 			repeat: -1
 		});
 
+
+    //第一张
 	timelineMax.add([
 		TweenLite.to(t, 1, {
-			x: "-429",
+			x: "-1176",
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -56,9 +58,10 @@ function slideScene() {
 			ease: Power3.easeInOut
 		})], "+=2"),
 
+        //第二张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: "-612",
+			x: "-1362",
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -70,135 +73,57 @@ function slideScene() {
 			ease: Power3.easeInOut
 		})], "+=2"),
 
+        //第三张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: "-955",
+			x: "-1548",
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
-			x: "-499",
+			x: "-498",
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
-			y: "-433",
+			y: "-438",
 			ease: Power3.easeInOut
-		}),
-		TweenLite.to(r, 1, {
-			width: "182",
-			height: "327",
-			top: "18",
-			left: "-106",
-			padding: "34px 0 20px 0",
-			backgroundColor: "#ffffff",
-			borderTopLeftRadius: "16px",
-			borderTopRightRadius: "16px",
-			borderBottomLeftRadius: "0px",
-			borderBottomRightRadius: "0px",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(o, 1, {
-			backgroundColor: "#f5f5f5",
-			borderTopLeftRadius: "16px",
-			borderTopRightRadius: "16px"
-		}),
-		TweenLite.to(l, 1, {
-			top: "13",
-			left: "5%",
-			width: "12px",
-			height: "12px",
-			backgroundColor: "rgba(216,216,216,1)",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(a, 1, {
-			top: "13",
-			left: "9%",
-			width: "12px",
-			height: "12px",
-			borderRadius: "50%",
-			backgroundColor: "rgba(216,216,216,1)",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(s, 1, {
-			top: "13",
-			left: "13%",
-			width: "12px",
-			height: "12px",
-			borderRadius: "50%",
-			backgroundColor: "rgba(216,216,216,1)",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(n, .8, {
-			scale: .9,
-			opacity: 0
-		}),
-		TweenLite.to(u, .8, {
-			scale: .5,
-			opacity: 0
 		})], "+=2"),
 
+        //第四张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: "-1235",
+			x: "-1734",
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
-			x: "-922",
+			x: "-664",
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
-			y: "-573",
+			y: "-583",
 			ease: Power3.easeInOut
-		}),
-		TweenLite.to(r, 1, {
-			width: "182",
-			height: "380",
-			left: "44",
-			top: "8",
-			borderRadius: "25px",
-			padding: "44px 8px 40px 8px",
-			backgroundColor: "#fcfcfc",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(o, 1, {
-			backgroundColor: "#fcfcfc",
-			borderTopLeftRadius: "25px",
-			borderTopRightRadius: "25px"
-		}),
-		TweenLite.to(l, 1, {
-			top: "18",
-			left: "33%",
-			width: "6px",
-			height: "6px",
-			backgroundColor: "rgba(39,38,38,1)",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(a, 1, {
-			top: "20",
-			left: "50%",
-			width: "28px",
-			height: "3px",
-			borderRadius: "4px",
-			backgroundColor: "rgba(29,28,28,1)",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(s, 1, {
-			top: "8",
-			left: "50%",
-			width: "4px",
-			height: "4px",
-			borderRadius: "50%",
-			backgroundColor: "rgba(29,28,28,1)",
-			ease: Power3.easeInOut
-		}),
-		TweenLite.to(u, 1.7, {
-			scale: 1,
-			opacity: 1
 		})], "+=2"),
 
-		timelineMax.to(n, .5, {
-			scale: 1,
-			opacity: 1
-		}, "-=1.2"),
+
+        //第一张
+        timelineMax.add([
+            TweenLite.to(t, 1, {
+                x: "-1920",
+                ease: Power3.easeInOut
+            }),
+            TweenLite.to(e, 1, {
+                x: "-830",
+                ease: Power3.easeInOut
+            }),
+            TweenLite.to(el_heroSceneText, 1, {
+                y: "-728",
+                ease: Power3.easeInOut
+            })], "+=2"),
+
+        //第五章
+        timelineMax.to(n, .5, {
+            scale: 1,
+            opacity: 1
+        }, "-=1.2"),
 
 		timelineMax.timeScale(1)
 }
@@ -214,7 +139,7 @@ function resizeFrame() {
 		s = -(n + o);
 
 	TweenLite.to(e, .1, {
-			x: s,
+			x: 400,
 			ease: Power3.easeInOut
 		}),
 		console.log("currentLeftOfLineBox:", s)

@@ -66,7 +66,7 @@
 }
 
 .hero-scene-text h1 {
-    margin-top: 9px;
+    margin-top: 15px;
 }
 
 @media screen and (max-width:0em), screen and (min-width:40em) {
@@ -138,10 +138,10 @@
 
 .line-boxes {
     position: relative;
-    width: 2500px;
+    width: 6500px;
     padding-top: 52px;
-    -webkit-transform: translate3d(-246px, 0, 0);
-    transform: translate3d(-246px, 0, 0)
+    -webkit-transform: translate3d(-990px, 0, 0);
+    transform: translate3d(-990px, 0, 0)
 }
 
 @media screen and (max-width:39.9375em) {
