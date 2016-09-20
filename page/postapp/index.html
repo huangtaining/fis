@@ -132,12 +132,14 @@
                 ["医疗预约", "适合团体收款"]
             ]
         };
-         for(var i=0;i<7;i++){
+         for(var i=0;i<6;i++){
              $(".five").eq(0).children("a").eq(i).find("p b").html(_bodytext.zzfk[i][0]);
              $(".five").eq(0).children("a").eq(i).find("span").html(_bodytext.zzfk[i][1]);
-             $(".five").eq(1).children("a").eq(i).find("p b").html(_bodytext.shjf[i][0]);
-             $(".five").eq(1).children("a").eq(i).find("span").html(_bodytext.shjf[i][1]);
          }
+        for(var i=0;i<7;i++){
+            $(".five").eq(1).children("a").eq(i).find("p b").html(_bodytext.shjf[i][0]);
+            $(".five").eq(1).children("a").eq(i).find("span").html(_bodytext.shjf[i][1]);
+        }
 
 
 //        加载图片
