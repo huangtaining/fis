@@ -521,6 +521,7 @@
     border:1px dashed #D5D5D5;
     border-radius: 5px;
     margin-left:57px;
+    text-align:center;
 }
 .formbody p span em{
     color:rgb(255,102,0);
@@ -574,5 +575,5 @@
     margin-left:210px;
 }
 .plook{
-    margin-left:65px;
+    margin-left:-210px;
 }
