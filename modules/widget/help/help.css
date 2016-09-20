@@ -14,7 +14,9 @@
 .help_aboutus_left .panel-body{border-bottom: 1px solid #E8E8E8;padding: 0;height: 60px;line-height: 60px;}
 .help_aboutus_left .panel-body span{margin-left:17px;cursor: pointer;font-size:15px;}
 .help_aboutus_left .panel-body em{margin-left:40px;display: inline-block;width: 20px;height: 20px;vertical-align: middle;}
-.help_aboutus_left .panel-body span a:hover,.panel-heading a:link{text-decoration: none;color:#4A4A4A ;} 
+.help_aboutus_left .panel-body span a:hover,.panel-heading a:link{text-decoration: none;color:#585858;} 
+.help_aboutus_left .panel-collapse span a{color:#585858;}
+
 .help_aboutus_left .panel-body em.account-off{background: url(imgs/help/G13.png)no-repeat;}
 .help_aboutus_left .panel-body em.mobileservice{background: url(imgs/help/G12.png)no-repeat;}
 .help_aboutus_left .panel-body em.account-trade{background: url(imgs/help/G11.png)no-repeat;}
