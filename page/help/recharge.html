@@ -15,12 +15,46 @@
 	<link rel="import" href="modules/widget/help/help.html?__inline">
 
     <!--右边部分-->
-	<div class="help_aboutus_right">
-        <h2>帮助中心 > </h2>
-        
+	<div class="help_aboutus_right" style="height:1068px;">
+        <h2>帮助中心 > 账户资产 > 充值</h2>
+		<div class="help_right_box">
+
+			<div class="tab1">
+				<ul id="title" class="title clearfix">
+					<li class="ho" style="margin-left: 62px;"><a href="#">银生宝充值介绍</a></li>
+					<li><a href="#">网上银行充值</a></li>
+					<li><a href="#">邮政汇款充值</a></li>
+				</ul>
+				<div id="wrap" class="wrap">
+					<div class="active">
+						<ul>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">银生宝充值介绍</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">给银生宝账户充值有哪几种方式？</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">给银生宝账户充值的金额限额</a></em></li>
+						</ul>
+					</div>
+					<div >
+						<ul>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">网上银行充值介绍</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">银生宝充值支持哪些银行？</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">个人网上银行给银生宝充值流程（以建设银行为例）</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">给银生宝账户充值成功，为何银生宝账户里没有钱？</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">银行卡充值银生宝账户需要收取手续费吗？</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">给账户充值是提示银行卡内余额不足怎么办？</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">没有开通网上银行支付功能，银行卡也没有提供小额支付功能怎么办？</a></em></li>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">我充值到银生宝的钱可以申请退回吗？</a></em></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li><img src="imgs/help/G27.png" alt="" /><em><a href="###">邮政汇款充值</a></em></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
 
-
+		</div>
 
 	</div>
 
@@ -29,6 +63,22 @@
      
         
         <link rel="import" href="modules/widget/footer/footer.html?__inline">
+		<script type="text/javascript">
+
+
+			$(function(){
+				function tab(pa){
+					$(pa+".title li").mouseover(function(){
+						var ind=$(pa+"#title li").index($(this));
+						$(pa+".wrap div:visible").hide();
+						$(pa+".wrap div:eq("+ind+")").show();
+						$(pa+".title li.ho").removeClass("ho");
+						$(this).addClass("ho");
+					})
+				}
+				tab(".tab1 ");
+			})
+		</script>
         <script src="lib/mod.js" data-loader></script>
         <script>
             require('ui/index');
