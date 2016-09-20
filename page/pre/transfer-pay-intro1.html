@@ -4,12 +4,10 @@
 		<meta charset="UTF-8">
 		<title>转账付款</title>
 	    <link rel="import" href="../layout/header.html?__inline">
-        <link rel="stylesheet" href="/modules/css/animate.css">
-        <link rel="stylesheet" href="/modules/css/move.css">
 		<!--STYLE_PLACEHOLDER-->
 	</head>
 
-	<body>
+	<body class="pagetransfer">
 		<link rel="import" href="modules/widget/header/header.html?__inline">
 		
 		<section class="transfer-pay">
@@ -23,13 +21,13 @@
 				</div>
 				<div class="pay_one_box clearfix">
 					<div class="pay_one_box1">
-						<em class="em1 animated bounceInLeft"><img src="imgs/pre/A10.png" alt="" /></em>
-						<em class="em2 animated bounceInLeft" ><img src="imgs/pre/A11.png" alt="" /></em>
-						<em class="em3 animated bounceInLeft"><img src="imgs/pre/A13.png" alt="" /></em>
-						<em class="em4 animated bounceInLeft"><img src="imgs/pre/A14.png" alt="" /></em>
-						<em class="em5 animated bounceInLeft"><img src="imgs/pre/A8.png" alt="" /></em>
-						<em class="em6 animated bounceInLeft"><img src="imgs/pre/A9.png" alt="" /></em>
-						<em class="em7 animated bounceInRight"><img src="imgs/pre/A7.png" alt="" /></em>
+						<em class="em1"><img src="imgs/pre/A10.png" alt="" /></em>
+						<em class="em2"><img src="imgs/pre/A11.png" alt="" /></em>
+						<em class="em3"><img src="imgs/pre/A13.png" alt="" /></em>
+						<em class="em4"><img src="imgs/pre/A14.png" alt="" /></em>
+						<em class="em5"><img src="imgs/pre/A8.png" alt="" /></em>
+						<em class="em6"><img src="imgs/pre/A9.png" alt="" /></em>
+						<em class="em7"><img src="imgs/pre/A7.png" alt="" /></em>
 						<em class="em8"></em>
 						<em class="em9"><img src="imgs/pre/A6.png" alt="" /></em>
 					</div>		
@@ -51,8 +49,8 @@
 				
 				<div class="pay_one_box clearfix" style="border-bottom: 1px solid #e4e4e4;">
 					<div class="pay_one_box3">
-						<em class="em1 animated slideInRight"><img src="imgs/pre/A18.png" alt="" /></em>
-						<em class="em2 animated slideInRight"><img src="imgs/pre/A17.png" alt="" style="width: 102px;height: 102px;"/></em>
+						<em class="em1"><img src="imgs/pre/A18.png" alt="" /></em>
+						<em class="em2"><img src="imgs/pre/A17.png" alt="" style="width: 102px;height: 102px;"/></em>						
 					</div>	
 					
 					<div class="pay_one_box4">
@@ -142,19 +140,7 @@
 	    <link rel="import" href="modules/widget/footer/footer.html?__inline">
 		<script src="lib/mod.js"></script>
 		<script>
-            var $ = require('jquery');
 			require('ui/index');
-             var _top=[[100,".pay_one_box2"],[355,".pay_one_box4"],[939,".pay_two_box2"],[1469,".pay_three_box2"]]
-            var _c;
-                $(window).on('scroll',function(){
-                    _c=$(window).scrollTop();
-                    for(var g in _top){
-                        if(_c>_top[g][0]){
-                            $(_top[g][1]).addClass("animated bounceInRight").parent().css("overflow","hidden")
-                        }
-                    }
-                });
-
 		</script>
 		<!--SCRIPT_PLACEHOLDER-->
 	</body>

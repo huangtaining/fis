@@ -53,21 +53,22 @@
 
 .pay_one_box1 .em8 {
 	position: absolute;
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	background:url(../../imgs/pre/A5.jpg)no-repeat 12px #fff;
-	top:117px;
-	left:105px;
+z-index:222 ;
+	/*background:url(../../im.jpg)no-repeat 12px #fff;gs/pre/A5*/
+	top:150px;
+	left:118px;
 }
 .pay_one_box1 .em9 {
 	position: absolute;
-	top:184px;
-	left:174px;
+	top:186px;
+	left:174px;z-index:225 ;
 }
 
-
+.pay_one_box1 .em10 {
+	position: absolute;
+	top:117px;
+	left:105px;
+}
 
 .transfer-pay_one .pay_one_box .pay_one_box2 h1{font-size:40px;color: #009EE7;padding:90px 0 30px 0;}
 .transfer-pay_one .pay_one_box .pay_one_box2 span{float:left;padding: 30px 0;}
