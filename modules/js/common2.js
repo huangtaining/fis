@@ -123,7 +123,7 @@ $(function(){
                 required: true
             },
 
-            //重复密码
+            //重复支付密码
             cu_newpaypwd: {
                 required: true,
                 equalTo: "#newpaypwd"
@@ -189,6 +189,9 @@ $(function(){
             txm:{
                 required: true,
                 number:true
+            },
+            qrm:{
+                required: true,
             },
             email: {
                 required: true,
@@ -295,6 +298,9 @@ $(function(){
             txm:{
                 required: "请输入你的email",
                 number:"格式错了"
+            },
+            qrm:{
+                required: "请输入确认码"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"

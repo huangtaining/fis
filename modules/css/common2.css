@@ -1,3 +1,6 @@
+.bo a{
+    text-decoration: none;
+}
 .layout{
     width: 1200px;
     margin: 0 auto;
@@ -279,26 +282,37 @@ p{
     background: #00A0E8;
     border: none;
     padding: 3px 20px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
 }
 .step_button:hover{
     background: #00A0E8;
     border: none;
     padding: 3px 20px;
+    color: white;
 }
 .step_button_s{
     background: #ED8719;
     border: none;
     padding: 3px 20px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
 }
 .step_button_s:hover{
     background: #ED8719;
     border: none;
+    color: white;
     padding: 3px 20px;
 }
 .step_button_l{
     background: #00A0E8;
     border: none;
     padding: 6px 20px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
 }
 .step_button_l:hover{
     background: #00A0E8;
