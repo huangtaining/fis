@@ -170,6 +170,7 @@
 .form .nextbtn{
     height:25px;
     width:75.3px;
+    font-size:12px;
     margin-left:210px;
     line-height:12px;
 }
@@ -286,6 +287,7 @@
     height:25px;
     padding:0;
     margin-left:10px;
+    font-size:12px;
 }
 .modalheader{
     border:none;
@@ -308,12 +310,15 @@
     height:25px;
     line-height:10px;
     float:left;
+    font-size:12px;
     margin-left:10px;
     margin-right:20px;
 }
 .modalfooter span{
     float:left;
     margin-right:20px;
+    font-size:12px;
+    margin-top:5px;
 }
 .alertdown{
     margin:100px 0 0 23px;
@@ -490,6 +495,7 @@
     height:25px;
     color:white;
     border:none;
+    font-size:12px;
     border-radius: 3px;
 }
 #btn1{
@@ -503,6 +509,9 @@
 
 .gant{
     vertical-align: top;
+}
+.form  .cksfbz{
+    color:#00A0E8;
 }
 
 /*//收款成功*/
