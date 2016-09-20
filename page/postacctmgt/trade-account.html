@@ -14,7 +14,7 @@
                 <li class="zhxx"><a href="acctinfo.html">账户信息</a></li>
                 <li class="yhkgl "><a href="bankmgt.html">银行卡管理</a></li>
                 <li class="lczh"><a href="financial.html">理财账户</a></li>
-                <li class="wlzhgl active"><a href="trade-account.html">往来账户管理</a></li>
+                <li class="wlzhgl active wlzhgltwo"><a href="trade-account.html">往来账户管理</a></li>
                 <li class="smrz"><a href="authentication.html">实名认证</a></li>
             </ul>
         </div>
@@ -148,13 +148,13 @@
                     <button class="pagenum">20</button> <span class="tiao">条</span>
                     <nav>
                         <ul class="pagination">
-                            <li><a href="#">上一页</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">下一页</a></li>
+                            <li><a href="###" >上一页</a></li>
+                            <li><a href="###" class="cengs">1</a></li>
+                            <li><a href="###">2</a></li>
+                            <li><a href="###">3</a></li>
+                            <li><a href="###">4</a></li>
+                            <li><a href="###">5</a></li>
+                            <li><a href="###">下一页</a></li>
                         </ul>
                         <span class="tiaoz">向&nbsp;&nbsp;
                             <input type="text">&nbsp;&nbsp;页&nbsp;&nbsp;
@@ -192,6 +192,13 @@
 <script src="lib/mod.js"></script>
 <script>
     require('ui/index');
+</script>
+<script>
+    var $ = require('jquery');
+    $('.pagination li a').click(function(){
+        $('.pagination li a.cengs').removeClass("cengs");
+        $(this).addClass("cengs");
+    })
 </script>
 </body>
 </html>

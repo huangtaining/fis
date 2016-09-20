@@ -44,6 +44,41 @@
 .acctinfo .active{
     border-left:4px solid #00A0E8!important;
 }
+.acctinfo .active a{
+    color: #00A0E8!important;
+}
+
+/*账户管理左侧部分选中状态设置*/
+.acctinfo .zhxxtwo{
+    background:url("/imgs/icons/B4-6.png") no-repeat 41px center!important;
+}
+.bankmgt .active a{
+    color: #00A0E8!important;
+}
+.bankmgt .yhkgltwo{
+    background:url("/imgs/icons/B4-7.png") no-repeat 41px center!important;
+}
+.financial .active a{
+    color: #00A0E8!important;
+}
+.financial .account-left ul .lczhtwo{
+    background:url("/imgs/icons/B4-8.png") no-repeat 41px center!important;
+}
+.tradeaccount .active a{
+    color: #00A0E8!important;
+}
+.tradeaccount .account-left ul .wlzhgltwo{
+    background:url("/imgs/icons/B4-9.png") no-repeat 41px center!important;
+}
+.authentication .active a{
+    color: #00A0E8!important;
+}
+.authentication .account-left ul .smrztwo{
+    background:url("/imgs/icons/B4-10.png") no-repeat 41px center!important;
+}
+
+
+
 .acctinfo .account-right{
     width:947px;
     padding-bottom:162px;
@@ -151,7 +186,7 @@
 .changeemail .email-content .jhm{
     margin:49px 0 0 67px;
     padding-left:26px;
-    background:url("/imgs/icons/B3-2.png") no-repeat 0 1px;
+    background:url("/imgs/icons/B3-2.png") no-repeat 0 3px;
     line-height:25px;
     font-size:12px;
 }
@@ -278,6 +313,7 @@
     color:white;
     border-radius: 3px;
     border:none;
+    font-size:12px;
 
 }
 .changemobile .mobilebgc{
@@ -404,17 +440,22 @@
     margin-bottom:9px;
 }
 .unbindmobile .con-bo .getyzm .getyzm-waring{
-    background:url("/imgs/icons/B3-2.png") no-repeat;
+    background:url("/imgs/icons/B3-2.png") no-repeat 0 center;
     padding-left:26px;
     display:inline-block;
     width:100%;
+    height:25px;
+    line-height:25px;
+    font-size:12px;
 }
 .unbindmobile .con-bo .getyzm .getyzm-time{
     padding:4px 27px 5px 27px;
     border:1px solid #DDDDDD;
     display:inline-block;
-    margin-top:16px;
-    margin-left:110px;
+    margin-top:12px;
+    margin-left:95px;
+    font-size:12px;
+    color:#333333;
     background-color:#EEEEEE;
 }
 .unbindmobile .con-bo .tips{
@@ -431,16 +472,8 @@
     border:none;
     border-radius: 3px;
     margin-left:170px;
+    font-size:12px;
 }
-
-/*.unbindmobile  label.error{*/
-    /*width:200px!important;*/
-    /*text-align: left!important;*/
-    /*color:#FF8700!important;*/
-    /*padding-left:25px;*/
-    /*margin-left:40px!important;*/
-    /*background:url("/imgs/icons/A2.png")no-repeat 0 3px;*/
-/*}*/
 .unbindmobile input.error{
     border:1px solid #a94442;
 }
@@ -468,7 +501,6 @@
 .unbindmobile input.valid{
     border:1px solid  #3c763d;
     outline: 0;
-
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .unbindmobile input.valid:focus{
@@ -549,6 +581,9 @@
     width:186px;
     background-color:#EEEEEE;
     padding-left:17px;
+    font-size:12px;
+    width:186px;
+    height:25px;
 }
 
 .authentication .account-right .yhkrz{
@@ -621,6 +656,7 @@
     margin-top:-2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 0 2px 2px #e7e7e7;
 }
 
 .authentication .yhkrz ul .jsyh{
@@ -634,6 +670,7 @@
     color:white;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    box-shadow: 0 2px 2px #e7e7e7;
 }
 .authentication .yhkrz ul .jsyh .jsyh-con{
     font-size:17px;
@@ -660,6 +697,7 @@
     margin-top:-2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 0 2px 2px #e7e7e7;
 }
 
 .authentication .yhkrz ul .nyyh{
@@ -674,6 +712,7 @@
     color:white;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+
 }
 .authentication .yhkrz ul .nyyh .nyyh-con{
     font-size:17px;
@@ -700,6 +739,7 @@
     margin-top:-2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 0 2px 2px #e7e7e7;
 }
 
 
@@ -822,6 +862,7 @@
     margin-top:-2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 0 2px 2px #e7e7e7;
 }
 
 .bankmgt .yhkrz ul .jsyh{
@@ -862,6 +903,7 @@
     margin-top:-2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 0 2px 2px #e7e7e7;
 }
 
 .bankmgt .yhkrz ul .nyyh{
@@ -902,6 +944,7 @@
     margin-top:-2px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    box-shadow: 0 2px 2px #e7e7e7;
 }
 .bankmgt .kjzfxg{
     font-size:12px;
@@ -982,6 +1025,7 @@
     height:25px;
     line-height:25px;
     padding-left:10px;
+    font-size:12px;
 }
 .changebankmgt .card-content ul li .tips{
     margin-left:204px;
@@ -1011,6 +1055,8 @@
     background-color:#EEEEEE;
     margin-right:20px;
     padding-left:17px;
+    font-size:12px;
+    color:#333333;
 }
 .changebankmgt .card-content ul .ssyh select{
     width:186px;
@@ -1018,6 +1064,8 @@
     background-color:#EEEEEE;
     margin-right:20px;
     padding-left:17px;
+    font-size:12px;
+    color:#333333;
 }
 .changebankmgt .card-content ul li .bankname{
     width:946px;
@@ -1026,8 +1074,9 @@
     margin-left:204px;
     margin-top:10px;
     color:#585858;
+    font-size:12px;
     line-height:25px;
-    background:url("/imgs/icons/B3-2.png") no-repeat 17px 20px;
+    background:url("/imgs/icons/B3-2.png") no-repeat 17px 21px;
     background-color:#F7F7F7;
 }
 .changebankmgt .card-content ul .bankbtn p{
@@ -1039,6 +1088,7 @@
     color:white;
     border:none;
     border-radius: 3px;
+    font-size:12px;
 }
 .changebankmgt .card-content ul .bankbtn .sure{
     background-color:#EE8719;
@@ -1153,6 +1203,7 @@
     text-align: center;
     color:#585858;
     background-color:#F7F7F7;
+    border:1px solid #e4e4e4;
 }
 .financial .account-right .account-con th:nth-child(1){
     text-align: left;
@@ -1164,10 +1215,11 @@
 .financial .account-right .account-con table tr{
     height:50px;
     text-align: center;
-
+    border:1px solid #e4e4e4;
 }
 .financial .account-right .account-con table tr td{
     font-size:12px;
+    border:1px solid #e4e4e4;
 }
 .financial .account-right .account-con table tr td:nth-child(1){
     padding-left:34px;
@@ -1296,6 +1348,7 @@
     height:25px;
     float:left;
     padding-left:10px;
+    font-size:12px;
 }
 .tradeaccount .account-con .tab-pane .chaxun .chazhao{
     width:75px;
@@ -1306,6 +1359,7 @@
     border:0;
     margin-left:20px;
     border-radius: 3px;
+    font-size:12px;
 }
 .tradeaccount .account-con .tab-pane .chaxun .team{
     float:right;
@@ -1322,6 +1376,14 @@
 .tradeaccount .account-con .tab-pane table tr{
     height:50px;
     font-size:12px;
+    /*border:1px solid #e4e4e4;*/
+}
+.tradeaccount .account-con .tab-pane table tbody tr{
+    border:1px solid #e4e4e4;
+}
+.tradeaccount .account-con .tab-pane table tbody td{
+    border:1px solid #e4e4e4;
+    font-size:12px;
 }
 .tradeaccount .account-con .tab-pane table th{
     border:0;
@@ -1336,6 +1398,7 @@
     margin-right:20px;
     width:14px;
     height:14px;
+    margin-left:-8px;
 }
 .tradeaccount .account-con .tab-pane table tr td:nth-child(1){
     width:161px;
@@ -1361,6 +1424,7 @@
     color:#333333;
     background-color:#EEEEEE;
     border:1px solid #DDDDDD;
+    font-size:12px;
 }
 .tradeaccount .account-con .moreaction .xgfz{
     margin-left:12px;
@@ -1404,12 +1468,18 @@
     /*margin-left:-20px;*/
 
 }
+.tradeaccount .pagination > li > a{
+    color:#333333;
+}
 .tradeaccount .account-right  .tiaoz{
     float:right !important;
     display:inline-block;
     margin-right:18.8px;
 
 
+}
+.tradeaccount .cengs{
+    color:#EE8719!important;
 }
 .tradeaccount .account-right  .tiaoz button{
     font-size:12px;
