@@ -6,7 +6,7 @@
 	    <link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
 	</head>
-	<body>
+	<body class="pageall">
 		<link rel="import" href="modules/widget/header/header-transfer.html?__inline">
 		<div style="width: 100%;background-color: #F7F7F7;padding:20px 0 50px 0;">
 		<div class="centre all_detail">
@@ -30,13 +30,15 @@
 		    <ul>
 		    	<li><span>银生宝账户名：</span><em>1346123546@qq.com</em></li>
 		    	<li><span>可支付余额：</span><em><em>464.00</em>元</em> <span style="color: #009FE8;">充值</span></li>
-		    	<li><span>银生宝支付密码：</span><input type="text" placeholder="交易方名称或者账户"/></li>
+		    	<li><span>银生宝支付密码：</span>
+		    		<input type="text" placeholder="交易方名称或者账户" style="width: 200px;height: 25px;line-height: 25px;font-size: 12px;text-indent: 1em;"/>
+		    	</li>
 		    	<li><button>余额支付</button></li>
 		    </ul>
 	    </div>	
 	    
 	    <div class="pay">
-			<h2>其他支付</h2>
+			<h2>其它支付</h2>
 		    <ul class="pay_ul">
 		    	<li>请选择您的付款方式</li>
 		    	<li style="font-size: 14px;color:#9F9F9F;">网上银行：您需要先开通网上银行支付服务，才可以进行“网上银行支付”</li>		    	
@@ -65,15 +67,15 @@
                 	<li><input type="radio" name="one"/><img src="imgs/payment/B3-9.png" alt="" /></li>
                 	<li><input type="radio" name="one"/><img src="imgs/payment/B3-10.png" alt="" /></li>
                 	
-                	<li style="margin-left: 40px;"><input type="radio" name="one"/><img src="imgs/payment/B3-5.png" alt="" /></li>
-                	<li><input type="radio" name="one"/><img src="imgs/payment/B3-11.png" alt="" /></li>
+                	<li style="margin-left: 40px;"><input type="radio" name="one"/><img src="imgs/payment/B3-11.png" alt="" /></li>
                 	<li><input type="radio" name="one"/><img src="imgs/payment/B3-12.png" alt="" /></li>
                 	<li><input type="radio" name="one"/><img src="imgs/payment/B3-13.png" alt="" /></li>
                 	<li><input type="radio" name="one"/><img src="imgs/payment/B3-14.png" alt="" /></li>
                 	<li><input type="radio" name="one"/><img src="imgs/payment/B3-15.png" alt="" /></li>
+                	<li><input type="radio" name="one"/><img src="imgs/payment/B3-16.png" alt="" /></li>
                 </ol>
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" style="color: #45B9EC;margin-left:30px;margin-top: 10px;">
-        	选择其他银行</a>
+        	选择其他银行<span class="caret" style="margin-left: 10px;"></span></a>
                 <div id="collapseOne" class="panel-collapse collapse">
 					<ol class="clearfix" style="padding: 20px 0">
                 	<li style="margin-left: 40px;"><input type="radio" name="one"/><img src="imgs/payment/B3-5.png" alt="" /></li>

@@ -9,7 +9,7 @@
 .all_detail .all_detail_box ul li em{display: inline-block;width:205px;text-align: right;color: #555;font-size: 15px;}
 .all_detail .all_detail_box ul li span{color: #333;margin-left: 10px;}
 .all_detail .all_detail_box ul li span b{color: #F4B067;}
-.all_detail button{background-color: #ED8719;width:89px;height:30px;line-height:30px;border: none;color: #fff;margin: 20px 0 10px 215px;border-radius:5px ;}
+.all_detail button{background-color:#009FEB;width:89px;height:30px;line-height:30px;border: none;color: #fff;margin: 20px 0 10px 215px;border-radius:5px ;}
 /*充值记录*/
 .tab-pane .tad-pane_box .recharge input {
 	width: 120px;
@@ -107,7 +107,7 @@ vertical-align: middle;margin-top: -3px;}
 
 .pay ul li button {
 	margin: 20px 0 30px 35px;
-	background-color: #ECA150;
+	background-color:#F1870C;
 }
 
 .pay .pay_ul {
@@ -149,7 +149,7 @@ vertical-align: middle;margin-top: -3px;}
 .pay .pay_tab .nav-tabs > li > a{margin-right: 0;border-radius: 10px 10px 0 0;width: 152px;padding: 10px 10px;border: 1px solid #e4e4e4;border-bottom: none;}
 
 .pay .pay_tab .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{color: #333;}
-.pay .pay_tab .nav-tabs > li.active>a{background-color: #009FE8;color: #fff;border-radius: 10px 10px 0 0;width: 152px;}
+.pay .pay_tab .nav-tabs > li.active>a{background-color: #009FEB;color: #fff;border-radius: 10px 10px 0 0;width: 152px;}
 
 .pay .pay_tab .tab-pane ol{padding: 50px 0 30px 0;}
 .pay .pay_tab .tab-pane ol li{float: left;padding: 20px 20px 0 0;}
