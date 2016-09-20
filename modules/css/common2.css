@@ -292,6 +292,9 @@ p{
     padding: 3px 20px;
     color: white;
 }
+.step_button:visited{
+    color: white;
+}
 .step_button_s{
     background: #ED8719;
     border: none;
@@ -306,6 +309,9 @@ p{
     color: white;
     padding: 3px 20px;
 }
+.step_button_s:visited{
+    color: white;
+}
 .step_button_l{
     background: #00A0E8;
     border: none;
@@ -318,6 +324,9 @@ p{
     background: #00A0E8;
     border: none;
     padding: 6px 20px;
+}
+.step_button_l:visited{
+    color: white;
 }
 .lookjilu{
     float: right;
