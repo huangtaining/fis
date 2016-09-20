@@ -174,16 +174,15 @@
 
 /*灰色背景图*/
 
-/*.line-boxes .box.web {
-    width: 424px;
-    background-image: url(/imgs/index/A1-4.png);
+.line-boxes .box.web {
+    background-image: url(/imgs/index/A1-5.png);
 }
 
 @media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
     .line-boxes .box.web {
-        background-image: url(/imgs/index/A1-4.png)
+        background-image: url(/imgs/index/A1-5.png)
     }
-}*/
+}
 
 .line-boxes .box.apple-pay {
     background-image: url(/imgs/index/A1-1.png)
@@ -247,11 +246,11 @@
     display: none
 }*/
 
-@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
+/*@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
     .scene-slider-wrap .iphone-hand-bg {
         background-image: url(/imgs/index/A1-4.png)
     }
-}
+}*/
 
 .device-iphone6 {
     box-sizing: border-box;
@@ -282,12 +281,10 @@
     background-image: url(/imgs/index/zhuanzhang2.png)
 }
 
-/*.scene-viewes .scene.web {
-    width: 425px;
-    height: 293px;
-    background-image: url(/imgs/index/anquanbaozhang2.png);
-    background-size: cover
-}*/
+.scene-viewes .scene.web {
+     border: 1px solid rgba(0, 0, 0, .3);
+    background-image: url(/imgs/index/zhuanzhang2.png)
+}
 
 .scene-viewes .scene.fuwu {
     border: 1px solid rgba(0, 0, 0, .3);

@@ -15,6 +15,7 @@
 	width: 120px;
 	border: 1px solid #009FE8;
 	height: 25px;line-height: 25px;
+	font-size: 12px;text-indent: 1em;
 }
 
 .tab-pane .tad-pane_box .recharge button {
@@ -37,7 +38,7 @@
 .tab-pane .tad-pane_box .radio{display: inline-block;width: 15px;height: 15px;margin-right:10px;vertical-align: middle;    margin-top: -2px;}
 
 .tab-pane .recharge-record ul li em{padding: 0px 10px 0px 0px ;}
-.tab-pane .recharge-record ul li.recharge_input input{width: 100px;}
+.tab-pane .recharge-record ul li.recharge_input input{width: 100px;font-size: 12px;}
 
 .tab-pane .tad-pane_box .recharge .download{width:91px;height:27px;background: url(../../imgs/icons/a_btn_05.png) no-repeat;margin-top: 3px;color: #0066cc;
 vertical-align: middle;margin-top: -3px;}

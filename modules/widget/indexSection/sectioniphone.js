@@ -83,19 +83,19 @@ function slideScene() {
 			y: "-433",
 			ease: Power3.easeInOut
 		}),
-//		TweenLite.to(r, 1, {
-//			width: "423",
-//			height: "327",
-//			top: "18",
-//			left: "-106",
-//			padding: "34px 0 20px 0",
-//			backgroundColor: "#ffffff",
-//			borderTopLeftRadius: "16px",
-//			borderTopRightRadius: "16px",
-//			borderBottomLeftRadius: "0px",
-//			borderBottomRightRadius: "0px",
-//			ease: Power3.easeInOut
-//		}),
+		TweenLite.to(r, 1, {
+			width: "182",
+			height: "327",
+			top: "18",
+			left: "-106",
+			padding: "34px 0 20px 0",
+			backgroundColor: "#ffffff",
+			borderTopLeftRadius: "16px",
+			borderTopRightRadius: "16px",
+			borderBottomLeftRadius: "0px",
+			borderBottomRightRadius: "0px",
+			ease: Power3.easeInOut
+		}),
 		TweenLite.to(o, 1, {
 			backgroundColor: "#f5f5f5",
 			borderTopLeftRadius: "16px",

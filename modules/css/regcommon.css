@@ -1146,6 +1146,7 @@ select.form-control {
 }
 
 .tab-content .tab-pane ul li input {
+	font-size: 12px;
 	width: 188px;
 	text-indent: 1em;
 	height: 25px;
@@ -1153,6 +1154,7 @@ select.form-control {
 }
 
 .tab-content .tab-pane ul li select {
+	font-size: 12px;
 	width: 130px;
 	text-indent: 1em;
 	background-color: #F4F4F4;
@@ -1169,7 +1171,7 @@ select.form-control {
 }
 
 .tab-content .tab-pane ul li .time {
-	font-size: 14px;
+	font-size: 12px;
 	width: 188px;
 	display: inline-block;
 	height: 25px;
@@ -1184,11 +1186,12 @@ select.form-control {
 }
 
 .tab-content .tab-pane ul li.ation input {
+	font-size: 12px;
 	width: 87px;
 	height: 25px;
 	line-height: 25px;
 }
-
+.trading_box .table-striped>tbody>tr>td{font-size: 12px;}
 .table-striped>tbody>tr:nth-of-type(odd) {
 	background-color: #FFF;
 }
@@ -1211,7 +1214,7 @@ select.form-control {
 	border-bottom: 1px solid #ddd;
 }
 
-.table-striped tbody tr td select {
+.table-striped tbody tr td select {font-size: 12px;
 	border: none;
 }
 
@@ -1302,6 +1305,8 @@ select.form-control {
 	width: 107px;
 	height: 25px;
 	line-height: 25px;
+	font-size: 12px;
+	text-indent: 1em;
 }
 
 .modal .modal-body {
