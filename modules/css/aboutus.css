@@ -772,11 +772,11 @@
     border-top:0;
 }
 .legel .wrap{
-    width:990px;
-    height:755px;
+    width:990px!important;
+    height:755px!important;
     padding:0 60px;
     background-color:white;
-    float:right;
+    float:right!important;
     border-top:1px solid #E8E8E8;
     border-right:1px solid #E8E8E8;
     border-bottom:1px solid #E8E8E8;
