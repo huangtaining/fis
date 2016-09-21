@@ -1445,7 +1445,6 @@
     float:left;
 }
 .tradeaccount .account-con .nextpage .pagenum{
-    /*padding:5px 15px;*/
     font-size:12px;
     width:45px;
     height:25px;
@@ -1494,6 +1493,67 @@
 }
 .tradeaccount .account-right .caoz{
     color:#00A0E8;
+}
+/*模态框*/
+
+.tradeaccount .modalcontent{
+    width:350px;
+}
+
+.tradeaccount .modalcontent .tjfumt{
+    float:right;
+    margin-right:10px;
+    font-weight: normal;
+}
+.tradeaccount .modalcontent .modal-body{
+    color:#005CAB;
+    font-size:12px;
+}
+.tradeaccount .modalcontentt{
+    width:430px;
+}
+.tradeaccount .modalcontentt p{
+    /*height:30px;*/
+    /*line-height:30px;*/
+    margin-bottom:15px!important;
+}
+.tradeaccount .modalcontentt label{
+    width:115px;
+    text-align: right;
+    font-weight: normal;
+    font-size:12px;
+}
+.tradeaccount .modalcontentt input{
+    width:190px;
+    font-size:12px;
+    height:25px;
+}
+.tradeaccount .modalcontentt select{
+    width:190px;
+    height:25px;
+}
+.tradeaccount .modalcontentt textarea{
+    width:190px;
+    height:80px;
+}
+.tradeaccount .modalcontentt .beiz label{
+    vertical-align: top;
+}
+.tradeaccount .modalcontentt .kex{
+    margin-left:120px;
+}
+.tradeaccount .modalcontentt p button{
+    width:57px;
+    height:25px;
+    background-color:#00A0E8;
+    line-height:25px;
+    font-size:12px;
+    border-radius: 3px;
+    /*margin-left:120px;*/
+}
+.tradeaccount .modalcontentt p .sure{
+    margin-left:120px;
+    margin-right:10px;
 }
 
 

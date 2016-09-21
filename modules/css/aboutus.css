@@ -1055,9 +1055,14 @@
 }
 .company-news nav .pagination li a{
     margin-right:5px;
+    color:#868686;
 }
 
 .company-news .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
     background-color:#00A0E8;
     border: 1px solid #ddd;
+}
+.company-news .pagebgc{
+    background-color:#00A0E8!important;
+    color:#ffffff!important;
 }
