@@ -17,7 +17,7 @@
     margin:0 auto;
 }
 .platsafe .zhsafe-left{
-    height:342px;
+    height:369px;
     width:369px;
     float:left;
     margin-left:110px;
@@ -26,12 +26,12 @@
 }
 .platsafe .zhsafe-left .zhuanimg{
     position:absolute;
-    left:-8.5%;
-    top:-1.5%;
-    width:372px;
-    height:346px;
+    left:-1px;
+    top:-25px;
+    width:370px;
+    height:370px;
 }
-.platsafe .zhsafe-left img{
+.platsafe .zhsafe-left>img{
     margin-left:32px;
     margin-top:3px;
 }
@@ -39,7 +39,7 @@
     from{transform:rotate(0deg)}
     to{transform:rotate(360deg)}
 }
-.platsafe .zhsafe-left .zhuanimg img{
+.platsafe .zhsafe-left .zhuanimg {
     animation:rotating 2s infinite linear ;
     transform-origin: center center;
 }
