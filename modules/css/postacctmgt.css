@@ -1510,7 +1510,7 @@
     font-size:12px;
 }
 .tradeaccount .modalcontentt{
-    width:430px;
+    width:440px;
 }
 .tradeaccount .modalcontentt p{
     /*height:30px;*/
@@ -1555,6 +1555,139 @@
     margin-left:120px;
     margin-right:10px;
 }
+.tradeaccount .modalcontentt label.error{
+    margin-left:120px;
+}
 
 
+/*第二个按钮*/
+
+.tradeaccount .fenzmodal{
+    width:350px;
+    position:fixed;
+    top:300px;
+    left:150px;
+}
+
+.tradeaccount .fenzmodal .tjfumt{
+    float:right;
+    margin-right:10px;
+    font-weight: normal;
+}
+.tradeaccount .fenzmodal .modal-body{
+    color:#005CAB;
+    font-size:12px;
+}
+
+
+
+
+.tradeaccount .contactmodal{
+    width:600px;
+
+
+}
+.tradeaccount .contactmodal .modalbody{
+    height:440px;
+    overflow-y: scroll;
+}
+.tradeaccount .contactmodal p{
+    margin-bottom:20px!important;
+}
+.tradeaccount .contactmodal label{
+    width:115px;
+    text-align: right;
+    font-weight: normal;
+    font-size:12px;
+}
+.tradeaccount .contactmodal input{
+    width:204px;
+    font-size:12px;
+    height:25px;
+}
+.tradeaccount .contactmodal select{
+    width:190px;
+    height:25px;
+    font-size:12px;
+}
+.tradeaccount .contactmodal .fenzu{
+    width:150px;
+}
+.tradeaccount .contactmodal .khsf{
+    width:63px;
+    font-size:12px;
+}
+.tradeaccount .contactmodal textarea{
+    width:246px;
+    height:80px;
+}
+.tradeaccount .contactmodal .beiz label{
+    vertical-align: top;
+}
+.tradeaccount .contactmodal .kex{
+    margin-left:120px;
+}
+.tradeaccount .contactmodal p button{
+    width:57px;
+    height:25px;
+    background-color:#00A0E8;
+    line-height:25px;
+    font-size:12px;
+    border-radius: 3px;
+    /*margin-left:120px;*/
+}
+.tradeaccount .contactmodal p .sure{
+    margin-left:120px;
+    margin-right:10px;
+}
+.tradeaccount .contactmodal .num{
+    margin-left:145px!important;
+    width:360px!important;
+    margin-top:-15px;
+}
+
+.tradeaccount .contactmodal .alert{
+    width:393px;
+    height:88px;
+    margin-left:142px;
+}
+
+
+
+.tradeaccount label.error{
+    width:200px;
+    color:#FF8700;
+    text-align:left;
+    padding-left:32px;
+    margin-left:15px;
+    height:25px;
+    width:150px;
+    line-height:25px;
+    margin-bottom:0!important;
+    background:url("/imgs/icons/A2.png")no-repeat 10px 5px;
+    background-color:#F5F5F5;
+}
+.tradeaccount input.error{
+    border:1px solid #a94442;
+}
+.tradeaccount input.error:focus{
+    border:1px solid  #843534;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.tradeaccount input.error{
+    border:1px solid #843534;
+    outline: 0;
+    margin-bottom:0!important;
+}
+.tradeaccount input.valid{
+    border:1px solid  #3c763d;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.tradeaccount input.valid:focus{
+    border: 1px solid #2b542c !important;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
 

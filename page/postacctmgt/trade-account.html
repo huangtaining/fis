@@ -5,9 +5,11 @@
     <title>往来账户管理</title>
     <link rel="import" href="../layout/header.html?__inline">
     <script src="/modules/lib/ysbbase.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
     <script>
         require('jquery');
         require('modules/lib/ysbbase');
+        require('modules/app/jquery.validate.min');
     </script>
 </head>
 <body>
@@ -65,7 +67,6 @@
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                                         <h4 class="modal-title" id="myModalLabel">分组管理   <span class="tjfumt">添加分组</span></h4>
-
                                     </div>
                                     <div class="modal-body">
                                         暂无分组
@@ -88,10 +89,10 @@
 
                                     </div>
                                     <div class="modal-body">
-                                        <form action="">
+                                        <form action="" class="formsubmit1">
                                             <p>
                                                 <label for=""><em>*</em>对方手机或Email：</label>
-                                                <input type="text">
+                                                <input type="text" name="checkse">
                                             </p>
                                             <p>
                                                 <label for="">对方姓名：</label>
@@ -109,7 +110,7 @@
                                                 <span class="kex">可选（100个字）</span>
                                             </p>
                                             <p>
-                                                <button class="sure">确定</button>
+                                                <button class="sure submit1">确定</button>
                                                 <button>返回</button>
                                             </p>
                                         </form>
@@ -168,9 +169,125 @@
                         <input type="text">
                         <button class="chazhao">查找</button>
                         <span class="team">
-                            <em class="sub-team" >分组管理</em>
-                            <em >添加联系人</em>
-                        </span>
+                            <em class="sub-team" data-toggle="modal" data-target="#fenz">分组管理</em>
+                            <em data-toggle="modal" data-target="#addcontact">添加联系人</em>
+                            </span>
+                            <!--分组管理模态框-->
+                             <div class="modal fade" id="fenz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content fenzmodal">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="fenzLabel">分组管理   <span class="tjfumt">添加分组</span></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        暂无分组
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--添加联系人模态框-->
+                    <div class="modal fade" id="addcontact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content contactmodal">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="addcontactLabelt">添加联系人</h4>
+
+                                </div>
+                                <div class="modal-body modalbody">
+                                    <form action="" class="formsubmit">
+                                        <p>
+                                            <label for=""><em>*</em>收款方姓名：</label>
+                                            <input type="text" name="ddlQuestion">
+                                        </p>
+                                        <p>
+                                            <label for="">分组：</label>
+                                            <select name="" id="" class="fenzu">
+                                                <option value=""></option>
+                                            </select>
+                                        </p>
+                                        <p>
+                                            <label for=""><em>*</em>银行名称：</label>
+                                            <select name="" id="" class="fenzu">
+                                                <option value="">请选择</option>
+                                            </select>
+                                        </p>
+                                        <p>
+                                            <label for=""><em>*</em>开户行省份：</label>
+                                            <select name="" id="" class="khsf">
+                                                <option value="">请选择</option>
+                                            </select>
+                                        </p>
+
+                                        <p>
+                                            <label for=""><em>*</em>开户行城市：</label>
+                                            <select name="" id="" class="khsf">
+                                                <option value="">请选择</option>
+                                            </select>
+                                        </p>
+                                        <p>
+                                            <label for=""><em>*</em>开户行名称：</label>
+                                            <input type="text" name="bankname">
+
+                                        </p>
+                                        <p>
+                                            <label for=""><em>*</em>银行账户：</label>
+                                            <input type="text" name="cardcheck" id="cardcheck">
+                                            <p class="num">(为数字，且长度应该在6位到32位之间。)</p>
+                                        </p>
+                                        <p>
+                                            <label for=""><em>*</em>重复银行账号：</label>
+                                            <input type="text" name="cardcheckt">
+                                            <!--<div class="alert alert-warning" role="alert">-->
+                                                <!---->
+                                            <!--</div>-->
+                                            <p class="num">
+                                                • 银行账号/银行卡号为数字，且长度应该在6位于是32位之间！<br>
+                                                • 存折账号的“＊”和企业账户的“＊”在此均无需输入
+                                            </p>
+                                        </p>
+                                        <p>
+                                            <label for="">收款方Email：</label>
+                                            <input type="text">
+                                            <em>(可选)</em>
+                                        </p>
+                                        <p>
+                                            <label for="">收款方电话：</label>
+                                            <input type="text">
+                                            <em>(可选)</em>
+                                        </p>
+                                        <p>
+                                            <label for="">收款方手机：</label>
+                                            <input type="text">
+                                            <em>(可选)</em>
+                                        </p>
+                                        <p class="beiz">
+                                            <label for="">备注：</label>
+                                            <textarea name="" id="" cols="" rows=""></textarea>
+                                            <span class="kex">可选（100个字）</span>
+                                        </p>
+                                        <p>
+                                            <button class="sure submit">确定</button>
+                                            <button>返回</button>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
 
                     </p>
                     <table border="1" width="100%" align="center" cellspacing="0" cellpadding="0" style="border-bottom: 1px solid #e4e4e4;
@@ -247,10 +364,136 @@
 </script>
 <script>
     var $ = require('jquery');
+//    $('.modalcontentt .sure').click(function(){
+//        var reg=/^(1[0-9]{9})|(15[89][0-9]{8})$/;
+//        var reg1=/\w@\w*\.\w/;
+//        var val=$('#checkse').value;
+//        if(reg.test(val))
+//    })
+
+
+
+
+
     $('.pagination li a').click(function(){
         $('.pagination li a.cengs').removeClass("cengs");
         $(this).addClass("cengs");
-    })
+    });
+    var $ = require('jquery');
+    //    form验证
+    $(".submit").click(function(){
+        if($(".formsubmit").valid()){
+            // alert("提交成功")
+        }else{
+            // alert("提交失败")
+        }
+    });
+    //    自定义预留信息
+    jQuery.validator.addMethod("ccc", function(value, element) {
+        return this.optional(element) || /^(1[0-9]{9})|(15[89][0-9]{8})$/.test(value)||/\w@\w*\.\w/.test(value);
+    }, "匹配english");
+    $(".formsubmit").validate({
+        errorPlacement:function(error,element){
+            error.appendTo(element.parent())
+        },
+        rules:{
+            // 我要收款模块
+            ddlQuestion: {
+                required: true,
+                minlength: 2
+            },
+            moneycheck: {
+                required: true,
+                digits: true
+            },
+            moneyuse: {
+                required: true,
+                maxlength: 85
+            },
+            bankname: {
+                required: true,
+            },
+            cardcheck: {
+                required: true,
+                digits: true,
+                rangelength: [6,32]
+            },
+            cardcheckt:{
+                required: true,
+                equalTo:"#cardcheck"
+            },
+            checkse:{
+                required: true,
+                ccc:true
+            }
+        },
+
+        messages:{
+            // 我要收款模块
+            ddlQuestion: {
+                required: "请输入收款方姓名",
+                minlength: "请输入正确的格式"
+            },
+            moneycheck: {
+                required: "请输入收款金额",
+                digits: "请输入正确的格式"
+            },
+            moneyuse: {
+                required: "请填写资金用途",
+                maxlength: "已超过85个字符"
+            },
+            bankname: {
+                required: "请填写开户行名称",
+            },
+            cardcheck: {
+                required: "请输入银行卡号",
+                digits: "请正确的银行卡号",
+                rangelength: "请正确的银行卡号"
+            },
+            cardcheckt:{
+                required: "请输入重复账号",
+                equalTo:"两次输入不一致"
+            },
+            checkse:{
+                required: "请输入手机号或邮箱",
+                ccc:"请输入正确格式"
+            }
+        }
+    });
+
+
+
+    //    form验证
+    $(".submit1").click(function(){
+        if($(".formsubmit1").valid()){
+            // alert("提交成功")
+        }else{
+            // alert("提交失败")
+        }
+    });
+    //    自定义预留信息
+    jQuery.validator.addMethod("ccc", function(value, element) {
+        return this.optional(element) || /^(1[0-9]{9})|(15[89][0-9]{8})$/.test(value)||/\w@\w*\.\w/.test(value);
+    }, "匹配english");
+    $(".formsubmit1").validate({
+        errorPlacement:function(error,element){
+            error.appendTo(element.parent())
+        },
+        rules:{
+            checkse:{
+                required: true,
+                ccc:true
+            }
+        },
+
+        messages:{
+
+            checkse:{
+                required: "请输入手机号或邮箱",
+                ccc:"请输入正确格式"
+            }
+        }
+    });
 </script>
 </body>
 </html>
