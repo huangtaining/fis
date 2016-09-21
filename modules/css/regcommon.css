@@ -418,6 +418,7 @@ select.form-control {
 }
 
 #defaultForm .form-group .button_btn button{width: 329px;height: 44px;margin-left: 0;margin: 10px 0;}
+#defaultForm .form-group .button_btn button:hover{background-color: #0068B6;}
 .login_box #defaultForm .form-group .button_btn{margin-left: 0;padding:0;}
 
 .login_box #defaultForm .form-group .button_btn .btn-primary2{width: 329px;height: 44px;line-height:30px;background-color: #fff;color: #009FE8;border: 2px solid #009FE8;}
@@ -1082,13 +1083,13 @@ select.form-control {
 	background-color: #fff;
 	width: 153px;
 	text-align: center;
-	height: 50px;
-	line-height: 50px;
+	height:42px;
+	line-height:42px;
 }
 
-.trading-record .nav-tabs li a {
+/*.trading-record .nav-tabs li a {
 	padding: 15px;
-}
+}*/
 
 .trading-record .nav-tabs li a:hover {
 	width: 152px;
@@ -1110,8 +1111,11 @@ select.form-control {
 	background-color: #F7F7F7;
 	border: 1px solid #fff;
 	border-bottom-color: transparent;
+	
 }
-
+.nav-tabs > li > a{
+	border: none;
+}
 .nav-tabs>li a:hover {
 	border: none;
 	border-radius: 0px
