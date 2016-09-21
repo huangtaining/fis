@@ -257,7 +257,7 @@
                                 <li><em>交易对方：</em><input type="text" placeholder="交易方名称或者账户"/></li>
                             </ul>
                             <ul class="clearfix">
-                                <li><em>交易日期：</em><span class="time btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">2016-7-23至2016-7-29</span></li>
+                                <li><em>交易日期：</em><span class="time btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><span id="xzrq1">2016-7-23</span>至<span id="xzrq2">2016-7-29</span></span></li>
                                 <li><em>交易状态：</em>
                                     <select name="" id="">
                                         <option value="">所有交易状态</option>
@@ -816,10 +816,10 @@
                                     <span>过去30天</span>
                                     <span>过去3个月</span>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary">确定</button>
-                                    <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #fff;border: none;">取消</button>
-                                </div>
+                                <div class="modal-footer">			
+				                    <button type="button" class="btn btn-primary c" data-dismiss="modal">确定</button>
+				                    <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #fff;border: none;">取消</button>
+			                    </div> 
                             </div><!-- /.modal-content -->
                         </div><!-- /.modal -->
                     </div>
@@ -943,6 +943,14 @@ $(function(){
 })
 
 </script>
-
+<script>
+	require('ui/index');
+        $(".c").click(function(){
+            if($(".xzrq1").val()&&$(".xzrq2").val()){
+                $("#xzrq1").html($(".xzrq1").val());
+                $("#xzrq2").html($(".xzrq2").val())
+            }
+        })
+		</script>
 </body>
 </html>
