@@ -486,6 +486,9 @@ p{
      width: 170px;
      margin-right: 20px;
  }
+.form-right select{
+       background: #EEEEEE;
+}
 .form-right{
     float: left;
     text-align:left;
