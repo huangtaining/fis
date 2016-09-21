@@ -654,6 +654,7 @@
     width:100%;
     background-color:#F7F7F7;
     padding-top:11px;
+    padding-bottom:128px;
 }
 .contactus .contactmap{
     padding-top:15px;
@@ -682,9 +683,14 @@
     color:#4A4A4A;
 }
 .contactustel .contact{
-    height:70px;
+    height:118px;
     width:100%;
     margin-top:29px;
+}
+.contactustel .contact .zxzx{
+    display:inline-block;
+    margin-top:18px;
+    margin-left:25px;
 }
 .contactustel .contact .cltime{
     float:left;
@@ -701,7 +707,6 @@
 .contactustel .usphone{
     font-size:28px;
     color:#4A4A4A;
-    margin-top:48px;
     margin-left:25px;
 }
 .contactustel .usphone span{
@@ -1052,4 +1057,7 @@
     margin-right:5px;
 }
 
-
+.company-news .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color:#00A0E8;
+    border: 1px solid #ddd;
+}
