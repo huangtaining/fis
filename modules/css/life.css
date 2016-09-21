@@ -11,6 +11,42 @@
     float: left;
     border: 1px solid #E8E8E8;
 }
+
+.lifelu{
+    background: white;
+}
+.lifelu li{
+
+ }
+.lifelu li:nth-child(1){
+       background: url("/imgs/lifeservice/A1.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(2){
+    background: url("/imgs/lifeservice/A2.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(3){
+    background: url("/imgs/lifeservice/A3.png") no-repeat;
+    background-position: 40px 20px;
+}
+.lifelu li:nth-child(4){
+    background: url("/imgs/lifeservice/A4.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(5){
+    background: url("/imgs/lifeservice/A5.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(6){
+    background: url("/imgs/lifeservice/A6.png") no-repeat;
+    background-position: 40px 24px;
+}
+.lifelu li:nth-child(7){
+    background: url("/imgs/lifeservice/A7.png") no-repeat;
+    background-position: 40px 22px;
+}
+
 .lifer{
     width: 944px;
     float: right;
@@ -30,7 +66,7 @@
       border-bottom: 1px solid #e8e8e8;
       line-height: 58px;
       font-size: 15px;
-      text-indent: 39px;
+     text-indent: 70px;
       position: relative;
   }
 .lifel li .life1{
@@ -42,6 +78,9 @@
 
 .lifel li.act .life1{
          display: block;
+}
+.lifel li.act .life1{
+    display: block;
 }
 .lifel img{
       margin-right: 20px;
