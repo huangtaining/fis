@@ -654,10 +654,10 @@
     width:100%;
     background-color:#F7F7F7;
     padding-top:11px;
-    padding-bottom:128px;
+
 }
 .contactus .contactmap{
-    padding-top:15px;
+    padding-top:15px;padding-bottom:128px;
     width:873px;
     float:left;
     height:647px;
