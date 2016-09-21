@@ -82,12 +82,34 @@ a:hover{
     line-height: 20px;
     float: left;
 }
+.car{
+    overflow: hidden;
+}
 .witwar{
     width: 100%;
     padding: 20px 20px;
     margin: 10px 0 ;
     overflow: hidden;
     margin-bottom: 40px;
+}
+.card_bo2{
+    background: white;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+.card_bo2 input{
+    width: 20%;
+    margin-right: 10%;
+    float: left;
+    margin-top: 18.5px;
+}
+.eccard{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    width: 16.3%;
+    float: left;
 }
 /*问题*/
 .que{
@@ -256,7 +278,7 @@ p{
     border-right: 1px solid #00A0E8;
 }
 .qtfs{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding-left: 20px
 }
 .qtfs p{
