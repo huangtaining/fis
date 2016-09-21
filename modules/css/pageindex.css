@@ -44,6 +44,7 @@ body {
 .announcement> div .border p {
 	font-size: 18px;
 	color: #3B3B3B;
+	margin-bottom: 10px;
 }
 
 .announcement_right {
