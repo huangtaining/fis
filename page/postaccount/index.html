@@ -9,14 +9,13 @@
     <link href="../../modules/lib/bootstrap-table/bootstrap-table.css" rel="stylesheet">
     <link href="../../modules/css/myusp.css" rel="stylesheet">
     <link href="../../modules/css/common2.css" rel="stylesheet">
-    <link href="../../modules/css/common.css" rel="stylesheet">
+    <link href="../../modules/css/appcen.css" rel="stylesheet">
     <link href="../../modules/css/appcen.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
 
     <script src="../../components/jquery/jquery.js"></script>
     <script src="../../modules/lib/ysbbase.min.js"></script>
     <script src="../../modules/lib/bootstrap-table/bootstrap-table.js"></script>
-    <script src="../../modules/js/myusp/myusp.js"></script>
 
 </head>
 <body class="pagemyunspay">
@@ -242,6 +241,7 @@
                 </ul>
                 <!--分页主体-->
                 <div id="myTabContent" class="tab-content">
+
                     <!--所有交易记录-->
                     <div class="tab-pane fade in active" id="allpay">
                         <div class="tad-pane_box">
@@ -447,27 +447,10 @@
                             <div class="jilu_left">支出：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:12</em>元）</div>
                             <div class="jilu_rigth">收入：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:88</em>元）</div>
                         </div>
-
-                        <!--分栏-->
-                        <div class="paging clearfix">
-                            <div class="paging_left">当前 0-0 共7条 每页展现 <span class="shuzi">20</span> 条</div>
-                            <div class="paging_rigth number">
-                                <a href="#">上一页&nbsp;</a>
-                                <a href="#" class="paac">1&nbsp;</a>
-                                <a href="#">2&nbsp;</a>
-                                <a href="#">3&nbsp;</a>
-                                <a href="#">4&nbsp;</a>
-                                <a href="#">5&nbsp;</a>
-                                <a href="#">6&nbsp;</a>
-                                <a href="#">下一页</a>&nbsp;&nbsp;
-                                <span style="margin-left:20px;">向&nbsp; <input id="nowpa" type="text" value="1"/> &nbsp;页&nbsp;</span>
-                                <button class="button" value="跳转">跳转</button>
-                            </div>
-                        </div>
                     </div>
 
-                    <!--所有交易记录-->
-                    <div class="tab-pane fade in active" id="chongzhi">
+                    <!--充值-->
+                    <div class="tab-pane fade in" id="chongzhi">
                         <div class="tad-pane_box">
                             <div class="recharge">
                                 <em>交易日期：</em>
@@ -500,6 +483,324 @@
 
                         <div style="text-align:center;background-color: #fff;padding:100px 0;">暂无数据</div>
                     </div>
+
+                    <!--提现-->
+                    <div class="tab-pane fade in" id="tixian">
+                        <div class="tad-pane_box">
+                            <div class="recharge">
+                                <em>交易日期：</em>
+                                <input data-provide="datepicker"> - <input data-provide="datepicker">
+                                <button>查询</button>
+                                <span>今天</span>
+                                <span>最近一周</span>
+                                <span>1个月</span>
+                                <span>3个月</span><span>1年</span>
+                            </div>
+                        </div>
+                        <div class="recharge_box">您已成功提现： <em>0.00</em>元  账户余额： <em>0.00</em>元</div>
+
+                        <!--表格-->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th style="padding-left: 30px;">交易编号</th>
+                                <th>交易对方</th>
+                                <th>交易类型</th>
+                                <th>交易状态</th>
+                                <th>交易时间</th>
+                                <th>收/付</th>
+                                <th>金额（元）</th>
+                                <th>服务费</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                        </table>
+
+                        <div style="text-align:center;background-color: #fff;padding:100px 0;">暂无数据</div>
+                    </div>
+
+                    <!--充值缴费记录-->
+                    <div class="tab-pane fade in" id="chongzhijl">
+                        <div class="tad-pane_box recharge-record">
+                            <ul class="clearfix">
+                                <li><em>缴费类型：</em><input type="radio" class="radio"/>公共事业费</li>
+                                <li><em style="margin-left: 16px;">充值缴费状态：</em>
+                                    <select name="" id="">
+                                        <option value="">所有状态</option>
+                                        <option value="">已缴费</option>
+                                        <option value="">未缴费</option>
+                                    </select>
+                                </li>
+                                <li class="recharge_input"><em>充值缴纳金额：</em><input type="text"/> 至 <input type="text" /> 元</li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li class="recharge_input"><em>充值缴纳日期：</em><input data-provide="datepicker"> 至 <input data-provide="datepicker"></li>
+                                <li><em>条形码/手机号码：</em><input type="text"/></li>
+                                <li><button>查询</button></li>
+                            </ul>
+                        </div>
+                        <!--表格-->
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th style="padding-left: 30px;">缴费类型</th>
+                                <th>公司</th>
+                                <th>账单月份</th>
+                                <th>条形码</th>
+                                <th>缴费金额</th>
+                                <th>手续费</th>
+                                <th>状态</th>
+                                <th>缴费时间</th>
+                                <!--			<th>操作</th>-->
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 20px;">
+                                    <p>2016-01-01</p>
+                                    <em>05:00</em>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 20px;">
+                                    <p>2016-01-01</p>
+                                    <em>05:00</em>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 20px;">
+                                    <p>2016-01-01</p>
+                                    <em>05:00</em>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 20px;">
+                                    <p>2016-01-01</p>
+                                    <em>05:00</em>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 20px;">
+                                    <p>2016-01-01</p>
+                                    <em>05:00</em>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 20px;">
+                                    <p>2016-01-01</p>
+                                    <em>05:00</em>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                            </tr>
+
+                            <tr>
+                                <td>123456789</td>
+                                <td>上海上海上海上海</td>
+                                <td>转账</td>
+                                <td>交易成功</td>
+                                <td style="line-height: 20px;">
+                                    <p>2016-01-01</p>
+                                    <em>05:00</em>
+                                </td>
+                                <td>收</td>
+                                <td>9697.00</td>
+                                <td>-7：00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="jilu clearfix">
+                            <div class="jilu_left">支出：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:12</em>元）</div>
+                            <div class="jilu_rigth">收入：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:88</em>元）</div>
+                        </div>
+
+                        <!--分栏-->
+                        <div class="paging clearfix">
+                            <div class="paging_left">当前 0-0 共7条 每页展现 <span class="shuzi">20</span> 条</div>
+                            <div class="paging_rigth number">
+                                <a href="#">上一页&nbsp;</a>
+                                <a href="#" class="paac">1&nbsp;</a>
+                                <a href="#">2&nbsp;</a>
+                                <a href="#">3&nbsp;</a>
+                                <a href="#">4&nbsp;</a>
+                                <a href="#">5&nbsp;</a>
+                                <a href="#">6&nbsp;</a>
+                                <a href="#">下一页</a>&nbsp;&nbsp;
+                                <span style="margin-left:20px;">向&nbsp; <input id="nowpa" type="text" value="1"/> &nbsp;页&nbsp;</span>
+                                <button class="button" value="跳转">跳转</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--电子对账单-->
+                    <div class="tab-pane fade in" id="dzdzd">
+                        <div class="tad-pane_box">
+                            <div class="recharge">
+                                <em>选择账期：</em>
+                                <input data-provide="datepicker"> - <input data-provide="datepicker">
+                                <button>查询</button>
+                                <button class="download">下载对账单</button>
+                            </div>
+                        </div>
+                        <!--总账信息-->
+                        <p style="padding:0px 25px 20px 25px;font-weight: bold;">【总账信息】</p>
+                        <div class="etcbill_information">
+
+                            <ul class="clearfix">
+                                <li style="margin-left: 30px;">
+                                    <em>账户：</em>
+                                    <span>18745691234</span>
+                                </li>
+                                <li style="width:350px;">
+                                    <em>账期：</em>
+                                    <span>2016-09-01 - 2016-09-13</span>
+                                </li>
+                                <li>
+                                    <em>本期充值：</em>
+                                    <span><b>0.00</b>元</span>
+                                </li>
+                                <li>
+                                    <em>本期付款：</em>
+                                    <span><b>0.00</b>元</span>
+                                </li><br />
+                                <li style="margin-left: 30px;">
+                                    <em>户名：</em>
+                                    <span>姓名</span>
+                                </li>
+                                <li style="width:350px;">
+                                    <em>币种：</em>
+                                    <span>人民币</span>
+                                </li>
+                                <li>
+                                    <em>本期提现：</em>
+                                    <span><b>0.00</b>元</span>
+                                </li>
+                                <li>
+                                    <em>本期收款：</em>
+                                    <span><b>0.00</b>元</span>
+                                </li><br />
+                                <li style="margin-left: 30px;">
+                                    <em>子账户：</em>
+                                    <span>基本账户</span>
+                                </li>
+                                <li style="width:350px;">
+                                    <em>上月余额：</em>
+                                    <span><b>0.00</b>元</span>
+                                </li>
+                                <li>
+                                    <em>本期积分：</em>
+                                    <span><b>0.00</b>元</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!--表格-->
+                        <p style="padding: 25px 25px 10px 25px;font-weight: bold;">【首期账单明细】</p>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th style="padding-left: 30px;">日期</th>
+                                <th>交易编号</th>
+                                <th>交易类型</th>
+                                <th>资金用途</th>
+                                <th>收款额(元)</th>
+                                <th>付款额(元)</th>
+                                <th>余额(元)</th>
+                                <th>服务费</th>
+                                <th>对方账号</th>
+                                <th>对方户名</th>
+                            </tr>
+                            </thead>
+                        </table>
+
+                        <div style="text-align:center;background-color: #fff;padding:100px 0;">暂无数据</div>
+                    </div>
+
+                    <!--余额流水-->
+                    <div class="tab-pane fade in" id="yels">
+                        <div class="tad-pane_box">
+                            <div class="recharge">
+                                <div style="padding-right:100px;display: inline-block;">
+                                    <em>请选择账户名称：</em>
+                                    <select name="" id="" style="width: 150px;">
+                                        <option value="">所有账户</option>
+                                        <option value="">基本账户</option>
+                                    </select>
+                                </div>
+                                <em>交易日期：</em>
+                                <input data-provide="datepicker"> - <input data-provide="datepicker">
+                                <button>查询</button>
+                            </div>
+                        </div>
+
+                        <!--表格-->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th style="padding-left: 30px;">子账户名称</th>
+                                <th>交易对方</th>
+                                <th>收/付</th>
+                                <th>交易金额</th>
+                                <th>余额金额</th>
+                                <th>冻结金额</th>
+                                <th>服务费</th>
+                                <th>交易时间</th>
+                                <th>交易编号</th>
+                            </tr>
+                            </thead>
+                        </table>
+
+                        <div style="text-align:center;background-color: #fff;padding:100px 0;">暂无数据</div>
+                    </div>
+
+
                     <!--弹出框-->
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog" style="margin-top: 10%;">
