@@ -86,6 +86,11 @@ $(function(){
         var length = value.length;
         return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));
     }, "请正确填写您的手机号码");
+    // 手机号码验证
+    jQuery.validator.addMethod("sjyx", function(value, element) {
+        var length = value.length;
+        return this.optional(element) || /(^1[0-9]{10}$)|(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)/.test(value);
+    }, "请正确填写您的手机号码");
 
 
 

@@ -927,7 +927,6 @@ $(function(){
 //         鼠标移入BODY  a标签
         $(".col-five").hover(function(){
             _tempsp=$(this).children(".whi").html();
-            console.log(_tempsp)
             $(this).css("background","#EBEBEB").children(".whi").addClass("cc").html("立即使用");
         },function(){
             $(this).css("background","white").children(".whi").removeClass("cc").html(_tempsp)
