@@ -36,10 +36,12 @@ for(var i=0;i<$(".jsqy").length;i++){
 
 $(".int").click(function(){
     var _result=$("#input-box").val();
-    //结果输出在哪里
+    //结果输出在哪里；
+
     $(".jisuan").siblings("input").val(_result);
     china(_result,$(".chinaout"));
     $(".jsq").hide();
+    $(".ysbbd").validate();
 });
 
 
