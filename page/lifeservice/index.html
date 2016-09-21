@@ -22,7 +22,7 @@
 <link rel="import" href="modules/widget/header/header.html?__inline">
 
 <div class="lifeban">
-
+          <img src="/imgs/postappls/B1.png">
 </div>
 <!--body-->
 <div class="bo"  style="padding-top: 30px">
@@ -52,10 +52,10 @@
                          <img src="/imgs/postappls/line.jpg" class="life_line">
                          <div style="margin-bottom: 20px">无需手续费，足不出户，即可随时完成缴费。无需注册银生宝，您可选择网上银行快速付款。</div>
                          <div>
-                             <img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0"><a href="###" class="bullq" style="margin-right: 28px">缴费须知</a>
-                             <img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0"><a href="###" class="bullq" style="margin-right: 28px">缴费历史查询</a>
+                             <img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0"><a href="###" class="bullsh" style="margin-right: 28px">缴费须知</a>
+                             <img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0"><a href="###" class="bullsh" style="margin-right: 28px">缴费历史查询</a>
                          </div>
-                         <img src="/imgs/postappls/step1.jpg" style="width: 100%">
+                         <img src="/imgs/postappls/s1.fw.png" style="width: 100%">
                          <h2 class="s15"> 选择缴费项目</h2>
                          <img src="/imgs/postappls/line.jpg" class="life_line">
                          <div class="xzjfxm">
@@ -137,7 +137,7 @@
                         </form>
 
                         <div style="padding: 28px;background: #F7F7F7;line-height: 30px">
-                            <p style="margin-bottom: 10px"><img src="/imgs/icons/B3-2.png" style="margin-right: 10px"><b>友情提示</b></p>
+                            <p style="margin-bottom: 10px;font-size: 12px"><img src="/imgs/icons/B3-2.png" style="margin-right: 10px"><b style="font-weight: bold">友情提示</b></p>
                             <p>1.对于初次使用用户如有任何疑问，请访问"公共事业费须知"。</p>
                             <p>2.由于每个公共事业单位存在制度差异，请您务必在账单的"最后付费日期"之前10个工作日完成缴纳；若超过此期限缴费， 建议到各公共事业单位的营业网点缴纳，否则，产生的账单滞纳金由用户自行承担。</p>
                             <p>3.单张账单金额超过一万元的，网站无法缴纳，需要到我公司或者其他收费点缴纳，敬请谅解。</p>
@@ -163,10 +163,18 @@
 <!--SCRIPT_PLACEHOLDER-->
 <script>
     $(function(){
-        $("li").click(function(){
-            $("li").removeClass("act");
-            $(this).addClass("act")
-        });
+        for(var i=0;i<8;i++){
+            dianji(i);
+        }
+        function dianji(i){
+            $(".lifelu li").eq(i).click(function(){
+                console.log("sss");
+                $("li").removeClass("act");
+                //$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
+                $(this).addClass("act");
+                //$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
+            })
+        }
 
     })
 </script>

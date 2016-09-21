@@ -9,6 +9,7 @@
     <link href="../../modules/lib/bootstrap-table/bootstrap-table.css" rel="stylesheet">
     <link href="../../modules/css/myusp.css" rel="stylesheet">
     <link href="../../modules/css/common2.css" rel="stylesheet">
+    <link href="../../modules/css/common.css" rel="stylesheet">
     <link href="../../modules/css/appcen.css" rel="stylesheet">
     <link href="../../modules/css/transfer_com.css" rel="stylesheet">
 
@@ -243,47 +244,47 @@
                 <div id="myTabContent" class="tab-content">
                     <!--所有交易记录-->
                     <div class="tab-pane fade in active" id="allpay">
-                        <!--<div class="tad-pane_box">-->
-                            <!--<ul class="clearfix">-->
-                                <!--<li><em>交易信息：</em><input type="text" placeholder="交易编号或交易信息"/></li>-->
-                                <!--<li><em>收/付款：</em>-->
-                                    <!--<select name="" id="">-->
-                                        <!--<option value="">收/付款</option>-->
-                                        <!--<option value="">收款</option>-->
-                                        <!--<option value="">付款</option>-->
-                                    <!--</select>-->
-                                <!--</li>-->
-                                <!--<li><em>交易对方：</em><input type="text" placeholder="交易方名称或者账户"/></li>-->
-                            <!--</ul>-->
-                            <!--<ul class="clearfix">-->
-                                <!--<li><em>交易日期：</em><em class="time" style="">2016-7-23至2016-7-29</em></li>-->
-                                <!--<li><em>收/付款：</em>-->
-                                    <!--<select name="" id="">-->
-                                        <!--<option value="">收/付款</option>-->
-                                        <!--<option value="">收款</option>-->
-                                        <!--<option value="">付款</option>-->
-                                    <!--</select>-->
-                                <!--</li>-->
-                                <!--<li><em>交易类型：</em>-->
-                                    <!--<select name="" id="">-->
-                                        <!--<option value="">收/付款</option>-->
-                                        <!--<option value="">收款</option>-->
-                                        <!--<option value="">付款</option>-->
-                                    <!--</select>-->
-                                <!--</li>-->
-                            <!--</ul>-->
-                            <!--<ul class="clearfix">-->
-                                <!--<li class="ation"><em>交易信息：</em><input type="text" placeholder="交易金额"/> - <input type="text" placeholder="交易金额"/></li>-->
-                                <!--<li><em>收/付款：</em>-->
-                                    <!--<select name="" id="">-->
-                                        <!--<option value="">收/付款</option>-->
-                                        <!--<option value="">收款</option>-->
-                                        <!--<option value="">付款</option>-->
-                                    <!--</select>-->
-                                <!--</li>-->
-                                <!--<li><button>查询</button></li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
+                        <div class="tad-pane_box">
+                            <ul class="clearfix">
+                                <li><em>交易信息：</em><input type="text" placeholder="交易编号或交易信息"/></li>
+                                <li><em>收 / 付款：</em>
+                                    <select name="" id="">
+                                        <option value="">收/付款</option>
+                                        <option value="">只显示收款</option>
+                                        <option value="">只显示付款</option>
+                                    </select>
+                                </li>
+                                <li><em>交易对方：</em><input type="text" placeholder="交易方名称或者账户"/></li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li><em>交易日期：</em><span class="time btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">2016-7-23至2016-7-29</span></li>
+                                <li><em>交易状态：</em>
+                                    <select name="" id="">
+                                        <option value="">所有交易状态</option>
+                                        <option value="">收款</option>
+                                        <option value="">付款</option>
+                                    </select>
+                                </li>
+                                <li><em>交易类型：</em>
+                                    <select name="" id="">
+                                        <option value="">所有交易类型</option>
+                                        <option value="">收款</option>
+                                        <option value="">付款</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li class="ation"><em>交易金额：</em><input type="text" placeholder="交易金额"/> - <input type="text" placeholder="交易金额"/></li>
+                                <li><em>账户名称：</em>
+                                    <select name="" id="">
+                                        <option value="">所有账户</option>
+                                        <option value="">所有账户</option>
+                                        <option value="">基本账户</option>
+                                    </select>
+                                </li>
+                                <li><button>查询</button></li>
+                            </ul>
+                        </div>
                         <!--表格-->
 
                         <table class="table table-striped">
@@ -306,9 +307,9 @@
                                 <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td style="line-height: 22px;">
+                                <td style="line-height: 20px;">
                                     <p>2016-01-01</p>
-                                    <p>05:00</p>
+                                    <em>05:00</em>
                                 </td>
                                 <td>收</td>
                                 <td>9697.00</td>
@@ -316,8 +317,7 @@
                                 <td>
                                     <select name="" id="">
                                         <option value="">详情</option>
-                                        <option value="">删除</option>
-                                        <option value="">删除</option>
+                                        <option value="">付款</option>
                                     </select>
                                 </td>
                             </tr>
@@ -327,9 +327,9 @@
                                 <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td style="line-height: 22px;">
+                                <td style="line-height: 20px;">
                                     <p>2016-01-01</p>
-                                    <p>05:00</p>
+                                    <em>05:00</em>
                                 </td>
                                 <td>收</td>
                                 <td>9697.00</td>
@@ -337,8 +337,7 @@
                                 <td>
                                     <select name="" id="">
                                         <option value="">详情</option>
-                                        <option value="">删除</option>
-                                        <option value="">删除</option>
+                                        <option value="">付款</option>
                                     </select>
                                 </td>
                             </tr>
@@ -348,9 +347,9 @@
                                 <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td style="line-height: 22px;">
+                                <td style="line-height: 20px;">
                                     <p>2016-01-01</p>
-                                    <p>05:00</p>
+                                    <em>05:00</em>
                                 </td>
                                 <td>收</td>
                                 <td>9697.00</td>
@@ -358,8 +357,7 @@
                                 <td>
                                     <select name="" id="">
                                         <option value="">详情</option>
-                                        <option value="">删除</option>
-                                        <option value="">删除</option>
+                                        <option value="">付款</option>
                                     </select>
                                 </td>
                             </tr>
@@ -369,9 +367,9 @@
                                 <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td style="line-height: 22px;">
+                                <td style="line-height: 20px;">
                                     <p>2016-01-01</p>
-                                    <p>05:00</p>
+                                    <em>05:00</em>
                                 </td>
                                 <td>收</td>
                                 <td>9697.00</td>
@@ -379,8 +377,7 @@
                                 <td>
                                     <select name="" id="">
                                         <option value="">详情</option>
-                                        <option value="">删除</option>
-                                        <option value="">删除</option>
+                                        <option value="">付款</option>
                                     </select>
                                 </td>
                             </tr>
@@ -390,9 +387,9 @@
                                 <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td style="line-height: 22px;">
+                                <td style="line-height: 20px;">
                                     <p>2016-01-01</p>
-                                    <p>05:00</p>
+                                    <em>05:00</em>
                                 </td>
                                 <td>收</td>
                                 <td>9697.00</td>
@@ -400,8 +397,7 @@
                                 <td>
                                     <select name="" id="">
                                         <option value="">详情</option>
-                                        <option value="">删除</option>
-                                        <option value="">删除</option>
+                                        <option value="">付款</option>
                                     </select>
                                 </td>
                             </tr>
@@ -411,9 +407,9 @@
                                 <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td style="line-height: 22px;">
+                                <td style="line-height: 20px;">
                                     <p>2016-01-01</p>
-                                    <p>05:00</p>
+                                    <em>05:00</em>
                                 </td>
                                 <td>收</td>
                                 <td>9697.00</td>
@@ -421,8 +417,7 @@
                                 <td>
                                     <select name="" id="">
                                         <option value="">详情</option>
-                                        <option value="">删除</option>
-                                        <option value="">删除</option>
+                                        <option value="">付款</option>
                                     </select>
                                 </td>
                             </tr>
@@ -432,9 +427,9 @@
                                 <td>上海上海上海上海</td>
                                 <td>转账</td>
                                 <td>交易成功</td>
-                                <td style="line-height: 22px;">
+                                <td style="line-height: 20px;">
                                     <p>2016-01-01</p>
-                                    <p>05:00</p>
+                                    <em>05:00</em>
                                 </td>
                                 <td>收</td>
                                 <td>9697.00</td>
@@ -442,52 +437,93 @@
                                 <td>
                                     <select name="" id="">
                                         <option value="">详情</option>
-                                        <option value="">删除</option>
-                                        <option value="">删除</option>
+                                        <option value="">付款</option>
                                     </select>
                                 </td>
                             </tr>
                             </tbody>
                         </table>
                         <div class="jilu clearfix">
-                            <div class="jilu_left">支出：20笔（已完成7笔，共2.17元。处理中:20笔，共12.00元）</div>
-                            <div class="jilu_rigth">收入：20笔（已完成7笔，共2.17元。处理中:20笔，共12.00元）</div>
+                            <div class="jilu_left">支出：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:12</em>元）</div>
+                            <div class="jilu_rigth">收入：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:88</em>元）</div>
                         </div>
 
                         <!--分栏-->
+                        <div class="paging clearfix">
+                            <div class="paging_left">当前 0-0 共7条 每页展现 <span class="shuzi">20</span> 条</div>
+                            <div class="paging_rigth number">
+                                <a href="#">上一页&nbsp;</a>
+                                <a href="#" class="paac">1&nbsp;</a>
+                                <a href="#">2&nbsp;</a>
+                                <a href="#">3&nbsp;</a>
+                                <a href="#">4&nbsp;</a>
+                                <a href="#">5&nbsp;</a>
+                                <a href="#">6&nbsp;</a>
+                                <a href="#">下一页</a>&nbsp;&nbsp;
+                                <span style="margin-left:20px;">向&nbsp; <input id="nowpa" type="text" value="1"/> &nbsp;页&nbsp;</span>
+                                <button class="button" value="跳转">跳转</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--所有交易记录-->
+                    <div class="tab-pane fade in active" id="chongzhi">
+                        <div class="tad-pane_box">
+                            <div class="recharge">
+                                <em>交易日期：</em>
+                                <input data-provide="datepicker"> - <input data-provide="datepicker">
+                                <button>查询</button>
+                                <span>今天</span>
+                                <span>最近一周</span>
+                                <span>1个月</span>
+                                <span>3个月</span><span>1年</span>
+                            </div>
+                        </div>
+                        <div class="recharge_box">您已成功充值： <em>0.00</em>元  账户余额： <em>0.00</em>元</div>
+
+                        <!--表格-->
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th style="padding-left: 30px;">交易编号</th>
+                                <th>交易对方</th>
+                                <th>交易类型</th>
+                                <th>交易状态</th>
+                                <th>交易时间</th>
+                                <th>收/付</th>
+                                <th>金额</th>
+                                <th>服务费</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                        </table>
+
+                        <div style="text-align:center;background-color: #fff;padding:100px 0;">暂无数据</div>
+                    </div>
+                    <!--弹出框-->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" style="margin-top: 10%;">
+                            <div class="modal-content" style="width:280px;margin: 0 auto;">
+                                <div class="modal-header">
+
+                                    <input data-provide="datepicker"> — <input data-provide="datepicker">
+                                </div>
+                                <div class="modal-body">
+                                    <p>快捷日期</p>
+                                    <span>昨天</span>
+                                    <span>过去7天</span>
+                                    <span>过去30天</span>
+                                    <span>过去3个月</span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">确定</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #fff;border: none;">取消</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
                     </div>
 
 
-                    <!--充值记录-->
-                    <div class="tab-pane fade" id="chongzhi">
-                        <p>充值记录Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
-                    </div>
-
-                    <!--提现记录-->
-                    <div class="tab-pane fade" id="tixian">
-                        <p>提现记录iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
-                            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
-                    </div>
-
-                    <!--充值缴费记录-->
-                    <div class="tab-pane fade" id="chongzhijl">
-                        <p>充值缴费记录jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
-                    </div>
-
-                    <!--电子对账单-->
-                    <div class="tab-pane fade" id="dzdzd">
-                        <p>电子对账单Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
-                    </div>
-
-                    <!--余额流水查询-->
-                    <div class="tab-pane fade" id="yels">
-                        <p>余额流水查询Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
-                    </div>
-
-                    <!--待处理交易-->
-                    <div class="tab-pane fade" id="daichuli">
-                        <p>待处理Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。</p>
-                    </div>
 
                 </div>
 

@@ -33,6 +33,9 @@ a:hover{
 .bullq{
      color: #00A0E8;
 }
+.bullsh{
+     color: #31B2EC;
+}
 .lr{
     margin: 0 15px
 }
@@ -576,14 +579,23 @@ p{
 
 .form-item input[type=text]{
     width: 185px;
-    padding: 2px 8px;
+    padding: 4px 8px;
     margin-right: 18px;
     border: 1px solid #D5D5D5;
     outline: 0;
+    font-size: 12px;
+}
+.form-item select{
+    width: 185px;
+    padding: 3px 8px;
+    margin-right: 18px;
+    border: 1px solid #D5D5D5;
+    outline: 0;
+    font-size: 12px;
 }
 .form-item input[type=text]:focus{
     width: 185px;
-    padding: 2px 8px;
+    padding: 3px 8px;
     margin-right: 18px;
     border:1px solid #66afe9;
     outline: 0;
@@ -591,7 +603,7 @@ p{
 }
 .form-right input[type=text].valid{
     width: 185px;
-    padding: 2px 8px;
+    padding: 3px 8px;
     margin-right: 18px;
     border: 1px solid #3c763d !important;
     outline: 0;
@@ -599,7 +611,7 @@ p{
 }
 .form-right input[type=text].valid:focus{
     width: 185px;
-    padding: 2px 8px;
+    padding: 3px 8px;
     margin-right: 18px;
     border: 1px solid #2b542c !important;
     outline: 0;
@@ -607,7 +619,7 @@ p{
 }
 .form-right input[type=text].error{
     width: 185px;
-    padding: 2px 8px;
+    padding: 3px 8px;
     margin-right: 18px;
     border: 1px solid #a94442 !important;
     outline: 0;
@@ -615,7 +627,7 @@ p{
 }
 .form-right input[type=text].error:focus{
     width: 185px;
-    padding: 2px 8px;
+    padding: 3px 8px;
     margin-right: 18px;
     border: 1px solid #843534 !important;
     outline: 0;
@@ -623,7 +635,7 @@ p{
 }
 .bo .chinaout{
     width: 185px;
-    padding: 2px 8px !important;;
+    padding: 3px 8px !important;;
     margin-right: 16px !important;;
     display: inline-block !important;;
     height: 28px !important;;

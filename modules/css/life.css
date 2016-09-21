@@ -19,30 +19,58 @@
 
  }
 .lifelu li:nth-child(1){
-       background: url("/imgs/lifeservice/A1.png") no-repeat;
+    background: url("/imgs/lifeservice/A8.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(1).act{
+    background: url("/imgs/lifeservice/A1.png") no-repeat;
     background-position: 40px 22px;
 }
 .lifelu li:nth-child(2){
+    background: url("/imgs/lifeservice/A9.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(2).act{
     background: url("/imgs/lifeservice/A2.png") no-repeat;
     background-position: 40px 22px;
 }
 .lifelu li:nth-child(3){
+     background: url("/imgs/lifeservice/A10.png") no-repeat;
+     background-position: 40px 20px;
+ }
+.lifelu li:nth-child(3).act{
     background: url("/imgs/lifeservice/A3.png") no-repeat;
     background-position: 40px 20px;
 }
 .lifelu li:nth-child(4){
+    background: url("/imgs/lifeservice/A11.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(4).act{
     background: url("/imgs/lifeservice/A4.png") no-repeat;
     background-position: 40px 22px;
 }
 .lifelu li:nth-child(5){
+    background: url("/imgs/lifeservice/A12.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(5).act{
     background: url("/imgs/lifeservice/A5.png") no-repeat;
     background-position: 40px 22px;
 }
 .lifelu li:nth-child(6){
+    background: url("/imgs/lifeservice/A13.png") no-repeat;
+    background-position: 40px 24px;
+}
+.lifelu li:nth-child(6).act{
     background: url("/imgs/lifeservice/A6.png") no-repeat;
     background-position: 40px 24px;
 }
 .lifelu li:nth-child(7){
+    background: url("/imgs/lifeservice/A14.png") no-repeat;
+    background-position: 40px 22px;
+}
+.lifelu li:nth-child(7).act{
     background: url("/imgs/lifeservice/A7.png") no-repeat;
     background-position: 40px 22px;
 }
@@ -57,7 +85,10 @@
 }
 .lifeban{
     width: 100%;
-    background: url("/imgs/postappls/B1.png");
+    height: 360px;
+}
+.lifeban img{
+    width: 100%;
     height: 360px;
 }
 .lifel li{
@@ -79,9 +110,10 @@
 .lifel li.act .life1{
          display: block;
 }
-.lifel li.act .life1{
-    display: block;
+.lifel li.act {
+   color: #31B2EC;
 }
+
 .lifel img{
       margin-right: 20px;
 }
