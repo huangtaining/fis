@@ -157,7 +157,7 @@
 .line-boxes .box {
     float: left;
     width: 180px;
-    height: 294px;
+    height: 295px;
     margin-right: 6px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -235,32 +235,18 @@
     height: 426px
 }
 
-/*.scene-slider-wrap .iphone-hand-bg {
-    position: absolute;
-    top: 80px;
-    width: 378px;
-    height: 573px;
-    background-image: url(/imgs/index/A1-4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: none
-}*/
 
-/*@media (-webkit-min-device-pixel-ratio:2), (min-resolution:192dpi), screen and (-webkit-min-device-pixel-ratio:2) {
-    .scene-slider-wrap .iphone-hand-bg {
-        background-image: url(/imgs/index/A1-4.png)
-    }
-}*/
 
 .device-iphone6 {
     box-sizing: border-box;
     top: 8px;
-    left: 44px;
+    left: 42px;
     width: 182px;
     height: 380px;
     padding: 44px 8px 40px;
     border-radius: 25px;
     z-index: 2;
+    border: 1px solid #e4e4e4;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 5px 10px 0 rgba(0, 0, 0, .05), 0 15px 15px 0 rgba(0, 0, 0, .03), inset 0 0 1px 0 rgba(0, 0, 0, .14)
 }
 
@@ -268,32 +254,33 @@
 /*手机里面彩色图*/
 
 .scene-viewes .scene.apple-pay {
-    border: 1px solid rgba(0, 0, 0, .3);
-    background-image: url(/imgs/index/licai2.png)
+   
+    background-image: url(/imgs/index/licai2.png);
 }
 
 .scene-viewes .scene.hongbao {
-    background-image: url(/imgs/index/gouwu2.png)
+    background-image: url(/imgs/index/zhuanzhang2.png)
 }
 
 .scene-viewes .scene.qr {
-    border: 1px solid rgba(0, 0, 0, .3);
-    background-image: url(/imgs/index/zhuanzhang2.png)
+  
+    background-image: url(/imgs/index/gouwu2.png)
 }
-
-.scene-viewes .scene.web {
-     border: 1px solid rgba(0, 0, 0, .3);
-    background-image: url(/imgs/index/zhuanzhang2.png)
-}
-
 .scene-viewes .scene.fuwu {
-    border: 1px solid rgba(0, 0, 0, .3);
+ 
+    background-image: url(/imgs/index/anquanbaozhang2.png)
+}
+.scene-viewes .scene.web {
+    
     background-image: url(/imgs/index/shenghuofuwu2.png)
 }
 
+
+
 .device-iphone6, .device-iphone6 .topbar {
     position: absolute;
-    background-color: #fcfcfc
+    /*background-color: #fcfcfc*/
+   background: url(imgs/index/shouji.png)no-repeat -30px -9px;
 }
 
 .device-iphone6 .topbar {
