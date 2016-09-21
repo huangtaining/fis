@@ -67,13 +67,34 @@
                     </div>
 
                     <!-- 充值金额-->
-                    <div class="form-item">
+                    <div class="form-item xee">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;手机验证码发送规则&nbsp;:</label>
                         <div class="form-right">
-                            <p style="width: 350px;margin-bottom: 10px"><input type="checkbox" checked="checked" style="margin-right: 10px">每笔付款都发送验证码<span class="right">服务费<span class="yells">0.01</span>元/条</span></p>
+                            <p style="width: 350px;margin-bottom: 10px"><input type="checkbox" checked style="margin-right: 10px">每笔付款都发送验证码<span class="right">服务费<span class="yells">0.01</span>元/条</span></p>
                             <p style="width: 350px;margin-bottom: 10px"><input type="checkbox" style="margin-right: 10px">超过限额发送验证码<span class="right">服务费<span class="yells">0.01</span>元/条</span></p>
                         </div>
                     </div>
+
+                    <!-- 限额-->
+        <div style="display: none" class="xe">
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;单笔支付额度&nbsp;:</label>
+
+                        <div class="form-right">
+                            <input type="text" name="axe" id="axe" class="chinain topb">最低200元
+                        </div>
+                    </div>
+
+                    <!-- 限额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;当日累计支付限额&nbsp;:</label>
+
+                        <div class="form-right">
+                            <input type="text" name="allxe" id="allxe" class="chinain topb">最高500元
+                            <p style="margin-top: 20px">当日累计支付额度必须大于单笔支付额度</p>
+                        </div>
+                    </div>
+        </div>
 
                     <!-- 充值金额-->
                     <div class="form-item">
@@ -132,6 +153,17 @@
     $('input').iCheck({
         checkboxClass: 'icheckbox_flat-blue'
     });
+    $(".xee .icheckbox_flat-blue").on('ifClicked',function(e){
+        $(".xee .icheckbox_flat-blue").iCheck("uncheck");
+        $(this).iCheck('check')
+
+    })
+    $(".icheckbox_flat-blue").eq(1).on('ifChecked',function(){
+        $(".xe").slideDown()
+    })
+    $(".icheckbox_flat-blue").eq(1).on('ifUnchecked',function(){
+        $(".xe").slideUp()
+    })
 </script>
 
 </body>

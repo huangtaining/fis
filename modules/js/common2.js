@@ -91,6 +91,11 @@ $(function(){
         var length = value.length;
         return this.optional(element) || /(^1[0-9]{10}$)|(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)/.test(value);
     }, "请正确填写您的手机号码");
+    // 限额大小
+    jQuery.validator.addMethod("xedx", function(value, element) {
+        var length = value.length;
+        return this.optional(element) || $("#axe").val()<=$("#allxe").val();
+    }, "大小错误");
 
 
 
@@ -133,6 +138,7 @@ $(function(){
                 required: true,
                 equalTo: "#newpaypwd"
             },
+
             //校正码
             jzm:{
                 required: true
@@ -196,7 +202,18 @@ $(function(){
                 number:true
             },
             qrm:{
+                required: true
+            },
+            axe:{
                 required: true,
+                number:true,
+                range:[200,9999999999999999999999999999999999999999999999999999]
+            },
+            allxe:{
+                required: true,
+                number:true,
+                range:[500,9999999999999999999999999999999999999999999999999999],
+                xedx:true
             },
             email: {
                 required: true,
@@ -303,6 +320,17 @@ $(function(){
             txm:{
                 required: "请输入你的email",
                 number:"格式错了"
+            },
+            axe:{
+                required: "请输入单笔限额",
+                number:"格式错了",
+                range:"最低200"
+            },
+            allxe:{
+                required: "请输入当日限额",
+                number:"格式错了",
+                range:"最低500",
+                xedx:"大小错误"
             },
             qrm:{
                 required: "请输入确认码"
