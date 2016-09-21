@@ -34,7 +34,7 @@ a:hover{
     color:#47BDEF;
 }
 .bullq{
-     color: #00A0E8;
+     color: #00A0E8 !important;
 }
 .bullsh{
      color: #31B2EC;

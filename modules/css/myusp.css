@@ -34,6 +34,16 @@
      line-height: 60px;
      letter-spacing: 1px;
 }
+.ljgdd{
+    display: inline-block;
+    width: 80px;
+    background: white;
+    border-radius: 10px;
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 20px;
+}
 .cc{
     background: #00A0E8;
     color: white !important;
@@ -62,7 +72,7 @@
 }
 .myusptx .col-md-8{
     line-height: 30px;
-    width: 790px !important;
+    width: 810px !important;
     margin-right: -200px;
 }
 .myusptx .col-md-3>div{
@@ -72,11 +82,11 @@
     margin-bottom: 0;
     width: 100%;
     margin-top: 0 !important;
-    height: 10px !important;
+    height: 6.2px !important;
 }
 .jjd{
     width: 60%;
-    padding-top: 10px
+    padding-top: 13px
 }
 
 .myusptx .col-md-8{
