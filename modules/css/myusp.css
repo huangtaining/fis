@@ -8,7 +8,6 @@
     height: 175px;
     background:url("/imgs/myunspay/wodeyinshengbao1.png") repeat-x;
     background-size: 100% 100%;
-    letter-spacing: 1px;
 }
 
 /*fix*/
@@ -45,7 +44,7 @@
 /*头像部分*/
 .myusptx{
     position: absolute;
-    bottom: 10px;
+    bottom: 26px;
     left: 0;width: 100%;
     color: white !important;
 }
@@ -55,7 +54,7 @@
 .myusptx .col-md-3{
      line-height: 30px;
      float: right;
-     width: 400px !important;
+     width: 370px !important;
     margin-left: -200px;
  }
 .myusptx .col-md-1{
@@ -63,7 +62,7 @@
 }
 .myusptx .col-md-8{
     line-height: 30px;
-    width: 760px !important;
+    width: 790px !important;
     margin-right: -200px;
 }
 .myusptx .col-md-3>div{
@@ -516,7 +515,6 @@
 .bo .nav-tabs > li.active > a:focus,
 .bo .nav-tabs > li.active > a:hover{
     border: 1px solid #F7F7F7;
-    border-bottom: none;
     border-right: none;
     border-left:none;
 }
@@ -528,9 +526,10 @@
     border-bottom: 1px solid #F7F7F7;
 }
 .bo .nav-tabs > li{
-    border-bottom: none;
+    border-bottom: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
+
 .bo #myTabContent tbody tr:nth-child(odd){
        background: #F7F7F7
 }
@@ -543,4 +542,7 @@
     width: 23%;
     display: inline-block;
     text-align: center;
+}
+.bo .tad-pane_box{
+        background: #F7F7F7;
 }
