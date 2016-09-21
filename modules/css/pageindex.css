@@ -43,7 +43,7 @@ body {
 
 .announcement> div .border p {
 	font-size: 18px;
-	color: #3B3B3B;
+	color: #333;
 	margin-bottom: 10px;
 }
 
@@ -58,6 +58,7 @@ body {
 	display: inline-block;
 	line-height: 30px;
 	font-size: 14px;
+	color: #585858;
 }
 
 .announcement_right span a {
