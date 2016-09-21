@@ -972,7 +972,7 @@ select.form-control {
 	text-align: center;
 	display: block;
 	padding: 50px 0 20px 0;
-	font-size: 40px;
+	font-size:71px;
 }
 
 .money-laundering .money .money_box ul {
@@ -1000,7 +1000,7 @@ select.form-control {
 .fqz .img img {
 	width: 100%;
 }
-
+.fqz_box{position: relative;}
 .fqz_box h1 {
 	padding: 50px 0 30px 0;
 	font-weight: bold;
@@ -1009,11 +1009,11 @@ select.form-control {
 
 .fqz_box h2 {
 	border-bottom: 2px solid #e4e4e4;
-	left: 25%;
-	position: absolute;
-	bottom: 13%;
-	width: 56%;
-	height: 2px;
+    left: 10%;
+    position: absolute;
+    bottom: 92%;
+    width: 90%;
+    height: 2px;
 }
 
 .fqz_box p {
@@ -1038,11 +1038,11 @@ select.form-control {
 
 .fqz_box h3 {
 	border-bottom: 2px solid #e4e4e4;
-	left: 25%;
-	position: absolute;
-	bottom: -38%;
-	width: 56%;
-	height: 2px;
+	left: 10%;
+    position: absolute;
+    bottom: 53%;
+    width:90%;
+    height: 2px;
 }
 
 
