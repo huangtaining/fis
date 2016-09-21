@@ -5,16 +5,28 @@ console.log('choosebank.js');
 $(function() {
 
     $("#tabcard-cxk").bind("click", function() {
-        $("#tabcard-cxk").addClass("active");
-        $("#tabcard-xyk").removeClass("active");
-        $("#card2").hide();
-        $("#card1").show();
+        $(".card_sp").removeClass("active");
+        $(this).addClass("active");
+        $(".card_bo").hide();
+        $("#cxk").show();
     });
 
     $("#tabcard-xyk").bind("click", function() {
-        $("#tabcard-cxk").removeClass("active");
-        $("#tabcard-xyk").addClass("active");
-        $("#card2").show();
-        $("#card1").hide();
+        $(".card_sp").removeClass("active");
+        $(this).addClass("active");
+        $(".card_bo").hide();
+        $("#xyk").show();
+    });
+    $("#tabcard-yhhk").bind("click", function() {
+        $(".card_sp").removeClass("active");
+        $(this).addClass("active");
+        $(".card_bo").hide();
+        $("#yhhk").show();
+    });
+    $("#tabcard-yjsk").bind("click", function() {
+        $(".card_sp").removeClass("active");
+        $(this).addClass("active");
+        $(".card_bo").hide();
+        $("#yjsk").show();
     });
 });
