@@ -156,13 +156,17 @@
     $(".xee .icheckbox_flat-blue").on('ifClicked',function(e){
         $(".xee .icheckbox_flat-blue").iCheck("uncheck");
         $(this).iCheck('check')
-
+        console.log("1")
     })
     $(".icheckbox_flat-blue").eq(1).on('ifChecked',function(){
         $(".xe").slideDown()
+        console.log("2")
     })
     $(".icheckbox_flat-blue").eq(1).on('ifUnchecked',function(){
-        $(".xe").slideUp()
+        if($(".xe")){
+            $(".xe").slideUp();
+        }
+        console.log("3")
     })
 </script>
 

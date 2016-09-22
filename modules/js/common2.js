@@ -12,9 +12,9 @@ $(function(){
 //    要验证的
 //    其他银行
     $(".qtyh").click(function(){
-        console.log("ssss");
+        console.log("ssss")
         $(".qtyha").slideToggle()
-    });
+    })
 
 
    // 大小写转化
