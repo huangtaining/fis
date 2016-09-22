@@ -8,7 +8,7 @@
 </head>
 <body class="pagecontactus">
     <link rel="import" href="modules/widget/header/header-enterprise.html?__inline">
-    <section class="contactus" style="padding:10px 0 50px 0;">
+    <section class="contactus" style="padding:10px 0 128px 0;">
         <div class="sub_coll">
             <p class="position">首页>联系我们</p>
         </div>
@@ -68,6 +68,22 @@
     <script src="lib/mod.js"></script>
     <script>
         require('ui/index');
+    </script>
+
+    <script>
+        $('.zxzx img').mouseover(function(){
+            $(this).css({
+            'width':'65px',
+                'height':'25px'
+        })
+
+        })
+        $('.zxzx img').mouseout(function(){
+            $(this).css({
+                'width':'60px',
+                'height':'20px'
+            })
+        })
     </script>
 </body>
 </html>

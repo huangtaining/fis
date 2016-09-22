@@ -657,10 +657,11 @@
 
 }
 .contactus .contactmap{
-    padding-top:15px;padding-bottom:128px;
+    padding-top:15px;
+    padding-bottom:68px;
     width:873px;
     float:left;
-    height:647px;
+    /*height:647px;*/
     border-right:1px solid #E8E8E8;
 }
 .contactus .contactustel{
