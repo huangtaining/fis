@@ -99,6 +99,11 @@ $(function(){
         return this.optional(element) || $("#axe").val()<=$("#allxe").val();
     }, "大小错误");
 
+    // 身份证号码验证
+    jQuery.validator.addMethod("isIdCardNo", function(value, element) {
+        return this.optional(element) || /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(value)
+    }, "请输入正确的身份证号码。");
+
 
 
 
@@ -143,6 +148,10 @@ $(function(){
 
             //校正码
             jzm:{
+                required: true
+            },
+            //校正码
+            jym:{
                 required: true
             },
             //充值金额
@@ -217,6 +226,10 @@ $(function(){
                 range:[500,9999999999999999999999999999999999999999999999999999],
                 xedx:true
             },
+            sfz:{
+                required: true,
+                isIdCardNo:true
+            },
             email: {
                 required: true,
                 email: true
@@ -263,6 +276,10 @@ $(function(){
             //校正码
             jzm:{
                 required: "请输入校正码"
+            },
+            //校正码
+            jym:{
+                required: "请输入校验码"
             },
             //充值金额
             czje:{
@@ -336,6 +353,10 @@ $(function(){
             },
             qrm:{
                 required: "请输入确认码"
+            },
+            sfz:{
+                required: "请输入身份证",
+                isIdCardNo:"格式错了"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"
