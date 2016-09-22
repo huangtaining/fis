@@ -677,7 +677,15 @@ p{
     /*margin-right: 18px;*/
     /*border: 1px solid #66af39;*/
 /*}*/
-
+.divbtn{
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #F4F4F4;
+    display: inline-block;
+    line-height: 25px;
+    padding: 0 10px
+}
 .form-right .icheckbox_flat-blue{
     margin-right: 10px;
 }
