@@ -29,8 +29,9 @@
 
     <div class="layout">
 
-        <!--生活服务左边-->
+
         <div class="lifebo">
+            <!--生活服务左边-->
             <div class="lifel">
                 <ul class="lifelu">
                     <li class="act" style="border-top: none">公共事业缴费<img src="/imgs/postappls/1.jpg" class="life1"></li>
@@ -163,18 +164,13 @@
 <!--SCRIPT_PLACEHOLDER-->
 <script>
     $(function(){
-        for(var i=0;i<8;i++){
-            dianji(i);
-        }
-        function dianji(i){
-            $(".lifelu li").eq(i).click(function(){
-                console.log("sss");
+
+            $(".lifelu li").click(function(){
                 $("li").removeClass("act");
                 //$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
                 $(this).addClass("act");
                 //$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
             })
-        }
 
     })
 </script>

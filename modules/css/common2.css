@@ -699,7 +699,7 @@ p{
 
 /*life*/
 .sjl{
-    width: 228px;
+    width: 208px;
     overflow: hidden;
     float: left;
 }
@@ -708,11 +708,32 @@ p{
     overflow: hidden;
 }
 .mz{
-    height: 26px;
+    height: 28px;
     width: 50px;
     border: 1px solid #ccc;
     text-align: center;
     line-height: 26px;
     margin-right: 31px;
     display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.sjczbo .form-left{
+    width: 100px;
+}
+.sevbo{
+    overflow: hidden;
+}
+.mzl{
+    color: #00A0E8;
+    border-color: #00A0E8;
+}
+.hyj{
+    border: 1px solid #EE8D24;
+    height: 54px;
+    line-height: 54px;
+    padding: 0 20px;
+    background: #FFF9ED;
+    font-size: 18px;
+    color: #4A4A4A;
 }
