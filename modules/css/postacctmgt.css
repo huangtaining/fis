@@ -1559,7 +1559,32 @@
     margin-left:120px;
 }
 
-
+/*添加分组模态框*/
+.tradeaccount .submodal{
+    width:230px;
+    height:120px;
+    position:fixed;
+    left:33%;
+    top:350px;
+}
+.tradeaccount .submodal .modal-header{
+    padding:0;
+    padding:5px 10px 0 10px;
+    /*padding-left:10px;*/
+}
+.tradeaccount .submodal .modalbody input{
+    margin-top:15px;
+}
+.tradeaccount .submodal .modalbody button{
+    height:23px;
+    background-color: #fd9d1e;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #fcd197;
+    font-size:12px;
+    margin-left:55px;
+    margin-top:5px;
+}
 /*第二个按钮*/
 
 .tradeaccount .fenzmodal{

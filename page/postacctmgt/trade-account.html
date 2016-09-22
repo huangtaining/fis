@@ -66,7 +66,8 @@
                                 <div class="modal-content modalcontent">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title" id="myModalLabel">分组管理   <span class="tjfumt">添加分组</span></h4>
+                                        <h4 class="modal-title" id="myModalLabel">分组管理
+                                            <span class="tjfumt" data-toggle="modal" data-target="#sub-myModalt">添加分组</span></h4>
                                     </div>
                                     <div class="modal-body">
                                         暂无分组
@@ -121,6 +122,33 @@
                                 </div>
                             </div>
                         </div>
+
+
+
+                        <!--添加分组模态框-->
+                        <div class="modal fade" id="sub-myModalt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content submodal">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="subModalLabelt">添加/修改分组</h4>
+
+                                    </div>
+                                    <div class="modal-body modalbody">
+                                        <input type="text">
+                                        <button>保存</button>
+                                    </div>
+                                    <div class="modal-footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
                         </p>
                         <table border="1" width="100%" align="center" cellspacing="0" cellpadding="0" style="border-bottom: 1px solid #e4e4e4;
     border-left: 1px solid #e4e4e4;
@@ -178,7 +206,8 @@
                                 <div class="modal-content fenzmodal">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                        <h4 class="modal-title" id="fenzLabel">分组管理   <span class="tjfumt">添加分组</span></h4>
+                                        <h4 class="modal-title" id="fenzLabel">分组管理
+                                            <span class="tjfumt" data-toggle="modal" data-target="#sub-myModalt1">添加分组</span></h4>
                                     </div>
                                     <div class="modal-body">
                                         暂无分组
@@ -284,7 +313,25 @@
                         </div>
                     </div>
 
+                    <!--添加分组模态框-->
+                    <div class="modal fade" id="sub-myModalt1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content submodal">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="subModalLabelt1">添加/修改分组</h4>
 
+                                </div>
+                                <div class="modal-body modalbody">
+                                    <input type="text">
+                                    <button>保存</button>
+                                </div>
+                                <div class="modal-footer">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
 
