@@ -5,6 +5,7 @@
 		<title>提现记录--付款</title>
 	    <link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<link rel="stylesheet" href="modules/css/ysbformvalidate.scss" media="screen" title="no title">
 	</head>
 	<body class="pageall">
 		<link rel="import" href="modules/widget/header/header-transfer.html?__inline">
@@ -27,14 +28,34 @@
 		
 		<div class="pay">
 			<h2>余额支付</h2>
-		    <ul>
-		    	<li><span>银生宝账户名：</span><em>1346123546@qq.com</em></li>
-		    	<li><span>可支付余额：</span><em><em>464.00</em>元</em> <span style="color: #009FE8;">充值</span></li>
-		    	<li><span>银生宝支付密码：</span>
-		    		<input type="text" placeholder="交易方名称或者账户" style="width: 200px;height: 25px;line-height: 25px;font-size: 12px;text-indent: 1em;"/>
-		    	</li>
-		    	<li><button>余额支付</button></li>
-		    </ul>
+		    <div class="pay_noe" style="display: block;">
+		    	<ul>		    		
+		    		<li style="padding: 15px 0 10px 0px;"><button class="yuezhifu" style="margin: 0;">余额支付</button></li>
+		    		<li style="padding: 15px 0;">登录银生宝，可享受银生宝积分，并保存交易记录，还不是银生宝用户，立即 <em style="color:#00A0E8;cursor: pointer;"> 免费注册？</em></li>
+		    	</ul>		    	
+		    </div>
+		    
+		    <div class="pay_two" style="display: none;">
+		    	<form id="defaultForm" method="post" class="form-horizontal ysbformvalidate" action="#">
+		    		
+		    	<ul style="padding: 30px 0 20px 50px;">
+		    		<li class="form-group has-feedback">
+		    			<em class="em"><em>* </em> 银生宝账户名：</em>
+		    			<input type="username" class="form-control" name="username" placeholder="请输入邮箱或手机" style="display: inline-block;" />
+		    			<div class="errorholder" style="float: right;width: 280px;margin-right:430px;margin-left: 0;"></div>
+		    		</li>
+		    		<li class="form-group has-feedback">
+		    			<em class="em"><em>* </em> 银生宝支付密码：</em>
+		    			<input type="text" name="ddlQuestion" id="" class="form-control" placeholder="请输入验证码" style="display: inline-block;"/>
+		    		    <div class="errorholder" style="float: right;width: 280px;margin-right:430px;margin-left: 0;"></div>
+		    		</li>		    			    		
+		    		<li style="padding: 5px 0 10px 181px;"><button>确认收款</button></li>
+		    	</ul>
+		    	
+		    	
+		    	</form>
+		    	
+		    </div>		    
 	    </div>	
 	    
 	    <div class="pay">
@@ -44,7 +65,7 @@
 		    	<li style="font-size: 14px;color:#9F9F9F;">网上银行：您需要先开通网上银行支付服务，才可以进行“网上银行支付”</li>		    	
 		    </ul>
 		    
-   <div class="pay_tab">
+<div class="pay_tab">
 	
 	
 	    <ul id="myTab" class="nav nav-tabs">
@@ -140,6 +161,84 @@
 	   
 </div>
 </div>
+<script>
+$(document).ready(function(){
+  
+	$(".yuezhifu").click(function(){
+		$(".pay_noe").hide();
+		$(".pay_two").show();
+	})
+});
+</script>
+<script type="text/javascript">
+			$(document).ready(function() {
+
+				require('modules/app/jquery.bootstrapValidator');
+
+				// Generate a simple captcha
+				function randomNumber(min, max) {
+					return Math.floor(Math.random() * (max - min + 1) + min);
+				};
+
+				$('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+				$("#btnSubmit").bind("click", function() {
+					alert("Submit");
+				});
+
+				$('#defaultForm').bootstrapValidator({
+					//live: 'disabled',
+					message: 'This value is not valid',
+					feedbackIcons: {
+						valid: 'glyphicon glyphicon-ok',
+						invalid: 'glyphicon', //glyphion-remove
+						validating: 'glyphicon glyphicon-refresh'
+					},
+					fields: {
+						username: {
+							validators: {
+								callback: {
+									message: '请填写手机号码或者邮箱',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re = /^(1[0-9]{9})|(1[89][0-9]{8})$/;
+										var re_email = /\w@\w*\.\w/;
+										if(re.test(value) || re_email.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('username', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+
+						ddlQuestion: {
+							validators: {
+								notEmpty: {
+									message: '必填'
+								}
+							}
+						}
+					}
+				});
+
+				// Validate the form manually
+				$('#validateBtn').click(function() {
+					$('#defaultForm').bootstrapValidator('validate');
+				});
+
+				$('#resetBtn').click(function() {
+					$('#defaultForm').data('bootstrapValidator').resetForm(true);
+				});
+			});
+		</script>
 	    <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
 		<script src="lib/mod.js"></script>
 		<script>
