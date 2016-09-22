@@ -42,7 +42,6 @@
                 </li>
             </ul>
 
-
             <!--form开始-->
             <div class="form clearfix linedown">
                 <form action="" class="formsubmit">
@@ -70,7 +69,6 @@
                             <td colspan="3"><input type="text" id="input-box" value="0" size="21" maxlength="21" readonly="readonly"/></td>
                             <td class="jsqy yell"data-jsq="clear">C</td>
                             <td class="jsqy yell"data-jsq="backspace">CE</td>
-
                         </tr>
                         <tr>
                             <td class="jsqn">7</td>
@@ -129,13 +127,10 @@
                     <p class="stail">
                         <label for="">详细说明:</label>
                         <textarea id="txt" placeholder="(最长85个字符)" ></textarea>
-
                     </p>
                     <p>
                         <button type="button" id="nextbtn" name="signup2" class="btn btn-primary nextbtn submit" style="margin-left:209px;margin-top:20px;">下一步</button>
                     </p>
-
-
                 </form>
 
                 <!--警告-->
@@ -143,7 +138,6 @@
                     <img src="/imgs/icons/B3-2.png" alt=""> <p>为配合国家实施《中华人民共和国反洗钱法》、《银行卡业务管理办法》等法律法规，打击洗钱、非法套现等犯罪行为，银生宝严禁信用卡套现、洗钱、虚假交易行为，一经发现将予以处罚，包括但不限于：限制提现、冻结账户、永久停止服务，并会影响相关信用记录。</p>
                 </div>
             </div>
-
         </div>
     </div>
     <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
@@ -203,15 +197,12 @@
     $('.formjsq').click(function(){
         $('.jsq').css('display','block');
     });
-
-
-
     $(".int").click(function(){
         var _result=$("#input-box").val();
         console.log(typeof _result);
         //结果输出在哪里
         $(".money").val(_result);
-        china()
+        china();
     });
     //    阿拉伯数字转化为中文
     // 大小写转化
@@ -220,7 +211,6 @@
             china($(this).val(), $(".totalmoney"))
         }
     });
-
     //    阿拉伯数字转化为中文
     function china(chin,chout) {
         console.log("大小写");
@@ -255,8 +245,6 @@
 //              输出到哪里
             (chout.val(_bigmoney))&&(chout.html(_bigmoney));
         }
-
-
     }
     </script>
 </body>
