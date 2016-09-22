@@ -1705,3 +1705,125 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 
+/*实名认证后添加银行卡*/
+
+.addcard{
+    width:100%;
+    background-color:#F7F7F7;
+    padding-top:33px;
+    padding-bottom:142px;
+}
+.addcard .content{
+    width:1200px;
+    margin:0 auto;
+    margin-top:15px;
+}
+.addcard .content h2{
+    padding:23px 0 18px 84px;
+    font-size:22px;
+    color:#585858;
+    border:1px solid #E8E8E8;
+    background-color:white;
+}
+.addcard .card-content{
+    height:742px;
+    border:1px solid #E8E8E8;
+    background-color:white;
+    padding-top:24px;
+
+}
+.addcard .tips{
+    height:62px;
+    width:1156px;
+    margin:0 auto;
+    padding-left:63px;
+
+    line-height:62px;
+    font-size:18px;
+    color:#585858;
+    background:url("/imgs/icons/B3-2.png") no-repeat 22px center;
+    background-color:#F7F7F7;
+    margin-bottom:55px;
+}
+.addcard .card-content form p{
+    margin-bottom:33px;
+}
+.addcard .card-content p label{
+    width:132px;
+    text-align: right;
+    margin-left:159px;
+    font-weight: normal;
+    margin-right:17px;
+}
+.addcard .card-content p label em{
+    color:#FF8700;
+}
+.addcard .card-content p input{
+    width:329px;
+    height:44px;
+    line-height:44px;
+    border:1px solid #D5D5D5;
+    padding-left:19px;
+    border-radius: 3px;
+}
+.addcard .card-content p button{
+    width:329px;
+    height:44px;
+    background-color:#EE8719;
+    margin-left:308px;
+    border:none;
+    color:#ffffff;
+}
+.addcard .card-content .mess input{
+    width:154px;
+
+}
+.addcard .card-content .mess .yzm{
+    display: inline-block;
+    width:100px;
+    height:44px;
+    background-color:#D8D8D8;
+    /*margin-top:-20px;*/
+    vertical-align: middle;
+    margin-left:13px;
+}
+.addcard .card-content .mess .hyz{
+    color:#19A8E8;
+    margin-left:13px;
+}
+.addcard input.error{
+    border:1px solid #a94442;
+}
+.addcard label.error{
+    color:#FF8700;
+    text-align:left!important;
+    padding-left:40px;
+    margin:0 0 0 20px!important;
+    height:40px;
+    line-height:40px!important;
+    width:250px!important;
+    background:url("/imgs/icons/A2.png")no-repeat 20px center;
+    background-color:#F5F5F5;
+    vertical-align: middle;
+}
+.addcard input.error:focus{
+    border:1px solid  #843534;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.addcard input.error{
+    border:1px solid #843534;
+    outline: 0;
+    margin-bottom:0;
+}
+.addcard input.valid {
+    border: 1px solid #3c763d;
+    outline: 0;
+
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.addcard input.valid:focus{
+    border: 1px solid #2b542c !important;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
