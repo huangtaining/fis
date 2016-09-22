@@ -136,7 +136,7 @@
                                     </div>
                                     <div class="modal-body modalbody">
                                         <input type="text">
-                                        <button>保存</button>
+                                        <button data-dismiss="modal">保存</button>
                                     </div>
                                     <div class="modal-footer">
 
@@ -144,9 +144,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
 
 
                         </p>
@@ -172,12 +169,7 @@
                                     <td></td>
                                     <td class="caoz"><span>修改</span> <span>详情</span> <span>删除</span></td>
                                 </tr>
-
-
-
                             </tbody>
-
-
                         </table>
                     </div>
 
@@ -324,7 +316,7 @@
                                 </div>
                                 <div class="modal-body modalbody">
                                     <input type="text">
-                                    <button>保存</button>
+                                    <button class="baoc">保存</button>
                                 </div>
                                 <div class="modal-footer">
 
@@ -332,8 +324,6 @@
                             </div>
                         </div>
                     </div>
-
-
 
 
                     </p>
@@ -360,15 +350,10 @@
                             <td class="caoz"><span>修改</span> <span>详情</span> <span>删除</span></td>
                         </tr>
 
-
-
                         </tbody>
-
-
                     </table>
                 </div>
             </div>
-
 
                 <p class="moreaction">
                     批量操作：
@@ -411,7 +396,6 @@
 </script>
 <script>
     var $ = require('jquery');
-
     $('.pagination li a').click(function(){
         $('.pagination li a.cengs').removeClass("cengs");
         $(this).addClass("cengs");
@@ -531,6 +515,10 @@
             }
         }
     });
+//    $('.baoc').click(function(){
+//        $('#sub-myModalt1').modal("hide");
+//
+//    })
 </script>
 </body>
 </html>

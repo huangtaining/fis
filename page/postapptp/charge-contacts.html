@@ -23,7 +23,7 @@
     </div>
     <div class="container">
         <h4 class="line">我要收款</h4>
-        <h5 class="shouk">您正在使用即时收款，您还可以向多人收款</h5>
+        <h5 class="shouk">您正在使用即时收款，您还可以<a href="charge-mul.html">向多人收款</a></h5>
         <ul class="progress clearfix">
             <li class="firstli">
                 <div class="form-one"></div>
@@ -50,7 +50,7 @@
                     <label for=""><em>*</em>被收款方账户:</label>
                     <input type="text"  placeholder="请输入用户名" class="inpnull" name="ddlQuestion">
                     <span class="changeb modalp" data-toggle="modal" data-target="#myModal">从联系人中选取</span>
-                    <span class="changeb" style="margin-left:13px;">批量收款</span>
+                    <!--<span class="changeb" style="margin-left:13px;">批量收款</span>-->
                     <!-- 模态框（Modal） -->
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -234,7 +234,7 @@
             moneyuse: {
                 required: "请填写资金用途",
                 maxlength: "已超过85个字符"
-            },
+            }
         }
     });
 
@@ -265,11 +265,24 @@
 
 
     //    阿拉伯数字转化为中文
-    function china() {
-//        哪里需要转换大小写
-        var _money = $(".money").val() || $(".money").html()
+    // 大小写转化
+    $(".chinain").change(function(){
+        if(!isNaN($(this).val())){
+            china($(this).val(), $(".totalmoney"))
+        }
+    });
 
-        function daxiaoxie(n) {
+    //    阿拉伯数字转化为中文
+    function china(chin,chout) {
+        console.log("大小写");
+//        哪里需要转换大小写
+        if(chin!=0){
+            daxiaoxie(chin,chout)
+        }else{
+            chout.val("");
+        }
+
+        function daxiaoxie(n,chout) {
             var fraction = ['角', '分'];
             var digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
             var unit = [['元', '万', '亿'], ['', '拾', '佰', '仟']];
@@ -290,12 +303,11 @@
                 s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;
             }
             var _bigmoney = head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
-
 //              输出到哪里
-            $(".totalmoney").val(_bigmoney);
+            (chout.val(_bigmoney))&&(chout.html(_bigmoney));
         }
 
-        daxiaoxie(_money)
+
     }
 </script>
 </body>
