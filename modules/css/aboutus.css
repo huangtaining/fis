@@ -836,7 +836,7 @@
 }
 .corperate .kongb{
     background-color:#F7F7F7;
-    height:633px;
+    height:886px;
     margin-top:120px;
     border:0;
     border-right:1px solid #E8E8E8;
@@ -895,8 +895,12 @@
 .corperate .banks{
     margin-bottom:63.3px;
 }
-
-
+.corperate .hzsh{
+    height:1005px;
+}
+/*.corperate .hzsh .kongb{*/
+    /*height:650px!important;*/
+/*}*/
 
 /*文章详情*/
 .news-detail{
