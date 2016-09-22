@@ -24,6 +24,8 @@ $(function(){
        }
    });
 
+
+
 //    阿拉伯数字转化为中文
     function china(chin,chout) {
         console.log("大小写");
