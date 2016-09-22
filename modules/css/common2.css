@@ -615,7 +615,7 @@ p{
     border: 1px solid #D5D5D5;
     outline: 0;
     font-size: 12px;
-    height: 25px;
+    height: 26px;
 }
 .form-item select{
     width: 185px;
@@ -670,7 +670,7 @@ p{
     padding: 3px 8px !important;;
     margin-right: 16px !important;;
     display: inline-block !important;;
-    height: 25px !important;;
+    height: 26px !important;;
     background: #F0F0F0 !important;;
     border: 2px solid #F0F0F0 !important;;
 }
@@ -695,4 +695,24 @@ p{
 .qtyh{
     padding-left: 20px;
     margin-bottom: 15px;
+}
+
+/*life*/
+.sjl{
+    width: 228px;
+    overflow: hidden;
+    float: left;
+}
+.sjr{
+    width: 228px;
+    overflow: hidden;
+}
+.mz{
+    height: 26px;
+    width: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 31px;
+    display: inline-block;
 }
