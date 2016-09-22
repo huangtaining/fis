@@ -612,6 +612,7 @@ p{
     border: 1px solid #D5D5D5;
     outline: 0;
     font-size: 12px;
+    height: 25px;
 }
 .form-item select{
     width: 185px;
@@ -666,7 +667,7 @@ p{
     padding: 3px 8px !important;;
     margin-right: 16px !important;;
     display: inline-block !important;;
-    height: 28px !important;;
+    height: 25px !important;;
     background: #F0F0F0 !important;;
     border: 2px solid #F0F0F0 !important;;
 }
@@ -679,4 +680,8 @@ p{
 
 .form-right .icheckbox_flat-blue{
     margin-right: 10px;
+}
+.qtyh{
+    padding-left: 20px;
+    margin-bottom: 15px;
 }
