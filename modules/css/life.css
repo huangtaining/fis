@@ -114,6 +114,11 @@
 .lifel li.act a{
    color: #31B2EC !important;
 }
+.lifel li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 
 .lifel img{
       margin-right: 20px;
