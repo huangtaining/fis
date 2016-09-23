@@ -50,7 +50,7 @@ a:hover{
  }
 .s15{
     font-size: 15px;
-    color: #333333;
+    color: #333;
 }
 .s20{
     font-size: 20px;
@@ -617,6 +617,7 @@ p{
     outline: 0;
     font-size: 12px;
     height: 26px;
+    color: #919191;
 }
 .form-item select{
     width: 185px;
@@ -625,6 +626,7 @@ p{
     border: 1px solid #D5D5D5;
     outline: 0;
     font-size: 12px;
+    color: #333;
 }
 .form-item input[type=text]:focus{
     width: 185px;
