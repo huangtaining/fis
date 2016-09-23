@@ -1009,10 +1009,11 @@
     background-color:white;
 }
 .changebankmgt .card-content{
-    height:742px;
+    /*height:742px;*/
     border:1px solid #E8E8E8;
     background-color:white;
     padding-top:24px;
+    padding-bottom:45px;
 
 }
 .changebankmgt .card-content ul li{
