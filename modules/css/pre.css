@@ -54,7 +54,7 @@
 .pay_one_box1 .em8 {
 	position: absolute;
 z-index:222 ;
-	/*background:url(../../im.jpg)no-repeat 12px #fff;gs/pre/A5*/
+	
 	top:150px;
 	left:118px;
 }
@@ -70,9 +70,9 @@ z-index:222 ;
 	left:105px;
 }
 
-.transfer-pay_one .pay_one_box .pay_one_box2 h1{font-size:40px;color: #009EE7;padding:90px 0 30px 0;}
+.transfer-pay_one .pay_one_box .pay_one_box2 h1{font-size:36px;color: #00A0E8;padding:90px 0 30px 0;}
 .transfer-pay_one .pay_one_box .pay_one_box2 span{float:left;padding: 30px 0;}
-.pay_one_box .pay_one_box2 span p{padding:7px 0;font-size: 18px;color: #333;}
+.pay_one_box .pay_one_box2 span p{padding:7px 0;font-size: 18px;color: #5B626B;}
 
 .transfer-pay_one .pay_one_box .pay_one_box3{width:540px;height:310px;background: url(imgs/pre/A19.png) 40px 90px no-repeat;position: relative;}
 .pay_one_box3 .em1{
@@ -86,10 +86,10 @@ z-index:222 ;
 	left: 177px;
 }
 
-.transfer-pay_one .pay_one_box .pay_one_box4 h1{font-size:40px;color: #009EE7;padding:90px 0 30px 0;}
+.transfer-pay_one .pay_one_box .pay_one_box4 h1{font-size:36px;color: #00A0E8;padding:90px 0 30px 0;}
 .transfer-pay_one .pay_one_box .pay_one_box4 span{float:left;padding:0px 0 30px 0;}
-.pay_one_box .pay_one_box4 span p{padding:7px 0;font-size: 18px;color: #333;}
-.pay_one_box .pay_one_box4 .text{padding: 20px 0 120px 0;font-size: 15px;}
+.pay_one_box .pay_one_box4 span p{padding:7px 0;font-size: 18px;color: #474F59;}
+.pay_one_box .pay_one_box4 .text{padding: 20px 0 120px 0;font-size: 14px;color: #474F59;}
 .pay_one_box .pay_one_box4 .text em{float: left;}
 
 
@@ -108,9 +108,9 @@ z-index:222 ;
 }
 
 
-.transfer-pay_two .pay_two_box .pay_two_box2 h1{font-size:40px;color: #009EE7;padding:0px 0 10px 0;}
-.pay_two_box .pay_two_box2 span p{padding:7px 0;font-size: 18px;color: #333;}
-.pay_two_box .pay_two_box2 .text{padding: 30px 0 0 0;font-size: 15px;color:#555 ;}
+.transfer-pay_two .pay_two_box .pay_two_box2 h1{font-size:36px;color: #00A0E8;padding:0px 0 10px 0;}
+.pay_two_box .pay_two_box2 span p{padding:7px 0;font-size: 18px;color: #474F59;}
+.pay_two_box .pay_two_box2 .text{padding: 30px 0 0 0;font-size: 14px;color: #474F59;}
 
 
 /*收款*/
@@ -124,7 +124,7 @@ z-index:222 ;
 
 
 
-.transfer-pay_three .pay_three_box .pay_three_box2 h1{font-size:40px;color: #009EE7;padding:13px 0 30px 0;}
-.pay_three_box .pay_three_box2 span p{padding:10px 0;font-size: 18px;color: #333;}
-.pay_three_box .pay_three_box2 .text{padding: 20px 0 0 0;font-size: 15px;color:#555 ;}
+.transfer-pay_three .pay_three_box .pay_three_box2 h1{font-size:36px;color: #00A0E8;padding:13px 0 30px 0;}
+.pay_three_box .pay_three_box2 span p{padding:10px 0;font-size: 18px;color: #474F59;}
+.pay_three_box .pay_three_box2 .text{padding: 20px 0 0 0;font-size: 14px;color: #474F59;}
 
