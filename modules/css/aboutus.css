@@ -758,9 +758,12 @@
     float:left;
 
 }
+.legel .wrapcon{
+    padding-bottom:275px;
+}
 .legel  .kongb{
     background-color:#F7F7F7;
-    height:633px;
+    height:850px;
     margin-top:120px;
     border:0;
     border-right:1px solid #E8E8E8;
@@ -797,7 +800,7 @@
 .legel .legel-bo{
     color:#00A0E8;
     border-left:4px solid #00A0E8!important;
-    border-right:0!important;
+    border-right:white!important;
 }
 .legel .wrap .shengm{
 
