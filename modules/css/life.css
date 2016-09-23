@@ -111,8 +111,8 @@
 .lifel li.act .life1{
          display: block;
 }
-.lifel li.act {
-   color: #31B2EC;
+.lifel li.act a{
+   color: #31B2EC !important;
 }
 
 .lifel img{
