@@ -194,6 +194,13 @@ border: 1px solid #fff;border-radius:5px;font-size: 17px;opacity: .8;}
   100%{-webkit-transform : rotate(360deg);}
 }
 
+/*屏幕 最小1000px到最大1600px*/
+   @media only screen and (min-width: 1000px) and (max-width:1500px) {
+	.lift .lift_tu .em1{position: absolute;bottom:80%;left: 81%;width: 20px;height: 20px;background-color: #fff;border-radius:50% ;}
+.lift .lift_tu .em2{position: absolute;bottom:47%;left: 97%;width:13px;height: 13px;background-color: #fff;border-radius:50% ;}
+.lift .lift_tu .em3{position: absolute;bottom:10%;left:13%;width:13px;height: 13px;background-color: #fff;border-radius:50% ;}
+
+   }
 
 
 
