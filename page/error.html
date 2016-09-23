@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>404页面</title>
+		<link rel="import" href="layout/header.html?__inline">
+		<!--STYLE_PLACEHOLDER-->
+	</head>
+
+	<body>
+		<link rel="import" href="modules/widget/header/header.html?__inline">
+		<div class="error" style="width: 100%;background-color: #F7F7F7;padding: 100px 0;">
+			<div style="text-align: center;padding:50px 0;"><img src="imgs/index/404-1.png" alt="" /></div>
+			<div style="text-align: center;padding:50px 0 40px 0"><img src="imgs/index/404-2.png" alt="" /></div>
+			<p style="text-align: center;padding:0px 0 50px 0;font-size: 17px;">很抱歉您刚才请求的页面没有找到，5秒后自动跳转到 <a href="###" style="color:#31B2EC ;">我的银生宝</a></p>
+		</div>
+
+       <link rel="import" href="modules/widget/footer/footer.html?__inline">
+		<script src="lib/mod.js"></script>
+		<script>
+			require('ui/index');
+		</script>
+<!--SCRIPT_PLACEHOLDER-->
+		
+<script type="text/javascript">
+ setTimeout(function() {
+ 	window.location.href="index.html"
+ },5000);
+</script>	
+
+
+
+	
+	   
+	</body>
+</html>
