@@ -32,7 +32,6 @@ header.header {
         width: 1200px;
         height: 100px;
         margin: 0 auto;
-        /*  line-height: 100px;*/
     }
     .alipay-logo {
         float: left;
@@ -76,6 +75,9 @@ header.header {
     }
     .dropdown ul li~li {
         margin-left: 0;
+    }
+    .navbar-nav{
+        margin: 0;
     }
     .nav > li {
         margin-top: 30px;
