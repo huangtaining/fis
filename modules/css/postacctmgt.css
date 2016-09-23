@@ -741,8 +741,23 @@
     border-bottom-right-radius: 6px;
     box-shadow: 0 2px 2px #e7e7e7;
 }
-
-
+.authentication .yhkrz ul .subadd{
+    width:250px;
+    height:149px;
+    background-color:#F7F7F7;
+    text-align:center;
+}
+.authentication .yhkrz ul .subadd .jia{
+    display: inline-block;
+    font-size: 100px;
+    width: 58px;
+    height: 58px;
+    margin-top: -15px;
+    text-align: center;
+}
+.authentication .yhkrz ul .subadd p{
+    margin-left:15px;
+}
 /*银行卡管理*/
 
 
@@ -1827,3 +1842,4 @@
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
+
