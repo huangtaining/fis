@@ -7,6 +7,9 @@ header.header {
     a:hover {
         text-decoration: none;
     }
+      ul.menu-list li a:hover{
+         color:#00A0E8;
+     }
     .header_top {
         width: 100%;
         border-bottom: 1px solid #e4e4e4;
@@ -95,7 +98,7 @@ header.header {
         background-color: #fff;
     }
     .special-header_bottom ul li a:hover {
-        color: #7c7c7c;
+
         background-color: #fff;
     }
     .navbar-inverse .navbar-nav > li > a:focus,

@@ -92,7 +92,7 @@ header.header {
         margin-left: 0;
     }
      ul.menu-list li a:hover{
-         color:#00A0E8
+         color:#00A0E8;
      }
     .navbar-inverse .navbar-nav > li > a:focus,
     .navbar-nav > li > a:hover {
@@ -126,9 +126,7 @@ header.header {
         font-size: 14px;
         text-align: center;
     }
-    .special-header_bottom ul li a:hover {
-        color: #7c7c7c;
-    }
+    
     .rvm {
         display: none;
         position: absolute;
