@@ -46,7 +46,7 @@ function slideScene() {
     var _neip=219;
 
     var _y=296;
-    var _q=991.5;
+    var _q=868;
 
 
 
@@ -71,7 +71,7 @@ function slideScene() {
         //第二张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: -(1008+_waip*2),
+			x: -(_q+_waip*2),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -86,7 +86,7 @@ function slideScene() {
         //第三张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: -(1008+_waip*3),
+			x: -(_q+_waip*3),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -101,7 +101,7 @@ function slideScene() {
         //第四张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: -(1008+_waip*4),
+			x: -(_q+_waip*4),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -117,7 +117,7 @@ function slideScene() {
         //第一张
         timelineMax.add([
             TweenLite.to(t, 1, {
-                x: -(1008+_waip*5),
+                x: -(_q+_waip*5),
                 ease: Power3.easeInOut
             }),
             TweenLite.to(e, 1, {
