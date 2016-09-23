@@ -41,16 +41,25 @@ function slideScene() {
 			yoyo: !1,
 			repeat: -1
 		});
+    //内屏
+    var _x=220;
+    var _neip=219;
 
+    var _y=296;
+
+
+
+    //292+半个间距
+    var _waip=292;
 
     //第一张
 	timelineMax.add([
 		TweenLite.to(t, 1, {
-			x: "-1176",
+			x: -(900+_waip*1),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
-			x: "-166",
+			x: -(_x+_neip*0),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
@@ -61,11 +70,11 @@ function slideScene() {
         //第二张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: "-1362",
+			x: -(900+_waip*2),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
-			x: "-332",
+			x: -(_x+_neip*1),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
@@ -76,11 +85,11 @@ function slideScene() {
         //第三张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: "-1548",
+			x: -(900+_waip*3),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
-			x: "-498",
+			x: -(_x+_neip*2),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
@@ -91,11 +100,11 @@ function slideScene() {
         //第四张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: "-1734",
+			x: -(900+_waip*4),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
-			x: "-664",
+			x: -(_x+_neip*3),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
@@ -107,11 +116,11 @@ function slideScene() {
         //第一张
         timelineMax.add([
             TweenLite.to(t, 1, {
-                x: "-1920",
+                x: -(900+_waip*5),
                 ease: Power3.easeInOut
             }),
             TweenLite.to(e, 1, {
-                x: "-830",
+                x: -(_x+_neip*4),
                 ease: Power3.easeInOut
             }),
             TweenLite.to(el_heroSceneText, 1, {
