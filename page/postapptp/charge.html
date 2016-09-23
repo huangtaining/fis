@@ -105,7 +105,7 @@
                     </p>
                     <p>
                         <label for="">总金额大写:</label>
-                        <input type="text" class="totalmoney">
+                        <input type="text" class="totalmoney ">
                         <span></span>
                     </p>
                     <p>
@@ -202,7 +202,7 @@
         console.log(typeof _result);
         //结果输出在哪里
         $(".money").val(_result);
-        china();
+        china(_result,$(".totalmoney"));
     });
     //    阿拉伯数字转化为中文
     // 大小写转化
