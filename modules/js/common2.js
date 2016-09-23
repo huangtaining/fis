@@ -88,6 +88,7 @@ $(function(){
         var length = value.length;
         return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));
     }, "请正确填写您的手机号码");
+
     // 手机号码验证
     jQuery.validator.addMethod("sjyx", function(value, element) {
         var length = value.length;
@@ -103,6 +104,11 @@ $(function(){
     jQuery.validator.addMethod("isIdCardNo", function(value, element) {
         return this.optional(element) || /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(value)
     }, "请输入正确的身份证号码。");
+
+    // 10的倍数
+    jQuery.validator.addMethod("yushu", function(value, element) {
+        return this.optional(element) || (value-parseInt(value/10)*10)==0;
+    }, "请输入10的倍数");
 
 
 
@@ -229,6 +235,18 @@ $(function(){
             sfz:{
                 required: true,
                 isIdCardNo:true
+            },
+            //自定义金额
+            zdyje:{
+                yushu:true,
+                number:true,
+                required:true,
+                range:[0,3000]
+            },
+            //手机号码
+            sjhm:{
+                required:true,
+                isMobile:true
             },
             email: {
                 required: true,
@@ -357,6 +375,17 @@ $(function(){
             sfz:{
                 required: "请输入身份证",
                 isIdCardNo:"格式错了"
+            },
+            zdyje:{
+                yushu:"输入10的倍数",
+                number:"输入数字",
+                required:"输入金额",
+                range:"超过限制"
+            },
+            //手机号码
+            sjhm:{
+                required:"请输入手机号码",
+                isMobile:"格式错了"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"

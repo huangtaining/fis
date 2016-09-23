@@ -4,11 +4,13 @@ $(function(){
 
 
     function aanr(ii,oo,aa,ff){
+        console.log("ssss");
         var _i=$(ii).html()||$(ii).val();
         //aa.on(ff,function(){
         //
         //});
         $(aa).on(ff,function(){
+            console.log(aa,oo,_i);
             $(oo).val(_i)||$(oo).html(_i)
         });
 
