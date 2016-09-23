@@ -1317,7 +1317,7 @@
     width:275px;
 }
 .tradeaccount .account-right .tab-content{
-    height:290px;
+    /*height:290px;*/
 }
 .nav-tabs.nav-justified > li > a{
     border-top:1px solid #ddd;
@@ -1327,7 +1327,7 @@
 }
 .tradeaccount .account-right .account-con .tab-pane{
     border:1px solid #E8E8E8;
-    height:198px;
+    /*height:198px;*/
     margin-top:-2px;
     /*padding-left:24px;*/
     padding:23px 0 0 0;
@@ -1392,6 +1392,7 @@
 .tradeaccount .account-con .tab-pane table tbody td{
     border:1px solid #e4e4e4;
     font-size:12px;
+    background-color:white;
 }
 .tradeaccount .account-con .tab-pane table th{
     border:0;

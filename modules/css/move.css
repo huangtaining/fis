@@ -21,7 +21,9 @@
    animation-duration:5s;
 }
 
-
+.pay_two_box1 .em2.animated{
+    animation-duration:3.5s;
+}
 
 /*.pay_one_box1 em{*/
     /*left:163px !important;*/

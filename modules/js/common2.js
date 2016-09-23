@@ -24,8 +24,6 @@ $(function(){
        }
    });
 
-
-
 //    阿拉伯数字转化为中文
     function china(chin,chout) {
         console.log("大小写");
@@ -60,8 +58,6 @@ $(function(){
 //              输出到哪里
             (chout.val(_bigmoney))||(chout.html(_bigmoney));
         }
-
-
     }
 
 
