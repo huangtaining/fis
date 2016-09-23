@@ -58,7 +58,7 @@ $(function(){
             }
             var _bigmoney = head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');
 //              输出到哪里
-            (chout.val(_bigmoney))&&(chout.html(_bigmoney));
+            (chout.val(_bigmoney))||(chout.html(_bigmoney));
         }
 
 
