@@ -1,202 +1,258 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
 
-    <title>手机充值</title>
-    <link rel="import" href="../layout/header.html?__inline">
-    <!--STYLE_PLACEHOLDER-->
-    <link href="/modules/css/common2.css" rel="stylesheet">
-    <link href="/modules/css/life.css" rel="stylesheet">
-    <script src="/modules/lib/ysbbase.min.js"></script>
-    <script src="/modules/app/jquery.validate.min.js"></script>
-    <script src="/modules/js/common2.js"></script>
-    <script>
-        var $ = require('jquery');
-        require('modules/js/common2');
-        require('modules/app/jquery.validate.min');
-    </script>
+	<head lang="en">
 
-</head>
-<body class="pagelifeservice">
-<!--head-->
-<link rel="import" href="modules/widget/header/header.html?__inline">
+		<title>手机充值</title>
+		<link rel="import" href="../layout/header.html?__inline">
+		<!--STYLE_PLACEHOLDER-->
+		<link href="/modules/css/common2.css" rel="stylesheet">
+		<link href="/modules/css/life.css" rel="stylesheet">
+		<script src="/modules/lib/ysbbase.min.js"></script>
+		<script src="/modules/app/jquery.validate.min.js"></script>
+		<script src="/modules/js/common2.js"></script>
+		<script>
+			var $ = require('jquery');
+			require('modules/js/common2');
+			require('modules/app/jquery.validate.min');
+		</script>
 
-<div class="lifeban">
-    <img src="/imgs/postappls/B1.png">
-</div>
-<!--body-->
-<div class="bo"  style="padding-top: 30px">
+	</head>
 
-        <div class="layout">
+	<body class="pagelifeservice">
+		<!--head-->
+		<link rel="import" href="modules/widget/header/header.html?__inline">
+
+		<div class="lifeban">
+			<img src="/imgs/postappls/B1.png">
+		</div>
+		<!--body-->
+		<div class="bo" style="padding-top: 30px">
+
+			<div class="layout">
+
+				<div class="lifebo">
+					<!--生活服务左边-->
+					<div class="lifel">
+						<ul class="lifelu">
+							<li style="border-top: none">
+								<a href="ggsyjf.html">公共事业缴费<img src="/imgs/postappls/1.jpg" class="life1"></a>
+							</li>
+							<li class="act">
+								<a href="###">手机充值<img src="/imgs/postappls/1.jpg" class="life1"></a>
+							</li>
+							<li>
+								<a href="yxcz.html">游戏充值<img src="/imgs/postappls/1.jpg" class="life1"></a>
+							</li>
+							<li>
+								<a href="jykcz.html">加油卡充值<img src="/imgs/postappls/1.jpg" class="life1"></a>
+							</li>
+							<li>
+								<a href="xykhk.html">信用卡还款<img src="/imgs/postappls/1.jpg" class="life1"></a>
+							</li>
+							<li>
+								<a href="dyp.html">电影票<img src="/imgs/postappls/1.jpg" class="life1"></a>
+							</li>
+							<li style="border-bottom: none">
+								<a href="ylyy.html">医疗预约<img src="/imgs/postappls/1.jpg" class="life1"></a>
+							</li>
+						</ul>
+					</div>
+
+					<!--生活服务右边-->
+					<div class="lifer">
+
+						<div class="liferone">
+							<div class="onetop">手机充值</div>
+							<div class="onebo">
+								<!--产品介绍-->
+								<h2 class="s15">产品介绍</h2>
+
+								<img src="/imgs/postappls/line.jpg" class="life_line">
+								<div class="cpjs">无需手续费，足不出户，即可随时完成缴费。无需注册银生宝，您可选择网上银行快速付款。</div>
+								<div>
+									<img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0">
+									<a href="###" class="bullsh" style="margin-right: 36px">缴费须知</a>
+									<img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0">
+									<a href="###" class="bullsh" style="margin-right: 28px">缴费历史查询</a>
+								</div>
+
+								<!--步骤图-->
+								<img src="/imgs/lifeservice/sjcz1.jpg" style="width: 100%;margin-bottom: 20px">
+
+								<div class="sevbo sjczbo">
+									<div class="sjl" style="float: left;text-align: center">
+										<img src="/imgs/lifeservice/S1.png">
+									</div>
+									<form class="form-horizontal" style="margin-bottom: 22px">
+										<fieldset>
+
+											<!-- 充值金额-->
+											<div class="form-item" style="margin-top: 40px">
+												<label class="form-left"><span class="yell must">*</span>&nbsp;手机号码&nbsp;:</label>
+												<div class="form-right">
+													<input type="text" placeholder="请输入您的手机号码">
+													<p style="margin-top: 10px">支持移动、联通、电信</p>
+												</div>
+											</div>
+
+											<!-- 充值金额-->
+											<div class="form-item">
+												<label class="form-left"><span class="yell must">*</span>&nbsp;面额&nbsp;:</label>
+												<div class="form-right">
+													<a class="mz mzl">300元</a>
+													<a class="mz">200元</a>
+													<a class="mz">100元</a>
+													<a class="mz">50元</a>
+													<a class="mz">30元</a>
+													<a class="mz">20元</a>
+												</div>
+											</div>
+
+											<!-- 充值金额-->
+											<div class="form-item">
+												<label class="form-left"><span class="yell must">*</span>&nbsp;自定义金额&nbsp;:</label>
+												<div class="form-right">
+													<input type="text" placeholder="请输入金额">
+													<p style="margin-top: 10px">请输入10的整数倍金额，最高3000元</p>
+												</div>
+											</div>
+
+											<!-- 收款银行账号-->
+											<div class="form-item">
+
+												<label class="form-left"></label>
+												<div class="form-right">
+													<div class="hyj">会员价：&nbsp;<span class="huang">98.9</span>元</div>
+												</div>
+											</div>
+
+											<!-- 下一步-->
+											<div class="form-item" style="margin-top: 10px">
+												<label class="form-left">&nbsp;</label>
+												<div class="form-right">
+													<a class="step_button_s" href="../error.html">立即充值
+													</a>
+												</div>
+											</div>
+
+										</fieldset>
+
+									</form>
+								</div>
+
+								<!--警告-->
+								<div class="lifejg">
+									<p style="margin-bottom: 10px;font-size: 12px"><img src="/imgs/icons/B3-2.png" style="margin-right: 10px"><b style="font-weight: bold">服务说明</b></p>
+									<p>1.本充值已是优惠充值，故不参加当地运营商活动。</p>
+									<p>2.300元及以上面额部分订单分多次100元到账。</p>
+									<p>3.月初和月末运营商系统繁忙，花费到账时间会出现延迟。</p>
+									<p>4.部分状态特殊的手机号（空号、停机等）造成无法充值，我们将进行全额退款，退款从手机提示充值失败之日7个工作日后进行。</p>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="liferone" style="padding: 28px 19px;border: none;background: #F7F7F7;padding-bottom: 0;margin-bottom: 0">
+							<div class="norque">
+								<h3>常见问题</h3>
+                            <div>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="que">
+									什么是银生宝在线手机充值服务？
+								</a>
+								<div id="collapseThree" class="panel-collapse collapse">
+									<div class="panel-body">
+										答：通过银生宝平台，您可以在网上，选择使用银行卡、银生宝支付账户或商联卡直接为您指定的手机进行充值。
+									</div>
+								</div>
+							</div>
+							<div>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree1" class="que">
+									我可以为别人的手机进行充值吗？
+								</a>
+								<div id="collapseThree1" class="panel-collapse collapse">
+									<div class="panel-body">
+										答：可以，您只需在充值页面，填写您想充值的手机号码并进行支付操作即可。
+									</div>
+								</div>
+							</div>
+							<div>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree2" class="que">
+									如果充值没有成功，应该怎么办？
+								</a>
+								<div id="collapseThree2" class="panel-collapse collapse">
+									<div class="panel-body">
+										答：您在充值完成72小时内，请留意手机金额变动，如未到账可联系银生宝客服人员为您查询。
+									</div>
+								</div>
+							</div>
+							<div>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree3" class="que">
+									我充错号码了，应该怎么办？
+								</a>
+								<div id="collapseThree3" class="panel-collapse collapse">
+									<div class="panel-body">
+										答：您充值时输入号码错误，话费充到了其它手机用户，请及时联系银生宝客服人员，尽量挽回经济损失。如果该号码已经充值并已成功， 则无法退款，请您充值时认真核对号码。
+									</div>
+								</div>
+							</div>
+							<div>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree4" class="que">
+									银生宝在线手机充值服务是否安全？
+								</a>
+								<div id="collapseThree4" class="panel-collapse collapse">
+									<div class="panel-body">
+										答：所有服务信息都经过特殊加密通道加密，因此非常安全，您可以放心使用。
+									</div>
+								</div>
+							</div>
+							<div>
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree5" class="que">
+									以优惠价格充值是否有次数限制？
+								</a>
+								<div id="collapseThree5" class="panel-collapse collapse">
+									<div class="panel-body">
+										答：目前由于中国移动提供的优惠充值数量有限，针对最低折扣每位银生宝用户每天限充一次。
+									</div>
+								</div>
+							</div>
 
 
-                    <div class="lifebo">
-                            <!--生活服务左边-->
-                            <div class="lifel">
-                                <ul class="lifelu">
-                                    <li style="border-top: none"><a href="ggsyjf.html" >公共事业缴费<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
-                                    <li  class="act"><a href="###">手机充值<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
-                                    <li><a href="yxcz.html">游戏充值<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
-                                    <li><a href="jykcz.html">加油卡充值<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
-                                    <li><a href="xykhk.html">信用卡还款<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
-                                    <li><a href="dyp.html">电影票<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
-                                    <li style="border-bottom: none"><a href="ylyy.html">医疗预约<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
-                                </ul>
-                            </div>
+							</div>
+						</div>
 
-                            <!--生活服务右边-->
-                            <div class="lifer">
+					</div>
+				</div>
 
-                                <div class="liferone">
-                                    <div class="onetop">手机充值</div>
-                                    <div class="onebo">
-                                        <!--产品介绍-->
-                                        <h2 class="s15">产品介绍</h2>
+			</div>
 
-                                        <img src="/imgs/postappls/line.jpg" class="life_line">
-                                        <div  class="cpjs">无需手续费，足不出户，即可随时完成缴费。无需注册银生宝，您可选择网上银行快速付款。</div>
-                                        <div>
-                                            <img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0"><a href="###" class="bullsh" style="margin-right: 36px">缴费须知</a>
-                                            <img src="/imgs/postappls/B2.png" style="margin:-3px 12px 0 0"><a href="###" class="bullsh" style="margin-right: 28px">缴费历史查询</a>
-                                        </div>
+		</div>
 
-                                        <!--步骤图-->
-                                        <img src="/imgs/lifeservice/sjcz1.jpg" style="width: 100%;margin-bottom: 20px">
+		<!--foot-->
+		<link rel="import" href="modules/widget/footer/footer.html?__inline">
+		<script src="lib/mod.js" data-loader></script>
 
+		<!--SCRIPT_PLACEHOLDER-->
+		<script>
+			$(function() {
 
-                                    <div class="sevbo sjczbo">
-                                                    <div class="sjl" style="float: left;text-align: center">
-                                                                    <img src="/imgs/lifeservice/S1.png">
-                                                    </div>
-                                         <form class="form-horizontal" style="margin-bottom: 22px">
-                                                <fieldset>
+				$(".lifelu li").click(function() {
+					$("li").removeClass("act");
+					//$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
+					$(this).addClass("act");
+					//$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
+				});
 
-                                                    <!-- 充值金额-->
-                                                    <div class="form-item" style="margin-top: 40px">
-                                                        <label class="form-left"><span class="yell must">*</span>&nbsp;手机号码&nbsp;:</label>
-                                                        <div class="form-right">
-                                                            <input type="text" placeholder="请输入您的手机号码">
-                                                            <p style="margin-top: 10px">支持移动、联通、电信</p>
-                                                        </div>
-                                                    </div>
+				$(".mz").click(function() {
+					$(".mz").removeClass("mzl");
+					//$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
+					$(this).addClass("mzl");
+					//$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
+				})
+			})
+		</script>
 
-                                                    <!-- 充值金额-->
-                                                    <div class="form-item">
-                                                        <label class="form-left"><span class="yell must">*</span>&nbsp;面额&nbsp;:</label>
-                                                        <div class="form-right">
-                                                            <a class="mz mzl">300元</a>
-                                                            <a class="mz">200元</a>
-                                                            <a class="mz">100元</a>
-                                                            <a class="mz">50元</a>
-                                                            <a class="mz">30元</a>
-                                                            <a class="mz">20元</a>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- 充值金额-->
-                                                    <div class="form-item">
-                                                        <label class="form-left"><span class="yell must">*</span>&nbsp;自定义金额&nbsp;:</label>
-                                                        <div class="form-right">
-                                                            <input type="text" placeholder="请输入金额">
-                                                            <p style="margin-top: 10px">请输入10的整数倍金额，最高3000元</p>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- 收款银行账号-->
-                                                    <div class="form-item">
-
-                                                        <label class="form-left"></label>
-                                                        <div class="form-right">
-                                                            <div class="hyj">会员价：&nbsp;<span class="huang">98.9</span>元</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- 下一步-->
-                                                    <div class="form-item" style="margin-top: 10px">
-                                                        <label class="form-left">&nbsp;</label>
-                                                        <div class="form-right">
-                                                            <a class="step_button_s" href="../error.html">立即充值
-                                                            </a>
-                                                        </div>
-                                                    </div>
-
-
-                                                </fieldset>
-
-
-                                            </form>
-                                        </div>
-
-                                        <!--警告-->
-                                        <div class="lifejg">
-                                            <p style="margin-bottom: 10px;font-size: 12px"><img src="/imgs/icons/B3-2.png" style="margin-right: 10px"><b style="font-weight: bold">服务说明</b></p>
-                                            <p>1.本充值已是优惠充值，故不参加当地运营商活动。</p>
-                                            <p>2.300元及以上面额部分订单分多次100元到账。</p>
-                                            <p>3.月初和月末运营商系统繁忙，花费到账时间会出现延迟。</p>
-                                            <p>4.部分状态特殊的手机号（空号、停机等）造成无法充值，我们将进行全额退款，退款从手机提示充值失败之日7个工作日后进行。</p>
-                                        </div>
-
-
-                                    </div>
-
-
-
-
-
-                            </div>
-
-
-                                <div class="liferone" style="padding: 28px 19px;border: none;background: #F7F7F7;padding-bottom: 0;margin-bottom: 0">
-                                    <div class="norque">
-                                        <h3>常见问题</h3>
-                                        <p class="que">什么是银生宝在线手机充值服务？</p>
-                                        <p class="que">我可以为别人的手机进行充值吗？</p>
-                                        <p class="que">如果充值没有成功，应该怎么办？</p>
-                                        <p class="que">我充错号码了，应该怎么办？</p>
-                                        <p class="que">银生宝在线手机充值服务是否安全？</p>
-                                        <p class="que">以优惠价格充值是否有次数限制？</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                    </div>
-
-        </div>
-
-
-</div>
-
-
-
-<!--foot-->
-<link rel="import" href="modules/widget/footer/footer.html?__inline">
-<script src="lib/mod.js" data-loader></script>
-
-<!--SCRIPT_PLACEHOLDER-->
-<script>
-    $(function(){
-
-
-            $(".lifelu li").click(function(){
-                        $("li").removeClass("act");
-                        //$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
-                        $(this).addClass("act");
-                        //$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
-            });
-
-            $(".mz").click(function(){
-                    $(".mz").removeClass("mzl");
-                    //$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
-                    $(this).addClass("mzl");
-                    //$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
-             })
-    })
-</script>
-
-</body>
-
+	</body>
 
 </html>
-
-
-
