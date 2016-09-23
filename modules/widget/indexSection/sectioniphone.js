@@ -46,16 +46,17 @@ function slideScene() {
     var _neip=219;
 
     var _y=296;
+    var _q=991.5;
 
 
 
     //292+半个间距
-    var _waip=292;
+    var _waip=252;
 
     //第一张
 	timelineMax.add([
 		TweenLite.to(t, 1, {
-			x: -(900+_waip*1),
+			x: -(_q+_waip*1),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -70,7 +71,7 @@ function slideScene() {
         //第二张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: -(900+_waip*2),
+			x: -(1008+_waip*2),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -85,7 +86,7 @@ function slideScene() {
         //第三张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: -(900+_waip*3),
+			x: -(1008+_waip*3),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -100,7 +101,7 @@ function slideScene() {
         //第四张
 		timelineMax.add([
 			TweenLite.to(t, 1, {
-			x: -(900+_waip*4),
+			x: -(1008+_waip*4),
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(e, 1, {
@@ -116,7 +117,7 @@ function slideScene() {
         //第一张
         timelineMax.add([
             TweenLite.to(t, 1, {
-                x: -(900+_waip*5),
+                x: -(1008+_waip*5),
                 ease: Power3.easeInOut
             }),
             TweenLite.to(e, 1, {
