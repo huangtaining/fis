@@ -157,7 +157,13 @@
     margin-top: 35px;
     background: #31B2EC;
 }
-.cpjs{
+/*电影票模块*/
+.dyp .gpxz{
+    display:inline-block;
+    height:33px;
+    width:61px;
+  
+}.cpjs{
     margin-bottom: 20px;
     color: #585858;
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <title>游戏充值</title>
+    <link rel="import" href="../layout/header.html?__inline">
+    <!--STYLE_PLACEHOLDER-->
+    <link href="/modules/css/common2.css" rel="stylesheet">
+    <link href="/modules/css/life.css" rel="stylesheet">
+    <script src="/modules/lib/ysbbase.min.js"></script>
+    <script src="/modules/app/jquery.validate.min.js"></script>
+    <script src="/modules/js/common2.js"></script>
+    <script>
+        var $ = require('jquery');
+        require('modules/js/common2');
+        require('modules/app/jquery.validate.min');
+    </script>
+
+</head>
+<body class="pagelifeservice">
+<!--head-->
+<link rel="import" href="modules/widget/header/header.html?__inline">
+
+<div class="lifeban">
+    <img src="/imgs/postappls/B1.png">
+</div>
+<!--body-->
+<div class="bo dyp"  style="padding-top: 30px">
+
+    <div class="layout">
+
+
+        <div class="lifebo">
+            <!--生活服务左边-->
+            <div class="lifel">
+                <ul class="lifelu">
+                    <li style="border-top: none"><a href="###" >公共事业缴费<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
+                    <li><a href="###">手机充值<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
+                    <li  class="act"><a href="###">游戏充值<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
+                    <li><a href="###">加油卡充值<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
+                    <li><a href="###">信用卡还款<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
+                    <li><a href="###">电影票<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
+                    <li style="border-bottom: none"><a href="###">医疗预约<img src="/imgs/postappls/1.jpg" class="life1"></a></li>
+                </ul>
+            </div>
+
+            <!--生活服务右边-->
+            <div class="lifer">
+
+                <div class="liferone">
+                    <div class="onetop">公共事业缴费</div>
+                    <div class="onebo">
+                        <!--产品介绍-->
+                        <h2 class="s15">产品介绍</h2>
+
+                        <img src="/imgs/postappls/line.jpg" class="life_line">
+                        <div style="margin-bottom: 20px">支持全国移动、联通、电信手机充值；系统自动充值，1~10分钟到账。</div>
+                        <p>
+                            <span class="gpxz">购票须知 </span>
+                            <span>购票历史查询</span>
+                        </p>
+
+                <div class="liferone" style="padding: 28px 19px;border: none;background: #F7F7F7;padding-bottom: 0;margin-bottom: 0">
+                    <div class="norque">
+                        <h3>常见问题</h3>
+                        <p class="que">什么是银生宝在线手机充值服务？</p>
+                        <p class="que">我可以为别人的手机进行充值吗？</p>
+                        <p class="que">如果充值没有成功，应该怎么办？</p>
+                        <p class="que">我充错号码了，应该怎么办？</p>
+                        <p class="que">银生宝在线手机充值服务是否安全？</p>
+                        <p class="que">以优惠价格充值是否有次数限制？</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+<!--foot-->
+<link rel="import" href="modules/widget/footer/footer.html?__inline">
+<script src="lib/mod.js" data-loader></script>
+
+<!--SCRIPT_PLACEHOLDER-->
+<script>
+    $(function(){
+
+
+        $(".lifelu li").click(function(){
+            $("li").removeClass("act");
+            //$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
+            $(this).addClass("act");
+            //$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
+        });
+
+        $(".mz").click(function(){
+            $(".mz").removeClass("mzl");
+            //$("li").eq(i).css("background-image","url('/imgs/lifeservice/A"+(i+1)+".png')");
+            $(this).addClass("mzl");
+            //$(this).css("background-image","url('/imgs/lifeservice/A"+(i+8)+".png')")
+        })
+    })
+</script>
+
+</body>
+
+
+</html>
+
+
+
