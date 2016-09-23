@@ -142,8 +142,8 @@
     position: relative;
     width: 6500px;
     padding-top: 52px;
-    -webkit-transform: translate3d(-868px, 0, 0);
-    transform: translate3d(-868px, 0, 0)
+    -webkit-transform: translate3d(-1372px, 0, 0);
+    transform: translate3d(-1372px, 0, 0)
 }
 
 @media screen and (max-width:39.9375em) {
