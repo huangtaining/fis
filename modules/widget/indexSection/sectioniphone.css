@@ -116,9 +116,11 @@
     justify-content: flex-end
 }
 
+
+/*修改*/
 .line-box-wrap {
     width: 558px;
-    height: 393px;
+    height:470px;
     position: relative;
     margin-left: 350px;
 }
@@ -154,14 +156,20 @@
     margin-right: 0
 }
 
+
+
+/*修改*/
 .line-boxes .box {
     float: left;
-    width: 180px;
-    height: 295px;
+    width:219px;
+    height:360px;
     margin-right: 6px;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
 
 .noselect, .scene-viewes .scene, ul.device-wall li, ul.device-wall li .device {
     -webkit-touch-callout: none;
@@ -236,18 +244,18 @@
 }
 
 
-
+/*修改*/
 .device-iphone6 {
     box-sizing: border-box;
-    top: 8px;
+    /*top: 8px;*/
     left: 42px;
-    width: 182px;
-    height: 380px;
-    padding: 44px 8px 40px;
-    border-radius: 25px;
+    width:252px;
+    height:471px;
+    padding:50px 22px 40px;
+    /*border-radius: 25px;*/
     z-index: 2;
-    border: 1px solid #e4e4e4;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 5px 10px 0 rgba(0, 0, 0, .05), 0 15px 15px 0 rgba(0, 0, 0, .03), inset 0 0 1px 0 rgba(0, 0, 0, .14)
+   /* border: 1px solid #e4e4e4;*/
+    /*box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 5px 10px 0 rgba(0, 0, 0, .05), 0 15px 15px 0 rgba(0, 0, 0, .03), inset 0 0 1px 0 rgba(0, 0, 0, .14)*/
 }
 
 
@@ -280,7 +288,7 @@
 .device-iphone6, .device-iphone6 .topbar {
     position: absolute;
     /*background-color: #fcfcfc*/
-   background: url(imgs/index/shouji.png)no-repeat -30px -9px;
+   background: url(imgs/index/shouji.png)no-repeat;
 }
 
 .device-iphone6 .topbar {
@@ -295,7 +303,7 @@
 .device-iphone6 .screen {
     position: relative;
     width: 100%;
-    height: 294px;
+    height:360px;
     overflow: hidden;
     border-radius: 1px
 }
@@ -366,16 +374,18 @@
     height: 100%
 }
 
+
+/*修改*/
 .scene-viewes .scene {
     position: relative;
     float: left;
-    width: 166px;
-    height: 294px;
+    width:219px;
+    height:360px;
     background-repeat: no-repeat;
     background-size: cover
 }
 
 .fullheight-column-align {
     position: absolute;
-    margin-top: 60px;
+    margin-top:95px;
 }
