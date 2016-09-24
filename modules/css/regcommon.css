@@ -1146,6 +1146,7 @@ select.form-control {
 }
 
 .tab-content .tab-pane ul li select {
+	height: 25px;line-height: 25px;
 	font-size: 12px;
 	width: 130px;
 	text-indent: 1em;
