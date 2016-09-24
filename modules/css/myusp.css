@@ -54,7 +54,7 @@
 /*头像部分*/
 .myusptx{
     position: absolute;
-    bottom: 26px;
+    bottom: 16px;
     left: 0;width: 100%;
     color: white !important;
 }
@@ -66,7 +66,6 @@
     float: left;
     padding: 10px 0;
     line-height: 30px;
-    overflow: hidden;
 }
 .toux1 img{
     background: url("/imgs/myunspay/toux.png");
@@ -79,18 +78,30 @@
  }
 .toux3{
     float: right;
-    width: 300px;
+    width: 380px;
     padding: 10px 0;
     line-height: 30px;
     overflow: hidden;
+    margin-left: -100px;
 }
 .toux3 .progress{
-    width: 200px;
+    width: 183px;
     height: 10px;
+    float: left;
+    margin:0 !important;
+    border-radius: 5px;
 }
-.toux3 .progress-bar{
-    width: 200px;
+.jjd{
+    padding-top: 10px;
+    overflow: hidden;
+    width: 183px;
+    float: left;
 }
+.toux3 .progress .progress-bar{
+    border-radius: 5px;
+    width: 183px;
+}
+
 .c8top{
     font-size: 18px;
 }
@@ -99,14 +110,25 @@
     margin: 0 12px;
     position: relative;
 }
-.rz1{
-    margin-left: 25px;
+.rr{
+    position: relative;
+    cursor:pointer;
 }
-.rz span{
+.rr span{
+    position: absolute;
     font-size: 14px;
+    display: none;
+    top:-62px;
+    left:0;
+    background: url("/imgs/icons/w1.png");
+    width: 110px;
+    height: 62px;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
 }
-.rz:hover span{
-    display: block;
+.rr:hover span{
+    display:block;
 }
 
 .smicon1{
@@ -549,4 +571,8 @@
 }
 .fyr button{
     padding: 0 4px;
+}
+.fyl button{
+    padding: 0 8px;
+    margin: 0 5px;
 }

@@ -176,7 +176,10 @@ a:hover{
 
 
 .ljgd{
-
+      padding: 2px 12px;
+    background: white;
+    border-radius: 12PX;
+    color: #00A0E8 !important;
 }
 
 /*gps*/
