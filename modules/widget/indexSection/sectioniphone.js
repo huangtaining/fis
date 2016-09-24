@@ -52,6 +52,7 @@ function slideScene() {
 
     //292+半个间距
     var _waip=252;
+    var _z=310;
 
     //第一张
 	timelineMax.add([
@@ -64,7 +65,7 @@ function slideScene() {
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
-			y: "-148",
+			y: -(_z),
 			ease: Power3.easeInOut
 		})], "+=2"),
 
@@ -79,7 +80,7 @@ function slideScene() {
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
-			y: "-293",
+			y: -(_z*2),
 			ease: Power3.easeInOut
 		})], "+=2"),
 
@@ -94,7 +95,7 @@ function slideScene() {
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
-			y: "-438",
+			y: -(_z*3),
 			ease: Power3.easeInOut
 		})], "+=2"),
 
@@ -109,7 +110,7 @@ function slideScene() {
 			ease: Power3.easeInOut
 		}),
 		TweenLite.to(el_heroSceneText, 1, {
-			y: "-583",
+			y: -(_z*4),
 			ease: Power3.easeInOut
 		})], "+=2"),
 
@@ -125,7 +126,7 @@ function slideScene() {
                 ease: Power3.easeInOut
             }),
             TweenLite.to(el_heroSceneText, 1, {
-                y: "-728",
+                y: -(_z*5),
                 ease: Power3.easeInOut
             })], "+=2"),
 

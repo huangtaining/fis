@@ -46,7 +46,7 @@
     width: 100%;
     min-width: 320px;
     margin-bottom: 20px;
-    height: 116px;
+    height: 316px;
     overflow: hidden
 }
 
@@ -388,4 +388,10 @@
 .fullheight-column-align {
     position: absolute;
     margin-top:95px;
+}
+.intro1{
+    height: 200px;
+}
+.hero-scene-text h1{
+    margin-bottom: 30px;
 }
