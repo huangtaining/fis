@@ -496,7 +496,6 @@
 .cir44 .col-md-3{
     text-align: center;
     padding: 40px 0;
-    border-bottom: 1px solid #E8E8E8;
 }
 .five .col-md-3{
     text-align: center;
@@ -539,9 +538,15 @@
 .bo .tad-pane_box{
         background: #F7F7F7;
 }
+.bo .tad-pane_box select{
+    height: 25px;
+}
 .bo #myTabContent table td{
   font-size: 12px !important;
 }
 .twoh{
     line-height: 22px !important;
+}
+.fyr button{
+    padding: 0 4px;
 }

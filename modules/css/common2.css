@@ -166,10 +166,11 @@ a:hover{
 }
 .appcenbanner{
     width: 100%;
-    height: 360px;
-    background:url("/imgs/logind/appcen/ying1.png") repeat-x;
-    background-size: 100% 360px;
     margin-bottom: 30px;
+}
+.appcenbanner img{
+    width: 100%;
+    height: 360px;
 }
 
 
