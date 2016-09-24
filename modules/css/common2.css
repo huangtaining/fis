@@ -87,6 +87,8 @@ a:hover{
 .gan_text{
     line-height: 20px;
     float: left;
+    font-size: 12px;
+    color: #585858;
 }
 .car{
     overflow: hidden;
