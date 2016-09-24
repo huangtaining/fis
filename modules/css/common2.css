@@ -751,3 +751,10 @@ p{
 #ylxx-error{
     left: 600px;
 }
+.wittop{
+    text-align: right;
+    margin: 30px 0;
+}
+.wittop p{
+    padding: 3px 0;
+}
