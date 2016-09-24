@@ -329,7 +329,8 @@ p{
     color: white;
     cursor: pointer;
     width: 75px;
-    height: 28px;
+    height: 25px;
+    line-height: 25px;
     display: inline-block;
     text-align: center;
 }
@@ -344,7 +345,8 @@ p{
 .step_button_s{
     background: #ED8719;
     border: none;
-    height: 28px;
+    height: 25px;
+    line-height: 25px;
     border-radius: 3px;
     color: white;
     cursor: pointer;
