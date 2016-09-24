@@ -73,7 +73,7 @@ $(function(){
 //    自定义预留信息
     jQuery.validator.addMethod("ggg", function(value, element) {
         return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
-    }, "匹配english");
+    }, "格式错误");
 
     //    自定义预留信息
     jQuery.validator.addMethod("xiane", function(value, element) {

@@ -322,7 +322,6 @@ p{
     cursor: pointer;
 }
 .step_button:hover{
-    background: #00A0E8;
     border: none;
     padding: 3px 20px;
     color: white;
@@ -738,4 +737,7 @@ p{
     background: #FFF9ED;
     font-size: 18px;
     color: #4A4A4A;
+}
+#ylxx-error{
+    left: 600px;
 }
