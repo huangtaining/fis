@@ -370,6 +370,7 @@
 	text-indent: 1em;
 	border: 1px solid #D5D5D5;
 	border-radius: 3px;
+	display: inline;
 }
 
 .form-group .control-label {

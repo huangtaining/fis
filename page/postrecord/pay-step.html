@@ -74,7 +74,7 @@
 			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li class="half form-group has-feedback">
-			  		<em>短信校验码：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control"/>
+			  		<em>短信校验码：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control"/><input type="button" id="btn" value="免费获取验证码" style="margin-left: 10px;text-indent: 0;width: 140px;"/>
 			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li><div style="padding-left: 298px;">
@@ -215,11 +215,27 @@
 							}
 						},
 					ddlQuestion: {
-							validators: {
-								notEmpty: {
-									message: '必填'
+						validators: {
+								callback: {
+									message: '请输入您收到的6位短信校验码',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re = /^\d{6}$/;
+										
+										if(re.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('ddlQuestion', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
 								}
-							}
+							}																										
 						}
                 }
             });
@@ -234,6 +250,30 @@
             });
         });
     </script>
+    		<!--倒计时-->
+		<script type="text/javascript">
+			var wait = 60;
+
+			function time(o) {
+				if(wait == 0) {
+					o.removeAttribute("disabled");
+					o.value = "免费获取验证码";
+					wait = 60;
+				} else {
+
+					o.setAttribute("disabled", true);
+					o.value = "(" + wait + ")秒后，重新获取";
+					wait--;
+					setTimeout(function() {
+							time(o)
+						},
+						1000)
+				}
+			}
+			document.getElementById("btn").onclick = function() {
+				time(this);
+			}
+		</script>
 	    <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
 		<script src="lib/mod.js"></script>
 		<script>
