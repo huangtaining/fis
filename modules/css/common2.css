@@ -325,15 +325,17 @@ p{
 .step_button{
     background: #00A0E8;
     border: none;
-    padding: 3px 20px;
     border-radius: 3px;
     color: white;
     cursor: pointer;
+    width: 75px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
 }
 .step_button:hover{
     background: #0068B6;
     border: none;
-    padding: 3px 20px;
     color: white;
 }
 .step_button:visited{
@@ -342,16 +344,18 @@ p{
 .step_button_s{
     background: #ED8719;
     border: none;
-    padding: 3px 20px;
+    height: 28px;
     border-radius: 3px;
     color: white;
     cursor: pointer;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
 }
 .step_button_s:hover{
     background: #D26D02;
     border: none;
     color: white;
-    padding: 3px 20px;
 }
 .step_button_s:visited{
     color: white;
@@ -753,8 +757,11 @@ p{
 }
 .wittop{
     text-align: right;
-    margin: 30px 0;
+    margin: 30px 0 20px 0;
 }
 .wittop p{
-    padding: 3px 0;
+    padding: 5px 0;
+}
+.cksfbz{
+    margin-left: 30px;
 }
