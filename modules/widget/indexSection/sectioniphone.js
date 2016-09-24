@@ -52,7 +52,10 @@ function slideScene() {
 
     //292+半个间距
     var _waip=252;
-    var _z=310;
+
+
+    var _t=336;
+    var _z=351;
 
     //第一张
 	timelineMax.add([

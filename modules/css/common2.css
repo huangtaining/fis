@@ -134,6 +134,10 @@ a:hover{
     color: #00A0E8;
     font-size: 16px;
 }
+.more:hover{
+    text-decoration: none;
+    color: #00A0E8
+}
 .harf{
     width: 50%;
     float: left;
@@ -148,10 +152,7 @@ a:hover{
 .txright{
     text-align: right;
 }
-.more:hover{
-    text-decoration: none;
-    color: #A6DEF9
-}
+
 
 /*banner部分*/
 .banner{
