@@ -136,7 +136,6 @@
 }
 .changeb{
     color:#00A0E8;
-
 }
 .form input{
     height:25px;
@@ -144,6 +143,7 @@
     line-height:25px;
     margin-right:16px;
     padding-left:10px;
+    font-size:12px;
 }
 
 .form p{
@@ -171,6 +171,11 @@
     font-size:12px;
     margin-left:210px;
     line-height:12px;
+    background-color:#00A0E8;
+    border:none;
+}
+.form .nextbtn:hover{
+    background-color: #0068B6;
 }
 #txt{
     height:151px;
@@ -337,6 +342,7 @@
     margin-left:10px;
     padding-left:25px;
     background:url("/imgs/icons/sousuo.png") no-repeat 5px center;
+    font-size:12px;
 }
 .modaltitle{
     margin-left:10px;
@@ -389,7 +395,8 @@
     height:30px;
     width:135px;
     margin-left:57px;
-    width:135px;
+    line-height:30px;
+    padding:0;
     color:rgb(73,145,218);
 }
 #txto{
@@ -398,6 +405,7 @@
     margin-left:11.4%;
     padding-left:10px;
     padding-top:5px;
+    font-size:12px;
 }
 .stail{
     position:relative;
@@ -498,13 +506,19 @@
 }
 #btn1{
     margin-left:105px;
-    margin-right:26.7px;
+    margin-right:20px;
     background-color:#00A0E8;
+    border:none;
+}
+#btn1:hover{
+    background-color: #0068B6;
 }
 #btn2{
     background-color:#EE8719;
 }
-
+#btn2:hover{
+    background-color:#D26D02;
+}
 .gant{
     vertical-align: top;
 }

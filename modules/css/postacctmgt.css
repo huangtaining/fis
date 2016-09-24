@@ -140,6 +140,7 @@
     font-size:15px;
     color:#333333;
     border:1px solid #E8E8E8;
+    border-bottom:none;
     background-color:white;
 }
 .changeemail .email-content{
@@ -257,6 +258,7 @@
     font-size:15px;
     color:#333333;
     border:1px solid #E8E8E8;
+    border-bottom:none;
     background-color:white;
 }
 .changemobile .email-content{
@@ -315,6 +317,9 @@
     border:none;
     font-size:12px;
 
+}
+.changemobile .nextbtn .next:hover{
+    background-color:#D26D02;
 }
 .changemobile .mobilebgc{
     background-color:#F0F0F0;
@@ -473,6 +478,9 @@
     border-radius: 3px;
     margin-left:170px;
     font-size:12px;
+}
+.unbindmobile .con-bo p .sure:hover{
+    background-color:#D26D02;
 }
 .unbindmobile input.error{
     border:1px solid #a94442;
@@ -1006,6 +1014,7 @@
     font-size:15px;
     color:#333333;
     border:1px solid #E8E8E8;
+    border-bottom:none;
     background-color:white;
 }
 .changebankmgt .card-content{
@@ -1105,8 +1114,14 @@
     background-color:#EE8719;
     margin-right:20px;
 }
+.changebankmgt .card-content ul .bankbtn .sure:hover{
+    background-color:#D26D02;
+}
 .changebankmgt .card-content ul .bankbtn .back{
     background-color:#00A0E8;
+}
+.changebankmgt .card-content ul .bankbtn .back:hover{
+    background-color:#0068B6;
 }
 /*验证的label长度设置*/
 
@@ -1333,6 +1348,7 @@
     padding:23px 0 0 0;
     /*padding-right:30px;*/
     background-color:#F7F7F7;
+    border-bottom:1px solid transparent;
 
 }
 .tradeaccount .account-right .nav-tabs > li.active > a{
@@ -1351,6 +1367,9 @@
 .tradeaccount .account-con .tab-pane .letter-all em{
     color:#00A0E8;
     margin-left:10px;
+}
+.tradeaccount .account-con .tab-pane .letter-all a{
+    text-decoration: none;
 }
 .tradeaccount .account-con .tab-pane .chaxun input{
     width:186px;
@@ -1393,6 +1412,9 @@
     border:1px solid #e4e4e4;
     font-size:12px;
     background-color:white;
+}
+.tradeaccount .account-con .tab-pane table tbody .myx{
+    border-left:1px solid white;
 }
 .tradeaccount .account-con .tab-pane table th{
     border:0;
@@ -1498,6 +1520,7 @@
 }
 .tradeaccount .account-right .caoz{
     color:#00A0E8;
+    border-right:1px solid white!important;
 }
 /*模态框*/
 
@@ -1785,6 +1808,9 @@
     margin-left:308px;
     border:none;
     color:#ffffff;
+}
+.addcard .card-content p button:hover{
+    background-color:#D26D02;
 }
 .addcard .card-content .mess input{
     width:154px;
