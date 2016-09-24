@@ -345,6 +345,7 @@
     color:#333333;
     border:1px solid #E8E8E8;
     background-color:white;
+    border-bottom:none;
 }
 .unbindmobile .email-content{
     height:auto;
@@ -1759,6 +1760,7 @@
     color:#585858;
     border:1px solid #E8E8E8;
     background-color:white;
+    border-bottom:none;
 }
 .addcard .card-content{
     height:742px;
@@ -1772,7 +1774,6 @@
     width:1156px;
     margin:0 auto;
     padding-left:63px;
-
     line-height:62px;
     font-size:18px;
     color:#585858;
@@ -1866,3 +1867,30 @@
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
 }
 
+/*添加银行卡成功界面*/
+.addcard-success .card-content{
+    height:auto;
+    padding-bottom:200px;
+}
+.addcard-success .card-content .gxn{
+    height:60px;
+    width:500px;
+    line-height:60px;
+    margin-left:480px;
+    margin-top:100px;
+    padding-left:70px;
+    font-size:20px;
+    background:url("/imgs/icons/B3-18.png") no-repeat;
+}
+.addcard-success .card-content .tjcg{
+    text-align: center;
+    margin-top:50px;
+    margin-left:100px;
+}
+.addcard-success .card-content .tjcg .subtjcg{
+    margin-right:20px;
+}
+.addcard-success .card-content .tjcg a{
+    color: #00A0E8;
+
+}

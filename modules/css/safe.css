@@ -157,6 +157,20 @@
     margin-bottom: 25px;
 }
 
+.allbody .tjyhk{
+    box-shadow:none;
+    width: 250px;
+    height: 149px;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+.allbody .tjyhk .jia{
+    margin-top:35px;
+    text-align:center;
+}
+.alltit .tianj{
 
-
-
+    font-size: 12px;
+    color: #00A0E8;
+    margin-left:900px;
+}
