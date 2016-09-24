@@ -289,11 +289,11 @@ $(function(){
             },
             //校正码
             jzm:{
-                required: "请输入校正码"
+                required: "请输入验证码"
             },
             //校正码
             jym:{
-                required: "请输入校验码"
+                required: "请输入验证码"
             },
             //充值金额
             czje:{
