@@ -110,6 +110,7 @@
                                             isvalid = false;
                                         }
                                         if (isvalid) {
+                                            console.log(validator)
                                             validator.updateStatus('username', 'VALID');
                                             return true;
                                         } else {
@@ -136,6 +137,12 @@
 						}
 					});
 
+
+                   $(window).click(function(){
+                       $("#defaultForm").bootstrapValidator('updateStatus', 'username', 'INVALID');
+                   });
+
+
 					// Validate the form manually
 					$('#validateBtn').click(function() {
 						$('#defaultForm').bootstrapValidator('validate');
@@ -151,6 +158,7 @@
 			<script src="lib/mod.js"></script>
 			<script>
 				require('ui/index');
+
 			</script>
 			<!--SCRIPT_PLACEHOLDER-->
 	</body>
