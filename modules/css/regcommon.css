@@ -712,7 +712,7 @@ select.form-control {
 .forgot_password .password_content span {
 	color: #585858;
 	font-size: 14px;
-	margin-left: 70px;
+	margin-left:86px;
 }
 
 .forgot_password .password_content .yanzhen {
@@ -1160,7 +1160,7 @@ select.form-control {
 	border: none;
 	border-radius: 5px;
 }
-
+.tab-content .tab-pane ul li button:hover{background-color: #337AB7;color:#fff ;}
 .tab-content .tab-pane ul li .time {
 	font-size: 12px;
 	width: 188px;

@@ -10,6 +10,7 @@
 .all_detail .all_detail_box ul li span{color: #333;margin-left: 10px;}
 .all_detail .all_detail_box ul li span b{color: #F4B067;}
 .all_detail button{background-color:#009FEB;width:89px;height:30px;line-height:30px;border: none;color: #fff;margin: 20px 0 10px 215px;border-radius:5px ;}
+.all_detail button:hover{background-color: #337ab7;color: #fff;}
 /*充值记录*/
 .tab-pane .tad-pane_box .recharge input {
 	width: 120px;
@@ -28,6 +29,8 @@
 	border-radius: 5px;
 	margin-left: 10px;
 }
+.tab-pane .tad-pane_box .recharge button:hover{background-color: #337AB7;color: #fff;}
+
 .tab-pane .tad-pane_box .recharge span{margin-left: 15px;}
 
 .tab-pane .recharge_box{padding:20px 30px;background-color: #fdfbe2;margin-bottom: 30px;font-weight: bold;font-size: 15px;}
@@ -42,6 +45,7 @@
 
 .tab-pane .tad-pane_box .recharge .download{width:91px;height:27px;background: url(../../imgs/icons/a_btn_05.png) no-repeat;margin-top: 3px;color: #0066cc;
 vertical-align: middle;margin-top: -3px;}
+.tab-pane .tad-pane_box .recharge .download:hover{background-color: transparent;color: #0066cc;}
 .etcbill_information{padding:0 30px;font-weight: bold;}
 .tab-content .tab-pane .etcbill_information ul li{float: left;width: 20%;}
 .etcbill_information ul{background-color: #fcfcf3;border: 1px solid #f0f0f0;}
@@ -101,12 +105,15 @@ vertical-align: middle;margin-top: -3px;}
 }
 
 .pay ul li span {
+	font-size: 15px;
 	width: 140px;
 	display: inline-block;
 	text-align: right;
 	padding-right: 10px;
 }
-
+.pay ul li em{
+	font-size: 14px;color: #4A4A4A;
+}
 .pay ul li em em {
 	color: #ECA150;
 }

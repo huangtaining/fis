@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提现记录--付款下一步</title>
+	    <link rel="import" href="../layout/header.html?__inline">
+		<!--STYLE_PLACEHOLDER-->
+		<link rel="stylesheet" href="modules/css/ysbformvalidate.scss" media="screen" title="no title">
+		<style type="text/css">
+		.pay-step2_top ul li{padding: 10px 0;}
+		.pay-step2_top ul li em{width: 300px;display:inline-block;text-align: right;padding-right: 10px;}
+		.pay-step2_top ul li input{width: 280px;height:35px;line-height:35px;display: inline-block;}
+		.pay-step2_top ul li.half input{width: 133px;}
+		.form-group {margin-bottom:0px;}
+		.ysbformvalidate .has-feedback.has-error .errorholder{height: 35px;line-height: 35px;}
+		.ysbformvalidate .has-feedback .form-control-feedback {background: url(/static/css/img/form-error.png) no-repeat 10px 11px;}
+		
+		</style>
+	</head>
+	<body class="pageall">
+		<link rel="import" href="modules/widget/header/header-transfer.html?__inline">
+		<div style="width: 100%;background-color: #F7F7F7;padding: 20px 0 50px 0;">
+		<div class="centre all_detail">
+        <div class="Pay_center">
+			<ul class="clearfix">
+				<li style="padding-left: 80px;margin-top: 25px;font-size: 18px;"><span>收款方：</span><span>提现账户</span></li>
+				<li style="margin-top: 25px;font-size: 18px;"><span>付款金额：</span><span><em>12.55</em>元</span></li>
+				<li style="padding-left: 20px;">
+					<p><span>订单编号：</span><span>12345648916</span></p>
+					<p><span>收费单位：</span><span>提现账户</span></p>
+				</li>
+				<li>
+					<p><span>交易类型：</span><span>转账到银行</span></p>
+					<p><span>交易编号：</span><span>1345612346</span></p>
+				</li>
+			</ul>
+		</div>				
+		
+		<div class="pay-step2">
+			<h2>支付方式</h2>
+		    <div class="pay-step2_box">
+			    <em><img src="imgs/payment/B3-5.png" alt="" /></em>
+			    <em>储蓄卡（借记卡）</em>
+			    <em>付款金额：<span>120.2</span>元</em>
+			</div>
+			
+		<form id="defaultForm" method="post" class="form-horizontal ysbformvalidate" action="#">	
+			<div class="pay-step2_top">
+			  <h3>为了保障您的资金安全，以下信息用于银行进行真实姓名核对，核对无误后才能使用快捷支付付款，请如实填写。</h3>
+			  
+			  <ul>
+			  	<li class="form-group has-feedback">
+			  		<em>持卡人姓名：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control" />
+			  		<div class="errorholder" style="float: right;width:300px;margin-right: 250px;margin-left: 0;"></div>
+			  	</li>
+			  	<li class="form-group has-feedback">
+			  		<em>持卡人身份证：</em><input type="card" name="card" class="form-control"/>
+			  	    <div class="errorholder" style="float: right;width:300px;margin-right: 250px;margin-left: 0;"></div>
+			  	</li>
+			  	<li class="form-group has-feedback">
+			  		<em>银行预留手机号：</em><input type="phone" name="phone" class="form-control"/>
+			  		<div class="errorholder" style="float: right;width: 300px;margin-right: 250px;margin-left: 0;"></div>
+			  	</li>
+			  	<li class="form-group has-feedback">
+			  		<em>银行卡号：</em><input type="bankcard" name="bankcard" class="form-control"/>
+			  		<div class="errorholder" style="float: right;width: 300px;margin-right: 250px;margin-left: 0;"></div>
+			  	</li>
+			  	<li class="half form-group has-feedback">
+			  		<em>有效期：</em><input type="datetime" name="datetime" class="form-control"/> - <input type="datetime" name="datetime" class="form-control"/>
+			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
+			  	</li>
+			  	<li class="half form-group has-feedback">
+			  		<em>CVV2：</em><input type="number1" name="number1" class="form-control"/>
+			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
+			  	</li>
+			  	<li class="half form-group has-feedback">
+			  		<em>短信校验码：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control"/>
+			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
+			  	</li>
+			  	<li><div style="padding-left: 298px;">
+			  		<input type="checkbox" style="width: 15px;height: 15px;vertical-align: middle;margin-bottom: 5px;"/> 我已阅读
+			  		<div style="display: inline-block;">
+			  		<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" style="color: #00A0E8;">银生宝快捷支付协议</a>
+			  		</div>
+                    <div id="collapseThree" class="panel-collapse collapse" style="margin-right: 248px;margin-left: -113px;">
+                        <div class="panel-body">
+                                银生宝快捷支付协议          银生宝快捷支付协议    银生宝快捷支付协议             
+                        </div>
+                    </div>
+                    </div>
+			  	</li>
+			 </ul>
+		  </div>		
+	<button id="btnSubmit" type="submit" class="btn btn-primary" name="signup2" value="Sign up 2" style="margin:30px 0 50px 320px;line-height: 0;">确认付款</button>	
+</form>	
+	
+	</div>		
+</div>
+</div>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            require('modules/app/jquery.bootstrapValidator');
+
+
+            // Generate a simple captcha
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            };
+
+            $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+            $("#btnSubmit").bind("click", function() {
+                alert("Submit");
+            });
+
+            $('#defaultForm').bootstrapValidator({
+                //live: 'disabled',
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon', //glyphion-remove
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                 ddlQuestion: {
+                        validators: {
+                            notEmpty: {
+                                message: '请填写您的真实姓名'
+                            }
+                        }
+                   },
+                	card: {
+							validators: {
+								callback: {
+									message: '请填写身份证号',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+										var re_email = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/; 
+										if(re.test(value) || re_email.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('card', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+                    phone: {
+							validators: {
+								callback: {
+									message: '请填写您的手机号码',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re =/^1[34578]\d{9}$/;
+										
+										if(re.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('phone', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+						 bankcard: {
+                        validators: {
+                            notEmpty: {
+                                message: '请填写您的银行卡号，用于银行检验真实性'
+                            }
+                        }
+                   },
+                   datetime: {
+                        validators: {
+                            notEmpty: {
+                                message: '请银行卡正面的有效期'
+                            }
+                        }
+                   },
+                 number1: {
+							validators: {
+								callback: {
+									message: '请输入银行卡背后的末三位',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re = /^\d{3}$/;
+										
+										if(re.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('number1', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+					ddlQuestion: {
+							validators: {
+								notEmpty: {
+									message: '必填'
+								}
+							}
+						}
+                }
+            });
+
+            // Validate the form manually
+            $('#validateBtn').click(function() {
+                $('#defaultForm').bootstrapValidator('validate');
+            });
+
+            $('#resetBtn').click(function() {
+                $('#defaultForm').data('bootstrapValidator').resetForm(true);
+            });
+        });
+    </script>
+	    <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
+		<script src="lib/mod.js"></script>
+		<script>
+			require('ui/index');
+		</script>
+		<!--SCRIPT_PLACEHOLDER-->	
+  </body>	
+	</body>
+</html>
