@@ -58,6 +58,9 @@ a:hover{
 .s16{
     font-size: 16px;
 }
+.s18{
+    font-size: 16px;
+}
 .bot10{
     margin-bottom: 10px;
 }
@@ -172,7 +175,7 @@ a:hover{
 
 
 .ljgd{
-    color: #DC8C29;
+
 }
 
 /*gps*/
@@ -322,6 +325,7 @@ p{
     cursor: pointer;
 }
 .step_button:hover{
+    background: #0068B6;
     border: none;
     padding: 3px 20px;
     color: white;
@@ -338,7 +342,7 @@ p{
     cursor: pointer;
 }
 .step_button_s:hover{
-    background: #ED8719;
+    background: #D26D02;
     border: none;
     color: white;
     padding: 3px 20px;

@@ -58,77 +58,57 @@
     left: 0;width: 100%;
     color: white !important;
 }
-.myusptx a{
-     color: white
- }
-.myusptx .col-md-3{
-     line-height: 30px;
-     float: right;
-     width: 370px !important;
-    margin-left: -200px;
- }
-.myusptx .col-md-1{
-      margin-right: -30px;
+.toux1{
+    float: left;
+    margin-right: 20px;
 }
-.myusptx .col-md-8{
+.toux2{
+    float: left;
+    padding: 10px 0;
     line-height: 30px;
-    width: 810px !important;
-    margin-right: -200px;
+    overflow: hidden;
 }
-.myusptx .col-md-3>div{
-    height: 30px;
-}
-.myusptx .col-md-3 .progress{
-    margin-bottom: 0;
-    width: 100%;
-    margin-top: 0 !important;
-    height: 6.2px !important;
-}
-.jjd{
-    width: 60%;
-    padding-top: 13px
-}
-
-.myusptx .col-md-8{
-    line-height: 30px;
- }
-.myusptx .col-md-8 div{
-    line-height: 30px;
-    height: 30px;
-}
-.c8top{
-    font-size: 18px;
-}
-.toux{
+.toux1 img{
     background: url("/imgs/myunspay/toux.png");
     background-size: 80px 80px;
     width: 80px;
     height: 80px;
 }
+.myusptx a{
+     color: white
+ }
+.toux3{
+    float: right;
+    width: 300px;
+    padding: 10px 0;
+    line-height: 30px;
+    overflow: hidden;
+}
+.toux3 .progress{
+    width: 200px;
+    height: 10px;
+}
+.toux3 .progress-bar{
+    width: 200px;
+}
+.c8top{
+    font-size: 18px;
+}
+
 .rz{
-    margin: 0 15px;
+    margin: 0 12px;
     position: relative;
+}
+.rz1{
+    margin-left: 25px;
 }
 .rz span{
     font-size: 14px;
 }
 .rz:hover span{
     display: block;
+}
 
-}
-.rz span{
-    display: none;
-    width: 120px;
-    background: white;
-    position: absolute;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 5px;
-    top:-55px;
-    left: -5px;
-    color: #000000;
-    box-shadow: 0 1px 5px #000;
-}
 .smicon1{
     background: url("/imgs/myunspay/toux1.png");
     display: inline-block;
@@ -340,7 +320,9 @@
 #fiv27{
     background-position: -1050px 0 ;
 }
-
+.cir4 span{
+    font-size: 16px;
+}
 .tit{
     width: 100%;
     border-bottom: 1px solid #E8E8E8;
@@ -380,6 +362,7 @@
 .whi{
     color: #AEAEAE;
     padding: 5px;
+    font-size: 12px;
 }
 
 
