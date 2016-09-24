@@ -513,6 +513,9 @@
     text-align: right;
     margin-top: 30px;
 }
+.wittop p{
+    padding: 3px 0;
+}
 
 .cir44 .col-md-3{
     text-align: center;
