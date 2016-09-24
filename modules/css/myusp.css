@@ -540,8 +540,8 @@
     border-bottom: 1px solid #F7F7F7;
 }
 .bo .nav-tabs > li{
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
 }
 
 .bo #myTabContent tbody tr:nth-child(odd){
