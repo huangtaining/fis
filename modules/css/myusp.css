@@ -349,7 +349,8 @@
     width: 100%;
     border-bottom: 1px solid #E8E8E8;
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: 15px;
+    color: #333;
 }
 .five{
     width: 100%;
