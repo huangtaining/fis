@@ -556,3 +556,9 @@
 .bo .tad-pane_box{
         background: #F7F7F7;
 }
+.bo #myTabContent table td{
+  font-size: 12px !important;
+}
+.twoh{
+    line-height: 22px !important;
+}
