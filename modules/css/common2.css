@@ -22,7 +22,6 @@ a:hover{
 }
 .yell{
     color:#EE881A !important;
-    font-weight: bold;
 }
 .mb20{
     margin-bottom: 20px;
@@ -612,7 +611,7 @@ p{
     width: 185px;
     position: absolute;
     left: 380px;
-    top: 14px;
+    top: 17px;
 }
 
 .form-item input[type=text]{
