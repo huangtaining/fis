@@ -3,7 +3,7 @@
 
 .help_aboutus_right{width: 947px;border: 1px solid #E8E8E8;float: right;background-color: #fff;}
 .help_aboutus_right h2{height: 40px;line-height: 40px;border-bottom: 1px solid #E8E8E8;padding-left: 40px;font-size: 15px;}
-.help_aboutus_right .help_right_box{width: 100%;padding: 0px 20px;}
+.help_aboutus_right .help_right_box{width: 100%;padding: 0px 37px;}
 .help_aboutus_right ul{padding-bottom: 30px;}
 .help_aboutus_right ul li{height: 60px;line-height: 60px;border-bottom: 1px dashed #E8E8E8;}
 .help_aboutus_right ul li img{vertical-align: middle;padding:0 25px;margin-bottom: 4px;}
@@ -13,9 +13,9 @@
 /*收费规则*/
 .help_aboutus_right .help_right_box span{text-align: center;padding: 20px 0 10px 0;font-size: 16px;border-bottom: 1px solid #e4e4e4;display: inline-block;font-weight:bold;width: 100%;}
 .help_aboutus_right .help_right_box .text{padding: 20px 0;color: #666;}
-.help_right_box .text p{line-height: 30px;text-indent:2em;font-size: 14px;font-weight: bold;padding:5px 0;}
+.help_right_box .text p{line-height: 30px;text-indent:2em;font-size: 14px;padding:5px 0;}
 .help_right_box .text h3{padding:10px 0;font-weight: bold;}
-.help_right_box .text em{padding: 10px 0;text-indent:2em;font-size: 14px;display:block;}
+.help_right_box .text em{padding: 10px 0;text-indent:2em;font-size: 12px;display:block;}
 
 /*账户密码*/
 #title{padding-bottom: 0;margin-top: 10px;background-color: #F7F7F7;}
