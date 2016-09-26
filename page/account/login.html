@@ -35,7 +35,7 @@
 						<div class="form-group has-feedback">
 
 							<div class="" style="height: 75px;">
-								<input type="password" class="form-control" name="password" placeholder="请输入登录密码" />
+								<input type="password1" class="form-control" name="password1" placeholder="请输入登录密码" />
 								<div class="errorholder">
 								</div>
 							</div>
@@ -96,31 +96,30 @@
 							validating: 'glyphicon glyphicon-refresh'
 						},
 						fields: {
-							 username: {
-                            validators: {
-                                callback: {
-                                    message: '请填写手机号码或者邮箱',
-                                    callback: function(value, validator) {
-                                        var isvalid = true;
-                                        var re = /^(13[0-9]{9})|(15[89][0-9]{8})$/;
-                                        var re_email = /\w@\w*\.\w/;
-                                        if (re.test(value) || re_email.test(value)) {
-                                            isvalid = true;
-                                        } else {
-                                            isvalid = false;
-                                        }
-                                        if (isvalid) {
-                                            console.log(validator)
-                                            validator.updateStatus('username', 'VALID');
-                                            return true;
-                                        } else {
-                                            return false;
-                                        }
-                                    }
-                                }
-                            }
-                        },
-							password: {
+							 	username: {
+							validators: {
+								callback: {
+									message: '请填写手机号码或者邮箱',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re = /^(13[0-9]{9})|(15[89][0-9]{8})$/;
+										var re_email = /\w@\w*\.\w/;
+										if(re.test(value) || re_email.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('username', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+							password1: {
 								validators: {
 									notEmpty: {
 										message: '长度不低与8个字符'
