@@ -10,8 +10,9 @@
 		<style type="text/css">
 		.pay-step2_top ul li{padding: 10px 0;}
 		.pay-step2_top ul li em{width: 300px;display:inline-block;text-align: right;padding-right: 10px;}
-		.pay-step2_top ul li input{width: 280px;height:35px;line-height:35px;display: inline-block;}
+		.pay-step2_top ul li input{width: 280px;height:35px;line-height:35px;display: inline-block;font-size:12px;}
 		.pay-step2_top ul li.half input{width: 133px;}
+		.pay-step2 .form-control{  padding-right:0px;  }
 		.form-group {margin-bottom:0px;}
 		.ysbformvalidate .has-feedback.has-error .errorholder{height: 35px;line-height: 35px;}
 		.ysbformvalidate .has-feedback .form-control-feedback {background: url(/static/css/img/form-error.png) no-repeat 10px 11px;}
@@ -51,31 +52,31 @@
 			  
 			  <ul>
 			  	<li class="form-group has-feedback">
-			  		<em>持卡人姓名：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control" />
+			  		<em>持卡人姓名：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control" placeholder="请输入持卡人姓名"/>
 			  		<div class="errorholder" style="float: right;width:300px;margin-right: 250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li class="form-group has-feedback">
-			  		<em>持卡人身份证：</em><input type="card" name="card" class="form-control"/>
+			  		<em>持卡人身份证：</em><input type="card" name="card" class="form-control" placeholder="输入持卡人身份证"/>
 			  	    <div class="errorholder" style="float: right;width:300px;margin-right: 250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li class="form-group has-feedback">
-			  		<em>银行预留手机号：</em><input type="phone" name="phone" class="form-control"/>
+			  		<em>银行预留手机号：</em><input type="phone" name="phone" class="form-control" placeholder="请输入银行预留手机号"/>
 			  		<div class="errorholder" style="float: right;width: 300px;margin-right: 250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li class="form-group has-feedback">
-			  		<em>银行卡号：</em><input type="bankcard" name="bankcard" class="form-control"/>
+			  		<em>银行卡号：</em><input type="bankcard" name="bankcard" class="form-control" placeholder="请输入银行卡号"/>
 			  		<div class="errorholder" style="float: right;width: 300px;margin-right: 250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li class="half form-group has-feedback">
-			  		<em>有效期：</em><input type="datetime" name="datetime" class="form-control"/> - <input type="datetime" name="datetime" class="form-control"/>
+			  		<em>有效期：</em><input type="datetime" name="datetime" class="form-control" placeholder="请输入日期"/> - <input type="datetime" name="datetime" class="form-control" placeholder="请输入日期"/>
 			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li class="half form-group has-feedback">
-			  		<em>CVV2：</em><input type="number1" name="number1" class="form-control"/>
+			  		<em>CVV2：</em><input type="number1" name="number1" class="form-control" placeholder="请输入卡号后三位"/>
 			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li class="half form-group has-feedback">
-			  		<em>短信校验码：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control"/><input type="button" id="btn" value="免费获取验证码" style="margin-left: 10px;text-indent: 0;width: 140px;"/>
+			  		<em>短信校验码：</em><input type="ddlQuestion" name="ddlQuestion" class="form-control" placeholder="请输入校验码"/><input type="button" id="btn" value="免费获取验证码" style="margin-left: 10px;text-indent: 0;width: 140px;"/>
 			  		<div class="errorholder" style="float: right;width: 300px;margin-right:250px;margin-left: 0;"></div>
 			  	</li>
 			  	<li><div style="padding-left: 298px;">

@@ -174,3 +174,9 @@
     color: #00A0E8;
     margin-left:900px;
 }
+.allbody .bdcg{
+    text-align: center;
+    height:56px;
+    line-height:56px;
+    background:url("/imgs/icons/B3-18.png") no-repeat 80px center;
+}
