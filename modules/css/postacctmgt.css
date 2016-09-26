@@ -613,13 +613,13 @@
     float:right;
     font-size:12px;
     color:#00A0E8;
+    margin-top:2px;
 }
 .authentication .yhkrz ul{
     width:855px;
     height:100%;
     margin:0 auto;
     margin-top:37px;
-
 }
 .authentication .yhkrz ul li{
     float:left;
