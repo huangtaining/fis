@@ -380,6 +380,7 @@ p{
     background: #0068B6;
     border: none;
     padding: 6px 20px;
+    color: white;
 }
 .step_button_l:visited{
     color: white;

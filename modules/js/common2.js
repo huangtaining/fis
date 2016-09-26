@@ -471,6 +471,15 @@ $(function(){
         }
     });
 
+
+
+    $(".openlxr,.openlxr2").click(function(e){
+              var _st=$(window).scrollTop();
+              var _ot=$(this).offset().top;
+              var _ol=$(this).offset().left;
+              $(".modal-dialog").css({"left":130,"top":(_ot-_st-30)})
+    })
+
 })
 
 
