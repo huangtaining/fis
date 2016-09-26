@@ -172,6 +172,7 @@ $(function(){
             skfzh:{
                 required: true
             },
+            //安全保护问题
             safe_qus:{
                 required:true
             },

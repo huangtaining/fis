@@ -7,10 +7,14 @@
     <!--STYLE_PLACEHOLDER-->
     <link href="/modules/css/common2.css" rel="stylesheet">
     <link href="/modules/css/safe.css" rel="stylesheet">
+    <style type="text/css">
+       #allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+    </style>
     <script src="/modules/lib/ysbbase.min.js"></script>
     <script src="/modules/app/jquery.validate.min.js"></script>
     <script src="/modules/js/common2.js"></script>
     <script src="/modules/js/safe.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=wqjRU8bEUc672a68TxrqnRv1BKt9gItq"></script>
     <script>
         var $ = require('jquery');
         require('modules/app/jquery.validate.min');
@@ -78,7 +82,7 @@
 
             </form>
 
-
+            <div id="allmap"></div>
         </div>
 
     </div>
@@ -94,7 +98,14 @@
 <script src="lib/mod.js" data-loader></script>
 
 <!--SCRIPT_PLACEHOLDER-->
-
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
 
 </body>
 
