@@ -64,6 +64,9 @@
     list-style: none;
     margin-left: 0
 }
+.hero-scene-text li {
+      height: 336px;
+}
 
 .hero-scene-text h1 {
     margin-top: 15px;
