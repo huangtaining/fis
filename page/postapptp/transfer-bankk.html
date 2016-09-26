@@ -28,96 +28,109 @@
     <div class="layout">
         <!--GPS-->
         <div class="gps">
-            您的当前位置&nbsp;:&nbsp;<span>我的银生宝</span>&nbsp;>&nbsp;<span >提现</span>
+            您的当前位置&nbsp;:&nbsp;<span>我的银生宝</span>&nbsp;>&nbsp;<span >转账到银行账户</span>
         </div>
         <!--主体-->
-        <div class="alltit">提现</div>
+        <div class="alltit">转账到银行账户</div>
+
+        <!--步骤图-->
+        <div class="allstep clearfix" style="padding-bottom:10px;">
+            <h5 class="shouk">你正在使用非担保交易，确认付款后，款项直接进入对方的账户。</h5>
+            <!--进度条部分-->
+            <ul class="progress clearfix" style="margin-left: 0">
+                <li class="firstli">
+                    <div class="form-one"></div>
+                    <div class="quan-one">1</div>
+                    <p>填写付款表单</p>
+                </li>
+                <li class="secli">
+                    <div class="form-one change"></div>
+                    <div class="quan-one quanc">2</div>
+                    <p>确认付款信息</p>
+                </li>
+                <li class="firstli threeli">
+                    <div class="form-one change"></div>
+                    <div class="quan-one quanc">3</div>
+                    <p  style="margin-left:-120px;">等待付款到账</p>
+                </li>
+            </ul>
+        </div>
 
 
         <div id="recbo" class="allbody">
 
-            <div class="witstep">
 
-
-                <div class="clearfix" style="padding-bottom:30px;">
-
-                    <ul class="progress clearfix quepro" style="margin: 30px 0 1% 0;">
-                        <li class="firstli">
-                            <div class="form-one"></div>
-                            <div class="quan-one">1</div>
-                            <p>填写付款表单</p>
-                        </li>
-                        <li class="secli threeli">
-                            <div class="form-one change"></div>
-                            <div class="quan-one quanc">2</div>
-                            <p style="margin-left:-56px;">确认付款信息</p>
-                        </li>
-                        <li class="firstli threeli">
-                            <div class="form-one change"></div>
-                            <div class="quan-one quanc">3</div>
-                            <p style="margin-left:-120px;">提现申请完成，等待到账</p>
-                        </li>
-                    </ul>
-                </div>
-
-
-                <div class="wittop">
-                    <p>单笔限额<span class="yell">100,000,000</span>元</p>
-                    <p>当日累计限额<span class="yell">100,000,000</span>元</p>
-                </div>
-                <div class="witwar stop">
-                    <div class="gan"></div>
-                    <div class="gan_text">如果需要转出资金到他人银行账户，请使用“<a href="###" class="bullq">转账到银行卡</a>”服务，本服务不支持信用卡还款</div>
-                </div>
-            </div>
 
             <form class="form-horizontal ysbbd">
                 <fieldset>
 
-                    <!--充值账户-->
+                    <!-- 充值金额-->
                     <div class="form-item">
-                        <label class="form-left">账户余额&nbsp;:</label>
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;收款人银行&nbsp;:</label>
                         <div class="form-right">
-                            <span class="topa">989,767,110</span>元
-                        </div>
-                    </div>
-
-                    <!-- my账户-->
-                    <div class="form-item">
-
-                        <label class="form-left">收款银行账户名称&nbsp;:</label>
-                        <div class="form-right">
-                            <select class="skyhzh">
-                                <option>淘宝支付账户</option>
-                                <option>刷脸</option>
+                            <select>
+                                <option>--请选择收款方银行--</option>
                             </select>
-                            <a href="#" class="bullq">添加银行账户</a>
-                        </div>
-                    </div>
-
-                    <!-- 收款银行账号-->
-                    <div class="form-item">
-
-                        <label class="form-left">收款银行账号&nbsp;:</label>
-                        <div class="form-right">
-                            <span>****1313</span>
                         </div>
                     </div>
 
                     <!-- 充值金额-->
                     <div class="form-item">
-                        <label class="form-left"><span class="yell must">*</span>&nbsp;提现金额&nbsp;:</label>
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;银行卡号/存折号&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" placeholder="请输入金额" name="txje" id="txje" class="chinain topb">元
+                            <input type="text" name="yhkh" id="yhkh">
+                            <a class="bullq openlxr2" data-toggle="modal" data-target="#mone" href="###" style="margin-right: 20px">从联系人中选取</a>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;开户姓名&nbsp;:</label>
+                        <div class="form-right">
+                            <input type="text" placeholder="请输入开户姓名" name="khxm" id="khxm">
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;开户省份&nbsp;:</label>
+                        <div class="form-right">
+                            <select>
+                                <option>--请选择您的开户行省份--</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;开户城市&nbsp;:</label>
+                        <div class="form-right">
+                            <select>
+                                <option>--请选择您的开户行城市--</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;开户行名称&nbsp;:</label>
+                        <div class="form-right">
+                            <input type="text" placeholder="请输入开户行名称" name="khhmc" id="khhmc"><span class="c91">(最多40个汉字)</span>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;付款金额&nbsp;:</label>
+                        <div class="form-right">
+                            <input type="text" placeholder="请输入付款金额" name="fkje" id="fkje" class="chinain topb">元
                             <img src="/imgs/icons/B3-1.png" class="jisuan">
                         </div>
                     </div>
 
-
-
                     <!--充值金额大写-->
                     <div class="form-item">
-                        <label class="form-left">提现金额大写&nbsp;:</label>
+                        <label class="form-left">金额大写&nbsp;:</label>
                         <div class="form-right">
                             <input class="chinaout" >
                         </div>
@@ -129,6 +142,23 @@
                         <div class="form-right">
                             <span class="yell" style="margin-right: 20px">10.00</span>元
                             <a href="#" class="bullq" style="margin-left: 20px">查看收费标准</a>
+                        </div>
+                    </div>
+
+                    <!-- 商品信息-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell"></span>&nbsp;商品信息&nbsp;:</label>
+                        <div class="form-right">
+                            <input type="text" placeholder="请输入商品信息" style="margin-right: 18px">
+                        </div>
+                    </div>
+
+                    <!-- 资金用途-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;资金用途&nbsp;:</label>
+                        <div class="form-right">
+                            <input type="text" placeholder="请输入资金用途" style="margin-right: 18px" name="zjyt" id="zjyt">
+                            <span style="margin-left: 18px" class="c91">最长85个字符</span>
                         </div>
                     </div>
 
@@ -176,6 +206,60 @@
             <p class="que">给银生宝充值成功，为何银生宝账户里没钱?</p>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content xzlxr">
+                <!--头部-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <p class="modal-title s20" id="myModalLabel">选择收款人</p>
+
+                </div>
+                <!--身体-->
+                <div class="modal-body chpeople">
+                    <input type="search" placeholder="请输入账号" class="sslxr"><button class="right">查询</button>
+                    <table>
+                        <tbody>
+                        <tr style="background: #DDD">
+                            <td class="ck"><input type="radio" name="dxlxr" checked></td>
+                            <td>彭敏</td>
+                            <td>peng1977@163.com</td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="radio"  name="dxlxr"></td>
+                            <td>十大</td>
+                            <td>pmmin19667@163.com</td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="radio"  name="dxlxr"></td>
+                            <td>彭试试</td>
+                            <td>mmin17777@163.com</td>
+                        </tr>
+                        <tr>
+                            <td class="ck"><input type="radio"  name="dxlxr"></td>
+                            <td>啊啊</td>
+                            <td>pen14477@163.com</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--jo-->
+                <div class="modal-footer">
+
+                    <!--&lt;!&ndash;保存&ndash;&gt;-->
+                    <!--<button type="button" class="btn btn-primary">确定</button>-->
+                    <!--关闭-->
+                    <button type="button" class="btn btn-default modalqd" data-dismiss="modal">确定</button>
+                    <!--关闭-->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--计算器-->
@@ -215,6 +299,7 @@
         <td class="clea">取消</td>
     </tr>
 </table>
+
 
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer-login.html?__inline">

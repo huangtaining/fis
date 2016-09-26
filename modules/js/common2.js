@@ -244,6 +244,18 @@ $(function(){
                 required:true,
                 isMobile:true
             },
+            //手机号码
+            yhkh:{
+                required:true
+            },
+            //手机号码
+            khxm:{
+                required:true
+            },
+            //手机号码
+            khhmc:{
+                required:true
+            },
             email: {
                 required: true,
                 email: true
@@ -382,6 +394,18 @@ $(function(){
             sjhm:{
                 required:"请输入手机号码",
                 isMobile:"格式错了"
+            },
+            //手机号码
+            yhkh:{
+                required:"请输入银行卡号"
+            },
+            //手机号码
+            khxm:{
+                required:"请输入开户姓名"
+            },
+            //手机号码
+            khhmc:{
+                required:"请输入开户行名称"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"
