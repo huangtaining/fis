@@ -93,10 +93,9 @@
                                             <input type="radio" id="seceight" class="xuan"   name="check" ><label for="seceight" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                         <li>
-                                            <input type="radio" id="secnone" class="xuan"   name="secnone" ><label for="secfive" class="seclabel">彭敏(pengmin1977@163.com)</label>
+                                            <input type="radio" id="secnone" class="xuan"   name="check" ><label for="secnone" class="seclabel">彭敏(pengmin1977@163.com)</label>
                                         </li>
                                     </ul>
-
                                 </div>
                                 <div class="modal-footer modalfooter">
                                     <button type="button" class="btn btn-default active ">确定</button>
@@ -318,6 +317,12 @@
 
 
     }
+
+    $(".modalp").click(function(e){
+        var _st=$(window).scrollTop();
+        var _ot=$(this).offset().top;
+        $(".modal-dialog").css({"left":80,"top":(_ot-_st-330)})
+    })
 </script>
 </body>
 </html>
