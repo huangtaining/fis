@@ -123,7 +123,9 @@ vertical-align: middle;margin-top: -3px;}
 	margin: 20px 0 30px 35px;
 	background-color:#F1870C;
 }
-
+.pay ul li button:hover{
+	background-color: #E26D02;
+}
 .pay .pay_ul {
 	padding: 30px 0 30px 70px;
 }
