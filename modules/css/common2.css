@@ -337,6 +337,7 @@ p{
     line-height: 25px;
     display: inline-block;
     text-align: center;
+    font-size: 12px;
 }
 .step_button:hover{
     background: #0068B6;
@@ -357,6 +358,7 @@ p{
     width: 75px;
     display: inline-block;
     text-align: center;
+    font-size: 12px;
 }
 .step_button_s:hover{
     background: #D26D02;
