@@ -830,3 +830,9 @@ p{
 .c91{
     color: #919191;
 }
+.bo .modal-body{
+    padding: 0 20px;
+}
+.bo .modal-footer{
+    padding:20px;
+}

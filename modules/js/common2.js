@@ -63,11 +63,6 @@ $(function(){
 
     //点击表单验证
     $(".step_button,.step_button_s,.life_step").click(function(){
-        if($(".ysbbd").valid()){
-            alert("提交成功")
-        }else{
-            alert("提交失败")
-        }
     });
 
 //    自定义预留信息
@@ -472,15 +467,14 @@ $(function(){
     });
 
 
-
+    //
     $(".openlxr,.openlxr2").click(function(e){
               var _st=$(window).scrollTop();
               var _ot=$(this).offset().top;
-              var _ol=$(this).offset().left;
-              $(".modal-dialog").css({"left":130,"top":(_ot-_st-30)})
+              $(".modal-dialog").css({"left":130,"top":(_ot-_st-52)})
     })
 
-})
+});
 
 
 
