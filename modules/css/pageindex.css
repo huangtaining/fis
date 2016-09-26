@@ -203,9 +203,9 @@ border: 1px solid #fff;border-radius:5px;font-size: 17px;opacity: .8;}
 
 
 
-.lift a img {
+/*.lift a img {
 	width: 100%;
-}
+}*/
 
 .lift .lift_top {
 	width: 100%;
@@ -246,7 +246,7 @@ border: 1px solid #fff;border-radius:5px;font-size: 17px;opacity: .8;}
 	cursor: pointer;
 }
 
-
+.beautify a{text-decoration: none;}
 /*第五部分*/
 
 .cooperation {
