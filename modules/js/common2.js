@@ -63,6 +63,7 @@ $(function(){
 
     //点击表单验证
     $(".step_button,.step_button_s,.life_step").click(function(){
+        $(".ysbbd").valid();
     });
 
 //    自定义预留信息
