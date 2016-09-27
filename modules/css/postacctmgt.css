@@ -233,7 +233,6 @@
 .changeemail input.valid{
     border:1px solid  #3c763d;
     outline: 0;
-
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .changeemail input.valid:focus{
@@ -265,11 +264,9 @@
     height:632px;
     border:1px solid #E8E8E8;
     background-color:white;
-
 }
 .changemobile .email-content .email-header{
     padding:31px 0 26px 47px;
-
 }
 .changemobile .email-content .email-header h3{
     font-size:15px;
@@ -306,7 +303,6 @@
 }
 .changemobile .nextbtn{
     margin:40px 0 0 47px;
-
 }
 .changemobile .nextbtn .next{
     width:90px;
@@ -316,7 +312,6 @@
     border-radius: 3px;
     border:none;
     font-size:12px;
-
 }
 .changemobile .nextbtn .next:hover{
     background-color:#D26D02;
@@ -1571,7 +1566,7 @@
 .tradeaccount .modalcontentt p button{
     width:57px;
     height:25px;
-    background-color:#00A0E8;
+    color:#ffffff;
     line-height:25px;
     font-size:12px;
     border-radius: 3px;
@@ -1580,6 +1575,16 @@
 .tradeaccount .modalcontentt p .sure{
     margin-left:120px;
     margin-right:10px;
+    background-color:#00A0E8;
+}
+.tradeaccount .modalcontentt p .sure:hover{
+    background-color: #0068B6;
+}
+.tradeaccount .modalcontentt p .fanh{
+    background-color: #EE8719;
+}
+.tradeaccount .modalcontentt p .fanh:hover{
+    background-color: #D26D02;
 }
 .tradeaccount .modalcontentt label.error{
     margin-left:120px;
@@ -1680,22 +1685,30 @@
 .tradeaccount .contactmodal p button{
     width:57px;
     height:25px;
-    background-color:#00A0E8;
     line-height:25px;
     font-size:12px;
     border-radius: 3px;
-    /*margin-left:120px;*/
+    color:#ffffff;
 }
 .tradeaccount .contactmodal p .sure{
     margin-left:120px;
     margin-right:10px;
+    background-color:#00A0E8;
+}
+.tradeaccount .contactmodal p .sure:hover{
+    background-color: #0068B6;
+}
+.tradeaccount .contactmodal p .fanh{
+    background-color: #EE8719;
+}
+.tradeaccount .contactmodal p .fanh:hover{
+    background-color: #D26D02;
 }
 .tradeaccount .contactmodal .num{
     margin-left:145px!important;
     width:360px!important;
     margin-top:-15px;
 }
-
 .tradeaccount .contactmodal .alert{
     width:393px;
     height:88px;
@@ -1767,7 +1780,6 @@
     border:1px solid #E8E8E8;
     background-color:white;
     padding-top:24px;
-
 }
 .addcard .tips{
     height:62px;
@@ -1815,14 +1827,12 @@
 }
 .addcard .card-content .mess input{
     width:154px;
-
 }
 .addcard .card-content .mess .yzm{
     display: inline-block;
     width:100px;
     height:44px;
     background-color:#D8D8D8;
-    /*margin-top:-20px;*/
     vertical-align: middle;
     margin-left:13px;
 }
