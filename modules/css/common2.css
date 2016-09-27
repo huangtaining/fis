@@ -261,9 +261,10 @@ a:hover{
     width: 100%;
     background: #FFF9ED;
     margin-bottom: 25px;
-    padding:36px 100px;
+    padding:23px 100px;
     overflow: hidden;
     line-height: 25px;
+    color: #4a4a4a;
 
 }
 .shoujul{
@@ -392,7 +393,10 @@ p{
     position: absolute;
     right: 35px;
     top:35px;
-    padding: 10px 20px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #585858;
 }
 .norque{
     margin-bottom: 90px;
