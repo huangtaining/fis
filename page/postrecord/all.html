@@ -7,12 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>交易记录</title>
     <link rel="import" href="../layout/header.html?__inline">
-  
 		<!--STYLE_PLACEHOLDER-->
 	</head>
 	<body class="pageall">
 		<link rel="import" href="modules/widget/header/header-login.html?__inline">
-		<link rel="stylesheet" href="../../modules/lib/My97DatePicker/skin/WdatePicker.css" />
   	 <!--交费记录-->
   <section class="trading_box">
     <div class="trading-record centre">
@@ -273,7 +271,7 @@
 		<div class="modal-content" style="width:280px;margin: 0 auto;">
 			<div class="modal-header">
 
-				<input id="d421" class="Wdate" type="text" onfocus="WdatePicker({skin:'whyGreen',maxDate:'%y-%M-%d'})"/> — <input data-provide="datepicker" class="xzrq2">
+				<input data-provide="datepicker" class="xzrq1"> — <input data-provide="datepicker" class="xzrq2">
 			</div>
 			<div class="modal-body">
 				<p>快捷日期</p>
@@ -299,7 +297,6 @@
     
 </section>   
     <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
-      <script src="modules/lib/My97DatePicker/WdatePicker.js"></script>
 		<script src="lib/mod.js"></script>
 		<script>
 			require('ui/index');
