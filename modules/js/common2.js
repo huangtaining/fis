@@ -258,6 +258,9 @@ $(function(){
                 required: true,
                 email: true
             },
+            bdyx:{
+                email: true
+            },
             "topic[]": {
                 required: "#newsletter:checked",
                 minlength: 2
@@ -404,6 +407,9 @@ $(function(){
             //手机号码
             khhmc:{
                 required:"请输入开户行名称"
+            },
+            bdyx:{
+                email:"请输入正确格式"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"
