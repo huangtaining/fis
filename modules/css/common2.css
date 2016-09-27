@@ -68,7 +68,7 @@ a:hover{
 }
 
 .hui{
-   color: #B2B2B2;
+   color: #919191;
 }
 /*警告*/
 .stop{
@@ -480,6 +480,9 @@ p{
     text-align: center;
     margin-top: -1px;
 }
+.ysbbd{
+    color: #585858;
+}
 
 .form-item{
     width: 100%;
@@ -857,4 +860,8 @@ p{
 }
 .norque h3{
     color: #4a4a4a;
+}
+.jt{
+    margin-left: 5px;
+    margin-top: -3px;
 }
