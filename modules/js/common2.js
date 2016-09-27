@@ -482,7 +482,7 @@ $(function(){
     });
 
 
-    //
+    //根据位置弹出联系人
     $(".openlxr,.openlxr2").click(function(e){
               var _st=$(window).scrollTop();
               var _ot=$(this).offset().top;
