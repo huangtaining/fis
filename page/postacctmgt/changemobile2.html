@@ -25,12 +25,13 @@
 	.layout .phone li{padding: 15px 0;font-size: 14px;color: #595959;}
 	.layout .phone li p{font-size: 12px;color: #595959;}
 	.layout .phone li em{color: #FF8700;}
-	.layout .phone li.liinput input{padding: 0 10px;height: 25px;line-height: 25px;margin-left:15px;text-indent: 0;background-color: #F7F7F7;border:1px solid #D5D5D5;font-size: 12px;border-radius:3px ;}
+	.layout .phone li.liinput input{padding: 0 10px;height: 25px;line-height: 25px;margin-left:15px;text-indent: 0;background-color: #F7F7F7;border:1px solid #D5D5D5;font-size: 12px;}
     .layout .phone li .form-control{width: 186px;height: 25px;line-height: 25px;}
     .layout .phone li.form-group .errorholder{height: 25px;line-height: 25px;}
     .ysbformvalidate .has-feedback .form-control-feedback {
     background: url(/static/css/img/form-error.png) no-repeat 10px 5px;
 }
+.layout .phone li .form-control input{border-radius:none ;}
     .layout .phone li label{font-weight: normal;}
 </style>
 </head>
@@ -90,11 +91,11 @@
     		<li style="padding-left:20px;"><span>您的手机号码：</span> <span> 188****8888</span></p></li>
     		<li class="form-group has-feedback" style="padding-left:50px;margin-bottom: 0;">
     			<label><em>*</em><span> 验证码： </span> </label>
-    			<input type="text" class="form-control" name="ddlQuestion" placeholder="请输入验证码" />
+    			<input type="text" class="form-control" name="ddlQuestion" placeholder="请输入验证码" style="border-radius:0;"/>
     			<div class="errorholder"></div>
     		</li>
     		<li style="padding-left:120px;"><p>若1分钟内未收到验证码短信，您可以免费重新获取验证码</p></li>
-    		<li style="padding-left:105px;" class="liinput"><input type="button" id="btn" value="重新免费获取"/></li>
+    		<li style="padding-left:105px;" class="liinput"><input type="button" id="btn" value="重新免费获取" style="border-radius:3px ;"/></li>
     		<li style="padding-left:120px;"><span class="step_button_s">确认修改</span></li>
     	</ul>
     </div>
