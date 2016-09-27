@@ -121,8 +121,37 @@
 .acctinfo .account-right .acc-content .con-center em{
     color:#EE8719;
 }
+.acctinfo .modalcon{
+    width:400px;
+    height:300px;
+   margin-left:120px;
+    margin-top:200px;
+    /*text-align: center;*/
+}
+.acctinfo .modalcon .sure{
+    background-color: #00A0E8;
+    color:white;
+    border:none;
+    border-radius: 3px;
+    margin-right:15px;
+    width:57px;
+    font-size:12px;
+}
+.acctinfo .modalcon .sure:hover{
+    background-color: #0068B6;
+}
 
-
+.acctinfo .modalcon .qux{
+    background-color: #EE8719;
+    color:white;
+    border:none;
+    border-radius: 3px;
+    width:57px;
+    font-size:12px;
+}
+.acctinfo .modalcon .qux:hover{
+    background-color: #D26D02;
+}
 /*修改邮箱*/
 .changeemail{
     width:100%;
