@@ -1082,7 +1082,7 @@ select.form-control {
 .trading-record .nav-tabs li a:hover {
 	width: 152px;
 	background-color: #F7F7F7;
-	color: #0F0F0F;
+	color:#00A0E8;
 }
 
 .nav-tabs {
@@ -1210,6 +1210,7 @@ select.form-control {
 .table-striped tbody tr td select {font-size: 12px;
 	border: none;
 }
+
 
 .table-striped tbody tr td:first-child {
 	padding-left: 30px;
