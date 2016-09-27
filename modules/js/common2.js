@@ -62,7 +62,7 @@ $(function(){
 
     //点击表单验证
     $(".step_button,.step_button_s,.life_step").click(function(){
-        $(".ysbbd").valid();
+        $(".ysbbd").valid()
     });
 
 //      自定义预留信息
@@ -255,7 +255,6 @@ $(function(){
                 required:true
             },
             email: {
-                required: true,
                 email: true
             },
             bdyx:{
@@ -343,7 +342,9 @@ $(function(){
                 maxlength: "预留信息太长"
             },
             //资金用途
-            email: "请输入一个正确的邮箱",
+            email: {
+                email:"请输入正确邮箱格式"
+            },
             //身份证有效期
             sfzyxq: {
                 required: "请输入身份证有效期",
