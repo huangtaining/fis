@@ -1933,3 +1933,31 @@
     color: #00A0E8;
 
 }
+/*修改手机号成功*/
+.changemobile3 .bdh{
+    width:476px;
+    height:224px;
+    margin-left:310px;
+    color:#585858;
+    margin-top:52px;
+}
+.changemobile3 .bdh p{
+    line-height:24px;
+    color:#585858;
+}
+.changemobile3 .bdsucc{
+    height:56px;
+    line-height:56px;
+    font-size:20px;
+    color:#4A4A4A;
+    background:url("/imgs/icons/B3-18.png") no-repeat 240px center;
+}
+.changemobile3 .bdsucc span{
+    color:#ff6600;
+}
+.changemobile3 .headerb{
+    font-weight: bold;
+}
+.changemobile3 .bdh p a{
+    color:#00A0E8;;
+}
