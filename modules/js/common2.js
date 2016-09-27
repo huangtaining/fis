@@ -260,6 +260,9 @@ $(function(){
             bdyx:{
                 email: true
             },
+            zjhm:{
+                required:true
+            },
             "topic[]": {
                 required: "#newsletter:checked",
                 minlength: 2
@@ -411,6 +414,9 @@ $(function(){
             },
             bdyx:{
                 email:"请输入正确格式"
+            },
+            zjhm:{
+                required:"请输入证件号码"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"

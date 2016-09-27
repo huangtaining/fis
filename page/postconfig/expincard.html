@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 
-    <title>申请动态口令卡</title>
+    <title>取消动态口令卡</title>
     <link rel="import" href="../layout/header.html?__inline">
     <!--STYLE_PLACEHOLDER-->
     <link href="/modules/css/common2.css" rel="stylesheet">
@@ -29,11 +29,11 @@
     <div class="layout">
         <!--GPS-->
         <div class="gps">
-            您的当前位置&nbsp;:&nbsp;<span>安全管理</span>&nbsp;>&nbsp;<span>申请动态口令卡</span>
+            您的当前位置&nbsp;:&nbsp;<span>安全管理</span>&nbsp;>&nbsp;<span>取消动态口令卡</span>
         </div>
         <!--主体-->
         <div class="alltit">
-            申请动态口令卡
+            取消动态口令卡
         </div>
 
 
@@ -44,23 +44,23 @@
 
 
             <!--表单-->
-            <form class="form-horizontal ysbbd"  style="margin-top: 30px">
+            <form class="form-horizontal ysbbd" style="margin-top: 30px">
                 <fieldset>
 
 
                     <!-- 绑定手机号码-->
                     <div class="form-item">
-                        <label class="form-left"><span class="yell must">*</span>&nbsp;请输入登录密码&nbsp;:</label>
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;请输入支付密码&nbsp;:</label>
                         <div class="form-right">
-                                   <button class="kjbtn bullq" name="pwd" id="pwd">请点此安装控件</button>
+                            <input type="button" class="kjbtn bullq" name="paypwd" id="paypwd" value="请点此安装控件" style="height: 25px">
                         </div>
                     </div>
 
                     <!-- 绑定手机号码-->
                     <div class="form-item">
-                        <label class="form-left"><span class="yell must">*</span>&nbsp;支付密码&nbsp;:</label>
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;请输入动态口令&nbsp;:</label>
                         <div class="form-right">
-                                     <button class="kjbtn bullq" name="paypwd" id="paypwd">请点此安装控件</button>
+                            D3:<input type="text" class="dt3">D3:<input type="text" class="dt3">D3:<input type="text" class="dt3">
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
                     <div class="form-item">
                         <label class="form-left">&nbsp;</label>
                         <div class="form-right">
-                            <a class="step_button_s">申请</a>
+                            <a class="step_button_s">取消口令卡</a>
                         </div>
                     </div>
 
@@ -94,17 +94,6 @@
 <script src="lib/mod.js" data-loader></script>
 
 <!--SCRIPT_PLACEHOLDER-->
-<script type="text/javascript">
-    // 百度地图API功能
-    var map = new BMap.Map("allmap");    // 创建Map实例
-    map.centerAndZoom(new BMap.Point(121.513829, 31.156968), 18);  // 初始化地图,设置中心点坐标和地图级别
-    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-    map.setCurrentCity("上海");          // 设置地图显示的城市 此项是必须设置的
-    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-    map.addEventListener('click', function(e){
-        console.log(e.point);
-    });
-</script>
 
 </body>
 
