@@ -526,13 +526,15 @@
     border: 1px solid #F7F7F7;
     border-right: none;
     border-left:none;
+
 }
 .bo .nav-tabs{
     border-bottom: none;
 }
 .bo #myTab a:hover{
-    width: 151px;
+    width: 152px;
     display: inline-block;
+    color: #00a0e8;
 }
 .bo .nav-tabs > li.active{
     border-left:none;
