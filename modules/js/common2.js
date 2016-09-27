@@ -263,6 +263,13 @@ $(function(){
             zjhm:{
                 required:true
             },
+            xsjhm:{
+                required:true,
+                isMobile:true
+            },
+            yzm:{
+                required:true
+            },
             "topic[]": {
                 required: "#newsletter:checked",
                 minlength: 2
@@ -417,6 +424,13 @@ $(function(){
             },
             zjhm:{
                 required:"请输入证件号码"
+            },
+            xsjhm:{
+                required:"请输入手机号码",
+                isMobile:"请输入正确格式"
+            },
+            yzm:{
+                required:"请输入验证码"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"
