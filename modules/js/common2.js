@@ -8,13 +8,12 @@
 
 
 $(function(){
-    //    验证必填字段
-//    要验证的
+
 //    其他银行
     $(".qtyh").click(function(){
         console.log("ssss")
         $(".qtyha").slideToggle()
-    })
+    });
 
 
    // 大小写转化
@@ -66,27 +65,29 @@ $(function(){
         $(".ysbbd").valid();
     });
 
-//    自定义预留信息
+//      自定义预留信息
     jQuery.validator.addMethod("ggg", function(value, element) {
         return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
     }, "格式错误");
 
-    //    自定义预留信息
+    //  比较大小
     jQuery.validator.addMethod("xiane", function(value, element) {
         return this.optional(element) || parseInt($(".topa").html()||$(".topa").val())>=$(".topb").val();
     }, "超出上限");
-    // 手机号码验证
+
+    //  手机号码验证
     jQuery.validator.addMethod("isMobile", function(value, element) {
         var length = value.length;
         return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));
     }, "请正确填写您的手机号码");
 
-    // 手机号码验证
+    //  手机或者邮箱
     jQuery.validator.addMethod("sjyx", function(value, element) {
         var length = value.length;
         return this.optional(element) || /(^1[0-9]{10}$)|(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)/.test(value);
     }, "请正确填写您的手机号码");
-    // 限额大小
+
+    //  限额大小
     jQuery.validator.addMethod("xedx", function(value, element) {
         var length = value.length;
         return this.optional(element) || $("#axe").val()<=$("#allxe").val();
