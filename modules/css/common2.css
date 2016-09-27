@@ -845,3 +845,12 @@ p{
 #mtwo{
     overflow: hidden;
 }
+.norque{
+    margin-top: 25px;
+}
+.norque p{
+    color: #919191
+}
+.norque h3{
+    color: #4a4a4a;
+}
