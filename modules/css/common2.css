@@ -839,3 +839,9 @@ p{
 .bo .modal-body table {
     overflow-y: scroll;
 }
+#mone{
+    overflow: hidden;
+}
+#mtwo{
+    overflow: hidden;
+}
