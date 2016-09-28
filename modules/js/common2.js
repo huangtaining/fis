@@ -17,7 +17,7 @@ $(function(){
 
 
    // 大小写转化
-   $(".chinain").change(function(){
+   $(".chinain").keyup(function(){
        if(!isNaN($(this).val())){
            china($(this).val(), $(".chinaout"))
        }
