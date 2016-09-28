@@ -2,22 +2,25 @@
 <html>
 <head lang="en">
 
-    <title>充值_3</title>
+    <title>邮局汇款1</title>
     <link rel="import" href="../layout/header.html?__inline">
     <!--STYLE_PLACEHOLDER-->
     <link href="/modules/css/myusp.css" rel="stylesheet">
     <link href="/modules/css/common2.css" rel="stylesheet">
-    <link href="/modules/css/transfer_com.css" rel="stylesheet">
-    <script src="/modules/lib/ysbbase.min.js"></script>
-    <script src="/modules/app/jquery.validate.min.js"></script>
-    <script src="/modules/js/jsq.js"></script>
-    <script src="/modules/js/common2.js"></script>
-    <script>
-        var $ = require('jquery');
-        require('modules/app/jquery.validate.min');
-        require('modules/js/jsq');
-        require('modules/js/common2');
-    </script>
+<style type="text/css">
+	.rechargeC{padding:10px 0;border:1px solid #E8E8E8;margin: 10px 0 20px 0;font-size: 18px;color: #333333;background-color: #fff;text-indent: 2em;}
+	.Pay_center{padding: 40px 0;}
+	.Pay_center ul li{width: 33%;font-size: 18px;color: #4A4A4A;}
+	.youju_text{padding: 20px 0;background-color: #F7F7F7;margin-top: 30px;}
+	.youju_div{padding: 20px 0;font-size: 18px;color: #4A4A4A;background-color: #FFF9ED;border: 1px solid #EE8719;text-indent: 2em;margin-top: 30px;}
+	.youju_div em{color:#EE8719 ;}
+	.youju_text .img{background: url(../imgs/icons/B3-2.png)no-repeat 10px 2px;width: 50px;height: 25px;display: inline-block;vertical-align: middle;margin-left: 20px;}
+	.form-horizontal ul li{padding: 15px 0;}
+	.form-horizontal ul li span{width: 100px;text-align: right;display: inline-block;margin-left:60px;}
+	.form-horizontal ul li em{color: #EE8719;}
+	.form-horizontal ul li select{width: 189px;height: 25px;line-height: 25px;text-indent:0.5em;}
+	.form-horizontal ul li textarea{width: 189px;height: 100px;text-indent: 0.5em;}
+</style>
 </head>
 <body>
 
@@ -28,116 +31,88 @@
 <div class="bo">
     <!--黄色抬头-->
 
+    
     <div class="layout">
-        <div class="shouju">
-            <div class="shoujul">
-                <div style="margin-right: 60px;float: left">
-                    <span>收款方:</span>
-                    <span>提现账户</span>
-                </div>
-                <span>付款金额:</span>
-                <span class="huang">1020.90</span>
-                <span>元</span>
-            </div>
-            <div class="shoujul" style="float: right;text-align: right">
-                      余额:<span class="huang">.00</span>元
-            </div>
-        </div>
+    	    <div class="rechargeC">银生宝账户充值</div>
+      <div class="Pay_center">
+			<ul class="clearfix">
+				<li style="margin-left:90px;"><span>充值账户：</span><span style="color: #00A0E8;">马玉新(6056230@qq.com)</span></li>
+				<li style="width: 20%;"><span>余额：</span><span><em> 12.55</em>元</span></li>
+				<li>
+					<span>充值金额：  </span>
+					<span><em>1029.00元</em>
+						<span style="font-size:14px ;">&nbsp;(含 <em>0.00</em>元服务)</span>
+					</span>
+
+				</li>
+				
+			</ul>
+		</div>	
     </div>
 
     <!--其他支付-->
     <div class="layout">
 
         <!--其他支付选择银行卡-->
-        <div class="alltit">其他支付</div>
+        <div class="alltit">请选择付款方式</div>
 
-        <div class="allbody recbo" style="padding: 40px">
-
-            <div class="qtfs">
-                <p class="s16">请选择您的付款方式</p>
-                <p class="hui">网上银行:你需要先开通网上银行支付服务,才可以进行"网上银行支付"</p>
-            </div>
-
-            <link rel="import" href="modules/widget/choosebank/index2.html?__inline">
-
-            <div class="bullq qtyh" style="padding-left: 20px">选择其他银行<img src="/imgs/icons/jt.jpg" class="jt"></div>
-
-            <div class="car qtyha" style="display: none">
-                <div class="card_bo2" id="card2">
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-                    <div class="eccard">
-                        <input type="radio" name="eccard">
-                        <span class="eccard_img"><img src="/imgs/payment/B3-8.png"></span>
-                    </div>
-
-
-                </div>
-            </div>
-
-
+        <div class="allbody recbo" style="padding: 40px 20px;">
+            
+  
+<div class="card_tit">
+    <a href="/page/postaccount/rechargeA-1.html">
+        <div class="card_sp" id="tabcard-cxk">
+        储蓄卡(借记卡)
+        </div>
+    </a>
+    <a href="/page/postaccount/rechargeB-1.html"><div class="card_sp" id="tabcard-yhhk">
+        银行汇款
+    </div>
+    </a>
+    <a href="/page/postaccount/rechargeC-1.html">
+        <div class="card_sp active" id="tabcard-yjsk">
+        邮局收款
+        </div>
+    </a>
+</div>
+       
+        <div class="youju_text">
+        	<em class="img"></em>银生宝账户不允许进行虚假交易、银行卡转账套现或洗钱等被禁止的交易行为，否则充值款项将不能提现。
+        </div>
+        
+        <div class="youju_div">
+        	<span>汇款金额：<em>1029.00</em>元</span>
+        </div>
 
             <form class="form-horizontal" style="margin-top: 20px">
+            	
+            	<ul>
+            		<li>
+            			<span><em>*</em>汇款省份：</span>
+            			<select name="">
+            				<option value="">请选择您的汇款省份</option>
+            			</select>
+            		</li>
+            		<li>
+            			<span><em>*</em>汇款城市：</span>
+            			<select name="">
+            				<option value="">请选择您的汇款城市</option>
+            			</select>
+            		</li>
+            		<li>
+            			<span style="vertical-align: top;">备注：</span>
+            			<textarea name="" rows="" cols="" placeholder="请输入..."></textarea>
+            			<em style="color: #919191;">（最多85个汉字）</em>
+            		</li>
+            	</ul>
+            	
+            	
                 <fieldset>
 
                     <!--下一步-->
                     <div class="form-item">
                         <label class="form-right">
-                            <a class="step_button"  style="margin-left: 56px">下一步</a>
+                            <a class="step_button" href="/page/postaccount/rechargeC-2.html" style="margin-left:164px">下一步</a>
                         </label>
                         <div class="form-right"></div>
                     </div>
@@ -151,6 +126,9 @@
 
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
+<script type="text/javascript">
+    require('modules/widget/choosebank/index');
+</script>
 <script src="lib/mod.js" data-loader></script>
 <!--SCRIPT_PLACEHOLDER-->
 </body>
