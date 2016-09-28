@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <title>储蓄卡充值B-1</title>
+    <link rel="import" href="../layout/header.html?__inline">
+    <!--STYLE_PLACEHOLDER-->
+    <link href="/modules/css/myusp.css" rel="stylesheet">
+    <link href="/modules/css/common2.css" rel="stylesheet">
+    <link href="/modules/css/transfer_com.css" rel="stylesheet">
+    <script src="/modules/lib/ysbbase.min.js"></script>
+    <script>
+        var $ = require('jquery');
+        require('modules/app/jquery.validate.min');
+        require('modules/js/jsq');
+        require('modules/js/common2');
+    </script>
+</head>
+<body class="reb">
+
+<link rel="import" href="/modules/widget/header/header-transfer.html?__inline">
+
+<div class="bo" style="height: 26px"></div>
+
+<div class="bo">
+
+
+    <div class="layout">
+        <div class="alltit" style="font-size: 18px;margin-bottom: 18px;border-bottom: 1px solid #E8E8E8">
+                银生宝账户充值
+        </div>
+    </div>
+    <!--黄色抬头-->
+
+    <div class="layout">
+        <div class="shouju">
+            <div class="shoujul" style="width: 55%">
+                <div style="margin-right: 58px;float: left">
+                    <span>充值账户&nbsp;:</span>
+                    <span class="bullq">马玉新(6056230@qq.com)</span>
+                </div>
+                <span>余额&nbsp;:&nbsp;</span>
+                <span class="huang">1020.90</span>
+                <span>元</span>
+            </div>
+            <div class="shoujul" style="float:left;padding-left: 30px;width: 40%">
+                      充值金额&nbsp;:&nbsp;<span class="huang">1029.00</span>元&nbsp;&nbsp;<span class="s14">(含<span class="huang">0.00</span>元服务费)</span>
+            </div>
+        </div>
+    </div>
+
+    <!--其他支付-->
+    <div class="layout">
+
+        <!--其他支付选择银行卡-->
+        <div class="alltit">其他支付</div>
+
+        <div class="allbody recbo" style="padding: 20px">
+
+            <!--警告2-->
+            <div class="witwar stop">
+                <div class="gan_text">
+                    <img src="/imgs/icons/B3-2.png" style="float: left;margin-right: 20px">银生宝账户不允许进行虚假交易、银行卡转账套现或洗钱等被禁止的交易行为，否则充值款项将不能提现。
+                </div>
+            </div>
+
+            <div class="shouju" style="height: 72px;padding: 0">
+                <div class="shoujul" style="height: 100%;padding-left: 41px">
+                    充值金额&nbsp;:&nbsp;<span class="huang">1029.00</span>元
+                </div>
+            </div>
+
+            <!--表单-->
+            <form class="form-horizontal ysbbd">
+                <fieldset>
+
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;收款银行&nbsp;:</label>
+                        <div class="form-right">
+                            <select>
+                                <option>请选择您的收款银行</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;汇款银行&nbsp;:</label>
+                        <div class="form-right">
+                            <select>
+                                <option>请选择您的汇款银行</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;开户省份&nbsp;:</label>
+                        <div class="form-right">
+                            <select>
+                                <option>请选择您的开户行省份</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;开户城市&nbsp;:</label>
+                        <div class="form-right">
+                            <select>
+                                <option>请选择您的开户行城市</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"><span class="yell must">*</span>&nbsp;开户名称&nbsp;:</label>
+                        <div class="form-right">
+                            <input type="text" placeholder="请选择您的开户行城市" name="khmc" id="khmc" style="padding-left: 12px"> <span class="hui">(&nbsp;最多40个汉字&nbsp;)</span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 充值金额-->
+                    <div class="form-item">
+                        <label class="form-left"></label>
+                        <div class="form-right">
+                            <!--警告2-->
+                            <div class="witwar stop"  style="margin-bottom: 0">
+                                <div class="gan"></div>
+                                <div class="gan_text">
+                                    <p style="margin-bottom: 10px">请务必正确填写您的汇款银行开户行的详细信息！如果您不填写或者填写不正确，当充值过程发生意外时，</p>
+                                    <p style="margin-bottom: 10px">将会导致您的充值资金无法正常退回您的汇款账户！。</p>
+                                    <p style="margin-bottom: 10px">如果您无法确定您的银行卡的开户行名称，您可以致电相关银行客服，报出您的卡号，即可获得开户行信息。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 备注-->
+                    <div class="form-item beizhu">
+                        <label class="form-left">备注&nbsp;:</label>
+                        <div class="form-right">
+                            <textarea placeholder="请输入..." class="note" style="text-indent: 5px"></textarea>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 下一步-->
+                    <div class="form-item">
+                        <label class="form-left">
+                        </label>
+                        <div class="form-right">
+                            <a class="step_button">下一步
+                            </a>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!--foot-->
+<link rel="import" href="modules/widget/footer/footer-login.html?__inline">
+<script src="lib/mod.js" data-loader></script>
+<script type="text/javascript">
+
+</script>
+<!--SCRIPT_PLACEHOLDER-->
+</body>
+</html>

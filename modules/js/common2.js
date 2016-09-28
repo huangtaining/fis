@@ -168,7 +168,6 @@ $(function(){
             txje:{
                 required: true,
                 number:true,
-                xiane:true
             },
             //收款方账户
             skfzh:{
@@ -271,6 +270,9 @@ $(function(){
             yzm:{
                 required:true
             },
+            khmc:{
+                required:true
+            },
             "topic[]": {
                 required: "#newsletter:checked",
                 minlength: 2
@@ -327,8 +329,7 @@ $(function(){
             //提现金额
             txje:{
                 required: "请输入充值金额",
-                number:"请输入正确格式",
-                xiane:"超出额度"
+                number:"请输入正确格式"
             },
             //付款金额
             fkje:{
@@ -427,6 +428,9 @@ $(function(){
             },
             yzm:{
                 required:"请输入验证码"
+            },
+            khmc:{
+                required:"请输入开户名称"
             },
             agree: "请接受我们的声明",
             topic: "请选择两个主题"

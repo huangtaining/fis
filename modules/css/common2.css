@@ -54,6 +54,9 @@ a:hover{
 .s20{
     font-size: 20px;
 }
+.s14{
+    font-size: 14px;
+}
 .s16{
     font-size: 16px;
 }
@@ -98,7 +101,7 @@ a:hover{
 }
 .witwar{
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 20px 15px 20px;
     margin: 10px 0 ;
     overflow: hidden;
     margin-bottom: 40px;
@@ -925,4 +928,7 @@ p{
     background:#00a0e8 ;
     color: white;
     font-size: 16px;
+}
+.reb select{
+    color: #919191;
 }
