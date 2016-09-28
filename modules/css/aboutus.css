@@ -46,17 +46,21 @@
     margin-left:45px;
     margin-right:18px;
 }
+.company-intro .txt p{
+    color:#585858;
+}
+
 
 .company-intro #largeNote {
     width:100%;
-    height:2394px;
+    /*height:2394px;*/
     margin-top:17px;
     /*margin-bottom:82px;*/
     /*margin-bottom: 82px;*/
 }
 .company-intro #largeNote .largeNote_con {
     width:1200px;
-    height:2394px;
+    /*height:2394px;*/
     margin:0 auto;
     background-color:white;
     border:solid 1px #e8e8e8;
@@ -78,15 +82,16 @@
 
 .company-intro .largeNote_con .largeNote_con_b {
     width:1200px;
-    height:2350px;
+    /*height:2350px;*/
     padding-top: 132px;
     position:relative;
+    color:#585858;
     /*background: url(img/border.png) no-repeat;*/
 
 }
 .company-intro .largeNote_con_b .border1 {
     width:2px;
-    height:2100px;
+    height:2460px;
     background:#e8e8e8;
     position:absolute;
     top:116px;
@@ -95,9 +100,10 @@
 /*13年*/
 .company-intro .largeNote_con_b .thirteen {
     width:1200px;
-    height:224px;
+    height:400px;
     margin-bottom: 103px;
 }
+
 .company-intro .thirteen .year13 {
     width:56px;
     height:56px;
@@ -109,7 +115,7 @@
     background:#00A0E8;
     position:absolute;
     left:243px;
-    top:60px;
+    top:756px;
 }
 .company-intro .thirteen .note1 {
     width:10px;
@@ -126,16 +132,18 @@
     line-height: 20px;
     float: left;
     margin-left: 173px;
+    text-align: right;
 }
 .company-intro .thirteen .txt {
     width:638px;
-    height:105px;
+    height:88px;
     float: left;
     margin-left: 112px;
     list-style: none;
     background: #F7F7F7;
     border-radius: 5px 5px 5px 5px ;
     position:relative;
+    margin-bottom:15px;
 }
 .company-intro .thirteen .txt:before{
     content:"";
@@ -157,6 +165,162 @@
 .company-intro .thirteen .txt p span {
     display: block;
 }
+
+
+.company-intro .largeNote_con_b .thirteenone {
+    width:1200px;
+    height:195px;
+    margin-bottom: 103px;
+}
+/*.company-intro .one .year13one{*/
+    /*position:absolute;*/
+    /*left:243px;*/
+    /*top:30px;*/
+/*}*/
+.company-intro .thirteenone .year13one {
+    width:56px;
+    height:56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 12px;
+    color:white;
+    border-radius: 50%;
+    background:#00A0E8;
+    position:absolute;
+    left:243px;
+    top:60px;
+}
+.company-intro .thirteenone .note1 {
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: #e8e8e8;
+    position:absolute;
+    left:266px;
+}
+.company-intro .thirteenone .p1 {
+    width:63px;
+    height:20px;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    margin-left: 173px;
+    text-align: right;
+}
+.company-intro .thirteenone .txt {
+    width:638px;
+    height:88px;
+    float: left;
+    margin-left: 112px;
+    list-style: none;
+    background: #F7F7F7;
+    border-radius: 5px 5px 5px 5px ;
+    position:relative;
+    margin-bottom:15px;
+}
+.company-intro .thirteenone .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
+}
+.company-intro .thirteenone .txt p {
+    width:598px;
+    height:75px;
+    margin:13px 7px 17px 33px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.company-intro .thirteenone .txt p span {
+    display: block;
+}
+
+
+
+.company-intro .largeNote_con_b .thirteentwo {
+    width:1200px;
+    height:294px;
+    margin-bottom: 103px;
+}
+/*.company-intro .one .year13one{*/
+/*position:absolute;*/
+/*left:243px;*/
+/*top:30px;*/
+/*}*/
+.company-intro .thirteentwo .year13two {
+    width:56px;
+    height:56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 12px;
+    color:white;
+    border-radius: 50%;
+    background:#00A0E8;
+    position:absolute;
+    left:243px;
+    top:355px;
+}
+.company-intro .thirteentwo .note1 {
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: #e8e8e8;
+    position:absolute;
+    left:266px;
+}
+.company-intro .thirteentwo .p1 {
+    width:63px;
+    height:20px;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    margin-left: 173px;
+    text-align: right;
+}
+.company-intro .thirteentwo .txt {
+    width:638px;
+    height:88px;
+    float: left;
+    margin-left: 112px;
+    list-style: none;
+    background: #F7F7F7;
+    border-radius: 5px 5px 5px 5px ;
+    position:relative;
+    margin-bottom:15px;
+}
+.company-intro .thirteentwo .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
+}
+.company-intro .thirteentwo .txt p {
+    width:598px;
+    height:75px;
+    margin:13px 7px 17px 33px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.company-intro .thirteentwo .txt p span {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
 /*13年5月*/
 .company-intro .thirteen .thirteen_five {
     width:1200px;
@@ -164,7 +328,7 @@
     margin-bottom: 14px;
 }
 .company-intro .thirteen_five .note1 {
-    top:180px;
+    top:175px;
 }
 .company-intro .thirteen_five .p1 {
     margin-top:43px;
@@ -176,10 +340,13 @@
     height:105px;
 }
 .company-intro .thirteen_four .note1 {
-    top:298px;
+    top:280px;
+}
+.company-intro .thirteen_four .note2{
+    top:870px;
 }
 .company-intro .thirteen_four .p1 {
-    margin-top:43px;
+    margin-top:40px;
 }
 
 /*12年*/
@@ -202,7 +369,7 @@
     background: #e8e8e8;
     position:absolute;
     left:266px;
-    top:498px;
+    top:475px;
 }
 .company-intro .twelve_twelve .p1 {
     width:73px;
@@ -211,7 +378,8 @@
     line-height: 20px;
     float: left;
     margin-left: 163px;
-    margin-top:34px;
+    margin-top:40px;
+    text-align: right;
 }
 .company-intro .twelve_twelve .txt {
     width:638px;
@@ -262,7 +430,7 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    top:583px;
+    top:1255px;
 }
 .company-intro .eleven .note1 {
     width:10px;
@@ -279,6 +447,7 @@
     line-height: 20px;
     float: left;
     margin-left: 163px;
+    text-align: right;
 }
 .company-intro .eleven .txt {
     width:638px;
@@ -317,17 +486,17 @@
     margin-bottom: 14px;
 }
 .company-intro .eleven_twelve .note1 {
-    top:703px;
+    top:578px;
 }
 .company-intro .eleven_twelve .p1 {
-    margin-top:33px;
+    margin-top:40px;
 }
 
 /*08年*/
 
 .company-intro .largeNote_con_b .eigth {
     width:1200px;
-    height:466px;
+    height:320px;
     margin-bottom: 111px;
 }
 .company-intro .eigth .year08 {
@@ -341,7 +510,7 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    top:788px;
+    top:1448px;
 }
 .company-intro .eigth .note1 {
     width:10px;
@@ -361,13 +530,14 @@
 }
 .company-intro .eigth .txt {
     width:638px;
-    height:105px;
+    height:88px;
     float: left;
     margin-left: 112px;
     list-style: none;
     background: #F7F7F7;
     border-radius: 5px 5px 5px 5px ;
     position:relative;
+    margin-bottom:15px;
 }
 .company-intro .eigth .txt:before{
     content:"";
@@ -396,13 +566,16 @@
     margin-bottom: 16px;
 }
 .company-intro .eigth_seven .year08 {
-    top:788px;
+    top:1288px;
 }
 .company-intro .eigth_seven .note1 {
-    top:909px;
+    top:679px;
+}
+.company-intro .eigth_seven .note3{
+   top:1185px;
 }
 .company-intro .eigth_seven .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 
 /*08年5月*/
@@ -412,10 +585,13 @@
     margin-bottom: 16px;
 }
 .company-intro .eigth_five .note1 {
-    top:1030px;
+    top:975px;
+}
+.company-intro .eigth_five .note4 {
+    top:1375px;
 }
 .company-intro .eigth_five .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 /*08年4月*/
 .company-intro .eigth .eigth_four {
@@ -424,10 +600,10 @@
     margin-bottom: 16px;
 }
 .company-intro .eigth_four .note1 {
-    bottom:1193px;
+    top:1565px;
 }
 .company-intro .eigth_four .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 /*08年1月*/
 .company-intro .eigth .eigth_one {
@@ -435,16 +611,19 @@
     height:105px;
 }
 .company-intro .eigth_one .note1 {
-    bottom:1073px;
+   top:1080px;
+}
+.company-intro .eigth_one .note5 {
+   top:1685px;
 }
 .company-intro .eigth_one .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 
 /*07年*/
 .company-intro .largeNote_con_b .seven {
     width:1200px;
-    height:600px;
+    height:450px;
     margin-bottom: 124px;
 }
 .company-intro .seven .year07 {
@@ -458,11 +637,11 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    bottom:939px;
+    top:1870px;
 }
 .company-intro .seven .txt {
     width:638px;
-    height:105px;
+    height:88px;
     float: left;
     margin-left: 112px;
     list-style: none;
@@ -505,6 +684,7 @@
     line-height: 20px;
     float: left;
     margin-left: 163px;
+    text-align: right;
 }
 /*07年12月*/
 .company-intro .seven .seven_twelve {
@@ -514,10 +694,10 @@
 }
 
 .company-intro .seven_twelve .note1 {
-    bottom:857px;
+    top:1790px;
 }
 .company-intro .seven_twelve .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 
 /*07年11月*/
@@ -527,10 +707,10 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_eleven .note1 {
-    bottom:736px;
+    top:1995px;
 }
 .company-intro .seven_eleven .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 
 /*07年5月*/
@@ -540,10 +720,10 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_five .note1 {
-    bottom:615px;
+   top:2115px;
 }
 .company-intro .seven_five .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 
 /*07年4月*/
@@ -553,10 +733,10 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_four .note1 {
-    bottom:494px;
+    top:2240px;
 }
 .company-intro .seven_four .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 /*07年3月*/
 .company-intro .seven .seven_three {
@@ -565,14 +745,14 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_three .note1 {
-    bottom:363px;
+    top:2360px;
 }
 .company-intro .seven .seven_three .txt{
     /*width:1200px;*/
-    height:125px;
+    height:88px;
 }
 .company-intro .seven_three .p1 {
-    margin-top:60px;
+    margin-top:40px;
 }
 
 /*06年*/
@@ -592,7 +772,7 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    bottom:215px;
+    top:2445px;
 }
 .company-intro .six .txt {
     width:638px;
@@ -639,6 +819,7 @@
     line-height: 20px;
     float: left;
     margin-left: 173px;
+    text-align: right;
 }
 /*06年5月*/
 .company-intro .six .six_five {
@@ -647,10 +828,10 @@
 }
 
 .company-intro .six_five .note1 {
-    bottom:135px;
+    top:2570px;
 }
 .company-intro .six_five .p1 {
-    margin-top:48px;
+    margin-top:40px;
 }
 
 
