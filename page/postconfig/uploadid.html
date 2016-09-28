@@ -68,7 +68,7 @@
                     <div class="form-item">
                         <label class="form-left"><span class="yell must">*</span>&nbsp;身份证有效期&nbsp;:</label>
                         <div class="form-right">
-                            <input type="text" placeholder="2016-10-10" name="sfzyxq" id="sfzyxq">
+                            <input type="text" placeholder="2016-10-10" name="sfzyxq" id="sfzyxq" disabled="disabled">
                             <input type="checkbox" checked="checked" style="width: 20px">长期
                         </div>
                     </div>
@@ -151,6 +151,28 @@
     $('input').iCheck({
         checkboxClass: 'icheckbox_flat-blue'
     });
+
+    $('.icheckbox_flat-blue').on('ifChecked', function(){
+        $(this).siblings("input").prop("disabled",true).removeClass("error");
+        $(this).siblings("label").hide();
+        $("#sfzyxq").rules("remove")
+    });
+    $('.icheckbox_flat-blue').on('ifUnchecked', function(){
+        $(this).siblings("input").prop("disabled",false);
+        $("#sfzyxq").rules("add",{required:true,dateISO:true,messages:{required:"请输入身份证有效期",dateISO:"请输入正确时间"}})
+    });
+
+//    $(".icheckbox_flat-blue").iCheck(function(){
+//        console.log("ssss");
+//               if($(this).iCheck("check")){
+//                   console.log("a");
+//                     $(this).siblings("input").prop("disabled",true)
+//               }
+//               if ($(this).iCheck("uncheck")){
+//                   console.log("b");
+//                     $(this).siblings("input").prop("disabled",false)
+//               }
+//    })
 </script>
 
 </body>

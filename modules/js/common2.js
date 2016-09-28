@@ -103,6 +103,11 @@ $(function(){
         return this.optional(element) || (value-parseInt(value/10)*10)==0;
     }, "请输入10的倍数");
 
+    // 10的倍数
+    jQuery.validator.addMethod("gou", function(value, element) {
+        return this.optional(element) || $(".icheckbox_flat-blue").hasClass("checked")
+    }, "请打钩");
+
 
 
 
@@ -190,10 +195,6 @@ $(function(){
                 ggg:true
             },
             //身份证有效期
-            sfzyxq: {
-                required: true,
-                dateISO:true
-            },
             yxjhm:{
                 required: true
             },
@@ -355,11 +356,6 @@ $(function(){
             email: {
                 email:"请输入正确邮箱格式"
             },
-            //身份证有效期
-            sfzyxq: {
-                required: "请输入身份证有效期",
-                dateISO:"输入正确日期格式"
-            },
             yxjhm:{
                 required: "请输入邮箱激活码"
             },
@@ -504,7 +500,6 @@ $(function(){
     })
 
 });
-
 
 
 
