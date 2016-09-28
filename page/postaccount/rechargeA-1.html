@@ -18,6 +18,15 @@
         require('modules/js/jsq');
         require('modules/js/common2');
     </script>
+    <style>
+        .card_bo input{
+            width: 20%;
+            margin-right: 5%;
+            margin-left:5%;
+            float: left;
+            margin-top: 18.5px;
+        }
+    </style>
 </head>
 <body>
 
@@ -26,22 +35,22 @@
 <div class="bo" style="height: 25px"></div>
 
 <div class="bo">
+    <h1 style="width:1200px;margin:0 auto;height:46px;padding-left:27px;background-color:white;margin-bottom:18px;line-height:46px;font-size:18px;color:#333333;border:1px solid #E8E8E8">银生宝账户充值</h1>
     <!--黄色抬头-->
 
     <div class="layout">
-        <div class="shouju">
-            <div class="shoujul">
-                <div style="margin-right: 60px;float: left">
-                    <span>收款方:</span>
-                    <span>提现账户</span>
-                </div>
-                <span>付款金额:</span>
-                <span class="huang">1020.90</span>
-                <span>元</span>
-            </div>
-            <div class="shoujul" style="float: right;text-align: right">
-                      余额:<span class="huang">.00</span>元
-            </div>
+        <div class="shouju" style="padding:46px 100px;">
+           <p style="font-size:18px;color:#4A4A4A">
+               <span>
+                   充值账户： <em style="color:#00A0E8;">马玉新(6056230@qq.com)</em>
+               </span>
+               <span style="margin-left:58px;">
+                   余额：  <em style="color:#EE8719;">1029.00</em>元
+               </span>
+               <span style="margin-left:58px;">
+                   充值金额：  <em style="color:#EE8719;">1029.00</em>元 <span style="font-size:14px;color:#4A4A4A">(含<em style="color:#EE8719;">0.00</em>元服务)</span>
+               </span>
+           </p>
         </div>
     </div>
 
@@ -59,7 +68,7 @@
             <!--</div>-->
 
             <link rel="import" href="modules/widget/choosebank/index2.html?__inline">
-            <div class="car">
+            <div class="car" style="padding:0 38px;">
                 <h2 class="kjzfo">
                     <span class="sub-kjzfo"><em>网上</em>银行</span>
                     <span class="ybyz">您需要先开通网上银行支付服务，才可以进行“网上银行支付”</span>
@@ -261,9 +270,9 @@
                 </div>
             </div>
 
-            <div class="bullq qtyh" style="padding-left: 20px">选择其他银行<img src="/imgs/icons/jt.jpg" class="jt"></div>
+            <div class="bullq qtyh" style="padding:0 38px;">选择其他银行<img src="/imgs/icons/jt.jpg" class="jt"></div>
 
-            <div class="car qtyha" style="display: none">
+            <div class="car qtyha" style="display: none;padding:0 38px;">
                 <div class="card_bo2" id="card2">
                     <div class="eccard">
                         <input type="radio" name="eccard">

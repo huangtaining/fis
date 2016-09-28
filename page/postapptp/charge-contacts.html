@@ -272,7 +272,7 @@
 
     //    阿拉伯数字转化为中文
     // 大小写转化
-    $(".chinain").change(function(){
+    $(".chinain").keyup(function(){
         if(!isNaN($(this).val())){
             china($(this).val(), $(".totalmoney"))
         }
