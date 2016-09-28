@@ -869,3 +869,60 @@ p{
     width: 100px !important;
     margin: 0 7px !important;
 }
+
+.bo .kl1{
+    height: 84px;
+    padding: 22px;
+    line-height: 40px;
+    background: #F6F6F6;
+}
+.bo .kl1 input{
+       height: 40px;
+       padding-left: 20px;
+       width: 310px;
+       text-align: left;
+       margin-left: 20px;
+}
+
+.bo .kl2 th{
+    width: 6%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background: #00a0e8;
+    color: white;
+}
+.bo .kl2 td{
+    width: 6%;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    background: #00a0e8;
+    color: white;
+}
+.bo .kl2{
+   width: 100%;
+}
+.bo .kl2 th,.bo .kl2 td{
+   border: 1px solid #E8E8E8;
+}
+.kl2 tbody tr:nth-child(odd) td{
+    background:#DEF5FF ;
+    color: #585858;
+    font-size: 12px;
+}
+.kl2 tbody tr:nth-child(odd) td:nth-child(1){
+    background:#00a0e8 ;
+    color: white;
+    font-size: 16px;
+}
+.kl2 tbody tr:nth-child(even) td{
+    background:#F7F7F7 ;
+    color: #585858;
+    font-size: 12px;
+}
+.kl2 tbody tr:nth-child(even) td:nth-child(1){
+    background:#00a0e8 ;
+    color: white;
+    font-size: 16px;
+}
