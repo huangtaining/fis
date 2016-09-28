@@ -14,17 +14,25 @@
     <script src="/modules/js/common2.js"></script>
     <script>
         var $ = require('jquery');
-        require('modules/app/jquery.validate.min');
-        require('modules/js/jsq');
         require('modules/js/common2');
+
+        require('modules/widget/choosebank/index');
+
     </script>
     <style>
-        .card_bo input{
-            width: 20%;
-            margin-right: 5%;
-            margin-left:5%;
-            float: left;
-            margin-top: 18.5px;
+        .btnfk{
+            margin: 50px 0 50px 25px;
+            width:75.3px;
+            height:25px;
+            line-height:25px;
+            border-radius:3px;
+            font-size:12px;
+            background-color:#00A0E8;
+            color:white;
+            border:none;
+        }
+        .btnfk:hover{
+            background-color:#0068B6;
         }
     </style>
 </head>
@@ -133,7 +141,7 @@
         </div>
 
 
-        <button style="margin: 50px 0 50px 25px;">确认付款</button>
+        <button class="btnfk">确认付款</button>
     </div>
 
 
