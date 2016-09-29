@@ -15,6 +15,10 @@
 #defaultForm .form-group .button_btn .btn-primary{background-color: #EE8719;}
 #defaultForm .form-group .button_btn .btn-primary:hover{background-color: #D26D02;}
 .modal-content .img{padding: 20px 0 20px 0;text-align: center;}
+.alertBox_nav{height: 23px;color: #000000;font-weight: bold;font-size:24px;text-align: center;padding-left: 10px;padding-right: 10px;line-height: 23px;margin: 1px;}
+.alertBox_body{font-size: 14px;padding: 15px;width: 70%;margin: 0 auto}
+.alertBox_body p{font-weight: bold;}
+.alertBox_body .ok{margin: 0 auto;width: 120px;height:28px;line-height:28px;text-align: center;border-radius:5px;border: 1px solid #BBBBBB;margin-top:15px ;color: #000000;}
 
     </style>
 </head>
@@ -81,66 +85,7 @@
 </div>
 
 
-
-
-
-
-
-<!--<div class="mask"></div>
-<div class="alertBox">
-	<div class="img"><img src="/imgs/icons/B3-18.png" alt="" /></div>
-	<div class="alertBox_nav">实名认证成功 !</div>
-	<div class="alertBox_body">		
-		<a href="index.html"><div class="ok">确认</div></a>
-	</div>
-</div>-->
-<iframe name="myiframe" width=0 height=0></iframe>
-<style type="text/css">
-/*.mask{display: none;position:fixed;top: 0px;height: 100%;width: 100%;background-color: #000;z-index: 100;opacity: 0.5;}
-.alertBox{position: fixed;background: white;z-index: 102;color: black;border: 2px solid #FFBA00;text-align: left;width: 380px;display: block;font-family: "微软雅黑";display: none;}
-.img{padding: 20px 0 20px 0;text-align: center;}*/
-.alertBox_nav{height: 23px;color: #000000;font-weight: bold;font-size:24px;text-align: center;padding-left: 10px;padding-right: 10px;line-height: 23px;margin: 1px;}
-.alertBox_body{font-size: 14px;padding: 15px;width: 70%;margin: 0 auto}
-.alertBox_body p{font-weight: bold;}
-.alertBox_body .ok{margin: 0 auto;width: 120px;height:28px;line-height:28px;text-align: center;border-radius:5px;border: 1px solid #BBBBBB;margin-top:15px ;color: #000000;}
-/*.alertBox_close{vertical-align: middle;cursor: pointer;border: 0px;}*/
-</style>
-
-
 </section>
-<!--<script type="text/javascript">
-
-  //关闭模式窗口，并且关闭遮盖层
-   function _close() {
-           $(".alertBox").hide();
-           $(".mask").hide();
-        }
-      function _open() {
-            $(".alertBox").show();
-           $(".mask").show();//遮盖层也显示
-            autoCenter($(".alertBox"));
-       }
-                //自动居中
-    function autoCenter(p) {
-        var ele = document.documentElement || document.body;
-        var x = (ele.clientWidth - p.width()) / 2;
-        var y = (ele.clientHeight - p.height()) / 2;
-          p.css({
-                left: x,
-                top: y
-           })
-      }
-    $(window).resize(function () {
-        autoCenter($(".alertBox"));
-     })          
-
-   
-  $(".alertBox_close").on("click",function(){
-  	   _close();
-  });
- 
-</script>-->
-
 
 <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
 <script src="lib/mod.js"></script>
