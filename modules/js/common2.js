@@ -318,7 +318,7 @@ $(function(){
             },
             //校正码
             jym:{
-                required: "请输入验证码"
+                required: "请输入校验码"
             },
             //充值金额
             czje:{

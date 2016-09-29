@@ -101,7 +101,7 @@ a:hover{
 }
 .witwar{
     width: 100%;
-    padding: 20px 20px 15px 20px;
+    padding: 20px 20px 20px 20px;
     margin: 10px 0 ;
     overflow: hidden;
     margin-bottom: 40px;
@@ -648,6 +648,9 @@ p{
     font-size: 12px;
     height: 25px;
     color: #919191;
+}
+.form-item input[type=button]{
+       height: 24px;
 }
 
 .form-item input[type=password]:focus{
