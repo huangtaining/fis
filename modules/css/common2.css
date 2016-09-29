@@ -44,6 +44,12 @@ a:hover{
 .lr{
     margin: 0 15px
 }
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
 .s40{
     font-size: 40px;
  }
