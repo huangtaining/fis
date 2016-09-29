@@ -14,6 +14,8 @@
 .addcard #defaultForm>div{margin-bottom: 33px;}
 #defaultForm .form-group .button_btn .btn-primary{background-color: #EE8719;}
 #defaultForm .form-group .button_btn .btn-primary:hover{background-color: #D26D02;}
+.modal-content .img{padding: 20px 0 20px 0;text-align: center;}
+
     </style>
 </head>
 <body>
@@ -51,43 +53,62 @@
                 <div class="mess form-group has-feedback has-error">
                     <label for=""><em>*</em>短信验证码：</label>
                     <input type="text" class="form-control" name="ddlQuestion" id="ddlQuestion" placeholder="请输入验证码">
-                    <span style="padding: 10px;text-align: center;line-height: 44px;margin-left: 10px;"><img src="https://www.unspay.com/page/util/verifyImage.jsp?now=1474183874433" class="yzmtu"></span>
-                    <span class="hyz">换一张</span>
+                    <input type="button" id="btn" value="免费获取激活码" style="width:160px;margin-left:15px;text-indent: 0;background-color: #F7F7F7;border:1px solid #D5D5D5;" />
+                    
                     <div class="errorholder" style="float: right;width: 280px;margin-right:230px;margin-left: 0;"></div>
                 </div>
 
                    <div class="form-group" style="padding-top:10px;">
 						<div class="button_btn" style="padding: 0px;margin-left:166px">
-							<button id="btnSubmit" type="submit" class="btn btn-primary btn-lg alertBox_close" data-toggle="modal" data-target="#myModal" name="signup2" value="Sign up 2" style="margin-left: 140px;">下一步</button>
+							<button id="btnSubmit" type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" name="signup2" value="Sign up 2" style="margin-left: 140px;">下一步</button>
 						</div>
 					</div>
 
             </form>
         </div>
 <!--添加成功的   弹框-->
-<div class="mask"></div>
+ <!--弹出框-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" style="margin-top: 10%;">
+		<div class="modal-content" style="width:280px;margin: 0 auto;">
+			<div class="img"><img src="/imgs/icons/B3-18.png" alt="" /></div>
+	<div class="alertBox_nav">实名认证成功 !</div>
+	<div class="alertBox_body">		
+		<a href="index.html"><div class="ok">确认</div></a>
+	</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+
+
+
+
+
+
+<!--<div class="mask"></div>
 <div class="alertBox">
 	<div class="img"><img src="/imgs/icons/B3-18.png" alt="" /></div>
 	<div class="alertBox_nav">实名认证成功 !</div>
 	<div class="alertBox_body">		
 		<a href="index.html"><div class="ok">确认</div></a>
 	</div>
-</div>
+</div>-->
 <iframe name="myiframe" width=0 height=0></iframe>
 <style type="text/css">
-.mask{display: none;position:fixed;top: 0px;height: 100%;width: 100%;background-color: #000;z-index: 100;opacity: 0.5;}
+/*.mask{display: none;position:fixed;top: 0px;height: 100%;width: 100%;background-color: #000;z-index: 100;opacity: 0.5;}
 .alertBox{position: fixed;background: white;z-index: 102;color: black;border: 2px solid #FFBA00;text-align: left;width: 380px;display: block;font-family: "微软雅黑";display: none;}
-.alertBox .img{padding: 20px 0 10px 0;text-align: center;}
+.img{padding: 20px 0 20px 0;text-align: center;}*/
 .alertBox_nav{height: 23px;color: #000000;font-weight: bold;font-size:24px;text-align: center;padding-left: 10px;padding-right: 10px;line-height: 23px;margin: 1px;}
 .alertBox_body{font-size: 14px;padding: 15px;width: 70%;margin: 0 auto}
 .alertBox_body p{font-weight: bold;}
 .alertBox_body .ok{margin: 0 auto;width: 120px;height:28px;line-height:28px;text-align: center;border-radius:5px;border: 1px solid #BBBBBB;margin-top:15px ;color: #000000;}
-.alertBox_close{vertical-align: middle;cursor: pointer;border: 0px;}
+/*.alertBox_close{vertical-align: middle;cursor: pointer;border: 0px;}*/
 </style>
 
 
 </section>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 
   //关闭模式窗口，并且关闭遮盖层
    function _close() {
@@ -118,7 +139,7 @@
   	   _close();
   });
  
-</script>
+</script>-->
 
 
 <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
@@ -140,6 +161,7 @@
 
 				$("#btnSubmit").bind("click", function() {
 					alert("Submit");
+                  
 				});
 
 				$('#defaultForm').bootstrapValidator({
@@ -246,6 +268,30 @@
 					
 				});
 			});
+		</script>
+		<!--倒计时-->
+		<script type="text/javascript">
+			var wait = 60;
+
+			function time(o) {
+				if(wait == 0) {
+					o.removeAttribute("disabled");
+					o.value = "免费获取验证码";
+					wait = 60;
+				} else {
+
+					o.setAttribute("disabled", true);
+					o.value = "(" + wait + ")秒后，重新获取";
+					wait--;
+					setTimeout(function() {
+							time(o)
+						},
+						1000)
+				}
+			}
+			document.getElementById("btn").onclick = function() {
+				time(this);
+			}
 		</script>
 </body>
 </html>
