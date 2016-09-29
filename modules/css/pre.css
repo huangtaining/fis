@@ -128,3 +128,5 @@ z-index:222 ;
 .pay_three_box .pay_three_box2 span p{padding:10px 0;font-size: 18px;color: #474F59;}
 .pay_three_box .pay_three_box2 .text{padding: 20px 0 0 0;font-size: 14px;color: #474F59;}
 
+.pay ul li.dongtai input{width:80px;;}
+.pay ul li span em{color: #F1870C;}
