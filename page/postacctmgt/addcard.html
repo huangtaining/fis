@@ -36,8 +36,7 @@
                 <p class="mess">
                     <label for=""><em>*</em>短信验证码：</label>
                     <input type="text" placeholder="请输入验证码" name="yzmcheck">
-                    <span class="yzm"></span>
-                    <span class="hyz">换一张</span>
+                    <input type="button" id="btn" value="重新获取激活码" style="width:160px;font-size:12px;padding-left:0;margin-left:10px;text-indent: 0;background-color: #F7F7F7;border:1px solid #D5D5D5;" />
                 </p>
                 <p>
                     <button class="submit">确认</button>
@@ -127,6 +126,31 @@
             $(this).attr("checked",false);
         });
         Obj.checked=true;
+    }
+</script>
+
+<!--倒计时-->
+<script type="text/javascript">
+    var wait = 60;
+
+    function time(o) {
+        if(wait == 0) {
+            o.removeAttribute("disabled");
+            o.value = "免费获取验证码";
+            wait = 60;
+        } else {
+
+            o.setAttribute("disabled", true);
+            o.value = "(" + wait + ")秒后，重新获取验证码";
+            wait--;
+            setTimeout(function() {
+                        time(o)
+                    },
+                    1000)
+        }
+    }
+    document.getElementById("btn").onclick = function() {
+        time(this);
     }
 </script>
 </body>
