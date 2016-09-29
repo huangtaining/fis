@@ -8,6 +8,11 @@
     <title>交易记录</title>
     <link rel="import" href="../layout/header.html?__inline">
 		<!--STYLE_PLACEHOLDER-->
+		<style type="text/css">
+			.last em{padding-right: 15px;}
+			table td.shou{color: pink;}
+			table td.fu{color: green;}
+		</style>
 	</head>
 	<body class="pageall">
 		<link rel="import" href="modules/widget/header/header-login.html?__inline">
@@ -57,7 +62,7 @@
                 	<li><em>交易对方：</em><input type="text" placeholder="交易方名称或者账户"/></li>
                  </ul>
                 <ul class="clearfix"> 
-                	<li><em>交易日期：</em><span class="time btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><span id="xzrq1">2016-7-23</span>至<span id="xzrq2">2016-7-29</span></span></li>
+                	<li class="ation"><em>交易日期：</em><input type="text" data-provide="datepicker" placeholder="交易日期"/> - <input type="text" data-provide="datepicker" placeholder="交易日期"/></li></li>
                 	<li><em>交易状态：</em>
                 		<select name="" id="">
                 		<option value="">所有交易状态</option>
@@ -98,7 +103,7 @@
 			<th>收/付</th>
 			<th>金额</th>
 			<th>服务费</th>
-			<th>操作</th>
+			<th style="width: 120px;">操作</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -113,12 +118,28 @@
 			</td>
 			<td>收</td>
 			<td>9697.00</td>
-			<td>-7：00</td>
-			<td>
-				<select name="" id="">
-					<option value="">详情</option>
-					<option value="">付款</option>
-				</select>
+			<td class="shou">-7：00</td>
+			<td class="last">
+				<em>付款</em>
+				<em>详情</em>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>123456789</td>
+			<td>上海上海上海上海</td>
+			<td>转账</td>
+			<td>交易成功</td>
+			<td style="line-height: 20px;">
+				<p>2016-01-01</p>
+				<em>05:00</em>
+			</td>
+			<td>收</td>
+			<td>9697.00</td>
+			<td class="fu">-7：00</td>
+			<td class="last">
+				<em>付款</em>
+				<em>详情</em>
 			</td>
 		</tr>
 		
@@ -134,11 +155,9 @@
 			<td>收</td>
 			<td>9697.00</td>
 			<td>-7：00</td>
-			<td>
-				<select name="" id="">
-					<option value="">详情</option>
-					<option value="">付款</option>
-				</select>
+			<td class="last">
+				<em>付款</em>
+				<em>详情</em>
 			</td>
 		</tr>
 		
@@ -154,11 +173,9 @@
 			<td>收</td>
 			<td>9697.00</td>
 			<td>-7：00</td>
-			<td>
-				<select name="" id="">
-					<option value="">详情</option>
-					<option value="">付款</option>
-				</select>
+			<td class="last">
+				<em>付款</em>
+				<em>详情</em>
 			</td>
 		</tr>
 		
@@ -174,11 +191,9 @@
 			<td>收</td>
 			<td>9697.00</td>
 			<td>-7：00</td>
-			<td>
-				<select name="" id="">
-					<option value="">详情</option>
-					<option value="">付款</option>
-				</select>
+			<td class="last">
+				<em>付款</em>
+				<em>详情</em>
 			</td>
 		</tr>
 		
@@ -194,11 +209,9 @@
 			<td>收</td>
 			<td>9697.00</td>
 			<td>-7：00</td>
-			<td>
-				<select name="" id="">
-					<option value="">详情</option>
-					<option value="">付款</option>
-				</select>
+			<td class="last">
+				<em>付款</em>
+				<em>详情</em>
 			</td>
 		</tr>
 		
@@ -214,43 +227,21 @@
 			<td>收</td>
 			<td>9697.00</td>
 			<td>-7：00</td>
-			<td>
-				<select name="" id="">
-					<option value="">详情</option>
-					<option value="">付款</option>
-				</select>
-			</td>
-		</tr>
-		
-		<tr>
-			<td>123456789</td>
-			<td>上海上海上海上海</td>
-			<td>转账</td>
-			<td>交易成功</td>
-			<td style="line-height: 20px;">
-				<p>2016-01-01</p>
-				<em>05:00</em>
-			</td>
-			<td>收</td>
-			<td>9697.00</td>
-			<td>-7：00</td>
-			<td>
-				<select name="" id="">
-					<option value="">详情</option>
-					<option value="">付款</option>
-				</select>
+			<td class="last">
+				<em>付款</em>
+				<em>详情</em>
 			</td>
 		</tr>
 	</tbody>
 </table>
     <div class="jilu clearfix">
 			<div class="jilu_left">支出：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:12</em>元）</div>
-			<div class="jilu_rigth">收入：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:88</em>元）</div>
+			<div class="jilu_rigth" style="text-align: right;">收入：<em>20</em>笔（已完成<em>7</em>笔，共<em>2.17</em>元。处理中:<em>20</em>笔，共<em>20:88</em>元）</div>
 		</div>
 		
 		 <!--分栏-->
         <div class="paging clearfix">
-            <div class="paging_left">当前 0-0 共7条 每页展现 <span class="shuzi">20</span> 条</div>
+            <div class="paging_left">当前 0-0 共7条 每页展现 <span class="shuzi">10</span> 条</div>
             <div class="paging_rigth number">
                     <a href="#">上一页&nbsp;</a>
                     <a href="#" class="paac">1&nbsp;</a>
@@ -265,28 +256,7 @@
             </div>
         </div>
 </div>
-  <!--弹出框-->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" style="margin-top: 10%;">
-		<div class="modal-content" style="width:280px;margin: 0 auto;">
-			<div class="modal-header">
 
-				<input data-provide="datepicker" class="xzrq1"> — <input data-provide="datepicker" class="xzrq2">
-			</div>
-			<div class="modal-body">
-				<p>快捷日期</p>
-				<span>昨天</span>
-				<span>过去7天</span>
-				<span>过去30天</span>
-				<span>过去3个月</span>
-			</div>
-			<div class="modal-footer">			
-				<button type="button" class="btn btn-primary c" data-dismiss="modal">确定</button>
-				<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #fff;border: none;">取消</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal -->
-</div>
   
   
 
