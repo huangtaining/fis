@@ -459,10 +459,17 @@ $(function(){
               $(".modal-dialog").css({"left":130,"top":(_ot-_st-58)})
     })
 
-    //点击表单验证
+    //点击表单验证aaaaaaaaaaaaaaaaaaaaaaaaaa
     $(".step_button,.step_button_s,.life_step").click(function(){
-        $(".ysbbd").valid();
+       $(".ysbbd:visible").valid()
     });
+
+
+
+
+
+
+
     //      自定义预留信息
     jQuery.validator.addMethod("ggg", function(value, element) {
         return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
