@@ -290,8 +290,8 @@
                             <ul class="clearfix">
                                 <li><em>交易日期：</em><span class="time btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><span id="xzrq1">2016-7-23</span>至<span id="xzrq2">2016-7-29</span></span></li>
                                 <li><em>交易状态：</em>
-                                    <select name="" id="">
-                                        <option value="">所有交易状态</option>
+                                    <select name="" id="aaa">
+                                        <option value="">所有交易类型</option>
                                         <option value="">收款</option>
                                         <option value="">付款</option>
                                     </select>
@@ -329,7 +329,7 @@
                                 <th>收/付</th>
                                 <th>金额</th>
                                 <th>服务费</th>
-                                <th style="text-indent: 5px">操作</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -346,10 +346,7 @@
                                 <td>9697.00</td>
                                 <td>-7：00</td>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">详情</option>
-                                        <option value="">付款</option>
-                                    </select>
+                                       <a href="###">付款</a>
                                 </td>
                             </tr>
 
@@ -366,10 +363,7 @@
                                 <td>9697.00</td>
                                 <td>-7：00</td>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">详情</option>
-                                        <option value="">付款</option>
-                                    </select>
+                                    <a href="###">操作</a>
                                 </td>
                             </tr>
 
@@ -386,10 +380,7 @@
                                 <td>9697.00</td>
                                 <td>-7：00</td>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">详情</option>
-                                        <option value="">付款</option>
-                                    </select>
+                                    <a href="###">付款</a>
                                 </td>
                             </tr>
 
@@ -406,10 +397,7 @@
                                 <td>9697.00</td>
                                 <td>-7：00</td>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">详情</option>
-                                        <option value="">付款</option>
-                                    </select>
+                                    <a href="###">操作</a>
                                 </td>
                             </tr>
 
@@ -426,10 +414,7 @@
                                 <td>9697.00</td>
                                 <td>-7：00</td>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">详情</option>
-                                        <option value="">付款</option>
-                                    </select>
+                                    <a href="###">付款</a>
                                 </td>
                             </tr>
 
@@ -446,10 +431,7 @@
                                 <td>9697.00</td>
                                 <td>-7：00</td>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">详情</option>
-                                        <option value="">付款</option>
-                                    </select>
+                                    <a href="###">操作</a>
                                 </td>
                             </tr>
 
@@ -466,10 +448,7 @@
                                 <td>9697.00</td>
                                 <td>-7：00</td>
                                 <td>
-                                    <select name="" id="">
-                                        <option value="">详情</option>
-                                        <option value="">付款</option>
-                                    </select>
+                                    <a href="###">付款</a>
                                 </td>
                             </tr>
                             </tbody>
@@ -842,7 +821,7 @@
                 <!--分栏-->
                 <div class="jiaoyifoot">
                     <div class="fyl">
-                            当前0-<span>1</span>,共7条,每页展现<button>20</button>条
+                            当前0-<span>1</span>,共7条,每页展现<button>10</button>条
                     </div>
                     <div class="fyr">
                             <a href="#">上一页</a>
@@ -964,6 +943,9 @@ $(function(){
         })
 
     $.fn.datepicker.defaults.format = "yyyy-mm-dd";
+    $("#aaa").change(function(){
+        console.log($(this).find("option:selected").width())
+    })
 </script>
 </body>
 </html>
