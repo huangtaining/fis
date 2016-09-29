@@ -112,8 +112,8 @@
 									callback: function(value, validator) {
 										var isvalid = true;
 										var re = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
-										var re_email = /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/; 
-										if(re.test(value) || re_email.test(value)) {
+										
+										if(re.test(value)) {
 											isvalid = true;
 										} else {
 											isvalid = false;

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实名认证</title>
+    <link rel="import" href="../layout/header.html?__inline">
+    <link rel="stylesheet" href="../modules/css/ysbformvalidate.scss" media="screen" title="no title">
+    <style type="text/css">
+    .addcard .tips2{height: 62px;width: 1100px;margin: 0 auto; padding-left:0px;line-height:80px;font-size: 18px; color: #585858; margin-bottom: 55px;border-bottom: 1px solid #e4e4e4;}
+    .addcard p.tips2{margin-bottom:60px !important;}
+    
+.addcard .card-content .form-group label { width: 132px;margin-top: 13px;text-align: right;margin-left: 159px;font-weight: normal;margin-right: 17px;}
+.addcard .card-content .form-group label em{font-size: 19px;vertical-align: middle;color: #FF8700;font-style: normal;font-weight: normal;}
+.addcard #defaultForm>div{margin-bottom: 33px;}
+#defaultForm .form-group .button_btn .btn-primary{background-color: #EE8719;}
+#defaultForm .form-group .button_btn .btn-primary:hover{background-color: #D26D02;}
+    </style>
+</head>
+<body>
+<link rel="import" href="modules/widget/header/header-login.html?__inline">
+<section class="addcard">
+    <div class="sub_coll">
+        <p class="position">您的当前位置：我的银生宝 > 安全管理</p>
+    </div>
+    <div class="content">
+        <h2 style="padding: 23px 0 18px 50px;">实名认证</h2>
+        <div class="card-content" style="height: 800px;">
+           <form id="defaultForm" method="post" class="form-horizontal ysbformvalidate" action="#">
+                <p class="tips2">验证实名信息</p>
+                <div class="form-group has-feedback has-error">
+                    <label for=""><em>*</em>真实姓名：</label>             
+                    <input type="username" class="form-control" name="username" placeholder="请输入您的真实姓名">
+                    <div class="errorholder" style="float: right;width: 280px;margin-right:230px;margin-left: 0;"></div>				
+                </div>
+                <div class="form-group has-feedback has-error">
+                    <label for=""><em>*</em>身份证号码：</label>
+                    <input type="IDcard" class="form-control" name="IDcard" placeholder="请输入您的身份证号码">
+                    <div class="errorholder" style="float: right;width: 280px;margin-right:230px;margin-left: 0;"></div>
+                </div>
+        <p class="tips2">绑定银行卡</p>
+                <div class="form-group has-feedback has-error">
+                    <label for=""><em>*</em>银行账号：</label>
+                    <input type="bankcard" class="form-control" name="bankcard" placeholder="请输入您银行账号">
+                    <div class="errorholder" style="float: right;width: 280px;margin-right:230px;margin-left: 0;"></div>
+                </div>
+                <div class="form-group has-feedback has-error">
+                    <label for=""><em>*</em>银行预留手机号：</label>
+                    <input type="iphone" class="form-control" name="iphone" placeholder="请输入您的银行预留手机号">
+                    <div class="errorholder" style="float: right;width: 280px;margin-right:230px;margin-left: 0;"></div>
+                </div>
+                <div class="mess form-group has-feedback has-error">
+                    <label for=""><em>*</em>短信验证码：</label>
+                    <input type="text" class="form-control" name="ddlQuestion" id="ddlQuestion" placeholder="请输入验证码">
+                    <span style="padding: 10px;text-align: center;line-height: 44px;margin-left: 10px;"><img src="https://www.unspay.com/page/util/verifyImage.jsp?now=1474183874433" class="yzmtu"></span>
+                    <span class="hyz">换一张</span>
+                    <div class="errorholder" style="float: right;width: 280px;margin-right:230px;margin-left: 0;"></div>
+                </div>
+
+                   <div class="form-group" style="padding-top:10px;">
+						<div class="button_btn" style="padding: 0px;margin-left:166px">
+							<button id="btnSubmit" type="submit" class="btn btn-primary btn-lg alertBox_close" data-toggle="modal" data-target="#myModal" name="signup2" value="Sign up 2" style="margin-left: 140px;">下一步</button>
+						</div>
+					</div>
+
+            </form>
+        </div>
+<!--添加成功的   弹框-->
+<div class="mask"></div>
+<div class="alertBox">
+	<div class="img"><img src="/imgs/icons/B3-18.png" alt="" /></div>
+	<div class="alertBox_nav">实名认证成功 !</div>
+	<div class="alertBox_body">		
+		<a href="index.html"><div class="ok">确认</div></a>
+	</div>
+</div>
+<iframe name="myiframe" width=0 height=0></iframe>
+<style type="text/css">
+.mask{display: none;position:fixed;top: 0px;height: 100%;width: 100%;background-color: #000;z-index: 100;opacity: 0.5;}
+.alertBox{position: fixed;background: white;z-index: 102;color: black;border: 2px solid #FFBA00;text-align: left;width: 380px;display: block;font-family: "微软雅黑";display: none;}
+.alertBox .img{padding: 20px 0 10px 0;text-align: center;}
+.alertBox_nav{height: 23px;color: #000000;font-weight: bold;font-size:24px;text-align: center;padding-left: 10px;padding-right: 10px;line-height: 23px;margin: 1px;}
+.alertBox_body{font-size: 14px;padding: 15px;width: 70%;margin: 0 auto}
+.alertBox_body p{font-weight: bold;}
+.alertBox_body .ok{margin: 0 auto;width: 120px;height:28px;line-height:28px;text-align: center;border-radius:5px;border: 1px solid #BBBBBB;margin-top:15px ;color: #000000;}
+.alertBox_close{vertical-align: middle;cursor: pointer;border: 0px;}
+</style>
+
+
+</section>
+<script type="text/javascript">
+
+  //关闭模式窗口，并且关闭遮盖层
+   function _close() {
+           $(".alertBox").hide();
+           $(".mask").hide();
+        }
+      function _open() {
+            $(".alertBox").show();
+           $(".mask").show();//遮盖层也显示
+            autoCenter($(".alertBox"));
+       }
+                //自动居中
+    function autoCenter(p) {
+        var ele = document.documentElement || document.body;
+        var x = (ele.clientWidth - p.width()) / 2;
+        var y = (ele.clientHeight - p.height()) / 2;
+          p.css({
+                left: x,
+                top: y
+           })
+      }
+    $(window).resize(function () {
+        autoCenter($(".alertBox"));
+     })          
+
+   
+  $(".alertBox_close").on("click",function(){
+  	   _close();
+  });
+ 
+</script>
+
+
+<link rel="import" href="modules/widget/footer/footer-login.html?__inline">
+<script src="lib/mod.js"></script>
+<script>
+	require('ui/index');
+</script>
+<script type="text/javascript">
+			$(document).ready(function() {
+
+				require('modules/app/jquery.bootstrapValidator');
+
+				// Generate a simple captcha
+				function randomNumber(min, max) {
+					return Math.floor(Math.random() * (max - min + 1) + min);
+				};
+
+				$('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+				$("#btnSubmit").bind("click", function() {
+					alert("Submit");
+				});
+
+				$('#defaultForm').bootstrapValidator({
+					//live: 'disabled',
+					message: 'This value is not valid',
+					feedbackIcons: {
+						valid: 'glyphicon glyphicon-ok',
+						invalid: 'glyphicon', //glyphion-remove
+						validating: 'glyphicon glyphicon-refresh'
+					},
+					fields: {
+						username: {
+							validators: {
+								callback: {
+									message: '请输入您的真实姓名',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re =/[\u4e00-\u9fa5]+/;										
+										if(re.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('username', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+				IDcard: {
+						validators: {
+								callback: {
+									message: '请输入您的身份证号码',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re = /^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/;
+										if(re.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('IDcard', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+					bankcard: {
+							validators: {
+								notEmpty: {
+									message: '请输入您的银行账户',
+								}
+							}
+						},
+                    iphone: {
+							validators: {
+								callback: {
+									message: '请输入您的银行预留手机号码',
+									callback: function(value, validator) {
+										var isvalid = true;
+										var re = /^1[34578]\d{9}$/;
+										if(re.test(value)) {
+											isvalid = true;
+										} else {
+											isvalid = false;
+										}
+										if(isvalid) {
+											validator.updateStatus('iphone', 'VALID');
+											return true;
+										} else {
+											return false;
+										}
+									}
+								}
+							}
+						},
+						ddlQuestion: {
+							validators: {
+								notEmpty: {
+									message: '请输入验证码'
+								}
+							}
+						}
+				
+					}
+				});
+
+				// Validate the form manually
+				$('#validateBtn').click(function() {
+					$('#defaultForm').bootstrapValidator('validate');
+					
+				});
+
+				$('#resetBtn').click(function() {
+					$('#defaultForm').data('bootstrapValidator').resetForm(true);
+					
+				});
+			});
+		</script>
+</body>
+</html>

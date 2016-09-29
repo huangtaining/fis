@@ -102,7 +102,7 @@
 									message: '请填写手机号码或者邮箱',
 									callback: function(value, validator) {
 										var isvalid = true;
-										var re = /^(13[0-9]{9})|(15[89][0-9]{8})$/;
+										var re = /^1[34578]\d{9}$/;
 										var re_email = /\w@\w*\.\w/;
 										if(re.test(value) || re_email.test(value)) {
 											isvalid = true;
