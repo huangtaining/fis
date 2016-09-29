@@ -21,6 +21,9 @@
 <style type="text/css">
 	.bar_article .zhong{width: 381px;}
 	.bar_article ul li{width: 33.3%;}
+    input[disabled]{
+        width: 185px;
+    }
 </style>
 </head>
 <body class="pagesafe-mgt">
@@ -111,7 +114,7 @@
                     <div class="form-item">
                         <label class="form-left"></label>
                         <div class="form-right">
-                            <input type="button" value="点击重新获取" style="padding: 0 10px;margin-right: 20px">
+                            <input type="button" id="d60" value="点击重新获取" style="padding: 0 10px;margin-right: 20px">
                         </div>
                     </div>
 
@@ -154,7 +157,29 @@
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
 <script src="lib/mod.js" data-loader></script>
+<script >
+                            var wait = 60;
 
+                                        function time(o) {
+                                        if(wait == 0) {
+                                        o.removeAttribute("disabled");
+                                        o.value = "免费获取验证码";
+                                        wait = 60;
+                                        } else {
+
+                                        o.setAttribute("disabled", true);
+                                        o.value = "(" + wait + ")秒后，重新获取验证码";
+                                        wait--;
+                                        setTimeout(function() {
+                                        time(o)
+                                        },
+                                        1000)
+                                        }
+                                        }time(document.getElementById("d60"));
+                        document.getElementById("d60").onclick = function() {
+                        time(this);
+                        }
+</script>
 <!--SCRIPT_PLACEHOLDER-->
 
 
