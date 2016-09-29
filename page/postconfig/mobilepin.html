@@ -116,7 +116,7 @@
                         <label class="form-left"><span class="yell must">*</span>&nbsp;当日累计支付限额&nbsp;:</label>
 
                         <div class="form-right">
-                            <input type="text" name="allxe" id="allxe" class="chinain topb">最高500元
+                            <input type="text" name="allxe" id="allxe" class="chinain topb">最低500元
                         </div>
                     </div>
 
@@ -199,12 +199,12 @@
         console.log("1")
     })
     $(".icheckbox_flat-blue").eq(1).on('ifChecked',function(){
-        $(".xe").slideDown();
+        $(".xe").show(500);
         console.log("2")
     })
     $(".icheckbox_flat-blue").eq(1).on('ifUnchecked',function(){
         if($(".xe")){
-            $(".xe").slideUp();
+            $(".xe").hide();
         }
         console.log("3")
     })
