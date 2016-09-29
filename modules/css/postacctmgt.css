@@ -1850,6 +1850,7 @@
     margin-left:308px;
     border:none;
     color:#ffffff;
+    border-radius: 3px;
 }
 .addcard .card-content p button:hover{
     background-color:#D26D02;
