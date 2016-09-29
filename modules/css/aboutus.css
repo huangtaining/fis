@@ -91,7 +91,7 @@
 }
 .company-intro .largeNote_con_b .border1 {
     width:2px;
-    height:2460px;
+    height:2340px;
     background:#e8e8e8;
     position:absolute;
     top:116px;
@@ -100,7 +100,7 @@
 /*13年*/
 .company-intro .largeNote_con_b .thirteen {
     width:1200px;
-    height:400px;
+    height:295px;
     margin-bottom: 103px;
 }
 
@@ -115,7 +115,7 @@
     background:#00A0E8;
     position:absolute;
     left:243px;
-    top:756px;
+    top:736px;
 }
 .company-intro .thirteen .note1 {
     width:10px;
@@ -165,6 +165,78 @@
 .company-intro .thirteen .txt p span {
     display: block;
 }
+
+
+.company-intro .largeNote_con_b .thirteenfive{
+    width:1200px;
+    height:88px;
+    margin-bottom: 103px;
+}
+
+.company-intro .thirteenfive .year13five {
+    width:56px;
+    height:56px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 12px;
+    color:white;
+    border-radius: 50%;
+    background:#00A0E8;
+    position:absolute;
+    left:243px;
+    top:350px;
+}
+.company-intro .thirteenfive .note1 {
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: #e8e8e8;
+    position:absolute;
+    left:266px;
+}
+.company-intro .thirteenfive .p1 {
+    width:63px;
+    height:20px;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    margin-left: 173px;
+    text-align: right;
+}
+.company-intro .thirteenfive .txt {
+    width:638px;
+    height:88px;
+    float: left;
+    margin-left: 112px;
+    list-style: none;
+    background: #F7F7F7;
+    border-radius: 5px 5px 5px 5px ;
+    position:relative;
+    margin-bottom:15px;
+}
+.company-intro .thirteenfive .txt:before{
+    content:"";
+    height:0;
+    width:0;
+    border:10px solid transparent;
+    border-right:10px solid #F7F7F7;
+    position:absolute;
+    left:-20px;
+    top:40%;
+}
+.company-intro .thirteenfive .txt p {
+    width:598px;
+    height:75px;
+    margin:13px 7px 17px 33px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.company-intro .thirteenfive .txt p span {
+    display: block;
+}
+
+
+
 
 
 .company-intro .largeNote_con_b .thirteenone {
@@ -243,7 +315,7 @@
 
 .company-intro .largeNote_con_b .thirteentwo {
     width:1200px;
-    height:294px;
+    height:88px;
     margin-bottom: 103px;
 }
 /*.company-intro .one .year13one{*/
@@ -262,7 +334,7 @@
     background:#00A0E8;
     position:absolute;
     left:243px;
-    top:355px;
+    top:545px;
 }
 .company-intro .thirteentwo .note1 {
     width:10px;
@@ -271,6 +343,7 @@
     background: #e8e8e8;
     position:absolute;
     left:266px;
+    top:500px;
 }
 .company-intro .thirteentwo .p1 {
     width:63px;
@@ -343,7 +416,7 @@
     top:280px;
 }
 .company-intro .thirteen_four .note2{
-    top:870px;
+    top:855px;
 }
 .company-intro .thirteen_four .p1 {
     margin-top:40px;
@@ -430,7 +503,7 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    top:1255px;
+    top:1130px;
 }
 .company-intro .eleven .note1 {
     width:10px;
@@ -486,7 +559,7 @@
     margin-bottom: 14px;
 }
 .company-intro .eleven_twelve .note1 {
-    top:578px;
+    top:665px;
 }
 .company-intro .eleven_twelve .p1 {
     margin-top:40px;
@@ -510,7 +583,7 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    top:1448px;
+    top:1325px;
 }
 .company-intro .eigth .note1 {
     width:10px;
@@ -585,10 +658,10 @@
     margin-bottom: 16px;
 }
 .company-intro .eigth_five .note1 {
-    top:975px;
+    top:960px;
 }
 .company-intro .eigth_five .note4 {
-    top:1375px;
+    top:1250px;
 }
 .company-intro .eigth_five .p1 {
     margin-top:40px;
@@ -600,7 +673,7 @@
     margin-bottom: 16px;
 }
 .company-intro .eigth_four .note1 {
-    top:1565px;
+    top:1442px;
 }
 .company-intro .eigth_four .p1 {
     margin-top:40px;
@@ -611,10 +684,10 @@
     height:105px;
 }
 .company-intro .eigth_one .note1 {
-   top:1080px;
+   top:1060px;
 }
 .company-intro .eigth_one .note5 {
-   top:1685px;
+   top:1565px;
 }
 .company-intro .eigth_one .p1 {
     margin-top:40px;
@@ -637,7 +710,7 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    top:1870px;
+    top:1750px;
 }
 .company-intro .seven .txt {
     width:638px;
@@ -694,7 +767,7 @@
 }
 
 .company-intro .seven_twelve .note1 {
-    top:1790px;
+    top:1670px;
 }
 .company-intro .seven_twelve .p1 {
     margin-top:40px;
@@ -707,7 +780,7 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_eleven .note1 {
-    top:1995px;
+    top:1875px;
 }
 .company-intro .seven_eleven .p1 {
     margin-top:40px;
@@ -720,7 +793,7 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_five .note1 {
-   top:2115px;
+   top:1995px;
 }
 .company-intro .seven_five .p1 {
     margin-top:40px;
@@ -733,7 +806,7 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_four .note1 {
-    top:2240px;
+    top:2115px;
 }
 .company-intro .seven_four .p1 {
     margin-top:40px;
@@ -745,7 +818,7 @@
     margin-bottom: 16px;
 }
 .company-intro .seven_three .note1 {
-    top:2360px;
+    top:2235px;
 }
 .company-intro .seven .seven_three .txt{
     /*width:1200px;*/
@@ -772,7 +845,7 @@
     background: #00A0E8;
     position:absolute;
     left:243px;
-    top:2445px;
+    top:2320px;
 }
 .company-intro .six .txt {
     width:638px;
@@ -828,7 +901,7 @@
 }
 
 .company-intro .six_five .note1 {
-    top:2570px;
+    top:2450px;
 }
 .company-intro .six_five .p1 {
     margin-top:40px;
