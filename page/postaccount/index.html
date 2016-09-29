@@ -85,7 +85,7 @@
                                <span class="rr"><img src="/imgs/myunspay/W2.png" class="rz"><span>已认证手机</span></span>
                                <span class="rr"><img src="/imgs/myunspay/W3.png" class="rz"><span>已认证身份证</span></span>
                            <p>根据《非银行机构支付业务管理办法》，当前为I类账户，余额支付额度100,000元/年，剩余额度800,000元/年。
-                               <a class="ljgd">了解更多</a>
+                               <a class="huang" href="###">了解更多</a>
                            </p>
                        </div>
 
@@ -343,7 +343,7 @@
                                     <em>05:00</em>
                                 </td>
                                 <td>收</td>
-                                <td>9697.00</td>
+                                <td class="je z">+9697.00</td>
                                 <td>-7：00</td>
                                 <td>
                                        <a href="###">付款</a>
@@ -360,7 +360,7 @@
                                     <em>05:00</em>
                                 </td>
                                 <td>收</td>
-                                <td>9697.00</td>
+                                <td class="je f">-9697.00</td>
                                 <td>-7：00</td>
                                 <td>
                                     <a href="###">操作</a>
@@ -377,7 +377,7 @@
                                     <em>05:00</em>
                                 </td>
                                 <td>收</td>
-                                <td>9697.00</td>
+                                <td class="je f">-9697.00</td>
                                 <td>-7：00</td>
                                 <td>
                                     <a href="###">付款</a>
@@ -394,7 +394,7 @@
                                     <em>05:00</em>
                                 </td>
                                 <td>收</td>
-                                <td>9697.00</td>
+                                <td class="je z">+9697.00</td>
                                 <td>-7：00</td>
                                 <td>
                                     <a href="###">操作</a>
@@ -411,7 +411,7 @@
                                     <em>05:00</em>
                                 </td>
                                 <td>收</td>
-                                <td>9697.00</td>
+                                <td class="je f">-9697.00</td>
                                 <td>-7：00</td>
                                 <td>
                                     <a href="###">付款</a>
@@ -428,7 +428,7 @@
                                     <em>05:00</em>
                                 </td>
                                 <td>收</td>
-                                <td>9697.00</td>
+                                <td class="je f">-9697.00</td>
                                 <td>-7：00</td>
                                 <td>
                                     <a href="###">操作</a>
@@ -445,7 +445,7 @@
                                     <em>05:00</em>
                                 </td>
                                 <td>收</td>
-                                <td>9697.00</td>
+                                <td class="je f">-9697.00</td>
                                 <td>-7：00</td>
                                 <td>
                                     <a href="###">付款</a>
@@ -910,10 +910,6 @@ $(function(){
     var _tempsp;
 
 
-        $("thead tr").find("th:first").css("textIndent","30px");
-        $("tbody tr").find("td:first").css("textIndent","30px");
-        $("tfoot tr").find("td:first").css("textIndent","30px");
-
 //         鼠标移入BODY  a标签
         $(".col-five").hover(function(){
             _tempsp=$(this).children(".whi").html();
@@ -921,13 +917,6 @@ $(function(){
         },function(){
             $(this).css("background","white").children(".whi").removeClass("cc").html(_tempsp)
         });
-
-
-
-    //        加载图片
-
-
-
 
 
 })
@@ -940,12 +929,11 @@ $(function(){
                 $("#xzrq1").html($(".xzrq1").val());
                 $("#xzrq2").html($(".xzrq2").val())
             }
-        })
+        });
 
     $.fn.datepicker.defaults.format = "yyyy-mm-dd";
-    $("#aaa").change(function(){
-        console.log($(this).find("option:selected").width())
-    })
+
+
 </script>
 </body>
 </html>
