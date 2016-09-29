@@ -12,6 +12,7 @@
     <script>
         var $ = require('jquery');
         require('modules/js/common2');
+        require('modules/app/jquery.validate.min');
         require('modules/widget/choosebank/index');
     </script>
     <style>
@@ -22,6 +23,20 @@
             float: left;
             margin-top: 18.5px;
         }
+    </style>
+    <style type="text/css">
+        .rechargeC{padding:10px 0;border:1px solid #E8E8E8;margin: 10px 0 20px 0;font-size: 18px;color: #333333;background-color: #fff;text-indent: 2em;}
+        .Pay_center{padding: 40px 0;}
+        .Pay_center ul li{width: 33%;font-size: 18px;color: #4A4A4A;}
+        .youju_text{padding: 20px 0;background-color: #F7F7F7;margin-top: 30px;}
+        .youju_div{padding: 20px 0;font-size: 18px;color: #4A4A4A;background-color: #FFF9ED;border: 1px solid #EE8719;text-indent: 2em;margin-top: 30px;}
+        .youju_div em{color:#EE8719 ;}
+        .youju_text .img{background: url(../imgs/icons/B3-2.png)no-repeat 10px 2px;width: 50px;height: 25px;display: inline-block;vertical-align: middle;margin-left: 20px;}
+        .form-horizontal ul li{padding: 15px 0;}
+        .form-horizontal ul li span{width: 100px;text-align: right;display: inline-block;margin-left:60px;}
+        .form-horizontal ul li em{color: #EE8719;}
+        .form-horizontal ul li select{width: 189px;height: 25px;line-height: 25px;text-indent:0.5em;}
+        .form-horizontal ul li textarea{width: 189px;height: 100px;text-indent: 0.5em;}
     </style>
 </head>
 <body>
@@ -64,21 +79,23 @@
             <!--</div>-->
 
             <div class="card_tit" style="padding-left:40px;">
-                <a href="/page/postaccount/rechargeA-1.html" target="_blank">
-                    <div class="card_sp active" id="tabcard-cxk">
+
+                    <div class="card_sp active" id="cz1">
                         储蓄卡(借记卡)
                     </div>
-                </a>
-                <a href="/page/postaccount/rechargeB-1.html" target="_blank"><div class="card_sp" id="tabcard-yhhk">
-                    银行汇款
-                </div>
-                </a>
-                <a href="/page/postaccount/rechargeC-1.html" target="_blank">
-                    <div class="card_sp" id="tabcard-yjsk">
+
+                    <div class="card_sp" id="cz2">
+                            银行汇款
+                    </div>
+
+                    <div class="card_sp" id="cz3">
                         邮局收款
                     </div>
-                </a>
             </div>
+
+
+            <!--储蓄卡-->
+            <div id="cz1b" class="cz">
             <div class="car" style="padding:0 38px;">
                 <h2 class="kjzfo">
                     <span class="sub-kjzfo"><em>网上</em>银行</span>
@@ -350,21 +367,201 @@
                 </div>
             </div>
 
+                <form class="form-horizontal ysbbd" style="margin-top: 20px">
+                    <fieldset>
 
+                        <!--下一步-->
+                        <div class="form-item">
+                            <label class="form-right">
+                                <a class="step_button"  style="margin-left: 56px">下一步</a>
+                            </label>
+                            <div class="form-right"></div>
+                        </div>
 
-            <form class="form-horizontal" style="margin-top: 20px">
-                <fieldset>
+                    </fieldset>
+                </form>
 
-                    <!--下一步-->
-                    <div class="form-item">
-                        <label class="form-right">
-                            <a class="step_button"  style="margin-left: 56px">下一步</a>
-                        </label>
-                        <div class="form-right"></div>
+            </div>
+
+            <!--银行汇款-->
+            <div id="cz2b" class="cz" style="display: none">
+                <!--警告2-->
+                <div class="witwar stop" style="margin-top:20px;margin-bottom: 30px">
+                    <div class="gan_text">
+                        <img src="/imgs/icons/B3-2.png" style="float: left;margin-right: 20px">银生宝账户不允许进行虚假交易、银行卡转账套现或洗钱等被禁止的交易行为，否则充值款项将不能提现。
                     </div>
+                </div>
 
-                </fieldset>
-            </form>
+                <div class="shouju" style="height: 72px;padding: 0">
+                    <div class="shoujul" style="height: 100%;padding-left: 41px">
+                        充值金额&nbsp;:&nbsp;<span class="huang">1029.00</span>元
+                    </div>
+                </div>
+
+                <!--表单-->
+                <form class="form-horizontal ysbbd">
+                    <fieldset>
+
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;收款银行&nbsp;:</label>
+                            <div class="form-right">
+                                <select>
+                                    <option>请选择您的收款银行</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;汇款银行&nbsp;:</label>
+                            <div class="form-right">
+                                <select>
+                                    <option>请选择您的汇款银行</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;开户省份&nbsp;:</label>
+                            <div class="form-right">
+                                <select>
+                                    <option>请选择您的开户行省份</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;开户城市&nbsp;:</label>
+                            <div class="form-right">
+                                <select>
+                                    <option>请选择您的开户行城市</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;开户名称&nbsp;:</label>
+                            <div class="form-right">
+                                <input type="text" placeholder="请选择您的开户行名称" name="khmc" id="khmc" style="padding-left: 12px"> <span class="hui">(&nbsp;最多40个汉字&nbsp;)</span>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"></label>
+                            <div class="form-right">
+                                <!--警告2-->
+                                <div class="witwar stop"  style="margin-bottom: 0">
+                                    <div class="gan"></div>
+                                    <div class="gan_text">
+                                        <p style="margin-bottom: 10px">请务必正确填写您的汇款银行开户行的详细信息！如果您不填写或者填写不正确，当充值过程发生意外时，</p>
+                                        <p style="margin-bottom: 10px">将会导致您的充值资金无法正常退回您的汇款账户！。</p>
+                                        <p style="margin-bottom: 10px">如果您无法确定您的银行卡的开户行名称，您可以致电相关银行客服，报出您的卡号，即可获得开户行信息。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 备注-->
+                        <div class="form-item beizhu">
+                            <label class="form-left">备注&nbsp;:</label>
+                            <div class="form-right">
+                                <textarea placeholder="请输入..." class="note" style="text-indent: 5px"></textarea>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 下一步-->
+                        <div class="form-item">
+                            <label class="form-left">
+                            </label>
+                            <div class="form-right">
+                                <a class="step_button">下一步
+                                </a>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+
+                </form>
+            </div>
+
+            <!--邮局汇款-->
+            <div id="cz3b" class="cz" style="display: none">
+                <!--警告2-->
+                <div class="witwar stop" style="margin-top:20px;margin-bottom: 30px">
+                    <div class="gan_text">
+                        <img src="/imgs/icons/B3-2.png" style="float: left;margin-right: 20px">银生宝账户不允许进行虚假交易、银行卡转账套现或洗钱等被禁止的交易行为，否则充值款项将不能提现。
+                    </div>
+                </div>
+
+                <div class="shouju" style="height: 72px;padding: 0">
+                    <div class="shoujul" style="height: 100%;padding-left: 41px">
+                        充值金额&nbsp;:&nbsp;<span class="huang">1029.00</span>元
+                    </div>
+                </div>
+
+                <!--表单-->
+                <form class="form-horizontal ysbbd">
+                    <fieldset>
+
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;汇款省份&nbsp;:</label>
+                            <div class="form-right">
+                                <select>
+                                    <option>请选择您的汇款省份</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- 充值金额-->
+                        <div class="form-item">
+                            <label class="form-left"><span class="yell must">*</span>&nbsp;汇款城市&nbsp;:</label>
+                            <div class="form-right">
+                                <select>
+                                    <option>请选择您的汇款城市</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 备注-->
+                        <div class="form-item beizhu">
+                            <label class="form-left">备注&nbsp;:</label>
+                            <div class="form-right">
+                                <textarea placeholder="请输入..." class="note" style="text-indent: 5px"></textarea>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 下一步-->
+                        <div class="form-item">
+                            <label class="form-left">
+                            </label>
+                            <div class="form-right">
+                                <a class="step_button">下一步
+                                </a>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+
+                </form>
+            </div>
         </div>
 
     </div>
@@ -373,6 +570,23 @@
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
 <script src="lib/mod.js" data-loader></script>
+
+<script>
+      $(".card_sp").on("click",function(){
+          $(".card_sp").removeClass("active");
+          $(this).addClass("active")
+          $(".cz").fadeOut();
+      });
+      $("#cz1").on("click",function(){
+          $("#cz1b").fadeIn()
+      });
+      $("#cz2").on("click",function(){
+          $("#cz2b").fadeIn()
+      });
+      $("#cz3").on("click",function(){
+          $("#cz3b").fadeIn()
+      })
+</script>
 <!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>

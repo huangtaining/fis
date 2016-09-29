@@ -60,53 +60,9 @@ $(function(){
     }
 
 
-    //点击表单验证
-    $(".step_button,.step_button_s,.life_step").click(function(){
-        $(".ysbbd").valid()
-    });
 
-//      自定义预留信息
-    jQuery.validator.addMethod("ggg", function(value, element) {
-        return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
-    }, "格式错误");
 
-    //  比较大小
-    jQuery.validator.addMethod("xiane", function(value, element) {
-        return this.optional(element) || parseInt($(".topa").html()||$(".topa").val())>=$(".topb").val();
-    }, "超出上限");
 
-    //  手机号码验证
-    jQuery.validator.addMethod("isMobile", function(value, element) {
-        var length = value.length;
-        return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));
-    }, "请正确填写您的手机号码");
-
-    //  手机或者邮箱
-    jQuery.validator.addMethod("sjyx", function(value, element) {
-        var length = value.length;
-        return this.optional(element) || /(^1[0-9]{10}$)|(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)/.test(value);
-    }, "请正确填写您的手机号码");
-
-    //  限额大小
-    jQuery.validator.addMethod("xedx", function(value, element) {
-        var length = value.length;
-        return this.optional(element) || $("#axe").val()<=$("#allxe").val();
-    }, "大小错误");
-
-    // 身份证号码验证
-    jQuery.validator.addMethod("isIdCardNo", function(value, element) {
-        return this.optional(element) || /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(value)
-    }, "请输入正确的身份证号码。");
-
-    // 10的倍数
-    jQuery.validator.addMethod("yushu", function(value, element) {
-        return this.optional(element) || (value-parseInt(value/10)*10)==0;
-    }, "请输入10的倍数");
-
-    // 10的倍数
-    jQuery.validator.addMethod("gou", function(value, element) {
-        return this.optional(element) || $(".icheckbox_flat-blue").hasClass("checked")
-    }, "请打钩");
 
 
 
@@ -115,7 +71,7 @@ $(function(){
     //jQuery.validator.addMethod("ccc", function(value, element) {
     //    return this.optional(element) || /^[A-Za-z]{0,45}$/.test(value)||/^[\u4e00-\u9fa5]{0,15}$/.test(value);
     //}, "匹配english");
-
+    // 验证规则
     $(".ysbbd").validate({
         errorPlacement:function(error,element){
             error.appendTo(element.parent())
@@ -502,6 +458,53 @@ $(function(){
               var _ot=$(this).offset().top;
               $(".modal-dialog").css({"left":130,"top":(_ot-_st-58)})
     })
+
+    //点击表单验证
+    $(".step_button,.step_button_s,.life_step").click(function(){
+        $(".ysbbd").valid();
+    });
+    //      自定义预留信息
+    jQuery.validator.addMethod("ggg", function(value, element) {
+        return this.optional(element) || /^[A-Za-z\u4e00-\u9fa5\u3002-\uff0c\d]$/.test(value);
+    }, "格式错误");
+
+    //  比较大小
+    jQuery.validator.addMethod("xiane", function(value, element) {
+        return this.optional(element) || parseInt($(".topa").html()||$(".topa").val())>=$(".topb").val();
+    }, "超出上限");
+
+    //  手机号码验证
+    jQuery.validator.addMethod("isMobile", function(value, element) {
+        var length = value.length;
+        return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));
+    }, "请正确填写您的手机号码");
+
+    //  手机或者邮箱
+    jQuery.validator.addMethod("sjyx", function(value, element) {
+        var length = value.length;
+        return this.optional(element) || /(^1[0-9]{10}$)|(^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$)/.test(value);
+    }, "请正确填写您的手机号码");
+
+    //  限额大小
+    jQuery.validator.addMethod("xedx", function(value, element) {
+        var length = value.length;
+        return this.optional(element) || $("#axe").val()<=$("#allxe").val();
+    }, "大小错误");
+
+    // 身份证号码验证
+    jQuery.validator.addMethod("isIdCardNo", function(value, element) {
+        return this.optional(element) || /^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(value)
+    }, "请输入正确的身份证号码。");
+
+    // 10的倍数
+    jQuery.validator.addMethod("yushu", function(value, element) {
+        return this.optional(element) || (value-parseInt(value/10)*10)==0;
+    }, "请输入10的倍数");
+
+    // 10的倍数
+    jQuery.validator.addMethod("gou", function(value, element) {
+        return this.optional(element) || $(".icheckbox_flat-blue").hasClass("checked")
+    }, "请打钩");
 
 });
 
