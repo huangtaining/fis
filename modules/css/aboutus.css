@@ -6,8 +6,8 @@
     padding-bottom:100px;
 }
 .intro{
-    height:710px;
-    padding:12px 0;
+    /*height:710px;*/
+    padding:12px 0 48px 0;
 
 }
 .company-intro .sub_coll .position{
@@ -31,8 +31,9 @@
 }
 .company-intro .introcenter{
     width:1150px;
-    height:281.6px;
+    /*height:281.6px;*/
     margin:0 auto;
+    padding-bottom:50px;
 
 }
 .company-intro .introcenter p{
@@ -72,7 +73,7 @@
     border-bottom:solid 1px #e8e8e8;
 }
 .company-intro .largeNote_con_t p {
-    width:54px;
+    /*width:54px;*/
     height:24px;
     font-size: 18px;
     line-height:40px;
@@ -914,7 +915,6 @@
     width:100%;
     background-color:#F7F7F7;
     padding-top:11px;
-
 }
 .contactus .sub_coll .position{
     color:#666;
@@ -925,12 +925,10 @@
     padding-bottom:68px;
     width:873px;
     float:left;
-    /*height:647px;*/
     border-right:1px solid #E8E8E8;
 }
 .contactus .contactustel{
     width:294px;
-    height:647px;
     float:right;
 }
 .contactus .contactmap .ysbz{
@@ -1044,7 +1042,7 @@
 }
 .legel  .kongb{
     background-color:#F7F7F7;
-    height:850px;
+    height:842px;
     margin-top:120px;
     border:0;
     border-right:1px solid #E8E8E8;
@@ -1095,6 +1093,7 @@
 }
 .legel .wrap-content{
     margin-top:28px;
+
 }
 
 .legel .wrap-content p{
@@ -1218,10 +1217,11 @@
 }
 .news-detail .content{
     width:1200px;
-    height:1653px;
+    /*height:1653px;*/
     margin:0 auto;
     background-color:white;
     margin-bottom:158px;
+    padding-bottom:300px;
     border:1px solid #E8E8E8;
 }
 .news-detail .con-header{
@@ -1284,7 +1284,7 @@
     float:left;
 }
 .company-news .con-left{
-    height:120px;
+    /*height:120px;*/
     width:210px;
     float:left;
 
