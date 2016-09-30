@@ -1,0 +1,107 @@
+.m .modal-dialog{
+    width: 564px;
+}
+.m .modal-header,.m .modal-body,.m .modal-footer{
+    padding:30px 23px;
+    width: 564px;
+    margin: 0 auto;
+}
+.m .modal-header,.m .modal-body{
+    padding-bottom: 0;
+}
+.m .modal-body,.m .modal-footer{
+    padding-top:10px
+}
+
+.m .modal-header p{
+    border-bottom: none !important;
+}
+.m table{
+    width: 100%;
+}
+.m table input[type=text]{
+    border: 1px solid #dddddd;
+    height: 25px;
+    line-height: 23px;
+    padding: 2px;
+}
+.m thead th{
+    background: #F0F0F0;
+    border-top:1px solid #dcdcdc;
+}
+.m tbody tr{
+    border-bottom: 1px solid #F0F0F0;
+    height: 40px;
+    line-height: 40px;
+}
+.m tbody td{
+    height: 40px;
+    line-height: 40px;
+    color: #919191;
+    font-size: 12px;
+}
+.m td input[type=text]{
+    width: 73px;
+}
+.m th:nth-child(1){
+    width: 45px;
+    text-indent: 10px;
+}
+.m  th:nth-child(2){
+    width: 100px
+}
+.m th:nth-child(3){
+    width: 100px;
+    text-align: center;
+}
+.m th:nth-child(4){
+    width: 100px;
+text-align: center;
+}
+.m th:nth-child(5){
+    width: 30px;
+text-align: center;
+}
+.m tbody td:nth-child(1){
+    width: 45px;
+    text-indent: 10px;
+}
+.m tbody td:nth-child(2){
+    width: 100px
+}
+.m tbody td:nth-child(3){
+    width: 100px;
+   text-align: center;
+    margin-right: 20px;
+}
+.m tbody td:nth-child(4){
+    width: 100px;
+    text-align: center;
+    margin-right: 20px;
+}
+.m tbody td:nth-child(5){
+    width: 30px;
+     text-align: center;
+}
+.m .dxtit{
+    width: 100px !important;
+    text-align: center;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border: 1px solid #F0F0F0;
+    cursor: pointer;
+}
+.m .dxtit.active{
+    background: #00a0e8;
+    border: 1px solid #00a0e8;
+    color: white;
+}
+.tkp{
+    padding: 5px 0;
+    line-height: 26px;
+}
+.tkp:last-child{
+    background: #F7F7F7;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
+ }

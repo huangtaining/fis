@@ -4,9 +4,10 @@
     <title>向多人付款_1</title>
     <link rel="import" href="../layout/header.html?__inline">
     <!--STYLE_PLACEHOLDER-->
-    <link href="../../modules/css/myusp.css" rel="stylesheet">
-    <link href="../../modules/css/common2.css" rel="stylesheet">
-    <link href="../../modules/css/transfer_com.css">
+    <link href="/modules/css/myusp.css" rel="stylesheet">
+    <link href="/modules/css/common2.css" rel="stylesheet">
+    <link href="/modules/css/transfer_com.css" rel="stylesheet">
+    <link href="/modules/css/choose.css" rel="stylesheet">
     <script src="/modules/app/jquery.validate.min.js"></script>
     <script src="/modules/js/jsq.js"></script>
     <script src="/modules/js/common2.js"></script>
@@ -140,8 +141,214 @@
 
 </div>
 
-<!--多选联系人并付款-->
-<link rel="import" href="modules/widget/chooselxr/tranmul.html?__inline">
+
+<!-- Modal -->
+<div class="modal fade m" id="mtwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content xdrfk">
+            <!--头部-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <p class="modal-title s20" id="myModalLabel">选择收款人</p>
+                <p>可同时向多个银生宝账户或者多个银行账户付款</p>
+            </div>
+            <!--身体-->
+            <div class="modal-body chpeople">
+
+                <!--标签-->
+                <div id="bq">
+                    <span class="dxtit active" id="bq1">银生宝账户</span>
+                    <span class="dxtit" id="bq2">银行账户</span>
+                </div>
+
+                <!--银生宝账户-->
+                <table id="ysb">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>账户名称</th>
+                        <th>Email</th>
+                        <th>手机号码</th>
+                        <th>金额(元)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!--银行账户-->
+                <table id="yh" style="display: none">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>账户名称</th>
+                        <th>银行账号</th>
+                        <th>银行名称</th>
+                        <th>金额(元)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>张丽</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>张丽</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>张丽</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>张丽</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>张丽</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>张丽</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    <tr>
+                        <td class="ck"><input type="checkbox"></td>
+                        <td>彭敏</td>
+                        <td>pengmmin1977@163.com</td>
+                        <td>13758022117</td>
+                        <td><input type="text" class="lxrje" value="0.00" disabled></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <p class="tkp" style="text-indent: 10px">合计&nbsp;：&nbsp;共<em class="huang">0</em>笔&nbsp;&nbsp;付款总额<em class="huang">0.00</em>元</p>
+                <p class="tkp" style="text-indent: 10px">
+                    当前 <em class="huang">2</em>&nbsp;&nbsp;共4页&nbsp;&nbsp;&nbsp;每页展现<em style="padding:0 10px;border: 1px solid #DDDDDD;margin: 0 5px">10</em>条
+                    <em class="right">上一页<em class="huang" style="padding: 0 10px">2</em>下一页&nbsp;&nbsp;向&nbsp;&nbsp;<em style="padding:0 5px;;border: 1px solid #DDDDDD">4</em>&nbsp;&nbsp;页&nbsp;&nbsp;&nbsp;
+                        <input type="button" value="跳转" style="padding:0 10px;display: inline-block;margin: 0 10px">
+                    </em>
+                </p>
+            </div>
+            <!--jo-->
+            <div class="modal-footer">
+                <a class="step_button_s modalqd" data-dismiss="modal" id="queding" style="border: 1px solid #ED8719">确定</a>
+                <a class="step_button_w" data-dismiss="modal" id="quxiao" style="margin-left: 20px">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!--foot-->
 <link rel="import" href="modules/widget/footer/footer-login.html?__inline">
@@ -150,5 +357,18 @@
 </body>
 </html>
 <script type="text/javascript">
-    console.log($("#transmul"))
+    $("#bq1").click(function(){
+        console.log("sss");
+        $(".dxtit").removeClass('active');
+        $(this).addClass('active');
+        $(".m table").hide();
+        $("#ysb").show()
+    });
+    $("#bq2").click(function(){
+        console.log("ccc");
+        $(".dxtit").removeClass('active');
+        $(this).addClass('active');
+        $(".m table").hide();
+        $("#yh").show()
+    });
 </script>
