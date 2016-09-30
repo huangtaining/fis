@@ -412,7 +412,6 @@ $(function(){
     $("#mtwo .modalqd").click(function(){
         var _zl=0;
         var _dl="";
-
         var _zp=$(".ck").find("input:checked:visible").length;
         console.log(_zp)
         for(var i=0;i<_zp;i++){
