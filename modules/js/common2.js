@@ -413,10 +413,11 @@ $(function(){
         var _zl=0;
         var _dl="";
 
-        var _zp=$(".ck").find("input:checked").length;
+        var _zp=$(".ck").find("input:checked:visible").length;
+        console.log(_zp)
         for(var i=0;i<_zp;i++){
-            _zl+=parseInt($(".ck").eq(i).find("input:checked").parents().siblings("td:last").children("input").val());
-            console.log(_zl)
+            //console.log($(".ck").eq(i).find("input:checked").parents().siblings("td:last").children("input").val());
+            _zl+=parseInt($(".ck").find("input:checked:visible").eq(i).parents().siblings("td:last").children("input").val());
         }
         $(".multipeo").html(_zp);
         $(".multipeo").val(_zp);
@@ -428,26 +429,34 @@ $(function(){
 
 //选择联系人全选
     var _ct=-1;
-    $(".xdrfk thead input:checkbox").click(function(){
+    $("#yh thead input:checkbox").click(function(){
         _ct*=-1;
         if(_ct==-1){
-            $(".xdrfk tbody input:checkbox").prop("checked",false);
+            $("#yh tbody :checkbox").prop("checked",false);
+            $("#yh tbody :text").prop("disabled",true);
         }else if(_ct==1){
-            $(".xdrfk tbody input:checkbox").prop("checked",true);
+            $("#yh tbody :checkbox").prop("checked",true);
+            $("#yh tbody :text").prop("disabled",false);
         }
-        if($(this).prop("checked")){
-            $(".lxrje").css("background","white")
-        }else{
-            $(".lxrje").css("background","#E3E3E3")
+    });
+    var _ot=-1;
+    $("#ysb thead input:checkbox").click(function(){
+        _ot*=-1;
+        if(_ot==-1){
+            $("#ysb tbody :checkbox").prop("checked",false);
+            $("#ysb tbody :text").prop("disabled",true);
+        }else if(_ot==1){
+            $("#ysb tbody :checkbox").prop("checked",true);
+            $("#ysb tbody :text").prop("disabled",false);
         }
     });
 
     //改变勾选框颜色
     $(".ck").find(":checkbox").click(function(){
         if($(this).prop("checked")){
-            $(this).parents().siblings("td:last").children("input").css("background","white")
+            $(this).parents().siblings("td:last").children("input").prop("disabled",false)
         }else{
-            $(this).parents().siblings("td:last").children("input").css("background","#E3E3E3")
+            $(this).parents().siblings("td:last").children("input").prop("disabled",true)
         }
     });
 

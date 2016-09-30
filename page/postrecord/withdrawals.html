@@ -85,6 +85,7 @@
 		<script>
 			require('ui/index');
             console.log($(".recharge span").length);
+            $.fn.datepicker.defaults.format = "yyyy-mm-dd";
            function choosedata(){
                for(var i=0;i<$(".recharge span").length;i++){
                    var _s=$(".recharge span").eq(i).attr("id");
@@ -101,24 +102,31 @@
                     var _1month=new Date(_rq.getTime()-1000*60*60*24*30);
                     var _3month=new Date(_rq.getTime()-1000*60*60*24*90);
                     var _1year=new Date(_rq.getTime()-1000*60*60*24*365);
+                    function _date(a){
+                             if(a<10){
+                                 return "0"+a;
+                             }else{
+                                 return a
+                             }
+                    }
                     if(i==0){
-                        _cd1.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate());
+                        _cd1.val(_rq.getFullYear()+"-"+_date(_rq.getMonth()+1)+"-"+_date(_rq.getDate()));
                         _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
                     }
                     if(i==1){
-                        _cd1.val(_1week.getFullYear()+"-"+(_1week.getMonth()+1)+"-"+_1week.getDate());
+                        _cd1.val(_1week.getFullYear()+"-"+_date(_1week.getMonth()+1)+"-"+_date(_1week.getDate()));
                         _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
                     }
                     if(i==2){
-                        _cd1.val(_1month.getFullYear()+"-"+(_1month.getMonth()+1)+"-"+_1month.getDate());
+                        _cd1.val(_1month.getFullYear()+"-"+_date(_1month.getMonth()+1)+"-"+_date(_1month.getDate()));
                         _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
                     }
                     if(i==3){
-                        _cd1.val(_3month.getFullYear()+"-"+(_3month.getMonth()+1)+"-"+_3month.getDate());
+                        _cd1.val(_3month.getFullYear()+"-"+_date(_3month.getMonth()+1)+"-"+_date(_3month.getDate()));
                         _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
                     }
                     if(i==4){
-                        _cd1.val(_1year.getFullYear()+"-"+(_1year.getMonth()+1)+"-"+_1year.getDate());
+                        _cd1.val(_1year.getFullYear()+"-"+_date(_1year.getMonth()+1)+"-"+_date(_1year.getDate()));
                         _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
                     }
                 })
