@@ -8,6 +8,7 @@
 
 
 $(function(){
+    //改变日期格式
 
 //    其他银行
     $(".qtyh").click(function(){

@@ -724,7 +724,8 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th style="padding-left: 30px;">日期</th>
+                                <th style="padding-left: 30px;">交易创建时间</th>
+                                <th>交易完成时间</th>
                                 <th>交易编号</th>
                                 <th>交易类型</th>
                                 <th>资金用途</th>
@@ -982,6 +983,7 @@
 
     var $ = require('jquery');
     require('lib/ysbbase');
+    require('modules/js/common3');
 
 $(function(){
 
@@ -1020,6 +1022,10 @@ $(function(){
             $(this).css("background","white").children(".whi").removeClass("cc").html(_tempsp)
         });
 
+    $(function() {
+        $('#myModal1').modal('show')
+    });
+
 })
 
 </script>
@@ -1031,35 +1037,32 @@ $(function(){
                 $("#xzrq2").html($(".xzrq2").val())
             }
         });
-
-    $.fn.datepicker.defaults.format = "yyyy-mm-dd";
-
-
 </script>
 <!--倒计时-->
-		<script type="text/javascript">
-			var wait = 60;
+<script type="text/javascript">
+    var wait = 60;
 
-			function time(o) {
-				if(wait == 0) {
-					o.removeAttribute("disabled");
-					o.value = "免费获取验证码";
-					wait = 60;
-				} else {
+    function time(o) {
+        if(wait == 0) {
+            o.removeAttribute("disabled");
+            o.value = "免费获取验证码";
+            wait = 60;
+        } else {
 
-					o.setAttribute("disabled", true);
-					o.value = "(" + wait + ")秒后，重新获取验证码";
-					wait--;
-					setTimeout(function() {
-							time(o)
-						},
-						1000)
-				}
-			}
-			document.getElementById("btn").onclick = function() {
-				time(this);
-			}
-		</script>
+            o.setAttribute("disabled", true);
+            o.value = "(" + wait + ")秒后，重新获取验证码";
+            wait--;
+            setTimeout(function() {
+                    time(o)
+                },
+                1000)
+        }
+    }
+    document.getElementById("btn").onclick = function() {
+        time(this);
+    }
+    $.fn.datepicker.defaults.format = "yyyy-mm-dd";
+</script>
 		<!--5秒倒数-->
 <script type="text/javascript">
  window.setInterval(function(){
@@ -1073,54 +1076,10 @@ $(function(){
  },1000)
 </script>
 <script>
-$(function() {
-    $('#myModal1').modal('show')
-});
+
 </script>
 <script>
-    require('ui/index');
 
-    function choosedata(){
-        for(var i=0;i<$(".recharge:visible span").length;i++){
-            var _s=$(".recharge:visible span").eq(i).attr("id");
-            choose(i)
-        }
-    }
-    $("#myTab").on('click',function(){
-        choosedata();
-    });
-
-    function choose(i){
-        var _cd1=$(".recharge:visible input:first");
-        var _cd2=$(".recharge:visible input:last");
-        $(".recharge:visible span").eq(i).css("cursor","pointer").on('click',function(){
-            var _rq=new Date();
-            var _1week=new Date(_rq.getTime()-1000*60*60*24*7);
-            var _1month=new Date(_rq.getTime()-1000*60*60*24*30);
-            var _3month=new Date(_rq.getTime()-1000*60*60*24*90);
-            var _1year=new Date(_rq.getTime()-1000*60*60*24*365);
-            if(i==0){
-                _cd1.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate());
-                _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
-            }
-            if(i==1){
-                _cd1.val(_1week.getFullYear()+"-"+(_1week.getMonth()+1)+"-"+_1week.getDate());
-                _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
-            }
-            if(i==2){
-                _cd1.val(_1month.getFullYear()+"-"+(_1month.getMonth()+1)+"-"+_1month.getDate());
-                _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
-            }
-            if(i==3){
-                _cd1.val(_3month.getFullYear()+"-"+(_3month.getMonth()+1)+"-"+_3month.getDate());
-                _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
-            }
-            if(i==4){
-                _cd1.val(_1year.getFullYear()+"-"+(_1year.getMonth()+1)+"-"+_1year.getDate());
-                _cd2.val(_rq.getFullYear()+"-"+(_rq.getMonth()+1)+"-"+_rq.getDate())
-            }
-        })
-    }
 </script>
 
 </body>
