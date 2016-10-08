@@ -836,10 +836,12 @@
 
 
 <div id="zhlx">
-   <p><span class="s20" style="color: #333333">账户类型</span><em class="cloze">X</em></p>
-    <p>您目前是<span>i</span>类实名用户，余额限额为<span>1000</span>元/终身。赶快增加验证吧！</p>
+   <p style="margin-bottom: 40px"><span class="s20" style="color: #333333">账户类型</span><em class="cloze right" style="cursor: pointer">X</em></p>
+    <p style="color: #767676;margin-bottom: 10px">您目前是<span>i</span>类实名用户，余额限额为<span>1000</span>元/终身。赶快增加验证吧！</p>
     <a href="###" class="bullq">立即验证</a>
 </div>
+
+
 <!--弹出框    账户名验证-->
  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -1080,6 +1082,10 @@ $(function(){
          window.location.href="/page/postaccount/index.html"
      }
  },1000)
+
+    $(".cloze").on('click',function(){
+        $(this).parents("#zhlx").hide()
+    })
 </script>
 <script>
 

@@ -591,10 +591,15 @@
 .je.f{
     color:#00FE00;
 }
+
+
 #zhlx{
     position: fixed;
     left: 50%;
     top: 50%;
     width: 471px;
     height: 210px;
+    background: white;
+    padding: 29px 33px;
+    box-shadow: 0 0 3px 3px #DEDEDE;
 }
