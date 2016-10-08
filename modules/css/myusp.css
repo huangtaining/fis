@@ -77,7 +77,7 @@
  }
 .toux3{
     float: right;
-    width: 380px;
+    width: 370px;
     padding: 10px 0;
     line-height: 30px;
     overflow: hidden;
@@ -552,6 +552,8 @@
 
 .bo #myTabContent tbody tr:nth-child(odd){
        background: #F7F7F7
+}
+.bo #myTabContent tbody tr td:last-child{
 }
 .myuspbottom{
     float: left;
