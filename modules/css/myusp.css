@@ -591,3 +591,10 @@
 .je.f{
     color:#00FE00;
 }
+#zhlx{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 471px;
+    height: 210px;
+}
