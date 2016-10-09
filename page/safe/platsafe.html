@@ -8,6 +8,20 @@
     <script>
         var $ = require('jquery');
     </script>
+    <style>
+        .hengy{
+            position:absolute;
+            left:50px;
+            top:-10px;
+            z-index:0;
+        }
+        .shuy{
+            position:absolute;
+            left:80px;
+            top:-20px;
+            z-index: 0;
+        }
+    </style>
 </head>
 <body class="pagesafe pagesafe1">
 <link rel="import" href="modules/widget/header/header.html?__inline">
@@ -103,11 +117,13 @@
     <div class="zjsafe">
         <div class="center">
             <div class="zjsafe-left ">
-                <img src="/imgs/safe/C10.png" alt="" class="bounceInLeft animated">
-                <div class="money-imgo bounceInLeft animated" >
-                    <img src="/imgs/safe/C11.png" alt="" >
+                <img src="/imgs/safe/C10.png" alt="" style="position:absolute;z-index: 1000">
+                <div class="money-imgo " >
+                    <img src="/imgs/safe/5.png" alt="" style="z-index:1000;position: absolute;">
+                    <img src="/imgs/safe/3.png" alt="" class="hengy">
+                    <img src="/imgs/safe/4.png" alt="" class="shuy">
                 </div>
-                <div class="money-imgt bounceInLeft animated">
+                <div class="money-imgt ">
                     <img src="/imgs/safe/C12.png" alt="">
                 </div>
             </div>
