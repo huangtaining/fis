@@ -11,15 +11,38 @@
     <style>
         .hengy{
             position:absolute;
-            left:50px;
-            top:-10px;
+            left:40px;
+            top:-78px;
             z-index:0;
         }
         .shuy{
             position:absolute;
-            left:80px;
-            top:-20px;
+            left:62px;
+            top:-78px;
             z-index: 0;
+        }
+        .hengy{
+            animation: money1 1.4s linear infinite;
+        }
+        @keyframes money1 {
+            from{
+                top:-78px
+            }
+            to{
+                top:29px
+            }
+        }
+        .shuy{
+            animation: money2 1.4s linear infinite;
+            animation-delay: 0.7s;
+        }
+        @keyframes money2 {
+            from{
+                top:-78px
+            }
+            to{
+                top:29px
+            }
         }
     </style>
 </head>
@@ -119,7 +142,7 @@
             <div class="zjsafe-left ">
                 <img src="/imgs/safe/C10.png" alt="" style="position:absolute;z-index: 1000">
                 <div class="money-imgo " >
-                    <img src="/imgs/safe/5.png" alt="" style="z-index:1000;position: absolute;">
+                    <img src="/imgs/safe/5.png" alt="" style="z-index:1000;position: absolute;top:7px">
                     <img src="/imgs/safe/3.png" alt="" class="hengy">
                     <img src="/imgs/safe/4.png" alt="" class="shuy">
                 </div>
@@ -210,6 +233,8 @@
 <script src="lib/mod.js"></script>
 <script>
 require('ui/index');
+
+    console.log($(".money-imgo").size())
 </script>
 </body>
 </html>
