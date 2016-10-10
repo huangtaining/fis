@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>邮局汇款充值流程</title>
+    <link rel="import" href="../layout/header.html?__inline">
+    <style>
+        .buz{
+            display:inline-block!important;
+            height:20px;
+            width:20px;
+            border-radius: 100%;
+            line-height:0px;
+            text-align: center;
+            color:white;
+            font-size:14px;
+            text-indent: 0!important;
+            background-color:#e48600;
+            vertical-align: middle;
+        }
+        .text img{
+            width:875px;
+            border:1px solid #e8e8e8;
+            margin:15px 0;
+        }
+        .text p{
+            line-height:22px!important;
+        }
+    </style>
+    <!--STYLE_PLACEHOLDER-->
 </head>
-<body>
+<body class="pagerecharge">
+<link rel="import" href="modules/widget/header/header.html?__inline">
+<section class="help_aboutus">
+    <div class="help_aboutus_box centre clearfix">
+        <h1>个人用户帮助</h1>
+        <!--左边部分-->
+        <link rel="import" href="modules/widget/help/help.html?__inline">
 
+        <!--右边部分-->
+        <div class="help_aboutus_right">
+
+            <h2 style="">邮局汇款充值流程</h2>
+            <div class="help_right_box">
+
+                <div class="text">
+                    <!--<p>温馨提示：</p>-->
+
+                    <p style="text-indent: 0;"><em class="buz">1</em> <i style="color:#e48600;font-style: normal">确认充值金额后，支付方式选为“邮局汇款”，输入您的汇款省份和城市，点击“下一步”</i></p>
+                    <img src="/imgs/help/h18.png" alt="" width="875px" style="">
+
+                    <p style="text-indent: 0;color:#e48600;"><em class="buz">2</em> 确认充值信息无误后，点击“确定”</p>
+                    <img src="/imgs/help/h19.png" alt="">
+
+                    <p style="text-indent: 0;color:#e48600;"><em class="buz">3</em> 充值申请成功提交后，银生宝会提供给您该笔交易的充值码。请您前往邮局如实填写汇款表单，请务必于用途处仔细填写充值码，该号码将作为银生宝客服为您有效充值的凭证。 我们的客服人员收到汇款单后会尽快处理，处理完后会及时通知您。</p>
+                    <img src="/imgs/help/h20.png" alt="">
+                    <img src="/imgs/help/h21.png" alt="">
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<link rel="import" href="modules/widget/footer/footer.html?__inline">
+<script src="lib/mod.js" data-loader></script>
+<script>
+    require('ui/index');
+</script>
+<!--SCRIPT_PLACEHOLDER-->
 </body>
 </html>
