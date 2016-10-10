@@ -595,11 +595,31 @@
 
 #zhlx{
     position: fixed;
-    left: 50%;
-    top: 50%;
+    left: 40%;
+    top: 30%;
     width: 471px;
     height: 210px;
     background: white;
     padding: 29px 33px;
     box-shadow: 0 0 3px 3px #DEDEDE;
+    z-index: 1000;
+}
+#smrz{
+    position: fixed;
+    left: 20%;
+    top: 31%;
+    width: 471px;
+    height: 210px;
+    background: white;
+    padding: 29px 33px;
+    box-shadow: 0 0 3px 3px #DEDEDE;
+    z-index: 1000;
+}
+.zhmu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
 }
