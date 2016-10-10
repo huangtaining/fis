@@ -115,7 +115,9 @@
 ////		$(this).attr('href',_tr)
 //
 //	})
-
-
+var _getpath=window.location.pathname.toString();
+  if(_getpath.indexOf("help_c")>0){
+	$("title").html($(".help_aboutus_right h2").html())
+  }
 </script>
 
