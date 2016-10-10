@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>被迫下线</title>
+		<link rel="import" href="layout/header.html?__inline">
+		<!--STYLE_PLACEHOLDER-->
+		<style type="text/css">
+	.modal_content ol li {
+    padding: 8px 0;
+}
+		</style>
+	</head>
+
+	<body>
+		<link rel="import" href="modules/widget/header/header.html?__inline">
+<div style="width: 100%;background-color: #F7F7F7;padding: 50px 0 100px 0;">
+		<div class="modal_content clearfix" style="width:1000px;border: 1px solid #e4e4e4;margin: 0px auto;background-color: #fff;">
+			<div class="modal-body1" style="text-align: center;padding: 150px 0 350px 250px;float: left;">
+			<img src="/imgs/myunspay/T5.png" alt="" />					
+			</div>  
+			<div style="float: right;">
+				<ol style="padding: 150px 280px 150px 30px;">
+					<li style="font-size: 20px;color: #444444;">您的账户于其它计算机登录，您被迫下线！</li>
+					<li>如果您的账户出现安全问题请重新登录并及时修改密码。</li>
+					<li>如若有其它问题，请与银生宝客服联系。</li>
+					<li><span id="wu">5</span>秒后自动跳转到  <em style="color:#00A0E8;margin-left: 10px;">银生宝首页</em></li>
+				</ol>
+			</div>
+			
+			
+		</div>
+</div>
+       <link rel="import" href="modules/widget/footer/footer.html?__inline">
+		<script src="lib/mod.js"></script>
+		<script>
+			require('ui/index');
+		</script>
+<!--SCRIPT_PLACEHOLDER-->
+		
+</script>
+		<!--5秒倒数-->
+<script type="text/javascript">
+ window.setInterval(function(){
+     var _wu=$("#wu").html();
+     _wu-=1;
+     $("#wu").html(_wu);
+     if(_wu==0){
+         console.log("sss");
+         window.location.href="/page/index.html"
+     }
+ },1000)
+
+    $(".cloze").on('click',function(){
+        $(this).parents(".mu").hide()
+    });
+</script>	
+  
+	</body>
+</html>
