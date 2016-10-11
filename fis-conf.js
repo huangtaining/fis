@@ -254,15 +254,15 @@ fis.util.map(map, function(k, v) {
 });
 
 // 发布产品库
-fis.media('prd')
-    .match('**.{es,js}', {
-        optimizer: fis.plugin('uglify-js')
-    })
-    .match('**.{scss,css}', {
-        optimizer: fis.plugin('clean-css', {
-            'keepBreaks': false //保持一个规则一个换行
-        })
-    });
+// fis.media('prd')
+//     .match('**.{es,js}', {
+//         optimizer: fis.plugin('uglify-js')
+//     })
+//     .match('**.{scss,css}', {
+//         optimizer: fis.plugin('clean-css', {
+//             'keepBreaks': false //保持一个规则一个换行
+//         })
+//     });
 
 //fis3 release prd -d E:\git_ysb\ysb-fe-personal
 fis.media('pub')
