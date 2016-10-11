@@ -217,6 +217,9 @@ a:hover{
        font-size: 15px;
        color: #333333;
 }
+.pagesafe-mgt .alltit{
+     font-size: 18px;
+}
 .allstep{
     border: 1px solid #E8E8E8;
     border-bottom: none;
@@ -233,6 +236,7 @@ a:hover{
 /**/
 .gps{
     margin: 34px 0 16px 0;
+    font-size: 12px;
 }
 /*formb部分*/
 
