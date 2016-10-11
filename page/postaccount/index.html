@@ -855,28 +855,71 @@
     <!--</div>-->
     <!--<div class="zhmu"></div>-->
 <!--</div>-->
+<!--&lt;!&ndash;弹出框    账户类型&ndash;&gt;-->
+<!--<div class="modal fade zhlx"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">-->
+    <!--<div class="modal-dialog">-->
+            <!--<div id="zhlx">-->
+                <!--<p style="margin-bottom: 40px"><span class="s20" style="color: #333333">账户类型</span><em class="cloze right" style="cursor: pointer">&times;</em></p>-->
+                <!--<p style="color: #767676;margin-bottom: 10px">您目前是<span>i</span>类实名用户，余额限额为<span>1000</span>元/终身。赶快增加验证吧！</p>-->
+                <!--<a href="###" class="bullq">立即验证</a>-->
+            <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;弹出框    实名认证&ndash;&gt;-->
+<!--<div class="modal fade smrz"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">-->
+    <!--<div class="modal-dialog">-->
+            <!--<div id="smrz">-->
+                    <!--<p style="margin-bottom: 40px"><span class="s20" style="color: #333333">实名认证</span></p>-->
+                    <!--<p style="color: #767676;margin-bottom: 10px">你好,当前账户尚未通过实名认证,绝不允许进行所有交易,请进行</p>-->
+                    <!--<a href="###" class="bullq">实名认证</a>-->
+            <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 <!--弹出框    账户类型-->
-<div class="modal fade zhlx"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog">
-            <div id="zhlx">
-                <p style="margin-bottom: 40px"><span class="s20" style="color: #333333">账户类型</span><em class="cloze right" style="cursor: pointer">&times;</em></p>
-                <p style="color: #767676;margin-bottom: 10px">您目前是<span>i</span>类实名用户，余额限额为<span>1000</span>元/终身。赶快增加验证吧！</p>
+        <div class="modal-content" style="width: 471px;margin: 0 auto;height: 210px">
+            <div class="modal-header">
+                <em class="close" data-dismiss="modal" aria-hidden="true">
+                    <img src="/imgs/myunspay/guanbi.png" alt="" />
+                </em>
+                <h4 class="modal-title" id="myModalLabel">
+                    账户类型
+                </h4>
+            </div>
+            <div class="modal-body" style="background: #ffffff;padding: 29px 0 10px 10px;color: #767676">
+                您目前是i类实名用户，余额限额为1000元/终身。赶快增加验证吧！
+            </div>
+            <div style="padding-left: 20px">
                 <a href="###" class="bullq">立即验证</a>
             </div>
+
+
+        </div>
     </div>
 </div>
 
 <!--弹出框    实名认证-->
-<div class="modal fade smrz"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog">
-            <div id="smrz">
-                    <p style="margin-bottom: 40px"><span class="s20" style="color: #333333">实名认证</span></p>
-                    <p style="color: #767676;margin-bottom: 10px">你好,当前账户尚未通过实名认证,绝不允许进行所有交易,请进行</p>
-                    <a href="###" class="bullq">实名认证</a>
+        <div class="modal-content" style="width: 471px;margin: 0 auto;height: 210px">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                   实名认证
+                </h4>
             </div>
+            <div class="modal-body" style="background: #ffffff;padding: 29px 0 10px 10px; color: #767676">
+                你好,当前账户尚未通过实名认证,绝不允许进行所有交易,请进行
+            </div>
+            <div style="padding-left: 20px">
+                <a href="###" class="bullq">实名认证</a>
+            </div>
+
+
+        </div>
     </div>
 </div>
-
 
 <!--弹出框    账户名验证-->
  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -1125,8 +1168,8 @@ $(function(){
 
 // 实名认证和账户类型
  $(function() {
-//     账户类型显示
-//     $('.zhlx').modal('show');
+//     显示框
+//     $('#myModal4').modal('show');
 //     账户类型点击关闭
      $(".cloze").on('click',function(){
          $('.zhlx').modal('hide');
