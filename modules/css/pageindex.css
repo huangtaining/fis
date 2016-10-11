@@ -233,7 +233,10 @@ border: 1px solid #fff;border-radius:5px;font-size: 17px;opacity: .8;}
 	width: 157px;
 	margin-top:40px;
 	border-right: 1px solid #ECECEC;
-	margin-left: 1px;
+	/*margin-left: 1px;*/
+}
+.lift .center_box:hover{
+	border-right:none!important;
 }
 .payment_top a{text-decoration: none;}
 .center_box p {
@@ -332,7 +335,7 @@ border: 1px solid #fff;border-radius:5px;font-size: 17px;opacity: .8;}
 	top: 0;
 
 } */
-.lift_top .active {
+.lift_top:hover .active {
     -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
     filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
     box-shadow: 0px 0px 4px 2px #e4e4e4;

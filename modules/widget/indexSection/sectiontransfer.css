@@ -63,9 +63,12 @@
     width: 175px;
     margin-top:40px;
     border-right: 1px solid #ECECEC;
-    margin-left:1px;
+    /*margin-left:1px;*/
 }
-
+.payment .center_box:hover{
+    border-right:none!important;
+    /*border-left:1px solid #ffffff;*/
+}
 .payment .centre {
     text-align: center;
 }
@@ -85,7 +88,7 @@
     color: #585858;
 }
 
-.payment_top .active {
+.payment_top:hover .active {
     -ms-filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
     filter: "progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
     box-shadow: 0px 0px 4px 2px #e4e4e4;
