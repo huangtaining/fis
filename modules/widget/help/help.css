@@ -128,14 +128,14 @@ body.pagerecharge .help_aboutus_left em.recharge {
    background: url(imgs/help/G16.png)no-repeat;
 }
 /*网站注册*/
-body.pagepagereg .help_aboutus_left span.pagereg a{
+body.pagepagereg .help_aboutus_left a.pagereg {
    color: #00A0E8;
 }
 body.pagepagereg .help_aboutus_left em.pagereg {
    background: url(imgs/help/G15.png)no-repeat;
 }
 /*关于银生宝*/
-body.pageaboutus .help_aboutus_left span.aboutus a{
+body.pageaboutus .help_aboutus_left a.aboutus{
    color: #00A0E8;
 }
 body.pageaboutus .help_aboutus_left em.aboutus {
