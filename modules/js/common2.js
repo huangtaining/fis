@@ -134,6 +134,9 @@ $(function(){
             safe_qus:{
                 required:true
             },
+            daan:{
+                required:true
+            },
             //付款金额
             fkje:{
                 required: true,
@@ -301,6 +304,9 @@ $(function(){
             zjyt:{
                 required: "请输入资金用途",
                 maxlength:"长度太长"
+            },
+            daan:{
+                required:"请输入自定义安全问题"
             },
             safe_qus:{
                 required:"请输入答案"
