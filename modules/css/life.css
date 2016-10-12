@@ -165,6 +165,7 @@
 }
 .life_step:hover{
     color: white;
+    background: #0068B6;
 }
 .cpjs{
     margin-bottom: 20px;
