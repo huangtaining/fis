@@ -23,7 +23,22 @@
 <style type="text/css">
 	.bar_article .zhong{width:573px;}
 	.bar_article ul li{width:50%;}
-
+     .xy{
+         width: 780px;
+         margin: 0 auto;
+         left: 30%;
+         top: 10%;
+         background: white;
+         padding: 20px;
+         z-index: 10000;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+         border-radius: 6px;
+     }
+    .xy p{
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5px 0;
+    }
 </style>
 </head>
 <body class="pagesafe-mgt">
@@ -156,16 +171,14 @@
                             <em>
                             	<input type="checkbox" checked="checked">
 									<em>已阅读并同意</em>
-									<em class="panel-title" data-toggle="modal" data-target="#myModal1" style="color: #019FE8;cursor: pointer;font-size: 14px;">
-									《手机动态口令服务协议》</em>
+									<a class="panel-title xyy" style="color: #019FE8;cursor: pointer;font-size: 14px;">
+									《手机动态口令服务协议》</a>
 							</em>
 							<!-- 模态框（Modal） -->
-									<div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-										<div class="modal-dialog">
-											<div class="modal-content" style="padding: 20px;margin-top: 20%;">									
-												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-		<p style="padding: 0px 0 20px 0;">手机动态口令服务协议</p>										
-	<div class="text" style="height:500px; overflow:auto" >
+											<div class="xy" style="position: fixed">
+												<button type="button" class="close">&times;</button>
+	                                        	<p style="padding: 0px 0 20px 0;">手机动态口令服务协议</p>
+                                                 <div class="text" style="height:500px; overflow:auto" >
 	为更为有效保护您银生宝账户安全，上海融兴网络科技有限公司（以下简称银生宝）在原银生宝服务的基础上， 为您提供手机动态口令的增值服务。在您点击确认参加手机动态口令计划之前，您确认您已经完整阅读并全部理 解了本协议内容，同意接受本协议条款的约束。
 
 <p>第一条 定义</p>
@@ -206,14 +219,8 @@
 
 7.2、本协议有效期自上述服务开通之日起算。			
 		
-</div>											
-											</div>
-											<!-- /.modal-content -->
-										</div>
-										<!-- /.modal -->
-									</div>
-							
-							
+</div>
+									        </div>
                         </div>
                     </div>
 
@@ -272,6 +279,10 @@
             $(".xe").hide();
         }
         console.log("3")
+    })
+
+    $(".xyy,.close").on('click',function(){
+        $(".xy").slideToggle(0)
     })
 </script>
 
