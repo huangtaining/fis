@@ -23,7 +23,7 @@
 							<div class="form-group has-feedback">
 								<label class="col-md-3 control-label" style="margin-left:110px;"><b>*</b>  您的E-mail地址：</label>
 								<div class="col-md-8">
-									<input type="email" class="form-control" name="email" placeholder="请输入您的E-mail地址" />
+									<input type="email" class="form-control" name="email" placeholder="请输入您的E-mail地址" id="email"/>
 									<div class="errorholder">
 									</div>
 								</div>
@@ -107,6 +107,8 @@
 		<script src="lib/mod.js" data-loader></script>
 
 		<script type="text/javascript">
+
+			require('ui/index');
 			$(document).ready(function() {
 
 				require('modules/app/jquery.bootstrapValidator');
@@ -156,34 +158,36 @@
 				$('#resetBtn').click(function() {
 					$('#defaultForm').data('bootstrapValidator').resetForm(true);
 				});
-			});
-		</script>
-		<!--倒计时-->
-		<script type="text/javascript">
-			var wait = 60;
 
-			function time(o) {
-				if(wait == 0) {
-					o.removeAttribute("disabled");
-					o.value = "免费获取验证码";
-					wait = 60;
-				} else {
+				var wait = 60;
 
-					o.setAttribute("disabled", true);
-					o.value = "(" + wait + ")秒后，重新获取验证码";
-					wait--;
-					setTimeout(function() {
-							time(o)
-						},
-						1000)
+				function time(o) {
+					if(wait == 0) {
+						o.removeAttribute("disabled");
+						o.value = "免费获取验证码";
+						wait = 60;
+					} else {
+
+						o.setAttribute("disabled", true);
+						o.value = "(" + wait + ")秒后，重新获取验证码";
+						wait--;
+						setTimeout(function() {
+									time(o)
+								},
+								1000)
+					}
 				}
-			}
-			document.getElementById("btn").onclick = function() {
-				time(this);
-			}
-		</script>
-		<script>
-			require('ui/index');
+				document.getElementById("btn").onclick = function() {
+					var _k=$("#email").val();
+					if(_k==''){
+						console.log("空");
+						$('#defaultForm').bootstrapValidator('updateStatus', 'email', 'INVALID')
+					}else if(_k!=''){
+						time(this)
+					}
+				}
+			});
+
 		</script>
 		<!--SCRIPT_PLACEHOLDER-->
 	</body>
